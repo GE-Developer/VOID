@@ -1,5 +1,5 @@
 //
-//  Gradient + Extension.swift
+//  Gradient + Ext.swift
 //  Void
 //
 //  Created by GE-Developer

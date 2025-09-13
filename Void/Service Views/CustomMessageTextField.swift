@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct CustomMessageTextField: View {
-    @Binding var text: String
-    @Binding var disabled: Bool
-    @FocusState private var focus: Bool
-    private let placeholder: String
+    @Binding private var text: String
+    @Binding private var isDisabled: Bool
     
-    var buttonDisabled: Bool {
-        text.isEmpty || disabled
+    @FocusState private var focus: Bool
+    
+    private var buttonDisabled: Bool {
+        text.isEmpty || isDisabled
     }
     
+    private let placeholder: String
     private let sendAction: () -> Void
     
-    init(text: Binding<String>,
-         placeholder: String,
-         disabled: Binding<Bool> = .constant(false),
-         _ sendAction: @escaping () -> Void) {
-        _text = text
+    init(
+        text: Binding<String>,
+        isDisabled: Binding<Bool>,
+        placeholder: String,
+        _ sendAction: @escaping () -> Void
+    ) {
+        self._text = text
+        self._isDisabled = isDisabled
         self.placeholder = placeholder
-        _disabled = disabled
         self.sendAction = sendAction
     }
     
@@ -39,7 +42,7 @@ extension CustomMessageTextField {
     private var customMessageTextField: some View {
         HStack {
             HStack(spacing: 0) {
-                field
+                textField
                 deleteButton
             }
             .background { background }
@@ -47,17 +50,17 @@ extension CustomMessageTextField {
             
             sendButton
         }
-        .disabled(disabled)
+        .disabled(isDisabled)
         .shadow(color: Color.main.background.opacity(0.5), radius: 1)
         .animation(.easeInOut, value: focus)
-        .onChange(of: disabled) { oldValue, newValue in
-            if newValue {
+        .onChange(of: isDisabled) {
+            if isDisabled {
                 text = ""
             }
         }
     }
     
-    private var field: some View {
+    private var textField: some View {
         TextField(placeholder, text: $text)
             .focused($focus)
             .autocorrectionDisabled(true)

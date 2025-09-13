@@ -9,14 +9,15 @@ import SwiftUI
 
 struct SettingsView: View {
     @StateObject private var vm = SettingsViewModel()
+    
     @State private var languageViewPresented = false
     @State private var subscriptionViewPresented = false
     @State private var projectViewPresented = false
-
+    
     init() {
         UIScrollView.appearance().delaysContentTouches = false
     }
-        
+    
     var body: some View {
         settingsView
             .navigationDestination(isPresented: $languageViewPresented) {
@@ -31,7 +32,7 @@ struct SettingsView: View {
     }
 }
 
-// MARK: - BUILDER
+// MARK: - Builder
 extension SettingsView {
     private var settingsView: some View {
         CustomScrollView { isLargeNavBar in
@@ -58,7 +59,7 @@ extension SettingsView {
                     Divider().padding(.leading, 50)
                     reviewButton
                 }
-
+                
                 CustomForm(headerText: vm.aboutAppTitle) {
                     termsOfUseButton
                     Divider().padding(.leading, 50)
@@ -178,8 +179,5 @@ extension SettingsView {
         .font(.caption)
         .fontDesign(.monospaced)
         .padding(.horizontal, 6)
-        .onTapGesture(count: 1) {
-//            SoundManager.shared.playSound()
-        }
     }
 }

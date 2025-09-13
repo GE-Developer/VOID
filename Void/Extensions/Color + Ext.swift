@@ -1,5 +1,5 @@
 //
-//  Color + Extension.swift
+//  Color + Ext.swift
 //  Void
 //
 //  Created by GE-Developer

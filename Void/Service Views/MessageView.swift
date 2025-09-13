@@ -11,7 +11,7 @@ struct MessageView: View {
     @State private var isScaleMessage = false
     @State private var showMessage = false
     
-    var backgroundColor: LinearGradient {
+    private var backgroundColor: LinearGradient {
         switch message.encryptionMode {
         case .encrypt:
             return Gradient.accentGragient
@@ -27,6 +27,13 @@ struct MessageView: View {
     }
     
     var body: some View {
+        messageView
+    }
+}
+
+// MARK: - Builder
+extension MessageView {
+    private var messageView: some View {
         HStack(spacing: 8) {
             if message.encryptionMode == .encrypt {
                 Spacer()
@@ -70,7 +77,6 @@ struct MessageView: View {
                     : Gradient.basicSubscriptionGradiaent
                 )
         }
-
     }
     
     private func copyText() {
@@ -78,4 +84,3 @@ struct MessageView: View {
         HapticsManager.shared.notification(type: .success)
     }
 }
-

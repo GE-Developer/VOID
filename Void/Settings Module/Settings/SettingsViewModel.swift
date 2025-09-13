@@ -84,17 +84,6 @@ final class SettingsViewModel: ObservableObject {
         L10n("Settings.AppVersion.title")
     }
     
-//    var access: Bool {
-//        subscriptionManager.isPremium
-//    }
-    
-//    let premiumBannerTitle = "Premium"
-//    let basicBannerTitle = "Basic"
-    
-//    let customizationTitle = L10n.Ui.Settings.customization
-//    let appIconTitle = L10n.Ui.Settings.appIcon
-//    let backgroundMusicTitle = L10n.Ui.Settings.backgroundMusic
-    
     let appVersion: String
     let languageSubtitle = "Language"
     
@@ -102,7 +91,6 @@ final class SettingsViewModel: ObservableObject {
     private let languageManager = LanguageManager.shared
     private let hapticsManager = HapticsManager.shared
     private let soundManager = SoundManager.shared
-//    private let subscriptionManager = DeveloperManager.shared
     
     init() {
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "N/A"

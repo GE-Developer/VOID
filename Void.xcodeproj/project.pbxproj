@@ -45,7 +45,7 @@
 		1F8DDCDF2E396454005734CD /* CustomToggleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCDE2E396454005734CD /* CustomToggleRow.swift */; };
 		1F8DDCE12E396473005734CD /* Gradient + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE02E396473005734CD /* Gradient + Ext.swift */; };
 		1F8DDCE32E39676C005734CD /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE22E39676C005734CD /* ContentView1.swift */; };
-		1F8DDCE52E3A1C01005734CD /* CustomSecureFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE42E3A1C01005734CD /* CustomSecureFieldRow.swift */; };
+		1F8DDCE52E3A1C01005734CD /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE42E3A1C01005734CD /* CustomSecureField.swift */; };
 		1F8DDCE72E3A2C55005734CD /* CustomSliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE62E3A2C55005734CD /* CustomSliderRow.swift */; };
 		1F8DDCE92E3A7843005734CD /* CustomFormContentText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE82E3A7843005734CD /* CustomFormContentText.swift */; };
 		1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */; };
@@ -92,7 +92,7 @@
 		1F8DDCDE2E396454005734CD /* CustomToggleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggleRow.swift; sourceTree = "<group>"; };
 		1F8DDCE02E396473005734CD /* Gradient + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDCE22E39676C005734CD /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
-		1F8DDCE42E3A1C01005734CD /* CustomSecureFieldRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureFieldRow.swift; sourceTree = "<group>"; };
+		1F8DDCE42E3A1C01005734CD /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		1F8DDCE62E3A2C55005734CD /* CustomSliderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderRow.swift; sourceTree = "<group>"; };
 		1F8DDCE82E3A7843005734CD /* CustomFormContentText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormContentText.swift; sourceTree = "<group>"; };
 		1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextRow.swift; sourceTree = "<group>"; };
@@ -158,12 +158,28 @@
 		1F14525A2E608EAF00F8A553 /* Settings Module */ = {
 			isa = PBXGroup;
 			children = (
-				1F1452582E608E9200F8A553 /* SettingsView.swift */,
+				1F64ADE12E76234200DB44CE /* Settings */,
+				1F64ADE22E76234C00DB44CE /* Language */,
+			);
+			path = "Settings Module";
+			sourceTree = "<group>";
+		};
+		1F64ADE12E76234200DB44CE /* Settings */ = {
+			isa = PBXGroup;
+			children = (
 				1F7D9EE42E6342DA007B4DDD /* SettingsViewModel.swift */,
+				1F1452582E608E9200F8A553 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1F64ADE22E76234C00DB44CE /* Language */ = {
+			isa = PBXGroup;
+			children = (
 				1F14525B2E6092D200F8A553 /* LanguageView.swift */,
 				1F7D9EE82E63447D007B4DDD /* LanguageViewModel.swift */,
 			);
-			path = "Settings Module";
+			path = Language;
 			sourceTree = "<group>";
 		};
 		1F8DDBDB2E3677DE005734CD /* Void */ = {
@@ -172,7 +188,7 @@
 				1F8DDBDD2E36783C005734CD /* App */,
 				1F8DDBEC2E367897005734CD /* Service Views */,
 				1F12FE462E4221E50023DB69 /* Managers */,
-				1F8DDBDC2E367816005734CD /* AES256-Module */,
+				1F8DDBDC2E367816005734CD /* AES256 Module */,
 				1F14525A2E608EAF00F8A553 /* Settings Module */,
 				1F12FE492E4278040023DB69 /* Enums */,
 				1F8DDBEA2E367863005734CD /* Extensions */,
@@ -182,14 +198,14 @@
 			path = Void;
 			sourceTree = "<group>";
 		};
-		1F8DDBDC2E367816005734CD /* AES256-Module */ = {
+		1F8DDBDC2E367816005734CD /* AES256 Module */ = {
 			isa = PBXGroup;
 			children = (
 				1F8DDCE22E39676C005734CD /* ContentView1.swift */,
 				1F12FE452E4221AC0023DB69 /* AES256-Encryption */,
 				1F12FE442E4221440023DB69 /* AES256-Settings */,
 			);
-			path = "AES256-Module";
+			path = "AES256 Module";
 			sourceTree = "<group>";
 		};
 		1F8DDBDD2E36783C005734CD /* App */ = {
@@ -240,7 +256,7 @@
 				1F1161232E73009900A7894D /* HeaderTextView.swift */,
 				1F12FE502E42DEDD0023DB69 /* MessageView.swift */,
 				1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */,
-				1F8DDCE42E3A1C01005734CD /* CustomSecureFieldRow.swift */,
+				1F8DDCE42E3A1C01005734CD /* CustomSecureField.swift */,
 			);
 			path = "Service Views";
 			sourceTree = "<group>";
@@ -392,7 +408,7 @@
 				1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */,
 				1F1452572E608D8900F8A553 /* AppStorageKey.swift in Sources */,
 				1F12FE4F2E42789C0023DB69 /* CryptoActionButtons.swift in Sources */,
-				1F8DDCE52E3A1C01005734CD /* CustomSecureFieldRow.swift in Sources */,
+				1F8DDCE52E3A1C01005734CD /* CustomSecureField.swift in Sources */,
 				1F12FE512E42DEDD0023DB69 /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

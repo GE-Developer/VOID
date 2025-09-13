@@ -57,7 +57,7 @@ extension AES256SettingsView {
     
     private var passwordForm: some View {
         CustomForm(headerText: vm.secutityTitle) {
-            CustomSecureFieldRow(
+            CustomSecureField(
                 password: $vm.parameters.password,
                 placeholder: vm.passwordPlaceholder
             )

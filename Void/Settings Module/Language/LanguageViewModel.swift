@@ -10,7 +10,7 @@ import Foundation
 @MainActor
 final class LanguageViewModel: ObservableObject {
     
-    @Published var tappedLanguage: Language?
+    @Published var chosenLanguage: Language?
     
     var title: String {
         L10n("Settings.General.Language.title")
@@ -35,7 +35,7 @@ final class LanguageViewModel: ObservableObject {
     private let languageManager = LanguageManager.shared
     
     init() {
-        tappedLanguage = Language(rawValue: languageManager.currentLanguageID)
+        chosenLanguage = Language(rawValue: languageManager.currentLanguageID)
     }
     
     func isWithCheckmark(_ language: Language) -> Bool {
@@ -43,6 +43,6 @@ final class LanguageViewModel: ObservableObject {
     }
     
     func setNewLanguage() {
-        languageManager.currentLanguageID = tappedLanguage?.id ?? Language.english.id
+        languageManager.currentLanguageID = chosenLanguage?.id ?? Language.english.id
     }
 }

@@ -79,7 +79,7 @@ extension AES256EncryptionView {
     
     private var bottomSafeArea: some View {
         VStack(spacing: 8) {
-            CustomMessageTextField(text: $vm.text, placeholder: vm.placeholder, disabled: $disabled) {
+            CustomMessageTextField(text: $vm.text, isDisabled: $disabled, placeholder: vm.placeholder) {
                 switch vm.currentMode {
                 case .encrypt:
                     Task { await vm.encrypt() }
@@ -88,17 +88,12 @@ extension AES256EncryptionView {
                     print("DECRYPT")
                 }
             }
-            .disabled(disabled)
             .onAppear {
                 disabled = vm.encryptionParameters.password == ""
-                print(vm.encryptionParameters.password == "")
-                print("goToSettings - \(goToSettings)")
             }
-            
             .onTapGesture {
                 guard disabled else { return }
                 goToSettings = true
-                print("ЭКРАН НАСТРОЕК")
             }
             
             CryptoActionButtons(

@@ -2,7 +2,7 @@
 //  View + Ext.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 13.09.25.
+//  Created by GE-Developer
 //
 
 import SwiftUI

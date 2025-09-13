@@ -1,5 +1,5 @@
 //
-//  Image + Extension.swift
+//  Image + Ext.swift
 //  Void
 //
 //  Created by GE-Developer
