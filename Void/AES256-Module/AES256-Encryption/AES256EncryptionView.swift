@@ -9,90 +9,77 @@ import SwiftUI
 
 struct AES256EncryptionView: View {
     @StateObject private var vm = AES256EncryptionViewModel()
-    @State private var disabled = false
-    @State private var showHint = false
+    @State private var disabled = true
+    @State private var goToSettings = false
+    
+    init() {
+        print("AES256EncryptionView init")
+    }
     
     var body: some View {
         
-        CustomScrollView() { isLarge in
+        CustomScrollView { isLargeNavBar in
             CustomNavigationBar(
                 title: vm.title,
                 subTitle: vm.subtitle,
-                isLarge: isLarge
+                isLargeNavBar: isLargeNavBar
             )
             Spacer()
-            NavigationLink {
-                AES256SettingsView(vm: vm)
-            } label: {
-                Image.system.cryptoSettings
-                    .foregroundStyle(
-                        showHint
-                        ? Gradient.basicSubscriptionGradiaent
-                        : Gradient.accentGragient
-                    )
-                    .font(.title2)
-                    .animation(.easeInOut.repeatCount(1, autoreverses: true), value: showHint)
-            }
-            
-        } scrollView: {
-//            if vm.isEncrypting {
-//                ProgressView()
-//                    .progressViewStyle(CircularProgressViewStyle())
-//                    .padding()
-//            }
-//            TextEditor(text: .constant(vm.resultText))
-            ZStack {
-                MatrixAnimationView(.allCases.randomElement()!, color: Gradient.accentGragient)
-                    .frame(width: 250, height: 300)
-                VStack {
-                    ForEach(vm.messages) { message in
-                        MessageView(message: message)
-                            .onLongPressGesture(minimumDuration: 1) {
-                                UIPasteboard.general.string = message.resultText
-                            }
+            settingsButton
+        } headerView: { offsetY in
+            HeaderTextView(text: vm.headetText, offsetY: offsetY)
+        } scrollView: { proxy in
+            VStack(spacing: 15) {
+                if vm.messages.isEmpty {
+                    ForEach(vm.introMessages) { introMessage in
+                        MessageView(message: introMessage)
                     }
                 }
-//                HStack(spacing: 2) {
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                    VerticalAlphabetView()
-//                }
+                
+                ForEach(vm.messages) { message in
+                    MessageView(message: message)
+                }
             }
         }
         .safeAreaInset(edge: .bottom) {
             bottomSafeArea
+        }
+        .navigationDestination(isPresented: $goToSettings) {
+            NavigationLazyView(AES256SettingsView(vm: vm))
         }
     }
 }
 
 // MARK: - Builder
 extension AES256EncryptionView {
+//    private var showTextButton: some View {
+//        Button {
+////            withAnimation(.easeInOut(duration: 0.1)) {
+//                showMessage.toggle()
+////            }
+//            
+//        } label: {
+//            Image.system.eye
+//                .foregroundStyle(showMessage ? Gradient.premiumSubscriptionGradiaent : Gradient.accentGragient)
+//                .font(.title2)
+//                .animation(.easeInOut, value: showMessage)
+//        }
+//
+//    }
+    
+    private var settingsButton: some View {
+        Button {
+            goToSettings.toggle()
+        } label: {
+            Image.system.cryptoSettings
+                .foregroundStyle(Gradient.accentGragient)
+                .font(.title2)
+        }
+    }
+    
     private var bottomSafeArea: some View {
         VStack(spacing: 8) {
-            CryptoActionButtons(
-                cryptoAction: $vm.currentMode,
-                decryptiontitle: vm.decryptionTitle,
-                encryptiontitle: vm.encryptionTitle
-            )
-            
             CustomMessageTextField(text: $vm.text, placeholder: vm.placeholder, disabled: $disabled) {
-                
                 switch vm.currentMode {
                 case .encrypt:
                     Task { await vm.encrypt() }
@@ -101,15 +88,29 @@ extension AES256EncryptionView {
                     print("DECRYPT")
                 }
             }
-        }
-        .onTapGesture {
-            guard disabled && !showHint else { return }
-            print("guard disabled && !showHint else { return }")
-            showHint = true
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                showHint = false
+            .disabled(disabled)
+            .onAppear {
+                disabled = vm.encryptionParameters.password == ""
+                print(vm.encryptionParameters.password == "")
+                print("goToSettings - \(goToSettings)")
             }
+            
+            .onTapGesture {
+                guard disabled else { return }
+                goToSettings = true
+                print("ЭКРАН НАСТРОЕК")
+            }
+            
+            CryptoActionButtons(
+                cryptoAction: $vm.currentMode,
+                decryptiontitle: vm.decryptionTitle,
+                encryptiontitle: vm.encryptionTitle
+            )
         }
+//        .onTapGesture {
+//            guard disabled else { return }
+//            
+//        }
         .padding(.vertical, 8)
         .padding(.horizontal, 10)
         .background(.ultraThinMaterial)

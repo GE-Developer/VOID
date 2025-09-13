@@ -10,18 +10,20 @@ import SwiftUI
 struct CustomNavigationBar: View {
     private let title: String
     private let subTitle: String?
-    private let isLarge: Bool
+    private let isLargeNavBar: Bool
     private let alignment: HorizontalAlignment
     private let multilineAlignment: TextAlignment
     
-    init(title: String,
-         subTitle: String? = nil,
-         isLarge: Bool,
-         alignment: HorizontalAlignment = .leading,
-         multilineAlignment: TextAlignment = .leading) {
+    init(
+        title: String,
+        subTitle: String? = nil,
+        isLargeNavBar: Bool,
+        alignment: HorizontalAlignment = .leading,
+        multilineAlignment: TextAlignment = .leading
+    ) {
         self.title = title
         self.subTitle = subTitle
-        self.isLarge = isLarge
+        self.isLargeNavBar = isLargeNavBar
         self.alignment = alignment
         self.multilineAlignment = multilineAlignment
     }
@@ -44,7 +46,7 @@ extension CustomNavigationBar {
     
     private var mainTitle: some View {
         Text(title)
-            .font(isLarge ? .title : .title3)
+            .font(isLargeNavBar ? .title : .title3)
             .fontWeight(.semibold)
             .foregroundStyle(Color.navigation.accentOne)
             .multilineTextAlignment(multilineAlignment)
@@ -52,7 +54,7 @@ extension CustomNavigationBar {
     
     private var secondaryTitle: some View {
         Group {
-            if isLarge, let subTitle {
+            if isLargeNavBar, let subTitle {
                 Text(subTitle)
                     .font(.subheadline)
                     .fontWeight(.light)

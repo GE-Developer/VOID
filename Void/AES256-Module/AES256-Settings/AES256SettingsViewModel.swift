@@ -14,18 +14,18 @@ final class AES256SettingsViewModel: ObservableObject {
     let title = L10n("Settings.title")
     let subTitle: String
     
-    let secutityTitle = L10n("AES-256.Settings.Security.title")
-    let passwordPlaceholder = L10n("AES-256.Settings.Security.passwordPlaceholder")
-    let voidTitle = L10n("AES-256.Settings.Security.Void.title")
-    let voidSubtitle = L10n("AES-256.Settings.Security.Void.subtitle")
+    let secutityTitle = L10n("CryptoSettings.Security.title")
+    let passwordPlaceholder = L10n("CryptoSettings.Security.passwordPlaceholder")
+    let voidTitle = L10n("CryptoSettings.Security.Void.title")
+    let voidSubtitle = L10n("CryptoSettings.Security.Void.subtitle")
     
-    let dividerMessage = L10n("AES-256.Settings.dividerMessage")
+    let dividerMessage = L10n("CryptoSettings.dividerMessage")
     
-    let saltTitle = L10n("AES-256.Settings.Salt.title")
+    let saltTitle = L10n("CryptoSettings.Salt.title")
     let saltValues = [8, 16, 32, 64, 128, 256]
-    let saltInstructions = L10n("AES-256.Settings.Salt.instructions")
+    let saltInstructions = L10n("CryptoSettings.Salt.instructions")
     
-    let iterationsTitle = L10n("AES-256.Settings.Iterations.title")
+    let iterationsTitle = L10n("CryptoSettings.Iterations.title")
     let iterationsValues = Array<UInt16>(1...1000)
     let iterationsLabels = [
         L10n("CryptoSettings.weak"),
@@ -33,7 +33,7 @@ final class AES256SettingsViewModel: ObservableObject {
         L10n("CryptoSettings.strong"),
         L10n("CryptoSettings.extreme")
     ]
-    let iterationsInstructions = L10n("AES-256.Settings.Iterations.instructions")
+    let iterationsInstructions = L10n("CryptoSettings.Iterations.instructions")
     
     let memoryTitle = L10n("CryptoSettings.Memory.title")
     let memoryValues: [UInt32] = [1024, 2048, 4096, 8192, 16384, 32768, 65536, 131072, 262144, 524288, 1048576]
@@ -102,6 +102,11 @@ final class AES256SettingsViewModel: ObservableObject {
         self.mainVM = mainVM
         self.parameters = mainVM.encryptionParameters
         self.subTitle = mainVM.subtitle
+        print("AES256SettingsViewModel INIT")
+    }
+    
+    deinit {
+        print("AES256SettingsViewModel DEINIT")
     }
     
     func commitChanges() {

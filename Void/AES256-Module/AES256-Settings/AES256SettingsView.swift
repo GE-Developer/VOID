@@ -9,31 +9,39 @@ import SwiftUI
 
 struct AES256SettingsView: View {
     @StateObject private var vm: AES256SettingsViewModel
+    @State private var showVoid = false
     
     init(vm: AES256EncryptionViewModel) {
         _vm = StateObject(wrappedValue: AES256SettingsViewModel(mainVM: vm))
+        print("INIT AES256SettingsView")
     }
     
     var body: some View {
         settingsView
-            .onDisappear(perform: vm.commitChanges)
+            .onChange(of: vm.parameters) {
+                vm.commitChanges()
+            }
+            .navigationDestination(isPresented: $showVoid) {
+                NavigationLazyView(ContentView1())
+                
+            }
     }
 }
 
 // MARK: - Builder
 extension AES256SettingsView {
     private var settingsView: some View {
-        CustomScrollView(headerHight: 150) { isLarge in
+        CustomScrollView { isLargeNavBar in
             CustomNavigationBar(
                 title: vm.title,
                 subTitle: vm.subTitle,
-                isLarge: isLarge
+                isLargeNavBar: isLargeNavBar
             )
             Spacer()
-        } headerView: { minY in
+        } headerView: { offsetY in
             passwordForm
-                .offset(y: min(minY, 0))
-        } scrollView: {
+                .offset(y: min(offsetY, 0))
+        } scrollView: { _ in
             VStack(spacing: 25) {
                 dividerMessage
                 saltForm
@@ -61,8 +69,30 @@ extension AES256SettingsView {
                 title: vm.voidTitle,
                 subtitle: vm.voidSubtitle,
                 additionalTitle: "#51",
-                destination: ContentView1()
+                isLink: true,
+                action: { showVoid = true }
             )
+            
+//            NavigationLink {
+//                ContentView1()
+//            } label: {
+//                Rectangle().frame(height: 30)
+//                CustomButtonRow(
+//                    icon: .system.key,
+//                    title: vm.voidTitle,
+//                    subtitle: vm.voidSubtitle,
+//                    additionalTitle: "#51",
+//                    action: { print("CustomButtonRow") }
+//                )
+//            }
+            
+//            NavigationLink {
+//                ContentView1()
+//            } label: {
+//                Rectangle().frame(height: 30)
+//            }
+
+
         }
     }
     
@@ -73,7 +103,8 @@ extension AES256SettingsView {
                 .font(.headline)
                 .fontDesign(.rounded)
                 .textCase(.uppercase)
-                .minimumScaleFactor(0.5)
+                .lineLimit(1)
+                .minimumScaleFactor(0.2)
             Divider()
         }
         .padding(.horizontal)
@@ -160,9 +191,8 @@ extension AES256SettingsView {
         } content: {
             HStack(spacing: 8) {
                 CustomTextRow(vm.layersSubtitle)
-                Spacer()
                 Stepper("", value: $vm.parameters.layers, in: vm.layersRange)
-                    .padding(.trailing)
+                    .padding(.horizontal)
             }
             Divider()
                 .padding(.horizontal)

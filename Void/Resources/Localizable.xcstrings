@@ -1,267 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "AES-256.Settings.dividerMessage" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "↓ For encryption only ↓"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "↓ 暗号化のみ ↓"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "↓ Только для шифрования ↓"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "↓ Лише для шифрування ↓"
-          }
-        }
-      }
-    },
-    "AES-256.Settings.Iterations.instructions" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The number of iterations affects encryption strength. More = harder to crack, but slower."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "反復回数は暗号化の強さに影響します。多いほど解読が難しくなりますが、処理は遅くなります。"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Количество итераций влияет на силу шифрования: чем больше итераций, тем сложнее взломать, но тем медленнее процесс шифрования и расшифровки данных."
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Кількість ітерацій впливає на стійкість шифрування. Більше = складніше зламати, але повільніше."
-          }
-        }
-      }
-    },
-    "AES-256.Settings.Iterations.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Iterations"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "反復回数"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Итерации"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ітерації"
-          }
-        }
-      }
-    },
-    "AES-256.Settings.Salt.instructions" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salt is random data added to your password before encryption. It makes the result unique even if the password is the same, protecting against reuse attacks and password cracking. The longer the salt, the stronger the protection — harder to guess, harder to break."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソルトは、暗号化前にパスワードに追加されるランダムデータです。同じパスワードでも結果をユニークにし、再利用攻撃やパスワード解析から守ります。ソルトが長いほど保護は強くなり、推測や解読が難しくなります。"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Соль — это случайные данные, которые добавляются к паролю перед шифрованием.\nОна делает результат уникальным даже при одинаковом пароле, защищая от атак повторного использования и взлома паролей.\nЧем длиннее соль, тем сильнее защита — труднее угадать, труднее взломать."
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сіль — це випадкові дані, які додаються до вашого пароля перед шифруванням. Вона робить результат унікальним навіть тоді, коли пароль однаковий, захищаючи від атак повторного використання та підбору паролів. Чим довша сіль, тим сильніший захист — важче вгадати, важче зламати."
-          }
-        }
-      }
-    },
-    "AES-256.Settings.Salt.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Salt"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソルト"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Соль"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Сіль"
-          }
-        }
-      }
-    },
-    "AES-256.Settings.Security.passwordPlaceholder" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Password"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "パスワード"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Пароль"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Пароль"
-          }
-        }
-      }
-    },
-    "AES-256.Settings.Security.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Security"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "セキュリティ"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Безопасность"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Безпека"
-          }
-        }
-      }
-    },
-    "AES-256.Settings.Security.Void.subtitle" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Secret"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "秘密"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Секрет"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Секрет"
-          }
-        }
-      }
-    },
-    "AES-256.Settings.Security.Void.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "VOID"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "VOID"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "VOID"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "VOID"
-          }
-        }
-      }
-    },
     "Cryptography.AES-256" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -271,7 +10,31 @@
             "value" : "AES-256"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
         "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "ka" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "AES-256"
@@ -287,6 +50,127 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "AES-256"
+          }
+        }
+      }
+    },
+    "Cryptography.AES-256.DecryptedIntroMessage.encryptedText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The decrypted text will appear here. Press the «Show» button to view it."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Расшифрованный текст появится здесь. Нажмите кнопку «Показать», чтобы увидеть его."
+          }
+        }
+      }
+    },
+    "Cryptography.AES-256.DecryptedIntroMessage.originalText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Here is your original decrypted text. Everything stays on the device within this crypto session."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вот ваш исходный расшифрованный текст. Всё остаётся на устройстве в рамках этой криптосессии."
+          }
+        }
+      }
+    },
+    "Cryptography.AES-256.EncryptedIntroMessage.encryptedText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your encrypted text will appear here after entering the password. To copy the text, press and hold for one second."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваш зашифрованный текст появится здесь после ввода пароля.  Чтобы скопировать текст, нажмите и удерживайте выбранный текст."
+          }
+        }
+      }
+    },
+    "Cryptography.AES-256.EncryptedIntroMessage.originalText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Here is your original encrypted text. To encrypt the text, press the «Send» button."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вот ваш исходный зашифрованный текст. Чтобы зашифровать текст, нажмите кнопку «Отправить»."
+          }
+        }
+      }
+    },
+    "Cryptography.AES-256.instructions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**For your security**  — The stronger the password, the stronger the encryption — We do not store or transmit your data — When you leave this screen, everything is deleted"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Para su seguridad**  — Cuanto más fuerte sea la contraseña, más fuerte será el cifrado — No almacenamos ni transmitimos sus datos — Cuando abandone esta pantalla, todo se eliminará"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Pour votre sécurité**  — Plus le mot de passe est complexe, plus le chiffrement est fort — Nous ne stockons ni ne transmettons vos données — Lorsque vous quittez cet écran, tout est supprimé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Per la tua sicurezza**  — Più la password è complessa, più forte è la crittografia — Non memorizziamo né trasmettiamo i tuoi dati — Quando lasci questo schermo, tutto viene eliminato"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**あなたのセキュリティのために**  — パスワードが強いほど、暗号化も強力です — 私たちはあなたのデータを保存したり送信したりしません — この画面を離れると、すべて削除されます"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**თქვენი უსაფრთხოებისათვის**  — რაც უფრო ძლიერი პაროლი, მით უფრო ძლიერი არის შიფრაცია — ჩვენ არ ვინახავთ და არ ვგზავნით თქვენს მონაცემებს — როდესაც ტოვებთ ამ ეკრანს, ყველაფერი წაიშლება"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Для вашей безопасности**  — Чем сильнее пароль, тем надёжнее шифрование — Мы не храним и не передаём ваши данные — При покидании этого экрана всё удаляется"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Для вашої безпеки**  — Чим сильніший пароль, тим надійніше шифрування — Ми не зберігаємо і не передаємо ваші дані — Коли ви покидаєте цей екран, все видаляється"
           }
         }
       }
@@ -300,10 +184,34 @@
             "value" : "Decryption"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descifrado"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Déchiffrement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decifratura"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "復号"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დეშიფრაცია"
           }
         },
         "ru" : {
@@ -329,10 +237,34 @@
             "value" : "Encryption"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cifrado"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiffrement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cifratura"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "暗号化"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "შიფრაცია"
           }
         },
         "ru" : {
@@ -358,10 +290,34 @@
             "value" : "Ready to decrypt..."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listo para descifrar…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prêt à déchiffrer…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto per decifrare…"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "復号の準備ができました…"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მომზადებულია გასაშიფრად..."
           }
         },
         "ru" : {
@@ -387,10 +343,34 @@
             "value" : "Set the password!"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¡Establece la contraseña!"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définir le mot de passe !"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imposta la password!"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "パスワードを設定してください！"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დააყენეთ პაროლი!"
           }
         },
         "ru" : {
@@ -416,10 +396,34 @@
             "value" : "Ready to encrypt..."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listo para cifrar…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prêt à chiffrer…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto per cifrare…"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "暗号化の準備ができました…"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მომზადებულია გასაშიფრად..."
           }
         },
         "ru" : {
@@ -445,10 +449,34 @@
             "value" : "Cryptography"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criptografía"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cryptographie"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crittografia"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "暗号学"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "კრიპტოგრაფია"
           }
         },
         "ru" : {
@@ -465,6 +493,59 @@
         }
       }
     },
+    "CryptoSettings.dividerMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ For encryption only ↓"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Solo para cifrado ↓"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Seulement pour le chiffrement ↓"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Solo per la cifratura ↓"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ 暗号化のみ ↓"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ მხოლოდ შიფრაციისთვის ↓"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Только для шифрования ↓"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Лише для шифрування ↓"
+          }
+        }
+      }
+    },
     "CryptoSettings.extreme" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -474,10 +555,34 @@
             "value" : "Extreme"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extremo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extrême"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Estremo"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "極限"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ექსტრემალური"
           }
         },
         "ru" : {
@@ -503,10 +608,34 @@
             "value" : "High CPU"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alto uso de CPU"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU élevé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alta CPU"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "高負荷"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მაღალი CPU"
           }
         },
         "ru" : {
@@ -523,31 +652,161 @@
         }
       }
     },
+    "CryptoSettings.Iterations.instructions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The number of **iterations** affects encryption **strength**. More = harder to crack, but **slower**."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El número de **iteraciones** afecta la **fuerza** del cifrado.  \nMás iteraciones = más difícil de descifrar, pero **más lento**."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le nombre d’**itérations** influence la **force** du chiffrement. Plus d’itérations = plus difficile à craquer, mais **plus lent**."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il numero di **iterazioni** influisce sulla **forza** della cifratura. Più iterazioni = più difficile da decifrare, ma **più lento**."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**反復回数**は暗号化の**強度**に影響します。 回数が多いほど解読は難しくなりますが、**処理は遅く**なります。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**იტერაციების რაოდენობა** გავლენას ახდენს **შიფრაციის სიმტკიცეზე**. რაოდენობის გაზრდა ართულებს დაშიფვრას, მაგრამ **ამცირებს სიჩქარეს**."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Количество итераций** влияет на **силу** шифрования: чем больше итераций, тем сложнее взломать, но тем **медленнее** процесс шифрования и расшифровки данных."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кількість **ітерацій** впливає на **стійкість** шифрування. Більше = складніше зламати, але **повільніше**."
+          }
+        }
+      }
+    },
+    "CryptoSettings.Iterations.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iterations"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iteraciones"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Itérations"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iterazioni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "反復回数"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "იტერაციები"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Итерации"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ітерації"
+          }
+        }
+      }
+    },
     "CryptoSettings.KeyLength.instructions" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Key length defines how hard it is to brute-force your data — the longer the key, the stronger the protection. Higher values increase security but may slightly slow down processing."
+            "value" : "**Key length** defines how hard it is to brute-force your data — the **longer** the key, the **stronger** the protection. Higher values increase security but may slightly slow down processing."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La **longitud de la clave** define lo difícil que es forzar tus datos mediante fuerza bruta — cuanto **más larga** es la clave, **mayor** es la protección.  \nValores más altos aumentan la seguridad, pero pueden ralentizar ligeramente el procesamiento."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La **longueur de la clé** détermine la difficulté de forcer les données. Plus la clé est **longue**, plus la protection est **forte**. Des valeurs plus élevées augmentent la sécurité mais peuvent légèrement ralentir le traitement."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La **lunghezza della chiave** determina quanto è difficile forzare i dati. Più la chiave è **lunga**, più la protezione è **forte**. Valori più alti aumentano la sicurezza ma possono rallentare leggermente l’elaborazione."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "鍵の長さはデータをブルートフォースで解読する難易度を決定します。長い鍵ほど保護は強くなります。値が大きいほどセキュリティは向上しますが、処理がわずかに遅くなる場合があります。"
+            "value" : "**鍵の長さ**はデータを総当たり攻撃で解読する難しさを決定します — 鍵が**長い**ほど保護は**強く**なります。 値が大きいほどセキュリティは向上しますが、処理がわずかに遅くなる場合があります。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**საკვანძო სიგრძე** განსაზღვრავს რამდენად რთულია თქვენი მონაცემების ბრუტფორსი — რაც **დამატებითი სიგრძე**, მით **მტკიცე დაცვა**. მაღალი მნიშვნელობები ზრდის უსაფრთხოებას, თუმცა შესაძლოა ცოტა შეანელოს პროცესირება."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Длина ключа определяет, насколько сложно взломать ваши данные перебором — чем длиннее ключ, тем выше защита. Большие значения повышают безопасность, но могут немного замедлить обработку."
+            "value" : "**Длина ключа** определяет, насколько сложно взломать ваши данные перебором — чем **длиннее** ключ, тем **выше защита**. Большие значения повышают безопасность, но могут немного замедлить обработку."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Довжина ключа означає, наскільки складно підібрати ваші дані методом brute-force — чим довший ключ, тим сильніший захист. Вищі значення підвищують безпеку, але можуть трохи сповільнити обробку."
+            "value" : "**Довжина ключа** означає, наскільки складно підібрати ваші дані методом brute-force — чим **довший** ключ, тим **сильніший** захист. Вищі значення підвищують безпеку, але можуть трохи сповільнити обробку."
           }
         }
       }
@@ -561,10 +820,34 @@
             "value" : "Key Length"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longitud de la clave"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Longueur de la clé"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lunghezza chiave"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "鍵の長さ"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "საკვანძო სიგრძე"
           }
         },
         "ru" : {
@@ -587,25 +870,49 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "The maximum number of layers depends on the key length you select. A longer key allows more layers, increasing your protection."
+            "value" : "The maximum **number of layers depends on the key length** you select. A longer key allows more layers, increasing your protection."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El **número máximo de capas depende de la longitud de la clave** que selecciones.  \nUna clave más larga permite más capas, aumentando tu protección."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le nombre maximum de **couches dépend de la longueur de la clé** choisie. Une clé plus longue permet plus de couches, augmentant la protection."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il numero massimo di **livelli dipende dalla lunghezza della chiave** selezionata. Una chiave più lunga permette più livelli, aumentando la protezione."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "最大レイヤー数は選択した鍵の長さに依存します。鍵が長いほどレイヤーを増やせ、保護が強化されます。"
+            "value" : "最大**レイヤー数は選択した鍵の長さに依存します**。 鍵が長いほど使用できるレイヤーが増え、保護が強化されます。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მაქსიმალური **საფეხურების რაოდენობა დამოკიდებულია საკვანძო სიგრძეზე**, რომელსაც ირჩევთ. გრძელი საკვანძო მეტი საფეხურის დამატების საშუალებას იძლევა, რაც ზრდის დაცვას."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Максимальное количество слоёв зависит от выбранной длины ключа.\nЧем длиннее ключ, тем больше слоёв можно использовать, повышая уровень защиты."
+            "value" : "Максимальное **количество слоёв зависит от выбранной длины ключа**. Чем длиннее ключ, тем больше слоёв можно использовать, повышая уровень защиты."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Максимальна кількість рівнів залежить від обраної довжини ключа. Довший ключ дозволяє використовувати більше рівнів, підвищуючи захист."
+            "value" : "Максимальна **кількість рівнів залежить від обраної довжини ключа**. Довший ключ дозволяє використовувати більше рівнів, підвищуючи захист."
           }
         }
       }
@@ -619,10 +926,34 @@
             "value" : "Number of encryption layers"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Número de capas de cifrado"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre de couches de chiffrement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numero di livelli di cifratura"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "暗号化レイヤー数"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "შიფრაციის საფეხურების რაოდენობა"
           }
         },
         "ru" : {
@@ -648,10 +979,34 @@
             "value" : "Layers"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couches"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Livelli"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "レイヤー"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "საფეხურები"
           }
         },
         "ru" : {
@@ -677,10 +1032,34 @@
             "value" : "Low CPU"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bajo uso de CPU"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CPU faible"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bassa CPU"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "低負荷"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დაბალი CPU"
           }
         },
         "ru" : {
@@ -706,10 +1085,34 @@
             "value" : "Maximum"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máximo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximum"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Massimo"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "最大"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მაქსიმუმ"
           }
         },
         "ru" : {
@@ -735,10 +1138,34 @@
             "value" : "Medium"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medio"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Moyen"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medio"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "中程度"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "საშუალო"
           }
         },
         "ru" : {
@@ -761,25 +1188,49 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Memory is the amount of RAM used during encryption to protect your data. The more memory used, the harder it is for attackers to crack your password because attacks require more resources and time. However, higher memory usage can slow down your device — choose a balance between security and performance."
+            "value" : "**Memory** is the amount of RAM used during encryption to protect your data. The more memory used, the harder it is for attackers to crack your password because attacks require more resources and time. However, **higher memory usage can slow down your device** — choose a balance between security and performance."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La **memoria** es la cantidad de RAM utilizada durante el cifrado para proteger tus datos.  \nCuanta más memoria se use, más difícil será para los atacantes descifrar tu contraseña, ya que los ataques requieren más recursos y tiempo.  \nSin embargo, **un mayor uso de memoria puede ralentizar tu dispositivo** — elige un equilibrio entre seguridad y rendimiento."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La **mémoire** est la quantité de RAM utilisée pendant le chiffrement pour protéger les données. Plus de mémoire est utilisée, plus il est difficile pour un attaquant de craquer le mot de passe. Les attaques nécessitent plus de ressources et de temps. Cependant, **une utilisation élevée de la mémoire peut ralentir votre appareil** — choisissez un équilibre entre sécurité et performance."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La **memoria** è la quantità di RAM utilizzata durante la cifratura per proteggere i dati. Più memoria viene utilizzata, più difficile è per gli attaccanti decifrare la password. Gli attacchi richiedono più risorse e tempo. Tuttavia, **un uso elevato della memoria può rallentare il dispositivo** — scegli un equilibrio tra sicurezza e prestazioni."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "メモリは暗号化中にデータを保護するために使用されるRAMの量です。メモリを多く使うほど、攻撃者がパスワードを解析するのが難しくなりますが、使用メモリが多いとデバイスの処理が遅くなる可能性があります。セキュリティとパフォーマンスのバランスを選んでください。"
+            "value" : "**メモリ**は、データ保護のために暗号化中に使用されるRAMの量です。  \n使用されるメモリが多いほど、攻撃者がパスワードを解読するのは難しくなります。  \nしかし、**高いメモリ使用量はデバイスの動作を遅くする可能性があります** — セキュリティとパフォーマンスのバランスを選択してください。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**მეხსიერება** არის RAM-ის რაოდენობა, რომელიც გამოიყენება მონაცემების დასაცავად. მოხმარებული მეხსიერების რაოდენობის ზრდა ართულებს შეტევას, რადგან შეტევები საჭიროებენ უფრო მეტ რესურსს და დროს.თუმცა, **მაღალი მეხსიერების გამოყენება შეიძლება შეანელოს მოწყობილობის მუშაობა** — აირჩიეთ ბალანსი უსაფრთხოებასა და შესრულებას შორის."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Объём оперативной памяти (RAM), используемой при шифровании для защиты данных.\nЧем больше памяти используется, тем сложнее атакующему взломать пароль, потому что атаки требуют больше ресурсов и времени.\nОднако высокая нагрузка на память может замедлить работу устройства — выбирайте баланс между безопасностью и производительностью."
+            "value" : "**Объём оперативной памяти** (RAM), используемой при шифровании для защиты данных. Чем больше памяти используется, тем сложнее атакующему взломать пароль, потому что атаки требуют больше ресурсов и времени. Однако **высокая нагрузка на память может замедлить работу устройства** — выбирайте баланс между безопасностью и производительностью."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Пам’ять — це обсяг ОЗП, який використовується під час шифрування для захисту ваших даних. Чим більше пам’яті використовується, тим складніше зламати ваш пароль, оскільки атаки потребують більше ресурсів і часу. Проте велике споживання пам’яті може сповільнити пристрій — обирайте баланс між безпекою та продуктивністю."
+            "value" : "**Пам’ять** — це обсяг ОЗП, який використовується під час шифрування для захисту ваших даних. Чим більше пам’яті використовується, тим складніше зламати ваш пароль, оскільки атаки потребують більше ресурсів і часу. Проте **велике споживання пам’яті може сповільнити пристрій** — обирайте баланс між безпекою та продуктивністю."
           }
         }
       }
@@ -793,10 +1244,34 @@
             "value" : "Memory"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memoria"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mémoire"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memoria"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "メモリ"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მეხსიერება"
           }
         },
         "ru" : {
@@ -822,13 +1297,67 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Your device has %lld core. Increasing the number of parallel tasks can speed up encryption, but may consume more battery."
+                  "value" : "Your device has **%lld core**. Increasing the number of parallel tasks can **speed up encryption**, but may consume more battery."
                 }
               },
               "other" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Your device has %lld cores. Increasing the number of parallel tasks can speed up encryption, but may consume more battery."
+                  "value" : "Your device has **%lld cores**.  Increasing the number of parallel tasks can **speed up encryption**, but may consume more battery."
+                }
+              }
+            }
+          }
+        },
+        "es" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Tu dispositivo tiene **%lld núcleo**.  \nAumentar el número de tareas paralelas puede **acelerar el cifrado**, pero puede consumir más batería."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Tu dispositivo tiene **%lld núcleos**.  \nAumentar el número de tareas paralelas puede **acelerar el cifrado**, pero puede consumir más batería."
+                }
+              }
+            }
+          }
+        },
+        "fr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Votre appareil a **%lld cœur**. Augmenter le nombre de tâches parallèles peut **accélérer le chiffrement**, mais peut consommer plus de batterie."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Votre appareil a **%lld cœurs**. Augmenter le nombre de tâches parallèles peut **accélérer le chiffrement**, mais peut consommer plus de batterie."
+                }
+              }
+            }
+          }
+        },
+        "it" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Il tuo dispositivo ha **%lld core**. Aumentare il numero di attività parallele può **accelerare la cifratura**, ma può consumare più batteria."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Il tuo dispositivo ha **%lld core**. Aumentare il numero di attività parallele può **accelerare la cifratura**, ma può consumare più batteria."
                 }
               }
             }
@@ -840,7 +1369,25 @@
               "other" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "お使いのデバイスには %lld コアがあります。並列タスクの数を増やすと暗号化は高速化されますが、バッテリー消費が増える可能性があります。"
+                  "value" : "あなたのデバイスには**%lldコア**があります。 並列タスクの数を増やすと**暗号化を高速化**できますが、バッテリーをより多く消費する可能性があります。"
+                }
+              }
+            }
+          }
+        },
+        "ka" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "თქვენი მოწყობილობა აქვს **%lld ბირთვი**. პარალელური დავალებების რაოდენობის გაზრდა შეუძლია **შიფრაციის გასაჩქარებლად**, მაგრამ მეტ ენერგიას მოიხმარს."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "თქვენი მოწყობილობა აქვს **%lld ბირთვი**. პარალელური დავალებების რაოდენობის გაზრდა შეუძლია **შიფრაციის გასაჩქარებლად**, მაგრამ მეტ ენერგიას მოიხმარს."
                 }
               }
             }
@@ -852,25 +1399,25 @@
               "few" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Ваше устройство имеет %lld ядра. Увеличение числа параллельных задач может ускорить шифрование, но потребляет больше батареи."
+                  "value" : "Ваше устройство имеет **%lld ядра**. Увеличение числа параллельных задач может **ускорить шифрование**, но потребляет больше батареи."
                 }
               },
               "many" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Ваше устройство имеет %lld ядер. Увеличение числа параллельных задач может ускорить шифрование, но потребляет больше батареи."
+                  "value" : "Ваше устройство имеет **%lld ядер**. Увеличение числа параллельных задач может **ускорить шифрование**, но потребляет больше батареи."
                 }
               },
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Ваше устройство имеет %lld ядро. Увеличение числа параллельных задач может ускорить шифрование, но потребляет больше батареи."
+                  "value" : "Ваше устройство имеет **%lld ядро**. Увеличение числа параллельных задач может **ускорить шифрование**, но потребляет больше батареи."
                 }
               },
               "other" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Ваше устройство имеет %lld ядер. Увеличение числа параллельных задач может ускорить шифрование, но потребляет больше батареи."
+                  "value" : "Ваше устройство имеет **%lld ядер**. Увеличение числа параллельных задач может **ускорить шифрование**, но потребляет больше батареи."
                 }
               }
             }
@@ -882,25 +1429,25 @@
               "few" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Ваш пристрій має %lld ядра. Збільшення кількості паралельних завдань може прискорити шифрування, але може витрачати більше батареї."
+                  "value" : "Ваш пристрій має **%lld ядра**. Збільшення кількості паралельних завдань може **прискорити шифрування**, але може витрачати більше батареї."
                 }
               },
               "many" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Ваш пристрій має %lld ядер. Збільшення кількості паралельних завдань може прискорити шифрування, але може витрачати більше батареї."
+                  "value" : "Ваш пристрій має **%lld ядер**. Збільшення кількості паралельних завдань може **прискорити шифрування**, але може витрачати більше батареї."
                 }
               },
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Ваш пристрій має %lld ядро. Збільшення кількості паралельних завдань може прискорити шифрування, але може витрачати більше батареї."
+                  "value" : "Ваш пристрій має **%lld ядро**. Збільшення кількості паралельних завдань може **прискорити шифрування**, але може витрачати більше батареї."
                 }
               },
               "other" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "Ваш пристрій має %lld ядер. Збільшення кількості паралельних завдань може прискорити шифрування, але може витрачати більше батареї."
+                  "value" : "Ваш пристрій має **%lld ядер**. Збільшення кількості паралельних завдань може **прискорити шифрування**, але може витрачати більше батареї."
                 }
               }
             }
@@ -917,10 +1464,34 @@
             "value" : "Parallelism"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paralelismo"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parallélisme"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parallelismo"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "並列処理"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "პარალელიზმი"
           }
         },
         "ru" : {
@@ -937,6 +1508,324 @@
         }
       }
     },
+    "CryptoSettings.Salt.instructions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Salt** is random data added to your password before encryption. It makes the result **unique** even if the password is the same, protecting against reuse attacks and password cracking. The **longer** the salt, the **stronger** the protection — harder to guess, harder to break."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La **sal** es un dato aleatorio que se añade a tu contraseña antes del cifrado.  \nHace que el resultado sea **único** incluso si la contraseña es la misma, protegiendo contra ataques de reutilización y descifrado de contraseñas.  \nCuanto **más larga** sea la sal, **mayor** será la protección — más difícil de adivinar, más difícil de romper."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le **sel** est une donnée aléatoire ajoutée à votre mot de passe avant le chiffrement. Il rend le résultat **unique** même si le mot de passe est le même. Il protège contre les attaques de réutilisation et le cracking du mot de passe. **Plus le sel est long, plus la protection est forte** — plus difficile à deviner, plus difficile à casser."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il **sale** è un dato casuale aggiunto alla password prima della cifratura. Rende il risultato **unico** anche se la password è la stessa. Protegge da attacchi di riutilizzo e cracking della password. **Più lungo è il sale, più forte è la protezione** — più difficile da indovinare, più difficile da rompere."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**ソルト**は、暗号化前にパスワードに追加されるランダムなデータです。 同じパスワードでも結果を**ユニーク**にし、再利用攻撃やパスワード解読から保護します。 **ソルトが長いほど保護は強く**なり — 推測や解読が難しくなります。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**მარილი** არის შემთხვევითი მონაცემები, რომელიც დაემატება პაროლს შიფრაციის წინ. ეს ხდის შედეგს **უნიკალურად**, მიუხედავად პაროლის სიდიდისა, იცავს ხელახლა გამოყენების შეტევებისგან და პაროლის გატეხვისგან. **რაც უფრო გრძელია მარილი, მით უფრო ძლიერი დაცვა** — რთულია გაუსვლელი, რთულია გატეხვა."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Соль** — это случайные данные, которые добавляются к паролю перед шифрованием. Она делает результат **уникальным** даже при одинаковом пароле, защищая от атак повторного использования и взлома паролей. **Чем длиннее соль, тем сильнее защита** — труднее угадать, труднее взломать."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Сіль** — це випадкові дані, які додаються до вашого пароля перед шифруванням. Вона робить результат **унікальним** навіть тоді, коли пароль однаковий, захищаючи від атак повторного використання та підбору паролів. Чим **довша** сіль, тим **сильніший захист** — важче вгадати, важче зламати."
+          }
+        }
+      }
+    },
+    "CryptoSettings.Salt.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salt"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sal"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sel"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sale"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ソルト"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მარილი"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Соль"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сіль"
+          }
+        }
+      }
+    },
+    "CryptoSettings.Security.passwordPlaceholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contraseña"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mot de passe"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワード"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "პაროლი"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пароль"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пароль"
+          }
+        }
+      }
+    },
+    "CryptoSettings.Security.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Security"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seguridad"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sécurité"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sicurezza"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "セキュリティ"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "უსაფრთხოება"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безопасность"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безпека"
+          }
+        }
+      }
+    },
+    "CryptoSettings.Security.Void.subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Secret"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Secreto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Secret"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segreto"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "秘密"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "საიდუმლო"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Секрет"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Секрет"
+          }
+        }
+      }
+    },
+    "CryptoSettings.Security.Void.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        }
+      }
+    },
     "CryptoSettings.strong" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -946,10 +1835,34 @@
             "value" : "Strong"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuerte"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fort"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forte"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "強力"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ძლიერი"
           }
         },
         "ru" : {
@@ -972,25 +1885,49 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Data becomes inaccessible after the chosen time."
+            "value" : "**Data becomes inaccessible** after the chosen time."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los **datos se vuelven inaccesibles** después del tiempo seleccionado."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les **données deviennent inaccessibles** après le temps choisi."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**I dati diventano inaccessibili** dopo il tempo scelto."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "選択した時間が経過するとデータにアクセスできなくなります。"
+            "value" : "**データは選択した時間後にアクセスできなくなります**。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**მონაცემები ვერ იქნება ხელმისაწვდომი** შერჩეული დროის გასვლის შემდეგ."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Данные становятся недоступными после выбранного времени."
+            "value" : "**Данные становятся недоступными** после выбранного времени."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Дані стають недоступними після обраного часу."
+            "value" : "**Дані стають недоступними** після обраного часу."
           }
         }
       }
@@ -1004,10 +1941,34 @@
             "value" : "Set Timer"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Establecer temporizador"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Définir le minuteur"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Imposta timer"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "タイマーを設定"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დააყენეთ ტაიმერი"
           }
         },
         "ru" : {
@@ -1033,10 +1994,34 @@
             "value" : "Timer"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temporizador"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minuteur"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "タイマー"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ტაიმერი"
           }
         },
         "ru" : {
@@ -1062,10 +2047,34 @@
             "value" : "Weak"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Débil"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Faible"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Debole"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "弱い"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "სუსტი"
           }
         },
         "ru" : {
@@ -1082,6 +2091,9 @@
         }
       }
     },
+    "Number %@" : {
+
+    },
     "Settings.AboutApp.PrivacyPolicy.title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -1091,10 +2103,34 @@
             "value" : "Privacy Policy"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Política de privacidad"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Politique de confidentialité"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Politica sulla privacy"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "プライバシーポリシー"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "კონფიდენციალურობის პოლიტიკა"
           }
         },
         "ru" : {
@@ -1120,10 +2156,34 @@
             "value" : "About the Project"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre el proyecto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos du projet"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sul progetto"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "プロジェクトについて"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "პროექტის შესახებ"
           }
         },
         "ru" : {
@@ -1149,10 +2209,34 @@
             "value" : "Terms of Use"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Términos de uso"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditions d’utilisation"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termini di utilizzo"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "利用規約"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "გამოყენების წესები"
           }
         },
         "ru" : {
@@ -1178,10 +2262,34 @@
             "value" : "About the App"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de la aplicación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos de l’application"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sull’app"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "アプリについて"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "აპლიკაციის შესახებ"
           }
         },
         "ru" : {
@@ -1207,10 +2315,34 @@
             "value" : "Restore Purchases"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar compras"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurer les achats"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ripristina acquisti"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "購入を復元"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ყიდვების აღდგენა"
           }
         },
         "ru" : {
@@ -1236,10 +2368,34 @@
             "value" : "Leave a Review on the App Store"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dejar una reseña en el App Store"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laisser un avis sur l’App Store"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lascia una recensione su App Store"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "App Storeでレビューを残す"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "კომენტარის დატოვება App Store-ზე"
           }
         },
         "ru" : {
@@ -1265,10 +2421,34 @@
             "value" : "Subscription"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suscripción"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abbonamento"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "サブスクリプション"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "წევრობა"
           }
         },
         "ru" : {
@@ -1294,10 +2474,34 @@
             "value" : "Access"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acceso"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accès"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesso"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "アクセス"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "წვდომა"
           }
         },
         "ru" : {
@@ -1323,10 +2527,34 @@
             "value" : "App Version"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versión de la aplicación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Version de l’application"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versione app"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "アプリのバージョン"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "აპლიკაციის ვერსია"
           }
         },
         "ru" : {
@@ -1352,10 +2580,34 @@
             "value" : "Dark Mode"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo oscuro"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mode sombre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modalità scura"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ダークモード"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მუქი რეჟიმი"
           }
         },
         "ru" : {
@@ -1381,10 +2633,34 @@
             "value" : "Haptics"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hápticos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retour haptique"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vibrazione"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ハプティクス"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ვიბრაცია"
           }
         },
         "ru" : {
@@ -1410,10 +2686,34 @@
             "value" : "Yes"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sí"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oui"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sì"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "はい"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დიახ"
           }
         },
         "ru" : {
@@ -1439,10 +2739,34 @@
             "value" : "No"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Non"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "いいえ"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "არა"
           }
         },
         "ru" : {
@@ -1468,10 +2792,34 @@
             "value" : "Do you want to change the app language?"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Deseas cambiar el idioma de la aplicación?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Voulez-vous changer la langue de l’application ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vuoi cambiare la lingua dell’app?"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "アプリの言語を変更しますか？"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "გსურთ შეცვალოთ აპლიკაციის ენა?"
           }
         },
         "ru" : {
@@ -1497,10 +2845,34 @@
             "value" : "Change Language"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar idioma"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Changer la langue"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambia lingua"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "言語を変更"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ენის შეცვლა"
           }
         },
         "ru" : {
@@ -1526,10 +2898,34 @@
             "value" : "Language"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idioma"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langue"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lingua"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "言語"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ენა"
           }
         },
         "ru" : {
@@ -1555,10 +2951,34 @@
             "value" : "Sounds"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sonidos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sons"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suoni"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "サウンド"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ხმები"
           }
         },
         "ru" : {
@@ -1584,10 +3004,34 @@
             "value" : "General"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración general"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Général"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generale"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "一般設定"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ძირითადი პარამეტრები"
           }
         },
         "ru" : {
@@ -1613,10 +3057,34 @@
             "value" : "Settings"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuración"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "設定"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "პარამეტრები"
           }
         },
         "ru" : {
@@ -1642,10 +3110,34 @@
             "value" : "%lld h"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld 時"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld სთ"
           }
         },
         "ru" : {
@@ -1671,10 +3163,34 @@
             "value" : "%lld m"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld m"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld m"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld m"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld 分"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld წთ"
           }
         },
         "ru" : {

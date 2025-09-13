@@ -19,10 +19,10 @@ struct LanguageView: View {
     }
         
     var body: some View {
-        CustomScrollView() { isLarge in
-            CustomNavigationBar(title: vm.title, isLarge: isLarge)
+        CustomScrollView() { isLargeNavBar in
+            CustomNavigationBar(title: vm.title, isLargeNavBar: isLargeNavBar)
             Spacer()
-        } scrollView: {
+        } scrollView: { _ in
             CustomForm {
                     ForEach(Array(Language.allCases.enumerated()), id: \.element.id) { index, language in
                         VStack(spacing: 0) {

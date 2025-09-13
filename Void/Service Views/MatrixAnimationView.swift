@@ -85,8 +85,8 @@ struct MatrixAnimationView: View {
                     let letterText = Text(String(letter))
                         .font(.system(size: letterSize, weight: .light, design: .monospaced))
                         .foregroundStyle(color)
-                        
-                        
+                    
+                    
                     
                     context.draw(letterText, at: CGPoint(x: x, y: y))
                 }
@@ -148,7 +148,6 @@ struct MatrixAnimationView: View {
         }
     }
 }
-
 
 // MARK: - MaskView
 fileprivate struct MaskView: View {

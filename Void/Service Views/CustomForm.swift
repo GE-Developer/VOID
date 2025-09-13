@@ -12,9 +12,11 @@ struct CustomForm<Content: View, HeaderContent: View>: View {
     private let headerContent: HeaderContent
     private let content: Content
     
-    init(headerText: String? = nil,
-         @ViewBuilder headerContent: () -> HeaderContent = { EmptyView() },
-         @ViewBuilder content: () -> Content) {
+    init(
+        headerText: String? = nil,
+        @ViewBuilder headerContent: () -> HeaderContent = { EmptyView() },
+        @ViewBuilder content: () -> Content
+    ) {
         self.headerText = headerText
         self.headerContent = headerContent()
         self.content = content()

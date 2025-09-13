@@ -8,7 +8,7 @@
 import Foundation
 //import Combine
 
-struct AES256Parameters {
+struct AES256Parameters: Equatable {
     var password: String
     var salt: Int
     var iterations: UInt16 
@@ -38,7 +38,7 @@ struct Message: Identifiable {
     let id = UUID()
     let timestamp: Date
     let originalText: String
-    let resultText: String
+    let encryptedText: String
     let encryptionMode: CryptoAction
 }
 
@@ -59,6 +59,22 @@ final class AES256EncryptionViewModel: ObservableObject {
     
     @Published private(set) var messages: [Message] = []
     
+    let introMessages: [Message] = [
+        Message(
+            timestamp: Date(),
+            originalText: L10n("Cryptography.AES-256.EncryptedIntroMessage.originalText"),
+            encryptedText: L10n("Cryptography.AES-256.EncryptedIntroMessage.encryptedText"),
+            encryptionMode: .encrypt
+        ),
+        Message(
+            timestamp: Date(),
+            originalText: L10n("Cryptography.AES-256.DecryptedIntroMessage.originalText"),
+            encryptedText: L10n("Cryptography.AES-256.DecryptedIntroMessage.encryptedText"),
+            encryptionMode: .decrypt
+        )
+    ]
+    
+    
     var placeholder: String {
         guard encryptionParameters.password != "" else {
             return L10n("Cryptography.Placeholder.default")
@@ -74,12 +90,16 @@ final class AES256EncryptionViewModel: ObservableObject {
     let encryptionTitle = L10n("Cryptography.encryption")
     let decryptionTitle = L10n("Cryptography.decryption")
     
+    let headetText = L10n("Cryptography.AES-256.instructions")
+    
     @Published var text = ""
-    @Published var resultText = ""
+//    @Published var resultText = ""
     
     @Published var currentMode: CryptoAction = .encrypt
     
     @Published private(set) var isEncrypting = false
+    
+  
     
     private var currentTask: Task<Void, Never>?
     
@@ -107,17 +127,17 @@ final class AES256EncryptionViewModel: ObservableObject {
                 )
 
                 await MainActor.run {
-                    self.resultText = result
+//                    self.resultText = result
                     self.messages.append(Message(
                         timestamp: Date(),
                         originalText: userText,
-                        resultText: result,
+                        encryptedText: result,
                         encryptionMode: self.currentMode
                     ))
                 }
             } catch {
                 await MainActor.run {
-                    self.resultText = "Ошибка: \(error.localizedDescription)"
+//                    self.resultText = "Ошибка: \(error.localizedDescription)"
                 }
             }
         }
@@ -143,17 +163,17 @@ final class AES256EncryptionViewModel: ObservableObject {
                 return string
             }.value
             
-            resultText = result
+//            resultText = result
             let message = Message(
                 timestamp: Date(),
-                originalText: userText,
-                resultText: resultText,
+                originalText: result,
+                encryptedText: userText,
                 encryptionMode: currentMode
             )
             messages.append(message)
 
         } catch {
-            resultText = "Ошибка: \(error.localizedDescription)"
+//            resultText = "Ошибка: \(error.localizedDescription)"
         }
 
         isEncrypting = false

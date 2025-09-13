@@ -16,8 +16,8 @@ struct CustomToggleRow: View {
     
     init(isOff: Binding<Bool>, icon: Image, title: String) {
         _isOff = isOff
-        self.title = title
         self.icon = icon
+        self.title = title
     }
     
     var body: some View {

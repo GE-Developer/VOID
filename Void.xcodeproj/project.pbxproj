@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1161212E6B66C500A7894D /* String + Ext.swift */; };
+		1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1161232E73009900A7894D /* HeaderTextView.swift */; };
+		1F1161262E747C6200A7894D /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1161252E747C6200A7894D /* CustomScrollView.swift */; };
 		1F12FE482E4264260023DB69 /* CustomMessageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */; };
 		1F12FE4B2E4278210023DB69 /* CryptoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12FE4A2E4278210023DB69 /* CryptoAction.swift */; };
 		1F12FE4F2E42789C0023DB69 /* CryptoActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12FE4E2E42789C0023DB69 /* CryptoActionButtons.swift */; };
@@ -17,6 +20,8 @@
 		1F1452592E608E9200F8A553 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1452582E608E9200F8A553 /* SettingsView.swift */; };
 		1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14525B2E6092D200F8A553 /* LanguageView.swift */; };
 		1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */; };
+		1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */; };
+		1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDE2E75835500DB44CE /* View + Ext.swift */; };
 		1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */; };
 		1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE02E634007007B4DDD /* SoundManager.swift */; };
 		1F7D9EE32E63402F007B4DDD /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */; };
@@ -26,7 +31,6 @@
 		1F8DDBC12E366E11005734CD /* AES256EncryptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBB22E366E11005734CD /* AES256EncryptionView.swift */; };
 		1F8DDBC42E366E11005734CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBB62E366E11005734CD /* HomeView.swift */; };
 		1F8DDBC52E366E11005734CD /* VoidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBB72E366E11005734CD /* VoidApp.swift */; };
-		1F8DDBC82E366E11005734CD /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBBE2E366E11005734CD /* CustomScrollView.swift */; };
 		1F8DDBC92E366E11005734CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8DDBBC2E366E11005734CD /* Assets.xcassets */; };
 		1F8DDBE82E36785E005734CD /* Image + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBE62E36785E005734CD /* Image + Ext.swift */; };
 		1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBE52E36785E005734CD /* Color + Ext.swift */; };
@@ -51,6 +55,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F1161212E6B66C500A7894D /* String + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Ext.swift"; sourceTree = "<group>"; };
+		1F1161232E73009900A7894D /* HeaderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextView.swift; sourceTree = "<group>"; };
+		1F1161252E747C6200A7894D /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
 		1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageTextField.swift; sourceTree = "<group>"; };
 		1F12FE4A2E4278210023DB69 /* CryptoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAction.swift; sourceTree = "<group>"; };
 		1F12FE4E2E42789C0023DB69 /* CryptoActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoActionButtons.swift; sourceTree = "<group>"; };
@@ -61,6 +68,8 @@
 		1F1452582E608E9200F8A553 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1F14525B2E6092D200F8A553 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
+		1F64ADDE2E75835500DB44CE /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
 		1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		1F7D9EE02E634007007B4DDD /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
@@ -71,7 +80,6 @@
 		1F8DDBB62E366E11005734CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1F8DDBB72E366E11005734CD /* VoidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidApp.swift; sourceTree = "<group>"; };
 		1F8DDBBC2E366E11005734CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1F8DDBBE2E366E11005734CD /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
 		1F8DDBE52E36785E005734CD /* Color + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBE62E36785E005734CD /* Image + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -197,8 +205,10 @@
 			isa = PBXGroup;
 			children = (
 				1F8DDBE52E36785E005734CD /* Color + Ext.swift */,
+				1F1161212E6B66C500A7894D /* String + Ext.swift */,
 				1F8DDBE62E36785E005734CD /* Image + Ext.swift */,
 				1F8DDCE02E396473005734CD /* Gradient + Ext.swift */,
+				1F64ADDE2E75835500DB44CE /* View + Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -215,20 +225,22 @@
 		1F8DDBEC2E367897005734CD /* Service Views */ = {
 			isa = PBXGroup;
 			children = (
-				1F8DDBBE2E366E11005734CD /* CustomScrollView.swift */,
+				1F1161252E747C6200A7894D /* CustomScrollView.swift */,
+				1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */,
 				1F8DDBF02E367A58005734CD /* CustomNavigationBar.swift */,
 				1F8DDCDA2E3963C3005734CD /* CustomForm.swift */,
 				1F8DDCDC2E39641A005734CD /* CustomButtonRow.swift */,
 				1F8DDCDE2E396454005734CD /* CustomToggleRow.swift */,
-				1F8DDCE42E3A1C01005734CD /* CustomSecureFieldRow.swift */,
 				1F8DDCE62E3A2C55005734CD /* CustomSliderRow.swift */,
 				1F8DDCE82E3A7843005734CD /* CustomFormContentText.swift */,
 				1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */,
 				1F8DDCF22E3B96E3005734CD /* TimerPicker.swift */,
-				1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */,
 				1F12FE4E2E42789C0023DB69 /* CryptoActionButtons.swift */,
-				1F12FE502E42DEDD0023DB69 /* MessageView.swift */,
 				1F7D9EF82E653107007B4DDD /* MatrixAnimationView.swift */,
+				1F1161232E73009900A7894D /* HeaderTextView.swift */,
+				1F12FE502E42DEDD0023DB69 /* MessageView.swift */,
+				1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */,
+				1F8DDCE42E3A1C01005734CD /* CustomSecureFieldRow.swift */,
 			);
 			path = "Service Views";
 			sourceTree = "<group>";
@@ -303,6 +315,10 @@
 				ru,
 				uk,
 				ja,
+				es,
+				ka,
+				it,
+				fr,
 			);
 			mainGroup = 1FB32A282E34FA16003E4B54;
 			minimizedProjectReferenceProxies = 1;
@@ -341,10 +357,12 @@
 				1F8DDCE72E3A2C55005734CD /* CustomSliderRow.swift in Sources */,
 				1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */,
 				1F8DDBC12E366E11005734CD /* AES256EncryptionView.swift in Sources */,
+				1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */,
 				1F8DDBF12E367A58005734CD /* CustomNavigationBar.swift in Sources */,
 				1F8DDCE32E39676C005734CD /* ContentView1.swift in Sources */,
 				1F8DDCE12E396473005734CD /* Gradient + Ext.swift in Sources */,
 				1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */,
+				1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */,
 				1F7D9EE32E63402F007B4DDD /* HapticsManager.swift in Sources */,
 				1F8DDCF52E3C03D9005734CD /* AES256SettingsViewModel.swift in Sources */,
 				1F8DDCF32E3B96E3005734CD /* TimerPicker.swift in Sources */,
@@ -356,15 +374,17 @@
 				1F8DDBC52E366E11005734CD /* VoidApp.swift in Sources */,
 				1F1452552E608D2D00F8A553 /* LanguageManager.swift in Sources */,
 				1F8DDBFA2E38123F005734CD /* AES256SettingsView.swift in Sources */,
+				1F1161262E747C6200A7894D /* CustomScrollView.swift in Sources */,
 				1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */,
 				1F7D9EF92E653107007B4DDD /* MatrixAnimationView.swift in Sources */,
 				1F7D9EE52E6342DA007B4DDD /* SettingsViewModel.swift in Sources */,
 				1F1452592E608E9200F8A553 /* SettingsView.swift in Sources */,
 				1F7D9EE92E63447D007B4DDD /* LanguageViewModel.swift in Sources */,
 				1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */,
+				1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */,
 				1F8DDCE92E3A7843005734CD /* CustomFormContentText.swift in Sources */,
+				1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */,
 				1FA2FBEB2E58BB510072905D /* PasswordManager.swift in Sources */,
-				1F8DDBC82E366E11005734CD /* CustomScrollView.swift in Sources */,
 				1F12FE482E4264260023DB69 /* CustomMessageTextField.swift in Sources */,
 				1F1452532E6080F800F8A553 /* Language.swift in Sources */,
 				1F8DDCDD2E39641A005734CD /* CustomButtonRow.swift in Sources */,

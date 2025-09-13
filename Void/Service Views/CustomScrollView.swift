@@ -10,213 +10,160 @@ import SwiftUI
 struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     @Environment(\.dismiss) private var dismiss
     
-    @MainActor @State private var minY = 0.0
-    @State private var isBackButtonLongPressed = false
+    @State private var offsetY = 0.0
+    @State private var headerHeight = 0.0
     
-    private var scrollBehavior: CustomScrollTargetBehaviourForScrollView {
-        CustomScrollTargetBehaviourForScrollView(
-            type: type,
-            minY: minY,
-            headerHeight: headerHeight,
-            largeNavBarHeight: largeNavBarHeight,
-            smallNavBarHeight: smallNavBarHeight
-        )
+    private var scrollBehavior: TargetBehaviour {
+        .init(headerHeight, largeNavBarHeight, smallNavBarHeight)
     }
-    private var isLarge: Bool {
-        switch type {
-        case .withEmptyHeaderView:
-            -minY < 8
-        case .withSearchField:
-            -minY < headerHeight / 2 + 8
-        case .withLargeHeaderView:
-            -minY < headerHeight + 8 + largeNavBarHeight - smallNavBarHeight
-        }
+    
+    private var isLargeNavBar: Bool {
+        -offsetY < 8
     }
     
     private var scrollMargins: Double {
-        min(max(minY + 2, -headerHeight - smallNavBarHeight + 8 + 5),2)
+        min(max(offsetY + 2, -headerHeight - smallNavBarHeight + 8 + 5),2)
     }
     
-    private let headerHeight: Double
     private let withBackButton: Bool
-    private let type: ViewType
-    
     private let largeNavBarHeight = 70.0
     private let smallNavBarHeight = 50.0
     
-    @ViewBuilder let titleHStackView: (_ isLarge: Bool) -> Title
-    @ViewBuilder let headerView: (_ minY: CGFloat) -> Header
-    @ViewBuilder let scrollView: () -> Scroll
+    @ViewBuilder private let titleHStackView: (_ isLargeNavBar: Bool) -> Title
+    @ViewBuilder private let headerView: (_ minY: CGFloat) -> Header
+    @ViewBuilder private let scrollView: (_ proxy: ScrollViewProxy) -> Scroll
     
-    init(withBackButton: Bool = true,
-         headerHight: Double = 0,
-         type: ViewType = .withEmptyHeaderView,
-         @ViewBuilder titleHStackView: @escaping (_ isLarge: Bool) -> Title,
-         @ViewBuilder headerView: @escaping (_ minY: CGFloat) -> Header = { _ in EmptyView() },
-         @ViewBuilder scrollView: @escaping () -> Scroll = { EmptyView() }) {
+    init(
+        withBackButton: Bool = true,
+        @ViewBuilder titleHStackView: @escaping (_ isLargeNavBar: Bool) -> Title,
+        @ViewBuilder headerView: @escaping (_ minY: CGFloat) -> Header = { _ in EmptyView() },
+        @ViewBuilder scrollView: @escaping (_ proxy: ScrollViewProxy) -> Scroll
+    ) {
+        self.withBackButton = withBackButton
         self.titleHStackView = titleHStackView
         self.headerView = headerView
-        self.type = type
         self.scrollView = scrollView
-        self.withBackButton = withBackButton
-        self.headerHeight = headerHight
-        
-//        UIScrollView.appearance().delaysContentTouches = false
     }
     
     var body: some View {
+        customScrollView
+    }
+}
+
+// MARK: - Builder
+extension CustomScrollView {
+    private var customScrollView: some View {
         ZStack(alignment: .top) {
-            Color.main.background
-                .ignoresSafeArea()
-                .zIndex(0)
-            
-            scrollTitleView
-                .zIndex(3)
-            
-            headerView(minY)
-                .frame(height: headerHeight)
-                .safeAreaPadding(.top, largeNavBarHeight + 8)
-                .safeAreaPadding(.horizontal)
-                .zIndex(2)
-            
-            ScrollView {
-                geometryReader
-                scrollView()
-            }
-            .safeAreaPadding(.horizontal)
-            .safeAreaPadding(.top, largeNavBarHeight + headerHeight + 16)
-            .scrollDismissesKeyboard(.immediately)
-            .scrollTargetBehavior(scrollBehavior)
-            .contentMargins(.top, scrollMargins, for: .scrollIndicators)
-            .zIndex(1)
+            background.zIndex(0)
+            navigationBar.zIndex(3)
+            header.zIndex(2)
+            scroll.zIndex(1)
         }
-        .ignoresSafeArea(.keyboard)
         .toolbarVisibility(.hidden, for: .navigationBar)
     }
     
-    private var geometryReader: some View {
-        GeometryReader { proxy in
-            Color.clear
-                .preference(
-                    key: MinYPreferenceKey.self,
-                    value: proxy.frame(in: .scrollView).minY
-                )
-        }
-        .frame(height: 0)
-        .onPreferenceChange(MinYPreferenceKey.self) { value in
-            Task { @MainActor in
-                minY = value
+    private var background: some View {
+        Color.main.background
+            .ignoresSafeArea()
+    }
+    
+    @ViewBuilder
+    private var backButton: some View {
+        if withBackButton {
+            Button {
+                dismiss()
+            } label: {
+                Image.system.back
+                    .fontWeight(.light)
+                    .padding(10)
+                    .foregroundStyle(Color.navigation.backButton)
+                    .frame(width: 20)
+                    .background { Color.clear }
             }
         }
     }
     
-    private var scrollTitleView: some View {
+    private var navigationBar: some View {
         ZStack {
-            ZStack {
-                // ЧЕРНЫЙ ФОН
-                UnevenRoundedRectangle(
-                    bottomLeadingRadius: isLarge ? 0 : 10,
-                    bottomTrailingRadius: isLarge ? 0 : 10
-                )
-                .ignoresSafeArea()
-                .foregroundStyle(Color.black)
-                .opacity(isLarge ? 1 : 0)
-                .shadow(color: Color.navigation.navBarShadow, radius: isLarge ? 0 : 5)
-
-                // МАТЕРИАЛ
-                UnevenRoundedRectangle(
-                    bottomLeadingRadius: isLarge ? 0 : 10,
-                    bottomTrailingRadius: isLarge ? 0 : 10
-                )
-                .ignoresSafeArea()
-                .foregroundStyle(.ultraThinMaterial)
-                .opacity(isLarge ? 0 : 1)
-                .shadow(color: Color.navigation.navBarShadow, radius: isLarge ? 0 : 5)
-            }
-            .animation(.easeInOut(duration: 0.3), value: isLarge)
+            UnevenRoundedRectangle(
+                bottomLeadingRadius: isLargeNavBar ? 0 : 10,
+                bottomTrailingRadius: isLargeNavBar ? 0 : 10
+            )
+            .ignoresSafeArea()
+            .foregroundStyle(.ultraThinMaterial)
+            .opacity(isLargeNavBar ? 0 : 1)
+            .shadow(color: Color.navigation.navBarShadow, radius: isLargeNavBar ? 0 : 5)
             
             HStack {
-                if withBackButton {
-                    backButton
-                }
-                titleHStackView(isLarge)
+                backButton
+                titleHStackView(isLargeNavBar)
             }
             .padding(.horizontal)
         }
-        .frame(height: isLarge ? largeNavBarHeight : smallNavBarHeight)
-        .animation(.easeOut, value: isLarge)
+        .frame(height: isLargeNavBar ? largeNavBarHeight : smallNavBarHeight)
+        .animation(.easeOut(duration: 0.2), value: isLargeNavBar)
     }
     
-    private var backButton: some View {
-        Button(action: { dismiss() }) {
-            Image.system.back
-                .fontWeight(.light)
-                .padding(.trailing, 8)
-                .foregroundStyle(Color.navigation.backButton)
-                .frame(width: 20)
+    private var header: some View {
+        headerView(offsetY)
+            .getHeight($headerHeight)
+            .safeAreaPadding(.top, largeNavBarHeight + 8)
+            .safeAreaPadding(.horizontal)
+    }
+    
+    private var geometryReader: some View {
+        GeometryReader { geo in
+            let offset = geo.frame(in: .scrollView(axis: .vertical)).minY
+            Color.clear
+                .onChange(of: offset) {
+                    offsetY = offset
+                }
         }
+        .frame(height: 0)
     }
-}
-
-// MARK: - Configuration
-fileprivate struct MinYPreferenceKey: PreferenceKey {
-    static let defaultValue: CGFloat = 0
     
-    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
-        value = nextValue()
+    private var scroll: some View {
+        ScrollViewReader { proxy in
+            ScrollView {
+                geometryReader
+                scrollView(proxy)
+            }
+        }
+        .safeAreaPadding(.horizontal)
+        .safeAreaPadding(.top, largeNavBarHeight + headerHeight + 16)
+        .scrollDismissesKeyboard(.interactively)
+        .scrollTargetBehavior(scrollBehavior)
+        .contentMargins(.top, scrollMargins, for: .scrollIndicators)
     }
 }
 
-// MARK: - Scroll Behavior
-fileprivate struct CustomScrollTargetBehaviourForScrollView: ScrollTargetBehavior {
-    let type: ViewType
-    let minY: Double
-    let headerHeight: Double
-    let largeNavBarHeight: Double
-    let smallNavBarHeight: Double
+// MARK: - ScrollTargetBehavior
+fileprivate struct TargetBehaviour: ScrollTargetBehavior {
+    private let headerHeight: Double
+    private let largeNavBarHeight: Double
+    private let smallNavBarHeight: Double
+    
+    init(
+        _ headerHeight: Double,
+        _ largeNavBarHeight: Double,
+        _ smallNavBarHeight: Double
+    ) {
+        self.headerHeight = headerHeight
+        self.largeNavBarHeight = largeNavBarHeight
+        self.smallNavBarHeight = smallNavBarHeight
+    }
     
     func updateTarget(_ target: inout ScrollTarget, context: TargetContext) {
         let fullHeader = headerHeight + 8 + largeNavBarHeight - smallNavBarHeight
         let halfHeader = headerHeight / 2 + 8 + largeNavBarHeight - smallNavBarHeight
-        let quarterHeader = headerHeight / 4 + 8
         
-        switch type {
-        case .withSearchField:
-            switch target.rect.minY {
-            case 0 ..< quarterHeader:
-                target.rect.origin = .zero
-            case quarterHeader ..< halfHeader:
-                target.rect.origin = .init(x: 0, y: halfHeader)
-            case halfHeader + 0.1 ..< fullHeader - headerHeight / 7:
-                target.rect.origin = .init(x: 0, y: halfHeader)
-            case fullHeader - headerHeight / 7 + 0.1 ..< fullHeader + 10:
-                target.rect.origin = .init(x: 0, y: fullHeader + 10)
-            default:
-                break
-            }
-        case .withLargeHeaderView:
-            switch target.rect.minY {
-            case 0 ..< halfHeader:
-                target.rect.origin = .zero
-            case halfHeader ..< fullHeader:
-                target.rect.origin = .init(x: 0, y: fullHeader)
-            default:
-                break
-            }
-        case .withEmptyHeaderView:
-            switch target.rect.minY {
-            case 0 ..< 8:
-                target.rect.origin = .zero
-            default:
-                break
-            }
+        switch target.rect.minY {
+        case 0 ..< halfHeader:
+            target.rect.origin = .zero
+        case halfHeader ..< fullHeader:
+            target.rect.origin = .init(x: 0, y: fullHeader)
+        default:
+            break
         }
     }
-}
-
-// MARK: - Enum
-enum ViewType {
-    case withSearchField
-    case withLargeHeaderView
-    case withEmptyHeaderView
 }

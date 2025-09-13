@@ -7,38 +7,16 @@
 
 import SwiftUI
 
-struct CustomButtonRow<Destination: View>: View {
+struct CustomButtonRow: View {
     private let icon: Image?
     private let title: String
     private let subtitle: String?
     private let additionalTitle: String?
     private let withCheckmark: Bool
     private let isCritical: Bool
-
-    private let destination: Destination?
-    private let action: (() -> Void)?
-
     private let isLink: Bool
 
-    init(
-        icon: Image? = nil,
-        title: String,
-        subtitle: String? = nil,
-        additionalTitle: String? = nil,
-        withCheckmark: Bool = false,
-        isCritical: Bool = false,
-        destination: Destination
-    ) {
-        self.icon = icon
-        self.title = title
-        self.subtitle = subtitle
-        self.additionalTitle = additionalTitle
-        self.withCheckmark = withCheckmark
-        self.isCritical = isCritical
-        self.destination = destination
-        self.action = nil
-        self.isLink = true
-    }
+    private let action: () -> Void
 
     init(
         icon: Image? = nil,
@@ -47,8 +25,8 @@ struct CustomButtonRow<Destination: View>: View {
         additionalTitle: String? = nil,
         withCheckmark: Bool = false,
         isCritical: Bool = false,
-        action: @escaping () -> Void,
-        destination: Destination = EmptyView()
+        isLink: Bool = false,
+        action: @escaping () -> Void
     ) {
         self.icon = icon
         self.title = title
@@ -56,12 +34,10 @@ struct CustomButtonRow<Destination: View>: View {
         self.additionalTitle = additionalTitle
         self.withCheckmark = withCheckmark
         self.isCritical = isCritical
-        self.destination = nil
+        self.isLink = isLink
         self.action = action
-        self.isLink = false
     }
 
-    
     var body: some View {
         customButtonRow
     }
@@ -70,18 +46,10 @@ struct CustomButtonRow<Destination: View>: View {
 // MARK: - Builder
 extension CustomButtonRow {
     private var customButtonRow: some View {
-        Group {
-            if isLink, let destination {
-                NavigationLink(destination: destination) {
-                    button
-                }
-            } else if let action {
-                Button(action: action) {
-                    button
-                }
-                .disabled(withCheckmark)
-            }
+        Button(action: action) {
+            button
         }
+        .disabled(withCheckmark)
     }
     
     private var button: some View {

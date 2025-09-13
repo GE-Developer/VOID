@@ -24,12 +24,12 @@ struct HomeView: View {
     var body: some View {
         VStack {
             NavigationLink {
-                AES256EncryptionView()
+                NavigationLazyView(AES256EncryptionView())
             } label: {
                 Text(vm.cryptoOneTitle)
             }
             NavigationLink {
-                SettingsView()
+                NavigationLazyView(SettingsView())
             } label: {
                 Text(vm.settingsTitle)
             }

@@ -9,6 +9,9 @@ import SwiftUI
 
 struct SettingsView: View {
     @StateObject private var vm = SettingsViewModel()
+    @State private var languageViewPresented = false
+    @State private var subscriptionViewPresented = false
+    @State private var projectViewPresented = false
 
     init() {
         UIScrollView.appearance().delaysContentTouches = false
@@ -16,16 +19,25 @@ struct SettingsView: View {
         
     var body: some View {
         settingsView
+            .navigationDestination(isPresented: $languageViewPresented) {
+                LanguageView()
+            }
+            .navigationDestination(isPresented: $subscriptionViewPresented) {
+                ContentView1()
+            }
+            .navigationDestination(isPresented: $projectViewPresented) {
+                ContentView1()
+            }
     }
 }
 
 // MARK: - BUILDER
 extension SettingsView {
     private var settingsView: some View {
-        CustomScrollView { isLarge in
-            CustomNavigationBar(title: vm.title, isLarge: isLarge)
+        CustomScrollView { isLargeNavBar in
+            CustomNavigationBar(title: vm.title, isLargeNavBar: isLargeNavBar)
             Spacer()
-        } scrollView: {
+        } scrollView: { _ in
             VStack(spacing: 25) {
                 CustomForm(headerText: vm.generalSettingsTitle) {
                     themeToggle
@@ -75,7 +87,8 @@ extension SettingsView {
                     icon: .system.language,
                     title: vm.languageTitle,
                     additionalTitle: vm.language,
-                    destination: LanguageView()
+                    isLink: true,
+                    action: { languageViewPresented.toggle() }
                 )
             } else {
                 CustomButtonRow(
@@ -83,7 +96,8 @@ extension SettingsView {
                     title: vm.languageTitle,
                     subtitle: vm.languageSubtitle,
                     additionalTitle: vm.language,
-                    destination: LanguageView()
+                    isLink: true,
+                    action: { languageViewPresented.toggle() }
                 )
             }
         }
@@ -109,7 +123,8 @@ extension SettingsView {
         CustomButtonRow(
             icon: .system.subscription,
             title: vm.subscriptionTitle,
-            destination: ContentView1()
+            isLink: true,
+            action: { subscriptionViewPresented.toggle() }
         )
     }
     
@@ -126,7 +141,7 @@ extension SettingsView {
             icon: .system.reviewLike,
             title: vm.reviewTitle,
             action: { }
-            )
+        )
     }
     
     private var termsOfUseButton: some View {
@@ -149,7 +164,8 @@ extension SettingsView {
         CustomButtonRow(
             icon: .system.developerTool,
             title: vm.projectTitle,
-            destination: ContentView1()
+            isLink: true,
+            action: { projectViewPresented.toggle() }
         )
     }
     

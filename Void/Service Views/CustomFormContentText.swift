@@ -2,7 +2,7 @@
 //  CustomFormContentText.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 30.07.25.
+//  Created by GE-Developer
 //
 
 import SwiftUI
@@ -15,6 +15,13 @@ struct CustomFormContentText: View {
     }
     
     var body: some View {
+        customFormContentText
+    }
+}
+
+// MARK: - Builder
+extension CustomFormContentText {
+    private var customFormContentText: some View {
         Text(text)
             .foregroundStyle(Gradient.accentGragient)
             .font(.caption)
@@ -24,11 +31,13 @@ struct CustomFormContentText: View {
             .multilineTextAlignment(.trailing)
             .padding(.horizontal, 6)
             .padding(.vertical, 3)
-            .background {
-                RoundedRectangle(cornerRadius: 4)
-                    .stroke(lineWidth: 1)
-                    .foregroundStyle(Gradient.accentGragient)
-                    .opacity(0.7)
-            }
+            .background(background)
+    }
+    
+    private var background: some View {
+        RoundedRectangle(cornerRadius: 4)
+            .stroke(lineWidth: 1)
+            .foregroundStyle(Gradient.accentGragient)
+            .opacity(0.7)
     }
 }

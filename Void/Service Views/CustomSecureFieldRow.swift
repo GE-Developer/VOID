@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CustomSecureFieldRow: View {
     @Binding var password: String
+    
     private let placeholder: String
     
     init(password: Binding<String>, placeholder: String) {

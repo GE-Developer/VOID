@@ -2,7 +2,7 @@
 //  CustomTextRow.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 30.07.25.
+//  Created by GE-Developer
 //
 
 import SwiftUI
@@ -16,12 +16,13 @@ struct CustomTextRow: View {
     
     var body: some View {
         HStack(spacing: 0) {
-            Text(text)
-            .foregroundStyle(Color.main.secondaryText)
-            .font(.caption)
-            .fontDesign(.rounded)
-            .multilineTextAlignment(.leading)
-            .padding(.horizontal)
+            Text(text.asMarkdown)
+                .foregroundStyle(Color.main.secondaryText)
+                .font(.caption)
+                .fontWeight(.thin)
+                .fontDesign(.rounded)
+                .multilineTextAlignment(.leading)
+                .padding(.horizontal)
                 .padding(.vertical, 10)
             Spacer()
         }

@@ -2,7 +2,7 @@
 //  CustomMessageTextField.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 05.08.25.
+//  Created by GE-Developer
 //
 
 import SwiftUI
