@@ -22,6 +22,7 @@
 		1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */; };
 		1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */; };
 		1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDE2E75835500DB44CE /* View + Ext.swift */; };
+		1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7970872E7C4D6B007755F3 /* Sound.swift */; };
 		1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */; };
 		1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE02E634007007B4DDD /* SoundManager.swift */; };
 		1F7D9EE32E63402F007B4DDD /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */; };
@@ -47,7 +48,7 @@
 		1F8DDCE32E39676C005734CD /* ContentView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE22E39676C005734CD /* ContentView1.swift */; };
 		1F8DDCE52E3A1C01005734CD /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE42E3A1C01005734CD /* CustomSecureField.swift */; };
 		1F8DDCE72E3A2C55005734CD /* CustomSliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE62E3A2C55005734CD /* CustomSliderRow.swift */; };
-		1F8DDCE92E3A7843005734CD /* CustomFormContentText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE82E3A7843005734CD /* CustomFormContentText.swift */; };
+		1F8DDCE92E3A7843005734CD /* FormHeaderContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCE82E3A7843005734CD /* FormHeaderContent.swift */; };
 		1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */; };
 		1F8DDCF32E3B96E3005734CD /* TimerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCF22E3B96E3005734CD /* TimerPicker.swift */; };
 		1F8DDCF52E3C03D9005734CD /* AES256SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCF42E3C03D9005734CD /* AES256SettingsViewModel.swift */; };
@@ -70,6 +71,7 @@
 		1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		1F64ADDE2E75835500DB44CE /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
+		1F7970872E7C4D6B007755F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		1F7D9EE02E634007007B4DDD /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
@@ -94,7 +96,7 @@
 		1F8DDCE22E39676C005734CD /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
 		1F8DDCE42E3A1C01005734CD /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
 		1F8DDCE62E3A2C55005734CD /* CustomSliderRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderRow.swift; sourceTree = "<group>"; };
-		1F8DDCE82E3A7843005734CD /* CustomFormContentText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormContentText.swift; sourceTree = "<group>"; };
+		1F8DDCE82E3A7843005734CD /* FormHeaderContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHeaderContent.swift; sourceTree = "<group>"; };
 		1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextRow.swift; sourceTree = "<group>"; };
 		1F8DDCF22E3B96E3005734CD /* TimerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPicker.swift; sourceTree = "<group>"; };
 		1F8DDCF42E3C03D9005734CD /* AES256SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256SettingsViewModel.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				1F12FE4A2E4278210023DB69 /* CryptoAction.swift */,
 				1F1452522E6080F800F8A553 /* Language.swift */,
 				1F1452562E608D8900F8A553 /* AppStorageKey.swift */,
+				1F7970872E7C4D6B007755F3 /* Sound.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -201,7 +204,6 @@
 		1F8DDBDC2E367816005734CD /* AES256 Module */ = {
 			isa = PBXGroup;
 			children = (
-				1F8DDCE22E39676C005734CD /* ContentView1.swift */,
 				1F12FE452E4221AC0023DB69 /* AES256-Encryption */,
 				1F12FE442E4221440023DB69 /* AES256-Settings */,
 			);
@@ -211,8 +213,9 @@
 		1F8DDBDD2E36783C005734CD /* App */ = {
 			isa = PBXGroup;
 			children = (
-				1F8DDBB62E366E11005734CD /* HomeView.swift */,
 				1F8DDBB72E366E11005734CD /* VoidApp.swift */,
+				1F8DDBB62E366E11005734CD /* HomeView.swift */,
+				1F8DDCE22E39676C005734CD /* ContentView1.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -248,7 +251,7 @@
 				1F8DDCDC2E39641A005734CD /* CustomButtonRow.swift */,
 				1F8DDCDE2E396454005734CD /* CustomToggleRow.swift */,
 				1F8DDCE62E3A2C55005734CD /* CustomSliderRow.swift */,
-				1F8DDCE82E3A7843005734CD /* CustomFormContentText.swift */,
+				1F8DDCE82E3A7843005734CD /* FormHeaderContent.swift */,
 				1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */,
 				1F8DDCF22E3B96E3005734CD /* TimerPicker.swift */,
 				1F12FE4E2E42789C0023DB69 /* CryptoActionButtons.swift */,
@@ -398,7 +401,7 @@
 				1F7D9EE92E63447D007B4DDD /* LanguageViewModel.swift in Sources */,
 				1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */,
 				1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */,
-				1F8DDCE92E3A7843005734CD /* CustomFormContentText.swift in Sources */,
+				1F8DDCE92E3A7843005734CD /* FormHeaderContent.swift in Sources */,
 				1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */,
 				1FA2FBEB2E58BB510072905D /* PasswordManager.swift in Sources */,
 				1F12FE482E4264260023DB69 /* CustomMessageTextField.swift in Sources */,
@@ -409,6 +412,7 @@
 				1F1452572E608D8900F8A553 /* AppStorageKey.swift in Sources */,
 				1F12FE4F2E42789C0023DB69 /* CryptoActionButtons.swift in Sources */,
 				1F8DDCE52E3A1C01005734CD /* CustomSecureField.swift in Sources */,
+				1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */,
 				1F12FE512E42DEDD0023DB69 /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,6 +568,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -596,6 +601,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;

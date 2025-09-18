@@ -17,9 +17,9 @@ struct CustomTextRow: View {
     var body: some View {
         HStack(spacing: 0) {
             Text(text.asMarkdown)
-                .foregroundStyle(Color.main.secondaryText)
+                .foregroundStyle(Color.void.secondaryTextNEW)
                 .font(.caption)
-                .fontWeight(.thin)
+                .fontWeight(.light)
                 .fontDesign(.rounded)
                 .multilineTextAlignment(.leading)
                 .padding(.horizontal)

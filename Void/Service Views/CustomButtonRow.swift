@@ -70,7 +70,7 @@ extension CustomButtonRow {
         Group {
             if let icon {
                 icon
-                    .foregroundStyle(Gradient.accentGragient)
+                    .foregroundStyle(Gradient.accent)
                     .frame(width: 50)
             } else {
                 Spacer().frame(width: 20)
@@ -81,16 +81,16 @@ extension CustomButtonRow {
     private var titlePlace: some View {
         VStack(alignment: .leading, spacing: 3) {
             Text(title)
-                .foregroundColor(Color.main.titleText)
+                .foregroundStyle(Color.void.mainText)
                 .font(.headline)
                 .fontWeight(isCritical ? .semibold : .regular)
                 .lineLimit(2)
                 .minimumScaleFactor(0.5)
             if let subtitle {
                 Text(subtitle)
-                    .foregroundColor(Color.main.titleText)
+                    .foregroundStyle(Color.void.secondaryTextNEW)
                     .font(.caption)
-                    .fontWeight(.ultraLight)
+                    .fontWeight(.light)
             }
         }
         .fontDesign(.rounded)
@@ -103,7 +103,7 @@ extension CustomButtonRow {
         Group {
             if let additionalTitle {
                 Text(additionalTitle)
-                    .foregroundColor(Color.main.titleText)
+                    .foregroundStyle(Color.void.mainText)
                     .font(.headline)
                     .lineLimit(1)
                     .minimumScaleFactor(0.5)
@@ -118,7 +118,7 @@ extension CustomButtonRow {
         Group {
             if isLink {
                 Image.system.chevron
-                    .foregroundColor(Color.main.titleText)
+                    .foregroundStyle(Color.void.blackAndWhite)
                     .font(.footnote)
                     .padding(.trailing)
             }
@@ -129,7 +129,7 @@ extension CustomButtonRow {
         Group {
             if withCheckmark {
                 Image.system.chechmark
-                    .foregroundColor(Color.navigation.title)
+                    .foregroundStyle(Gradient.accent)
                     .font(.footnote)
                     .fontWeight(.heavy)
                     .padding(.trailing)

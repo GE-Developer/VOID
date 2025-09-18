@@ -61,7 +61,7 @@ extension CustomSliderRow {
             in: 0...Double(availableValues.count - 1),
             step: 1
         )
-        .tint(Gradient.accentGragient)
+        .tint(Gradient.accent)
     }
     
     private var labelsView: some View {
@@ -71,7 +71,7 @@ extension CustomSliderRow {
                     .font(.caption2)
                     .fontWeight(.light)
                     .fontDesign(.monospaced)
-                    .foregroundStyle(Color.main.secondaryText)
+                    .foregroundStyle(Color.void.mainText)
                 
                 if index != labels.count - 1 {
                     Spacer()

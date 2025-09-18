@@ -175,7 +175,7 @@ extension SettingsView {
             Text(vm.appVersionTitle)
             Text(vm.appVersion)
         }
-        .foregroundStyle(Color.main.secondaryText)
+        .foregroundStyle(Color.void.mainText)
         .font(.caption)
         .fontDesign(.monospaced)
         .padding(.horizontal, 6)

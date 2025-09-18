@@ -51,7 +51,6 @@ extension CustomMessageTextField {
             sendButton
         }
         .disabled(isDisabled)
-        .shadow(color: Color.main.background.opacity(0.5), radius: 1)
         .animation(.easeInOut, value: focus)
         .onChange(of: isDisabled) {
             if isDisabled {
@@ -65,9 +64,10 @@ extension CustomMessageTextField {
             .focused($focus)
             .autocorrectionDisabled(true)
             .padding(10)
-            .foregroundStyle(Color.main.textFieldText)
+            .foregroundStyle(Color.void.mainText)
             .fontDesign(.rounded)
             .fontWeight(.light)
+            .shadow(color: Color.void.viewShadow, radius: 2)
     }
     
     private var deleteButton: some View {
@@ -75,7 +75,7 @@ extension CustomMessageTextField {
             Image.system.xmark
                 .font(.title3)
                 .fontWeight(.ultraLight)
-                .foregroundStyle(Color.navigation.secondaryTitle)
+                .foregroundStyle(Color.void.secondaryTextNEW)
                 .padding(.trailing, 10)
         }
         .opacity(text.isEmpty ? 0 : 1)
@@ -90,12 +90,12 @@ extension CustomMessageTextField {
                 Circle()
                     .foregroundStyle(
                         buttonDisabled
-                        ? Gradient.basicSubscriptionGradiaent
-                        : Gradient.accentGragient
+                        ? Gradient.gray
+                        : Gradient.accent
                     )
                     .frame(height: 40)
                 Image.system.send
-                    .foregroundStyle(Color.main.text)
+                    .foregroundStyle(Color.void.secondaryTextNEW)
             }
             .opacity(buttonDisabled ? 0.6 : 1)
         }
@@ -105,8 +105,8 @@ extension CustomMessageTextField {
     
     private var background: some View {
         RoundedRectangle(cornerRadius: 10)
-            .fill(Color.navigation.textFieldBackground)
-            .shadow(color: Color.main.viewShadow, radius: 4)
+            .fill(Color.void.textFieldBackground)
+            .shadow(color: Color.void.viewShadow, radius: 4)
             .frame(height: 35)
     }
 }

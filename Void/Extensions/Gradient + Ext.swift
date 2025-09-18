@@ -6,22 +6,22 @@
 //
 
 import SwiftUI
-
+ 
 extension Gradient {
-    static let accentGragient = LinearGradient(
-        colors: [.navigation.accentOne, .navigation.accentTwo],
+    static let accent = LinearGradient(
+        colors: [.void.accentLight, .void.accentDark],
         startPoint: .leading,
         endPoint: .trailing
     )
     
-    static let basicSubscriptionGradiaent = LinearGradient(
-        colors: [.subscription.basicOne, .subscription.basicTwo],
-        startPoint: .bottomTrailing,
-        endPoint: .topLeading
+    static let gray = LinearGradient(
+        colors: [.void.grayLight, .void.grayDark],
+        startPoint: .leading,
+        endPoint: .trailing
     )
     
-    static let premiumSubscriptionGradiaent = LinearGradient(
-        colors: [.subscription.premiumOne, .subscription.premiumTwo],
+    static let gold = LinearGradient(
+        colors: [.void.goldLight, .void.goldDark],
         startPoint: .leading,
         endPoint: .trailing
     )

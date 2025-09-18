@@ -2,7 +2,7 @@
 //  VoidApp.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 26.07.25.
+//  Created by GE-Developer on 26.07.25.
 //
 
 import SwiftUI

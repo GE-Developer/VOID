@@ -2,11 +2,11 @@
 //  ContentView1.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 30.07.25.
+//  Created by GE-Developer
 //
 
 import SwiftUI
-
+ 
 final class ContentView1ViewModel {
     let text = "Экран"
     let subText = "Тестовый"

@@ -46,8 +46,8 @@ extension CustomSecureField {
             .padding(.leading, 8)
             .foregroundStyle(
                 focus
-                ? Color.navigation.focusedMagnifying
-                : Color.navigation.magnifying
+                ? Gradient.accent
+                : Gradient.gray
             )
     }
     
@@ -56,7 +56,7 @@ extension CustomSecureField {
             .focused($focus)
             .autocorrectionDisabled(true)
             .padding(.horizontal, 8)
-            .foregroundStyle(Color.main.textFieldText)
+            .foregroundStyle(Color.void.mainText)
             .fontDesign(.rounded)
             .fontWeight(.light)
     }
@@ -66,7 +66,7 @@ extension CustomSecureField {
             Image.system.xmark
                 .font(.title3)
                 .fontWeight(.ultraLight)
-                .foregroundStyle(Color.navigation.secondaryTitle)
+                .foregroundStyle(Color.void.secondaryTextNEW)
                 .padding(.trailing, 10)
         }
         .opacity(password.isEmpty ? 0 : 1)
@@ -75,8 +75,8 @@ extension CustomSecureField {
     
     private var background: some View {
         RoundedRectangle(cornerRadius: 10)
-            .fill(Color.navigation.textFieldBackground)
-            .shadow(color: Color.main.viewShadow, radius: 4)
+            .fill(Color.void.textFieldBackground)
+            .shadow(color: Color.void.viewShadow, radius: 2)
             .frame(height: 35)
     }
 }

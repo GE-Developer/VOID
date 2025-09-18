@@ -25,10 +25,10 @@ final class SoundManager {
         configureAudioSession()
     }
     
-    func playSound() {
+    func playSound(_ soundName: Sound) {
         guard !isSoundOff else { return }
         
-        guard let url = Bundle.main.url(forResource: "tapSound", withExtension: "mp3") else {
+        guard let url = Bundle.main.url(forResource: soundName.name, withExtension: "mp3") else {
             print("Sound file not found")
             return
         }
@@ -44,7 +44,8 @@ final class SoundManager {
     
     private func configureAudioSession() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(.ambient, options: [.mixWithOthers])
+            try AVAudioSession.sharedInstance()
+                .setCategory(.ambient, options: [.mixWithOthers])
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print("Failed to set audio session: \(error.localizedDescription)")

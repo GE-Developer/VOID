@@ -48,7 +48,7 @@ extension CustomForm {
     
     private func header(_ text: String) -> some View {
         Text(text)
-            .foregroundStyle(Color.main.secondaryText)
+            .foregroundStyle(Color.void.mainText)
             .font(.caption)
             .fontDesign(.rounded)
             .textCase(.uppercase)

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomFormContentText: View {
+struct FormHeaderContent: View {
     private var text: String
     
     init(_ text: String) {
@@ -20,10 +20,10 @@ struct CustomFormContentText: View {
 }
 
 // MARK: - Builder
-extension CustomFormContentText {
+extension FormHeaderContent {
     private var customFormContentText: some View {
         Text(text)
-            .foregroundStyle(Gradient.accentGragient)
+            .foregroundStyle(Gradient.accent)
             .font(.caption)
             .fontDesign(.monospaced)
             .lineLimit(2)
@@ -37,7 +37,7 @@ extension CustomFormContentText {
     private var background: some View {
         RoundedRectangle(cornerRadius: 4)
             .stroke(lineWidth: 1)
-            .foregroundStyle(Gradient.accentGragient)
+            .foregroundStyle(Gradient.accent)
             .opacity(0.7)
     }
 }

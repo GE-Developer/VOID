@@ -63,7 +63,7 @@ extension CustomScrollView {
     }
     
     private var background: some View {
-        Color.main.background
+        Color.void.background
             .ignoresSafeArea()
     }
     
@@ -76,7 +76,7 @@ extension CustomScrollView {
                 Image.system.back
                     .fontWeight(.light)
                     .padding(10)
-                    .foregroundStyle(Color.navigation.backButton)
+                    .foregroundStyle(Color.void.blackAndWhite)
                     .frame(width: 20)
                     .background { Color.clear }
             }
@@ -92,7 +92,7 @@ extension CustomScrollView {
             .ignoresSafeArea()
             .foregroundStyle(.ultraThinMaterial)
             .opacity(isLargeNavBar ? 0 : 1)
-            .shadow(color: Color.navigation.navBarShadow, radius: isLargeNavBar ? 0 : 5)
+            .shadow(color: Color.void.navBarShadow, radius: isLargeNavBar ? 0 : 5)
             
             HStack {
                 backButton

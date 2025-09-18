@@ -50,15 +50,15 @@ extension CryptoActionButtons {
                 RoundedRectangle(cornerRadius: 12)
                     .foregroundStyle(
                         isActive
-                        ? Gradient.accentGragient
-                        : Gradient.basicSubscriptionGradiaent
+                        ? Gradient.accent
+                        : Gradient.gray
                     )
-                    .shadow(color: Color.navigation.navBarShadow, radius: 2)
+                    .shadow(color: Color.void.viewShadow, radius: 2)
                 
                 Text(title)
-                    .foregroundStyle(Color.main.text)
+                    .foregroundStyle(Color.void.mainText)
                     .font(.caption)
-                    .fontWeight(.bold)
+                    .fontWeight(.medium)
                     .fontDesign(.rounded)
                     .textCase(.uppercase)
             }

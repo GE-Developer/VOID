@@ -2,14 +2,14 @@
 //  PasswordManager.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 22.08.25.
+//  Created by GE-Developer
 //
 
 import Foundation
 import CryptoKit
 
 final class PasswordManager {
-
+ 
     // MARK: - Обфусцированные куски seed-а
     private let part1_encrypted: [UInt8] = [0x5C, 0x6F, 0x5A]
     private let mask1: [UInt8] = [0xAA, 0xAA, 0xAA]

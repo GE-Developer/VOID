@@ -31,10 +31,10 @@ extension CustomToggleRow {
         HStack(spacing: 0) {
             Group {
                 icon
-                    .foregroundStyle(Gradient.accentGragient)
+                    .foregroundStyle(Gradient.accent)
                     .frame(width: 50)
                 Text(title)
-                    .foregroundColor(Color.main.titleText)
+                    .foregroundStyle(Color.void.mainText)
                     .font(.headline)
                     .fontDesign(.rounded)
                     .fontWeight(.regular)
@@ -54,7 +54,7 @@ extension CustomToggleRow {
             withAnimation { isOff.toggle() }
         } label: {
             RoundedRectangle(cornerRadius: 16)
-                .fill(isOff ? Gradient.basicSubscriptionGradiaent : Gradient.accentGragient)
+                .fill(isOff ? Gradient.gray : Gradient.accent)
                 .frame(width: 50, height: 30)
                 .overlay(
                     Circle()

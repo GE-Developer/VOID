@@ -2,12 +2,12 @@
 //  AES256EncryptionViewModel.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 28.07.25.
+//  Created by GE-Developer
 //
 
 import Foundation
 //import Combine
-
+ 
 struct AES256Parameters: Equatable {
     var password: String
     var salt: Int
@@ -85,8 +85,7 @@ final class AES256EncryptionViewModel: ObservableObject {
         }
     }
     
-    let title = L10n("Cryptography.title")
-    let subtitle = L10n("Cryptography.AES-256")
+    let title = L10n("Cryptography.AES-256")
     let encryptionTitle = L10n("Cryptography.encryption")
     let decryptionTitle = L10n("Cryptography.decryption")
     

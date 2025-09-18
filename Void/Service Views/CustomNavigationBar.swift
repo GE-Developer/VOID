@@ -47,8 +47,8 @@ extension CustomNavigationBar {
     private var mainTitle: some View {
         Text(title)
             .font(isLargeNavBar ? .title : .title3)
-            .fontWeight(.semibold)
-            .foregroundStyle(Color.navigation.accentOne)
+            .fontWeight(.medium)
+            .foregroundStyle(Color.void.blackAndWhite)
             .multilineTextAlignment(multilineAlignment)
     }
     
@@ -58,7 +58,7 @@ extension CustomNavigationBar {
                 Text(subTitle)
                     .font(.subheadline)
                     .fontWeight(.light)
-                    .foregroundStyle(Color.navigation.secondaryTitle)
+                    .foregroundStyle(Color.void.mainText)
                     .transition(.opacity.combined(with: .move(edge: .top)))
             }
         }

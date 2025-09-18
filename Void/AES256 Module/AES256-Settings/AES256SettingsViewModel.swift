@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+ 
 @MainActor
 final class AES256SettingsViewModel: ObservableObject {
     @Published var parameters: AES256Parameters
@@ -101,7 +101,7 @@ final class AES256SettingsViewModel: ObservableObject {
     init(mainVM: AES256EncryptionViewModel) {
         self.mainVM = mainVM
         self.parameters = mainVM.encryptionParameters
-        self.subTitle = mainVM.subtitle
+        self.subTitle = mainVM.title
         print("AES256SettingsViewModel INIT")
     }
     

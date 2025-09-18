@@ -14,9 +14,9 @@ struct MessageView: View {
     private var backgroundColor: LinearGradient {
         switch message.encryptionMode {
         case .encrypt:
-            return Gradient.accentGragient
+            return Gradient.accent
         case .decrypt:
-            return Gradient.basicSubscriptionGradiaent
+            return Gradient.gray
         }
     }
     
@@ -42,14 +42,15 @@ extension MessageView {
             
             Text(showMessage ? message.originalText : message.encryptedText)
                 .font(.caption2)
-                .fontWeight(.medium)
+//                .fontWeight(.medium)
                 .fontDesign(.rounded)
-                .foregroundStyle(Color.white)
+                .foregroundStyle(Color.void.mainText)
                 .padding(.horizontal)
                 .padding(.vertical, 8)
                 .background {
                     RoundedRectangle(cornerRadius: 12)
                         .foregroundStyle(backgroundColor)
+                        .shadow(color: Color.void.viewShadow, radius: 2)
                 }
                 .scaleEffect(isScaleMessage ? 1.05 : 1)
                 .onLongPressGesture(maximumDistance: 1, perform: copyText) { isScaleMessage = $0 }
@@ -73,8 +74,8 @@ extension MessageView {
                 .font(.caption2)
                 .foregroundStyle(
                     showMessage
-                    ? Gradient.accentGragient
-                    : Gradient.basicSubscriptionGradiaent
+                    ? Gradient.accent
+                    : Gradient.gray
                 )
         }
     }

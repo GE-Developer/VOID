@@ -99,7 +99,7 @@ extension AES256SettingsView {
     private var dividerMessage: some View {
         VStack {
             Text(vm.dividerMessage)
-                .foregroundStyle(Color.main.secondaryText)
+                .foregroundStyle(Color.void.secondaryTextNEW)
                 .font(.headline)
                 .fontDesign(.rounded)
                 .textCase(.uppercase)
@@ -112,7 +112,7 @@ extension AES256SettingsView {
     
     private var saltForm: some View {
         CustomForm(headerText: vm.saltTitle) {
-            CustomFormContentText(vm.saltDescription)
+            FormHeaderContent(vm.saltDescription)
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.salt,
@@ -127,7 +127,7 @@ extension AES256SettingsView {
     
     private var iterationsForm: some View {
         CustomForm(headerText: vm.iterationsTitle) {
-            CustomFormContentText("\(vm.parameters.iterations)")
+            FormHeaderContent("\(vm.parameters.iterations)")
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.iterations,
@@ -142,7 +142,7 @@ extension AES256SettingsView {
     
     private var memoryForm: some View {
         CustomForm(headerText: vm.memoryTitle) {
-            CustomFormContentText(vm.memoryDescription)
+            FormHeaderContent(vm.memoryDescription)
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.memory,
@@ -157,7 +157,7 @@ extension AES256SettingsView {
     
     private var parallelismForm: some View {
         CustomForm(headerText: vm.parallelismTitle) {
-            CustomFormContentText("\(vm.parameters.parallelism)")
+            FormHeaderContent("\(vm.parameters.parallelism)")
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.parallelism,
@@ -172,7 +172,7 @@ extension AES256SettingsView {
     
     private var keyLengthForm: some View {
         CustomForm(headerText: vm.keyLengthTitle) {
-            CustomFormContentText(vm.keyLengthDescription)
+            FormHeaderContent(vm.keyLengthDescription)
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.keyLength,
@@ -187,7 +187,7 @@ extension AES256SettingsView {
     
     private var layersForm: some View {
         CustomForm(headerText: vm.layersTitle) {
-            CustomFormContentText("\(vm.parameters.actualLayers)")
+            FormHeaderContent("\(vm.parameters.actualLayers)")
         } content: {
             HStack(spacing: 8) {
                 CustomTextRow(vm.layersSubtitle)

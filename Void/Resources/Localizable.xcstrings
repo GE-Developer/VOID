@@ -482,7 +482,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Шифрование"
+            "value" : "Криптография"
           }
         },
         "uk" : {

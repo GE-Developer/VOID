@@ -2,13 +2,13 @@
 //  AES256-CryptoService.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 27.07.25.
+//  Created by GE-Developer
 //
 
 import Foundation
 import CryptoKit
 import Argon2Swift
-
+ 
 final class EncryptionService {
     
     enum EncryptionError: Error {

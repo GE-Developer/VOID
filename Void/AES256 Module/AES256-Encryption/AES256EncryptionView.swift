@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+ 
 struct AES256EncryptionView: View {
     @StateObject private var vm = AES256EncryptionViewModel()
     @State private var disabled = true
@@ -21,7 +21,6 @@ struct AES256EncryptionView: View {
         CustomScrollView { isLargeNavBar in
             CustomNavigationBar(
                 title: vm.title,
-                subTitle: vm.subtitle,
                 isLargeNavBar: isLargeNavBar
             )
             Spacer()
@@ -72,7 +71,7 @@ extension AES256EncryptionView {
             goToSettings.toggle()
         } label: {
             Image.system.cryptoSettings
-                .foregroundStyle(Gradient.accentGragient)
+                .foregroundStyle(Gradient.accent)
                 .font(.title2)
         }
     }
