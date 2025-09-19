@@ -21,13 +21,13 @@ struct SettingsView: View {
     var body: some View {
         settingsView
             .navigationDestination(isPresented: $languageViewPresented) {
-                LanguageView()
+                NavigationLazyView(LanguageView())
             }
             .navigationDestination(isPresented: $subscriptionViewPresented) {
-                ContentView1()
+                NavigationLazyView(ContentView1())
             }
             .navigationDestination(isPresented: $projectViewPresented) {
-                ContentView1()
+                NavigationLazyView(ContentView1())
             }
     }
 }

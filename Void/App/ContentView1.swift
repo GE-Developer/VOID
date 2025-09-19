@@ -10,23 +10,11 @@ import SwiftUI
 final class ContentView1ViewModel {
     let text = "Экран"
     let subText = "Тестовый"
-    
-    init() {
-        print("INIT VM")
-    }
-    
-    deinit {
-        print("DEINIT VM")
-    }
 }
 
 struct ContentView1: View {
     private let vm = ContentView1ViewModel()
     @State private var writtenText = ""
-    
-    init() {
-        print("INIT")
-    }
     
     var body: some View {
         CustomScrollView() { isLargeNavBar in
@@ -50,7 +38,6 @@ struct ContentView1: View {
         .safeAreaInset(edge: .bottom) {
             TextField(vm.subText, text: $writtenText)
         }
-
     }
 }
 

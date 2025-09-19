@@ -102,11 +102,6 @@ final class AES256SettingsViewModel: ObservableObject {
         self.mainVM = mainVM
         self.parameters = mainVM.encryptionParameters
         self.subTitle = mainVM.title
-        print("AES256SettingsViewModel INIT")
-    }
-    
-    deinit {
-        print("AES256SettingsViewModel DEINIT")
     }
     
     func commitChanges() {

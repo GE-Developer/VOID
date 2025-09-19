@@ -13,7 +13,6 @@ struct AES256SettingsView: View {
     
     init(vm: AES256EncryptionViewModel) {
         _vm = StateObject(wrappedValue: AES256SettingsViewModel(mainVM: vm))
-        print("INIT AES256SettingsView")
     }
     
     var body: some View {

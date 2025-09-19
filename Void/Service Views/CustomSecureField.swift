@@ -55,6 +55,7 @@ extension CustomSecureField {
         SecureField(placeholder, text: $password)
             .focused($focus)
             .autocorrectionDisabled(true)
+            .textInputAutocapitalization(.never)
             .padding(.horizontal, 8)
             .foregroundStyle(Color.void.mainText)
             .fontDesign(.rounded)

@@ -12,10 +12,6 @@ struct AES256EncryptionView: View {
     @State private var disabled = true
     @State private var goToSettings = false
     
-    init() {
-        print("AES256EncryptionView init")
-    }
-    
     var body: some View {
         
         CustomScrollView { isLargeNavBar in

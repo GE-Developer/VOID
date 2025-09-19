@@ -20,6 +20,8 @@
 		1F1452592E608E9200F8A553 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1452582E608E9200F8A553 /* SettingsView.swift */; };
 		1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14525B2E6092D200F8A553 /* LanguageView.swift */; };
 		1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */; };
+		1F2D34232E7D7D16005E6239 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34222E7D7D16005E6239 /* Message.swift */; };
+		1F2D34242E7D7D16005E6239 /* AES256Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */; };
 		1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */; };
 		1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDE2E75835500DB44CE /* View + Ext.swift */; };
 		1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7970872E7C4D6B007755F3 /* Sound.swift */; };
@@ -69,6 +71,8 @@
 		1F1452582E608E9200F8A553 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1F14525B2E6092D200F8A553 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Parameters.swift; sourceTree = "<group>"; };
+		1F2D34222E7D7D16005E6239 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		1F64ADDE2E75835500DB44CE /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
 		1F7970872E7C4D6B007755F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
@@ -167,6 +171,15 @@
 			path = "Settings Module";
 			sourceTree = "<group>";
 		};
+		1F2D341E2E7D7CC6005E6239 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */,
+				1F2D34222E7D7D16005E6239 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1F64ADE12E76234200DB44CE /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,8 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				1F8DDBDD2E36783C005734CD /* App */,
-				1F8DDBEC2E367897005734CD /* Service Views */,
+				1F2D341E2E7D7CC6005E6239 /* Models */,
 				1F12FE462E4221E50023DB69 /* Managers */,
+				1F8DDBEC2E367897005734CD /* Service Views */,
 				1F8DDBDC2E367816005734CD /* AES256 Module */,
 				1F14525A2E608EAF00F8A553 /* Settings Module */,
 				1F12FE492E4278040023DB69 /* Enums */,
@@ -398,6 +412,8 @@
 				1F7D9EF92E653107007B4DDD /* MatrixAnimationView.swift in Sources */,
 				1F7D9EE52E6342DA007B4DDD /* SettingsViewModel.swift in Sources */,
 				1F1452592E608E9200F8A553 /* SettingsView.swift in Sources */,
+				1F2D34232E7D7D16005E6239 /* Message.swift in Sources */,
+				1F2D34242E7D7D16005E6239 /* AES256Parameters.swift in Sources */,
 				1F7D9EE92E63447D007B4DDD /* LanguageViewModel.swift in Sources */,
 				1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */,
 				1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */,

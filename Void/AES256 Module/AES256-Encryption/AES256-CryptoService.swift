@@ -11,16 +11,12 @@ import Argon2Swift
  
 final class EncryptionService {
     
-    enum EncryptionError: Error {
+    private enum EncryptionError: Error {
         case invalidInput
         case encryptionFailed
         case decryptionFailed
         case expiredData
         case invalidFormat
-    }
-    
-    init() {
-        print("INIT - EncryptionService")
     }
     
     // MARK: - Генерация nonce (12 байт)
@@ -321,9 +317,5 @@ final class EncryptionService {
         }
         
         return currentData
-    }
-    
-    deinit {
-        print("DEINIT - EncryptionService")
     }
 }
