@@ -22,6 +22,9 @@
 		1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */; };
 		1F2D34232E7D7D16005E6239 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34222E7D7D16005E6239 /* Message.swift */; };
 		1F2D34242E7D7D16005E6239 /* AES256Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */; };
+		1F2D34262E7DF41A005E6239 /* KeyDerivationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */; };
+		1F2D34282E7E1760005E6239 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34272E7E1760005E6239 /* CryptoService.swift */; };
+		1F2D342B2E7F3D87005E6239 /* CryptoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342A2E7F3D87005E6239 /* CryptoError.swift */; };
 		1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */; };
 		1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDE2E75835500DB44CE /* View + Ext.swift */; };
 		1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7970872E7C4D6B007755F3 /* Sound.swift */; };
@@ -39,7 +42,7 @@
 		1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBE52E36785E005734CD /* Color + Ext.swift */; };
 		1F8DDBEF2E3678C0005734CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */; };
 		1F8DDBF12E367A58005734CD /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF02E367A58005734CD /* CustomNavigationBar.swift */; };
-		1F8DDBF32E367EC4005734CD /* AES256-CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF22E367EC4005734CD /* AES256-CryptoService.swift */; };
+		1F8DDBF32E367EC4005734CD /* AESEncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */; };
 		1F8DDBF62E36A15E005734CD /* Argon2Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8DDBF52E36A15E005734CD /* Argon2Swift */; };
 		1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */; };
 		1F8DDBFA2E38123F005734CD /* AES256SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */; };
@@ -54,7 +57,7 @@
 		1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */; };
 		1F8DDCF32E3B96E3005734CD /* TimerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCF22E3B96E3005734CD /* TimerPicker.swift */; };
 		1F8DDCF52E3C03D9005734CD /* AES256SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCF42E3C03D9005734CD /* AES256SettingsViewModel.swift */; };
-		1FA2FBEB2E58BB510072905D /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2FBEA2E58BB510072905D /* PasswordManager.swift */; };
+		1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2FBEA2E58BB510072905D /* PepperService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Parameters.swift; sourceTree = "<group>"; };
 		1F2D34222E7D7D16005E6239 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivationService.swift; sourceTree = "<group>"; };
+		1F2D34272E7E1760005E6239 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
+		1F2D342A2E7F3D87005E6239 /* CryptoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoError.swift; sourceTree = "<group>"; };
 		1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		1F64ADDE2E75835500DB44CE /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
 		1F7970872E7C4D6B007755F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
@@ -90,7 +96,7 @@
 		1F8DDBE62E36785E005734CD /* Image + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F8DDBF02E367A58005734CD /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
-		1F8DDBF22E367EC4005734CD /* AES256-CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AES256-CryptoService.swift"; sourceTree = "<group>"; };
+		1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESEncryptionService.swift; sourceTree = "<group>"; };
 		1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256EncryptionViewModel.swift; sourceTree = "<group>"; };
 		1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256SettingsView.swift; sourceTree = "<group>"; };
 		1F8DDCDA2E3963C3005734CD /* CustomForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomForm.swift; sourceTree = "<group>"; };
@@ -104,7 +110,7 @@
 		1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextRow.swift; sourceTree = "<group>"; };
 		1F8DDCF22E3B96E3005734CD /* TimerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPicker.swift; sourceTree = "<group>"; };
 		1F8DDCF42E3C03D9005734CD /* AES256SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256SettingsViewModel.swift; sourceTree = "<group>"; };
-		1FA2FBEA2E58BB510072905D /* PasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
+		1FA2FBEA2E58BB510072905D /* PepperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepperService.swift; sourceTree = "<group>"; };
 		1FB32A312E34FA17003E4B54 /* Void.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Void.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,8 +138,7 @@
 		1F12FE452E4221AC0023DB69 /* AES256-Encryption */ = {
 			isa = PBXGroup;
 			children = (
-				1F8DDBF22E367EC4005734CD /* AES256-CryptoService.swift */,
-				1FA2FBEA2E58BB510072905D /* PasswordManager.swift */,
+				1F2D34272E7E1760005E6239 /* CryptoService.swift */,
 				1F8DDBB22E366E11005734CD /* AES256EncryptionView.swift */,
 				1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */,
 			);
@@ -158,6 +163,7 @@
 				1F1452522E6080F800F8A553 /* Language.swift */,
 				1F1452562E608D8900F8A553 /* AppStorageKey.swift */,
 				1F7970872E7C4D6B007755F3 /* Sound.swift */,
+				1F2D342A2E7F3D87005E6239 /* CryptoError.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -178,6 +184,16 @@
 				1F2D34222E7D7D16005E6239 /* Message.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		1F2D34292E7EDD14005E6239 /* Crypto Services */ = {
+			isa = PBXGroup;
+			children = (
+				1FA2FBEA2E58BB510072905D /* PepperService.swift */,
+				1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */,
+				1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */,
+			);
+			path = "Crypto Services";
 			sourceTree = "<group>";
 		};
 		1F64ADE12E76234200DB44CE /* Settings */ = {
@@ -202,8 +218,9 @@
 			isa = PBXGroup;
 			children = (
 				1F8DDBDD2E36783C005734CD /* App */,
-				1F2D341E2E7D7CC6005E6239 /* Models */,
 				1F12FE462E4221E50023DB69 /* Managers */,
+				1F2D341E2E7D7CC6005E6239 /* Models */,
+				1F2D34292E7EDD14005E6239 /* Crypto Services */,
 				1F8DDBEC2E367897005734CD /* Service Views */,
 				1F8DDBDC2E367816005734CD /* AES256 Module */,
 				1F14525A2E608EAF00F8A553 /* Settings Module */,
@@ -386,7 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F8DDBF32E367EC4005734CD /* AES256-CryptoService.swift in Sources */,
+				1F8DDBF32E367EC4005734CD /* AESEncryptionService.swift in Sources */,
 				1F8DDCE72E3A2C55005734CD /* CustomSliderRow.swift in Sources */,
 				1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */,
 				1F8DDBC12E366E11005734CD /* AES256EncryptionView.swift in Sources */,
@@ -403,6 +420,7 @@
 				1F8DDCDB2E3963C4005734CD /* CustomForm.swift in Sources */,
 				1F12FE4B2E4278210023DB69 /* CryptoAction.swift in Sources */,
 				1F8DDBE82E36785E005734CD /* Image + Ext.swift in Sources */,
+				1F2D34262E7DF41A005E6239 /* KeyDerivationService.swift in Sources */,
 				1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */,
 				1F8DDBC52E366E11005734CD /* VoidApp.swift in Sources */,
 				1F1452552E608D2D00F8A553 /* LanguageManager.swift in Sources */,
@@ -417,9 +435,11 @@
 				1F7D9EE92E63447D007B4DDD /* LanguageViewModel.swift in Sources */,
 				1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */,
 				1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */,
+				1F2D342B2E7F3D87005E6239 /* CryptoError.swift in Sources */,
+				1F2D34282E7E1760005E6239 /* CryptoService.swift in Sources */,
 				1F8DDCE92E3A7843005734CD /* FormHeaderContent.swift in Sources */,
 				1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */,
-				1FA2FBEB2E58BB510072905D /* PasswordManager.swift in Sources */,
+				1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */,
 				1F12FE482E4264260023DB69 /* CustomMessageTextField.swift in Sources */,
 				1F1452532E6080F800F8A553 /* Language.swift in Sources */,
 				1F8DDCDD2E39641A005734CD /* CustomButtonRow.swift in Sources */,

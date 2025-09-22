@@ -54,74 +54,6 @@
         }
       }
     },
-    "Cryptography.AES-256.DecryptedIntroMessage.encryptedText" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The decrypted text will appear here. Press the «Show» button to view it."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Расшифрованный текст появится здесь. Нажмите кнопку «Показать», чтобы увидеть его."
-          }
-        }
-      }
-    },
-    "Cryptography.AES-256.DecryptedIntroMessage.originalText" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Here is your original decrypted text. Everything stays on the device within this crypto session."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вот ваш исходный расшифрованный текст. Всё остаётся на устройстве в рамках этой криптосессии."
-          }
-        }
-      }
-    },
-    "Cryptography.AES-256.EncryptedIntroMessage.encryptedText" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Your encrypted text will appear here after entering the password. To copy the text, press and hold for one second."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ваш зашифрованный текст появится здесь после ввода пароля.  Чтобы скопировать текст, нажмите и удерживайте выбранный текст."
-          }
-        }
-      }
-    },
-    "Cryptography.AES-256.EncryptedIntroMessage.originalText" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Here is your original encrypted text. To encrypt the text, press the «Send» button."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Вот ваш исходный зашифрованный текст. Чтобы зашифровать текст, нажмите кнопку «Отправить»."
-          }
-        }
-      }
-    },
     "Cryptography.AES-256.instructions" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -158,7 +90,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**თქვენი უსაფრთხოებისათვის**  — რაც უფრო ძლიერი პაროლი, მით უფრო ძლიერი არის შიფრაცია — ჩვენ არ ვინახავთ და არ ვგზავნით თქვენს მონაცემებს — როდესაც ტოვებთ ამ ეკრანს, ყველაფერი წაიშლება"
+            "value" : "**თქვენი უსაფრთხოებისათვის**  — რაც უფრო ძლიერია პაროლი, მით უფრო ძლიერია შიფრაცია — ჩვენ არ ვინახავთ და არ ვგზავნით თქვენს მონაცემებს — როდესაც ტოვებთ ამ ეკრანს, ყველაფერი წაიშლება"
           }
         },
         "ru" : {
@@ -317,13 +249,13 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "მომზადებულია გასაშიფრად..."
+            "value" : "მომზადებულია დეშიფრაციისთვის…"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Текст к расшифровке…"
+            "value" : "Готов к дешифрованию…"
           }
         },
         "uk" : {
@@ -429,7 +361,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Текст к шифрованию…"
+            "value" : "Готов к шифрованию…"
           }
         },
         "uk" : {
@@ -794,7 +726,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**საკვანძო სიგრძე** განსაზღვრავს რამდენად რთულია თქვენი მონაცემების ბრუტფორსი — რაც **დამატებითი სიგრძე**, მით **მტკიცე დაცვა**. მაღალი მნიშვნელობები ზრდის უსაფრთხოებას, თუმცა შესაძლოა ცოტა შეანელოს პროცესირება."
+            "value" : "**საკვანძო სიგრძე** განსაზღვრავს რამდენად რთულია თქვენი მონაცემების ბრუტფორსი — რაც **მეთია სიგრძე**, მით **მტკიცეა დაცვა**. მაღალი მნიშვნელობები ზრდის უსაფრთხოებას, თუმცა შესაძლოა ცოტა შეანელოს პროცესირება."
           }
         },
         "ru" : {
@@ -900,7 +832,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "მაქსიმალური **საფეხურების რაოდენობა დამოკიდებულია საკვანძო სიგრძეზე**, რომელსაც ირჩევთ. გრძელი საკვანძო მეტი საფეხურის დამატების საშუალებას იძლევა, რაც ზრდის დაცვას."
+            "value" : "მაქსიმალური **შრეების რაოდენობა დამოკიდებულია საკვანძო სიგრძეზე**, რომელსაც ირჩევთ. გრძელი საკვანძო მეტი შრის დამატების საშუალებას იძლევა, რაც ზრდის დაცვას."
           }
         },
         "ru" : {
@@ -953,7 +885,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "შიფრაციის საფეხურების რაოდენობა"
+            "value" : "შიფრაციის შრეების რაოდენობა"
           }
         },
         "ru" : {
@@ -1006,7 +938,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "საფეხურები"
+            "value" : "შრეები"
           }
         },
         "ru" : {
@@ -1112,7 +1044,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "მაქსიმუმ"
+            "value" : "მაქსიმუმი"
           }
         },
         "ru" : {
@@ -1218,7 +1150,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**მეხსიერება** არის RAM-ის რაოდენობა, რომელიც გამოიყენება მონაცემების დასაცავად. მოხმარებული მეხსიერების რაოდენობის ზრდა ართულებს შეტევას, რადგან შეტევები საჭიროებენ უფრო მეტ რესურსს და დროს.თუმცა, **მაღალი მეხსიერების გამოყენება შეიძლება შეანელოს მოწყობილობის მუშაობა** — აირჩიეთ ბალანსი უსაფრთხოებასა და შესრულებას შორის."
+            "value" : "**მეხსიერება** არის RAM-ის რაოდენობა, რომელიც გამოიყენება მონაცემების დასაცავად. მოხმარებული მეხსიერების რაოდენობის ზრდით ართულებს შეტევას, რადგან შეტევები საჭიროებენ უფრო მეტ რესურსს და დროს.თუმცა, **მაღალი მეხსიერების გამოყენებამ შეიძლება შეანელოს მოწყობილობის მუშაობა** — აირჩიეთ ბალანსი უსაფრთხოებასა და შესრულებას შორის."
           }
         },
         "ru" : {
@@ -1381,13 +1313,13 @@
               "one" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "თქვენი მოწყობილობა აქვს **%lld ბირთვი**. პარალელური დავალებების რაოდენობის გაზრდა შეუძლია **შიფრაციის გასაჩქარებლად**, მაგრამ მეტ ენერგიას მოიხმარს."
+                  "value" : "თქვენს მოწყობილობას აქვს **%lld ბირთვი**. პარალელური დავალებების რაოდენობის გაზრდა შეუძლია **შიფრაციის დასაჩქარებლად**, მაგრამ მეტ ენერგიას მოიხმარს."
                 }
               },
               "other" : {
                 "stringUnit" : {
                   "state" : "translated",
-                  "value" : "თქვენი მოწყობილობა აქვს **%lld ბირთვი**. პარალელური დავალებების რაოდენობის გაზრდა შეუძლია **შიფრაციის გასაჩქარებლად**, მაგრამ მეტ ენერგიას მოიხმარს."
+                  "value" : "თქვენს მოწყობილობას აქვს **%lld ბირთვი**. პარალელური დავალებების რაოდენობის გაზრდა შეუძლია **შიფრაციის დასაჩქარებლად**, მაგრამ მეტ ენერგიას მოიხმარს."
                 }
               }
             }
@@ -1544,7 +1476,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**მარილი** არის შემთხვევითი მონაცემები, რომელიც დაემატება პაროლს შიფრაციის წინ. ეს ხდის შედეგს **უნიკალურად**, მიუხედავად პაროლის სიდიდისა, იცავს ხელახლა გამოყენების შეტევებისგან და პაროლის გატეხვისგან. **რაც უფრო გრძელია მარილი, მით უფრო ძლიერი დაცვა** — რთულია გაუსვლელი, რთულია გატეხვა."
+            "value" : "**მარილი** არის შემთხვევითი მონაცემები, რომელიც დაემატება პაროლს შიფრაციის წინ. ეს ხდის შედეგს **უნიკალურს**, მიუხედავად პაროლის სიდიდისა, იცავს ხელახლა გამოყენების შეტევებისგან და პაროლის გატეხვისგან. **რაც უფრო გრძელია მარილი, მით უფრო ძლიერია დაცვა** — რთულია \nგამოცნობა, რთულია გატეხვა."
           }
         },
         "ru" : {
@@ -2091,8 +2023,460 @@
         }
       }
     },
-    "Number %@" : {
-
+    "Error.argon2Failed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to generate key using Argon2."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo generar la clave usando Argon2."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2–ით კვანძის გენერირება ვერ მოხერხდა."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось сгенерировать ключ с помощью Argon2."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вдалося згенерувати ключ за допомогою Argon2."
+          }
+        }
+      }
+    },
+    "Error.decryptionFailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to decrypt data."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron descifrar los datos."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მონაცემების დეშიფრაცია ვერ განხორციელდა."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось расшифровать данные."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вдалося розшифрувати дані."
+          }
+        }
+      }
+    },
+    "Error.encryptionFailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to encrypt data."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudieron cifrar los datos."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მონაცემების დაშიფვრა ვერ განხორციელდა."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось зашифровать данные."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вдалося зашифрувати дані."
+          }
+        }
+      }
+    },
+    "Error.expired" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The encrypted data has expired."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los datos cifrados han caducado."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დაშიფრული მონაცემების ვადა გასულია."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Срок действия зашифрованных данных истёк."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Термін дії зашифрованих даних минув."
+          }
+        }
+      }
+    },
+    "Error.integrityCheckFailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The integrity of encrypted data is compromised."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La integridad de los datos cifrados está comprometida."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დაშიფრული მონაცემების მთლიანობა დარღვეულია."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Целостность зашифрованных данных нарушена."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Порушено цілісність зашифрованих даних."
+          }
+        }
+      }
+    },
+    "Error.invalidFormat" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encrypted data format is corrupted or incomplete."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El formato de los datos cifrados está dañado o incompleto."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დაშიფრული მონაცემების ფორმატი დაზიანებულია ან არასრულია."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Формат зашифрованных данных повреждён или неполный."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Формат зашифрованих даних пошкоджений або неповний."
+          }
+        }
+      }
+    },
+    "Error.invalidInputData" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Input data is invalid."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Los datos de entrada no son válidos."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "შეყვანილი მონაცემები არასწორია."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Входные данные некорректны."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вхідні дані недійсні."
+          }
+        }
+      }
+    },
+    "Error.invalidMasterKey" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Master key is empty or corrupted."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La clave maestra está vacía o dañada."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მასტერ-კვანძი ცარიელია ან დაზიანებულია."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мастер-ключ пустой или повреждён."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Майстер-ключ порожній або пошкоджений."
+          }
+        }
+      }
+    },
+    "Error.invalidSubkeyCount" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid number of derived keys."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Número inválido de claves derivadas."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მიღებულია კვანძების არასწორი რაოდენობა."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Некорректное количество производных ключей."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Недійсна кількість похідних ключів."
+          }
+        }
+      }
+    },
+    "Error.nonceGenerationFailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error generating nonce for AES."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error al generar el nonce para AES."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nonce-ის გენერირება AES-ისთვის ვერ განხორციელდა."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось сгенерировать nonce для AES."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помилка при генерації nonce для AES."
+          }
+        }
+      }
+    },
+    "Error.saltGenerationFailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to generate cryptographic salt."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo generar la sal criptográfica."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "კრიპტოგრაფიული მარილი ვერ წარმოიქმნა."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось сгенерировать криптографическую соль."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вдалося згенерувати криптографічну сіль."
+          }
+        }
+      }
+    },
+    "Error.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "შეცდომა"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помилка"
+          }
+        }
+      }
+    },
+    "Error.unknown" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An unexpected error occurred."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ocurrió un error inesperado."
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "მოხდა დაუგეგმავი შეცდომა."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Произошла непредвиденная ошибка."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сталася несподівана помилка."
+          }
+        }
+      }
     },
     "Settings.AboutApp.PrivacyPolicy.title" : {
       "extractionState" : "manual",
@@ -2448,7 +2832,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "წევრობა"
+            "value" : "გამოწერა"
           }
         },
         "ru" : {

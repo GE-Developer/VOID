@@ -9,6 +9,7 @@ import SwiftUI
 
 extension Image {
     static let system = SystemImage()
+    static let background = BackgroundImage()
 }
 
 struct SystemImage {
@@ -34,4 +35,8 @@ struct SystemImage {
     let termsOfUse = Image(systemName: "doc.plaintext")
     let privacyPolicy = Image(systemName: "lock.doc.fill")
     let developerTool = Image(systemName: "hammer.fill")
+}
+
+struct BackgroundImage {
+    let aes256 = Image("AES256")
 }

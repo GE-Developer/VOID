@@ -29,17 +29,21 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     private let largeNavBarHeight = 70.0
     private let smallNavBarHeight = 50.0
     
+    private let backgroundImage: Image?
+    
     @ViewBuilder private let titleHStackView: (_ isLargeNavBar: Bool) -> Title
     @ViewBuilder private let headerView: (_ minY: CGFloat) -> Header
     @ViewBuilder private let scrollView: (_ proxy: ScrollViewProxy) -> Scroll
     
     init(
         withBackButton: Bool = true,
+        backgroundImage: Image? = nil,
         @ViewBuilder titleHStackView: @escaping (_ isLargeNavBar: Bool) -> Title,
         @ViewBuilder headerView: @escaping (_ minY: CGFloat) -> Header = { _ in EmptyView() },
         @ViewBuilder scrollView: @escaping (_ proxy: ScrollViewProxy) -> Scroll
     ) {
         self.withBackButton = withBackButton
+        self.backgroundImage = backgroundImage
         self.titleHStackView = titleHStackView
         self.headerView = headerView
         self.scrollView = scrollView
@@ -54,17 +58,25 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
 extension CustomScrollView {
     private var customScrollView: some View {
         ZStack(alignment: .top) {
-            background.zIndex(0)
-            navigationBar.zIndex(3)
-            header.zIndex(2)
-            scroll.zIndex(1)
+            navigationBar.zIndex(2)
+            header.zIndex(1)
+            scroll.zIndex(0)
         }
         .toolbarVisibility(.hidden, for: .navigationBar)
+        .background(background)
     }
     
     private var background: some View {
-        Color.void.background
-            .ignoresSafeArea()
+        ZStack {
+            Color.void.background
+            if let backgroundImage {
+                backgroundImage
+                    .resizable()
+                    .scaledToFill()
+                    .opacity(0.05)
+            }
+        }
+        .ignoresSafeArea()
     }
     
     @ViewBuilder

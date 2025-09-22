@@ -14,7 +14,7 @@ struct AES256EncryptionView: View {
     
     var body: some View {
         
-        CustomScrollView { isLargeNavBar in
+        CustomScrollView(backgroundImage: Image.background.aes256) { isLargeNavBar in
             CustomNavigationBar(
                 title: vm.title,
                 isLargeNavBar: isLargeNavBar
@@ -25,12 +25,6 @@ struct AES256EncryptionView: View {
             HeaderTextView(text: vm.headetText, offsetY: offsetY)
         } scrollView: { proxy in
             VStack(spacing: 15) {
-                if vm.messages.isEmpty {
-                    ForEach(vm.introMessages) { introMessage in
-                        MessageView(message: introMessage)
-                    }
-                }
-                
                 ForEach(vm.messages) { message in
                     MessageView(message: message)
                 }
@@ -46,22 +40,7 @@ struct AES256EncryptionView: View {
 }
 
 // MARK: - Builder
-extension AES256EncryptionView {
-//    private var showTextButton: some View {
-//        Button {
-////            withAnimation(.easeInOut(duration: 0.1)) {
-//                showMessage.toggle()
-////            }
-//            
-//        } label: {
-//            Image.system.eye
-//                .foregroundStyle(showMessage ? Gradient.premiumSubscriptionGradiaent : Gradient.accentGragient)
-//                .font(.title2)
-//                .animation(.easeInOut, value: showMessage)
-//        }
-//
-//    }
-    
+extension AES256EncryptionView {    
     private var settingsButton: some View {
         Button {
             goToSettings.toggle()
@@ -97,10 +76,6 @@ extension AES256EncryptionView {
                 encryptiontitle: vm.encryptionTitle
             )
         }
-//        .onTapGesture {
-//            guard disabled else { return }
-//            
-//        }
         .padding(.vertical, 8)
         .padding(.horizontal, 10)
         .background(.ultraThinMaterial)

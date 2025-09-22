@@ -9,6 +9,7 @@ import Foundation
 
 struct AES256Parameters: Equatable {
     var password: String
+    var voidIndex: UInt16
     var salt: Int
     var iterations: UInt16
     var memory: UInt32
@@ -21,15 +22,10 @@ struct AES256Parameters: Equatable {
     
     var duration: UInt64 {
         let timeInterval = TimeInterval((selectedHours * 60 + selectedMinutes) * 60)
+        let expireTime = Date().timeIntervalSince1970 + timeInterval
         
-        return UInt64(
-            self.dateInactive
-            ? 0
-            : (Date().timeIntervalSince1970 + timeInterval)
-        )
+        return UInt64(dateInactive ? 0 : expireTime)
     }
     
-    var actualLayers: UInt8 {
-        min(layers, keyLength / 32)
-    }
+    var actualLayers: UInt8 { min(layers, keyLength / 32) }
 }

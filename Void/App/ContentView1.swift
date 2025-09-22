@@ -27,7 +27,7 @@ struct ContentView1: View {
         } scrollView: { proxy in
             VStack {
                 ForEach(1..<100) { i in
-                    Text("Number \(i)")
+                    Text(String(i))
                         .id(i)
                 }
             }

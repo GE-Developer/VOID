@@ -10,12 +10,13 @@ import Foundation
 @MainActor
 final class AES256EncryptionViewModel: ObservableObject {
     @Published var encryptionParameters = AES256Parameters(
-        password: "",
-        salt: 128,
-        iterations: 20,
-        memory: 1024 * 4,
-        parallelism: 3,
-        keyLength: 64,
+        password: "вв",
+        voidIndex: 3000,
+        salt: 8,
+        iterations: 1,
+        memory: 1024 * 1,
+        parallelism: 1,
+        keyLength: 32,
         layers: 1,
         selectedHours: 0,
         selectedMinutes: 5,
@@ -23,22 +24,6 @@ final class AES256EncryptionViewModel: ObservableObject {
     )
     
     @Published private(set) var messages: [Message] = []
-    
-    let introMessages: [Message] = [
-        Message(
-            timestamp: Date(),
-            originalText: L10n("Cryptography.AES-256.EncryptedIntroMessage.originalText"),
-            encryptedText: L10n("Cryptography.AES-256.EncryptedIntroMessage.encryptedText"),
-            encryptionMode: .encrypt
-        ),
-        Message(
-            timestamp: Date(),
-            originalText: L10n("Cryptography.AES-256.DecryptedIntroMessage.originalText"),
-            encryptedText: L10n("Cryptography.AES-256.DecryptedIntroMessage.encryptedText"),
-            encryptionMode: .decrypt
-        )
-    ]
-    
     
     var placeholder: String {
         guard encryptionParameters.password != "" else {
@@ -57,41 +42,29 @@ final class AES256EncryptionViewModel: ObservableObject {
     let headetText = L10n("Cryptography.AES-256.instructions")
     
     @Published var text = ""
-//    @Published var resultText = ""
     
     @Published var currentMode: CryptoAction = .encrypt
     
     @Published private(set) var isEncrypting = false
     
-  
-    
     private var currentTask: Task<Void, Never>?
     
-    func encrypt() {
+    func encrypt() async {
         currentTask?.cancel()
         currentTask = Task { [weak self] in
             guard let self else { return }
             do {
-                let passwordManager = PasswordManager()
-                let combinedPassword = passwordManager.combinedSecret(password: encryptionParameters.password, voidIndex: 3000)
 
                 let userText = text
                 await MainActor.run { self.text = "" }
 
-                let result = try await EncryptionService().encrypt(
-                    plaintext: Data(userText.utf8),
-                    password: combinedPassword,
-                    saltLength: self.encryptionParameters.salt,
-                    iterations: self.encryptionParameters.iterations,
-                    memoryKiB: self.encryptionParameters.memory,
-                    parallelism: self.encryptionParameters.parallelism,
-                    keyLength: self.encryptionParameters.keyLength,
-                    layers: self.encryptionParameters.actualLayers,
-                    expirationTimestamp: self.encryptionParameters.duration
+                
+                let result = try  CryptoService().encrypt(
+                    plaintext: userText,
+                    parameters: encryptionParameters
                 )
-
+                
                 await MainActor.run {
-//                    self.resultText = result
                     self.messages.append(Message(
                         timestamp: Date(),
                         originalText: userText,
@@ -100,34 +73,31 @@ final class AES256EncryptionViewModel: ObservableObject {
                     ))
                 }
             } catch {
-                await MainActor.run {
-//                    self.resultText = "Ошибка: \(error.localizedDescription)"
-                }
+                let cryptoError = error as? CryptoError
+                print(cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription)
             }
         }
     }
     
     func decrypt() async {
-        let passwordManager = PasswordManager()
-        let combinedPassword = passwordManager.combinedSecret(password: encryptionParameters.password, voidIndex: 3000)
-        
         let userText = text
         text = ""
-        let encryptionService = EncryptionService()
         guard !userText.isEmpty else { return }
         isEncrypting = true
 
         do {
             print("do")
             let result = try await Task.detached(priority: .userInitiated) {
-                let decryptedData = try await encryptionService.decrypt(userText, password: combinedPassword)
-                guard let string = String(data: decryptedData, encoding: .utf8) else {
-                    throw NSError(domain: "DecodeError", code: -1)
-                }
-                return string
+                
+                
+                let decryptedData = try await CryptoService().decrypt(
+                    ciphertext: userText,
+                    password: self.encryptionParameters.password,
+                    voidIndex: self.encryptionParameters.voidIndex
+                )
+                
+                return decryptedData
             }.value
-            
-//            resultText = result
             let message = Message(
                 timestamp: Date(),
                 originalText: result,
@@ -135,18 +105,13 @@ final class AES256EncryptionViewModel: ObservableObject {
                 encryptionMode: currentMode
             )
             messages.append(message)
-
+            
         } catch {
-//            resultText = "Ошибка: \(error.localizedDescription)"
+            let cryptoError = error as? CryptoError
+            print(cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription)
         }
-
+        
         isEncrypting = false
-    }
-    
-    func printThat() {
-        print("+++")
-        print(encryptionParameters)
-        print("+++")
     }
     
     deinit {
