@@ -83,10 +83,8 @@ struct MatrixAnimationView: View {
                     let y = CGFloat(rowIndex) * (letterSize + rowSpacing) + letterSize / 2 + (height - totalHeight)/2
                     
                     let letterText = Text(String(letter))
-                        .font(.system(size: letterSize, weight: .light, design: .monospaced))
+                        .font(.system(size: letterSize, weight: .semibold, design: .monospaced))
                         .foregroundStyle(color)
-                    
-                    
                     
                     context.draw(letterText, at: CGPoint(x: x, y: y))
                 }

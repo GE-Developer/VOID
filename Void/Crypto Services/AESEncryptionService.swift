@@ -11,7 +11,7 @@ import CryptoKit
 final class AESEncryptionService {
     
     // MARK: - Text Encryption
-    func encrypt(plaintext: Data, keys: [SymmetricKey]/*, expiration: UInt64*/) throws -> Data {
+    func encrypt(plaintext: Data, keys: [SymmetricKey]) async throws -> Data {
         var current = plaintext
         var outData = Data()
         
@@ -31,15 +31,19 @@ final class AESEncryptionService {
             current = sealed.ciphertext
         }
         
+        print("6") 
+        
         return outData
     }
     
     // MARK: - Text Decryption
-    func decrypt(ciphertext: Data, keys: [SymmetricKey]/*, expiration: UInt64*/) throws -> Data {        
+    func decrypt(ciphertext: Data, keys: [SymmetricKey]) async throws -> Data {
+        try Task.checkCancellation()
         var offset = 0
         var layers: [(nonce: AES.GCM.Nonce, ciphertext: Data, tag: Data)] = []
         
         for _ in keys {
+            try Task.checkCancellation()
             guard ciphertext.count >= offset + 12 + 4 else {
                 throw CryptoError.invalidFormat
             }
@@ -77,6 +81,7 @@ final class AESEncryptionService {
         var current = lastLayer.ciphertext
         
         for (i, layer) in layers.enumerated().reversed() {
+            try Task.checkCancellation()
             guard
                 let sealed = try? AES.GCM.SealedBox(
                     nonce: layer.nonce,
@@ -91,6 +96,11 @@ final class AESEncryptionService {
             current = decrypted
         }
         
+        try Task.checkCancellation()
         return current
+    }
+    
+    deinit {
+     print("AESEncryptionService")
     }
 }

@@ -12,7 +12,7 @@ import CryptoKit
 final class KeyDerivationService {
 
     // MARK: - Salt Generator
-    func generateSalt(length: Int) throws -> Data {
+    func generateSalt(length: Int) async throws -> Data {
         var salt = Data(count: length)
         
         try salt.withUnsafeMutableBytes {
@@ -22,7 +22,7 @@ final class KeyDerivationService {
                 throw CryptoError.saltGenerationFailed
             }
         }
-        
+        print("3")
         return salt
     }
 
@@ -34,7 +34,7 @@ final class KeyDerivationService {
         memory: UInt32,
         parallelism: UInt8,
         length: UInt8
-    ) throws -> Data {
+    ) async throws -> Data {
         let passwordData = Data(password.utf8)
         
         guard let result = try? Argon2Swift.hashPasswordBytes(
@@ -49,12 +49,12 @@ final class KeyDerivationService {
         ) else {
             throw CryptoError.argon2Failed
         }
-
+        print("4")
         return result.hashData()
     }
     
     // MARK: - Derives multiple subkeys from a master key using HKDF-SHA256.
-    func deriveSubkeys(masterKey: Data, count: Int) throws -> [SymmetricKey] {
+    func deriveSubkeys(masterKey: Data, count: Int) async throws -> [SymmetricKey] {
         guard !masterKey.isEmpty else { throw CryptoError.invalidMasterKey }
         guard count > 0 else { throw CryptoError.invalidSubkeyCount }
 
@@ -72,7 +72,11 @@ final class KeyDerivationService {
             )
             subkeys.append(subkey)
         }
-
+        print("5")
         return subkeys
+    }
+    
+    deinit {
+        print("KeyDerivationService")
     }
 }

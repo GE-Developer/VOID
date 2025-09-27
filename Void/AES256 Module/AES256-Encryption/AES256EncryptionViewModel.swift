@@ -5,6 +5,8 @@
 //  Created by GE-Developer
 //
 
+
+
 import Foundation
 
 @MainActor
@@ -13,8 +15,8 @@ final class AES256EncryptionViewModel: ObservableObject {
         password: "вв",
         voidIndex: 3000,
         salt: 8,
-        iterations: 1,
-        memory: 1024 * 1,
+        iterations: 200,
+        memory: 1024 * 32,
         parallelism: 1,
         keyLength: 32,
         layers: 1,
@@ -23,7 +25,11 @@ final class AES256EncryptionViewModel: ObservableObject {
         dateInactive: true
     )
     
+    @Published var text = ""
+    @Published var currentMode: CryptoAction = .encrypt
+    
     @Published private(set) var messages: [Message] = []
+    @Published private(set) var isEncrypting = false
     
     var placeholder: String {
         guard encryptionParameters.password != "" else {
@@ -35,47 +41,53 @@ final class AES256EncryptionViewModel: ObservableObject {
         }
     }
     
+    private var currentTask: Task<Void, Never>?
+    
     let title = L10n("Cryptography.AES-256")
     let encryptionTitle = L10n("Cryptography.encryption")
     let decryptionTitle = L10n("Cryptography.decryption")
-    
     let headetText = L10n("Cryptography.AES-256.instructions")
     
-    @Published var text = ""
+    func startEncrypt() {
+        isEncrypting = true
+        currentTask?.cancel()
+        currentTask = Task { await encrypt() }
+    }
     
-    @Published var currentMode: CryptoAction = .encrypt
-    
-    @Published private(set) var isEncrypting = false
-    
-    private var currentTask: Task<Void, Never>?
+    func cancelTasks() {
+        currentTask?.cancel()
+        currentTask = nil
+        isEncrypting = false
+    }
     
     func encrypt() async {
-        currentTask?.cancel()
-        currentTask = Task { [weak self] in
-            guard let self else { return }
-            do {
-
-                let userText = text
-                await MainActor.run { self.text = "" }
-
-                
-                let result = try  CryptoService().encrypt(
-                    plaintext: userText,
-                    parameters: encryptionParameters
+        isEncrypting = true
+        
+        defer {
+            isEncrypting = false
+        }
+        
+        let userText = text
+        text = ""
+        
+        do {
+            print("Начало шифрования")
+            let result = try await CryptoService().encrypt(
+                plaintext: userText,
+                parameters: encryptionParameters
+            )
+            print("Сообщение")
+            messages.append(
+                Message(
+                    timestamp: Date(),
+                    originalText: userText,
+                    encryptedText: result,
+                    encryptionMode: currentMode
                 )
-                
-                await MainActor.run {
-                    self.messages.append(Message(
-                        timestamp: Date(),
-                        originalText: userText,
-                        encryptedText: result,
-                        encryptionMode: self.currentMode
-                    ))
-                }
-            } catch {
-                let cryptoError = error as? CryptoError
-                print(cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription)
-            }
+            )
+        } catch {
+            let cryptoError = error as? CryptoError
+            print(cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription)
         }
     }
     
@@ -88,7 +100,6 @@ final class AES256EncryptionViewModel: ObservableObject {
         do {
             print("do")
             let result = try await Task.detached(priority: .userInitiated) {
-                
                 
                 let decryptedData = try await CryptoService().decrypt(
                     ciphertext: userText,
@@ -116,5 +127,7 @@ final class AES256EncryptionViewModel: ObservableObject {
     
     deinit {
         currentTask?.cancel()
+        currentTask = nil
+        print("DEINIT")
     }
 }

@@ -25,6 +25,8 @@
 		1F2D34262E7DF41A005E6239 /* KeyDerivationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */; };
 		1F2D34282E7E1760005E6239 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34272E7E1760005E6239 /* CryptoService.swift */; };
 		1F2D342B2E7F3D87005E6239 /* CryptoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342A2E7F3D87005E6239 /* CryptoError.swift */; };
+		1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */; };
+		1F2D34312E84AFC6005E6239 /* FullScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */; };
 		1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */; };
 		1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDE2E75835500DB44CE /* View + Ext.swift */; };
 		1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7970872E7C4D6B007755F3 /* Sound.swift */; };
@@ -79,6 +81,8 @@
 		1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivationService.swift; sourceTree = "<group>"; };
 		1F2D34272E7E1760005E6239 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
 		1F2D342A2E7F3D87005E6239 /* CryptoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoError.swift; sourceTree = "<group>"; };
+		1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVersion.swift; sourceTree = "<group>"; };
+		1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenLoader.swift; sourceTree = "<group>"; };
 		1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		1F64ADDE2E75835500DB44CE /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
 		1F7970872E7C4D6B007755F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 			children = (
 				1F2D34272E7E1760005E6239 /* CryptoService.swift */,
 				1F8DDBB22E366E11005734CD /* AES256EncryptionView.swift */,
+				1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */,
 				1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */,
 			);
 			path = "AES256-Encryption";
@@ -164,6 +169,7 @@
 				1F1452562E608D8900F8A553 /* AppStorageKey.swift */,
 				1F7970872E7C4D6B007755F3 /* Sound.swift */,
 				1F2D342A2E7F3D87005E6239 /* CryptoError.swift */,
+				1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				1F8DDBFA2E38123F005734CD /* AES256SettingsView.swift in Sources */,
 				1F1161262E747C6200A7894D /* CustomScrollView.swift in Sources */,
 				1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */,
+				1F2D34312E84AFC6005E6239 /* FullScreenLoader.swift in Sources */,
 				1F7D9EF92E653107007B4DDD /* MatrixAnimationView.swift in Sources */,
 				1F7D9EE52E6342DA007B4DDD /* SettingsViewModel.swift in Sources */,
 				1F1452592E608E9200F8A553 /* SettingsView.swift in Sources */,
@@ -440,6 +447,7 @@
 				1F8DDCE92E3A7843005734CD /* FormHeaderContent.swift in Sources */,
 				1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */,
 				1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */,
+				1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */,
 				1F12FE482E4264260023DB69 /* CustomMessageTextField.swift in Sources */,
 				1F1452532E6080F800F8A553 /* Language.swift in Sources */,
 				1F8DDCDD2E39641A005734CD /* CustomButtonRow.swift in Sources */,

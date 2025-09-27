@@ -33,6 +33,11 @@ struct AES256EncryptionView: View {
         .safeAreaInset(edge: .bottom) {
             bottomSafeArea
         }
+        .overlay {
+            if vm.isEncrypting {
+                FullScreenLoader()
+            }
+        }
         .navigationDestination(isPresented: $goToSettings) {
             NavigationLazyView(AES256SettingsView(vm: vm))
         }
@@ -56,7 +61,7 @@ extension AES256EncryptionView {
             CustomMessageTextField(text: $vm.text, isDisabled: $disabled, placeholder: vm.placeholder) {
                 switch vm.currentMode {
                 case .encrypt:
-                    Task { await vm.encrypt() }
+                    vm.startEncrypt()
                 case .decrypt:
                     Task { await vm.decrypt() }
                     print("DECRYPT")

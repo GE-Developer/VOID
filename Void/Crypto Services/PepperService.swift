@@ -28,14 +28,17 @@ final class PepperService {
     }
 
     // MARK: - Returns password + voidKey (if provided)
-    func combinedSecret(password: String, voidIndex: UInt16?) -> String {
+    func combinedSecret(password: String, voidIndex: UInt16?) async -> String {
         guard let index = voidIndex else { return password }
         
-        return password + voidKey(for: index)
+        let combinedPassword = await password + voidKey(for: index)
+        
+        print("2")
+        return combinedPassword
     }
     
     // MARK: - VOID key generation by index
-    private func voidKey(for index: UInt16) -> String {
+    private func voidKey(for index: UInt16) async -> String {
         var combined = seedData
         var idx = UInt16(index)
         
@@ -43,9 +46,15 @@ final class PepperService {
         
         let hash = SHA256.hash(data: combined)
         
+        print("1")
+        
         return hash.map { String(format: "%02x", $0) }
             .joined()
             .prefix(16)
             .description
+    }
+    
+    deinit {
+     print("PepperService")
     }
 }
