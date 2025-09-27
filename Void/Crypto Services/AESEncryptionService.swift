@@ -9,7 +9,6 @@ import Foundation
 import CryptoKit
 
 final class AESEncryptionService {
-    
     // MARK: - Text Encryption
     func encrypt(plaintext: Data, keys: [SymmetricKey]) async throws -> Data {
         var current = plaintext
@@ -30,8 +29,6 @@ final class AESEncryptionService {
             
             current = sealed.ciphertext
         }
-        
-        print("6") 
         
         return outData
     }
@@ -94,9 +91,5 @@ final class AESEncryptionService {
         }
         
         return current
-    }
-    
-    deinit {
-     print("AESEncryptionService")
     }
 }

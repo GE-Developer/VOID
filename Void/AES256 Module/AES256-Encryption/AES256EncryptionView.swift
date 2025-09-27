@@ -64,7 +64,6 @@ extension AES256EncryptionView {
                     vm.startEncrypt()
                 case .decrypt:
                     Task { await vm.decrypt() }
-                    print("DECRYPT")
                 }
             }
             .onAppear {
@@ -72,7 +71,6 @@ extension AES256EncryptionView {
             }
             .onDisappear {
                 vm.cancelTasks()
-                print("onDisappear")
             }
             .onTapGesture {
                 guard disabled else { return }

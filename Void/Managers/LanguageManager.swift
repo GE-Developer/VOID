@@ -7,15 +7,20 @@
 
 import Foundation
 
-@MainActor
 @Observable
 final class LanguageManager {
-    
     var currentLanguageID: String {
         didSet {
             defaults.set([currentLanguageID], forKey: key)
             defaults.synchronize()
         }
+    }
+    
+    var bundle: Bundle? {
+        guard let path = Bundle.main.path(forResource: currentLanguageID, ofType: "lproj") else {
+            return .main
+        }
+        return Bundle(path: path)
     }
     
     static let shared = LanguageManager()

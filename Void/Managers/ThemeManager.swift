@@ -5,14 +5,16 @@
 //  Created by GE-Developer
 //
 
-import Foundation
+import SwiftUICore
 
-@MainActor
 @Observable
 final class ThemeManager {
-    
     var isThemeLight: Bool {
         didSet { defaults.set(isThemeLight, forKey: key) }
+    }
+    
+    var theme: ColorScheme {
+        isThemeLight ? .light : .dark
     }
     
     static let shared = ThemeManager()

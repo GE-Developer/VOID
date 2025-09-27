@@ -7,15 +7,9 @@
 
 import SwiftUI
 
-@MainActor
 final class HomeViewModel: ObservableObject {
-    var cryptoOneTitle: String {
-        L10n("Cryptography.AES-256")
-    }
-    
-    var settingsTitle: String {
-        L10n("Settings.title")
-    }
+    var cryptoOneTitle: String { L10n("Cryptography.AES-256") }
+    var settingsTitle: String { L10n("Settings.title") }
 }
 
 struct HomeView: View {

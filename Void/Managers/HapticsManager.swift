@@ -7,9 +7,7 @@
 
 import UIKit
 
-@MainActor
 final class HapticsManager {
-    
     var isHapticsOff: Bool {
         didSet { defaults.set(isHapticsOff, forKey: key) }
     }

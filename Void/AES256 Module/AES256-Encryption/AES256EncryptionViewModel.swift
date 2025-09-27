@@ -5,11 +5,8 @@
 //  Created by GE-Developer
 //
 
-
-
 import Foundation
 
-@MainActor
 final class AES256EncryptionViewModel: ObservableObject {
     @Published var encryptionParameters = AES256Parameters(
         password: "вв",
@@ -60,6 +57,7 @@ final class AES256EncryptionViewModel: ObservableObject {
         isEncrypting = false
     }
     
+    @MainActor
     func encrypt() async {
         isEncrypting = true
         
@@ -71,12 +69,11 @@ final class AES256EncryptionViewModel: ObservableObject {
         text = ""
         
         do {
-            print("Начало шифрования")
             let result = try await CryptoService().encrypt(
                 plaintext: userText,
                 parameters: encryptionParameters
             )
-            print("Сообщение")
+            
             messages.append(
                 Message(
                     timestamp: Date(),
@@ -98,7 +95,6 @@ final class AES256EncryptionViewModel: ObservableObject {
         isEncrypting = true
 
         do {
-            print("do")
             let result = try await Task.detached(priority: .userInitiated) {
                 
                 let decryptedData = try await CryptoService().decrypt(

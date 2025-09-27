@@ -9,7 +9,6 @@ import Foundation
 import CryptoKit
 
 final class PepperService {
-    
     // MARK: - Obfuscated seed parts
     private let part1_encrypted: [UInt8] = [0x5C, 0x6F, 0x5A]
     private let mask1: [UInt8] = [0xAA, 0xAA, 0xAA]
@@ -33,7 +32,6 @@ final class PepperService {
         
         let combinedPassword = await password + voidKey(for: index)
         
-        print("2")
         return combinedPassword
     }
     
@@ -46,15 +44,9 @@ final class PepperService {
         
         let hash = SHA256.hash(data: combined)
         
-        print("1")
-        
         return hash.map { String(format: "%02x", $0) }
             .joined()
             .prefix(16)
             .description
-    }
-    
-    deinit {
-     print("PepperService")
     }
 }

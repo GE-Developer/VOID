@@ -7,9 +7,7 @@
 
 import Foundation
 
-@MainActor
 final class SettingsViewModel: ObservableObject {
-    
     @Published var isThemeLight: Bool {
         didSet { themeManager.isThemeLight = isThemeLight }
     }
@@ -29,6 +27,7 @@ final class SettingsViewModel: ObservableObject {
     var generalSettingsTitle: String {
         L10n("Settings.General.title")
     }
+    
     var darkModeTitle: String {
         L10n("Settings.General.DarkMode.title")
     }

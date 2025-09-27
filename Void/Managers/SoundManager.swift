@@ -7,7 +7,6 @@
 
 import AVFoundation
 
-@MainActor
 final class SoundManager {
     
     var isSoundOff: Bool {

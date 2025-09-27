@@ -7,9 +7,7 @@
 
 import Foundation
 
-@MainActor
 final class LanguageViewModel: ObservableObject {
-    
     @Published var chosenLanguage: Language?
     
     var title: String {

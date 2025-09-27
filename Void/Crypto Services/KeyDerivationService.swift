@@ -10,7 +10,6 @@ import Argon2Swift
 import CryptoKit
 
 final class KeyDerivationService {
-
     // MARK: - Salt Generator
     func generateSalt(length: Int) async throws -> Data {
         var salt = Data(count: length)
@@ -22,7 +21,7 @@ final class KeyDerivationService {
                 throw CryptoError.saltGenerationFailed
             }
         }
-        print("3")
+        
         return salt
     }
 
@@ -49,7 +48,7 @@ final class KeyDerivationService {
         ) else {
             throw CryptoError.argon2Failed
         }
-        print("4")
+        
         return result.hashData()
     }
     
@@ -72,11 +71,7 @@ final class KeyDerivationService {
             )
             subkeys.append(subkey)
         }
-        print("5")
+        
         return subkeys
-    }
-    
-    deinit {
-     print("KeyDerivationService")
     }
 }
