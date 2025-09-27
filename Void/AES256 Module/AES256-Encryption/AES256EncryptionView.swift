@@ -70,6 +70,10 @@ extension AES256EncryptionView {
             .onAppear {
                 disabled = vm.encryptionParameters.password == ""
             }
+            .onDisappear {
+                vm.cancelTasks()
+                print("onDisappear")
+            }
             .onTapGesture {
                 guard disabled else { return }
                 goToSettings = true

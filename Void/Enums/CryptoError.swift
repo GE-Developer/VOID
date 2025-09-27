@@ -5,9 +5,6 @@
 //  Created by GE-Developer
 //
 
-import Foundation
-
-@MainActor
 enum CryptoError: Error {
     // Key derivation
     case saltGenerationFailed

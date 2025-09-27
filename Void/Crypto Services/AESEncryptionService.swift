@@ -38,12 +38,10 @@ final class AESEncryptionService {
     
     // MARK: - Text Decryption
     func decrypt(ciphertext: Data, keys: [SymmetricKey]) async throws -> Data {
-        try Task.checkCancellation()
         var offset = 0
         var layers: [(nonce: AES.GCM.Nonce, ciphertext: Data, tag: Data)] = []
         
         for _ in keys {
-            try Task.checkCancellation()
             guard ciphertext.count >= offset + 12 + 4 else {
                 throw CryptoError.invalidFormat
             }
@@ -81,7 +79,6 @@ final class AESEncryptionService {
         var current = lastLayer.ciphertext
         
         for (i, layer) in layers.enumerated().reversed() {
-            try Task.checkCancellation()
             guard
                 let sealed = try? AES.GCM.SealedBox(
                     nonce: layer.nonce,
@@ -96,7 +93,6 @@ final class AESEncryptionService {
             current = decrypted
         }
         
-        try Task.checkCancellation()
         return current
     }
     

@@ -13,8 +13,21 @@ extension String {
     }
 }
 
-@MainActor
 public func L10n(_ key: String.LocalizationValue) -> String {
-    let languageBundle = LanguageManager.shared.bundle
-    return String(localized: key, bundle: languageBundle)
+    let defaults = UserDefaults.standard
+    let languageArray = defaults.array(forKey: AppStorageKey.language.key) as? [String]
+    let languageID = languageArray?.first
+        ?? Bundle.main.preferredLocalizations.first
+        ?? Bundle.main.developmentLocalization
+        ?? "en"
+
+    let bundle: Bundle
+    if let path = Bundle.main.path(forResource: languageID, ofType: "lproj"),
+       let langBundle = Bundle(path: path) {
+        bundle = langBundle
+    } else {
+        bundle = .main
+    }
+
+    return String(localized: key, bundle: bundle)
 }

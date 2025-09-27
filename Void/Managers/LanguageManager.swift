@@ -18,13 +18,6 @@ final class LanguageManager {
         }
     }
     
-    var bundle: Bundle? {
-        guard let path = Bundle.main.path(forResource: currentLanguageID, ofType: "lproj") else {
-            return .main
-        }
-        return Bundle(path: path)
-    }
-    
     static let shared = LanguageManager()
     
     private let defaults = UserDefaults.standard
