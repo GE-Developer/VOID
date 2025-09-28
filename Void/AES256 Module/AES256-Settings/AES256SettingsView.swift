@@ -31,7 +31,7 @@ struct AES256SettingsView: View {
 extension AES256SettingsView {
     private var settingsView: some View {
         CustomScrollView { isLargeNavBar in
-            CustomNavigationBar(
+            CustomNavigationTitle(
                 title: vm.title,
                 subTitle: vm.subTitle,
                 isLargeNavBar: isLargeNavBar

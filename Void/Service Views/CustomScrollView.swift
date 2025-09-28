@@ -87,10 +87,9 @@ extension CustomScrollView {
             } label: {
                 Image.system.back
                     .fontWeight(.light)
-                    .padding(10)
                     .foregroundStyle(Color.void.blackAndWhite)
-                    .frame(width: 20)
-                    .background { Color.clear }
+                    .padding(.leading, 8)
+                    .frame(width: 50, height: isLargeNavBar ? largeNavBarHeight : smallNavBarHeight)
             }
         }
     }
@@ -110,7 +109,8 @@ extension CustomScrollView {
                 backButton
                 titleHStackView(isLargeNavBar)
             }
-            .padding(.horizontal)
+            .padding(.trailing, 14)
+            .padding(.leading, withBackButton ? 0 : 14)
         }
         .frame(height: isLargeNavBar ? largeNavBarHeight : smallNavBarHeight)
         .animation(.easeOut(duration: 0.2), value: isLargeNavBar)

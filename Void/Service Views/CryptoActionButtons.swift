@@ -13,6 +13,8 @@ struct CryptoActionButtons: View {
     private let decryptiontitle: String
     private let encryptiontitle: String
     
+    private let height: CGFloat = 37
+    
     init(
         cryptoAction: Binding<CryptoAction>,
         decryptiontitle: String,
@@ -39,7 +41,7 @@ extension CryptoActionButtons {
                 cryptoAction = .encrypt
             }
         }
-        .frame(height: 35)
+        .frame(height: height)
     }
     
     private func button(title: String, isActive: Bool, action: @escaping () -> Void) -> some View {
@@ -47,7 +49,7 @@ extension CryptoActionButtons {
             action()
         } label: {
             ZStack {
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: height / 2)
                     .foregroundStyle(
                         isActive
                         ? Gradient.accent

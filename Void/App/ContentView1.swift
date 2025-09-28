@@ -18,7 +18,7 @@ struct ContentView1: View {
     
     var body: some View {
         CustomScrollView() { isLargeNavBar in
-            CustomNavigationBar(title: vm.text, subTitle: vm.subText, isLargeNavBar: isLargeNavBar)
+            CustomNavigationTitle(title: vm.text, subTitle: vm.subText, isLargeNavBar: isLargeNavBar)
             Spacer()
         } headerView: { minY in
             Rectangle()

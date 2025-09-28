@@ -17,6 +17,7 @@ struct CustomMessageTextField: View {
         text.isEmpty || isDisabled
     }
     
+    private let height: CGFloat = 37
     private let placeholder: String
     private let sendAction: () -> Void
     
@@ -40,7 +41,7 @@ struct CustomMessageTextField: View {
 // MARK: - Builder
 extension CustomMessageTextField {
     private var customMessageTextField: some View {
-        HStack {
+        HStack(alignment: .bottom) {
             HStack(spacing: 0) {
                 textField
                 deleteButton
@@ -60,10 +61,14 @@ extension CustomMessageTextField {
     }
     
     private var textField: some View {
-        TextField(placeholder, text: $text)
+        TextField(placeholder, text: $text, axis: .vertical)
             .focused($focus)
             .autocorrectionDisabled(true)
-            .padding(10)
+            .padding(.vertical, 5)
+            .padding(.trailing, 5)
+            .padding(.leading, 13)
+            .frame(minHeight: height)
+            .lineLimit(4)
             .foregroundStyle(Color.void.mainText)
             .fontDesign(.rounded)
             .fontWeight(.light)
@@ -93,7 +98,6 @@ extension CustomMessageTextField {
                         ? Gradient.gray
                         : Gradient.accent
                     )
-                    .frame(height: 40)
                 Image.system.send
                     .foregroundStyle(Color.void.secondaryTextNEW)
             }
@@ -101,13 +105,13 @@ extension CustomMessageTextField {
         }
         .disabled(buttonDisabled)
         .animation(.easeInOut, value: buttonDisabled)
+        .frame(width: height, height: height)
     }
     
     private var background: some View {
-        RoundedRectangle(cornerRadius: 10)
+        RoundedRectangle(cornerRadius: height / 2)
             .fill(Color.void.textFieldBackground)
             .shadow(color: Color.void.viewShadow, radius: 4)
-            .frame(height: 35)
     }
 }
 

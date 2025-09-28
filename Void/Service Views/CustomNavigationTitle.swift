@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomNavigationBar: View {
+struct CustomNavigationTitle: View {
     private let title: String
     private let subTitle: String?
     private let isLargeNavBar: Bool
@@ -34,7 +34,7 @@ struct CustomNavigationBar: View {
 }
 
 // MARK: - Builder
-extension CustomNavigationBar {
+extension CustomNavigationTitle {
     private var navigationBar: some View {
         VStack(alignment: alignment) {
             mainTitle

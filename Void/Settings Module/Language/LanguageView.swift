@@ -25,7 +25,7 @@ struct LanguageView: View {
 extension LanguageView {
     private var languageView: some View {
         CustomScrollView() { isLargeNavBar in
-            CustomNavigationBar(title: vm.title, isLargeNavBar: isLargeNavBar)
+            CustomNavigationTitle(title: vm.title, isLargeNavBar: isLargeNavBar)
             Spacer()
         } scrollView: { _ in
             CustomForm {

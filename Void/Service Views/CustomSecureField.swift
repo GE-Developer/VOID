@@ -56,8 +56,12 @@ extension CustomSecureField {
             .focused($focus)
             .autocorrectionDisabled(true)
             .textInputAutocapitalization(.never)
+            .textContentType(.password)
+            .keyboardType(.asciiCapable)
             .padding(.horizontal, 8)
             .foregroundStyle(Color.void.mainText)
+            .submitLabel(.done)
+            .onSubmit { focus = false }
             .fontDesign(.rounded)
             .fontWeight(.light)
     }

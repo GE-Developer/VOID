@@ -17,7 +17,7 @@ struct FullScreenLoader: View {
             CustomForm {
                 VStack(spacing: 16) {
                     text
-                        .foregroundStyle(Color(.secondarySystemGroupedBackground).opacity(0.95))
+                        .foregroundStyle(Color(.secondarySystemGroupedBackground).opacity(0.99))
                         .shadow(color: Color.void.blackAndWhite, radius: 0.3, y: 0.7)
                         .frame(height: 90)
                         .overlay {

@@ -15,7 +15,7 @@ struct AES256EncryptionView: View {
     var body: some View {
         
         CustomScrollView(backgroundImage: Image.background.aes256) { isLargeNavBar in
-            CustomNavigationBar(
+            CustomNavigationTitle(
                 title: vm.title,
                 isLargeNavBar: isLargeNavBar
             )
@@ -24,7 +24,7 @@ struct AES256EncryptionView: View {
         } headerView: { offsetY in
             HeaderTextView(text: vm.headetText, offsetY: offsetY)
         } scrollView: { proxy in
-            VStack(spacing: 15) {
+            LazyVStack(spacing: 15) {
                 ForEach(vm.messages) { message in
                     MessageView(message: message)
                 }

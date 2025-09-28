@@ -36,7 +36,7 @@ struct SettingsView: View {
 extension SettingsView {
     private var settingsView: some View {
         CustomScrollView { isLargeNavBar in
-            CustomNavigationBar(title: vm.title, isLargeNavBar: isLargeNavBar)
+            CustomNavigationTitle(title: vm.title, isLargeNavBar: isLargeNavBar)
             Spacer()
         } scrollView: { _ in
             VStack(spacing: 25) {

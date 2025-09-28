@@ -43,7 +43,7 @@
 		1F8DDBE82E36785E005734CD /* Image + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBE62E36785E005734CD /* Image + Ext.swift */; };
 		1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBE52E36785E005734CD /* Color + Ext.swift */; };
 		1F8DDBEF2E3678C0005734CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */; };
-		1F8DDBF12E367A58005734CD /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF02E367A58005734CD /* CustomNavigationBar.swift */; };
+		1F8DDBF12E367A58005734CD /* CustomNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF02E367A58005734CD /* CustomNavigationTitle.swift */; };
 		1F8DDBF32E367EC4005734CD /* AESEncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */; };
 		1F8DDBF62E36A15E005734CD /* Argon2Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8DDBF52E36A15E005734CD /* Argon2Swift */; };
 		1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */; };
@@ -99,7 +99,7 @@
 		1F8DDBE52E36785E005734CD /* Color + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBE62E36785E005734CD /* Image + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1F8DDBF02E367A58005734CD /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		1F8DDBF02E367A58005734CD /* CustomNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTitle.swift; sourceTree = "<group>"; };
 		1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESEncryptionService.swift; sourceTree = "<group>"; };
 		1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256EncryptionViewModel.swift; sourceTree = "<group>"; };
 		1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256SettingsView.swift; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 			children = (
 				1F1161252E747C6200A7894D /* CustomScrollView.swift */,
 				1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */,
-				1F8DDBF02E367A58005734CD /* CustomNavigationBar.swift */,
+				1F8DDBF02E367A58005734CD /* CustomNavigationTitle.swift */,
 				1F8DDCDA2E3963C3005734CD /* CustomForm.swift */,
 				1F8DDCDC2E39641A005734CD /* CustomButtonRow.swift */,
 				1F8DDCDE2E396454005734CD /* CustomToggleRow.swift */,
@@ -414,7 +414,7 @@
 				1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */,
 				1F8DDBC12E366E11005734CD /* AES256EncryptionView.swift in Sources */,
 				1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */,
-				1F8DDBF12E367A58005734CD /* CustomNavigationBar.swift in Sources */,
+				1F8DDBF12E367A58005734CD /* CustomNavigationTitle.swift in Sources */,
 				1F8DDCE32E39676C005734CD /* ContentView1.swift in Sources */,
 				1F8DDCE12E396473005734CD /* Gradient + Ext.swift in Sources */,
 				1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */,
