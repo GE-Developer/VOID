@@ -2478,6 +2478,40 @@
         }
       }
     },
+    "FullScreenAnimation.subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please keep the app open until the process is complete."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не закрывайте приложение, пока процесс не завершится."
+          }
+        }
+      }
+    },
+    "FullScreenAnimation.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Processing…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выполняется операция…"
+          }
+        }
+      }
+    },
     "Settings.AboutApp.PrivacyPolicy.title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -3590,15 +3624,6 @@
           }
         }
       }
-    },
-    "VOID" : {
-
-    },
-    "Идёт процесс…" : {
-
-    },
-    "Пожалуйста, не закрывайте приложение до завершения." : {
-
     }
   },
   "version" : "1.0"

@@ -2,7 +2,7 @@
 //  CryptoService.swift
 //  Void
 //
-//  Created by Mikhail Bukhrashvili on 20.09.25.
+//  Created by GE-Developer
 //
 
 import Foundation

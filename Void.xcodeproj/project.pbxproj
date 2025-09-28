@@ -142,9 +142,7 @@
 		1F12FE452E4221AC0023DB69 /* AES256-Encryption */ = {
 			isa = PBXGroup;
 			children = (
-				1F2D34272E7E1760005E6239 /* CryptoService.swift */,
 				1F8DDBB22E366E11005734CD /* AES256EncryptionView.swift */,
-				1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */,
 				1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */,
 			);
 			path = "AES256-Encryption";
@@ -241,6 +239,7 @@
 		1F8DDBDC2E367816005734CD /* AES256 Module */ = {
 			isa = PBXGroup;
 			children = (
+				1F2D34272E7E1760005E6239 /* CryptoService.swift */,
 				1F12FE452E4221AC0023DB69 /* AES256-Encryption */,
 				1F12FE442E4221440023DB69 /* AES256-Settings */,
 			);
@@ -297,6 +296,7 @@
 				1F12FE502E42DEDD0023DB69 /* MessageView.swift */,
 				1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */,
 				1F8DDCE42E3A1C01005734CD /* CustomSecureField.swift */,
+				1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */,
 			);
 			path = "Service Views";
 			sourceTree = "<group>";

@@ -25,7 +25,7 @@ final class AES256SettingsViewModel: ObservableObject {
     let saltInstructions = L10n("CryptoSettings.Salt.instructions")
     
     let iterationsTitle = L10n("CryptoSettings.Iterations.title")
-    let iterationsValues = Array<UInt16>(1...1000)
+    let iterationsValues = Array<UInt16>(1...500)
     let iterationsLabels = [
         L10n("CryptoSettings.weak"),
         L10n("CryptoSettings.medium"),
