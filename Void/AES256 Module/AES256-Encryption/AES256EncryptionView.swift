@@ -48,6 +48,7 @@ extension AES256EncryptionView {
                 MessageView(message: message)
             }
         }
+        .animation(.spring(response: 0.35, dampingFraction: 0.85), value: vm.messages)
         .padding(.top, 10)
     }
     

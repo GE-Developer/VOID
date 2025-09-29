@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Message: Identifiable {
+struct Message: Identifiable, Equatable {
     let id = UUID()
     let timestamp: Date
-    let originalText: String
-    let encryptedText: String
+    let plainText: String
+    let resultText: String
     let encryptionMode: CryptoAction
 }
