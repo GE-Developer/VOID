@@ -22,7 +22,6 @@ struct AES256SettingsView: View {
             }
             .navigationDestination(isPresented: $showVoid) {
                 NavigationLazyView(ContentView1())
-                
             }
     }
 }
@@ -71,34 +70,13 @@ extension AES256SettingsView {
                 isLink: true,
                 action: { showVoid = true }
             )
-            
-//            NavigationLink {
-//                ContentView1()
-//            } label: {
-//                Rectangle().frame(height: 30)
-//                CustomButtonRow(
-//                    icon: .system.key,
-//                    title: vm.voidTitle,
-//                    subtitle: vm.voidSubtitle,
-//                    additionalTitle: "#51",
-//                    action: { print("CustomButtonRow") }
-//                )
-//            }
-            
-//            NavigationLink {
-//                ContentView1()
-//            } label: {
-//                Rectangle().frame(height: 30)
-//            }
-
-
         }
     }
     
     private var dividerMessage: some View {
         VStack {
             Text(vm.dividerMessage)
-                .foregroundStyle(Color.void.secondaryTextNEW)
+                .foregroundStyle(Color.void.secondaryText)
                 .font(.headline)
                 .fontDesign(.rounded)
                 .textCase(.uppercase)

@@ -14,7 +14,7 @@ extension Color {
 struct VoidColor {
     let background = Color("Background")
     let blackAndWhite = Color("Black And White")
-    let secondaryTextNEW = Color("Secondary Text")
+    let secondaryText = Color("Secondary Text")
     let accentDark = Color("Accent Dark")
     let accentLight = Color("Accent Light")
     let goldLight = Color("Gold Light")

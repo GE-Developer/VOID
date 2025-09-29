@@ -29,7 +29,7 @@ extension HeaderTextView {
                 .font(.caption2)
                 .fontWeight(.thin)
                 .fontDesign(.rounded)
-                .foregroundStyle(Color.void.secondaryTextNEW)
+                .foregroundStyle(Color.void.secondaryText)
                 .minimumScaleFactor(0.5)
                 .multilineTextAlignment(.leading)
             Spacer()

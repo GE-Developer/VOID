@@ -63,7 +63,7 @@ extension FullScreenLoader {
                 .font(.headline)
                 .foregroundStyle(Color.void.mainText)
             Text(subtitle)
-                .foregroundStyle(Color.void.secondaryTextNEW)
+                .foregroundStyle(Color.void.secondaryText)
                 .font(.subheadline)
         }
         .multilineTextAlignment(.center)

@@ -13,6 +13,7 @@ struct CustomSecureField: View {
     @Binding private var password: String
     
     private let placeholder: String
+    private let height: CGFloat = 37
     
     init(password: Binding<String>, placeholder: String) {
         self._password = password
@@ -35,7 +36,7 @@ extension CustomSecureField {
         .background { background }
         .onTapGesture { focus = true }
         .animation(.easeInOut, value: focus)
-        .padding(.vertical, 15)
+        .padding(.vertical, 8)
         .padding(.horizontal, 10)
     }
     
@@ -54,6 +55,7 @@ extension CustomSecureField {
     private var secureField: some View {
         SecureField(placeholder, text: $password)
             .focused($focus)
+            .frame(height: height)
             .autocorrectionDisabled(true)
             .textInputAutocapitalization(.never)
             .textContentType(.password)
@@ -71,7 +73,7 @@ extension CustomSecureField {
             Image.system.xmark
                 .font(.title3)
                 .fontWeight(.ultraLight)
-                .foregroundStyle(Color.void.secondaryTextNEW)
+                .foregroundStyle(Color.void.secondaryText)
                 .padding(.trailing, 10)
         }
         .opacity(password.isEmpty ? 0 : 1)
@@ -79,10 +81,9 @@ extension CustomSecureField {
     }
     
     private var background: some View {
-        RoundedRectangle(cornerRadius: 10)
+        RoundedRectangle(cornerRadius: height / 2)
             .fill(Color.void.textFieldBackground)
             .shadow(color: Color.void.viewShadow, radius: 2)
-            .frame(height: 35)
     }
 }
 

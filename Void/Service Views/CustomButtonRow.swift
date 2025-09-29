@@ -88,7 +88,7 @@ extension CustomButtonRow {
                 .minimumScaleFactor(0.5)
             if let subtitle {
                 Text(subtitle)
-                    .foregroundStyle(Color.void.secondaryTextNEW)
+                    .foregroundStyle(Color.void.secondaryText)
                     .font(.caption)
                     .fontWeight(.light)
             }

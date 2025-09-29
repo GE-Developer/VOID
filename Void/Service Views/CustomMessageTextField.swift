@@ -80,7 +80,7 @@ extension CustomMessageTextField {
             Image.system.xmark
                 .font(.title3)
                 .fontWeight(.ultraLight)
-                .foregroundStyle(Color.void.secondaryTextNEW)
+                .foregroundStyle(Color.void.secondaryText)
                 .padding(.trailing, 10)
         }
         .opacity(text.isEmpty ? 0 : 1)
@@ -99,7 +99,7 @@ extension CustomMessageTextField {
                         : Gradient.accent
                     )
                 Image.system.send
-                    .foregroundStyle(Color.void.secondaryTextNEW)
+                    .foregroundStyle(Color.void.secondaryText)
             }
             .opacity(buttonDisabled ? 0.6 : 1)
         }
