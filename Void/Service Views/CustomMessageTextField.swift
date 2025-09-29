@@ -22,9 +22,9 @@ struct CustomMessageTextField: View {
     private let sendAction: () -> Void
     
     init(
-        text: Binding<String>,
-        isDisabled: Binding<Bool>,
-        placeholder: String,
+        _ text: Binding<String>,
+        _ isDisabled: Binding<Bool>,
+        _ placeholder: String,
         _ sendAction: @escaping () -> Void
     ) {
         self._text = text

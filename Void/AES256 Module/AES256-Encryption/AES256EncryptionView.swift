@@ -6,49 +6,60 @@
 //
 
 import SwiftUI
- 
+
 struct AES256EncryptionView: View {
     @StateObject private var vm = AES256EncryptionViewModel()
-    @State private var disabled = true
+    @State private var isTextFieldDisabled = true
     @State private var goToSettings = false
     
     var body: some View {
-        
-        CustomScrollView(backgroundImage: Image.background.aes256) { isLargeNavBar in
-            CustomNavigationTitle(
-                title: vm.title,
-                isLargeNavBar: isLargeNavBar
-            )
-            Spacer()
-            settingsButton
-        } headerView: { offsetY in
-            HeaderTextView(text: vm.headetText, offsetY: offsetY)
-        } scrollView: { proxy in
-            LazyVStack(spacing: 15) {
-                ForEach(vm.messages) { message in
-                    MessageView(message: message)
-                }
+        aes256EncryptionView
+            .navigationDestination(isPresented: $goToSettings) {
+                NavigationLazyView(AES256SettingsView(vm: vm))
             }
-        }
-        .safeAreaInset(edge: .bottom) {
-            bottomSafeArea
-        }
-        .overlay {
-            if vm.isEncrypting {
-                FullScreenLoader()
-            }
-        }
-        .navigationDestination(isPresented: $goToSettings) {
-            NavigationLazyView(AES256SettingsView(vm: vm))
-        }
     }
 }
 
 // MARK: - Builder
-extension AES256EncryptionView {    
+extension AES256EncryptionView {
+    private var aes256EncryptionView: some View {
+        CustomScrollView(backgroundImage: Image.background.aes256) {
+            CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
+            Spacer()
+            settingsButton
+        } headerView: {
+            HeaderTextView(text: vm.headetText, offsetY: $0)
+        } scrollView: {
+            messageRows($0)
+        }
+        .safeAreaInset(edge: .bottom) { bottomSafeArea }
+        .overlay(loader)
+        .alert(
+            Text(vm.errorTitle),
+            isPresented: $vm.showErrorAlert,
+            actions: { Button(vm.okTitle) {} },
+            message: { Text(vm.errorMessage) }
+        )
+    }
+    
+    private func messageRows(_ proxy: ScrollViewProxy) -> some View {
+        LazyVStack(spacing: 15) {
+            ForEach(vm.messages) { message in
+                MessageView(message: message)
+            }
+        }
+        .padding(.top, 10)
+    }
+    
+    @ViewBuilder private var loader: some View {
+        if vm.isEncrypting {
+            FullScreenLoader()
+        }
+    }
+    
     private var settingsButton: some View {
         Button {
-            goToSettings.toggle()
+            goToSettings = true
         } label: {
             Image.system.cryptoSettings
                 .foregroundStyle(Gradient.accent)
@@ -58,33 +69,29 @@ extension AES256EncryptionView {
     
     private var bottomSafeArea: some View {
         VStack(spacing: 8) {
-            CustomMessageTextField(text: $vm.text, isDisabled: $disabled, placeholder: vm.placeholder) {
-                switch vm.currentMode {
-                case .encrypt:
-                    vm.startEncrypt()
-                case .decrypt:
-                    Task { await vm.decrypt() }
-                }
+            CustomMessageTextField($vm.text, $isTextFieldDisabled, vm.placeholder) {
+                vm.startCryptoProcess()
             }
-            .onAppear {
-                disabled = vm.encryptionParameters.password == ""
-            }
-            .onDisappear {
-                vm.cancelTasks()
-            }
-            .onTapGesture {
-                guard disabled else { return }
-                goToSettings = true
-            }
+            .onAppear(perform: checkPassword)
+            .onTapGesture(perform: tappedOnTextFieldWithoutPassword)
             
-            CryptoActionButtons(
-                cryptoAction: $vm.currentMode,
-                decryptiontitle: vm.decryptionTitle,
-                encryptiontitle: vm.encryptionTitle
-            )
+            CryptoActionButtons($vm.currentMode, vm.decryptionTitle, vm.encryptionTitle)
         }
         .padding(.vertical, 8)
         .padding(.horizontal, 10)
         .background(.ultraThinMaterial)
+    }
+}
+
+// MARK: - Logic
+extension AES256EncryptionView {
+    private func tappedOnTextFieldWithoutPassword() {
+        guard isTextFieldDisabled else { return }
+        goToSettings = true
+    }
+    
+    private func checkPassword() {
+        let isPasswordEmpty = vm.encryptionParameters.password == ""
+        isTextFieldDisabled = isPasswordEmpty
     }
 }

@@ -16,9 +16,9 @@ struct CryptoActionButtons: View {
     private let height: CGFloat = 37
     
     init(
-        cryptoAction: Binding<CryptoAction>,
-        decryptiontitle: String,
-        encryptiontitle: String
+        _ cryptoAction: Binding<CryptoAction>,
+        _ decryptiontitle: String,
+        _ encryptiontitle: String
     ) {
         _cryptoAction = cryptoAction
         self.decryptiontitle = decryptiontitle

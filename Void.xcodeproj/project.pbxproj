@@ -23,7 +23,7 @@
 		1F2D34232E7D7D16005E6239 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34222E7D7D16005E6239 /* Message.swift */; };
 		1F2D34242E7D7D16005E6239 /* AES256Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */; };
 		1F2D34262E7DF41A005E6239 /* KeyDerivationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */; };
-		1F2D34282E7E1760005E6239 /* CryptoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34272E7E1760005E6239 /* CryptoService.swift */; };
+		1F2D34282E7E1760005E6239 /* AES256CryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34272E7E1760005E6239 /* AES256CryptoManager.swift */; };
 		1F2D342B2E7F3D87005E6239 /* CryptoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342A2E7F3D87005E6239 /* CryptoError.swift */; };
 		1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */; };
 		1F2D34312E84AFC6005E6239 /* FullScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */; };
@@ -79,7 +79,7 @@
 		1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Parameters.swift; sourceTree = "<group>"; };
 		1F2D34222E7D7D16005E6239 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivationService.swift; sourceTree = "<group>"; };
-		1F2D34272E7E1760005E6239 /* CryptoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoService.swift; sourceTree = "<group>"; };
+		1F2D34272E7E1760005E6239 /* AES256CryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256CryptoManager.swift; sourceTree = "<group>"; };
 		1F2D342A2E7F3D87005E6239 /* CryptoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoError.swift; sourceTree = "<group>"; };
 		1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVersion.swift; sourceTree = "<group>"; };
 		1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenLoader.swift; sourceTree = "<group>"; };
@@ -181,6 +181,14 @@
 			path = "Settings Module";
 			sourceTree = "<group>";
 		};
+		1F2355FA2E8A04B10088290F /* AES256-Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1F2D34272E7E1760005E6239 /* AES256CryptoManager.swift */,
+			);
+			path = "AES256-Managers";
+			sourceTree = "<group>";
+		};
 		1F2D341E2E7D7CC6005E6239 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,7 +247,7 @@
 		1F8DDBDC2E367816005734CD /* AES256 Module */ = {
 			isa = PBXGroup;
 			children = (
-				1F2D34272E7E1760005E6239 /* CryptoService.swift */,
+				1F2355FA2E8A04B10088290F /* AES256-Managers */,
 				1F12FE452E4221AC0023DB69 /* AES256-Encryption */,
 				1F12FE442E4221440023DB69 /* AES256-Settings */,
 			);
@@ -443,7 +451,7 @@
 				1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */,
 				1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */,
 				1F2D342B2E7F3D87005E6239 /* CryptoError.swift in Sources */,
-				1F2D34282E7E1760005E6239 /* CryptoService.swift in Sources */,
+				1F2D34282E7E1760005E6239 /* AES256CryptoManager.swift in Sources */,
 				1F8DDCE92E3A7843005734CD /* FormHeaderContent.swift in Sources */,
 				1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */,
 				1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */,

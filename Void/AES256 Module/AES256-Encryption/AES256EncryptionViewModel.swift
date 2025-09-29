@@ -24,6 +24,8 @@ final class AES256EncryptionViewModel: ObservableObject {
     
     @Published var text = ""
     @Published var currentMode: CryptoAction = .encrypt
+    @Published var errorMessage = ""
+    @Published var showErrorAlert = false
     
     @Published private(set) var messages: [Message] = []
     @Published private(set) var isEncrypting = false
@@ -44,86 +46,88 @@ final class AES256EncryptionViewModel: ObservableObject {
     let encryptionTitle = L10n("Cryptography.encryption")
     let decryptionTitle = L10n("Cryptography.decryption")
     let headetText = L10n("Cryptography.AES-256.instructions")
+    let errorTitle = L10n("Error.title")
+    let okTitle = "OK"
     
-    func startEncrypt() {
-        isEncrypting = true
+    func startCryptoProcess() {
         currentTask?.cancel()
-        currentTask = Task { await encrypt() }
-    }
-    
-    func cancelTasks() {
-        currentTask?.cancel()
-        currentTask = nil
-        isEncrypting = false
-    }
-    
-    @MainActor
-    func encrypt() async {
-        isEncrypting = true
         
+        switch currentMode {
+        case .encrypt:
+            currentTask = Task { await encrypt() }
+        case .decrypt:
+            currentTask = Task { await decrypt() }
+        }
+    }
+    
+    @MainActor private func encrypt() async {
         defer {
             isEncrypting = false
+            currentTask?.cancel()
         }
         
         let userText = text
         text = ""
         
+        let cryptoManager = AES256CryptoManager()
+        
+        isEncrypting = true
+        
         do {
-            let result = try await CryptoService().encrypt(
+            let result = try await cryptoManager.encrypt(
                 plaintext: userText,
                 parameters: encryptionParameters
             )
             
-            messages.append(
-                Message(
-                    timestamp: Date(),
-                    originalText: userText,
-                    encryptedText: result,
-                    encryptionMode: currentMode
-                )
+            let newMessage = Message(
+                timestamp: Date(),
+                originalText: userText,
+                encryptedText: result,
+                encryptionMode: currentMode
             )
+            
+            messages.append(newMessage)
         } catch {
             let cryptoError = error as? CryptoError
-            print(cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription)
+            errorMessage = cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription
+            showErrorAlert = true
         }
     }
     
-    func decrypt() async {
+    @MainActor private func decrypt() async {
+        defer {
+            isEncrypting = false
+            currentTask?.cancel()
+        }
+        
         let userText = text
         text = ""
-        guard !userText.isEmpty else { return }
+        
+        let cryptoManager = AES256CryptoManager()
+        let password = encryptionParameters.password
+        let voidIndex = encryptionParameters.voidIndex
+        
         isEncrypting = true
-
+        
         do {
-            let result = try await Task.detached(priority: .userInitiated) {
-                
-                let decryptedData = try await CryptoService().decrypt(
-                    ciphertext: userText,
-                    password: self.encryptionParameters.password,
-                    voidIndex: self.encryptionParameters.voidIndex
-                )
-                
-                return decryptedData
-            }.value
-            let message = Message(
+            let result = try await cryptoManager.decrypt(
+                ciphertext: userText,
+                password: password,
+                voidIndex: voidIndex
+            )
+            
+            let newMessage = Message(
                 timestamp: Date(),
                 originalText: result,
                 encryptedText: userText,
                 encryptionMode: currentMode
             )
-            messages.append(message)
             
+            messages.append(newMessage)
         } catch {
             let cryptoError = error as? CryptoError
-            print(cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription)
+            errorMessage = cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription
+            showErrorAlert = true
         }
-        
-        isEncrypting = false
-    }
-    
-    deinit {
-        currentTask?.cancel()
-        currentTask = nil
-        print("DEINIT")
     }
 }
