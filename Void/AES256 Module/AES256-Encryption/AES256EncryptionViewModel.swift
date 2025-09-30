@@ -23,9 +23,9 @@ final class AES256EncryptionViewModel: ObservableObject {
     )
     
     @Published var text = ""
-    @Published var currentMode: CryptoAction = .encrypt
     @Published var errorMessage = ""
     @Published var showErrorAlert = false
+    @Published var currentMode: CryptoAction = .encrypt
     
     @Published private(set) var messages: [Message] = []
     @Published private(set) var isEncrypting = false
@@ -49,7 +49,11 @@ final class AES256EncryptionViewModel: ObservableObject {
     let errorTitle = L10n("Error.title")
     let okTitle = "OK"
     
+    private let soundManager = SoundManager.shared
+    private let hapticsManager = HapticsManager.shared
+    
     func startCryptoProcess() {
+        hapticsManager.impact(style: .medium)
         currentTask?.cancel()
         
         switch currentMode {
@@ -60,17 +64,17 @@ final class AES256EncryptionViewModel: ObservableObject {
         }
     }
     
-    @MainActor private func encrypt() async {
+    @MainActor
+    private func encrypt() async {
         defer {
             isEncrypting = false
             currentTask?.cancel()
         }
         
         let userText = text
-        text = ""
-        
         let cryptoManager = AES256CryptoManager()
         
+        text = ""
         isEncrypting = true
         
         do {
@@ -87,26 +91,32 @@ final class AES256EncryptionViewModel: ObservableObject {
             )
             
             messages.append(newMessage)
+            soundManager.playSound(.newEncryptedMessage)
+            hapticsManager.notification(type: .success)
         } catch {
             let cryptoError = error as? CryptoError
             errorMessage = cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription
+            
             showErrorAlert = true
+            
+            soundManager.playSound(.errorAlert)
+            hapticsManager.notification(type: .error)
         }
     }
     
-    @MainActor private func decrypt() async {
+    @MainActor
+    private func decrypt() async {
         defer {
             isEncrypting = false
             currentTask?.cancel()
         }
         
-        let userText = text
-        text = ""
-        
         let cryptoManager = AES256CryptoManager()
         let password = encryptionParameters.password
         let voidIndex = encryptionParameters.voidIndex
+        let userText = text
         
+        text = ""
         isEncrypting = true
         
         do {
@@ -124,10 +134,16 @@ final class AES256EncryptionViewModel: ObservableObject {
             )
             
             messages.append(newMessage)
+            soundManager.playSound(.newDecryptedMessage)
+            hapticsManager.notification(type: .success)
         } catch {
             let cryptoError = error as? CryptoError
             errorMessage = cryptoError?.errorDescription ?? CryptoError.unknown.errorDescription
+            
             showErrorAlert = true
+            
+            soundManager.playSound(.errorAlert)
+            hapticsManager.notification(type: .error)
         }
     }
 }

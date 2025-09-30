@@ -7,11 +7,13 @@
 
 import SwiftUI
 
-struct MessageView: View {    
+struct MessageView: View {
+    @State private var isPressing = false
+    
     private var backgroundColor: LinearGradient {
         switch message.encryptionMode {
         case .encrypt:
-            return Gradient.accent
+            return isPressing ? LinearGradient(colors: [Color.void.accentDark, Color.void.goldDark], startPoint: .topLeading, endPoint: .bottomTrailing) : Gradient.accent
         case .decrypt:
             return Gradient.gray
         }
@@ -23,8 +25,11 @@ struct MessageView: View {
     
     private let message: Message
     
-    init(message: Message) {
+    private let pressAction: () -> Void
+    
+    init(message: Message, pressAction: @escaping () -> Void) {
         self.message = message
+        self.pressAction = pressAction
     }
     
     var body: some View {
@@ -48,9 +53,17 @@ extension MessageView {
                 .background {
                     RoundedRectangle(cornerRadius: 12)
                         .foregroundStyle(backgroundColor)
+//                        .foregroundStyle(isPressing ? Color.green.gradient : Color.blue.gradient)
                         .shadow(color: Color.void.viewShadow, radius: 2)
                 }
-                .onLongPressGesture(maximumDistance: 1, perform: copyText)
+                .onLongPressGesture(
+                    minimumDuration: 1,
+                    maximumDistance: 1,
+                    perform: pressAction,
+                    onPressingChanged: { pressing in
+                        withAnimation(.spring(response: 1)) { isPressing = pressing }
+                    }
+                )
             
             if message.encryptionMode == .decrypt {
                 Spacer()
@@ -64,10 +77,5 @@ extension MessageView {
                 removal: .opacity
             )
         )
-    }
-        
-    private func copyText() {
-        UIPasteboard.general.string = message.resultText
-        HapticsManager.shared.notification(type: .success)
     }
 }

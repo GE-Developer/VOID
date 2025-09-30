@@ -59,6 +59,12 @@
 		1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */; };
 		1F8DDCF32E3B96E3005734CD /* TimerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCF22E3B96E3005734CD /* TimerPicker.swift */; };
 		1F8DDCF52E3C03D9005734CD /* AES256SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDCF42E3C03D9005734CD /* AES256SettingsViewModel.swift */; };
+		1F91201D2E8C4FC000B62644 /* Dev_Mode.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F91201A2E8C4FC000B62644 /* Dev_Mode.mp3 */; };
+		1F91201E2E8C4FC000B62644 /* Error_Alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F91201B2E8C4FC000B62644 /* Error_Alert.mp3 */; };
+		1F91202B2E8C5D5400B62644 /* New_Encrypted_Message.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F91202A2E8C5D5400B62644 /* New_Encrypted_Message.mp3 */; };
+		1F91202C2E8C5D5400B62644 /* New_Decrypted_Message.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F9120292E8C5D5400B62644 /* New_Decrypted_Message.mp3 */; };
+		1F91202E2E8C8AC500B62644 /* Some_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F91202D2E8C8AC500B62644 /* Some_Sound.mp3 */; };
+		1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91202F2E8C935200B62644 /* NavigationToolButton.swift */; };
 		1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2FBEA2E58BB510072905D /* PepperService.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,7 +101,7 @@
 		1F8DDBB22E366E11005734CD /* AES256EncryptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256EncryptionView.swift; sourceTree = "<group>"; };
 		1F8DDBB62E366E11005734CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1F8DDBB72E366E11005734CD /* VoidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidApp.swift; sourceTree = "<group>"; };
-		1F8DDBBC2E366E11005734CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F8DDBBC2E366E11005734CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/mymac/Desktop/Void/Void/Resources/Assets.xcassets; sourceTree = "<absolute>"; };
 		1F8DDBE52E36785E005734CD /* Color + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBE62E36785E005734CD /* Image + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -114,6 +120,12 @@
 		1F8DDCEA2E3A78B7005734CD /* CustomTextRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextRow.swift; sourceTree = "<group>"; };
 		1F8DDCF22E3B96E3005734CD /* TimerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPicker.swift; sourceTree = "<group>"; };
 		1F8DDCF42E3C03D9005734CD /* AES256SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256SettingsViewModel.swift; sourceTree = "<group>"; };
+		1F91201A2E8C4FC000B62644 /* Dev_Mode.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dev_Mode.mp3; sourceTree = "<group>"; };
+		1F91201B2E8C4FC000B62644 /* Error_Alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Error_Alert.mp3; sourceTree = "<group>"; };
+		1F9120292E8C5D5400B62644 /* New_Decrypted_Message.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = New_Decrypted_Message.mp3; sourceTree = "<group>"; };
+		1F91202A2E8C5D5400B62644 /* New_Encrypted_Message.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = New_Encrypted_Message.mp3; sourceTree = "<group>"; };
+		1F91202D2E8C8AC500B62644 /* Some_Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Some_Sound.mp3; sourceTree = "<group>"; };
+		1F91202F2E8C935200B62644 /* NavigationToolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToolButton.swift; sourceTree = "<group>"; };
 		1FA2FBEA2E58BB510072905D /* PepperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepperService.swift; sourceTree = "<group>"; };
 		1FB32A312E34FA17003E4B54 /* Void.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Void.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -281,6 +293,7 @@
 			children = (
 				1F8DDBBC2E366E11005734CD /* Assets.xcassets */,
 				1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */,
+				1F9120202E8C4FD400B62644 /* Sounds */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -291,6 +304,7 @@
 				1F1161252E747C6200A7894D /* CustomScrollView.swift */,
 				1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */,
 				1F8DDBF02E367A58005734CD /* CustomNavigationTitle.swift */,
+				1F91202F2E8C935200B62644 /* NavigationToolButton.swift */,
 				1F8DDCDA2E3963C3005734CD /* CustomForm.swift */,
 				1F8DDCDC2E39641A005734CD /* CustomButtonRow.swift */,
 				1F8DDCDE2E396454005734CD /* CustomToggleRow.swift */,
@@ -315,6 +329,18 @@
 				1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1F9120202E8C4FD400B62644 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1F9120292E8C5D5400B62644 /* New_Decrypted_Message.mp3 */,
+				1F91202A2E8C5D5400B62644 /* New_Encrypted_Message.mp3 */,
+				1F91202D2E8C8AC500B62644 /* Some_Sound.mp3 */,
+				1F91201A2E8C4FC000B62644 /* Dev_Mode.mp3 */,
+				1F91201B2E8C4FC000B62644 /* Error_Alert.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		1FB32A282E34FA16003E4B54 = {
@@ -404,7 +430,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F91202E2E8C8AC500B62644 /* Some_Sound.mp3 in Resources */,
 				1F8DDBEF2E3678C0005734CD /* Preview Assets.xcassets in Resources */,
+				1F91201D2E8C4FC000B62644 /* Dev_Mode.mp3 in Resources */,
+				1F91202B2E8C5D5400B62644 /* New_Encrypted_Message.mp3 in Resources */,
+				1F91202C2E8C5D5400B62644 /* New_Decrypted_Message.mp3 in Resources */,
+				1F91201E2E8C4FC000B62644 /* Error_Alert.mp3 in Resources */,
 				1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */,
 				1F8DDBC92E366E11005734CD /* Assets.xcassets in Resources */,
 			);
@@ -452,6 +483,7 @@
 				1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */,
 				1F2D342B2E7F3D87005E6239 /* CryptoError.swift in Sources */,
 				1F2D34282E7E1760005E6239 /* AES256CryptoManager.swift in Sources */,
+				1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */,
 				1F8DDCE92E3A7843005734CD /* FormHeaderContent.swift in Sources */,
 				1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */,
 				1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */,

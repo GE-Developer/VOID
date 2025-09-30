@@ -26,7 +26,9 @@ extension AES256EncryptionView {
         CustomScrollView(backgroundImage: Image.background.aes256) {
             CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
             Spacer()
-            settingsButton
+            NavigationToolButton(.system.cryptoSettings) {
+                goToSettings = true
+            }
         } headerView: {
             HeaderTextView(text: vm.headetText, offsetY: $0)
         } scrollView: {
@@ -45,7 +47,9 @@ extension AES256EncryptionView {
     private func messageRows(_ proxy: ScrollViewProxy) -> some View {
         LazyVStack(spacing: 15) {
             ForEach(vm.messages) { message in
-                MessageView(message: message)
+                MessageView(message: message) {
+                    copyText(message)
+                }
             }
         }
         .animation(.spring(response: 0.35, dampingFraction: 0.85), value: vm.messages)
@@ -55,16 +59,6 @@ extension AES256EncryptionView {
     @ViewBuilder private var loader: some View {
         if vm.isEncrypting {
             FullScreenLoader()
-        }
-    }
-    
-    private var settingsButton: some View {
-        Button {
-            goToSettings = true
-        } label: {
-            Image.system.cryptoSettings
-                .foregroundStyle(Gradient.accent)
-                .font(.title2)
         }
     }
     
@@ -94,5 +88,10 @@ extension AES256EncryptionView {
     private func checkPassword() {
         let isPasswordEmpty = vm.encryptionParameters.password == ""
         isTextFieldDisabled = isPasswordEmpty
+    }
+    
+    private func copyText(_ message: Message) {
+        UIPasteboard.general.string = message.resultText
+        HapticsManager.shared.notification(type: .success)
     }
 }

@@ -13,6 +13,7 @@ struct CryptoActionButtons: View {
     private let decryptiontitle: String
     private let encryptiontitle: String
     
+    private let hapticsManager = HapticsManager.shared
     private let height: CGFloat = 37
     
     init(
@@ -36,9 +37,11 @@ extension CryptoActionButtons {
         HStack {
             button(title: decryptiontitle, isActive: cryptoAction == .decrypt) {
                 cryptoAction = .decrypt
+                hapticsManager.selectionChanged()
             }
             button(title: encryptiontitle, isActive: cryptoAction == .encrypt) {
                 cryptoAction = .encrypt
+                hapticsManager.selectionChanged()
             }
         }
         .frame(height: height)
