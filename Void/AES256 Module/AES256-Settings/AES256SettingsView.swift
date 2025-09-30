@@ -29,16 +29,16 @@ struct AES256SettingsView: View {
 // MARK: - Builder
 extension AES256SettingsView {
     private var settingsView: some View {
-        CustomScrollView { isLargeNavBar in
+        CustomScrollView(withTarget: true) {
             CustomNavigationTitle(
                 title: vm.title,
                 subTitle: vm.subTitle,
-                isLargeNavBar: isLargeNavBar
+                isLargeNavBar: $0
             )
             Spacer()
-        } headerView: { offsetY in
+        } headerView: {
             passwordForm
-                .offset(y: min(offsetY, 0))
+                .offset(y: min($0, 0))
         } scrollView: { _ in
             VStack(spacing: 25) {
                 dividerMessage
@@ -85,6 +85,7 @@ extension AES256SettingsView {
             Divider()
         }
         .padding(.horizontal)
+        .padding(.top)
     }
     
     private var saltForm: some View {

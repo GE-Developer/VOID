@@ -50,8 +50,10 @@ extension AES256EncryptionView {
                 MessageView(message: message) {
                     copyText(message)
                 }
+                .id(message.id)
             }
         }
+        .onChange(of: vm.messages) { scrollTo(proxy) }
         .animation(.spring(response: 0.35, dampingFraction: 0.85), value: vm.messages)
         .padding(.top, 10)
     }
@@ -93,5 +95,13 @@ extension AES256EncryptionView {
     private func copyText(_ message: Message) {
         UIPasteboard.general.string = message.resultText
         HapticsManager.shared.notification(type: .success)
+    }
+    
+    private func scrollTo(_ proxy: ScrollViewProxy) {
+        guard let lastId = vm.messages.last?.id else { return }
+        
+        withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
+            proxy.scrollTo(lastId, anchor: .bottom)
+        }
     }
 }

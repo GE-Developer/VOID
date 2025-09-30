@@ -14,7 +14,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     @State private var headerHeight = 0.0
     
     private var scrollBehavior: TargetBehaviour {
-        .init(headerHeight, largeNavBarHeight, smallNavBarHeight)
+        .init(headerHeight, largeNavBarHeight, smallNavBarHeight, withTarget)
     }
     
     private var isLargeNavBar: Bool {
@@ -26,6 +26,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     }
     
     private let withBackButton: Bool
+    private let withTarget: Bool
     private let largeNavBarHeight = 70.0
     private let smallNavBarHeight = 50.0
     
@@ -37,12 +38,14 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     
     init(
         withBackButton: Bool = true,
+        withTarget: Bool = false,
         backgroundImage: Image? = nil,
         @ViewBuilder titleHStackView: @escaping (_ isLargeNavBar: Bool) -> Title,
         @ViewBuilder headerView: @escaping (_ minY: CGFloat) -> Header = { _ in EmptyView() },
         @ViewBuilder scrollView: @escaping (_ proxy: ScrollViewProxy) -> Scroll
     ) {
         self.withBackButton = withBackButton
+        self.withTarget = withTarget
         self.backgroundImage = backgroundImage
         self.titleHStackView = titleHStackView
         self.headerView = headerView
@@ -154,18 +157,23 @@ fileprivate struct TargetBehaviour: ScrollTargetBehavior {
     private let headerHeight: Double
     private let largeNavBarHeight: Double
     private let smallNavBarHeight: Double
+    private let withTarget: Bool
     
     init(
         _ headerHeight: Double,
         _ largeNavBarHeight: Double,
-        _ smallNavBarHeight: Double
+        _ smallNavBarHeight: Double,
+        _ withTarget: Bool
     ) {
         self.headerHeight = headerHeight
         self.largeNavBarHeight = largeNavBarHeight
         self.smallNavBarHeight = smallNavBarHeight
+        self.withTarget = withTarget
     }
     
     func updateTarget(_ target: inout ScrollTarget, context: TargetContext) {
+        guard withTarget == true else { return }
+        
         let fullHeader = headerHeight + 8 + largeNavBarHeight - smallNavBarHeight
         let halfHeader = headerHeight / 2 + 8 + largeNavBarHeight - smallNavBarHeight
         
