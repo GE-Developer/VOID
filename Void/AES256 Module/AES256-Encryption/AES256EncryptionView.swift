@@ -33,8 +33,9 @@ extension AES256EncryptionView {
             HeaderTextView(text: vm.headetText, offsetY: $0)
         } scrollView: {
             messageRows($0)
+        } bottomSafeArea: {
+            bottomSafeArea
         }
-        .safeAreaInset(edge: .bottom) { bottomSafeArea }
         .overlay(loader)
         .alert(
             Text(vm.errorTitle),

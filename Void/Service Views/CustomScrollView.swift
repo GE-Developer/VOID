@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
+struct CustomScrollView<Header: View, Scroll: View, Title: View, SafeArea: View>: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var offsetY = 0.0
@@ -35,6 +35,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     @ViewBuilder private let titleHStackView: (_ isLargeNavBar: Bool) -> Title
     @ViewBuilder private let headerView: (_ minY: CGFloat) -> Header
     @ViewBuilder private let scrollView: (_ proxy: ScrollViewProxy) -> Scroll
+    @ViewBuilder private let bottomSafeArea: () -> SafeArea
     
     init(
         withBackButton: Bool = true,
@@ -42,7 +43,8 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
         backgroundImage: Image? = nil,
         @ViewBuilder titleHStackView: @escaping (_ isLargeNavBar: Bool) -> Title,
         @ViewBuilder headerView: @escaping (_ minY: CGFloat) -> Header = { _ in EmptyView() },
-        @ViewBuilder scrollView: @escaping (_ proxy: ScrollViewProxy) -> Scroll
+        @ViewBuilder scrollView: @escaping (_ proxy: ScrollViewProxy) -> Scroll,
+        @ViewBuilder bottomSafeArea: @escaping () -> SafeArea = { EmptyView() }
     ) {
         self.withBackButton = withBackButton
         self.withTarget = withTarget
@@ -50,6 +52,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
         self.titleHStackView = titleHStackView
         self.headerView = headerView
         self.scrollView = scrollView
+        self.bottomSafeArea = bottomSafeArea
     }
     
     var body: some View {
@@ -149,6 +152,7 @@ extension CustomScrollView {
         .scrollDismissesKeyboard(.interactively)
         .scrollTargetBehavior(scrollBehavior)
         .contentMargins(.top, scrollMargins, for: .scrollIndicators)
+        .safeAreaInset(edge: .bottom, content: bottomSafeArea)
     }
 }
 

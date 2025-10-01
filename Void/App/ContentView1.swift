@@ -17,26 +17,29 @@ struct ContentView1: View {
     @State private var writtenText = ""
     
     var body: some View {
-        CustomScrollView() { isLargeNavBar in
-            CustomNavigationTitle(title: vm.text, subTitle: vm.subText, isLargeNavBar: isLargeNavBar)
-            Spacer()
-        } headerView: { minY in
-            Rectangle()
-                .frame(height: 80)
-                .offset(y: min(minY, 0))
-        } scrollView: { proxy in
+        ZStack {
+            // Фон всегда статичен
+            Image.background.aes256
+                .resizable()
+                .scaledToFill()
+                .ignoresSafeArea(.keyboard) // не реагирует на клавиатуру
+            
             VStack {
-                ForEach(1..<100) { i in
-                    Text(String(i))
-                        .id(i)
+                ScrollView {
+                    VStack {
+                        Rectangle().frame(height: 80)
+                        Rectangle().frame(height: 80)
+                        Rectangle().frame(height: 80)
+                        Rectangle().frame(height: 80)
+                        Rectangle().frame(height: 80)
+                    }
                 }
             }
-//            .onAppear {
-//                proxy.scrollTo(90, anchor: .bottom)
-//            }
-        }
-        .safeAreaInset(edge: .bottom) {
-            TextField(vm.subText, text: $writtenText)
+            .safeAreaInset(edge: .bottom) {
+                TextField(vm.subText, text: $writtenText)
+                    .textFieldStyle(.roundedBorder)
+                    .background(Color(.systemBackground))
+            }
         }
     }
 }

@@ -63,7 +63,6 @@ extension CustomMessageTextField {
     private var textField: some View {
         TextField(placeholder, text: $text, axis: .vertical)
             .focused($focus)
-            .autocorrectionDisabled(true)
             .padding(.vertical, 5)
             .padding(.trailing, 5)
             .padding(.leading, 13)

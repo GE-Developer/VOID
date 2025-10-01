@@ -53,15 +53,15 @@ extension MessageView {
                 .background {
                     RoundedRectangle(cornerRadius: 12)
                         .foregroundStyle(backgroundColor)
-//                        .foregroundStyle(isPressing ? Color.green.gradient : Color.blue.gradient)
+//    .foregroundStyle(isPressing ? Color.green.gradient : Color.blue.gradient)
                         .shadow(color: Color.void.viewShadow, radius: 2)
                 }
                 .onLongPressGesture(
-                    minimumDuration: 1,
-                    maximumDistance: 1,
+                    minimumDuration: 0.5,
+                    maximumDistance: 0.5,
                     perform: pressAction,
                     onPressingChanged: { pressing in
-                        withAnimation(.spring(response: 1)) { isPressing = pressing }
+                        withAnimation(.spring(response: 0.8)) { isPressing = pressing }
                     }
                 )
             
