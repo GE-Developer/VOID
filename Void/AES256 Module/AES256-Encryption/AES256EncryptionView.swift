@@ -11,6 +11,8 @@ struct AES256EncryptionView: View {
     @StateObject private var vm = AES256EncryptionViewModel()
     @State private var isTextFieldDisabled = true
     @State private var goToSettings = false
+    @State private var isCopied = false
+    @State private var hideCopyAlertWorkItem: DispatchWorkItem?
     
     var body: some View {
         aes256EncryptionView
@@ -34,7 +36,10 @@ extension AES256EncryptionView {
         } scrollView: {
             messageRows($0)
         } bottomSafeArea: {
-            bottomSafeArea
+            VStack {
+                copyAlert
+                bottomSafeArea
+            }
         }
         .overlay(loader)
         .alert(
@@ -65,6 +70,16 @@ extension AES256EncryptionView {
         }
     }
     
+    @ViewBuilder private var copyAlert: some View {
+        if isCopied {
+            CopyAlertView()
+                .transition(
+                    .move(edge: .bottom)
+                    .combined(with: .opacity)
+                )
+        }
+    }
+    
     private var bottomSafeArea: some View {
         VStack(spacing: 8) {
             CustomMessageTextField($vm.text, $isTextFieldDisabled, vm.placeholder) {
@@ -77,7 +92,12 @@ extension AES256EncryptionView {
         }
         .padding(.vertical, 8)
         .padding(.horizontal, 10)
-        .background(.ultraThinMaterial)
+        .background {
+            Rectangle()
+                .ignoresSafeArea()
+                .foregroundStyle(.ultraThinMaterial)
+                .shadow(color: .void.navBarShadow, radius: 2)
+        }
     }
 }
 
@@ -95,6 +115,7 @@ extension AES256EncryptionView {
     
     private func copyText(_ message: Message) {
         UIPasteboard.general.string = message.resultText
+        showCopyAlert()
         HapticsManager.shared.notification(type: .success)
     }
     
@@ -104,5 +125,19 @@ extension AES256EncryptionView {
         withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
             proxy.scrollTo(lastId, anchor: .bottom)
         }
+    }
+    
+    private func showCopyAlert() {
+        withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
+            isCopied = true
+        }
+        hideCopyAlertWorkItem?.cancel()
+        let workItem = DispatchWorkItem {
+            withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
+                isCopied = false
+            }
+        }
+        hideCopyAlertWorkItem = workItem
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: workItem)
     }
 }

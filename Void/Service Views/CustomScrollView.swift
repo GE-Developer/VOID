@@ -64,25 +64,27 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View, SafeArea: View>
 extension CustomScrollView {
     private var customScrollView: some View {
         ZStack(alignment: .top) {
+            background
             navigationBar.zIndex(2)
             header.zIndex(1)
             scroll.zIndex(0)
         }
+        .safeAreaInset(edge: .bottom, content: bottomSafeArea)
         .toolbarVisibility(.hidden, for: .navigationBar)
-        .background(background)
+        .onAppear(perform: closeKeyboard)
     }
     
     private var background: some View {
-        ZStack {
-            Color.void.background
-            if let backgroundImage {
-                backgroundImage
-                    .resizable()
-                    .scaledToFill()
-                    .opacity(0.05)
+        Color.void.background
+            .overlay {
+                if let backgroundImage {
+                    backgroundImage
+                        .resizable()
+                        .scaledToFill()
+                        .opacity(0.05)
+                }
             }
-        }
-        .ignoresSafeArea()
+            .ignoresSafeArea()
     }
     
     @ViewBuilder
@@ -143,8 +145,10 @@ extension CustomScrollView {
     private var scroll: some View {
         ScrollViewReader { proxy in
             ScrollView {
-                geometryReader
-                scrollView(proxy)
+                VStack(spacing: 0) {
+                    geometryReader
+                    scrollView(proxy)
+                }
             }
         }
         .safeAreaPadding(.horizontal)
@@ -152,7 +156,16 @@ extension CustomScrollView {
         .scrollDismissesKeyboard(.interactively)
         .scrollTargetBehavior(scrollBehavior)
         .contentMargins(.top, scrollMargins, for: .scrollIndicators)
-        .safeAreaInset(edge: .bottom, content: bottomSafeArea)
+    }
+}
+
+// MARK: - Logic
+extension CustomScrollView {
+    private func closeKeyboard() {
+        UIApplication.shared.connectedScenes
+            .compactMap { ($0 as? UIWindowScene)?.keyWindow }
+            .first?
+            .endEditing(true)
     }
 }
 
