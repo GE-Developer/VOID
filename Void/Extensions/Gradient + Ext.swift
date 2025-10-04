@@ -25,4 +25,10 @@ extension Gradient {
         startPoint: .leading,
         endPoint: .trailing
     )
+    
+    static let green = LinearGradient(
+        colors: [.void.greenLight, .void.greenDark],
+        startPoint: .topLeading,
+        endPoint: .bottomTrailing
+    )
 }

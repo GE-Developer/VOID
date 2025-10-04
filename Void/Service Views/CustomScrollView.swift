@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomScrollView<Header: View, Scroll: View, Title: View, SafeArea: View>: View {
+struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     @Environment(\.dismiss) private var dismiss
     
     @State private var offsetY = 0.0
@@ -35,7 +35,6 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View, SafeArea: View>
     @ViewBuilder private let titleHStackView: (_ isLargeNavBar: Bool) -> Title
     @ViewBuilder private let headerView: (_ minY: CGFloat) -> Header
     @ViewBuilder private let scrollView: (_ proxy: ScrollViewProxy) -> Scroll
-    @ViewBuilder private let bottomSafeArea: () -> SafeArea
     
     init(
         withBackButton: Bool = true,
@@ -43,8 +42,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View, SafeArea: View>
         backgroundImage: Image? = nil,
         @ViewBuilder titleHStackView: @escaping (_ isLargeNavBar: Bool) -> Title,
         @ViewBuilder headerView: @escaping (_ minY: CGFloat) -> Header = { _ in EmptyView() },
-        @ViewBuilder scrollView: @escaping (_ proxy: ScrollViewProxy) -> Scroll,
-        @ViewBuilder bottomSafeArea: @escaping () -> SafeArea = { EmptyView() }
+        @ViewBuilder scrollView: @escaping (_ proxy: ScrollViewProxy) -> Scroll
     ) {
         self.withBackButton = withBackButton
         self.withTarget = withTarget
@@ -52,7 +50,6 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View, SafeArea: View>
         self.titleHStackView = titleHStackView
         self.headerView = headerView
         self.scrollView = scrollView
-        self.bottomSafeArea = bottomSafeArea
     }
     
     var body: some View {
@@ -64,12 +61,11 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View, SafeArea: View>
 extension CustomScrollView {
     private var customScrollView: some View {
         ZStack(alignment: .top) {
-            background
-            navigationBar.zIndex(2)
-            header.zIndex(1)
-            scroll.zIndex(0)
+            background.zIndex(0)
+            navigationBar.zIndex(3)
+            header.zIndex(2)
+            scroll.zIndex(1)
         }
-        .safeAreaInset(edge: .bottom, content: bottomSafeArea)
         .toolbarVisibility(.hidden, for: .navigationBar)
         .onAppear(perform: closeKeyboard)
     }

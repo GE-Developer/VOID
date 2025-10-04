@@ -25,4 +25,6 @@ struct VoidColor {
     let viewShadow = Color("View Shadow")
     let textFieldBackground = Color("Text Field Background")
     let mainText = Color("Main Text")
+    let greenDark = Color("Green Dark")
+    let greenLight = Color("Green Light")
 }

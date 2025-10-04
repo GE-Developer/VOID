@@ -35,13 +35,14 @@ extension AES256EncryptionView {
             HeaderTextView(text: vm.headetText, offsetY: $0)
         } scrollView: {
             messageRows($0)
-        } bottomSafeArea: {
+        }
+        .overlay(loader)
+        .safeAreaInset(edge: .bottom) {
             VStack {
                 copyAlert
                 bottomSafeArea
             }
         }
-        .overlay(loader)
         .alert(
             Text(vm.errorTitle),
             isPresented: $vm.showErrorAlert,

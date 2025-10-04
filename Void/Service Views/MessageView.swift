@@ -13,9 +13,9 @@ struct MessageView: View {
     private var backgroundColor: LinearGradient {
         switch message.encryptionMode {
         case .encrypt:
-            return isPressing ? LinearGradient(colors: [Color.void.accentDark, Color.void.goldDark], startPoint: .topLeading, endPoint: .bottomTrailing) : Gradient.accent
+            return isPressing ? Gradient.green : Gradient.accent
         case .decrypt:
-            return Gradient.gray
+            return isPressing ? Gradient.green : Gradient.gray
         }
     }
     
@@ -53,8 +53,7 @@ extension MessageView {
                 .background {
                     RoundedRectangle(cornerRadius: 12)
                         .foregroundStyle(backgroundColor)
-//    .foregroundStyle(isPressing ? Color.green.gradient : Color.blue.gradient)
-                        .shadow(color: Color.void.viewShadow, radius: 2)
+                        .shadow(color: Color.void.navBarShadow, radius: 2)
                 }
                 .onLongPressGesture(
                     minimumDuration: 0.5,

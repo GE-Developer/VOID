@@ -20,7 +20,7 @@ extension CopyAlertView {
     private var copyAlertView: some View {
         HStack {
             Image.system.chechmark
-                .foregroundStyle(isActive ? .green : Color.void.secondaryText)
+                .foregroundStyle(isActive ? Gradient.green : Gradient.gray)
                 .animation(.easeIn(duration: 0.2).delay(0.2), value: isActive)
             Text(L10n("Alert.сopied"))
                 .foregroundStyle(Color.void.secondaryText)

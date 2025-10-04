@@ -9,7 +9,7 @@ import SwiftUI
  
 struct ContentView1: View {
     var body: some View {
-        Image.background.aes256
+        Rectangle()
     }
 }
 
