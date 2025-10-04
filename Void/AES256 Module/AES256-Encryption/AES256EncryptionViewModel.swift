@@ -9,7 +9,7 @@ import Foundation
 
 final class AES256EncryptionViewModel: ObservableObject {
     @Published var encryptionParameters = AES256Parameters(
-        password: "вв",
+        password: "",
         voidIndex: 0,
         salt: 8,
         iterations: 1,
