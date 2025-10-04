@@ -10,15 +10,15 @@ import Foundation
 final class AES256EncryptionViewModel: ObservableObject {
     @Published var encryptionParameters = AES256Parameters(
         password: "вв",
-        voidIndex: 3000,
+        voidIndex: 0,
         salt: 8,
-        iterations: 200,
-        memory: 1024 * 32,
+        iterations: 1,
+        memory: 1024,
         parallelism: 1,
         keyLength: 32,
         layers: 1,
         selectedHours: 0,
-        selectedMinutes: 5,
+        selectedMinutes: 30,
         dateInactive: true
     )
     

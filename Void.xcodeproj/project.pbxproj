@@ -66,6 +66,7 @@
 		1F91202C2E8C5D5400B62644 /* New_Decrypted_Message.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F9120292E8C5D5400B62644 /* New_Decrypted_Message.mp3 */; };
 		1F91202E2E8C8AC500B62644 /* Some_Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F91202D2E8C8AC500B62644 /* Some_Sound.mp3 */; };
 		1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91202F2E8C935200B62644 /* NavigationToolButton.swift */; };
+		1FA26BED2E90A1F6002BD74C /* VoidNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA26BEC2E90A1F6002BD74C /* VoidNumbersView.swift */; };
 		1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2FBEA2E58BB510072905D /* PepperService.swift */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +129,7 @@
 		1F91202A2E8C5D5400B62644 /* New_Encrypted_Message.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = New_Encrypted_Message.mp3; sourceTree = "<group>"; };
 		1F91202D2E8C8AC500B62644 /* Some_Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Some_Sound.mp3; sourceTree = "<group>"; };
 		1F91202F2E8C935200B62644 /* NavigationToolButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationToolButton.swift; sourceTree = "<group>"; };
+		1FA26BEC2E90A1F6002BD74C /* VoidNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidNumbersView.swift; sourceTree = "<group>"; };
 		1FA2FBEA2E58BB510072905D /* PepperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepperService.swift; sourceTree = "<group>"; };
 		1FB32A312E34FA17003E4B54 /* Void.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Void.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -147,8 +149,9 @@
 		1F12FE442E4221440023DB69 /* AES256-Settings */ = {
 			isa = PBXGroup;
 			children = (
-				1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */,
 				1F8DDCF42E3C03D9005734CD /* AES256SettingsViewModel.swift */,
+				1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */,
+				1FA26BEC2E90A1F6002BD74C /* VoidNumbersView.swift */,
 			);
 			path = "AES256-Settings";
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				1F1452572E608D8900F8A553 /* AppStorageKey.swift in Sources */,
 				1F12FE4F2E42789C0023DB69 /* CryptoActionButtons.swift in Sources */,
 				1F8DDCE52E3A1C01005734CD /* CustomSecureField.swift in Sources */,
+				1FA26BED2E90A1F6002BD74C /* VoidNumbersView.swift in Sources */,
 				1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */,
 				1F12FE512E42DEDD0023DB69 /* MessageView.swift in Sources */,
 			);

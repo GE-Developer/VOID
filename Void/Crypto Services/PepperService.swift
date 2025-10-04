@@ -37,6 +37,7 @@ final class PepperService {
     
     // MARK: - VOID key generation by index
     private func voidKey(for index: UInt16) async -> String {
+        guard index > 0 else { return "" }
         var combined = seedData
         var idx = UInt16(index)
         

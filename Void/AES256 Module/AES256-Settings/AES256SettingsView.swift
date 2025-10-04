@@ -21,7 +21,7 @@ struct AES256SettingsView: View {
                 vm.commitChanges()
             }
             .navigationDestination(isPresented: $showVoid) {
-                NavigationLazyView(ContentView1())
+                NavigationLazyView(VoidNumbersView(vm: vm))
             }
     }
 }
@@ -66,7 +66,7 @@ extension AES256SettingsView {
                 icon: .system.key,
                 title: vm.voidTitle,
                 subtitle: vm.voidSubtitle,
-                additionalTitle: "#51",
+                additionalTitle: "#\(vm.parameters.voidIndex)",
                 isLink: true,
                 action: { showVoid = true }
             )
@@ -85,7 +85,6 @@ extension AES256SettingsView {
             Divider()
         }
         .padding(.horizontal)
-        .padding(.top)
     }
     
     private var saltForm: some View {

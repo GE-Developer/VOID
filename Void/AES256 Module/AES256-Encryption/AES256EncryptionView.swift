@@ -33,15 +33,9 @@ extension AES256EncryptionView {
             }
         } headerView: {
             HeaderTextView(text: vm.headetText, offsetY: $0)
-        } scrollView: {
-            messageRows($0)
-        }
-        .overlay(loader)
-        .safeAreaInset(edge: .bottom) {
-            VStack {
-                copyAlert
-                bottomSafeArea
-            }
+        } scrollView: { proxy in
+            messageRows
+                .onChange(of: vm.messages) { scrollTo(proxy) }
         }
         .alert(
             Text(vm.errorTitle),
@@ -49,9 +43,16 @@ extension AES256EncryptionView {
             actions: { Button(vm.okTitle) {} },
             message: { Text(vm.errorMessage) }
         )
+        .safeAreaInset(edge: .bottom) {
+            VStack {
+                copyAlert
+                bottomSafeArea
+            }
+        }
+        .overlay(loader)
     }
     
-    private func messageRows(_ proxy: ScrollViewProxy) -> some View {
+    private var messageRows: some View {
         LazyVStack(spacing: 15) {
             ForEach(vm.messages) { message in
                 MessageView(message: message) {
@@ -60,9 +61,7 @@ extension AES256EncryptionView {
                 .id(message.id)
             }
         }
-        .onChange(of: vm.messages) { scrollTo(proxy) }
         .animation(.spring(response: 0.35, dampingFraction: 0.85), value: vm.messages)
-        .padding(.top, 10)
     }
     
     @ViewBuilder private var loader: some View {

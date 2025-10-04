@@ -12,4 +12,3 @@ struct ContentView1: View {
         Rectangle()
     }
 }
-

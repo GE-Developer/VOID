@@ -30,7 +30,7 @@ struct CustomForm<Content: View, HeaderContent: View>: View {
 // MARK: - Builder
 extension CustomForm {
     private var customForm: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        LazyVStack(alignment: .leading, spacing: 12) {
             if let headerText {
                 HStack(spacing: 0) {
                     header(headerText)
@@ -38,7 +38,7 @@ extension CustomForm {
                     headerContent
                 }
             }
-            VStack(spacing: 0) {
+            LazyVStack(spacing: 0) {
                 content
             }
             .background(Color(.secondarySystemGroupedBackground))
