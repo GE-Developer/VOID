@@ -84,7 +84,6 @@ final class AES256EncryptionViewModel: ObservableObject {
             )
             
             let newMessage = Message(
-                timestamp: Date(),
                 plainText: userText,
                 resultText: result,
                 encryptionMode: currentMode
@@ -127,7 +126,6 @@ final class AES256EncryptionViewModel: ObservableObject {
             )
             
             let newMessage = Message(
-                timestamp: Date(),
                 plainText: userText,
                 resultText: result,
                 encryptionMode: currentMode
