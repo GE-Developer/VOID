@@ -17,6 +17,8 @@ final class AES256SettingsViewModel: ObservableObject {
     let passwordPlaceholder = L10n("CryptoSettings.Security.passwordPlaceholder")
     let voidTitle = L10n("CryptoSettings.Security.Void.title")
     let voidSubtitle = L10n("CryptoSettings.Security.Void.subtitle")
+    let voidMaxNumber = 1000
+    let voidInstructions = L10n("CryptoSettings.Security.Void.instructions")
     
     let dividerMessage = L10n("CryptoSettings.dividerMessage")
     

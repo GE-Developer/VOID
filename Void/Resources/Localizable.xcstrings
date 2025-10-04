@@ -1669,6 +1669,17 @@
         }
       }
     },
+    "CryptoSettings.Security.Void.instructions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HERE WILL BE INSTRUCTIONS"
+          }
+        }
+      }
+    },
     "CryptoSettings.Security.Void.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {

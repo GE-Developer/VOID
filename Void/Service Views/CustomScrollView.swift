@@ -144,7 +144,7 @@ extension CustomScrollView {
                 VStack(spacing: 0) {
                     geometryReader
                     scrollView(proxy)
-                        .padding(.top)
+                        .padding(.top, 10)
                 }
             }
         }
