@@ -10,12 +10,12 @@ import SwiftUI
 struct MessageView: View {
     @State private var isPressing = false
     
-    private var backgroundColor: LinearGradient {
+    private var backgroundColor: Color {
         switch message.encryptionMode {
         case .encrypt:
-            return isPressing ? Gradient.green : Gradient.accent
+            return isPressing ? .void.greenDark : .void.accentLight
         case .decrypt:
-            return isPressing ? Gradient.green : Gradient.gray
+            return isPressing ? .void.greenDark : .void.grayDark
         }
     }
     

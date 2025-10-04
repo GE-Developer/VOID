@@ -47,6 +47,8 @@ extension AES256EncryptionView {
             VStack {
                 copyAlert
                 bottomSafeArea
+                    .keyboardType(vm.currentMode == .decrypt ? .asciiCapable : .default)
+                    .autocorrectionDisabled(true)
             }
         }
         .overlay(loader)

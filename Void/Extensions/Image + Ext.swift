@@ -22,6 +22,7 @@ struct SystemImage {
     let xmark = Image(systemName: "xmark")
     let cryptoSettings = Image(systemName: "slider.horizontal.3")
     let number = Image(systemName: "number")
+    let info = Image(systemName: "info.circle")
     
     let chechmark = Image(systemName: "checkmark.circle.fill")
     let darkMode = Image(systemName: "moon.fill")

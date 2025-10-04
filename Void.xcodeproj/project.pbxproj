@@ -20,6 +20,9 @@
 		1F1452592E608E9200F8A553 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1452582E608E9200F8A553 /* SettingsView.swift */; };
 		1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14525B2E6092D200F8A553 /* LanguageView.swift */; };
 		1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */; };
+		1F2CADA42E91075E009007B5 /* AboutEncryptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CADA32E91075E009007B5 /* AboutEncryptionView.swift */; };
+		1F2CADA62E91088C009007B5 /* AboutAES256ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CADA52E91088C009007B5 /* AboutAES256ViewModel.swift */; };
+		1F2CADA92E9183AD009007B5 /* AboutEncryptionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CADA82E9183AD009007B5 /* AboutEncryptionProtocol.swift */; };
 		1F2D34232E7D7D16005E6239 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34222E7D7D16005E6239 /* Message.swift */; };
 		1F2D34242E7D7D16005E6239 /* AES256Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */; };
 		1F2D34262E7DF41A005E6239 /* KeyDerivationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */; };
@@ -84,6 +87,9 @@
 		1F1452582E608E9200F8A553 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1F14525B2E6092D200F8A553 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1F2CADA32E91075E009007B5 /* AboutEncryptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutEncryptionView.swift; sourceTree = "<group>"; };
+		1F2CADA52E91088C009007B5 /* AboutAES256ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAES256ViewModel.swift; sourceTree = "<group>"; };
+		1F2CADA82E9183AD009007B5 /* AboutEncryptionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutEncryptionProtocol.swift; sourceTree = "<group>"; };
 		1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256Parameters.swift; sourceTree = "<group>"; };
 		1F2D34222E7D7D16005E6239 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivationService.swift; sourceTree = "<group>"; };
@@ -149,6 +155,7 @@
 		1F12FE442E4221440023DB69 /* AES256-Settings */ = {
 			isa = PBXGroup;
 			children = (
+				1F2CADA52E91088C009007B5 /* AboutAES256ViewModel.swift */,
 				1F8DDCF42E3C03D9005734CD /* AES256SettingsViewModel.swift */,
 				1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */,
 				1FA26BEC2E90A1F6002BD74C /* VoidNumbersView.swift */,
@@ -206,6 +213,14 @@
 			path = "AES256-Managers";
 			sourceTree = "<group>";
 		};
+		1F2CADAA2E9183DC009007B5 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1F2CADA82E9183AD009007B5 /* AboutEncryptionProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		1F2D341E2E7D7CC6005E6239 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +269,7 @@
 				1F8DDBDC2E367816005734CD /* AES256 Module */,
 				1F14525A2E608EAF00F8A553 /* Settings Module */,
 				1F12FE492E4278040023DB69 /* Enums */,
+				1F2CADAA2E9183DC009007B5 /* Protocols */,
 				1F8DDBEA2E367863005734CD /* Extensions */,
 				1F8DDBEB2E367882005734CD /* Resources */,
 				1F8DDBED2E3678B3005734CD /* Preview Content */,
@@ -325,6 +341,7 @@
 				1F8DDCE42E3A1C01005734CD /* CustomSecureField.swift */,
 				1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */,
 				1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */,
+				1F2CADA32E91075E009007B5 /* AboutEncryptionView.swift */,
 			);
 			path = "Service Views";
 			sourceTree = "<group>";
@@ -463,6 +480,7 @@
 				1F8DDCE32E39676C005734CD /* ContentView1.swift in Sources */,
 				1F8DDCE12E396473005734CD /* Gradient + Ext.swift in Sources */,
 				1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */,
+				1F2CADA92E9183AD009007B5 /* AboutEncryptionProtocol.swift in Sources */,
 				1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */,
 				1F7D9EE32E63402F007B4DDD /* HapticsManager.swift in Sources */,
 				1F8DDCF52E3C03D9005734CD /* AES256SettingsViewModel.swift in Sources */,
@@ -474,9 +492,11 @@
 				1F2D34262E7DF41A005E6239 /* KeyDerivationService.swift in Sources */,
 				1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */,
 				1F8DDBC52E366E11005734CD /* VoidApp.swift in Sources */,
+				1F2CADA42E91075E009007B5 /* AboutEncryptionView.swift in Sources */,
 				1F1452552E608D2D00F8A553 /* LanguageManager.swift in Sources */,
 				1F8DDBFA2E38123F005734CD /* AES256SettingsView.swift in Sources */,
 				1F1161262E747C6200A7894D /* CustomScrollView.swift in Sources */,
+				1F2CADA62E91088C009007B5 /* AboutAES256ViewModel.swift in Sources */,
 				1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */,
 				1F2D34312E84AFC6005E6239 /* FullScreenLoader.swift in Sources */,
 				1F7D9EF92E653107007B4DDD /* MatrixAnimationView.swift in Sources */,

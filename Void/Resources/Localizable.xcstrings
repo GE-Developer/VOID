@@ -1,6 +1,127 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "About.information" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Информация"
+          }
+        }
+      }
+    },
+    "AboutAES256.fifthDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Используйте сложный и уникальный пароль** (более 12 символов) — чем сложнее пароль, тем дольше займёт его подбор.  **Выбирайте сильные параметры шифрования в Argon2id** (количество итераций, потоков) — это повышает безопасность, но может увеличить время шифрования до 20 минут.  **Всегда сохраняйте исходный шифротекст полностью** — любая потеря символа делает расшифровку невозможной.  Регулярно **обновляйте пароли** для дополнительной защиты."
+          }
+        }
+      }
+    },
+    "AboutAES256.fifthTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Советы"
+          }
+        }
+      }
+    },
+    "AboutAES256.firstDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** — это симметричный алгоритм шифрования, использующий ключ длиной **256 бит**.  Он защищает данные, **разбивая их на блоки по 128 бит и выполняя 14 раундов математических преобразований**: подстановки, перестановки и смешивания байтов.  В результате исходная информация превращается в зашифрованный набор данных, расшифровать который можно **только с тем же ключом**."
+          }
+        }
+      }
+    },
+    "AboutAES256.firstTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О шифровании"
+          }
+        }
+      }
+    },
+    "AboutAES256.fourthDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Вы вводите пароль. 2 - Выбираете VOID. 3 - Приложение генерирует соль и объединяет её с паролем и VOID. 4 - Argon2id вычисляет ключ с заданными параметрами. 5 - Ключ используется в AES‑256 для шифрования текста. 6 - Соль и остальные параметры сохраняются в зашифрованной структуре.  **Для расшифровки нужно точно воспроизвести тот же ключ — ввести тот же пароль и VOID и иметь оригинальный шифротекст с точностью до символа**."
+          }
+        }
+      }
+    },
+    "AboutAES256.fourthTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как работает AES-256 + Argon2id + VOID"
+          }
+        }
+      }
+    },
+    "AboutAES256.secondDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 — это современный **алгоритм KDF (Key Derivation Function) преобразования пароля в криптографический ключ**, признанный международным стандартом (RFC 9106).  Разработан в 2015 году и выбран победителем Password Hashing Competition как **наиболее надёжный и эффективный метод защиты паролей**.  Argon2id сочетает особенности Argon2i и Argon2d, **обеспечивая устойчивость к атакам на процессор и память**.  Алгоритм выполняет множество итераций вычислений, работает многопоточно и добавляет уникальную соль для каждого шифрования.  Это делает подбор ключа крайне **затратным** по времени и ресурсам, даже для мощных систем."
+          }
+        }
+      }
+    },
+    "AboutAES256.secondTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        }
+      }
+    },
+    "AboutAES256.thirdDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каждое приложение [VOID] содержит скрытый параметр — **VOID Secret (внутренний пароль)**.  Особенности: • выбирается из большого набора вариантов; • одинаково генерируется на всех устройствах; • не сохраняется в данных и не передаётся по сети; • делает расшифровку возможной только внутри приложения.  **Даже при знании пароля, без правильного VOID Secret данные остаются зашифрованными**."
+          }
+        }
+      }
+    },
+    "AboutAES256.thirdTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID «Перец»"
+          }
+        }
+      }
+    },
     "Alert.сopied" : {
       "extractionState" : "manual",
       "localizations" : {

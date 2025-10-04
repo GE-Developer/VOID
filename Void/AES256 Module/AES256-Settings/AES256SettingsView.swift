@@ -10,6 +10,7 @@ import SwiftUI
 struct AES256SettingsView: View {
     @StateObject private var vm: AES256SettingsViewModel
     @State private var showVoid = false
+    @State private var showInfo = false
     
     init(vm: AES256EncryptionViewModel) {
         _vm = StateObject(wrappedValue: AES256SettingsViewModel(mainVM: vm))
@@ -22,6 +23,9 @@ struct AES256SettingsView: View {
             }
             .navigationDestination(isPresented: $showVoid) {
                 NavigationLazyView(VoidNumbersView(vm: vm))
+            }
+            .navigationDestination(isPresented: $showInfo) {
+                AboutEncryptionView(vm: AboutAES256ViewModel())
             }
     }
 }
@@ -36,6 +40,9 @@ extension AES256SettingsView {
                 isLargeNavBar: $0
             )
             Spacer()
+            NavigationToolButton(.system.info) {
+                showInfo = true
+            }
         } headerView: {
             passwordForm
                 .offset(y: min($0, 0))
