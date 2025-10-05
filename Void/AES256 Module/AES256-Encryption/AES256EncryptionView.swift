@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AES256EncryptionView: View {
     @StateObject private var vm = AES256EncryptionViewModel()
+    
     @State private var isTextFieldDisabled = true
     @State private var goToSettings = false
     @State private var isCopied = false

@@ -11,10 +11,8 @@ import SwiftUI
 struct VoidApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                HomeView()
-                    .preferredColorScheme(ThemeManager.shared.theme)
-            }
+            HomeView()
+                .preferredColorScheme(ThemeManager.shared.theme)
         }
     }
 }

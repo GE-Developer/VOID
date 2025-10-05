@@ -114,7 +114,7 @@ extension CustomScrollView {
                 titleHStackView(isLargeNavBar)
             }
             .padding(.trailing, 14)
-            .padding(.leading, withBackButton ? 0 : 14)
+            .padding(.leading, withBackButton ? 0 : 20)
         }
         .frame(height: isLargeNavBar ? largeNavBarHeight : smallNavBarHeight)
         .animation(.easeOut(duration: 0.2), value: isLargeNavBar)

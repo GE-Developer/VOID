@@ -24,10 +24,10 @@ struct SettingsView: View {
                 NavigationLazyView(LanguageView())
             }
             .navigationDestination(isPresented: $subscriptionViewPresented) {
-                NavigationLazyView(ContentView1())
+                NavigationLazyView(EmptyView())
             }
             .navigationDestination(isPresented: $projectViewPresented) {
-                NavigationLazyView(ContentView1())
+                NavigationLazyView(EmptyView())
             }
     }
 }
@@ -35,8 +35,8 @@ struct SettingsView: View {
 // MARK: - Builder
 extension SettingsView {
     private var settingsView: some View {
-        CustomScrollView { isLargeNavBar in
-            CustomNavigationTitle(title: vm.title, isLargeNavBar: isLargeNavBar)
+        CustomScrollView(withBackButton: false) {
+            CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
             Spacer()
         } scrollView: { _ in
             VStack(spacing: 25) {
