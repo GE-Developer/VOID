@@ -10,6 +10,8 @@ import SwiftUI
 struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     @Environment(\.dismiss) private var dismiss
     
+    @EnvironmentObject private var tabBarState: TabBarState
+    
     @State private var offsetY = 0.0
     @State private var headerHeight = 0.0
     
@@ -54,6 +56,9 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     
     var body: some View {
         customScrollView
+            .onAppear {
+                tabBarState.isVisible = !withBackButton
+            }
     }
 }
 
@@ -66,7 +71,7 @@ extension CustomScrollView {
             header.zIndex(2)
             scroll.zIndex(1)
         }
-        .toolbarVisibility(.hidden, for: .navigationBar)
+        .toolbar(.hidden, for: .navigationBar)
         .onAppear(perform: closeKeyboard)
     }
     
@@ -145,14 +150,25 @@ extension CustomScrollView {
                     geometryReader
                     scrollView(proxy)
                         .padding(.top, 10)
+                    spacerForTabBar
+                        .padding(.bottom, 20)
                 }
             }
         }
         .safeAreaPadding(.horizontal)
         .safeAreaPadding(.top, largeNavBarHeight + headerHeight + 16)
         .scrollDismissesKeyboard(.interactively)
+        .scrollIndicators(withBackButton ? .automatic : .never)
         .scrollTargetBehavior(scrollBehavior)
         .contentMargins(.top, scrollMargins, for: .scrollIndicators)
+    }
+    
+    @ViewBuilder
+    private var spacerForTabBar: some View {
+        if !withBackButton {
+            Spacer()
+                .frame(height: tabBarState.height)
+        }
     }
 }
 

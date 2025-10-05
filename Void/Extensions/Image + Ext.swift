@@ -16,7 +16,6 @@ struct SystemImage {
     let back = Image(systemName: "chevron.left")
     let chevron = Image(systemName: "chevron.right")
     let lock = Image(systemName: "lock.fill")
-    let key = Image(systemName: "key")
     let timer = Image(systemName: "timer")
     let send = Image(systemName: "arrow.up")
     let xmark = Image(systemName: "xmark")
@@ -36,6 +35,11 @@ struct SystemImage {
     let termsOfUse = Image(systemName: "doc.plaintext")
     let privacyPolicy = Image(systemName: "lock.doc.fill")
     let developerTool = Image(systemName: "hammer.fill")
+    let gear = Image(systemName: "gear")
+    
+    func key(_ isFilled: Bool = false) -> Image {
+        isFilled ? Image(systemName: "key.fill") : Image(systemName: "key")
+    }
 }
 
 struct BackgroundImage {

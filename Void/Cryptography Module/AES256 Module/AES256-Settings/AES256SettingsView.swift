@@ -70,7 +70,7 @@ extension AES256SettingsView {
                 .padding(.leading, 50)
             
             CustomButtonRow(
-                icon: .system.key,
+                icon: .system.key(),
                 title: vm.voidTitle,
                 subtitle: vm.voidSubtitle,
                 additionalTitle: "#\(vm.parameters.voidIndex)",

@@ -33,6 +33,8 @@
 		1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */; };
 		1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */; };
 		1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDE2E75835500DB44CE /* View + Ext.swift */; };
+		1F6F65F32E92C08C0095E89E /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65F22E92C08C0095E89E /* TabBarState.swift */; };
+		1F6F65F52E92C1970095E89E /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65F42E92C1970095E89E /* CustomTabBar.swift */; };
 		1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7970872E7C4D6B007755F3 /* Sound.swift */; };
 		1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */; };
 		1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE02E634007007B4DDD /* SoundManager.swift */; };
@@ -100,6 +102,8 @@
 		1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAlertView.swift; sourceTree = "<group>"; };
 		1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		1F64ADDE2E75835500DB44CE /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
+		1F6F65F22E92C08C0095E89E /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
+		1F6F65F42E92C1970095E89E /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		1F7970872E7C4D6B007755F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		1F7D9EE02E634007007B4DDD /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 				1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */,
 				1F7D9EE02E634007007B4DDD /* SoundManager.swift */,
 				1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */,
+				1F6F65F22E92C08C0095E89E /* TabBarState.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -258,6 +263,15 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
+		1F6F65F82E9327470095E89E /* Cryptography Module */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DDCE22E39676C005734CD /* CryptographyView.swift */,
+				1F8DDBDC2E367816005734CD /* AES256 Module */,
+			);
+			path = "Cryptography Module";
+			sourceTree = "<group>";
+		};
 		1F8DDBDB2E3677DE005734CD /* Void */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,7 +280,7 @@
 				1F2D341E2E7D7CC6005E6239 /* Models */,
 				1F2D34292E7EDD14005E6239 /* Crypto Services */,
 				1F8DDBEC2E367897005734CD /* Service Views */,
-				1F8DDBDC2E367816005734CD /* AES256 Module */,
+				1F6F65F82E9327470095E89E /* Cryptography Module */,
 				1F14525A2E608EAF00F8A553 /* Settings Module */,
 				1F12FE492E4278040023DB69 /* Enums */,
 				1F2CADAA2E9183DC009007B5 /* Protocols */,
@@ -292,7 +306,6 @@
 			children = (
 				1F8DDBB72E366E11005734CD /* VoidApp.swift */,
 				1F8DDBB62E366E11005734CD /* HomeView.swift */,
-				1F8DDCE22E39676C005734CD /* CryptographyView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -323,6 +336,7 @@
 			isa = PBXGroup;
 			children = (
 				1F1161252E747C6200A7894D /* CustomScrollView.swift */,
+				1F6F65F42E92C1970095E89E /* CustomTabBar.swift */,
 				1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */,
 				1F8DDBF02E367A58005734CD /* CustomNavigationTitle.swift */,
 				1F91202F2E8C935200B62644 /* NavigationToolButton.swift */,
@@ -511,6 +525,7 @@
 				1F2D34282E7E1760005E6239 /* AES256CryptoManager.swift in Sources */,
 				1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */,
 				1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */,
+				1F6F65F52E92C1970095E89E /* CustomTabBar.swift in Sources */,
 				1F8DDCE92E3A7843005734CD /* FormHeaderContent.swift in Sources */,
 				1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */,
 				1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */,
@@ -520,6 +535,7 @@
 				1F8DDCDD2E39641A005734CD /* CustomButtonRow.swift in Sources */,
 				1F8DDCDF2E396454005734CD /* CustomToggleRow.swift in Sources */,
 				1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */,
+				1F6F65F32E92C08C0095E89E /* TabBarState.swift in Sources */,
 				1F1452572E608D8900F8A553 /* AppStorageKey.swift in Sources */,
 				1F12FE4F2E42789C0023DB69 /* CryptoActionButtons.swift in Sources */,
 				1F8DDCE52E3A1C01005734CD /* CustomSecureField.swift in Sources */,
@@ -666,11 +682,14 @@
 				DEVELOPMENT_TEAM = 6DCRFKN8GP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VOID;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -699,11 +718,14 @@
 				DEVELOPMENT_TEAM = 6DCRFKN8GP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = VOID;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
