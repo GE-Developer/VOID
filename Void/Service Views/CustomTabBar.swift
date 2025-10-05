@@ -35,7 +35,10 @@ extension CustomTabBar {
         .padding(.horizontal, 80)
         .offset(y: tabBarState.isVisible ? 0 : 80)
         .opacity(tabBarState.isVisible ? 1 : 0)
-        .animation(.spring(response: 0.35, dampingFraction: 0.85), value: tabBarState.isVisible)
+        .animation(
+            .spring(response: 0.35, dampingFraction: 0.85),
+            value: tabBarState.isVisible
+        )
     }
     
     private var background: some View {
@@ -63,7 +66,11 @@ extension CustomTabBar {
             }
         }
         .font(.title2)
-        .foregroundColor(tabBarState.selectedTab == tab ? Color.void.accentDark : Color.void.grayDark)
+        .foregroundColor(
+            tabBarState.selectedTab == tab
+            ? Color.void.accentDark
+            : Color.void.grayDark
+        )
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .contentShape(Rectangle())
         .animation(.bouncy, value: tabBarState.selectedTab)
