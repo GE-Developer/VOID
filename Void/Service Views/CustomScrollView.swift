@@ -82,7 +82,7 @@ extension CustomScrollView {
                     backgroundImage
                         .resizable()
                         .scaledToFill()
-                        .opacity(0.05)
+                        .opacity(0.06)
                 }
             }
             .ignoresSafeArea()

@@ -10,6 +10,7 @@ import SwiftUI
 extension Image {
     static let system = SystemImage()
     static let background = BackgroundImage()
+    static let content = ContentImage()
 }
 
 struct SystemImage {
@@ -43,5 +44,9 @@ struct SystemImage {
 }
 
 struct BackgroundImage {
-    let aes256 = Image("AES256")
+    let aes256Argon2idVOID = Image("AES256+Argon2id+VOID")
+}
+
+struct ContentImage {
+    let voidAES256Argon2id = Image("VOID+AES256+Argon2id")
 }

@@ -23,12 +23,13 @@ final class AES256EncryptionViewModel: ObservableObject {
     )
     
     @Published var text = ""
-    @Published var errorMessage = ""
     @Published var showErrorAlert = false
     @Published var currentMode: CryptoAction = .encrypt
     
     @Published private(set) var messages: [Message] = []
     @Published private(set) var isEncrypting = false
+    
+    private(set) var errorMessage = ""
     
     var placeholder: String {
         guard encryptionParameters.password != "" else {

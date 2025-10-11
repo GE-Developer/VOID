@@ -24,6 +24,10 @@ enum CryptoError: Error {
     case invalidInputData
     case unknown
     
+    // Codec
+    case encodingFailed
+    case decodingFailed
+
     var errorTitle: String { L10n("Error.title") }
 
     var errorDescription: String {
@@ -52,6 +56,10 @@ enum CryptoError: Error {
             return L10n("Error.invalidInputData")
         case .unknown:
             return L10n("Error.unknown")
+        case .encodingFailed:
+            return L10n("Error.encodingFailed")
+        case .decodingFailed:
+            return L10n("Error.decodingFailed")
         }
     }
 }

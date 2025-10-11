@@ -14,7 +14,9 @@ struct CustomMessageTextField: View {
     @FocusState private var focus: Bool
     
     private var buttonDisabled: Bool {
-        text.isEmpty || isDisabled
+        withAnimation {
+            text.isEmpty || isDisabled
+        }
     }
     
     private let height: CGFloat = 37
@@ -52,7 +54,6 @@ extension CustomMessageTextField {
             sendButton
         }
         .disabled(isDisabled)
-        .animation(.easeInOut, value: focus)
         .onChange(of: isDisabled) {
             if isDisabled {
                 text = ""
@@ -103,7 +104,6 @@ extension CustomMessageTextField {
             .opacity(buttonDisabled ? 0.6 : 1)
         }
         .disabled(buttonDisabled)
-        .animation(.easeInOut, value: buttonDisabled)
         .frame(width: height, height: height)
     }
     

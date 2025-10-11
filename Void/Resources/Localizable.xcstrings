@@ -4,6 +4,12 @@
     "About.information" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Information"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -15,6 +21,12 @@
     "AboutAES256.fifthDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Use a complex and unique password** (more than 12 characters) — the more complex the password, the longer it takes to crack.  **Choose strong Argon2id encryption parameters** (number of iterations, threads)  — this increases security but may extend encryption time up to 20 minutes.  **Always save the original ciphertext in full** — losing even a single character makes decryption impossible.  Regularly **update passwords** for additional protection."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -26,6 +38,12 @@
     "AboutAES256.fifthTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -37,6 +55,12 @@
     "AboutAES256.firstDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** is a symmetric encryption algorithm that uses a **256-bit key**.  It secures data by **dividing it into 128-bit blocks and performing 14 rounds of mathematical transformations**: substitutions, permutations, and byte mixing.  As a result, the original information is converted into an encrypted data set that can be decrypted **only with the same key**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -48,6 +72,12 @@
     "AboutAES256.firstTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About Encryption"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,6 +89,12 @@
     "AboutAES256.fourthDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - You enter a password. 2 - You select VOID. 3 - The application generates a salt and combines it with the password and VOID. 4 - Argon2id computes the key using the specified parameters. 5 - The key is used in AES-256 to encrypt the text. 6 - The salt and other parameters are stored in the encrypted structure.  **To decrypt, you must exactly reproduce the same key — enter the same password and VOID and have the original ciphertext accurate to the character**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -70,6 +106,12 @@
     "AboutAES256.fourthTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How AES-256 + Argon2id + VOID Works"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -81,6 +123,12 @@
     "AboutAES256.secondDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 is a modern **KDF (Key Derivation Function) algorithm for transforming a password into a cryptographic key**, recognized as an international standard (RFC 9106).  Developed in 2015 and selected as the winner of the Password Hashing Competition as **the most reliable and efficient method for password protection**.  Argon2id combines features of Argon2i and Argon2d, **providing resistance to CPU and memory attacks**.  The algorithm performs multiple computational iterations, operates in multi-threaded mode, and adds a unique salt for each encryption.  This makes key brute-forcing **extremely resource-intensive and time-consuming**, even for powerful systems."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -92,6 +140,12 @@
     "AboutAES256.secondTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -103,6 +157,12 @@
     "AboutAES256.thirdDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Each [VOID] application contains a hidden parameter — **VOID Secret (internal password)**.  Features: • Selected from a large set of variants; • Generated identically across all devices; • Not stored in data or transmitted over the network; • Makes decryption possible only within the application.  **Even if the password is known, without the correct VOID Secret, the data remains encrypted**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -114,6 +174,12 @@
     "AboutAES256.thirdTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID «Pepper»"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -135,6 +201,74 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скопировано"
+          }
+        }
+      }
+    },
+    "Coding.decode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decode"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Декодирование"
+          }
+        }
+      }
+    },
+    "Coding.encode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encode"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодирование"
+          }
+        }
+      }
+    },
+    "Coding.Placeholder.decode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ready for decoding…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово к декодированию…"
+          }
+        }
+      }
+    },
+    "Coding.Placeholder.encode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ready for encoding…"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово к кодированию…"
           }
         }
       }
@@ -198,37 +332,31 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**For your security**  — The stronger the password, the stronger the encryption — We do not store or transmit your data — When you leave this screen, everything is deleted"
+            "value" : "**Upon leaving this screen, all data (password, VOID, Argon2id parameters) will be reset.  The application does not store data in the phone's memory.**"
           }
         },
         "es" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "**Para su seguridad**  — Cuanto más fuerte sea la contraseña, más fuerte será el cifrado — No almacenamos ni transmitimos sus datos — Cuando abandone esta pantalla, todo se eliminará"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "**Pour votre sécurité**  — Plus le mot de passe est complexe, plus le chiffrement est fort — Nous ne stockons ni ne transmettons vos données — Lorsque vous quittez cet écran, tout est supprimé"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "**Per la tua sicurezza**  — Più la password è complessa, più forte è la crittografia — Non memorizziamo né trasmettiamo i tuoi dati — Quando lasci questo schermo, tutto viene eliminato"
           }
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "**あなたのセキュリティのために**  — パスワードが強いほど、暗号化も強力です — 私たちはあなたのデータを保存したり送信したりしません — この画面を離れると、すべて削除されます"
-          }
-        },
-        "ka" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "**თქვენი უსაფრთხოებისათვის**  — რაც უფრო ძლიერია პაროლი, მით უფრო ძლიერია შიფრაცია — ჩვენ არ ვინახავთ და არ ვგზავნით თქვენს მონაცემებს — როდესაც ტოვებთ ამ ეკრანს, ყველაფერი წაიშლება"
           }
         },
         "ru" : {
@@ -239,7 +367,7 @@
         },
         "uk" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "needs_review",
             "value" : "**Для вашої безпеки**  — Чим сильніший пароль, тим надійніше шифрування — Ми не зберігаємо і не передаємо ваші дані — Коли ви покидаєте цей екран, все видаляється"
           }
         }
@@ -1796,13 +1924,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HERE WILL BE INSTRUCTIONS"
+            "value" : "**VOID enhances the cryptographic key** by adding a hidden internal component.  A value of 0 means encryption is performed without VOID.  **The VOID number only affects the variant selection**, not the level of protection."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**VOID усиливает криптографический ключ**, добавляя к нему скрытый внутренний компонент.  Значение **0** означает, что шифрование выполняется без VOID.  **Номер VOID влияет только на выбор варианта**, но не изменяет уровень защиты."
+            "value" : "**VOID усиливает криптографический ключ**, добавляя к нему скрытый внутренний компонент.  Значение 0 означает, что шифрование выполняется без VOID.  **Номер VOID влияет только на выбор варианта**, но не изменяет уровень защиты."
           }
         }
       }
@@ -2178,6 +2306,159 @@
         }
       }
     },
+    "Emoji" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эмодзи"
+          }
+        }
+      }
+    },
+    "EmojiMood.animals" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animals"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Животные"
+          }
+        }
+      }
+    },
+    "EmojiMood.food" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Food"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Еда"
+          }
+        }
+      }
+    },
+    "EmojiMood.loveStory" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Love Story"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Любовь"
+          }
+        }
+      }
+    },
+    "EmojiMood.negative" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negative"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Негативные"
+          }
+        }
+      }
+    },
+    "EmojiMood.people" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "People"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Люди"
+          }
+        }
+      }
+    },
+    "EmojiMood.positive" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Positive"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Позитивные"
+          }
+        }
+      }
+    },
+    "EmojiSettings.EmojiSelection.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select the **type of emoj**i to encode text into a unique emoji sequence.  Decoding text from any emoji type happens **automatically**."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите **тип эмодзи**, чтобы закодировать текст в уникальную последовательность эмодзи.  Декодирование текста из любого типа эмодзи происходит **автоматически**."
+          }
+        }
+      }
+    },
+    "EmojiSettings.EmojiSelection.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji Encoding"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эмодзи-кодирование"
+          }
+        }
+      }
+    },
     "Error.argon2Failed" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2213,6 +2494,23 @@
         }
       }
     },
+    "Error.decodingFailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to decode data."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось декодировать текст."
+          }
+        }
+      }
+    },
     "Error.decryptionFailed" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2244,6 +2542,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося розшифрувати дані."
+          }
+        }
+      }
+    },
+    "Error.encodingFailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to encode data."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось закодировать текст."
           }
         }
       }

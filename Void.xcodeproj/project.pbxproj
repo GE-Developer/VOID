@@ -33,8 +33,16 @@
 		1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */; };
 		1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */; };
 		1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDE2E75835500DB44CE /* View + Ext.swift */; };
+		1F6C56C32E97F1700060015F /* EmojiMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C56C22E97F1700060015F /* EmojiMood.swift */; };
+		1F6C56C52E9814590060015F /* CryptographyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C56C42E9814590060015F /* CryptographyViewModel.swift */; };
+		1F6C56C72E98828A0060015F /* EmojiCodecManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C56C62E98828A0060015F /* EmojiCodecManager.swift */; };
 		1F6F65F32E92C08C0095E89E /* TabBarState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65F22E92C08C0095E89E /* TabBarState.swift */; };
 		1F6F65F52E92C1970095E89E /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65F42E92C1970095E89E /* CustomTabBar.swift */; };
+		1F6F65FA2E943EF30095E89E /* CustomTabImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65F92E943EF30095E89E /* CustomTabImageView.swift */; };
+		1F6F65FC2E9445EB0095E89E /* CustomTabSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65FB2E9445EB0095E89E /* CustomTabSection.swift */; };
+		1F6F65FE2E958A3F0095E89E /* CodecService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65FD2E958A3F0095E89E /* CodecService.swift */; };
+		1F6F66002E958B380095E89E /* EmojiCodingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65FF2E958B380095E89E /* EmojiCodingView.swift */; };
+		1F6F66032E958C030095E89E /* EmojiCodingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F66022E958C030095E89E /* EmojiCodingViewModel.swift */; };
 		1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7970872E7C4D6B007755F3 /* Sound.swift */; };
 		1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */; };
 		1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE02E634007007B4DDD /* SoundManager.swift */; };
@@ -73,6 +81,7 @@
 		1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91202F2E8C935200B62644 /* NavigationToolButton.swift */; };
 		1FA26BED2E90A1F6002BD74C /* VoidNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA26BEC2E90A1F6002BD74C /* VoidNumbersView.swift */; };
 		1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2FBEA2E58BB510072905D /* PepperService.swift */; };
+		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,8 +111,16 @@
 		1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAlertView.swift; sourceTree = "<group>"; };
 		1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		1F64ADDE2E75835500DB44CE /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
+		1F6C56C22E97F1700060015F /* EmojiMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMood.swift; sourceTree = "<group>"; };
+		1F6C56C42E9814590060015F /* CryptographyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptographyViewModel.swift; sourceTree = "<group>"; };
+		1F6C56C62E98828A0060015F /* EmojiCodecManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCodecManager.swift; sourceTree = "<group>"; };
 		1F6F65F22E92C08C0095E89E /* TabBarState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarState.swift; sourceTree = "<group>"; };
 		1F6F65F42E92C1970095E89E /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		1F6F65F92E943EF30095E89E /* CustomTabImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabImageView.swift; sourceTree = "<group>"; };
+		1F6F65FB2E9445EB0095E89E /* CustomTabSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabSection.swift; sourceTree = "<group>"; };
+		1F6F65FD2E958A3F0095E89E /* CodecService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodecService.swift; sourceTree = "<group>"; };
+		1F6F65FF2E958B380095E89E /* EmojiCodingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCodingView.swift; sourceTree = "<group>"; };
+		1F6F66022E958C030095E89E /* EmojiCodingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCodingViewModel.swift; sourceTree = "<group>"; };
 		1F7970872E7C4D6B007755F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		1F7D9EE02E634007007B4DDD /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
@@ -142,6 +159,7 @@
 		1FA26BEC2E90A1F6002BD74C /* VoidNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidNumbersView.swift; sourceTree = "<group>"; };
 		1FA2FBEA2E58BB510072905D /* PepperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepperService.swift; sourceTree = "<group>"; };
 		1FB32A312E34FA17003E4B54 /* Void.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Void.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +215,7 @@
 				1F7970872E7C4D6B007755F3 /* Sound.swift */,
 				1F2D342A2E7F3D87005E6239 /* CryptoError.swift */,
 				1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */,
+				1F6C56C22E97F1700060015F /* EmojiMood.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -241,6 +260,7 @@
 				1FA2FBEA2E58BB510072905D /* PepperService.swift */,
 				1F2D34252E7DF41A005E6239 /* KeyDerivationService.swift */,
 				1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */,
+				1F6F65FD2E958A3F0095E89E /* CodecService.swift */,
 			);
 			path = "Crypto Services";
 			sourceTree = "<group>";
@@ -263,13 +283,34 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
+		1F6C56C82E9884590060015F /* Emoji-Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				1F6F65FF2E958B380095E89E /* EmojiCodingView.swift */,
+				1F6F66022E958C030095E89E /* EmojiCodingViewModel.swift */,
+			);
+			path = "Emoji-Encoding";
+			sourceTree = "<group>";
+		};
 		1F6F65F82E9327470095E89E /* Cryptography Module */ = {
 			isa = PBXGroup;
 			children = (
 				1F8DDCE22E39676C005734CD /* CryptographyView.swift */,
-				1F8DDBDC2E367816005734CD /* AES256 Module */,
+				1F6C56C42E9814590060015F /* CryptographyViewModel.swift */,
+				1F6F66012E958B6A0095E89E /* Emoji Module */,
+				1F8DDBDC2E367816005734CD /* AES256 + Argon2id Module */,
 			);
 			path = "Cryptography Module";
+			sourceTree = "<group>";
+		};
+		1F6F66012E958B6A0095E89E /* Emoji Module */ = {
+			isa = PBXGroup;
+			children = (
+				1F6C56C82E9884590060015F /* Emoji-Encoding */,
+				1FF6E1272E98855F001F51BA /* Emoji-Settings */,
+				1FF6E1242E988517001F51BA /* Emoji-Managers */,
+			);
+			path = "Emoji Module";
 			sourceTree = "<group>";
 		};
 		1F8DDBDB2E3677DE005734CD /* Void */ = {
@@ -291,14 +332,14 @@
 			path = Void;
 			sourceTree = "<group>";
 		};
-		1F8DDBDC2E367816005734CD /* AES256 Module */ = {
+		1F8DDBDC2E367816005734CD /* AES256 + Argon2id Module */ = {
 			isa = PBXGroup;
 			children = (
 				1F2355FA2E8A04B10088290F /* AES256-Managers */,
 				1F12FE452E4221AC0023DB69 /* AES256-Encryption */,
 				1F12FE442E4221440023DB69 /* AES256-Settings */,
 			);
-			path = "AES256 Module";
+			path = "AES256 + Argon2id Module";
 			sourceTree = "<group>";
 		};
 		1F8DDBDD2E36783C005734CD /* App */ = {
@@ -340,6 +381,8 @@
 				1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */,
 				1F8DDBF02E367A58005734CD /* CustomNavigationTitle.swift */,
 				1F91202F2E8C935200B62644 /* NavigationToolButton.swift */,
+				1F6F65F92E943EF30095E89E /* CustomTabImageView.swift */,
+				1F6F65FB2E9445EB0095E89E /* CustomTabSection.swift */,
 				1F8DDCDA2E3963C3005734CD /* CustomForm.swift */,
 				1F8DDCDC2E39641A005734CD /* CustomButtonRow.swift */,
 				1F8DDCDE2E396454005734CD /* CustomToggleRow.swift */,
@@ -394,6 +437,22 @@
 				1FB32A312E34FA17003E4B54 /* Void.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1FF6E1242E988517001F51BA /* Emoji-Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1F6C56C62E98828A0060015F /* EmojiCodecManager.swift */,
+			);
+			path = "Emoji-Managers";
+			sourceTree = "<group>";
+		};
+		1FF6E1272E98855F001F51BA /* Emoji-Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */,
+			);
+			path = "Emoji-Settings";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,15 +558,20 @@
 				1F7D9EE32E63402F007B4DDD /* HapticsManager.swift in Sources */,
 				1F8DDCF52E3C03D9005734CD /* AES256SettingsViewModel.swift in Sources */,
 				1F8DDCF32E3B96E3005734CD /* TimerPicker.swift in Sources */,
+				1F6C56C52E9814590060015F /* CryptographyViewModel.swift in Sources */,
 				1F8DDBC42E366E11005734CD /* HomeView.swift in Sources */,
 				1F8DDCDB2E3963C4005734CD /* CustomForm.swift in Sources */,
 				1F12FE4B2E4278210023DB69 /* CryptoAction.swift in Sources */,
 				1F8DDBE82E36785E005734CD /* Image + Ext.swift in Sources */,
 				1F2D34262E7DF41A005E6239 /* KeyDerivationService.swift in Sources */,
+				1F6F66032E958C030095E89E /* EmojiCodingViewModel.swift in Sources */,
 				1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */,
+				1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */,
+				1F6F65FE2E958A3F0095E89E /* CodecService.swift in Sources */,
 				1F8DDBC52E366E11005734CD /* VoidApp.swift in Sources */,
 				1F2CADA42E91075E009007B5 /* AboutEncryptionView.swift in Sources */,
 				1F1452552E608D2D00F8A553 /* LanguageManager.swift in Sources */,
+				1F6F65FA2E943EF30095E89E /* CustomTabImageView.swift in Sources */,
 				1F8DDBFA2E38123F005734CD /* AES256SettingsView.swift in Sources */,
 				1F1161262E747C6200A7894D /* CustomScrollView.swift in Sources */,
 				1F2CADA62E91088C009007B5 /* AboutAES256ViewModel.swift in Sources */,
@@ -519,9 +583,11 @@
 				1F2D34232E7D7D16005E6239 /* Message.swift in Sources */,
 				1F2D34242E7D7D16005E6239 /* AES256Parameters.swift in Sources */,
 				1F7D9EE92E63447D007B4DDD /* LanguageViewModel.swift in Sources */,
+				1F6F66002E958B380095E89E /* EmojiCodingView.swift in Sources */,
 				1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */,
 				1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */,
 				1F2D342B2E7F3D87005E6239 /* CryptoError.swift in Sources */,
+				1F6C56C72E98828A0060015F /* EmojiCodecManager.swift in Sources */,
 				1F2D34282E7E1760005E6239 /* AES256CryptoManager.swift in Sources */,
 				1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */,
 				1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */,
@@ -529,6 +595,7 @@
 				1F8DDCE92E3A7843005734CD /* FormHeaderContent.swift in Sources */,
 				1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */,
 				1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */,
+				1F6C56C32E97F1700060015F /* EmojiMood.swift in Sources */,
 				1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */,
 				1F12FE482E4264260023DB69 /* CustomMessageTextField.swift in Sources */,
 				1F1452532E6080F800F8A553 /* Language.swift in Sources */,
@@ -541,6 +608,7 @@
 				1F8DDCE52E3A1C01005734CD /* CustomSecureField.swift in Sources */,
 				1FA26BED2E90A1F6002BD74C /* VoidNumbersView.swift in Sources */,
 				1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */,
+				1F6F65FC2E9445EB0095E89E /* CustomTabSection.swift in Sources */,
 				1F12FE512E42DEDD0023DB69 /* MessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

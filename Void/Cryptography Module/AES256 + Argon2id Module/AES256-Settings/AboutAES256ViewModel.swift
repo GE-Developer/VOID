@@ -5,7 +5,7 @@
 //  Created by GE-Developer
 //
 
-final class AboutAES256ViewModel: AboutEncryptionProtocol {
+struct AboutAES256ViewModel: AboutEncryptionProtocol {
     let title = L10n("About.information")
     let subtitle = L10n("Cryptography.AES-256")
     

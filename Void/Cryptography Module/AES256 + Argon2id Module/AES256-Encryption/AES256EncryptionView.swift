@@ -26,7 +26,7 @@ struct AES256EncryptionView: View {
 // MARK: - Builder
 extension AES256EncryptionView {
     private var aes256EncryptionView: some View {
-        CustomScrollView(backgroundImage: Image.background.aes256) {
+        CustomScrollView(backgroundImage: Image.background.aes256Argon2idVOID) {
             CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
             Spacer()
             NavigationToolButton(.system.cryptoSettings) {
@@ -48,7 +48,6 @@ extension AES256EncryptionView {
             VStack {
                 copyAlert
                 bottomSafeArea
-                    .keyboardType(vm.currentMode == .decrypt ? .asciiCapable : .default)
                     .autocorrectionDisabled(true)
             }
         }
@@ -56,7 +55,7 @@ extension AES256EncryptionView {
     }
     
     private var messageRows: some View {
-        LazyVStack(spacing: 15) {
+        VStack(spacing: 15) {
             ForEach(vm.messages) { message in
                 MessageView(message: message) {
                     copyText(message)

@@ -46,7 +46,7 @@ extension MessageView {
             }
             
             Text(message.resultText)
-                .font(.caption2)
+                .font(.caption)
                 .fontDesign(.rounded)
                 .foregroundStyle(Color.void.mainText)
                 .padding(8)
