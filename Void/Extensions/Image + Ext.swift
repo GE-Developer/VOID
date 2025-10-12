@@ -49,4 +49,5 @@ struct BackgroundImage {
 
 struct ContentImage {
     let voidAES256Argon2id = Image("VOID+AES256+Argon2id")
+    let emoji = Image("Emoji")
 }

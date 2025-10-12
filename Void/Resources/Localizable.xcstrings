@@ -22,6 +22,12 @@
             "value" : "Informations"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जानकारी"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -73,6 +79,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Utilisez un mot de passe complexe et unique** (plus de 12 caractères) — plus le mot de passe est complexe, plus il est long à casser.  **Choisissez des paramètres Argon2id robustes** (nombre d'itérations, nombre de threads) — cela renforce la sécurité mais peut allonger le temps de chiffrement jusqu'à 20 minutes.  **Sauvegardez toujours l'intégralité du texte chiffré d'origine** — perdre ne serait-ce qu'un seul caractère rend le déchiffrement impossible.  Mettez régulièrement les **mots de passe à jour** pour une protection supplémentaire."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**जटिल और अद्वितीय पासवर्ड का उपयोग करें** (12 से अधिक अक्षर) — पासवर्ड जितना जटिल होगा, उसे तोड़ने में उतना ही अधिक समय लगेगा।  **मज़बूत Argon2id एन्क्रिप्शन पैरामीटर चुनें** (पुनरावृत्तियों की संख्या, थ्रेड्स) — यह सुरक्षा बढ़ाता है लेकिन एन्क्रिप्शन समय को 20 मिनट तक बढ़ा सकता है।  **मूल सिफरतंत्र को हमेशा पूरी तरह सुरक्षित रखें** — एक भी अक्षर खोने पर डिक्रिप्शन असंभव हो जाता है।  अतिरिक्त सुरक्षा के लिए पासवर्ड नियमित रूप से **अपडेट करें**।"
           }
         },
         "it" : {
@@ -128,6 +140,12 @@
             "value" : "Conseils"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सुझाव"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -179,6 +197,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**AES-256 (Advanced Encryption Standard)** est un algorithme de chiffrement symétrique qui utilise une **clé de 256 bits**.  Il protège les données en **les divisant en blocs de 128 bits et en effectuant 14 tours de transformations mathématiques** : substitutions, permutations et mélange des octets.  Ainsi, les informations initiales sont converties en un ensemble de données chiffrées qui ne peuvent être déchiffrées **qu'avec la même clé**."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** एक सममित एन्क्रिप्शन एल्गोरिदम है जो **256-बिट की कुंजी** का उपयोग करता है।  यह डेटा को **128-बिट के ब्लॉकों में विभाजित कर 14 दौर के गणितीय रूपांतरण** करता है: प्रतिस्थापन, क्रम-विन्यास और बाइट मिश्रण।  इसके परिणामस्वरूप मूल जानकारी एक एन्क्रिप्टेड डेटा सेट में बदल जाती है जिसे **सिर्फ उसी कुंजी** से डिक्रिप्ट किया जा सकता है।"
           }
         },
         "it" : {
@@ -234,6 +258,12 @@
             "value" : "À propos du chiffrement"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्क्रिप्शन के बारे में"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -285,6 +315,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "1 - Vous saisissez un mot de passe. 2 - Vous choisissez VOID. 3 - L'application génère un sel et le combine avec le mot de passe et VOID. 4 - Argon2id calcule la clé avec les paramètres indiqués. 5 - La clé est utilisée par AES-256 pour chiffrer le texte. 6 - Le sel et les autres paramètres sont enregistrés dans la structure chiffrée.  **Pour déchiffrer, vous devez reproduire exactement la même clé — saisir le même mot de passe et VOID, et disposer du texte chiffré original, à l'identique**."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - आप पासवर्ड दर्ज करते हैं। 2 - आप VOID चुनते हैं। 3 - एप्लिकेशन एक सॉल्ट उत्पन्न करता है और उसे पासवर्ड और VOID के साथ जोड़ता है। 4 - Argon2id निर्दिष्ट पैरामीटरों का उपयोग करके कुंजी की गणना करता है। 5 - AES-256 उसी कुंजी से पाठ को एन्क्रिप्ट करता है। 6 - सॉल्ट और अन्य पैरामीटर एन्क्रिप्टेड संरचना में सहेजे जाते हैं।  **डिक्रिप्ट करने के लिए आपको वही कुंजी दोबारा बनानी होगी — वही पासवर्ड और VOID दर्ज करें और मूल सिफरतंत्र को अक्षर-दर-अक्षर सही रखें।**"
           }
         },
         "it" : {
@@ -340,6 +376,12 @@
             "value" : "Fonctionnement d'AES-256 + Argon2id + VOID"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id + VOID कैसे काम करता है"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -393,6 +435,12 @@
             "value" : "Argon2 est un **algorithme KDF (Key Derivation Function) moderne qui transforme un mot de passe en clé cryptographique**, reconnu comme norme internationale (RFC 9106).  Développé en 2015 et sélectionné comme vainqueur du Password Hashing Competition en tant que **méthode la plus fiable et efficace pour la protection des mots de passe**.  Argon2id combine les caractéristiques d'Argon2i et Argon2d, **offrant une résistance aux attaques sur le processeur et la mémoire**.  L'algorithme réalise de multiples itérations de calcul, fonctionne en mode multithread et ajoute un sel unique à chaque chiffrement.  Cela rend l'attaque par force brute **extrêmement coûteuse en ressources et en temps**, même pour des systèmes puissants."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 एक आधुनिक **KDF (Key Derivation Function) एल्गोरिदम है जो पासवर्ड को क्रिप्टोग्राफ़िक कुंजी में बदलता है**, जिसे अंतरराष्ट्रीय मानक (RFC 9106) के रूप में मान्यता मिली है।  इसे 2015 में विकसित किया गया था और Password Hashing Competition में **पासवर्ड सुरक्षा के लिए सबसे भरोसेमंद और कुशल विधि** के रूप में चुना गया।  Argon2id, Argon2i और Argon2d की विशेषताओं को मिलाता है, जिससे **CPU और मेमोरी पर होने वाले हमलों के खिलाफ प्रतिरोध** मिलता है।  यह एल्गोरिदम कई गणनात्मक पुनरावृत्तियाँ करता है, मल्टी-थ्रेडेड मोड में चलता है और प्रत्येक एन्क्रिप्शन के लिए एक अद्वितीय सॉल्ट जोड़ता है।  इसके कारण कुंजी को बलपूर्वक खोजने का प्रयास **बहुत अधिक संसाधन और समय लेने वाला** हो जाता है, चाहे प्रणाली कितनी भी शक्तिशाली क्यों न हो।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -441,6 +489,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "hi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Argon2id"
@@ -499,6 +553,12 @@
             "value" : "Chaque application [VOID] contient un paramètre caché — **VOID Secret (mot de passe interne)**.  Caractéristiques : • Sélectionné dans un large ensemble de variantes ; • Généré de manière identique sur tous les appareils ; • Non stocké dans les données ni transmis sur le réseau ; • Rend le déchiffrement possible uniquement dans l'application.  **Même si le mot de passe est connu, sans le VOID Secret approprié, les données restent chiffrées**."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हर [VOID] एप्लिकेशन में एक छिपा हुआ पैरामीटर होता है — **VOID Secret (आंतरिक पासवर्ड)**।  विशेषताएँ: • बड़े विकल्पों के सेट से चुना जाता है; • सभी डिवाइसों पर समान रूप से उत्पन्न होता है; • डेटा में संग्रहीत नहीं होता और न ही नेटवर्क पर भेजा जाता है; • केवल एप्लिकेशन के भीतर डिक्रिप्शन को संभव बनाता है।  **पासवर्ड पता होने पर भी, सही VOID Secret के बिना डेटा एन्क्रिप्टेड ही रहता है।**"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -550,6 +610,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID « Pepper »"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID «पेपर»"
           }
         },
         "it" : {
@@ -605,6 +671,12 @@
             "value" : "Copié"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कॉपी किया गया"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -656,6 +728,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Décoder"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिकोड करें"
           }
         },
         "it" : {
@@ -711,6 +789,12 @@
             "value" : "Encoder"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्कोड करें"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -762,6 +846,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prêt pour le décodage…"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिकोड करने के लिए तैयार…"
           }
         },
         "it" : {
@@ -817,6 +907,12 @@
             "value" : "Prêt pour l'encodage…"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्कोड करने के लिए तैयार…"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -865,6 +961,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "hi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "AES-256"
@@ -923,6 +1025,12 @@
             "value" : "**En quittant cet écran, toutes les données (mot de passe, VOID, paramètres Argon2id) seront réinitialisées.  L'application ne conserve pas les données dans la mémoire du téléphone.**"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**इस स्क्रीन से बाहर निकलते ही सभी डेटा (पासवर्ड, VOID, Argon2id पैरामीटर) रीसेट हो जाएंगे।  एप्लिकेशन फोन की मेमोरी में कोई डेटा संग्रहीत नहीं करता।**"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -974,6 +1082,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Déchiffrement"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिक्रिप्शन"
           }
         },
         "it" : {
@@ -1029,6 +1143,12 @@
             "value" : "Chiffrement"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्क्रिप्शन"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1080,6 +1200,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prêt à déchiffrer…"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डिक्रिप्ट करने के लिए तैयार..."
           }
         },
         "it" : {
@@ -1135,6 +1261,12 @@
             "value" : "Définir le mot de passe !"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पासवर्ड सेट करें!"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1186,6 +1318,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Prêt à chiffrer…"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्क्रिप्ट करने के लिए तैयार..."
           }
         },
         "it" : {
@@ -1241,6 +1379,12 @@
             "value" : "Cryptographie"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्रिप्टोग्राफी"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1292,6 +1436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "↓ Seulement pour le chiffrement ↓"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ केवल एन्क्रिप्शन के लिए ↓"
           }
         },
         "it" : {
@@ -1347,6 +1497,12 @@
             "value" : "Extrême"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अत्यधिक"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1398,6 +1554,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "CPU élevé"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उच्च CPU"
           }
         },
         "it" : {
@@ -1453,6 +1615,12 @@
             "value" : "Le nombre d'**itérations** influence la **force** du chiffrement. Plus d'itérations = plus difficile à craquer, mais **plus lent**."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**पुनरावृत्तियों** की संख्या एन्क्रिप्शन की **मज़बूती** को प्रभावित करती है। जितनी अधिक होंगी = तोड़ना उतना कठिन, लेकिन **गति धीमी**।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1504,6 +1672,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Itérations"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पुनरावृत्तियाँ"
           }
         },
         "it" : {
@@ -1559,6 +1733,12 @@
             "value" : "La **longueur de la clé** détermine la difficulté de forcer les données. Plus la clé est **longue**, plus la protection est **forte**. Des valeurs plus élevées augmentent la sécurité mais peuvent légèrement ralentir le traitement."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**कुंजी की लंबाई** तय करती है कि आपके डेटा पर बलपूर्वक हमला करना कितना कठिन होगा — कुंजी जितनी **लंबी**, सुरक्षा उतनी **मजबूत**। उच्च मान सुरक्षा बढ़ाते हैं लेकिन प्रोसेसिंग को थोड़ा धीमा कर सकते हैं।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1610,6 +1790,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Longueur de la clé"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कुंजी की लंबाई"
           }
         },
         "it" : {
@@ -1665,6 +1851,12 @@
             "value" : "Le nombre maximum de **couches dépend de la longueur de la clé** choisie. Une clé plus longue permet plus de couches, augmentant la protection."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अधिकतम **परतों की संख्या आपके द्वारा चुनी गई कुंजी की लंबाई पर निर्भर करती है**। लंबी कुंजी अधिक परतों की अनुमति देती है और आपकी सुरक्षा बढ़ाती है।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1716,6 +1908,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nombre de couches de chiffrement"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्क्रिप्शन परतों की संख्या"
           }
         },
         "it" : {
@@ -1771,6 +1969,12 @@
             "value" : "Couches"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "परतें"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1822,6 +2026,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "CPU faible"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "निम्न CPU"
           }
         },
         "it" : {
@@ -1877,6 +2087,12 @@
             "value" : "Maximum"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "अधिकतम"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1928,6 +2144,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Moyen"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मध्यम"
           }
         },
         "it" : {
@@ -1983,6 +2205,12 @@
             "value" : "La **mémoire** est la quantité de RAM utilisée pendant le chiffrement pour protéger les données. Plus de mémoire est utilisée, plus il est difficile pour un attaquant de craquer le mot de passe. Les attaques nécessitent plus de ressources et de temps. Cependant, **une utilisation élevée de la mémoire peut ralentir votre appareil** — choisissez un équilibre entre sécurité et performance."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**मेमोरी** वह RAM होती है जिसका उपयोग एन्क्रिप्शन के दौरान आपके डेटा की सुरक्षा के लिए किया जाता है। मेमोरी जितनी अधिक होगी, हमलावर के लिए पासवर्ड तोड़ना उतना कठिन होगा क्योंकि हमलों को अधिक संसाधन और समय चाहिए। हालाँकि, **अधिक मेमोरी उपयोग से आपका डिवाइस धीमा हो सकता है** — सुरक्षा और प्रदर्शन के बीच संतुलन चुनें।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2034,6 +2262,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mémoire"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मेमोरी"
           }
         },
         "it" : {
@@ -2120,6 +2354,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "Votre appareil a **%lld cœurs**. Augmenter le nombre de tâches parallèles peut **accélérer le chiffrement**, mais peut consommer plus de batterie."
+                }
+              }
+            }
+          }
+        },
+        "hi" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "आपके डिवाइस में **%lld कोर** है। समानांतर कार्यों की संख्या बढ़ाने से **एन्क्रिप्शन तेज** हो सकता है, लेकिन इससे बैटरी की खपत बढ़ सकती है।"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "आपके डिवाइस में **%lld कोर** हैं। समानांतर कार्यों की संख्या बढ़ाने से **एन्क्रिप्शन तेज** हो सकता है, लेकिन इससे बैटरी की खपत बढ़ सकती है।"
                 }
               }
             }
@@ -2256,6 +2508,12 @@
             "value" : "Parallélisme"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "समानांतरता"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2307,6 +2565,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le **sel** est une donnée aléatoire ajoutée à votre mot de passe avant le chiffrement. Il rend le résultat **unique** même si le mot de passe est le même. Il protège contre les attaques de réutilisation et le cracking du mot de passe. **Plus le sel est long, plus la protection est forte** — plus difficile à deviner, plus difficile à casser."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**सॉल्ट** वह रैंडम डेटा है जिसे एन्क्रिप्शन से पहले आपके पासवर्ड में जोड़ा जाता है। यह परिणाम को **अद्वितीय** बनाता है, भले ही पासवर्ड समान हो, जिससे पुन: उपयोग हमलों और पासवर्ड क्रैकिंग से सुरक्षा मिलती है। सॉल्ट जितना **लंबा** होगा, सुरक्षा उतनी ही अधिक — अनुमान लगाना कठिन, तोड़ना कठिन।"
           }
         },
         "it" : {
@@ -2362,6 +2626,12 @@
             "value" : "Sel"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सॉल्ट"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2413,6 +2683,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mot de passe"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पासवर्ड"
           }
         },
         "it" : {
@@ -2468,6 +2744,12 @@
             "value" : "Sécurité"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सुरक्षा"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2519,6 +2801,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**VOID renforce la clé cryptographique** en ajoutant une composante interne cachée.  Une valeur de 0 signifie que le chiffrement est effectué sans VOID.  **Le numéro VOID influence uniquement le choix de la variante**, et non le niveau de protection."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID एक छिपा हुआ आंतरिक घटक जोड़कर क्रिप्टोग्राफ़िक कुंजी को बढ़ाता है।  मान 0 होने पर एन्क्रिप्शन VOID के बिना किया जाता है।  VOID संख्या केवल वेरिएंट चयन को प्रभावित करती है, सुरक्षा के स्तर को नहीं।**"
           }
         },
         "it" : {
@@ -2574,6 +2862,12 @@
             "value" : "Secret"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "गुप्त"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2622,6 +2916,12 @@
           }
         },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "hi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID"
@@ -2680,6 +2980,12 @@
             "value" : "Fort"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मजबूत"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2731,6 +3037,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Les **données deviennent inaccessibles** après le temps choisi."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "चुने गए समय के बाद **डेटा अप्राप्य हो जाता है**।"
           }
         },
         "it" : {
@@ -2786,6 +3098,12 @@
             "value" : "Définir le minuteur"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "टाइमर सेट करें"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2837,6 +3155,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minuteur"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "टाइमर"
           }
         },
         "it" : {
@@ -2892,6 +3216,12 @@
             "value" : "Faible"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कमजोर"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2943,6 +3273,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "इमोजी"
           }
         },
         "it" : {
@@ -2998,6 +3334,12 @@
             "value" : "Animaux"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जानवर"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3049,6 +3391,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nourriture"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "भोजन"
           }
         },
         "it" : {
@@ -3104,6 +3452,12 @@
             "value" : "Amour"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रेम"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3155,6 +3509,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Négatif"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नकारात्मक"
           }
         },
         "it" : {
@@ -3210,6 +3570,12 @@
             "value" : "Personnes"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "लोग"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3261,6 +3627,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Positif"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सकारात्मक"
           }
         },
         "it" : {
@@ -3316,6 +3688,12 @@
             "value" : "Sélectionnez le **type d'emoji** pour encoder le texte en une séquence d'emoji unique.  Le décodage du texte à partir de n'importe quel type d'emoji se fait **automatiquement**."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**इमोजी का प्रकार** चुनें ताकि पाठ को एक अनोखी इमोजी श्रृंखला में एन्कोड किया जा सके।  किसी भी इमोजी प्रकार से पाठ डिकोड करना **स्वचालित रूप से** होता है।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3367,6 +3745,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Encodage en emoji"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "इमोजी एन्कोडिंग"
           }
         },
         "it" : {
@@ -3422,6 +3806,12 @@
             "value" : "Impossible de générer la clé avec Argon2."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 का उपयोग करके कुंजी बनाना विफल रहा।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3473,6 +3863,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossible de décoder les données."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डेटा डिकोड करना विफल रहा।"
           }
         },
         "it" : {
@@ -3528,6 +3924,12 @@
             "value" : "Impossible de déchiffrer les données."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डेटा डिक्रिप्ट करना विफल रहा।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3579,6 +3981,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Impossible d'encoder les données."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डेटा एन्कोड करना विफल रहा।"
           }
         },
         "it" : {
@@ -3634,6 +4042,12 @@
             "value" : "Impossible de chiffrer les données."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डेटा एन्क्रिप्ट करना विफल रहा।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3685,6 +4099,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Les données chiffrées ont expiré."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्क्रिप्टेड डेटा की समय-सीमा समाप्त हो गई है।"
           }
         },
         "it" : {
@@ -3740,6 +4160,12 @@
             "value" : "L'intégrité des données chiffrées est compromise."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्क्रिप्टेड डेटा की अखंडता से समझौता हुआ है।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3791,6 +4217,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Le format des données chiffrées est corrompu ou incomplet."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्क्रिप्टेड डेटा का प्रारूप क्षतिग्रस्त या अधूरा है।"
           }
         },
         "it" : {
@@ -3846,6 +4278,12 @@
             "value" : "Les données d'entrée ne sont pas valides."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "इनपुट डेटा अमान्य है।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3897,6 +4335,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La clé principale est vide ou corrompue."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "मास्टर कुंजी खाली है या क्षतिग्रस्त है।"
           }
         },
         "it" : {
@@ -3952,6 +4396,12 @@
             "value" : "Nombre de clés dérivées invalide."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "व्युत्पन्न कुंजियों की संख्या अमान्य है।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4003,6 +4453,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erreur lors de la génération du nonce pour AES."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES के लिए नॉन्स जनरेट करने में त्रुटि।"
           }
         },
         "it" : {
@@ -4058,6 +4514,12 @@
             "value" : "Impossible de générer le sel cryptographique."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्रिप्टोग्राफ़िक सॉल्ट उत्पन्न करना विफल रहा।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4109,6 +4571,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Erreur"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "त्रुटि"
           }
         },
         "it" : {
@@ -4164,6 +4632,12 @@
             "value" : "Une erreur inattendue s'est produite."
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एक अप्रत्याशित त्रुटि हुई।"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4215,6 +4689,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Veuillez laisser l'application ouverte jusqu'à la fin du processus."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कृपया प्रक्रिया पूरी होने तक ऐप खुला रखें।"
           }
         },
         "it" : {
@@ -4270,6 +4750,12 @@
             "value" : "Traitement…"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रसंस्करण…"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4321,6 +4807,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Politique de confidentialité"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "गोपनीयता नीति"
           }
         },
         "it" : {
@@ -4376,6 +4868,12 @@
             "value" : "À propos du projet"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रोजेक्ट के बारे में"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4427,6 +4925,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Conditions d'utilisation"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उपयोग की शर्तें"
           }
         },
         "it" : {
@@ -4482,6 +4986,12 @@
             "value" : "À propos de l'application"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ऐप के बारे में"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4533,6 +5043,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Restaurer les achats"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "खरीदारी पुनर्स्थापित करें"
           }
         },
         "it" : {
@@ -4588,6 +5104,12 @@
             "value" : "Laisser un avis sur l'App Store"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store पर समीक्षा छोड़ें"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4639,6 +5161,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Abonnement"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सदस्यता"
           }
         },
         "it" : {
@@ -4694,6 +5222,12 @@
             "value" : "Accès"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पहुँच"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4745,6 +5279,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Version de l'application"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ऐप संस्करण"
           }
         },
         "it" : {
@@ -4800,6 +5340,12 @@
             "value" : "Mode sombre"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डार्क मोड"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4851,6 +5397,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Retour haptique"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हैप्टिक्स"
           }
         },
         "it" : {
@@ -4906,6 +5458,12 @@
             "value" : "Oui"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हाँ"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4957,6 +5515,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Non"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "नहीं"
           }
         },
         "it" : {
@@ -5012,6 +5576,12 @@
             "value" : "Voulez-vous changer la langue de l'application ?"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्या आप ऐप की भाषा बदलना चाहते हैं?"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5063,6 +5633,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Changer la langue"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "भाषा बदलें"
           }
         },
         "it" : {
@@ -5118,6 +5694,12 @@
             "value" : "Langue"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "भाषा"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5169,6 +5751,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sons"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ध्वनियाँ"
           }
         },
         "it" : {
@@ -5224,6 +5812,12 @@
             "value" : "Général"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सामान्य"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5275,6 +5869,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Paramètres"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सेटिंग्स"
           }
         },
         "it" : {
@@ -5330,6 +5930,12 @@
             "value" : "%lld h"
           }
         },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld घं"
+          }
+        },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5381,6 +5987,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld m"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld मि"
           }
         },
         "it" : {

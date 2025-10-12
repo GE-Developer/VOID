@@ -60,8 +60,9 @@ extension CryptographyView {
             headerImage: Image.system.lock
         ) {
             CustomTabSection(
-                image: Image.system.number,
+                image: Image.content.emoji,
                 text: vm.aes256EmojiTitle,
+                subtext: "over Base64",
                 action: { showEmojiView = true }
             )
         }
