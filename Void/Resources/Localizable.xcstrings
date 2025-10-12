@@ -57,6 +57,18 @@
             "state" : "translated",
             "value" : "Інформація"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "信息"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "資訊"
+          }
         }
       }
     },
@@ -115,6 +127,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Використовуйте складний і унікальний пароль** (понад 12 символів) — що складніший пароль, то довше його підбирати.  **Обирайте надійні параметри шифрування Argon2id** (кількість ітерацій, потоки) — це підвищує безпеку, але може збільшити час шифрування до 20 хвилин.  **Завжди зберігайте вихідний шифротекст повністю** — втрата хоча б одного символу робить дешифрування неможливим.  Регулярно **оновлюйте паролі** для додаткового захисту."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**使用复杂且唯一的密码**（超过 12 个字符）——密码越复杂，破解所需的时间越长。  **选择强大的 Argon2id 加密参数**（迭代次数、线程数）——这会提高安全性，但可能会将加密时间延长至 20 分钟。  **始终完整保存原始密文**——即使丢失一个字符也无法解密。  定期**更新密码**以获得额外的保护。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**使用複雜且唯一的密碼**（超過 12 個字元）——密碼越複雜，破解所需的時間越長。  **選擇強大的 Argon2id 加密引數**（迭代次數、執行緒數）——這會提高安全性，但可能會將加密時間延長至 20 分鐘。  **始終完整儲存原始密文**——即使丟失一個字元也無法解密。  定期**更新密碼**以獲得額外的保護。"
           }
         }
       }
@@ -175,6 +199,18 @@
             "state" : "translated",
             "value" : "Поради"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示"
+          }
         }
       }
     },
@@ -226,13 +262,25 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**AES-256 (Advanced Encryption Standard)** — это симметричный алгоритм шифрования, использующий ключ длиной **256 бит**.    Он защищает данные, **разбивая их на блоки по 128 бит и выполняя 14 раундов математических преобразований**: подстановки, перестановки и смешивания байтов.  В результате исходная информация превращается в зашифрованный набор данных, расшифровать который можно **только с тем же ключом**."
+            "value" : "**AES-256 (Advanced Encryption Standard)** — это симметричный алгоритм шифрования, использующий ключ длиной **256 бит**.   Он защищает данные, **разбивая их на блоки по 128 бит и выполняя 14 раундов математических преобразований**: подстановки, перестановки и смешивания байтов.  В результате исходная информация превращается в зашифрованный набор данных, расшифровать который можно **только с тем же ключом**."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**AES-256 (Advanced Encryption Standard)** — це симетричний алгоритм шифрування, який використовує **256-бітний ключ**.  Він захищає дані, **розбиваючи їх на блоки по 128 біт і виконуючи 14 раундів математичних перетворень**: підстановок, перестановок і змішування байтів.  У результаті початкова інформація перетворюється на зашифрований набір даних, який можна розшифрувати **лише тим самим ключем**."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256（高级加密标准）**是一种使用**256 位密钥**的对称加密算法。  它通过**将数据分成 128 位的分组并执行 14 轮数学变换**（替换、置换和字节混合）来保护信息。  因此，原始信息会被转换为仅能通过**同一密钥**解密的加密数据集。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256（高階加密標準）**是一種使用**256 位金鑰**的對稱加密演算法。  它透過**將資料分成 128 位的分組並執行 14 輪數學變換**（替換、置換和位元組混合）來保護資訊。  因此，原始資訊會被轉換為僅能透過**同一金鑰**解密的加密資料集。"
           }
         }
       }
@@ -293,6 +341,18 @@
             "state" : "translated",
             "value" : "Про шифрування"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于加密"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於加密"
+          }
         }
       }
     },
@@ -351,6 +411,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "1 — Ви вводите пароль. 2 — Обираєте VOID. 3 — Додаток генерує сіль і об'єднує її з паролем та VOID. 4 — Argon2id обчислює ключ за заданими параметрами. 5 — Ключ використовується в AES-256 для шифрування тексту. 6 — Сіль та інші параметри зберігаються в зашифрованій структурі.  **Щоб розшифрувати, потрібно точно відтворити той самий ключ — ввести той самий пароль і VOID та мати початковий шифротекст без жодної помилки**."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - 输入密码。 2 - 选择 VOID。 3 - 应用生成盐值，并将其与密码和 VOID 组合。 4 - Argon2id 使用指定的参数计算密钥。 5 - 使用该密钥在 AES-256 中加密文本。 6 - 盐值和其他参数会存储在加密结构中。  **要解密，必须完全复现同一密钥——输入相同的密码和 VOID，并确保原始密文准确无误。**"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - 輸入密碼。 2 - 選擇 VOID。 3 - 應用生成鹽值，並將其與密碼和 VOID 組合。 4 - Argon2id 使用指定的引數計算金鑰。 5 - 使用該金鑰在 AES-256 中加密文字。 6 - 鹽值和其他引數會儲存在加密結構中。  **要解密，必須完全復現同一金鑰——輸入相同的密碼和 VOID，並確保原始密文準確無誤。**"
           }
         }
       }
@@ -411,6 +483,18 @@
             "state" : "translated",
             "value" : "Як працює AES-256 + Argon2id + VOID"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id + VOID 的工作原理"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id + VOID 的工作原理"
+          }
         }
       }
     },
@@ -470,6 +554,18 @@
             "state" : "translated",
             "value" : "Argon2 — це сучасний **алгоритм KDF (Key Derivation Function) для перетворення пароля на криптографічний ключ**, визнаний міжнародним стандартом (RFC 9106).  Його розробили у 2015 році, і він став переможцем Password Hashing Competition як **найнадійніший і найефективніший метод захисту паролів**.  Argon2id поєднує можливості Argon2i та Argon2d, **забезпечуючи стійкість до атак на процесор і пам'ять**.  Алгоритм виконує багато обчислювальних ітерацій, працює у багатопотоковому режимі та додає унікальну сіль для кожного шифрування.  Це робить підбір ключа **надзвичайно ресурсомістким і тривалим**, навіть для потужних систем."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 是一种现代的 **KDF（密钥派生函数）算法，用于将密码转换为密码学密钥**，已被认可为国际标准（RFC 9106）。  它于 2015 年开发，并在 Password Hashing Competition 中被选为**最可靠且高效的密码保护方法**。  Argon2id 结合了 Argon2i 和 Argon2d 的特性，**可抵抗 CPU 和内存攻击**。  该算法执行多轮计算、支持多线程，并为每次加密添加唯一的盐值。  这使得暴力破解密钥**需要极高的资源和时间成本**，即使在强大的系统上亦如此。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 是一種現代的 **KDF（金鑰派生函式）演算法，用於將密碼轉換為密碼學金鑰**，已被認可為國際標準（RFC 9106）。  它於 2015 年開發，並在 Password Hashing Competition 中被選為**最可靠且高效的密碼保護方法**。  Argon2id 結合了 Argon2i 和 Argon2d 的特性，**可抵抗 CPU 和記憶體攻擊**。  該演算法執行多輪計算、支援多執行緒，併為每次加密新增唯一的鹽值。  這使得暴力破解金鑰**需要極高的資源和時間成本**，即使在強大的系統上亦如此。"
+          }
         }
       }
     },
@@ -525,6 +621,18 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Argon2id"
@@ -588,6 +696,18 @@
             "state" : "translated",
             "value" : "Кожен застосунок [VOID] містить прихований параметр — **VOID Secret (внутрішній пароль)**.  Особливості: • обирається з великого набору варіантів; • генерується однаково на всіх пристроях; • не зберігається в даних і не передається мережею; • уможливлює розшифрування лише всередині застосунку.  **Навіть знаючи пароль, без правильного VOID Secret дані залишаються зашифрованими**."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每个 [VOID] 应用都包含一个隐藏参数——**VOID Secret（内部密码）**。  特点： • 从大量选项中挑选； • 在所有设备上以相同方式生成； • 不会存储在数据中或通过网络传输； • 只能在应用内进行解密。  **即使知道密码，没有正确的 VOID Secret 数据也会保持加密状态。**"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "每個 [VOID] 應用都包含一個隱藏引數——**VOID Secret（內部密碼）**。  特點： • 從大量選項中挑選； • 在所有裝置上以相同方式生成； • 不會儲存在資料中或透過網路傳輸； • 只能在應用內進行解密。  **即使知道密碼，沒有正確的 VOID Secret 資料也會保持加密狀態。**"
+          }
         }
       }
     },
@@ -646,6 +766,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID «Перець»"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID \"Pepper\""
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID \"Pepper\""
           }
         }
       }
@@ -706,6 +838,18 @@
             "state" : "translated",
             "value" : "Скопійовано"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已复制"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "已複製"
+          }
         }
       }
     },
@@ -764,6 +908,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Декодування"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解碼"
           }
         }
       }
@@ -824,6 +980,18 @@
             "state" : "translated",
             "value" : "Кодування"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編碼"
+          }
         }
       }
     },
@@ -882,6 +1050,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово до декодування…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "准备解码…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備解碼…"
           }
         }
       }
@@ -942,6 +1122,18 @@
             "state" : "translated",
             "value" : "Готово до кодування…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "准备编码…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備編碼…"
+          }
         }
       }
     },
@@ -997,6 +1189,18 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "AES-256"
@@ -1060,6 +1264,18 @@
             "state" : "translated",
             "value" : "**При виході з цього екрану всі дані (пароль, VOID, параметри Argon2id) скинуться.  Додаток не зберігає дані в пам'яті телефону.**"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**离开此页面时，所有数据（密码、VOID、Argon2id 参数）都会被重置。  应用不会在手机内存中存储数据。**"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**離開此頁面時，所有資料（密碼、VOID、Argon2id 引數）都會被重置。  應用不會在手機記憶體中儲存資料。**"
+          }
         }
       }
     },
@@ -1118,6 +1334,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Розшифрування"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解密"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解密"
           }
         }
       }
@@ -1178,6 +1406,18 @@
             "state" : "translated",
             "value" : "Шифрування"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密"
+          }
         }
       }
     },
@@ -1236,6 +1476,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово до розшифрування…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "准备解密…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備解密…"
           }
         }
       }
@@ -1296,6 +1548,18 @@
             "state" : "translated",
             "value" : "Встановити пароль!"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请设置密码！"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請設定密碼！"
+          }
         }
       }
     },
@@ -1354,6 +1618,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово до шифрування…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "准备加密…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "準備加密…"
           }
         }
       }
@@ -1414,6 +1690,18 @@
             "state" : "translated",
             "value" : "Криптографія"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密码学"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密碼學"
+          }
         }
       }
     },
@@ -1472,6 +1760,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "↓ Лише для шифрування ↓"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ 仅用于加密 ↓"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ 僅用於加密 ↓"
           }
         }
       }
@@ -1532,6 +1832,18 @@
             "state" : "translated",
             "value" : "Екстремально"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "极高"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "極高"
+          }
         }
       }
     },
@@ -1590,6 +1902,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Високе навантаження"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高负载"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高負載"
           }
         }
       }
@@ -1650,6 +1974,18 @@
             "state" : "translated",
             "value" : "Кількість **ітерацій** впливає на **стійкість** шифрування. Більше = складніше зламати, але **повільніше**."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**迭代次数**会影响加密的**强度**。 迭代越多，越难破解，但速度会**变慢**。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**迭代次數**會影響加密的**強度**。 迭代越多，越難破解，但速度會**變慢**。"
+          }
         }
       }
     },
@@ -1708,6 +2044,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ітерації"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "迭代"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "迭代"
           }
         }
       }
@@ -1768,6 +2116,18 @@
             "state" : "translated",
             "value" : "**Довжина ключа** означає, наскільки складно підібрати ваші дані методом brute-force — чим **довший** ключ, тим **сильніший** захист. Вищі значення підвищують безпеку, але можуть трохи сповільнити обробку."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**密钥长度**决定了数据被暴力破解的难度——密钥越**长**，防护越**强**。 更高的数值可提升安全性，但可能会略微降低处理速度。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**金鑰長度**決定了資料被暴力破解的難度——金鑰越**長**，防護越**強**。 更高的數值可提升安全性，但可能會略微降低處理速度。"
+          }
         }
       }
     },
@@ -1826,6 +2186,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Довжина ключа"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密钥长度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "金鑰長度"
           }
         }
       }
@@ -1886,6 +2258,18 @@
             "state" : "translated",
             "value" : "Максимальна **кількість рівнів залежить від обраної довжини ключа**. Довший ключ дозволяє використовувати більше рівнів, підвищуючи захист."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支持的最大**层数取决于所选的密钥长度**。 密钥越长，可用的层数越多，防护也越强。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "支援的最大**層數取決於所選的金鑰長度**。 金鑰越長，可用的層數越多，防護也越強。"
+          }
         }
       }
     },
@@ -1944,6 +2328,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кількість рівнів шифрування"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密层数"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密層數"
           }
         }
       }
@@ -2004,6 +2400,18 @@
             "state" : "translated",
             "value" : "Рівні"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "层数"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "層數"
+          }
         }
       }
     },
@@ -2062,6 +2470,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Низьке навантаження"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低负载"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "低負載"
           }
         }
       }
@@ -2122,6 +2542,18 @@
             "state" : "translated",
             "value" : "Максимум"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最大"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最大"
+          }
         }
       }
     },
@@ -2180,6 +2612,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Середньо"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中等"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中等"
           }
         }
       }
@@ -2240,6 +2684,18 @@
             "state" : "translated",
             "value" : "**Пам'ять** — це обсяг ОЗП, який використовується під час шифрування для захисту ваших даних. Чим більше пам'яті використовується, тим складніше зламати ваш пароль, оскільки атаки потребують більше ресурсів і часу. Проте **велике споживання пам'яті може сповільнити пристрій** — обирайте баланс між безпекою та продуктивністю."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**内存**指的是加密时用于保护数据的 RAM 数量。 使用的内存越多，攻击者越难破解你的密码，因为攻击需要投入更多资源和时间。  但**占用更多内存可能会减慢设备速度**——请在安全性与性能之间取得平衡。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**記憶體**指的是加密時用於保護資料的 RAM 數量。 使用的記憶體越多，攻擊者越難破解你的密碼，因為攻擊需要投入更多資源和時間。  但**佔用更多記憶體可能會減慢裝置速度**——請在安全性與效能之間取得平衡。"
+          }
         }
       }
     },
@@ -2298,6 +2754,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пам'ять"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "内存"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "記憶體"
           }
         }
       }
@@ -2484,6 +2952,42 @@
               }
             }
           }
+        },
+        "zh-Hans" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你的设备拥有 **%lld 个核心**。 提高并行任务数量可以**加快加密速度**，但可能会增加电池消耗。"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你的设备拥有 **%lld 个核心**。 提高并行任务数量可以**加快加密速度**，但可能会增加电池消耗。"
+                }
+              }
+            }
+          }
+        },
+        "zh-Hant" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你的裝置擁有 **%lld 個核心**。 提高並行任務數量可以**加快加密速度**，但可能會增加電池消耗。"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "你的裝置擁有 **%lld 個核心**。 提高並行任務數量可以**加快加密速度**，但可能會增加電池消耗。"
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -2542,6 +3046,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Паралелізм"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "并行度"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "並行度"
           }
         }
       }
@@ -2602,6 +3118,18 @@
             "state" : "translated",
             "value" : "**Сіль** — це випадкові дані, які додаються до вашого пароля перед шифруванням. Вона робить результат **унікальним** навіть тоді, коли пароль однаковий, захищаючи від атак повторного використання та підбору паролів. Чим **довша** сіль, тим **сильніший захист** — важче вгадати, важче зламати."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**盐值**是在加密前添加到密码中的随机数据。 它会使结果在相同密码下仍保持**唯一性**，从而抵御重复使用攻击和密码破解。 盐值越**长**，防护越**强**——更难猜测，更难破解。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**鹽值**是在加密前新增到密碼中的隨機資料。 它會使結果在相同密碼下仍保持**唯一性**，從而抵禦重複使用攻擊和密碼破解。 鹽值越**長**，防護越**強**——更難猜測，更難破解。"
+          }
         }
       }
     },
@@ -2660,6 +3188,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сіль"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "盐值"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "鹽值"
           }
         }
       }
@@ -2720,6 +3260,18 @@
             "state" : "translated",
             "value" : "Пароль"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密碼"
+          }
         }
       }
     },
@@ -2778,6 +3330,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Безпека"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "安全"
           }
         }
       }
@@ -2838,6 +3402,18 @@
             "state" : "translated",
             "value" : "**VOID посилює криптографічний ключ**, додаючи прихований внутрішній компонент.  0 означає, що шифрування виконується без VOID.  **Номер VOID впливає лише на вибір варіанта**, а не на рівень захисту."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID 通过加入隐藏的内部组件来增强密钥**。  当数值为 0 时，表示在没有 VOID 的情况下进行加密。  **VOID 数字只影响变体选择**，不会改变防护等级。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID 透過加入隱藏的內部元件來增強金鑰**。  當數值為 0 時，表示在沒有 VOID 的情況下進行加密。  **VOID 數字隻影響變體選擇**，不會改變防護等級。"
+          }
         }
       }
     },
@@ -2897,6 +3473,18 @@
             "state" : "translated",
             "value" : "Секрет"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "密钥"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "金鑰"
+          }
         }
       }
     },
@@ -2952,6 +3540,18 @@
           }
         },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID"
@@ -3015,6 +3615,18 @@
             "state" : "translated",
             "value" : "Сильно"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "强"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "強"
+          }
         }
       }
     },
@@ -3073,6 +3685,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Дані стають недоступними** після обраного часу."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所选时间过后，**数据将变为不可访问**。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所選時間過後，**資料將變為不可訪問**。"
           }
         }
       }
@@ -3133,6 +3757,18 @@
             "state" : "translated",
             "value" : "Встановити таймер"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置计时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定計時"
+          }
         }
       }
     },
@@ -3191,6 +3827,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Таймер"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "计时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "計時"
           }
         }
       }
@@ -3251,6 +3899,18 @@
             "state" : "translated",
             "value" : "Слабо"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "弱"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "弱"
+          }
         }
       }
     },
@@ -3309,6 +3969,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Емодзі"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表情符号"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表情符號"
           }
         }
       }
@@ -3369,6 +4041,18 @@
             "state" : "translated",
             "value" : "Тварини"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "动物"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動物"
+          }
         }
       }
     },
@@ -3427,6 +4111,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Їжа"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "美食"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "美食"
           }
         }
       }
@@ -3487,6 +4183,18 @@
             "state" : "translated",
             "value" : "Кохання"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "爱情"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "愛情"
+          }
         }
       }
     },
@@ -3545,6 +4253,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Негативні"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "负面"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "負面"
           }
         }
       }
@@ -3605,6 +4325,18 @@
             "state" : "translated",
             "value" : "Люди"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人物"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人物"
+          }
         }
       }
     },
@@ -3663,6 +4395,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Позитивні"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正面"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "正面"
           }
         }
       }
@@ -3723,6 +4467,18 @@
             "state" : "translated",
             "value" : "Виберіть **тип емодзі**, щоб закодувати текст в унікальну послідовність емодзі.  Розшифрування тексту з будь-якого типу емодзі відбувається **автоматично**."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "选择**表情符号类型**，将文本编码为独特的表情符号序列。  从任何表情符号类型解码文本都会**自动完成**。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "選擇**表情符號型別**，將文字編碼為獨特的表情符號序列。  從任何表情符號型別解碼文字都會**自動完成**。"
+          }
         }
       }
     },
@@ -3781,6 +4537,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кодування емодзі"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表情符号编码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表情符號編碼"
           }
         }
       }
@@ -3841,6 +4609,18 @@
             "state" : "translated",
             "value" : "Не вдалося згенерувати ключ за допомогою Argon2."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 Argon2 生成密钥失败。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用 Argon2 生成金鑰失敗。"
+          }
         }
       }
     },
@@ -3899,6 +4679,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося розшифрувати текст."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "数据解码失败。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "資料解碼失敗。"
           }
         }
       }
@@ -3959,6 +4751,18 @@
             "state" : "translated",
             "value" : "Не вдалося розшифрувати дані."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "数据解密失败。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "資料解密失敗。"
+          }
         }
       }
     },
@@ -4017,6 +4821,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося закодувати текст."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "数据编码失败。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "資料編碼失敗。"
           }
         }
       }
@@ -4077,6 +4893,18 @@
             "state" : "translated",
             "value" : "Не вдалося зашифрувати дані."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "数据加密失败。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "資料加密失敗。"
+          }
         }
       }
     },
@@ -4135,6 +4963,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Термін дії зашифрованих даних минув."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密数据已过期。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密資料已過期。"
           }
         }
       }
@@ -4195,6 +5035,18 @@
             "state" : "translated",
             "value" : "Порушено цілісність зашифрованих даних."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密数据的完整性受损。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密資料的完整性受損。"
+          }
         }
       }
     },
@@ -4253,6 +5105,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Формат зашифрованих даних пошкоджений або неповний."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密数据格式损坏或不完整。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密資料格式損壞或不完整。"
           }
         }
       }
@@ -4313,6 +5177,18 @@
             "state" : "translated",
             "value" : "Вхідні дані недійсні."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "输入数据无效。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "輸入資料無效。"
+          }
         }
       }
     },
@@ -4371,6 +5247,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Майстер-ключ порожній або пошкоджений."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主密钥为空或已损坏。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "主金鑰為空或已損壞。"
           }
         }
       }
@@ -4431,6 +5319,18 @@
             "state" : "translated",
             "value" : "Недійсна кількість похідних ключів."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "派生密钥数量无效。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "派生金鑰數量無效。"
+          }
         }
       }
     },
@@ -4489,6 +5389,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Помилка при генерації nonce для AES."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生成 AES 随机数失败。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生成 AES 隨機數失敗。"
           }
         }
       }
@@ -4549,6 +5461,18 @@
             "state" : "translated",
             "value" : "Не вдалося згенерувати криптографічну сіль."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生成加密盐失败。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生成加密鹽失敗。"
+          }
         }
       }
     },
@@ -4607,6 +5531,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Помилка"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "错误"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "錯誤"
           }
         }
       }
@@ -4667,6 +5603,18 @@
             "state" : "translated",
             "value" : "Сталася несподівана помилка."
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "发生意外错误。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "發生意外錯誤。"
+          }
         }
       }
     },
@@ -4725,6 +5673,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не закривайте застосунок, поки процес не завершиться."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "请在流程完成前保持应用打开。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "請在流程完成前保持應用開啟。"
           }
         }
       }
@@ -4785,6 +5745,18 @@
             "state" : "translated",
             "value" : "Обробка…"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "处理中…"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "處理中…"
+          }
         }
       }
     },
@@ -4843,6 +5815,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Політика конфіденційності"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隐私政策"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "隱私政策"
           }
         }
       }
@@ -4903,6 +5887,18 @@
             "state" : "translated",
             "value" : "Про проєкт"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于项目"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於專案"
+          }
         }
       }
     },
@@ -4961,6 +5957,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Умови використання"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用条款"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用條款"
           }
         }
       }
@@ -5021,6 +6029,18 @@
             "state" : "translated",
             "value" : "Про додаток"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于应用"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於應用"
+          }
         }
       }
     },
@@ -5079,6 +6099,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Відновити покупки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢复购买"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "恢復購買"
           }
         }
       }
@@ -5139,6 +6171,18 @@
             "state" : "translated",
             "value" : "Залишити відгук в App Store"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App Store 上留下评价"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在 App Store 上留下評價"
+          }
         }
       }
     },
@@ -5197,6 +6241,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Підписка"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "订阅"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "訂閱"
           }
         }
       }
@@ -5257,6 +6313,18 @@
             "state" : "translated",
             "value" : "Доступ"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "访问"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "訪問"
+          }
         }
       }
     },
@@ -5315,6 +6383,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Версія застосунку"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "应用版本"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "應用版本"
           }
         }
       }
@@ -5375,6 +6455,18 @@
             "state" : "translated",
             "value" : "Темна тема"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色模式"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "深色模式"
+          }
         }
       }
     },
@@ -5433,6 +6525,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вібрація"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "触感反馈"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "觸感反饋"
           }
         }
       }
@@ -5493,6 +6597,18 @@
             "state" : "translated",
             "value" : "Так"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是"
+          }
         }
       }
     },
@@ -5551,6 +6667,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ні"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "否"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "否"
           }
         }
       }
@@ -5611,6 +6739,18 @@
             "state" : "translated",
             "value" : "Бажаєте змінити мову додатку?"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是否要更改应用语言？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是否要更改應用語言？"
+          }
         }
       }
     },
@@ -5669,6 +6809,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Змінити мову"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更改语言"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "更改語言"
           }
         }
       }
@@ -5729,6 +6881,18 @@
             "state" : "translated",
             "value" : "Мова"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "语言"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "語言"
+          }
         }
       }
     },
@@ -5787,6 +6951,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Звуки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "声音"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "聲音"
           }
         }
       }
@@ -5847,6 +7023,18 @@
             "state" : "translated",
             "value" : "Загальні налаштування"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通用"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通用"
+          }
         }
       }
     },
@@ -5905,6 +7093,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Налаштування"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
           }
         }
       }
@@ -5965,6 +7165,18 @@
             "state" : "translated",
             "value" : "%lld г"
           }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 小时"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 小時"
+          }
         }
       }
     },
@@ -6023,6 +7235,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld хв"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 分钟"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld 分鐘"
           }
         }
       }

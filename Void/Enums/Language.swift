@@ -8,8 +8,8 @@
 enum Language: String, CaseIterable, Identifiable {
     case english = "en"
     case spanish = "es"
-//    case chineseSimplified = "zh-Hans"
-//    case chineseTraditional = "zh-Hant"
+    case chineseSimplified = "zh-Hans"
+    case chineseTraditional = "zh-Hant"
     case hindi = "hi"
 //    case arabic = "ar"            // RTL
     case french = "fr"
@@ -34,8 +34,8 @@ enum Language: String, CaseIterable, Identifiable {
         switch self {
         case .english: return "English"
         case .spanish: return "Español"
-//        case .chineseSimplified: return "简体中文"
-//        case .chineseTraditional: return "繁體中文"
+        case .chineseSimplified: return "简体中文"
+        case .chineseTraditional: return "繁體中文"
         case .hindi: return "हिन्दी"
 //        case .arabic: return "العربية"
         case .french: return "Français"
@@ -60,8 +60,8 @@ enum Language: String, CaseIterable, Identifiable {
         switch self {
         case .english: return "English"
         case .spanish: return "Spanish"
-//        case .chineseSimplified: return "Chinese (Simplified)"
-//        case .chineseTraditional: return "Chinese (Traditional)"
+        case .chineseSimplified: return "Chinese (Simplified)"
+        case .chineseTraditional: return "Chinese (Traditional)"
         case .hindi: return "Hindi"
 //        case .arabic: return "Arabic"
         case .french: return "French"
