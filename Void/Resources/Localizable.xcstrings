@@ -10,10 +10,46 @@
             "value" : "Information"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Información"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informations"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "情報"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ინფორმაცია"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Информация"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Інформація"
           }
         }
       }
@@ -27,10 +63,46 @@
             "value" : "**Use a complex and unique password** (more than 12 characters) — the more complex the password, the longer it takes to crack.  **Choose strong Argon2id encryption parameters** (number of iterations, threads)  — this increases security but may extend encryption time up to 20 minutes.  **Always save the original ciphertext in full** — losing even a single character makes decryption impossible.  Regularly **update passwords** for additional protection."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Usa una contraseña compleja y única** (más de 12 caracteres) — cuanto más compleja sea la contraseña, más tiempo llevará descifrarla.  **Elige parámetros sólidos de Argon2id** (número de iteraciones, hilos) — esto aumenta la seguridad, pero puede alargar el cifrado hasta 20 minutos.  **Guarda siempre el texto cifrado original completo** — perder un solo carácter hace imposible el descifrado.  Actualiza periódicamente las contraseñas para una protección adicional."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Utilisez un mot de passe complexe et unique** (plus de 12 caractères) — plus le mot de passe est complexe, plus il est long à casser.  **Choisissez des paramètres Argon2id robustes** (nombre d'itérations, nombre de threads) — cela renforce la sécurité mais peut allonger le temps de chiffrement jusqu'à 20 minutes.  **Sauvegardez toujours l'intégralité du texte chiffré d'origine** — perdre ne serait-ce qu'un seul caractère rend le déchiffrement impossible.  Mettez régulièrement les **mots de passe à jour** pour une protection supplémentaire."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Usa una password complessa e unica** (più di 12 caratteri) — più la password è complessa, più tempo richiede per essere violata.  **Scegli parametri Argon2id robusti** (numero di iterazioni, thread) — questo aumenta la sicurezza ma può prolungare la cifratura fino a 20 minuti.  **Salva sempre l'intero testo cifrato originale** — perdere anche un solo carattere rende impossibile la decifratura.  Aggiorna regolarmente le **password** per una protezione aggiuntiva."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**複雑でユニークなパスワード**（12文字以上）を使用してください — パスワードが複雑であるほど解読に時間がかかります。  **Argon2id の強力な暗号化パラメータ**（反復回数、スレッド数）を選択しましょう — セキュリティが向上しますが、暗号化時間が最長20分まで延びる場合があります。  **元の暗号文は必ず完全な形で保存**してください — 1文字でも失うと復号は不可能です。  追加の保護のためにパスワードを定期的に**更新**しましょう。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "**გამოიყენეთ რთული და უნიკალური პაროლი** (12-ზე მეტი სიმბოლო) — რაც უფრო რთულია პაროლი, მით მეტ დროს წაიღებს მისი გატეხვა.  **აირჩიეთ Argon2id-ის ძლიერი პარამეტრები** (იტერაციების რაოდენობა, ნაკადები) — ეს ზრდის უსაფრთხოებას, თუმცა შეიძლება შიფრაციის დრო 20 წუთამდე გაზარდოს.  **ყოველთვის შეინახეთ საწყისი შიფრტექსტი მთლიანად** — ერთი სიმბოლოს დაკარგვაც კი შეუძლებელს ხდის дешифრაციას.  დამატებითი დაცვისთვის რეგულარულად **განაახლეთ პაროლები**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Используйте сложный и уникальный пароль** (более 12 символов) — чем сложнее пароль, тем дольше займёт его подбор.  **Выбирайте сильные параметры шифрования в Argon2id** (количество итераций, потоков) — это повышает безопасность, но может увеличить время шифрования до 20 минут.  **Всегда сохраняйте исходный шифротекст полностью** — любая потеря символа делает расшифровку невозможной.  Регулярно **обновляйте пароли** для дополнительной защиты."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Використовуйте складний і унікальний пароль** (понад 12 символів) — що складніший пароль, то довше його підбирати.  **Обирайте надійні параметри шифрування Argon2id** (кількість ітерацій, потоки) — це підвищує безпеку, але може збільшити час шифрування до 20 хвилин.  **Завжди зберігайте вихідний шифротекст повністю** — втрата хоча б одного символу робить дешифрування неможливим.  Регулярно **оновлюйте паролі** для додаткового захисту."
           }
         }
       }
@@ -44,10 +116,46 @@
             "value" : "Tips"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consejos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conseils"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggerimenti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ヒント"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "რჩევები"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Советы"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поради"
           }
         }
       }
@@ -61,10 +169,46 @@
             "value" : "**AES-256 (Advanced Encryption Standard)** is a symmetric encryption algorithm that uses a **256-bit key**.  It secures data by **dividing it into 128-bit blocks and performing 14 rounds of mathematical transformations**: substitutions, permutations, and byte mixing.  As a result, the original information is converted into an encrypted data set that can be decrypted **only with the same key**."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** es un algoritmo de cifrado simétrico que utiliza una **clave de 256 bits**.  Protege los datos **dividiéndolos en bloques de 128 bits y realizando 14 rondas de transformaciones matemáticas**: sustituciones, permutaciones y mezcla de bytes.  Como resultado, la información original se convierte en un conjunto de datos cifrados que solo se puede descifrar **con la misma clave**."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** est un algorithme de chiffrement symétrique qui utilise une **clé de 256 bits**.  Il protège les données en **les divisant en blocs de 128 bits et en effectuant 14 tours de transformations mathématiques** : substitutions, permutations et mélange des octets.  Ainsi, les informations initiales sont converties en un ensemble de données chiffrées qui ne peuvent être déchiffrées **qu'avec la même clé**."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** è un algoritmo di cifratura simmetrica che utilizza una **chiave a 256 bit**.  Protegge i dati **dividendoli in blocchi da 128 bit ed eseguendo 14 round di trasformazioni matematiche**: sostituzioni, permutazioni e mescolamento dei byte.  Di conseguenza, le informazioni originali vengono convertite in un set di dati cifrati che può essere decifrato **solo con la stessa chiave**."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256（Advanced Encryption Standard）** は **256ビット鍵**を用いる共通鍵暗号アルゴリズムです。  データを **128ビットのブロックに分割し、14ラウンドの数学的変換**（置換、並べ替え、バイト混合）を行って保護します。  その結果、元の情報は暗号化されたデータに変換され、**同じ鍵**でのみ復号できます。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "**AES-256 (Advanced Encryption Standard)** არის სიმეტრიული შიფრაციის ალგორითმი, რომელიც იყენებს **256-ბიტიან გასაღებს**.  ის იცავს მონაცემებს, **ყოფს მათ 128-ბიტიან ბლოკებად და ასრულებს 14 რაუნდს მათემატიკური გარდაქმნებით**: ჩანაცვლებით, перестановками და ბაიტების შერევით.  შედეგად, საწყისი ინფორმაცია გადაიქცევა შიფრირებულ მონაცემებად, რომლის дешიფრაციაც შესაძლებელია **მხოლოდ იმავე გასაღებით**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**AES-256 (Advanced Encryption Standard)** — это симметричный алгоритм шифрования, использующий ключ длиной **256 бит**.  Он защищает данные, **разбивая их на блоки по 128 бит и выполняя 14 раундов математических преобразований**: подстановки, перестановки и смешивания байтов.  В результате исходная информация превращается в зашифрованный набор данных, расшифровать который можно **только с тем же ключом**."
+            "value" : "**AES-256 (Advanced Encryption Standard)** — это симметричный алгоритм шифрования, использующий ключ длиной **256 бит**.    Он защищает данные, **разбивая их на блоки по 128 бит и выполняя 14 раундов математических преобразований**: подстановки, перестановки и смешивания байтов.  В результате исходная информация превращается в зашифрованный набор данных, расшифровать который можно **только с тем же ключом**."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** — це симетричний алгоритм шифрування, який використовує **256-бітний ключ**.  Він захищає дані, **розбиваючи їх на блоки по 128 біт і виконуючи 14 раундів математичних перетворень**: підстановок, перестановок і змішування байтів.  У результаті початкова інформація перетворюється на зашифрований набір даних, який можна розшифрувати **лише тим самим ключем**."
           }
         }
       }
@@ -78,10 +222,46 @@
             "value" : "About Encryption"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre el cifrado"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos du chiffrement"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sulla cifratura"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暗号化について"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "შესახებ შიფრაციის"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "О шифровании"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Про шифрування"
           }
         }
       }
@@ -95,10 +275,46 @@
             "value" : "1 - You enter a password. 2 - You select VOID. 3 - The application generates a salt and combines it with the password and VOID. 4 - Argon2id computes the key using the specified parameters. 5 - The key is used in AES-256 to encrypt the text. 6 - The salt and other parameters are stored in the encrypted structure.  **To decrypt, you must exactly reproduce the same key — enter the same password and VOID and have the original ciphertext accurate to the character**."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Introduces una contraseña. 2 - Seleccionas VOID. 3 - La aplicación genera una sal y la combina con la contraseña y VOID. 4 - Argon2id calcula la clave usando los parámetros especificados. 5 - La clave se usa en AES-256 para cifrar el texto. 6 - La sal y el resto de parámetros se guardan en la estructura cifrada.  **Para descifrar, debes reproducir exactamente la misma clave: introducir la misma contraseña y VOID y disponer del texto cifrado original con precisión de un carácter**."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Vous saisissez un mot de passe. 2 - Vous choisissez VOID. 3 - L'application génère un sel et le combine avec le mot de passe et VOID. 4 - Argon2id calcule la clé avec les paramètres indiqués. 5 - La clé est utilisée par AES-256 pour chiffrer le texte. 6 - Le sel et les autres paramètres sont enregistrés dans la structure chiffrée.  **Pour déchiffrer, vous devez reproduire exactement la même clé — saisir le même mot de passe et VOID, et disposer du texte chiffré original, à l'identique**."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Inserisci una password. 2 - Selezioni VOID. 3 - L'app genera un sale e lo combina con la password e Void. 4 - Argon2id calcola la chiave con i parametri specificati. 5 - La chiave viene utilizzata in AES-256 per cifrare il testo. 6 - Il sale e gli altri parametri vengono salvati nella struttura cifrata.  **Per decifrare devi riprodurre esattamente la stessa chiave — inserire la stessa password e VOID e avere il testo cifrato originale, preciso al carattere**."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - パスワードを入力します。 2 - VOID を選択します。 3 - アプリがソルトを生成し、パスワードと VOID を組み合わせます。 4 - Argon2id が指定されたパラメータで鍵を計算します。 5 - その鍵を使用して AES-256 がテキストを暗号化します。 6 - ソルトとその他のパラメータが暗号化された構造に保存されます。  **復号するには同じ鍵を正確に再現する必要があります — 同じパスワードと VOID を入力し、元の暗号文を一文字も欠けずに揃えてください。**"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "1 — შეიყვანეთ პაროლი. 2 — აირჩიეთ VOID. 3 — აპლიკაცია ქმნის მარილს და აერთიანებს მას პაროლთან და VOID-თან. 4 — Argon2id გამოთვლის გასაღებს მითითებული პარამეტრებით. 5 — გასაღები გამოიყენება AES-256-ში ტექსტის დასაშიფრად. 6 — მარილი და სხვა პარამეტრები ინახება შიფრირებულ სტრუქტურაში.  **დეშიფრაციისთვის უნდა მიიღოთ ზუსტად იგივე გასაღები — შეიყვანეთ ისევე პაროლი და VOID და გქონდეთ საწყისი შიფრტექსტი სიმბოლო-სიმბოლომდე ზუსტად**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1 - Вы вводите пароль. 2 - Выбираете VOID. 3 - Приложение генерирует соль и объединяет её с паролем и VOID. 4 - Argon2id вычисляет ключ с заданными параметрами. 5 - Ключ используется в AES‑256 для шифрования текста. 6 - Соль и остальные параметры сохраняются в зашифрованной структуре.  **Для расшифровки нужно точно воспроизвести тот же ключ — ввести тот же пароль и VOID и иметь оригинальный шифротекст с точностью до символа**."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 — Ви вводите пароль. 2 — Обираєте VOID. 3 — Додаток генерує сіль і об'єднує її з паролем та VOID. 4 — Argon2id обчислює ключ за заданими параметрами. 5 — Ключ використовується в AES-256 для шифрування тексту. 6 — Сіль та інші параметри зберігаються в зашифрованій структурі.  **Щоб розшифрувати, потрібно точно відтворити той самий ключ — ввести той самий пароль і VOID та мати початковий шифротекст без жодної помилки**."
           }
         }
       }
@@ -112,10 +328,46 @@
             "value" : "How AES-256 + Argon2id + VOID Works"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo funciona AES-256 + Argon2id + VOID"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fonctionnement d'AES-256 + Argon2id + VOID"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come funziona AES-256 + Argon2id + VOID"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id + VOID の仕組み"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "როგორ მუშაობს AES-256 + Argon2id + VOID"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Как работает AES-256 + Argon2id + VOID"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Як працює AES-256 + Argon2id + VOID"
           }
         }
       }
@@ -129,10 +381,46 @@
             "value" : "Argon2 is a modern **KDF (Key Derivation Function) algorithm for transforming a password into a cryptographic key**, recognized as an international standard (RFC 9106).  Developed in 2015 and selected as the winner of the Password Hashing Competition as **the most reliable and efficient method for password protection**.  Argon2id combines features of Argon2i and Argon2d, **providing resistance to CPU and memory attacks**.  The algorithm performs multiple computational iterations, operates in multi-threaded mode, and adds a unique salt for each encryption.  This makes key brute-forcing **extremely resource-intensive and time-consuming**, even for powerful systems."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 es un **algoritmo KDF (Key Derivation Function) moderno para transformar una contraseña en una clave criptográfica**, reconocido como estándar internacional (RFC 9106).  Se desarrolló en 2015 y fue elegido ganador del Password Hashing Competition como **el método más fiable y eficiente para proteger contraseñas**.  Argon2id combina características de Argon2i y Argon2d, **ofreciendo resistencia a los ataques contra CPU y memoria**.  El algoritmo realiza múltiples iteraciones de cálculo, funciona en modo multihilo y agrega una sal única para cada cifrado.  Esto hace que el ataque por fuerza bruta de la clave sea **extremadamente costoso en recursos y tiempo**, incluso para sistemas potentes."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 est un **algorithme KDF (Key Derivation Function) moderne qui transforme un mot de passe en clé cryptographique**, reconnu comme norme internationale (RFC 9106).  Développé en 2015 et sélectionné comme vainqueur du Password Hashing Competition en tant que **méthode la plus fiable et efficace pour la protection des mots de passe**.  Argon2id combine les caractéristiques d'Argon2i et Argon2d, **offrant une résistance aux attaques sur le processeur et la mémoire**.  L'algorithme réalise de multiples itérations de calcul, fonctionne en mode multithread et ajoute un sel unique à chaque chiffrement.  Cela rend l'attaque par force brute **extrêmement coûteuse en ressources et en temps**, même pour des systèmes puissants."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 è un moderno **algoritmo KDF (Key Derivation Function) che trasforma una password in una chiave crittografica**, riconosciuto come standard internazionale (RFC 9106).  Sviluppato nel 2015 e scelto come vincitore del Password Hashing Competition in quanto **metodo più affidabile ed efficiente per la protezione delle password**.  Argon2id combina le caratteristiche di Argon2i e Argon2d, **garantendo resistenza ad attacchi su CPU e memoria**.  L'algoritmo esegue numerose iterazioni computazionali, funziona in modalità multi-thread e aggiunge un sale unico per ogni cifratura.  Questo rende l'attacco a forza bruta **estremamente oneroso in termini di risorse e di tempo**, anche per sistemi potenti."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 はパスワードを暗号鍵に変換する現代的な **KDF（鍵導出関数）アルゴリズム** で、国際標準（RFC 9106）として認められています。  2015年に開発され、Password Hashing Competition で **最も信頼性が高く効率的なパスワード保護手法** として選ばれました。  Argon2id は Argon2i と Argon2d の特長を組み合わせ、**CPU とメモリに対する攻撃への耐性** を備えています。  アルゴリズムは多数の計算反復を行い、マルチスレッドで動作し、各暗号化ごとにユニークなソルトを追加します。  そのため、鍵の総当たり攻撃は **膨大なリソースと時間** を要し、強力なシステムでも困難です。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "Argon2 არის თანამედროვე **KDF (Key Derivation Function) ალგორითმი პაროლის კრიპტოგრაფიულ გასაღებად გარდაქმნისთვის**, აღიარებული საერთაშორისო სტანდარტად (RFC 9106).  ის შეიქმნა 2015 წელს და Password Hashing Competition-ის გამარჯვებულად დასახელდა, როგორც **პაროლების დაცვის ყველაზე სანდო და ეფექტიანი მეთოდი**.  Argon2id აერთიანებს Argon2i-ს და Argon2d-ს თვისებებს, **უზრუნველყოფს მდგრადობას CPU-სა და მეხსიერებაზე მიმართული შეტევების წინააღმდეგ**.  ალგორითმი ასრულებს მრავალ გამოთვლით იტერაციას, მუშაობს მრავალნაკადიან რეჟიმში და თითოეული შიფრაციისთვის ამატებს უნიკალურ მარილს.  ეს გასაღების подбор-ს **ძალიან რესურსმომთხოვნსა და ხანგრძლივს ხდის**, თუნდაც ძლიერ სისტემებში."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Argon2 — это современный **алгоритм KDF (Key Derivation Function) преобразования пароля в криптографический ключ**, признанный международным стандартом (RFC 9106).  Разработан в 2015 году и выбран победителем Password Hashing Competition как **наиболее надёжный и эффективный метод защиты паролей**.  Argon2id сочетает особенности Argon2i и Argon2d, **обеспечивая устойчивость к атакам на процессор и память**.  Алгоритм выполняет множество итераций вычислений, работает многопоточно и добавляет уникальную соль для каждого шифрования.  Это делает подбор ключа крайне **затратным** по времени и ресурсам, даже для мощных систем."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 — це сучасний **алгоритм KDF (Key Derivation Function) для перетворення пароля на криптографічний ключ**, визнаний міжнародним стандартом (RFC 9106).  Його розробили у 2015 році, і він став переможцем Password Hashing Competition як **найнадійніший і найефективніший метод захисту паролів**.  Argon2id поєднує можливості Argon2i та Argon2d, **забезпечуючи стійкість до атак на процесор і пам'ять**.  Алгоритм виконує багато обчислювальних ітерацій, працює у багатопотоковому режимі та додає унікальну сіль для кожного шифрування.  Це робить підбір ключа **надзвичайно ресурсомістким і тривалим**, навіть для потужних систем."
           }
         }
       }
@@ -146,7 +434,43 @@
             "value" : "Argon2id"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Argon2id"
@@ -163,10 +487,46 @@
             "value" : "Each [VOID] application contains a hidden parameter — **VOID Secret (internal password)**.  Features: • Selected from a large set of variants; • Generated identically across all devices; • Not stored in data or transmitted over the network; • Makes decryption possible only within the application.  **Even if the password is known, without the correct VOID Secret, the data remains encrypted**."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada aplicación [VOID] contiene un parámetro oculto: **VOID Secret (contraseña interna)**.  Características: • se selecciona de un amplio conjunto de variantes; • se genera de forma idéntica en todos los dispositivos; • no se almacena en los datos ni se transmite por la red; • hace que el descifrado solo sea posible dentro de la aplicación.  **Incluso si se conoce la contraseña, sin el VOID Secret correcto los datos permanecen cifrados**."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chaque application [VOID] contient un paramètre caché — **VOID Secret (mot de passe interne)**.  Caractéristiques : • Sélectionné dans un large ensemble de variantes ; • Généré de manière identique sur tous les appareils ; • Non stocké dans les données ni transmis sur le réseau ; • Rend le déchiffrement possible uniquement dans l'application.  **Même si le mot de passe est connu, sans le VOID Secret approprié, les données restent chiffrées**."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogni applicazione [VOID] contiene un parametro nascosto — **VOID Secret (password interna)**.  Caratteristiche: • Selezionato da un ampio insieme di varianti; • Generato in modo identico su tutti i dispositivi; • Non viene memorizzato nei dati né trasmesso sulla rete; • Rende la decifratura possibile solo all'interno dell'applicazione.  **Anche conoscendo la password, senza il VOID Secret corretto i dati rimangono cifrati**."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "各 [VOID] アプリには隠されたパラメータ **VOID Secret（内部パスワード）** が含まれています。  特徴: • 多数の候補から選ばれる。 • すべてのデバイスで同じように生成される。 • データとして保存されたりネットワークで送信されたりしない。 • アプリ内でのみ復号を可能にする。  **パスワードが分かっていても、正しい VOID Secret がなければデータは暗号化されたままです。**"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ყოველი [VOID] აპლიკაცია შეიცავს დამალულ პარამეტრს — **VOID Secret (შიდა პაროლი)**.  Особенности: • აირჩევა დიდი ვარიანტების ნაკრებიდან; • ერთნაირად გენერირდება ყველა მოწყობილობაზე; • მონაცემებში არ ინახება და ქსელით არ გადაეცემა; • დეშიფრაციას შესაძლებელს ხდის მხოლოდ აპლიკაციის ფარგლებში.  **თუნდაც პაროლი იყოს ცნობილი, სწორი VOID Secret-ის გარეშე მონაცემები შიფრულად დარჩება**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Каждое приложение [VOID] содержит скрытый параметр — **VOID Secret (внутренний пароль)**.  Особенности: • выбирается из большого набора вариантов; • одинаково генерируется на всех устройствах; • не сохраняется в данных и не передаётся по сети; • делает расшифровку возможной только внутри приложения.  **Даже при знании пароля, без правильного VOID Secret данные остаются зашифрованными**."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кожен застосунок [VOID] містить прихований параметр — **VOID Secret (внутрішній пароль)**.  Особливості: • обирається з великого набору варіантів; • генерується однаково на всіх пристроях; • не зберігається в даних і не передається мережею; • уможливлює розшифрування лише всередині застосунку.  **Навіть знаючи пароль, без правильного VOID Secret дані залишаються зашифрованими**."
           }
         }
       }
@@ -180,10 +540,46 @@
             "value" : "VOID «Pepper»"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID «Pimienta»"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID « Pepper »"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID «Pepper»"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID「ペッパー」"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "VOID «პილპილი»"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID «Перец»"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID «Перець»"
           }
         }
       }
@@ -197,10 +593,46 @@
             "value" : "Copied"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiado"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copié"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiato"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コピーしました"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "კოპირებულია"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скопировано"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скопійовано"
           }
         }
       }
@@ -214,10 +646,46 @@
             "value" : "Decode"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descodificar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Décoder"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decodifica"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デコード"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "დეშიფრაცია"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Декодирование"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Декодування"
           }
         }
       }
@@ -231,10 +699,46 @@
             "value" : "Encode"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificar"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encoder"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codifica"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エンコード"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "კოდირება"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кодирование"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодування"
           }
         }
       }
@@ -248,10 +752,46 @@
             "value" : "Ready for decoding…"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listo para descodificar…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prêt pour le décodage…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto per la decodifica…"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デコードの準備完了…"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "მომზადებულია დეშიფრაციისთვის…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово к декодированию…"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово до декодування…"
           }
         }
       }
@@ -265,10 +805,46 @@
             "value" : "Ready for encoding…"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listo para codificar…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prêt pour l'encodage…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto per la codifica…"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エンコードの準備完了…"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "მომზადებულია კოდირებისთვის…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово к кодированию…"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Готово до кодування…"
           }
         }
       }
@@ -337,26 +913,32 @@
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Para su seguridad**  — Cuanto más fuerte sea la contraseña, más fuerte será el cifrado — No almacenamos ni transmitimos sus datos — Cuando abandone esta pantalla, todo se eliminará"
+            "state" : "translated",
+            "value" : "**Al salir de esta pantalla, todos los datos (contraseña, VOID, parámetros de Argon2id) se restablecerán.  La aplicación no almacena datos en la memoria del teléfono.**"
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Pour votre sécurité**  — Plus le mot de passe est complexe, plus le chiffrement est fort — Nous ne stockons ni ne transmettons vos données — Lorsque vous quittez cet écran, tout est supprimé"
+            "state" : "translated",
+            "value" : "**En quittant cet écran, toutes les données (mot de passe, VOID, paramètres Argon2id) seront réinitialisées.  L'application ne conserve pas les données dans la mémoire du téléphone.**"
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Per la tua sicurezza**  — Più la password è complessa, più forte è la crittografia — Non memorizziamo né trasmettiamo i tuoi dati — Quando lasci questo schermo, tutto viene eliminato"
+            "state" : "translated",
+            "value" : "**Quando lasci questa schermata, tutti i dati (password, VOID, parametri Argon2id) verranno reimpostati.  L'app non memorizza i dati nella memoria del telefono.**"
           }
         },
         "ja" : {
           "stringUnit" : {
+            "state" : "translated",
+            "value" : "**この画面を離れると、すべてのデータ（パスワード、VOID、Argon2id パラメータ）がリセットされます。  アプリはデータを端末のメモリに保存しません。**"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
             "state" : "needs_review",
-            "value" : "**あなたのセキュリティのために**  — パスワードが強いほど、暗号化も強力です — 私たちはあなたのデータを保存したり送信したりしません — この画面を離れると、すべて削除されます"
+            "value" : "**თუ ამ ეკრანს დატოვებთ, ყველა მონაცემი (პაროლი, VOID, Argon2id-ის პარამეტრები) განულდება.  აპლიკაცია არ ინახავს მონაცემებს ტელეფონის მეხსიერებაში.**"
           }
         },
         "ru" : {
@@ -367,8 +949,8 @@
         },
         "uk" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Для вашої безпеки**  — Чим сильніший пароль, тим надійніше шифрування — Ми не зберігаємо і не передаємо ваші дані — Коли ви покидаєте цей екран, все видаляється"
+            "state" : "translated",
+            "value" : "**При виході з цього екрану всі дані (пароль, VOID, параметри Argon2id) скинуться.  Додаток не зберігає дані в пам'яті телефону.**"
           }
         }
       }
@@ -868,7 +1450,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Le nombre d’**itérations** influence la **force** du chiffrement. Plus d’itérations = plus difficile à craquer, mais **plus lent**."
+            "value" : "Le nombre d'**itérations** influence la **force** du chiffrement. Plus d'itérations = plus difficile à craquer, mais **plus lent**."
           }
         },
         "it" : {
@@ -980,7 +1562,7 @@
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La **lunghezza della chiave** determina quanto è difficile forzare i dati. Più la chiave è **lunga**, più la protezione è **forte**. Valori più alti aumentano la sicurezza ma possono rallentare leggermente l’elaborazione."
+            "value" : "La **lunghezza della chiave** determina quanto è difficile forzare i dati. Più la chiave è **lunga**, più la protezione è **forte**. Valori più alti aumentano la sicurezza ma possono rallentare leggermente l'elaborazione."
           }
         },
         "ja" : {
@@ -1428,7 +2010,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**Пам’ять** — це обсяг ОЗП, який використовується під час шифрування для захисту ваших даних. Чим більше пам’яті використовується, тим складніше зламати ваш пароль, оскільки атаки потребують більше ресурсів і часу. Проте **велике споживання пам’яті може сповільнити пристрій** — обирайте баланс між безпекою та продуктивністю."
+            "value" : "**Пам'ять** — це обсяг ОЗП, який використовується під час шифрування для захисту ваших даних. Чим більше пам'яті використовується, тим складніше зламати ваш пароль, оскільки атаки потребують більше ресурсів і часу. Проте **велике споживання пам'яті може сповільнити пристрій** — обирайте баланс між безпекою та продуктивністю."
           }
         }
       }
@@ -1481,7 +2063,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Пам’ять"
+            "value" : "Пам'ять"
           }
         }
       }
@@ -1927,10 +2509,46 @@
             "value" : "**VOID enhances the cryptographic key** by adding a hidden internal component.  A value of 0 means encryption is performed without VOID.  **The VOID number only affects the variant selection**, not the level of protection."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID refuerza la clave criptográfica** al añadir un componente interno oculto.  Un valor de 0 significa que el cifrado se realiza sin VOID.  **El número de VOID solo afecta a la selección de la variante**, no al nivel de protección."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID renforce la clé cryptographique** en ajoutant une composante interne cachée.  Une valeur de 0 signifie que le chiffrement est effectué sans VOID.  **Le numéro VOID influence uniquement le choix de la variante**, et non le niveau de protection."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID rafforza la chiave crittografica** aggiungendo una componente interna nascosta.  Un valore pari a 0 significa che la cifratura viene eseguita senza VOID.  **Il numero VOID influisce solo sulla scelta della variante**, non sul livello di protezione."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID は隠された内部コンポーネントを加えることで暗号鍵を強化**します。  0 の値は、VOID なしで暗号化が行われることを意味します。  **VOID の数値はバリアントの選択にのみ影響し**、保護レベルは変わりません。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "**VOID აძლიერებს კრიპტოგრაფიულ გასაღებს**, რადგან მას დამატებით დამალულ შიდა კომპონენტს უმატებს.  0 ნიშნავს, რომ შიფრაცია VOID-ის გარეშე სრულდება.  **VOID-ის ნომერი მხოლოდ ვარიანტის არჩევას განსაზღვრავს** და არა დაცვის დონეს."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**VOID усиливает криптографический ключ**, добавляя к нему скрытый внутренний компонент.  Значение 0 означает, что шифрование выполняется без VOID.  **Номер VOID влияет только на выбор варианта**, но не изменяет уровень защиты."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID посилює криптографічний ключ**, додаючи прихований внутрішній компонент.  0 означає, що шифрування виконується без VOID.  **Номер VOID впливає лише на вибір варіанта**, а не на рівень захисту."
           }
         }
       }
@@ -2315,10 +2933,46 @@
             "value" : "Emoji"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "絵文字"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ემოჯი"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Эмодзи"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Емодзі"
           }
         }
       }
@@ -2332,10 +2986,46 @@
             "value" : "Animals"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animales"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animaux"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animali"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動物"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ცხოველები"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Животные"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тварини"
           }
         }
       }
@@ -2349,10 +3039,46 @@
             "value" : "Food"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comida"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nourriture"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cibo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "食べ物"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "საკვები"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Еда"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Їжа"
           }
         }
       }
@@ -2363,13 +3089,49 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Love Story"
+            "value" : "Love"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amor"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amour"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amore"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ラブストーリー"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "სიყვარული"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Любовь"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кохання"
           }
         }
       }
@@ -2383,10 +3145,46 @@
             "value" : "Negative"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negativas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Négatif"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negativi"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ネガティブ"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ნეგატიური"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Негативные"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Негативні"
           }
         }
       }
@@ -2400,7 +3198,43 @@
             "value" : "People"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Personnes"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Persone"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "人物"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ადამიანები"
+          }
+        },
         "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Люди"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Люди"
@@ -2417,10 +3251,46 @@
             "value" : "Positive"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Positivas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Positif"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Positivi"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ポジティブ"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "პოზიტიური"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Позитивные"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Позитивні"
           }
         }
       }
@@ -2431,13 +3301,49 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Select the **type of emoj**i to encode text into a unique emoji sequence.  Decoding text from any emoji type happens **automatically**."
+            "value" : "Select the **type of emoji** to encode text into a unique emoji sequence.  Decoding text from any emoji type happens **automatically**."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecciona el **tipo de emoji** para codificar el texto en una secuencia única de emoji.  La decodificación del texto desde cualquier tipo de emoji ocurre **automáticamente**."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sélectionnez le **type d'emoji** pour encoder le texte en une séquence d'emoji unique.  Le décodage du texte à partir de n'importe quel type d'emoji se fait **automatiquement**."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seleziona il **tipo di emoji** per codificare il testo in una sequenza di emoji unica.  La decodifica del testo da qualsiasi tipo di emoji avviene **automaticamente**."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "テキストをユニークな絵文字シーケンスにエンコードするには、**使用する絵文字の種類**を選択してください。  どの種類の絵文字でも、テキストのデコードは**自動的に**行われます。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "აირჩიეთ **ემოჯის ტიპი**, რათა ტექტი უნიკალურ ემოჯი-სექვენციად დააკოდოთ.  ნებისმიერი ტიპის ემოჯიდან ტექსტის дешიფრაცია ხდება **ავტომატურად**."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выберите **тип эмодзи**, чтобы закодировать текст в уникальную последовательность эмодзи.  Декодирование текста из любого типа эмодзи происходит **автоматически**."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Виберіть **тип емодзі**, щоб закодувати текст в унікальну послідовність емодзі.  Розшифрування тексту з будь-якого типу емодзі відбувається **автоматично**."
           }
         }
       }
@@ -2451,10 +3357,46 @@
             "value" : "Emoji Encoding"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificación con emoji"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encodage en emoji"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codifica con emoji"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "絵文字エンコード"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ემოჯის კოდირება"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Эмодзи-кодирование"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодування емодзі"
           }
         }
       }
@@ -2472,6 +3414,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudo generar la clave usando Argon2."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de générer la clé avec Argon2."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile generare la chiave con Argon2."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 で鍵を生成できませんでした。"
           }
         },
         "ka" : {
@@ -2503,10 +3463,46 @@
             "value" : "Failed to decode data."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo descifrar el texto."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de décoder les données."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile decodificare i dati."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "データをデコードできませんでした。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ტექსტის дешიფრაცია ვერ მოხერხდა."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось декодировать текст."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вдалося розшифрувати текст."
           }
         }
       }
@@ -2524,6 +3520,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron descifrar los datos."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de déchiffrer les données."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile decifrare i dati."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "データを復号できませんでした。"
           }
         },
         "ka" : {
@@ -2555,10 +3569,46 @@
             "value" : "Failed to encode data."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No se pudo codificar el texto."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible d'encoder les données."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile codificare i dati."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "データをエンコードできませんでした。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ტექსტის კოდირება ვერ მოხერხდა."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось закодировать текст."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не вдалося закодувати текст."
           }
         }
       }
@@ -2576,6 +3626,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "No se pudieron cifrar los datos."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossible de chiffrer les données."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile cifrare i dati."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "データを暗号化できませんでした。"
           }
         },
         "ka" : {
@@ -2613,6 +3681,24 @@
             "value" : "Los datos cifrados han caducado."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les données chiffrées ont expiré."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dati cifrati sono scaduti."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "有効期限が切れました。"
+          }
+        },
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2646,6 +3732,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La integridad de los datos cifrados está comprometida."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'intégrité des données chiffrées est compromise."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'integrità dei dati cifrati è compromessa."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "整合性チェックに失敗しました。"
           }
         },
         "ka" : {
@@ -2683,6 +3787,24 @@
             "value" : "El formato de los datos cifrados está dañado o incompleto."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le format des données chiffrées est corrompu ou incomplet."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il formato dei dati cifrati è danneggiato o incompleto."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "データ形式が正しくありません。"
+          }
+        },
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2718,9 +3840,27 @@
             "value" : "Los datos de entrada no son válidos."
           }
         },
-        "ka" : {
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Les données d'entrée ne sont pas valides."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I dati di input non sono validi."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "入力データが正しくありません。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "შეყვანილი მონაცემები არასწორია."
           }
         },
@@ -2751,6 +3891,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "La clave maestra está vacía o dañada."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La clé principale est vide ou corrompue."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La chiave principale è vuota o danneggiata."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "マスターキーが正しくありません。"
           }
         },
         "ka" : {
@@ -2788,6 +3946,24 @@
             "value" : "Número inválido de claves derivadas."
           }
         },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nombre de clés dérivées invalide."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Numero non valido di chiavi derivate."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サブキーの数が正しくありません。"
+          }
+        },
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2821,6 +3997,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Error al generar el nonce para AES."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreur lors de la génération du nonce pour AES."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Errore durante la generazione del nonce per AES."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ノンスを生成できませんでした。"
           }
         },
         "ka" : {
@@ -2858,9 +4052,27 @@
             "value" : "No se pudo generar la sal criptográfica."
           }
         },
-        "ka" : {
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Impossible de générer le sel cryptographique."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impossibile generare il sale crittografico."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ソルトを生成できませんでした。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "კრიპტოგრაფიული მარილი ვერ წარმოიქმნა."
           }
         },
@@ -2891,6 +4103,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Error"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erreur"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Errore"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラー"
           }
         },
         "ka" : {
@@ -2928,9 +4158,27 @@
             "value" : "Ocurrió un error inesperado."
           }
         },
-        "ka" : {
+        "fr" : {
           "stringUnit" : {
             "state" : "translated",
+            "value" : "Une erreur inattendue s'est produite."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si è verificato un errore imprevisto."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不明なエラーです。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
             "value" : "მოხდა დაუგეგმავი შეცდომა."
           }
         },
@@ -2957,10 +4205,46 @@
             "value" : "Please keep the app open until the process is complete."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantén la aplicación abierta hasta que el proceso termine."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veuillez laisser l'application ouverte jusqu'à la fin du processus."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantieni l'app aperta finché il processo non è completato."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "処理が完了するまでアプリを閉じないでください。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "არ დახუროთ აპლიკაცია, სანამ პროცესი არ დასრულდება."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не закрывайте приложение, пока процесс не завершится."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не закривайте застосунок, поки процес не завершиться."
           }
         }
       }
@@ -2974,10 +4258,46 @@
             "value" : "Processing…"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Procesando…"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traitement…"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elaborazione…"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "処理中…"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "დამუშავება…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выполняется операция…"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обробка…"
           }
         }
       }
@@ -3106,7 +4426,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Conditions d’utilisation"
+            "value" : "Conditions d'utilisation"
           }
         },
         "it" : {
@@ -3159,13 +4479,13 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "À propos de l’application"
+            "value" : "À propos de l'application"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Informazioni sull’app"
+            "value" : "Informazioni sull'app"
           }
         },
         "ja" : {
@@ -3265,7 +4585,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Laisser un avis sur l’App Store"
+            "value" : "Laisser un avis sur l'App Store"
           }
         },
         "it" : {
@@ -3424,7 +4744,7 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Version de l’application"
+            "value" : "Version de l'application"
           }
         },
         "it" : {
@@ -3689,13 +5009,13 @@
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Voulez-vous changer la langue de l’application ?"
+            "value" : "Voulez-vous changer la langue de l'application ?"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vuoi cambiare la lingua dell’app?"
+            "value" : "Vuoi cambiare la lingua dell'app?"
           }
         },
         "ja" : {
