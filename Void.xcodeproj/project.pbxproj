@@ -508,6 +508,12 @@
 				hi,
 				"zh-Hans",
 				"zh-Hant",
+				vi,
+				ko,
+				de,
+				tr,
+				nl,
+				sv,
 			);
 			mainGroup = 1FB32A282E34FA16003E4B54;
 			minimizedProjectReferenceProxies = 1;

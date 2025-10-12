@@ -4,6 +4,12 @@
     "About.information" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informationen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -46,16 +52,46 @@
             "value" : "ინფორმაცია"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "정보"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informatie"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informações"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Информация"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Information"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Інформація"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thông tin"
           }
         },
         "zh-Hans" : {
@@ -75,6 +111,12 @@
     "AboutAES256.fifthDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Verwende ein komplexes und einzigartiges Passwort** (mehr als 12 Zeichen) — je komplexer das Passwort, desto länger dauert es, es zu knacken.  **Wähle starke Argon2id-Verschlüsselungsparameter** (Anzahl der Iterationen, Threads) — das steigert die Sicherheit, kann die Verschlüsselungszeit jedoch auf bis zu 20 Minuten verlängern.  **Speichere immer den ursprünglichen Ciphertext vollständig** — geht auch nur ein Zeichen verloren, ist eine Entschlüsselung unmöglich.  Aktualisiere **Passwörter regelmäßig** für zusätzlichen Schutz."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -117,16 +159,46 @@
             "value" : "**გამოიყენეთ რთული და უნიკალური პაროლი** (12-ზე მეტი სიმბოლო) — რაც უფრო რთულია პაროლი, მით მეტ დროს წაიღებს მისი გატეხვა.  **აირჩიეთ Argon2id-ის ძლიერი პარამეტრები** (იტერაციების რაოდენობა, ნაკადები) — ეს ზრდის უსაფრთხოებას, თუმცა შეიძლება შიფრაციის დრო 20 წუთამდე გაზარდოს.  **ყოველთვის შეინახეთ საწყისი შიფრტექსტი მთლიანად** — ერთი სიმბოლოს დაკარგვაც კი შეუძლებელს ხდის дешифრაციას.  დამატებითი დაცვისთვის რეგულარულად **განაახლეთ პაროლები**."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**복잡하고 고유한 비밀번호**(12자 이상)를 사용하세요 — 비밀번호가 복잡할수록 해독에 더 오랜 시간이 걸립니다.  **강력한 Argon2id 암호화 매개변수**(반복 횟수, 스레드 수)를 선택하세요 — 보안은 강화되지만 암호화 시간이 최대 20분까지 늘어날 수 있습니다.  **원본 암호문을 항상 완전히 저장하세요** — 한 글자라도 잃어버리면 복호화가 불가능합니다.  추가 보호를 위해 비밀번호를 정기적으로 **갱신**하세요."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Gebruik een complex en uniek wachtwoord** (meer dan 12 tekens) — hoe complexer het wachtwoord, hoe langer het duurt om het te kraken.  **Kies sterke Argon2id-versleutelingsparameters** (aantal iteraties, threads) — dit verhoogt de beveiliging, maar kan de versleutelingstijd verlengen tot 20 minuten.  **Bewaar altijd de oorspronkelijke ciphertext volledig** — verlies van slechts één teken maakt ontsleuteling onmogelijk.  Werk **wachtwoorden regelmatig bij** voor extra bescherming."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Use uma senha complexa e exclusiva** (mais de 12 caracteres) — quanto mais complexa a senha, mais tempo leva para ser quebrada.  **Escolha parâmetros fortes de Argon2id** (número de iterações, threads) — isso aumenta a segurança, mas pode estender o tempo de criptografia para até 20 minutos.  **Sempre salve o texto cifrado original por completo** — perder um único caractere torna a descriptografia impossível.  Atualize **regularmente as senhas** para obter proteção adicional."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Используйте сложный и уникальный пароль** (более 12 символов) — чем сложнее пароль, тем дольше займёт его подбор.  **Выбирайте сильные параметры шифрования в Argon2id** (количество итераций, потоков) — это повышает безопасность, но может увеличить время шифрования до 20 минут.  **Всегда сохраняйте исходный шифротекст полностью** — любая потеря символа делает расшифровку невозможной.  Регулярно **обновляйте пароли** для дополнительной защиты."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Använd ett komplext och unikt lösenord** (mer än 12 tecken) — ju mer komplext lösenordet är, desto längre tid tar det att knäcka.  **Välj starka Argon2id-krypteringsparametrar** (antal iterationer, trådar) — detta ökar säkerheten men kan förlänga krypteringstiden upp till 20 minuter.  **Spara alltid det ursprungliga chiffertexten i sin helhet** — om ett enda tecken går förlorat blir dekryptering omöjligt.  Uppdatera **lösenord regelbundet** för extra skydd."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Використовуйте складний і унікальний пароль** (понад 12 символів) — що складніший пароль, то довше його підбирати.  **Обирайте надійні параметри шифрування Argon2id** (кількість ітерацій, потоки) — це підвищує безпеку, але може збільшити час шифрування до 20 хвилин.  **Завжди зберігайте вихідний шифротекст повністю** — втрата хоча б одного символу робить дешифрування неможливим.  Регулярно **оновлюйте паролі** для додаткового захисту."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Sử dụng mật khẩu phức tạp và duy nhất** (hơn 12 ký tự) — mật khẩu càng phức tạp, càng lâu mới bị bẻ khóa.  **Chọn các tham số mã hóa Argon2id mạnh** (số vòng lặp, số luồng) — điều này tăng cường bảo mật nhưng có thể kéo dài thời gian mã hóa lên đến 20 phút.  **Luôn lưu lại toàn bộ bản mã gốc** — mất chỉ một ký tự cũng khiến giải mã không thể thực hiện.  Thường xuyên **cập nhật mật khẩu** để tăng cường bảo vệ."
           }
         },
         "zh-Hans" : {
@@ -146,6 +218,12 @@
     "AboutAES256.fifthTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipps"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -188,16 +266,46 @@
             "value" : "რჩევები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "팁"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dicas"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Советы"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Поради"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mẹo"
           }
         },
         "zh-Hans" : {
@@ -217,6 +325,12 @@
     "AboutAES256.firstDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** ist ein symmetrischer Verschlüsselungsalgorithmus, der einen **256-Bit-Schlüssel** verwendet.  Die Daten werden geschützt, indem sie in **128-Bit-Blöcke** aufgeteilt und **14 Runden mathematischer Transformationen** durchgeführt werden: Substitutionen, Permutationen und Byte-Mix.  Dadurch wird die ursprüngliche Information in einen verschlüsselten Datensatz umgewandelt, der **nur mit demselben Schlüssel** entschlüsselt werden kann."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -259,16 +373,46 @@
             "value" : "**AES-256 (Advanced Encryption Standard)** არის სიმეტრიული შიფრაციის ალგორითმი, რომელიც იყენებს **256-ბიტიან გასაღებს**.  ის იცავს მონაცემებს, **ყოფს მათ 128-ბიტიან ბლოკებად და ასრულებს 14 რაუნდს მათემატიკური გარდაქმნებით**: ჩანაცვლებით, перестановками და ბაიტების შერევით.  შედეგად, საწყისი ინფორმაცია გადაიქცევა შიფრირებულ მონაცემებად, რომლის дешიფრაციაც შესაძლებელია **მხოლოდ იმავე გასაღებით**."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256(Advanced Encryption Standard)**은 **256비트 키**를 사용하는 대칭 키 암호화 알고리즘입니다.  데이터를 **128비트 블록으로 나누고 14번의 수학적 변환**(치환, 순열, 바이트 혼합)을 수행하여 데이터를 보호합니다.  그 결과, 원래 정보는 **같은 키로만 복호화할 수 있는** 암호화된 데이터 집합으로 변환됩니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** is een symmetrisch versleutelingsalgoritme dat een **256-bits sleutel** gebruikt.  Het beveiligt gegevens door ze op te delen in **128-bits blokken** en **14 rondes wiskundige transformaties** uit te voeren: substituties, permutaties en bytemixing.  Hierdoor wordt de oorspronkelijke informatie omgezet in een versleutelde dataset die alleen kan worden ontsleuteld **met dezelfde sleutel**."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** é um algoritmo de criptografia simétrica que usa uma **chave de 256 bits**.  Ele protege os dados **dividindo-os em blocos de 128 bits e realizando 14 rodadas de transformações matemáticas**: substituições, permutações e mistura de bytes.  Como resultado, as informações originais são convertidas em um conjunto de dados criptografados que pode ser descriptografado **apenas com a mesma chave**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**AES-256 (Advanced Encryption Standard)** — это симметричный алгоритм шифрования, использующий ключ длиной **256 бит**.   Он защищает данные, **разбивая их на блоки по 128 бит и выполняя 14 раундов математических преобразований**: подстановки, перестановки и смешивания байтов.  В результате исходная информация превращается в зашифрованный набор данных, расшифровать который можно **только с тем же ключом**."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** är en symmetrisk krypteringsalgoritm som använder en **256-bitars nyckel**.  Den skyddar data genom att **dela upp dem i 128-bitars block och genomföra 14 omgångar av matematiska transformationer**: substitutioner, permutationer och byteblandning.  Resultatet är att den ursprungliga informationen omvandlas till en krypterad datamängd som bara kan dekrypteras **med samma nyckel**."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**AES-256 (Advanced Encryption Standard)** — це симетричний алгоритм шифрування, який використовує **256-бітний ключ**.  Він захищає дані, **розбиваючи їх на блоки по 128 біт і виконуючи 14 раундів математичних перетворень**: підстановок, перестановок і змішування байтів.  У результаті початкова інформація перетворюється на зашифрований набір даних, який можна розшифрувати **лише тим самим ключем**."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)** là thuật toán mã hóa đối xứng sử dụng **khóa 256 bit**.  Nó bảo vệ dữ liệu bằng cách **chia dữ liệu thành các khối 128 bit và thực hiện 14 vòng biến đổi toán học**: thay thế, hoán vị và trộn byte.  Kết quả là thông tin gốc được chuyển thành tập dữ liệu đã mã hóa chỉ có thể giải mã **bằng cùng một khóa**."
           }
         },
         "zh-Hans" : {
@@ -288,6 +432,12 @@
     "AboutAES256.firstTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über die Verschlüsselung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -330,16 +480,46 @@
             "value" : "შესახებ შიფრაციის"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화 소개"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over versleuteling"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre a criptografia"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "О шифровании"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om kryptering"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Про шифрування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giới thiệu về mã hóa"
           }
         },
         "zh-Hans" : {
@@ -359,6 +539,12 @@
     "AboutAES256.fourthDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Du gibst ein Passwort ein. 2 - Du wählst VOID. 3 - Die App erzeugt ein Salt und kombiniert es mit dem Passwort und VOID. 4 - Argon2id berechnet den Schlüssel anhand der angegebenen Parameter. 5 - Der Schlüssel wird in AES-256 verwendet, um den Text zu verschlüsseln. 6 - Salt und andere Parameter werden in der verschlüsselten Struktur gespeichert.  **Zum Entschlüsseln musst du genau denselben Schlüssel reproduzieren — gib dasselbe Passwort und VOID ein und halte den ursprünglichen Ciphertext zeichengetreu bereit.**"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -401,16 +587,46 @@
             "value" : "1 — შეიყვანეთ პაროლი. 2 — აირჩიეთ VOID. 3 — აპლიკაცია ქმნის მარილს და აერთიანებს მას პაროლთან და VOID-თან. 4 — Argon2id გამოთვლის გასაღებს მითითებული პარამეტრებით. 5 — გასაღები გამოიყენება AES-256-ში ტექსტის დასაშიფრად. 6 — მარილი და სხვა პარამეტრები ინახება შიფრირებულ სტრუქტურაში.  **დეშიფრაციისთვის უნდა მიიღოთ ზუსტად იგივე გასაღები — შეიყვანეთ ისევე პაროლი და VOID და გქონდეთ საწყისი შიფრტექსტი სიმბოლო-სიმბოლომდე ზუსტად**."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - 비밀번호를 입력합니다. 2 - VOID를 선택합니다. 3 - 앱이 솔트를 생성해 비밀번호와 VOID와 결합합니다. 4 - Argon2id가 지정한 매개변수로 키를 계산합니다. 5 - 해당 키를 사용해 AES-256으로 텍스트를 암호화합니다. 6 - 솔트와 다른 매개변수가 암호화된 구조에 저장됩니다.  **복호화를 위해서는 동일한 키를 정확히 재현해야 합니다 — 동일한 비밀번호와 VOID를 입력하고, 원본 암호문을 글자 하나까지 정확히 보관해야 합니다.**"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Je voert een wachtwoord in. 2 - Je selecteert VOID. 3 - De app genereert een salt en combineert deze met het wachtwoord en VOID. 4 - Argon2id berekent de sleutel met de opgegeven parameters. 5 - De sleutel wordt in AES-256 gebruikt om de tekst te versleutelen. 6 - De salt en andere parameters worden opgeslagen in de versleutelde structuur.  **Om te ontsleutelen moet je exact dezelfde sleutel reproduceren — voer hetzelfde wachtwoord en VOID in en zorg dat de oorspronkelijke ciphertext teken voor teken klopt.**"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Você insere uma senha. 2 - Você seleciona o VOID. 3 - O aplicativo gera um sal e o combina com a senha e o VOID. 4 - O Argon2id calcula a chave usando os parâmetros especificados. 5 - A chave é usada no AES-256 para criptografar o texto. 6 - O sal e os demais parâmetros são armazenados na estrutura criptografada.  **Para descriptografar, você precisa reproduzir exatamente a mesma chave — inserir a mesma senha e VOID e ter o texto cifrado original correto caractere por caractere.**"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1 - Вы вводите пароль. 2 - Выбираете VOID. 3 - Приложение генерирует соль и объединяет её с паролем и VOID. 4 - Argon2id вычисляет ключ с заданными параметрами. 5 - Ключ используется в AES‑256 для шифрования текста. 6 - Соль и остальные параметры сохраняются в зашифрованной структуре.  **Для расшифровки нужно точно воспроизвести тот же ключ — ввести тот же пароль и VOID и иметь оригинальный шифротекст с точностью до символа**."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Du anger ett lösenord. 2 - Du väljer VOID. 3 - Appen genererar ett salt och kombinerar det med lösenordet och VOID. 4 - Argon2id beräknar nyckeln med de angivna parametrarna. 5 - Nyckeln används i AES-256 för att kryptera texten. 6 - Saltet och andra parametrar lagras i den krypterade strukturen.  **För att dekryptera måste du exakt återskapa samma nyckel — ange samma lösenord och VOID och ha den ursprungliga chiffertexten exakt tecken för tecken.**"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "1 — Ви вводите пароль. 2 — Обираєте VOID. 3 — Додаток генерує сіль і об'єднує її з паролем та VOID. 4 — Argon2id обчислює ключ за заданими параметрами. 5 — Ключ використовується в AES-256 для шифрування тексту. 6 — Сіль та інші параметри зберігаються в зашифрованій структурі.  **Щоб розшифрувати, потрібно точно відтворити той самий ключ — ввести той самий пароль і VOID та мати початковий шифротекст без жодної помилки**."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Bạn nhập mật khẩu. 2 - Bạn chọn VOID. 3 - Ứng dụng tạo muối và kết hợp muối với mật khẩu cùng VOID. 4 - Argon2id tính toán khóa bằng các tham số đã chọn. 5 - Khóa được dùng trong AES-256 để mã hóa văn bản. 6 - Muối và các tham số khác được lưu trong cấu trúc đã mã hóa.  **Để giải mã, bạn phải tái tạo chính xác cùng khóa — nhập cùng mật khẩu và VOID, đồng thời giữ nguyên bản mã gốc từng ký tự.**"
           }
         },
         "zh-Hans" : {
@@ -430,6 +646,12 @@
     "AboutAES256.fourthTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "So funktioniert AES-256 + Argon2id + VOID"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -472,16 +694,46 @@
             "value" : "როგორ მუშაობს AES-256 + Argon2id + VOID"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id + VOID 작동 방식"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoe AES-256 + Argon2id + VOID werkt"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como funciona o AES-256 + Argon2id + VOID"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Как работает AES-256 + Argon2id + VOID"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Så fungerar AES-256 + Argon2id + VOID"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Як працює AES-256 + Argon2id + VOID"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cách AES-256 + Argon2id + VOID hoạt động"
           }
         },
         "zh-Hans" : {
@@ -501,6 +753,12 @@
     "AboutAES256.secondDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 ist ein moderner **KDF-Algorithmus (Key Derivation Function) zur Umwandlung eines Passworts in einen kryptografischen Schlüssel**, der als internationaler Standard (RFC 9106) anerkannt ist.  Er wurde 2015 entwickelt und gewann den Password Hashing Competition als **zuverlässigste und effizienteste Methode zum Schutz von Passwörtern**.  Argon2id kombiniert die Eigenschaften von Argon2i und Argon2d und bietet **Resistenz gegen CPU- und Speicherangriffe**.  Der Algorithmus führt mehrere Berechnungsiterationen aus, arbeitet im Multithreading und fügt jeder Verschlüsselung ein einzigartiges Salt hinzu.  Das macht das Knacken des Schlüssels durch Brute Force **extrem ressourcenintensiv und zeitaufwändig**, selbst für leistungsstarke Systeme."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -543,16 +801,46 @@
             "value" : "Argon2 არის თანამედროვე **KDF (Key Derivation Function) ალგორითმი პაროლის კრიპტოგრაფიულ გასაღებად გარდაქმნისთვის**, აღიარებული საერთაშორისო სტანდარტად (RFC 9106).  ის შეიქმნა 2015 წელს და Password Hashing Competition-ის გამარჯვებულად დასახელდა, როგორც **პაროლების დაცვის ყველაზე სანდო და ეფექტიანი მეთოდი**.  Argon2id აერთიანებს Argon2i-ს და Argon2d-ს თვისებებს, **უზრუნველყოფს მდგრადობას CPU-სა და მეხსიერებაზე მიმართული შეტევების წინააღმდეგ**.  ალგორითმი ასრულებს მრავალ გამოთვლით იტერაციას, მუშაობს მრავალნაკადიან რეჟიმში და თითოეული შიფრაციისთვის ამატებს უნიკალურ მარილს.  ეს გასაღების подбор-ს **ძალიან რესურსმომთხოვნსა და ხანგრძლივს ხდის**, თუნდაც ძლიერ სისტემებში."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2는 **비밀번호를 암호 키로 변환하는 현대적인 KDF(Key Derivation Function) 알고리즘**으로, 국제 표준(RFC 9106)으로 인정받았습니다.  2015년에 개발되어 Password Hashing Competition에서 **가장 신뢰할 수 있고 효율적인 비밀번호 보호 방법**으로 선정되었습니다.  Argon2id는 Argon2i와 Argon2d의 특성을 결합하여 **CPU 및 메모리 공격에 대한 저항성**을 제공합니다.  이 알고리즘은 여러 번의 계산 반복을 수행하고, 멀티스레드 모드로 작동하며, 각 암호화마다 고유한 솔트를 추가합니다.  이에 따라 비밀번호를 무차별 대입으로 찾는 것이 **매우 많은 자원과 시간이 필요**하며, 강력한 시스템에서도 어렵습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 is een moderne **KDF-algoritme (Key Derivation Function) voor het omzetten van een wachtwoord in een cryptografische sleutel**, erkend als internationale standaard (RFC 9106).  Het werd in 2015 ontwikkeld en verkozen tot winnaar van de Password Hashing Competition als **de meest betrouwbare en efficiënte methode voor wachtwoordbescherming**.  Argon2id combineert eigenschappen van Argon2i en Argon2d en biedt **weerstand tegen CPU- en geheugengerichte aanvallen**.  Het algoritme voert meerdere rekeniteraties uit, werkt in multithreading en voegt voor elke versleuteling een unieke salt toe.  Dat maakt het kraken van de sleutel via brute force **extreem resource-intensief en tijdrovend**, zelfs voor krachtige systemen."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 é um **algoritmo KDF (Key Derivation Function) moderno para transformar uma senha em uma chave criptográfica**, reconhecido como padrão internacional (RFC 9106).  Desenvolvido em 2015, foi escolhido como vencedor do Password Hashing Competition por ser **o método mais confiável e eficiente de proteção de senhas**.  O Argon2id combina características do Argon2i e Argon2d, **oferecendo resistência a ataques de CPU e memória**.  O algoritmo executa várias iterações computacionais, opera em modo multithread e adiciona um sal exclusivo para cada criptografia.  Isso torna a quebra da chave por força bruta **extremamente dispendiosa em recursos e tempo**, mesmo para sistemas poderosos."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Argon2 — это современный **алгоритм KDF (Key Derivation Function) преобразования пароля в криптографический ключ**, признанный международным стандартом (RFC 9106).  Разработан в 2015 году и выбран победителем Password Hashing Competition как **наиболее надёжный и эффективный метод защиты паролей**.  Argon2id сочетает особенности Argon2i и Argon2d, **обеспечивая устойчивость к атакам на процессор и память**.  Алгоритм выполняет множество итераций вычислений, работает многопоточно и добавляет уникальную соль для каждого шифрования.  Это делает подбор ключа крайне **затратным** по времени и ресурсам, даже для мощных систем."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 är en modern **KDF-algoritm (Key Derivation Function) för att omvandla ett lösenord till en kryptografisk nyckel**, erkänd som internationell standard (RFC 9106).  Den utvecklades 2015 och utsågs till vinnare av Password Hashing Competition som **den mest pålitliga och effektiva metoden för lösenordsskydd**.  Argon2id kombinerar egenskaperna hos Argon2i och Argon2d och ger **motstånd mot attacker mot CPU och minne**.  Algoritmen utför flera beräkningsiterationer, körs i multitrådsläge och lägger till ett unikt salt för varje kryptering.  Detta gör nyckelknäckning med brute force **extremt resurskrävande och tidsödande**, även för kraftfulla system."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Argon2 — це сучасний **алгоритм KDF (Key Derivation Function) для перетворення пароля на криптографічний ключ**, визнаний міжнародним стандартом (RFC 9106).  Його розробили у 2015 році, і він став переможцем Password Hashing Competition як **найнадійніший і найефективніший метод захисту паролів**.  Argon2id поєднує можливості Argon2i та Argon2d, **забезпечуючи стійкість до атак на процесор і пам'ять**.  Алгоритм виконує багато обчислювальних ітерацій, працює у багатопотоковому режимі та додає унікальну сіль для кожного шифрування.  Це робить підбір ключа **надзвичайно ресурсомістким і тривалим**, навіть для потужних систем."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 là **thuật toán KDF (Key Derivation Function) hiện đại để chuyển mật khẩu thành khóa mật mã**, đã được công nhận là tiêu chuẩn quốc tế (RFC 9106).  Được phát triển năm 2015 và chiến thắng Password Hashing Competition như **phương pháp bảo vệ mật khẩu đáng tin cậy và hiệu quả nhất**.  Argon2id kết hợp đặc tính của Argon2i và Argon2d, **giúp chống lại các cuộc tấn công nhắm vào CPU và bộ nhớ**.  Thuật toán thực hiện nhiều vòng tính toán, chạy ở chế độ đa luồng và thêm muối duy nhất cho mỗi lần mã hóa.  Điều này khiến việc dò khóa bằng brute-force trở nên **cực kỳ tốn tài nguyên và thời gian**, ngay cả với các hệ thống mạnh mẽ."
           }
         },
         "zh-Hans" : {
@@ -572,6 +860,12 @@
     "AboutAES256.secondTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -614,13 +908,43 @@
             "value" : "Argon2id"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Argon2id"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Argon2id"
@@ -643,6 +967,12 @@
     "AboutAES256.thirdDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jede [VOID]-App enthält einen versteckten Parameter — **VOID Secret (internes Passwort)**.  Merkmale: • Wird aus einer großen Menge an Varianten ausgewählt; • Wird auf allen Geräten identisch generiert; • Wird nicht gespeichert oder über das Netzwerk übertragen; • Ermöglicht eine Entschlüsselung nur innerhalb der App.  **Selbst wenn das Passwort bekannt ist, bleiben die Daten ohne das korrekte VOID Secret verschlüsselt.**"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -685,16 +1015,46 @@
             "value" : "ყოველი [VOID] აპლიკაცია შეიცავს დამალულ პარამეტრს — **VOID Secret (შიდა პაროლი)**.  Особенности: • აირჩევა დიდი ვარიანტების ნაკრებიდან; • ერთნაირად გენერირდება ყველა მოწყობილობაზე; • მონაცემებში არ ინახება და ქსელით არ გადაეცემა; • დეშიფრაციას შესაძლებელს ხდის მხოლოდ აპლიკაციის ფარგლებში.  **თუნდაც პაროლი იყოს ცნობილი, სწორი VOID Secret-ის გარეშე მონაცემები შიფრულად დარჩება**."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "각 [VOID] 앱에는 숨겨진 매개변수인 **VOID Secret(내부 비밀번호)**가 포함되어 있습니다.  특징: • 다양한 후보 중에서 선택됨; • 모든 기기에서 동일하게 생성됨; • 데이터에 저장되거나 네트워크로 전송되지 않음; • 앱 내부에서만 복호화가 가능하도록 함.  **비밀번호를 알고 있더라도 올바른 VOID Secret이 없으면 데이터는 계속 암호화된 상태로 남습니다.**"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elke [VOID]-app bevat een verborgen parameter — **VOID Secret (intern wachtwoord)**.  Kenmerken: • Gekozen uit een groot aantal varianten; • Wordt op alle apparaten identiek gegenereerd; • Wordt niet opgeslagen in gegevens of via het netwerk verzonden; • Maakt ontsleuteling alleen binnen de app mogelijk.  **Zelfs als het wachtwoord bekend is, blijven de gegevens zonder de juiste VOID Secret versleuteld.**"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cada aplicativo [VOID] contém um parâmetro oculto — **VOID Secret (senha interna)**.  Características: • Selecionado a partir de um grande conjunto de variantes; • Gerado de forma idêntica em todos os dispositivos; • Não é armazenado nos dados nem transmitido pela rede; • Permite a descriptografia somente dentro do aplicativo.  **Mesmo conhecendo a senha, sem o VOID Secret correto os dados permanecem criptografados.**"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Каждое приложение [VOID] содержит скрытый параметр — **VOID Secret (внутренний пароль)**.  Особенности: • выбирается из большого набора вариантов; • одинаково генерируется на всех устройствах; • не сохраняется в данных и не передаётся по сети; • делает расшифровку возможной только внутри приложения.  **Даже при знании пароля, без правильного VOID Secret данные остаются зашифрованными**."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Varje [VOID]-app innehåller en dold parameter — **VOID Secret (internt lösenord)**.  Egenskaper: • Väljs från ett stort antal varianter; • Genereras identiskt på alla enheter; • Lagrar inte data och skickas inte över nätverket; • Gör dekryptering möjlig endast i appen.  **Även om lösenordet är känt förblir data krypterade utan rätt VOID Secret.**"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кожен застосунок [VOID] містить прихований параметр — **VOID Secret (внутрішній пароль)**.  Особливості: • обирається з великого набору варіантів; • генерується однаково на всіх пристроях; • не зберігається в даних і не передається мережею; • уможливлює розшифрування лише всередині застосунку.  **Навіть знаючи пароль, без правильного VOID Secret дані залишаються зашифрованими**."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mỗi ứng dụng [VOID] đều chứa một tham số ẩn — **VOID Secret (mật khẩu nội bộ)**.  Đặc điểm: • Được chọn từ tập hợp rất lớn các biến thể; • Được tạo giống nhau trên mọi thiết bị; • Không lưu trong dữ liệu hay truyền qua mạng; • Khiến việc giải mã chỉ khả thi bên trong ứng dụng.  **Ngay cả khi biết mật khẩu, nếu thiếu VOID Secret chính xác thì dữ liệu vẫn được mã hóa.**"
           }
         },
         "zh-Hans" : {
@@ -714,6 +1074,12 @@
     "AboutAES256.thirdTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID \"Pepper\""
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -756,16 +1122,46 @@
             "value" : "VOID «პილპილი»"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID \"Pepper\""
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID \"Pepper\""
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID \"Pepper\""
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID «Перец»"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID \"Pepper\""
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID «Перець»"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID \"Pepper\""
           }
         },
         "zh-Hans" : {
@@ -785,6 +1181,12 @@
     "Alert.сopied" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopiert"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -827,16 +1229,46 @@
             "value" : "კოპირებულია"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "복사됨"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gekopieerd"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copiado"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скопировано"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopierat"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Скопійовано"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã sao chép"
           }
         },
         "zh-Hans" : {
@@ -856,6 +1288,12 @@
     "Coding.decode" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entschlüsseln"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -898,16 +1336,46 @@
             "value" : "დეშიფრაცია"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "복호화"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ontsleutelen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decodificar"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Декодирование"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dekryptera"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Декодування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giải mã"
           }
         },
         "zh-Hans" : {
@@ -927,6 +1395,12 @@
     "Coding.encode" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verschlüsseln"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -969,16 +1443,46 @@
             "value" : "კოდირება"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versleutelen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificar"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кодирование"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kryptera"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кодування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mã hóa"
           }
         },
         "zh-Hans" : {
@@ -998,6 +1502,12 @@
     "Coding.Placeholder.decode" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bereit zum Entschlüsseln…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1040,16 +1550,46 @@
             "value" : "მომზადებულია დეშიფრაციისთვის…"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "복호화 준비 중…"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klaar om te ontsleutelen…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto para decodificar…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово к декодированию…"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redo att dekryptera…"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово до декодування…"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sẵn sàng giải mã…"
           }
         },
         "zh-Hans" : {
@@ -1069,6 +1609,12 @@
     "Coding.Placeholder.encode" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bereit zum Verschlüsseln…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1111,16 +1657,46 @@
             "value" : "მომზადებულია კოდირებისთვის…"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화 준비 중…"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klaar om te versleutelen…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto para codificar…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово к кодированию…"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redo att kryptera…"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово до кодування…"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sẵn sàng mã hóa…"
           }
         },
         "zh-Hans" : {
@@ -1140,6 +1716,12 @@
     "Cryptography.AES-256" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1182,13 +1764,43 @@
             "value" : "AES-256"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "AES-256"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "AES-256"
@@ -1211,6 +1823,12 @@
     "Cryptography.AES-256.instructions" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Wenn du diesen Bildschirm verlässt, werden alle Daten (Passwort, VOID, Argon2id-Parameter) zurückgesetzt.  Die App speichert keine Daten im Telefonspeicher.**"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1253,16 +1871,46 @@
             "value" : "**თუ ამ ეკრანს დატოვებთ, ყველა მონაცემი (პაროლი, VOID, Argon2id-ის პარამეტრები) განულდება.  აპლიკაცია არ ინახავს მონაცემებს ტელეფონის მეხსიერებაში.**"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**이 화면을 떠나면 모든 데이터(비밀번호, VOID, Argon2id 매개변수)가 초기화됩니다.  앱은 휴대전화 메모리에 데이터를 저장하지 않습니다.**"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Wanneer je dit scherm verlaat, worden alle gegevens (wachtwoord, VOID, Argon2id-parameters) gereset.  De app slaat geen gegevens op in het geheugen van de telefoon.**"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Ao sair desta tela, todos os dados (senha, VOID, parâmetros Argon2id) serão redefinidos.  O aplicativo não armazena dados na memória do telefone.**"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**При покидании этого экрана все данные (пароль, VOID, параметры Argon2id) сбросятся.  Приложение не хранит данные в памяти телефона.**"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**När du lämnar den här skärmen återställs all data (lösenord, VOID, Argon2id-parametrar).  Appen lagrar inte data i telefonens minne.**"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**При виході з цього екрану всі дані (пароль, VOID, параметри Argon2id) скинуться.  Додаток не зберігає дані в пам'яті телефону.**"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Khi rời khỏi màn hình này, toàn bộ dữ liệu (mật khẩu, VOID, tham số Argon2id) sẽ được đặt lại.  Ứng dụng không lưu dữ liệu trong bộ nhớ điện thoại.**"
           }
         },
         "zh-Hans" : {
@@ -1282,6 +1930,12 @@
     "Cryptography.decryption" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entschlüsselung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1324,16 +1978,46 @@
             "value" : "დეშიფრაცია"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "복호화"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ontsleuteling"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Descriptografia"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Дешифрование"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dekryptering"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Розшифрування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Giải mã"
           }
         },
         "zh-Hans" : {
@@ -1353,6 +2037,12 @@
     "Cryptography.encryption" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verschlüsselung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1395,16 +2085,46 @@
             "value" : "შიფრაცია"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versleuteling"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criptografia"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Шифрование"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kryptering"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Шифрування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mã hóa"
           }
         },
         "zh-Hans" : {
@@ -1424,6 +2144,12 @@
     "Cryptography.Placeholder.decrypt" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bereit zum Entschlüsseln…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1466,16 +2192,46 @@
             "value" : "მომზადებულია დეშიფრაციისთვის…"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "복호화 준비 중…"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klaar om te ontsleutelen…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto para descriptografar…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово к дешифрованию…"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redo att dekryptera…"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово до розшифрування…"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sẵn sàng giải mã…"
           }
         },
         "zh-Hans" : {
@@ -1495,6 +2251,12 @@
     "Cryptography.Placeholder.default" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passwort festlegen!"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1537,16 +2299,46 @@
             "value" : "დააყენეთ პაროლი!"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비밀번호를 설정하세요!"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stel het wachtwoord in!"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Defina a senha!"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Установите пароль!"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ställ in lösenord!"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Встановити пароль!"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy đặt mật khẩu!"
           }
         },
         "zh-Hans" : {
@@ -1566,6 +2358,12 @@
     "Cryptography.Placeholder.encrypt" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bereit zum Verschlüsseln…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1608,16 +2406,46 @@
             "value" : "მომზადებულია გასაშიფრად..."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화 준비 중…"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Klaar om te versleutelen…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pronto para criptografar…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово к шифрованию…"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Redo att kryptera…"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Готово до шифрування…"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sẵn sàng mã hóa…"
           }
         },
         "zh-Hans" : {
@@ -1637,6 +2465,12 @@
     "Cryptography.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kryptografie"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1679,16 +2513,46 @@
             "value" : "კრიპტოგრაფია"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호학"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cryptografie"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criptografia"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Криптография"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kryptografi"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Криптографія"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mật mã"
           }
         },
         "zh-Hans" : {
@@ -1708,6 +2572,12 @@
     "CryptoSettings.dividerMessage" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Nur für die Verschlüsselung ↓"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1750,16 +2620,46 @@
             "value" : "↓ მხოლოდ შიფრაციისთვის ↓"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ 암호화 전용 ↓"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Alleen voor versleuteling ↓"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Apenas para criptografia ↓"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "↓ Только для шифрования ↓"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Endast för kryptering ↓"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "↓ Лише для шифрування ↓"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Chỉ dành cho mã hóa ↓"
           }
         },
         "zh-Hans" : {
@@ -1779,6 +2679,12 @@
     "CryptoSettings.extreme" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extrem"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1821,16 +2727,46 @@
             "value" : "ექსტრემალური"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "극도로 강함"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extreem"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extremo"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Экстремально"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extrem"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Екстремально"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cực mạnh"
           }
         },
         "zh-Hans" : {
@@ -1850,6 +2786,12 @@
     "CryptoSettings.highCPU" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hohe Auslastung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1892,16 +2834,46 @@
             "value" : "მაღალი CPU"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "높은 부하"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoge belasting"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alta carga"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Высокая нагрузка"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hög belastning"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Високе навантаження"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tải cao"
           }
         },
         "zh-Hans" : {
@@ -1921,6 +2893,12 @@
     "CryptoSettings.Iterations.instructions" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Anzahl der **Iterationen** beeinflusst die **Stärke** der Verschlüsselung. Mehr Iterationen = schwerer zu knacken, aber **langsamer**."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1963,16 +2941,46 @@
             "value" : "**იტერაციების რაოდენობა** გავლენას ახდენს **შიფრაციის სიმტკიცეზე**. რაოდენობის გაზრდა ართულებს დაშიფვრას, მაგრამ **ამცირებს სიჩქარეს**."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**반복 횟수**는 암호화의 **강도**에 영향을 줍니다. 횟수가 많을수록 풀기 어렵지만 **속도는 느려집니다**."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het aantal **iteraties** beïnvloedt de **sterkte** van de versleuteling. Meer = moeilijker te kraken, maar **langzamer**."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**O número de iterações** afeta a **força** da criptografia. Quanto maior, mais difícil de quebrar, porém **mais lento**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Количество итераций** влияет на **силу** шифрования: чем больше итераций, тем сложнее взломать, но тем **медленнее** процесс шифрования и расшифровки данных."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antalet **iterationer** påverkar krypteringens **styrka**. Fler = svårare att knäcka, men **långsammare**."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кількість **ітерацій** впливає на **стійкість** шифрування. Більше = складніше зламати, але **повільніше**."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Số vòng lặp** ảnh hưởng đến **độ mạnh** của mã hóa. Vòng lặp càng nhiều thì càng khó bẻ khóa nhưng quá trình sẽ **chậm hơn**."
           }
         },
         "zh-Hans" : {
@@ -1992,6 +3000,12 @@
     "CryptoSettings.Iterations.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iterationen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2034,16 +3048,46 @@
             "value" : "იტერაციები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "반복"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iteraties"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iterações"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Итерации"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Iterationer"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ітерації"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vòng lặp"
           }
         },
         "zh-Hans" : {
@@ -2063,6 +3107,12 @@
     "CryptoSettings.KeyLength.instructions" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die **Schlüssellänge** bestimmt, wie schwer es ist, deine Daten per Brute Force zu knacken — je **länger** der Schlüssel, desto **stärker** der Schutz. Höhere Werte erhöhen die Sicherheit, können die Verarbeitung jedoch leicht verlangsamen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2105,16 +3155,46 @@
             "value" : "**საკვანძო სიგრძე** განსაზღვრავს რამდენად რთულია თქვენი მონაცემების ბრუტფორსი — რაც **მეთია სიგრძე**, მით **მტკიცეა დაცვა**. მაღალი მნიშვნელობები ზრდის უსაფრთხოებას, თუმცა შესაძლოა ცოტა შეანელოს პროცესირება."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**키 길이**는 데이터를 무차별 대입으로 뚫기 어려운 정도를 결정합니다 — 키가 **길수록** 보호가 **강해집니다**. 값이 높을수록 보안은 증가하지만 처리 속도가 약간 느려질 수 있습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De **sleutellengte** bepaalt hoe moeilijk het is om je gegevens met brute force te kraken — hoe **langer** de sleutel, hoe **sterker** de bescherming. Hogere waarden vergroten de veiligheid maar kunnen de verwerking iets vertragen."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**O comprimento da chave** define o quão difícil é quebrar seus dados por força bruta — quanto mais **longa** a chave, mais **forte** a proteção. Valores maiores aumentam a segurança, mas podem deixar o processamento um pouco mais lento."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Длина ключа** определяет, насколько сложно взломать ваши данные перебором — чем **длиннее** ключ, тем **выше защита**. Большие значения повышают безопасность, но могут немного замедлить обработку."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Nyckellängden** avgör hur svårt det är att knäcka dina data genom brute force — ju **längre** nyckeln är, desto **starkare** skydd. Högre värden ökar säkerheten men kan göra bearbetningen något långsammare."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Довжина ключа** означає, наскільки складно підібрати ваші дані методом brute-force — чим **довший** ключ, тим **сильніший** захист. Вищі значення підвищують безпеку, але можуть трохи сповільнити обробку."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Độ dài khóa** quyết định mức độ khó khi bị brute-force — khóa càng **dài**, bảo vệ càng **mạnh**. Giá trị cao hơn giúp tăng bảo mật nhưng có thể làm chậm xử lý đôi chút."
           }
         },
         "zh-Hans" : {
@@ -2134,6 +3214,12 @@
     "CryptoSettings.KeyLength.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schlüssellänge"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2176,16 +3262,46 @@
             "value" : "საკვანძო სიგრძე"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "키 길이"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sleutellengte"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comprimento da chave"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Длина ключа"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nyckellängd"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Довжина ключа"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Độ dài khóa"
           }
         },
         "zh-Hans" : {
@@ -2205,6 +3321,12 @@
     "CryptoSettings.Layers.instructions" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die maximale **Anzahl der Schichten hängt von der gewählten Schlüssellänge** ab. Ein längerer Schlüssel ermöglicht mehr Schichten und erhöht so den Schutz."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2247,16 +3369,46 @@
             "value" : "მაქსიმალური **შრეების რაოდენობა დამოკიდებულია საკვანძო სიგრძეზე**, რომელსაც ირჩევთ. გრძელი საკვანძო მეტი შრის დამატების საშუალებას იძლევა, რაც ზრდის დაცვას."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "최대 **레이어 수는 선택한 키 길이에 따라 달라집니다**. 더 긴 키는 더 많은 레이어를 허용해 보호 수준을 높입니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het maximale **aantal lagen hangt af van de sleutellengte** die je kiest. Een langere sleutel maakt meer lagen mogelijk en verhoogt daarmee de bescherming."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O número máximo de **camadas depende do comprimento da chave** escolhido. Uma chave mais longa permite mais camadas, aumentando sua proteção."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Максимальное **количество слоёв зависит от выбранной длины ключа**. Чем длиннее ключ, тем больше слоёв можно использовать, повышая уровень защиты."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det maximala **antalet lager beror på nyckellängden** du väljer. En längre nyckel tillåter fler lager och ökar därmed skyddet."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Максимальна **кількість рівнів залежить від обраної довжини ключа**. Довший ключ дозволяє використовувати більше рівнів, підвищуючи захист."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số **lớp tối đa phụ thuộc vào độ dài khóa** bạn chọn. Khóa dài hơn cho phép nhiều lớp hơn, từ đó tăng cường bảo vệ."
           }
         },
         "zh-Hans" : {
@@ -2276,6 +3428,12 @@
     "CryptoSettings.Layers.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anzahl der Verschlüsselungsschichten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2318,16 +3476,46 @@
             "value" : "შიფრაციის შრეების რაოდენობა"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화 레이어 수"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aantal versleutelingslagen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Número de camadas de criptografia"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Количество слоёв шифрования"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Antal krypteringslager"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кількість рівнів шифрування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số lớp mã hóa"
           }
         },
         "zh-Hans" : {
@@ -2347,6 +3535,12 @@
     "CryptoSettings.Layers.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schichten"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2389,16 +3583,46 @@
             "value" : "შრეები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "레이어"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lagen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camadas"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Слои"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lager"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Рівні"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lớp"
           }
         },
         "zh-Hans" : {
@@ -2418,6 +3642,12 @@
     "CryptoSettings.lowCPU" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Niedrige Auslastung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2460,16 +3690,46 @@
             "value" : "დაბალი CPU"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "낮은 부하"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lage belasting"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Baixa carga"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Слабая нагрузка"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Låg belastning"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Низьке навантаження"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tải thấp"
           }
         },
         "zh-Hans" : {
@@ -2489,6 +3749,12 @@
     "CryptoSettings.max" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximum"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2531,16 +3797,46 @@
             "value" : "მაქსიმუმი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "최대"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximum"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Máximo"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Максимально"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximal"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Максимум"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tối đa"
           }
         },
         "zh-Hans" : {
@@ -2560,6 +3856,12 @@
     "CryptoSettings.medium" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mittel"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2602,16 +3904,46 @@
             "value" : "საშუალო"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "중간"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gemiddeld"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Média"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Средне"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Medel"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Середньо"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trung bình"
           }
         },
         "zh-Hans" : {
@@ -2631,58 +3963,94 @@
     "CryptoSettings.Memory.instructions" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Speicher** bezeichnet die Menge an RAM, die während der Verschlüsselung zum Schutz deiner Daten genutzt wird. Je mehr Speicher verwendet wird, desto schwerer fällt es Angreifern, dein Passwort zu knacken, da Angriffe mehr Ressourcen und Zeit benötigen.  Allerdings kann ein **hoher Speicherverbrauch dein Gerät verlangsamen** — wähle einen Kompromiss zwischen Sicherheit und Leistung."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**Memory** is the amount of RAM used during encryption to protect your data. The more memory used, the harder it is for attackers to crack your password because attacks require more resources and time. However, **higher memory usage can slow down your device** — choose a balance between security and performance."
+            "value" : "**Memory** is the amount of RAM used during encryption to protect your data. The more memory used, the harder it is for attackers to crack your password because attacks require more resources and time.  However, **higher memory usage can slow down your device** — choose a balance between security and performance."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La **memoria** es la cantidad de RAM utilizada durante el cifrado para proteger tus datos.  \nCuanta más memoria se use, más difícil será para los atacantes descifrar tu contraseña, ya que los ataques requieren más recursos y tiempo.  \nSin embargo, **un mayor uso de memoria puede ralentizar tu dispositivo** — elige un equilibrio entre seguridad y rendimiento."
+            "value" : "La **memoria** es la cantidad de RAM utilizada durante el cifrado para proteger tus datos.  \nCuanta más memoria se use, más difícil será para los atacantes descifrar tu contraseña, ya que los ataques requieren más recursos y tiempo.  Sin embargo, **un mayor uso de memoria puede ralentizar tu dispositivo** — elige un equilibrio entre seguridad y rendimiento."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La **mémoire** est la quantité de RAM utilisée pendant le chiffrement pour protéger les données. Plus de mémoire est utilisée, plus il est difficile pour un attaquant de craquer le mot de passe. Les attaques nécessitent plus de ressources et de temps. Cependant, **une utilisation élevée de la mémoire peut ralentir votre appareil** — choisissez un équilibre entre sécurité et performance."
+            "value" : "La **mémoire** est la quantité de RAM utilisée pendant le chiffrement pour protéger les données. Plus de mémoire est utilisée, plus il est difficile pour un attaquant de craquer le mot de passe. Les attaques nécessitent plus de ressources et de temps.  Cependant, **une utilisation élevée de la mémoire peut ralentir votre appareil** — choisissez un équilibre entre sécurité et performance."
           }
         },
         "hi" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**मेमोरी** वह RAM होती है जिसका उपयोग एन्क्रिप्शन के दौरान आपके डेटा की सुरक्षा के लिए किया जाता है। मेमोरी जितनी अधिक होगी, हमलावर के लिए पासवर्ड तोड़ना उतना कठिन होगा क्योंकि हमलों को अधिक संसाधन और समय चाहिए। हालाँकि, **अधिक मेमोरी उपयोग से आपका डिवाइस धीमा हो सकता है** — सुरक्षा और प्रदर्शन के बीच संतुलन चुनें।"
+            "value" : "**मेमोरी** वह RAM होती है जिसका उपयोग एन्क्रिप्शन के दौरान आपके डेटा की सुरक्षा के लिए किया जाता है। मेमोरी जितनी अधिक होगी, हमलावर के लिए पासवर्ड तोड़ना उतना कठिन होगा क्योंकि हमलों को अधिक संसाधन और समय चाहिए।  हालाँकि, **अधिक मेमोरी उपयोग से आपका डिवाइस धीमा हो सकता है** — सुरक्षा और प्रदर्शन के बीच संतुलन चुनें।"
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La **memoria** è la quantità di RAM utilizzata durante la cifratura per proteggere i dati. Più memoria viene utilizzata, più difficile è per gli attaccanti decifrare la password. Gli attacchi richiedono più risorse e tempo. Tuttavia, **un uso elevato della memoria può rallentare il dispositivo** — scegli un equilibrio tra sicurezza e prestazioni."
+            "value" : "La **memoria** è la quantità di RAM utilizzata durante la cifratura per proteggere i dati. Più memoria viene utilizzata, più difficile è per gli attaccanti decifrare la password. Gli attacchi richiedono più risorse e tempo.  Tuttavia, **un uso elevato della memoria può rallentare il dispositivo** — scegli un equilibrio tra sicurezza e prestazioni."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**メモリ**は、データ保護のために暗号化中に使用されるRAMの量です。  \n使用されるメモリが多いほど、攻撃者がパスワードを解読するのは難しくなります。  \nしかし、**高いメモリ使用量はデバイスの動作を遅くする可能性があります** — セキュリティとパフォーマンスのバランスを選択してください。"
+            "value" : "**メモリ**は、データ保護のために暗号化中に使用されるRAMの量です。  \n使用されるメモリが多いほど、攻撃者がパスワードを解読するのは難しくなります。  しかし、**高いメモリ使用量はデバイスの動作を遅くする可能性があります** — セキュリティとパフォーマンスのバランスを選択してください。"
           }
         },
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**მეხსიერება** არის RAM-ის რაოდენობა, რომელიც გამოიყენება მონაცემების დასაცავად. მოხმარებული მეხსიერების რაოდენობის ზრდით ართულებს შეტევას, რადგან შეტევები საჭიროებენ უფრო მეტ რესურსს და დროს.თუმცა, **მაღალი მეხსიერების გამოყენებამ შეიძლება შეანელოს მოწყობილობის მუშაობა** — აირჩიეთ ბალანსი უსაფრთხოებასა და შესრულებას შორის."
+            "value" : "**მეხსიერება** არის RAM-ის რაოდენობა, რომელიც გამოიყენება მონაცემების დასაცავად. მოხმარებული მეხსიერების რაოდენობის ზრდით ართულებს შეტევას, რადგან შეტევები საჭიროებენ უფრო მეტ რესურსს და დროს.  თუმცა, **მაღალი მეხსიერების გამოყენებამ შეიძლება შეანელოს მოწყობილობის მუშაობა** — აირჩიეთ ბალანსი უსაფრთხოებასა და შესრულებას შორის."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**메모리**는 암호화 중 데이터 보호를 위해 사용하는 RAM의 양입니다. 메모리를 더 많이 사용하면 공격자가 비밀번호를 깨기가 더 어려워집니다. 공격에는 더 많은 자원과 시간이 필요하기 때문입니다.  하지만 **메모리를 많이 사용하면 기기가 느려질 수 있습니다** — 보안과 성능 사이에서 균형을 선택하세요."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Geheugen** is de hoeveelheid RAM die tijdens de versleuteling wordt gebruikt om je gegevens te beschermen. Hoe meer geheugen er wordt gebruikt, hoe moeilijker het is voor aanvallers om je wachtwoord te kraken, omdat aanvallen meer middelen en tijd vergen.  Maar **een hoger geheugengebruik kan je apparaat vertragen** — kies een balans tussen veiligheid en prestaties."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Memória** é a quantidade de RAM usada durante a criptografia para proteger seus dados. Quanto mais memória utilizada, mais difícil para os atacantes quebrar sua senha, pois os ataques exigem mais recursos e tempo.  No entanto, **usar muita memória pode deixar o dispositivo mais lento** — encontre um equilíbrio entre segurança e desempenho."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**Объём оперативной памяти** (RAM), используемой при шифровании для защиты данных. Чем больше памяти используется, тем сложнее атакующему взломать пароль, потому что атаки требуют больше ресурсов и времени. Однако **высокая нагрузка на память может замедлить работу устройства** — выбирайте баланс между безопасностью и производительностью."
+            "value" : "**Объём оперативной памяти** (RAM), используемой при шифровании для защиты данных. Чем больше памяти используется, тем сложнее атакующему взломать пароль, потому что атаки требуют больше ресурсов и времени.  Однако **высокая нагрузка на память может замедлить работу устройства** — выбирайте баланс между безопасностью и производительностью."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Minne** är mängden RAM som används under kryptering för att skydda dina data. Ju mer minne som används, desto svårare är det för angripare att knäcka ditt lösenord eftersom attacker kräver mer resurser och tid.  Men **hög minnesanvändning kan göra enheten långsammare** — välj en balans mellan säkerhet och prestanda."
           }
         },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**Пам'ять** — це обсяг ОЗП, який використовується під час шифрування для захисту ваших даних. Чим більше пам'яті використовується, тим складніше зламати ваш пароль, оскільки атаки потребують більше ресурсів і часу. Проте **велике споживання пам'яті може сповільнити пристрій** — обирайте баланс між безпекою та продуктивністю."
+            "value" : "**Пам'ять** — це обсяг ОЗП, який використовується під час шифрування для захисту ваших даних. Чим більше пам'яті використовується, тим складніше зламати ваш пароль, оскільки атаки потребують більше ресурсів і часу.  Проте **велике споживання пам'яті може сповільнити пристрій** — обирайте баланс між безпекою та продуктивністю."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Bộ nhớ** là lượng RAM được dùng trong quá trình mã hóa để bảo vệ dữ liệu của bạn. Dùng nhiều bộ nhớ hơn khiến kẻ tấn công khó bẻ khóa vì cần nhiều tài nguyên và thời gian.  Tuy nhiên, **mức sử dụng bộ nhớ cao có thể làm thiết bị chậm lại** — hãy chọn cân bằng giữa bảo mật và hiệu năng."
           }
         },
         "zh-Hans" : {
@@ -2702,6 +4070,12 @@
     "CryptoSettings.Memory.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speicher"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2744,16 +4118,46 @@
             "value" : "მეხსიერება"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "메모리"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geheugen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memória"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Память"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Minne"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пам'ять"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bộ nhớ"
           }
         },
         "zh-Hans" : {
@@ -2773,6 +4177,24 @@
     "CryptoSettings.Parallelism.instructions %lld" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Dein Gerät verfügt über **%lld Kern**. Eine höhere Anzahl paralleler Aufgaben kann die **Verschlüsselung beschleunigen**, verbraucht jedoch möglicherweise mehr Akku."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Dein Gerät verfügt über **%lld Kerne**. Eine höhere Anzahl paralleler Aufgaben kann die **Verschlüsselung beschleunigen**, verbraucht jedoch möglicherweise mehr Akku."
+                }
+              }
+            }
+          }
+        },
         "en" : {
           "variations" : {
             "plural" : {
@@ -2893,6 +4315,60 @@
             }
           }
         },
+        "ko" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "사용 중인 기기는 **%lld개의 코어**를 가지고 있습니다. 병렬 작업 수를 늘리면 **암호화 속도를 높일 수 있지만**, 배터리 소모가 증가할 수 있습니다."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "사용 중인 기기는 **%lld개의 코어**를 가지고 있습니다. 병렬 작업 수를 늘리면 **암호화 속도를 높일 수 있지만**, 배터리 소모가 증가할 수 있습니다."
+                }
+              }
+            }
+          }
+        },
+        "nl" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Je apparaat heeft **%lld core**. Door het aantal parallelle taken te verhogen kun je de **versleuteling versnellen**, maar het kan meer batterij verbruiken."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Je apparaat heeft **%lld cores**. Door het aantal parallelle taken te verhogen kun je de **versleuteling versnellen**, maar het kan meer batterij verbruiken."
+                }
+              }
+            }
+          }
+        },
+        "pt" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Seu dispositivo possui **%lld núcleo**. Aumentar o número de tarefas paralelas pode **acelerar a criptografia**, mas pode consumir mais bateria."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Seu dispositivo possui **%lld núcleos**. Aumentar o número de tarefas paralelas pode **acelerar a criptografia**, mas pode consumir mais bateria."
+                }
+              }
+            }
+          }
+        },
         "ru" : {
           "variations" : {
             "plural" : {
@@ -2923,6 +4399,24 @@
             }
           }
         },
+        "sv" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Din enhet har **%lld kärna**. Om du ökar antalet parallella uppgifter kan du **snabba upp krypteringen**, men det kan använda mer batteri."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Din enhet har **%lld kärnor**. Om du ökar antalet parallella uppgifter kan du **snabba upp krypteringen**, men det kan använda mer batteri."
+                }
+              }
+            }
+          }
+        },
         "uk" : {
           "variations" : {
             "plural" : {
@@ -2948,6 +4442,24 @@
                 "stringUnit" : {
                   "state" : "translated",
                   "value" : "Ваш пристрій має **%lld ядер**. Збільшення кількості паралельних завдань може **прискорити шифрування**, але може витрачати більше батареї."
+                }
+              }
+            }
+          }
+        },
+        "vi" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Thiết bị của bạn có **%lld lõi**. Tăng số tác vụ song song có thể **tăng tốc mã hóa**, nhưng cũng có thể tiêu hao pin nhiều hơn."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Thiết bị của bạn có **%lld lõi**. Tăng số tác vụ song song có thể **tăng tốc mã hóa**, nhưng cũng có thể tiêu hao pin nhiều hơn."
                 }
               }
             }
@@ -2994,6 +4506,12 @@
     "CryptoSettings.Parallelism.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parallelität"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3036,16 +4554,46 @@
             "value" : "პარალელიზმი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "병렬 처리"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paralleliteit"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paralelismo"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Параллелизм"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parallellitet"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Паралелізм"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tính song song"
           }
         },
         "zh-Hans" : {
@@ -3065,6 +4613,12 @@
     "CryptoSettings.Salt.instructions" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Salt** ist zufällige Daten, die deinem Passwort vor der Verschlüsselung hinzugefügt werden. Dadurch bleibt das Ergebnis **einzigartig**, selbst bei demselben Passwort, und schützt vor Wiederverwendungsangriffen und Passwort-Cracking. Je **länger** das Salt, desto **stärker** der Schutz — schwerer zu erraten, schwerer zu knacken."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3107,16 +4661,46 @@
             "value" : "**მარილი** არის შემთხვევითი მონაცემები, რომელიც დაემატება პაროლს შიფრაციის წინ. ეს ხდის შედეგს **უნიკალურს**, მიუხედავად პაროლის სიდიდისა, იცავს ხელახლა გამოყენების შეტევებისგან და პაროლის გატეხვისგან. **რაც უფრო გრძელია მარილი, მით უფრო ძლიერია დაცვა** — რთულია \nგამოცნობა, რთულია გატეხვა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**솔트**는 암호화 전에 비밀번호에 추가되는 임의의 데이터입니다. 같은 비밀번호를 사용하더라도 결과를 **유일하게** 만들어 재사용 공격과 비밀번호 크래킹으로부터 보호합니다. 솔트가 **길수록** 보호가 **강해지며**, 추측과 해독이 더 어려워집니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Salt** is willekeurige data die vóór de versleuteling aan je wachtwoord wordt toegevoegd. Het maakt het resultaat **uniek**, zelfs als het wachtwoord hetzelfde is, en beschermt tegen hergebruikaanvallen en wachtwoordkraken. Hoe **langer** de salt, hoe **sterker** de bescherming — moeilijker te raden en moeilijker te kraken."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Sal** é um dado aleatório adicionado à sua senha antes da criptografia. Ele torna o resultado **único**, mesmo com a mesma senha, protegendo contra ataques de reutilização e quebra de senha. Quanto mais **longo** o sal, mais **forte** a proteção — mais difícil de adivinhar, mais difícil de quebrar."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Соль** — это случайные данные, которые добавляются к паролю перед шифрованием. Она делает результат **уникальным** даже при одинаковом пароле, защищая от атак повторного использования и взлома паролей. **Чем длиннее соль, тем сильнее защита** — труднее угадать, труднее взломать."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Salt** är slumpmässig data som läggs till ditt lösenord innan kryptering. Det gör resultatet **unikt** även om lösenordet är detsamma, och skyddar mot återanvändningsattacker och lösenordsknäckning. Ju **längre** saltet är, desto **starkare** är skyddet — svårare att gissa och svårare att knäcka."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Сіль** — це випадкові дані, які додаються до вашого пароля перед шифруванням. Вона робить результат **унікальним** навіть тоді, коли пароль однаковий, захищаючи від атак повторного використання та підбору паролів. Чим **довша** сіль, тим **сильніший захист** — важче вгадати, важче зламати."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Muối** là dữ liệu ngẫu nhiên được thêm vào mật khẩu trước khi mã hóa. Nó khiến kết quả **duy nhất** ngay cả khi mật khẩu giống nhau, bảo vệ khỏi các cuộc tấn công tái sử dụng và bẻ khóa. Muối càng **dài**, bảo vệ càng **mạnh** — khó đoán hơn, khó bẻ hơn."
           }
         },
         "zh-Hans" : {
@@ -3136,6 +4720,12 @@
     "CryptoSettings.Salt.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3178,16 +4768,46 @@
             "value" : "მარილი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "솔트"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salt"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sal"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Соль"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salt"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сіль"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Muối"
           }
         },
         "zh-Hans" : {
@@ -3207,6 +4827,12 @@
     "CryptoSettings.Security.passwordPlaceholder" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passwort"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3249,16 +4875,46 @@
             "value" : "პაროლი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비밀번호"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wachtwoord"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Senha"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пароль"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lösenord"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Пароль"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mật khẩu"
           }
         },
         "zh-Hans" : {
@@ -3278,6 +4934,12 @@
     "CryptoSettings.Security.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sicherheit"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3320,16 +4982,46 @@
             "value" : "უსაფრთხოება"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "보안"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beveiliging"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segurança"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Безопасность"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Säkerhet"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Безпека"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bảo mật"
           }
         },
         "zh-Hans" : {
@@ -3349,6 +5041,12 @@
     "CryptoSettings.Security.Void.instructions" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID verstärkt den kryptografischen Schlüssel**, indem es eine versteckte interne Komponente hinzufügt.  Der Wert 0 bedeutet, dass ohne VOID verschlüsselt wird.  **Die VOID-Nummer beeinflusst nur die Variantenwahl**, nicht das Schutzniveau."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3391,16 +5089,46 @@
             "value" : "**VOID აძლიერებს კრიპტოგრაფიულ გასაღებს**, რადგან მას დამატებით დამალულ შიდა კომპონენტს უმატებს.  0 ნიშნავს, რომ შიფრაცია VOID-ის გარეშე სრულდება.  **VOID-ის ნომერი მხოლოდ ვარიანტის არჩევას განსაზღვრავს** და არა დაცვის დონეს."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID는 숨겨진 내부 구성 요소를 추가하여 암호 키를 강화**합니다.  값이 0이면 VOID 없이 암호화를 수행함을 의미합니다.  **VOID 번호는 변형 선택에만 영향을 미치며**, 보호 수준은 바꾸지 않습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID versterkt de cryptografische sleutel** door een verborgen interne component toe te voegen.  Een waarde van 0 betekent dat er wordt versleuteld zonder VOID.  **Het VOID-nummer beïnvloedt alleen de variantkeuze**, niet het beschermingsniveau."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**O VOID reforça a chave criptográfica** adicionando um componente interno oculto.  Um valor 0 significa que a criptografia é realizada sem VOID.  **O número do VOID apenas afeta a escolha da variante**, não o nível de proteção."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**VOID усиливает криптографический ключ**, добавляя к нему скрытый внутренний компонент.  Значение 0 означает, что шифрование выполняется без VOID.  **Номер VOID влияет только на выбор варианта**, но не изменяет уровень защиты."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID förstärker den kryptografiska nyckeln** genom att lägga till en dold intern komponent.  Värdet 0 betyder att krypteringen utförs utan VOID.  **VOID-numret påverkar bara variantvalet**, inte skyddsnivån."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**VOID посилює криптографічний ключ**, додаючи прихований внутрішній компонент.  0 означає, що шифрування виконується без VOID.  **Номер VOID впливає лише на вибір варіанта**, а не на рівень захисту."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID tăng cường khóa mật mã** bằng cách thêm thành phần nội bộ ẩn.  Giá trị 0 có nghĩa là mã hóa được thực hiện mà không có VOID.  **Số VOID chỉ ảnh hưởng đến việc chọn biến thể**, không thay đổi mức bảo vệ."
           }
         },
         "zh-Hans" : {
@@ -3420,6 +5148,12 @@
     "CryptoSettings.Security.Void.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geheimnis"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3462,16 +5196,46 @@
             "value" : "საიდუმლო"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "비밀"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geheim"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Segredo"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Секрет"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hemlighet"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Секрет"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bí mật"
           }
         },
         "zh-Hans" : {
@@ -3491,6 +5255,12 @@
     "CryptoSettings.Security.Void.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3533,13 +5303,43 @@
             "value" : "VOID"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
         "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "vi" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID"
@@ -3562,6 +5362,12 @@
     "CryptoSettings.strong" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stark"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3604,16 +5410,46 @@
             "value" : "ძლიერი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "강함"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sterk"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forte"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сильно"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Starkt"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сильно"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mạnh"
           }
         },
         "zh-Hans" : {
@@ -3633,6 +5469,12 @@
     "CryptoSettings.Timer.instuctions" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Nach der gewählten Zeit werden die Daten unzugänglich**."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3675,16 +5517,46 @@
             "value" : "**მონაცემები ვერ იქნება ხელმისაწვდომი** შერჩეული დროის გასვლის შემდეგ."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "선택한 시간이 지나면 **데이터에 접근할 수 없습니다**."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Gegevens worden ontoegankelijk** na de gekozen tijd."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Os dados se tornam inacessíveis** após o tempo escolhido."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Данные становятся недоступными** после выбранного времени."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Data blir otillgängliga** efter den valda tiden."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Дані стають недоступними** після обраного часу."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Dữ liệu sẽ không thể truy cập** sau khoảng thời gian đã chọn."
           }
         },
         "zh-Hans" : {
@@ -3704,6 +5576,12 @@
     "CryptoSettings.Timer.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer einstellen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3746,16 +5624,46 @@
             "value" : "დააყენეთ ტაიმერი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "타이머 설정"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer instellen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Definir temporizador"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Установить таймер"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ställ in timer"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Встановити таймер"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đặt hẹn giờ"
           }
         },
         "zh-Hans" : {
@@ -3775,6 +5683,12 @@
     "CryptoSettings.Timer.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3817,16 +5731,46 @@
             "value" : "ტაიმერი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "타이머"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temporizador"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Таймер"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Timer"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Таймер"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hẹn giờ"
           }
         },
         "zh-Hans" : {
@@ -3846,6 +5790,12 @@
     "CryptoSettings.weak" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schwach"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3888,16 +5838,46 @@
             "value" : "სუსტი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "약함"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zwak"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fraco"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Слабо"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Svagt"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Слабо"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yếu"
           }
         },
         "zh-Hans" : {
@@ -3917,6 +5897,12 @@
     "Emoji" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3959,16 +5945,46 @@
             "value" : "ემოჯი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이모지"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Эмодзи"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Емодзі"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Biểu tượng cảm xúc"
           }
         },
         "zh-Hans" : {
@@ -3988,6 +6004,12 @@
     "EmojiMood.animals" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiere"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4030,16 +6052,46 @@
             "value" : "ცხოველები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "동물"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dieren"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Animais"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Животные"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Djur"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тварини"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Động vật"
           }
         },
         "zh-Hans" : {
@@ -4059,6 +6111,12 @@
     "EmojiMood.food" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Essen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4101,16 +6159,46 @@
             "value" : "საკვები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "음식"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eten"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comida"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Еда"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mat"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Їжа"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đồ ăn"
           }
         },
         "zh-Hans" : {
@@ -4130,6 +6218,12 @@
     "EmojiMood.loveStory" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liebe"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4172,16 +6266,46 @@
             "value" : "სიყვარული"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사랑"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Liefde"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Amor"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Любовь"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kärlek"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кохання"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tình yêu"
           }
         },
         "zh-Hans" : {
@@ -4201,6 +6325,12 @@
     "EmojiMood.negative" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negativ"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4243,16 +6373,46 @@
             "value" : "ნეგატიური"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "부정적"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negatief"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negativos"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Негативные"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negativa"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Негативні"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tiêu cực"
           }
         },
         "zh-Hans" : {
@@ -4272,6 +6432,12 @@
     "EmojiMood.people" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Menschen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4314,16 +6480,46 @@
             "value" : "ადამიანები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "인물"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mensen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pessoas"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Люди"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Människor"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Люди"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Con người"
           }
         },
         "zh-Hans" : {
@@ -4343,6 +6539,12 @@
     "EmojiMood.positive" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Positiv"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4385,16 +6587,46 @@
             "value" : "პოზიტიური"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "긍정적"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Positief"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Positivos"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Позитивные"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Positiva"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Позитивні"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tích cực"
           }
         },
         "zh-Hans" : {
@@ -4414,6 +6646,12 @@
     "EmojiSettings.EmojiSelection.description" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wähle den **Emoji-Typ**, um Text in eine einzigartige Emoji-Sequenz zu kodieren.  Die Dekodierung aus jedem Emoji-Typ erfolgt **automatisch**."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4456,16 +6694,46 @@
             "value" : "აირჩიეთ **ემოჯის ტიპი**, რათა ტექტი უნიკალურ ემოჯი-სექვენციად დააკოდოთ.  ნებისმიერი ტიპის ემოჯიდან ტექსტის дешიფრაცია ხდება **ავტომატურად**."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "텍스트를 고유한 이모지 시퀀스로 인코딩하기 위해 **이모지 유형을 선택**하세요.  어떤 이모지 유형이든 텍스트를 **자동으로** 디코딩합니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecteer het **type emoji** om tekst te coderen in een unieke emojireeks.  Het decoderen van tekst vanuit elk emojitype gebeurt **automatisch**."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Selecione o **tipo de emoji** para codificar o texto em uma sequência exclusiva de emojis.  A decodificação do texto a partir de qualquer tipo de emoji acontece **automaticamente**."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выберите **тип эмодзи**, чтобы закодировать текст в уникальную последовательность эмодзи.  Декодирование текста из любого типа эмодзи происходит **автоматически**."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Välj **typ av emoji** för att koda text till en unik emojisekvens.  Dekryptering från vilken emojityp som helst sker **automatiskt**."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Виберіть **тип емодзі**, щоб закодувати текст в унікальну послідовність емодзі.  Розшифрування тексту з будь-якого типу емодзі відбувається **автоматично**."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chọn **loại biểu tượng cảm xúc** để mã hóa văn bản thành chuỗi emoji độc đáo.  Việc giải mã văn bản từ bất kỳ loại emoji nào sẽ diễn ra **tự động**."
           }
         },
         "zh-Hans" : {
@@ -4485,6 +6753,12 @@
     "EmojiSettings.EmojiSelection.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji-Kodierung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4527,16 +6801,46 @@
             "value" : "ემოჯის კოდირება"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이모지 인코딩"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji-codering"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificação por emoji"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Эмодзи-кодирование"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji-kodning"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кодування емодзі"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mã hóa bằng biểu tượng cảm xúc"
           }
         },
         "zh-Hans" : {
@@ -4556,6 +6860,12 @@
     "Error.argon2Failed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler beim Generieren des Schlüssels mit Argon2."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4598,16 +6908,46 @@
             "value" : "Argon2–ით კვანძის გენერირება ვერ მოხერხდა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2로 키를 생성하지 못했습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het is niet gelukt een sleutel te genereren met Argon2."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falha ao gerar a chave com Argon2."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось сгенерировать ключ с помощью Argon2."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att generera nyckel med Argon2."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося згенерувати ключ за допомогою Argon2."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không thể tạo khóa bằng Argon2."
           }
         },
         "zh-Hans" : {
@@ -4627,6 +6967,12 @@
     "Error.decodingFailed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daten konnten nicht dekodiert werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4669,16 +7015,46 @@
             "value" : "ტექსტის дешიფრაცია ვერ მოხერხდა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "데이터 디코딩에 실패했습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het decoderen van gegevens is mislukt."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falha ao decodificar os dados."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось декодировать текст."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att dekryptera data."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося розшифрувати текст."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không thể giải mã dữ liệu."
           }
         },
         "zh-Hans" : {
@@ -4698,6 +7074,12 @@
     "Error.decryptionFailed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daten konnten nicht entschlüsselt werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4740,16 +7122,46 @@
             "value" : "მონაცემების დეშიფრაცია ვერ განხორციელდა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "데이터 복호화에 실패했습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het ontsleutelen van gegevens is mislukt."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falha ao descriptografar os dados."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось расшифровать данные."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att dekryptera data."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося розшифрувати дані."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không thể giải mã dữ liệu đã mã hóa."
           }
         },
         "zh-Hans" : {
@@ -4769,6 +7181,12 @@
     "Error.encodingFailed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daten konnten nicht kodiert werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4811,16 +7229,46 @@
             "value" : "ტექსტის კოდირება ვერ მოხერხდა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "데이터 인코딩에 실패했습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het coderen van gegevens is mislukt."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falha ao codificar os dados."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось закодировать текст."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att koda data."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося закодувати текст."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không thể mã hóa dữ liệu."
           }
         },
         "zh-Hans" : {
@@ -4840,6 +7288,12 @@
     "Error.encryptionFailed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Daten konnten nicht verschlüsselt werden."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4882,16 +7336,46 @@
             "value" : "მონაცემების დაშიფვრა ვერ განხორციელდა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "데이터 암호화에 실패했습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het versleutelen van gegevens is mislukt."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falha ao criptografar os dados."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось зашифровать данные."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att kryptera data."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося зашифрувати дані."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không thể mã hóa dữ liệu."
           }
         },
         "zh-Hans" : {
@@ -4911,6 +7395,12 @@
     "Error.expired" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die verschlüsselten Daten sind abgelaufen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4953,16 +7443,46 @@
             "value" : "დაშიფრული მონაცემების ვადა გასულია."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화된 데이터의 유효 기간이 만료되었습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De versleutelde gegevens zijn verlopen."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os dados criptografados expiraram."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Срок действия зашифрованных данных истёк."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Den krypterade datan har upphört att gälla."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Термін дії зашифрованих даних минув."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dữ liệu đã mã hóa đã hết hạn."
           }
         },
         "zh-Hans" : {
@@ -4982,6 +7502,12 @@
     "Error.integrityCheckFailed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Integrität der verschlüsselten Daten wurde verletzt."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5024,16 +7550,46 @@
             "value" : "დაშიფრული მონაცემების მთლიანობა დარღვეულია."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화된 데이터의 무결성이 손상되었습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De integriteit van de versleutelde gegevens is aangetast."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A integridade dos dados criptografados foi comprometida."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Целостность зашифрованных данных нарушена."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Integriteten hos den krypterade datan har äventyrats."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Порушено цілісність зашифрованих даних."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tính toàn vẹn của dữ liệu đã mã hóa bị xâm phạm."
           }
         },
         "zh-Hans" : {
@@ -5053,6 +7609,12 @@
     "Error.invalidFormat" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Format der verschlüsselten Daten ist beschädigt oder unvollständig."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5095,16 +7657,46 @@
             "value" : "დაშიფრული მონაცემების ფორმატი დაზიანებულია ან არასრულია."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화된 데이터 형식이 손상되었거나 불완전합니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het formaat van de versleutelde gegevens is beschadigd of onvolledig."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O formato dos dados criptografados está corrompido ou incompleto."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Формат зашифрованных данных повреждён или неполный."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Formatet på den krypterade datan är skadat eller ofullständigt."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Формат зашифрованих даних пошкоджений або неповний."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Định dạng dữ liệu đã mã hóa bị hỏng hoặc không đầy đủ."
           }
         },
         "zh-Hans" : {
@@ -5124,6 +7716,12 @@
     "Error.invalidInputData" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eingabedaten sind ungültig."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5166,16 +7764,46 @@
             "value" : "შეყვანილი მონაცემები არასწორია."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "입력 데이터가 잘못되었습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invoergegevens zijn ongeldig."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Os dados de entrada são inválidos."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Входные данные некорректны."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ingångsdata är ogiltiga."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вхідні дані недійсні."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dữ liệu đầu vào không hợp lệ."
           }
         },
         "zh-Hans" : {
@@ -5195,6 +7823,12 @@
     "Error.invalidMasterKey" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Master-Schlüssel ist leer oder beschädigt."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5237,16 +7871,46 @@
             "value" : "მასტერ-კვანძი ცარიელია ან დაზიანებულია."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "마스터 키가 비어 있거나 손상되었습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoofdsleutel is leeg of beschadigd."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A chave mestra está vazia ou corrompida."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Мастер-ключ пустой или повреждён."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Huvudnyckeln är tom eller skadad."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Майстер-ключ порожній або пошкоджений."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khóa chính trống hoặc bị hỏng."
           }
         },
         "zh-Hans" : {
@@ -5266,6 +7930,12 @@
     "Error.invalidSubkeyCount" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ungültige Anzahl abgeleiteter Schlüssel."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5308,16 +7978,46 @@
             "value" : "მიღებულია კვანძების არასწორი რაოდენობა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "파생 키 개수가 올바르지 않습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ongeldig aantal afgeleide sleutels."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Número inválido de chaves derivadas."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Некорректное количество производных ключей."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ogiltigt antal härledda nycklar."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Недійсна кількість похідних ключів."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Số lượng khóa dẫn xuất không hợp lệ."
           }
         },
         "zh-Hans" : {
@@ -5337,6 +8037,12 @@
     "Error.nonceGenerationFailed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler beim Erzeugen des Nonce für AES."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5379,16 +8085,46 @@
             "value" : "Nonce-ის გენერირება AES-ისთვის ვერ განხორციელდა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES용 nonce 생성 중 오류가 발생했습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fout bij het genereren van nonce voor AES."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erro ao gerar o nonce para o AES."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось сгенерировать nonce для AES."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fel vid generering av nonce för AES."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Помилка при генерації nonce для AES."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không thể tạo nonce cho AES."
           }
         },
         "zh-Hans" : {
@@ -5408,6 +8144,12 @@
     "Error.saltGenerationFailed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler beim Generieren des kryptografischen Salts."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5450,16 +8192,46 @@
             "value" : "კრიპტოგრაფიული მარილი ვერ წარმოიქმნა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화 솔트 생성에 실패했습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het genereren van cryptografische salt is mislukt."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Falha ao gerar o sal criptográfico."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не удалось сгенерировать криптографическую соль."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Det gick inte att generera kryptografiskt salt."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не вдалося згенерувати криптографічну сіль."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không thể tạo muối mật mã."
           }
         },
         "zh-Hans" : {
@@ -5479,6 +8251,12 @@
     "Error.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5521,16 +8299,46 @@
             "value" : "შეცდომა"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "오류"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fout"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erro"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ошибка"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fel"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Помилка"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lỗi"
           }
         },
         "zh-Hans" : {
@@ -5550,6 +8358,12 @@
     "Error.unknown" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ein unerwarteter Fehler ist aufgetreten."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5592,16 +8406,46 @@
             "value" : "მოხდა დაუგეგმავი შეცდომა."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예기치 않은 오류가 발생했습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Er is een onverwachte fout opgetreden."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ocorreu um erro inesperado."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Произошла непредвиденная ошибка."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ett oväntat fel inträffade."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Сталася несподівана помилка."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đã xảy ra lỗi không mong muốn."
           }
         },
         "zh-Hans" : {
@@ -5621,6 +8465,12 @@
     "FullScreenAnimation.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bitte lass die App geöffnet, bis der Vorgang abgeschlossen ist."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5663,16 +8513,46 @@
             "value" : "არ დახუროთ აპლიკაცია, სანამ პროცესი არ დასრულდება."
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "작업이 완료될 때까지 앱을 열어 두세요."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laat de app open totdat het proces is voltooid."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenha o app aberto até que o processo seja concluído."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не закрывайте приложение, пока процесс не завершится."
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Låt appen vara öppen tills processen är klar."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Не закривайте застосунок, поки процес не завершиться."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hãy giữ ứng dụng mở cho đến khi quá trình hoàn tất."
           }
         },
         "zh-Hans" : {
@@ -5692,6 +8572,12 @@
     "FullScreenAnimation.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verarbeitung…"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5734,16 +8620,46 @@
             "value" : "დამუშავება…"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "처리 중…"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bezig…"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Processando…"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Выполняется операция…"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bearbetar…"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Обробка…"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đang xử lý…"
           }
         },
         "zh-Hans" : {
@@ -5763,6 +8679,12 @@
     "Settings.AboutApp.PrivacyPolicy.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Datenschutzrichtlinie"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5805,16 +8727,46 @@
             "value" : "კონფიდენციალურობის პოლიტიკა"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "개인정보 처리방침"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacybeleid"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Política de Privacidade"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Политика конфиденциальности"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Integritetspolicy"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Політика конфіденційності"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chính sách quyền riêng tư"
           }
         },
         "zh-Hans" : {
@@ -5834,6 +8786,12 @@
     "Settings.AboutApp.Project.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über das Projekt"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5876,16 +8834,46 @@
             "value" : "პროექტის შესახებ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "프로젝트 소개"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over het project"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre o Projeto"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "О проекте"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om projektet"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Про проєкт"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Về dự án"
           }
         },
         "zh-Hans" : {
@@ -5905,6 +8893,12 @@
     "Settings.AboutApp.TermsOfUse.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nutzungsbedingungen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5947,16 +8941,46 @@
             "value" : "გამოყენების წესები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이용 약관"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gebruiksvoorwaarden"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Termos de Uso"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Условия использования"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Användarvillkor"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Умови використання"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Điều khoản sử dụng"
           }
         },
         "zh-Hans" : {
@@ -5976,6 +9000,12 @@
     "Settings.AboutApp.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über die App"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6018,16 +9048,46 @@
             "value" : "აპლიკაციის შესახებ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 정보"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over de app"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre o App"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "О приложении"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om appen"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Про додаток"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Về ứng dụng"
           }
         },
         "zh-Hans" : {
@@ -6047,6 +9107,12 @@
     "Settings.Access.RestorePurchases.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Käufe wiederherstellen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6089,16 +9155,46 @@
             "value" : "ყიდვების აღდგენა"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "구매 내역 복원"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aankopen herstellen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Restaurar compras"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Восстановить покупки"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Återställ köp"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Відновити покупки"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Khôi phục mua hàng"
           }
         },
         "zh-Hans" : {
@@ -6118,6 +9214,12 @@
     "Settings.Access.Review.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bewertung im App Store abgeben"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6160,16 +9262,46 @@
             "value" : "კომენტარის დატოვება App Store-ზე"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store에 리뷰 남기기"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laat een beoordeling achter in de App Store"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deixe uma avaliação na App Store"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Оставить отзыв в App Store"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lämna en recension i App Store"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Залишити відгук в App Store"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Để lại đánh giá trên App Store"
           }
         },
         "zh-Hans" : {
@@ -6189,6 +9321,12 @@
     "Settings.Access.Subscription.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6231,16 +9369,46 @@
             "value" : "გამოწერა"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "구독"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnement"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Assinatura"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Подписка"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prenumeration"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Підписка"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gói đăng ký"
           }
         },
         "zh-Hans" : {
@@ -6260,6 +9428,12 @@
     "Settings.Access.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zugriff"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6302,16 +9476,46 @@
             "value" : "წვდომა"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "액세스"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toegang"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acesso"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Доступ"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Åtkomst"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Доступ"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Truy cập"
           }
         },
         "zh-Hans" : {
@@ -6331,6 +9535,12 @@
     "Settings.AppVersion.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App-Version"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6373,16 +9583,46 @@
             "value" : "აპლიკაციის ვერსია"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 버전"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App-versie"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Versão do app"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Версия приложения"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appversion"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Версія застосунку"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phiên bản ứng dụng"
           }
         },
         "zh-Hans" : {
@@ -6402,6 +9642,12 @@
     "Settings.General.DarkMode.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dark Mode"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6444,16 +9690,46 @@
             "value" : "მუქი რეჟიმი"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다크 모드"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Donkere modus"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modo escuro"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Тёмная тема"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mörkt läge"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Темна тема"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chế độ tối"
           }
         },
         "zh-Hans" : {
@@ -6473,6 +9749,12 @@
     "Settings.General.Haptics.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haptik"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6515,16 +9797,46 @@
             "value" : "ვიბრაცია"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "햅틱"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haptiek"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Feedback tátil"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вибрация"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haptik"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вібрація"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phản hồi xúc giác"
           }
         },
         "zh-Hans" : {
@@ -6544,6 +9856,12 @@
     "Settings.General.Language.alertActionTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6586,16 +9904,46 @@
             "value" : "დიახ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "예"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sim"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Да"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ja"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Так"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Có"
           }
         },
         "zh-Hans" : {
@@ -6615,6 +9963,12 @@
     "Settings.General.Language.alertCancelTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nein"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6657,16 +10011,46 @@
             "value" : "არა"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "아니요"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nee"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Não"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Нет"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nej"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ні"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Không"
           }
         },
         "zh-Hans" : {
@@ -6686,6 +10070,12 @@
     "Settings.General.Language.alertMessage" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Möchtest du die Sprache der App ändern?"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6728,16 +10118,46 @@
             "value" : "გსურთ შეცვალოთ აპლიკაციის ენა?"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "앱 언어를 변경하시겠습니까?"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wil je de app-taal wijzigen?"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deseja alterar o idioma do aplicativo?"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Вы хотите изменить язык приложения?"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vill du byta appens språk?"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Бажаєте змінити мову додатку?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bạn có muốn thay đổi ngôn ngữ ứng dụng không?"
           }
         },
         "zh-Hans" : {
@@ -6757,6 +10177,12 @@
     "Settings.General.Language.alertTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprache ändern"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6799,16 +10225,46 @@
             "value" : "ენის შეცვლა"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "언어 변경"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taal wijzigen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alterar idioma"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Смена языка"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Byt språk"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Змінити мову"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thay đổi ngôn ngữ"
           }
         },
         "zh-Hans" : {
@@ -6828,6 +10284,12 @@
     "Settings.General.Language.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sprache"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6870,16 +10332,46 @@
             "value" : "ენა"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "언어"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Taal"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Idioma"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Язык"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Språk"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Мова"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ngôn ngữ"
           }
         },
         "zh-Hans" : {
@@ -6899,6 +10391,12 @@
     "Settings.General.Sound.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sounds"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6941,16 +10439,46 @@
             "value" : "ხმები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "사운드"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geluiden"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sons"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Звуки"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ljud"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Звуки"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Âm thanh"
           }
         },
         "zh-Hans" : {
@@ -6970,6 +10498,12 @@
     "Settings.General.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allgemein"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7012,16 +10546,46 @@
             "value" : "ძირითადი პარამეტრები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "일반"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Algemeen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geral"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Общие настройки"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allmänt"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Загальні налаштування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt chung"
           }
         },
         "zh-Hans" : {
@@ -7041,6 +10605,12 @@
     "Settings.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Einstellungen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7083,16 +10653,46 @@
             "value" : "პარამეტრები"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "설정"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurações"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Настройки"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Inställningar"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Налаштування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt"
           }
         },
         "zh-Hans" : {
@@ -7112,6 +10712,12 @@
     "Timer.hour %lld" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Std"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7154,16 +10760,46 @@
             "value" : "%lld სთ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld시간"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld u"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld h"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld ч"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld tim"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld г"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld giờ"
           }
         },
         "zh-Hans" : {
@@ -7183,6 +10819,12 @@
     "Timer.minute %lld" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld Min"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7225,16 +10867,46 @@
             "value" : "%lld წთ"
           }
         },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld분"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld м"
           }
         },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld min"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld хв"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld phút"
           }
         },
         "zh-Hans" : {

@@ -177,6 +177,7 @@ extension AES256SettingsView {
                 CustomTextRow(vm.layersSubtitle)
                 Stepper("", value: $vm.parameters.layers, in: vm.layersRange)
                     .padding(.horizontal)
+                    .padding(.vertical, 8)
             }
             Divider()
                 .padding(.horizontal)
