@@ -78,24 +78,18 @@ extension CustomTabSection {
             Spacer()
             HStack(spacing: 0) {
                 VStack(alignment: .leading, spacing: 2) {
-                    if let text, let subtext {
+                    if let text {
                         Text(text)
                             .font(.title2)
                             .fontWeight(.black)
-                        Text(subtext)
-                            .font(.headline)
-                            .fontWeight(.regular)
-                            .padding(.horizontal, 6)
-                            .padding(.vertical, 3)
-                            .background {
-                                RoundedRectangle(cornerRadius: 8)
-                                    .foregroundStyle(.ultraThinMaterial)
-                                    .opacity(0.95)
-                                    .shadow(
-                                        color: Color(.secondarySystemGroupedBackground),
-                                        radius: 0.5
-                                    )
-                            }
+                        if let subtext {
+                            Text(subtext)
+                                .font(.headline)
+                                .fontWeight(.regular)
+                                .padding(.horizontal, 6)
+                                .padding(.vertical, 3)
+                                .background(subtextBackground)
+                        }
                     }
                 }
                 .foregroundStyle(.white)
@@ -107,6 +101,15 @@ extension CustomTabSection {
         .frame(height: 170)
     }
         
+    private var subtextBackground: some View {
+        RoundedRectangle(cornerRadius: 8)
+            .foregroundStyle(.ultraThinMaterial)
+            .opacity(0.95)
+            .shadow(
+                color: Color(.secondarySystemGroupedBackground),
+                radius: 0.5
+            )
+    }
     
     private var stroke: some View {
         RoundedRectangle(cornerRadius: 12)

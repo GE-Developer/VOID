@@ -37,6 +37,7 @@ struct SystemImage {
     let privacyPolicy = Image(systemName: "lock.doc.fill")
     let developerTool = Image(systemName: "hammer.fill")
     let gear = Image(systemName: "gear")
+    let code = Image(systemName: "chevron.left.slash.chevron.right")
     
     func key(_ isFilled: Bool = false) -> Image {
         isFilled ? Image(systemName: "key.fill") : Image(systemName: "key")
@@ -45,6 +46,7 @@ struct SystemImage {
 
 struct BackgroundImage {
     let aes256Argon2idVOID = Image("AES256+Argon2id+VOID")
+    let emojiBackground = Image("EmojiBackground")
 }
 
 struct ContentImage {

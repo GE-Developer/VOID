@@ -42,7 +42,7 @@ extension CryptographyView {
         CustomTabImageView(
             title: vm.symmetricEncryptionTitle,
             subtitle: vm.symmetricEncryptionSubtitle,
-            headerImage: Image.system.lock
+            headerImage: Image.system.key(true)
         ) {
             CustomTabSection(
                 image: Image.content.voidAES256Argon2id,
@@ -57,12 +57,11 @@ extension CryptographyView {
         CustomTabImageView(
             title: vm.encodingTitle,
             subtitle: vm.encodingDescription,
-            headerImage: Image.system.lock
+            headerImage: Image.system.code
         ) {
             CustomTabSection(
                 image: Image.content.emoji,
                 text: vm.aes256EmojiTitle,
-                subtext: "over Base64",
                 action: { showEmojiView = true }
             )
         }

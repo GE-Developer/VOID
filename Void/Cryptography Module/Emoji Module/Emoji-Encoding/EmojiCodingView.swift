@@ -25,14 +25,14 @@ struct EmojiCodingView: View {
 // MARK: - Builder
 extension EmojiCodingView {
     private var aes256EncryptionView: some View {
-        CustomScrollView(backgroundImage: Image.background.aes256Argon2idVOID) {
+        CustomScrollView(backgroundImage: Image.background.emojiBackground) {
             CustomNavigationTitle(title: vm.emojiCodecTitle, isLargeNavBar: $0)
             Spacer()
             NavigationToolButton(.system.cryptoSettings) {
                 goToSettings = true
             }
-        } headerView: { minY in
-            //            HeaderTextView(text: vm.headetText, offsetY: $0)
+        } headerView: {
+            HeaderTextView(text: vm.headerText, offsetY: $0)
         } scrollView: { proxy in
             messageRows
                 .onChange(of: vm.messages) { scrollTo(proxy) }

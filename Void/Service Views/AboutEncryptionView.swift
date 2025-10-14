@@ -9,9 +9,11 @@ import SwiftUI
 
 struct AboutEncryptionView: View {
     private let vm: AboutEncryptionProtocol
+    private let animationLetterSpacing: CGFloat
     
-    init(vm: AboutEncryptionProtocol) {
+    init(vm: AboutEncryptionProtocol, _ animationLetterSpacing: CGFloat = 1) {
         self.vm = vm
+        self.animationLetterSpacing = animationLetterSpacing
     }
     
     var body: some View {
@@ -42,7 +44,12 @@ extension AboutEncryptionView {
             .foregroundStyle(Color.black)
             .shadow(color: Color.void.blackAndWhite, radius: 1.5)
             .overlay {
-                MatrixAnimationView(vm.letterType, color: Gradient.accent)
+                MatrixAnimationView(
+                    vm.letterType,
+                    color: Gradient.accent,
+                    columnSpacing: animationLetterSpacing,
+                    rowSpacing: animationLetterSpacing
+                )
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             }
             .frame(height: 80)

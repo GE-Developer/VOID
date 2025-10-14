@@ -29,8 +29,6 @@ final class AES256EncryptionViewModel: ObservableObject {
     @Published private(set) var messages: [Message] = []
     @Published private(set) var isEncrypting = false
     
-    private(set) var errorMessage = ""
-    
     var placeholder: String {
         guard encryptionParameters.password != "" else {
             return L10n("Cryptography.Placeholder.default")
@@ -40,6 +38,8 @@ final class AES256EncryptionViewModel: ObservableObject {
         case .decrypt: return L10n("Cryptography.Placeholder.decrypt")
         }
     }
+    
+    private(set) var errorMessage = ""
     
     private var currentTask: Task<Void, Never>?
     

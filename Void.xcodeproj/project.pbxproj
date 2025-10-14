@@ -50,6 +50,8 @@
 		1F7D9EE52E6342DA007B4DDD /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE42E6342DA007B4DDD /* SettingsViewModel.swift */; };
 		1F7D9EE92E63447D007B4DDD /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE82E63447D007B4DDD /* LanguageViewModel.swift */; };
 		1F7D9EF92E653107007B4DDD /* MatrixAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EF82E653107007B4DDD /* MatrixAnimationView.swift */; };
+		1F8B4FA12E9C72CF0075C9DA /* AboutEmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B4FA02E9C72CF0075C9DA /* AboutEmojiViewModel.swift */; };
+		1F8B4FA32E9C76C80075C9DA /* LetterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B4FA22E9C76C80075C9DA /* LetterType.swift */; };
 		1F8DDBC12E366E11005734CD /* AES256EncryptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBB22E366E11005734CD /* AES256EncryptionView.swift */; };
 		1F8DDBC42E366E11005734CD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBB62E366E11005734CD /* HomeView.swift */; };
 		1F8DDBC52E366E11005734CD /* VoidApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBB72E366E11005734CD /* VoidApp.swift */; };
@@ -128,6 +130,8 @@
 		1F7D9EE42E6342DA007B4DDD /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		1F7D9EE82E63447D007B4DDD /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
 		1F7D9EF82E653107007B4DDD /* MatrixAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAnimationView.swift; sourceTree = "<group>"; };
+		1F8B4FA02E9C72CF0075C9DA /* AboutEmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutEmojiViewModel.swift; sourceTree = "<group>"; };
+		1F8B4FA22E9C76C80075C9DA /* LetterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterType.swift; sourceTree = "<group>"; };
 		1F8DDBB22E366E11005734CD /* AES256EncryptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256EncryptionView.swift; sourceTree = "<group>"; };
 		1F8DDBB62E366E11005734CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1F8DDBB72E366E11005734CD /* VoidApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidApp.swift; sourceTree = "<group>"; };
@@ -210,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				1F12FE4A2E4278210023DB69 /* CryptoAction.swift */,
+				1F8B4FA22E9C76C80075C9DA /* LetterType.swift */,
 				1F1452522E6080F800F8A553 /* Language.swift */,
 				1F1452562E608D8900F8A553 /* AppStorageKey.swift */,
 				1F7970872E7C4D6B007755F3 /* Sound.swift */,
@@ -451,6 +456,7 @@
 			isa = PBXGroup;
 			children = (
 				1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */,
+				1F8B4FA02E9C72CF0075C9DA /* AboutEmojiViewModel.swift */,
 			);
 			path = "Emoji-Settings";
 			sourceTree = "<group>";
@@ -562,6 +568,7 @@
 				1F8DDCE32E39676C005734CD /* CryptographyView.swift in Sources */,
 				1F8DDCE12E396473005734CD /* Gradient + Ext.swift in Sources */,
 				1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */,
+				1F8B4FA32E9C76C80075C9DA /* LetterType.swift in Sources */,
 				1F2CADA92E9183AD009007B5 /* AboutEncryptionProtocol.swift in Sources */,
 				1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */,
 				1F7D9EE32E63402F007B4DDD /* HapticsManager.swift in Sources */,
@@ -597,6 +604,7 @@
 				1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */,
 				1F2D342B2E7F3D87005E6239 /* CryptoError.swift in Sources */,
 				1F6C56C72E98828A0060015F /* EmojiCodecManager.swift in Sources */,
+				1F8B4FA12E9C72CF0075C9DA /* AboutEmojiViewModel.swift in Sources */,
 				1F2D34282E7E1760005E6239 /* AES256CryptoManager.swift in Sources */,
 				1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */,
 				1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */,

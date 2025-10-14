@@ -52,7 +52,7 @@ extension CryptoActionButtons {
             action()
         } label: {
             ZStack {
-                RoundedRectangle(cornerRadius: height / 2)
+                RoundedRectangle(cornerRadius: height / 4)
                     .foregroundStyle(
                         isActive
                         ? Gradient.accent

@@ -7,25 +7,6 @@
 
 import SwiftUI
 
-// MARK: - LetterType
-enum LetterType: CaseIterable {
-    case englishCapitalizedAlphabet
-    case georgian
-    case eas256
-    case binary
-    case decimal
-    
-    var get: [Character] {
-        switch self {
-        case .englishCapitalizedAlphabet: return Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-        case .georgian: return Array("აბგდევზთიკლმნოპჟრსტუფქღყშჩცძწჭხჯჰ")
-        case .eas256: return Array("!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~")
-        case .binary: return Array("01")
-        case .decimal: return Array("0123456789")
-        }
-    }
-}
-
 // MARK: - MatrixAnimationView
 struct MatrixAnimationView: View {
     @Environment(\.scenePhase) private var scenePhase

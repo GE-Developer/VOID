@@ -16,16 +16,11 @@ final class EmojiCodingViewModel: ObservableObject {
     @Published var showErrorAlert = false
     
     @Published private(set) var messages: [Message] = []
-    
+
     private(set) var errorMessage = ""
-    private var currentTask: Task<Void, Never>?
-
-    let emojiCodecTitle = L10n("Emoji")
-    let settingsTitle = L10n("Settings.title")
     
-    private let soundManager = SoundManager.shared
-    private let hapticsManager = HapticsManager.shared
-
+    private var currentTask: Task<Void, Never>?
+    
     var placeholder: String {
         switch currentMode {
         case .encrypt: return L10n("Coding.Placeholder.encode")
@@ -33,17 +28,18 @@ final class EmojiCodingViewModel: ObservableObject {
         }
     }
     
+    let emojiCodecTitle = L10n("Emoji")
+    let settingsTitle = L10n("Settings.title")
+    let headerText = L10n("EmojiCoding.headerText")
     let decryptionTitle = L10n("Coding.decode")
     let encryptionTitle = L10n("Coding.encode")
-    
     let errorTitle = L10n("Error.title")
     let okTitle = "OK"
-    
     let emojiFormTitle = L10n("EmojiSettings.EmojiSelection.title")
     let emojiFormDescription = L10n("EmojiSettings.EmojiSelection.description")
     
-    
-    
+    private let soundManager = SoundManager.shared
+    private let hapticsManager = HapticsManager.shared
     
     func startCryptoProcess() {
         switch currentMode {

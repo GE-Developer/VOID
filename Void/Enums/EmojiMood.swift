@@ -12,6 +12,8 @@ enum EmojiMood: CaseIterable {
     case animals
     case food
     case loveStory
+    case flags
+    case symbols
     
     var emojis: [Character] {
         switch self {
@@ -81,6 +83,28 @@ enum EmojiMood: CaseIterable {
                 "👩🏽‍❤️‍💋‍👨🏽", "👩🏽‍❤️‍💋‍👨🏾", "👩🏾‍❤️‍💋‍👨🏻", "👩🏾‍❤️‍💋‍👨🏼", "👩🏾‍❤️‍💋‍👨🏽", "👩🏾‍❤️‍💋‍👨🏾", "👩‍❤️‍👨", "👩🏻‍❤️‍👨🏻",
                 "👩🏻‍❤️‍👨🏼", "👩🏻‍❤️‍👨🏽", "👩🏼‍❤️‍👨🏻", "👩🏼‍❤️‍👨🏼", "👩🏼‍❤️‍👨🏽", "👩🏽‍❤️‍👨🏻", "👩🏽‍❤️‍👨🏼", "👩🏽‍❤️‍👨🏽"
             ]
+        case .flags:
+            return [
+                "🇺🇸", "🇨🇦", "🇲🇽", "🇦🇺", "🇳🇿", "🇬🇧", "🇫🇷", "🇩🇪",
+                "🇮🇹", "🇪🇸", "🇵🇹", "🇳🇱", "🇧🇪", "🇨🇭", "🇦🇹", "🇸🇪",
+                "🇳🇴", "🇩🇰", "🇫🇮", "🇮🇪", "🇵🇱", "🇨🇿", "🇸🇰", "🇭🇺",
+                "🇷🇴", "🇧🇬", "🇬🇷", "🇺🇦", "🇬🇪", "🇷🇸", "🇭🇷", "🇸🇮",
+                "🇨🇳", "🇹🇼", "🇭🇰", "🇯🇵", "🇰🇷", "🇮🇳", "🇦🇿", "🇧🇩",
+                "🇱🇰", "🇹🇭", "🇻🇳", "🇮🇩", "🇲🇾", "🇸🇬", "🇵🇭", "🇹🇷",
+                "🇮🇷", "🇦🇲", "🇮🇱", "🇦🇪", "🇶🇦", "🇿🇦", "🇳🇬", "🇰🇿",
+                "🇲🇦", "🇰🇪", "🇹🇳", "🇧🇷", "🇦🇷", "🇨🇱", "🇨🇴", "🇵🇪"
+            ]
+        case .symbols:
+            return [
+                "☮️", "✝️", "☪️", "🕉️", "☸️", "🪯", "✡️", "🔯",
+                "🕎", "☯️", "☦️", "🛐", "⛎", "♈️", "♉️", "♊️",
+                "♋️", "♌️", "♍️", "♎️", "♏️", "♐️", "♑️", "♒️",
+                "♓️", "🆔", "⚛️", "📴", "🈳", "🈶", "🈚️", "🈸",
+                "🈺", "🈷️", "✴️", "🆚", "🈴", "🈵", "🈹", "🈲",
+                "🅰️", "🅱️", "🆎", "🆑", "🅾️", "🆘", "✅", "🈯️",
+                "💹", "❇️", "✳️", "❎", "🏧", "🚾", "♿️", "🅿️",
+                "🛗", "🛂", "🛜", "🚹", "🛃", "🚺", "🚼", "🈂️"
+            ]
         }
     }
     
@@ -92,6 +116,8 @@ enum EmojiMood: CaseIterable {
         case .animals: return "🐶"
         case .food: return "🥪"
         case .loveStory: return "👩‍❤️‍💋‍👨"
+        case .flags: return "🏴"
+        case .symbols: return "📳"
         }
     }
     
@@ -109,6 +135,10 @@ enum EmojiMood: CaseIterable {
             return L10n("EmojiMood.food")
         case .loveStory:
             return L10n("EmojiMood.loveStory")
+        case .flags:
+            return L10n("EmojiMood.flags")
+        case .symbols:
+            return L10n("EmojiMood.symbols")
         }
     }
 }

@@ -82,6 +82,12 @@
             "value" : "Information"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilgi"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -187,6 +193,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Använd ett komplext och unikt lösenord** (mer än 12 tecken) — ju mer komplext lösenordet är, desto längre tid tar det att knäcka.  **Välj starka Argon2id-krypteringsparametrar** (antal iterationer, trådar) — detta ökar säkerheten men kan förlänga krypteringstiden upp till 20 minuter.  **Spara alltid det ursprungliga chiffertexten i sin helhet** — om ett enda tecken går förlorat blir dekryptering omöjligt.  Uppdatera **lösenord regelbundet** för extra skydd."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Karmaşık ve benzersiz bir parola kullanın** (12 karakterden uzun) — parola ne kadar karmaşıksa, kırılması o kadar uzun sürer.  **Güçlü Argon2id şifreleme parametreleri seçin** (iterasyon sayısı, iş parçacığı sayısı) — bu güvenliği artırır ancak şifreleme süresini 20 dakikaya kadar uzatabilir.  **Orijinal şifreli metni her zaman eksiksiz olarak saklayın** — tek bir karakterin kaybı bile çözülemeyeceği anlamına gelir.  Ek koruma için parolaları **düzenli olarak güncelleyin**."
           }
         },
         "uk" : {
@@ -296,6 +308,12 @@
             "value" : "Tips"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İpuçları"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -401,6 +419,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**AES-256 (Advanced Encryption Standard)** är en symmetrisk krypteringsalgoritm som använder en **256-bitars nyckel**.  Den skyddar data genom att **dela upp dem i 128-bitars block och genomföra 14 omgångar av matematiska transformationer**: substitutioner, permutationer och byteblandning.  Resultatet är att den ursprungliga informationen omvandlas till en krypterad datamängd som bara kan dekrypteras **med samma nyckel**."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**AES-256 (Advanced Encryption Standard)**, **256 bitlik bir anahtar** kullanan simetrik bir şifreleme algoritmasıdır.  Verileri **128 bitlik bloklara ayırarak ve 14 tur matematiksel dönüşüm** (yer değiştirme, permütasyon ve bayt karıştırma) uygulayarak korur.  Sonuç olarak, orijinal bilgi yalnızca **aynı anahtarla** çözülebilen şifrelenmiş bir veri setine dönüşür."
           }
         },
         "uk" : {
@@ -510,6 +534,12 @@
             "value" : "Om kryptering"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreleme hakkında"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -615,6 +645,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "1 - Du anger ett lösenord. 2 - Du väljer VOID. 3 - Appen genererar ett salt och kombinerar det med lösenordet och VOID. 4 - Argon2id beräknar nyckeln med de angivna parametrarna. 5 - Nyckeln används i AES-256 för att kryptera texten. 6 - Saltet och andra parametrar lagras i den krypterade strukturen.  **För att dekryptera måste du exakt återskapa samma nyckel — ange samma lösenord och VOID och ha den ursprungliga chiffertexten exakt tecken för tecken.**"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 - Bir parola girersiniz. 2 - VOID seçersiniz. 3 - Uygulama bir salt üretir ve onu parolayla ve VOID ile birleştirir. 4 - Argon2id belirtilen parametrelerle anahtarı hesaplar. 5 - Anahtar, AES-256 içinde metni şifrelemek için kullanılır. 6 - Salt ve diğer parametreler şifreli yapıda saklanır.  **Çözmek için aynı anahtarı birebir yeniden üretmeniz gerekir — aynı parolayı ve VOID'i girin ve orijinal şifreli metni harfi harfine elinizde bulundurun.**"
           }
         },
         "uk" : {
@@ -724,6 +760,12 @@
             "value" : "Så fungerar AES-256 + Argon2id + VOID"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id + VOID nasıl çalışır"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -831,6 +873,12 @@
             "value" : "Argon2 är en modern **KDF-algoritm (Key Derivation Function) för att omvandla ett lösenord till en kryptografisk nyckel**, erkänd som internationell standard (RFC 9106).  Den utvecklades 2015 och utsågs till vinnare av Password Hashing Competition som **den mest pålitliga och effektiva metoden för lösenordsskydd**.  Argon2id kombinerar egenskaperna hos Argon2i och Argon2d och ger **motstånd mot attacker mot CPU och minne**.  Algoritmen utför flera beräkningsiterationer, körs i multitrådsläge och lägger till ett unikt salt för varje kryptering.  Detta gör nyckelknäckning med brute force **extremt resurskrävande och tidsödande**, även för kraftfulla system."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2, bir parolayı kriptografik anahtara dönüştüren modern bir **KDF (Key Derivation Function) algoritmasıdır** ve uluslararası standart (RFC 9106) olarak kabul edilir.  2015'te geliştirilmiş ve Password Hashing Competition'da **parola koruması için en güvenilir ve verimli yöntem** olarak seçilmiştir.  Argon2id, Argon2i ve Argon2d özelliklerini birleştirerek **CPU ve bellek saldırılarına karşı direnç** sağlar.  Algoritma, çoklu hesaplama yinelemeleri gerçekleştirir, çok iş parçacıklı çalışır ve her şifreleme için benzersiz bir salt ekler.  Bu da anahtarı brute force ile kırmayı **son derece kaynak tüketici ve zaman alıcı** hâle getirir; güçlü sistemlerde bile."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -933,6 +981,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2id"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Argon2id"
@@ -1045,6 +1099,12 @@
             "value" : "Varje [VOID]-app innehåller en dold parameter — **VOID Secret (internt lösenord)**.  Egenskaper: • Väljs från ett stort antal varianter; • Genereras identiskt på alla enheter; • Lagrar inte data och skickas inte över nätverket; • Gör dekryptering möjlig endast i appen.  **Även om lösenordet är känt förblir data krypterade utan rätt VOID Secret.**"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her [VOID] uygulaması, gizli bir parametre içerir — **VOID Secret (iç parola)**.  Özellikler: • Geniş bir varyasyon kümesinden seçilir; • Tüm cihazlarda aynı şekilde üretilir; • Verilerde saklanmaz veya ağ üzerinden iletilmez; • Yalnızca uygulama içinde çözmeyi mümkün kılar.  **Parola bilinse bile, doğru VOID Secret olmadan veriler şifreli kalır.**"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1147,6 +1207,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID \"Pepper\""
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID \"Pepper\""
@@ -1259,6 +1325,12 @@
             "value" : "Kopierat"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kopyalandı"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1364,6 +1436,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dekryptera"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çöz"
           }
         },
         "uk" : {
@@ -1473,6 +1551,12 @@
             "value" : "Kryptera"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrele"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1578,6 +1662,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Redo att dekryptera…"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çözmeye hazır…"
           }
         },
         "uk" : {
@@ -1687,6 +1777,12 @@
             "value" : "Redo att kryptera…"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrelemeye hazır…"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1789,6 +1885,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "AES-256"
@@ -1901,6 +2003,12 @@
             "value" : "**När du lämnar den här skärmen återställs all data (lösenord, VOID, Argon2id-parametrar).  Appen lagrar inte data i telefonens minne.**"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Bu ekrandan ayrıldığınızda tüm veriler (parola, VOID, Argon2id parametreleri) sıfırlanır.  Uygulama verileri telefonun belleğinde saklamaz.**"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2006,6 +2114,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Dekryptering"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veri çözme"
           }
         },
         "uk" : {
@@ -2115,6 +2229,12 @@
             "value" : "Kryptering"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreleme"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2220,6 +2340,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Redo att dekryptera…"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Çözmeye hazır…"
           }
         },
         "uk" : {
@@ -2329,6 +2455,12 @@
             "value" : "Ställ in lösenord!"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parolayı ayarlayın!"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2434,6 +2566,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Redo att kryptera…"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifrelemeye hazır…"
           }
         },
         "uk" : {
@@ -2543,6 +2681,12 @@
             "value" : "Kryptografi"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kriptografi"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2648,6 +2792,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "↓ Endast för kryptering ↓"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "↓ Yalnızca şifreleme için ↓"
           }
         },
         "uk" : {
@@ -2757,6 +2907,12 @@
             "value" : "Extrem"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aşırı"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2862,6 +3018,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hög belastning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yüksek yük"
           }
         },
         "uk" : {
@@ -2971,6 +3133,12 @@
             "value" : "Antalet **iterationer** påverkar krypteringens **styrka**. Fler = svårare att knäcka, men **långsammare**."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**İterasyon sayısı** şifrelemenin **gücünü** etkiler. Daha fazla = kırması zor, ancak **daha yavaş**."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3076,6 +3244,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Iterationer"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İterasyonlar"
           }
         },
         "uk" : {
@@ -3185,6 +3359,12 @@
             "value" : "**Nyckellängden** avgör hur svårt det är att knäcka dina data genom brute force — ju **längre** nyckeln är, desto **starkare** skydd. Högre värden ökar säkerheten men kan göra bearbetningen något långsammare."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Anahtar uzunluğu**, verilerinizin brute force ile kırılmasının zorluğunu belirler — anahtar ne kadar **uzunsa**, koruma o kadar **güçlüdür**. Daha yüksek değerler güvenliği artırır ancak işlemi biraz yavaşlatabilir."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3290,6 +3470,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nyckellängd"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Anahtar uzunluğu"
           }
         },
         "uk" : {
@@ -3399,6 +3585,12 @@
             "value" : "Det maximala **antalet lager beror på nyckellängden** du väljer. En längre nyckel tillåter fler lager och ökar därmed skyddet."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçtiğiniz anahtar uzunluğuna bağlı olarak **maksimum katman sayısı** değişir. Daha uzun anahtar, daha fazla katman kullanılmasına izin verir ve korumayı artırır."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3504,6 +3696,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Antal krypteringslager"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreleme katmanı sayısı"
           }
         },
         "uk" : {
@@ -3613,6 +3811,12 @@
             "value" : "Lager"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Katmanlar"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3718,6 +3922,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Låg belastning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Düşük yük"
           }
         },
         "uk" : {
@@ -3827,6 +4037,12 @@
             "value" : "Maximal"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maksimum"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -3932,6 +4148,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Medel"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orta"
           }
         },
         "uk" : {
@@ -4041,6 +4263,12 @@
             "value" : "**Minne** är mängden RAM som används under kryptering för att skydda dina data. Ju mer minne som används, desto svårare är det för angripare att knäcka ditt lösenord eftersom attacker kräver mer resurser och tid.  Men **hög minnesanvändning kan göra enheten långsammare** — välj en balans mellan säkerhet och prestanda."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Bellek**, verilerinizi korumak için şifreleme sırasında kullanılan RAM miktarıdır. Daha fazla bellek kullanımı, saldırganların parolanızı kırmasını zorlaştırır çünkü saldırılar daha fazla kaynak ve zaman gerektirir.  Ancak **yüksek bellek kullanımı cihazınızı yavaşlatabilir** — güvenlik ve performans arasında denge kurun."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4146,6 +4374,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Minne"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bellek"
           }
         },
         "uk" : {
@@ -4417,6 +4651,24 @@
             }
           }
         },
+        "tr" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Cihazınızda **%lld çekirdek** var. Paralel görev sayısını artırmak **şifrelemeyi hızlandırabilir**, ancak daha fazla pil tüketebilir."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Cihazınızda **%lld çekirdek** var. Paralel görev sayısını artırmak **şifrelemeyi hızlandırabilir**, ancak daha fazla pil tüketebilir."
+                }
+              }
+            }
+          }
+        },
         "uk" : {
           "variations" : {
             "plural" : {
@@ -4584,6 +4836,12 @@
             "value" : "Parallellitet"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paralellik"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4691,6 +4949,12 @@
             "value" : "**Salt** är slumpmässig data som läggs till ditt lösenord innan kryptering. Det gör resultatet **unikt** även om lösenordet är detsamma, och skyddar mot återanvändningsattacker och lösenordsknäckning. Ju **längre** saltet är, desto **starkare** är skyddet — svårare att gissa och svårare att knäcka."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Salt**, şifrelemeden önce parolanıza eklenen rastgele veridir. Aynı parola kullanılsa bile sonucu **benzersiz** kılar, yeniden kullanım saldırılarına ve parola kırmaya karşı korur. Salt ne kadar **uzunsa**, koruma o kadar **güçlüdür** — tahmin etmesi ve kırması daha zordur."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -4793,6 +5057,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salt"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Salt"
@@ -4905,6 +5175,12 @@
             "value" : "Lösenord"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parola"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5010,6 +5286,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Säkerhet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güvenlik"
           }
         },
         "uk" : {
@@ -5119,6 +5401,12 @@
             "value" : "**VOID förstärker den kryptografiska nyckeln** genom att lägga till en dold intern komponent.  Värdet 0 betyder att krypteringen utförs utan VOID.  **VOID-numret påverkar bara variantvalet**, inte skyddsnivån."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID, gizli bir iç bileşen ekleyerek kriptografik anahtarı güçlendirir**.  Değer 0 ise şifreleme VOID olmadan gerçekleştirilir.  **VOID sayısı sadece varyant seçimini etkiler**, korunma seviyesini değiştirmez."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5226,6 +5514,12 @@
             "value" : "Hemlighet"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gizli"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5328,6 +5622,12 @@
           }
         },
         "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID"
+          }
+        },
+        "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "VOID"
@@ -5440,6 +5740,12 @@
             "value" : "Starkt"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güçlü"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5545,6 +5851,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Data blir otillgängliga** efter den valda tiden."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seçilen süreden sonra **verilere erişilemez**."
           }
         },
         "uk" : {
@@ -5654,6 +5966,12 @@
             "value" : "Ställ in timer"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamanlayıcı ayarla"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5759,6 +6077,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Timer"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zamanlayıcı"
           }
         },
         "uk" : {
@@ -5868,6 +6192,12 @@
             "value" : "Svagt"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zayıf"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5975,6 +6305,12 @@
             "value" : "Emoji"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -5997,6 +6333,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "表情符號"
+          }
+        }
+      }
+    },
+    "EmojiCoding.headerText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encoding text into emojis is a **visual representation of data**, similar to Base64.  **It does not provide cryptographic protection**.  It can be combined with encryption for stronger security."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодирование текста в эмоджи — **визуальное представление данных**, подобное Base64.  **Не обеспечивает криптографической защиты**.  Может использоваться совместно с шифрованием для повышения криптостойкости."
           }
         }
       }
@@ -6082,6 +6435,12 @@
             "value" : "Djur"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hayvanlar"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6104,6 +6463,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "動物"
+          }
+        }
+      }
+    },
+    "EmojiMood.flags" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flags"
           }
         }
       }
@@ -6187,6 +6557,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mat"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yiyecek"
           }
         },
         "uk" : {
@@ -6296,6 +6672,12 @@
             "value" : "Kärlek"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aşk"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6401,6 +6783,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Negativa"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olumsuz"
           }
         },
         "uk" : {
@@ -6510,6 +6898,12 @@
             "value" : "Människor"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İnsanlar"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6617,6 +7011,12 @@
             "value" : "Positiva"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Olumlu"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6639,6 +7039,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "正面"
+          }
+        }
+      }
+    },
+    "EmojiMood.symbols" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symbols"
           }
         }
       }
@@ -6722,6 +7133,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Välj **typ av emoji** för att koda text till en unik emojisekvens.  Dekryptering från vilken emojityp som helst sker **automatiskt**."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metni benzersiz bir emoji dizisine kodlamak için **emoji türünü seçin**.  Herhangi bir emoji türünden metni çözme işlemi **otomatik** olarak gerçekleşir."
           }
         },
         "uk" : {
@@ -6831,6 +7248,12 @@
             "value" : "Emoji-kodning"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji kodlama"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -6936,6 +7359,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det gick inte att generera nyckel med Argon2."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Argon2 ile anahtar oluşturulamadı."
           }
         },
         "uk" : {
@@ -7045,6 +7474,12 @@
             "value" : "Det gick inte att dekryptera data."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veriler çözülemedi."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7150,6 +7585,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det gick inte att dekryptera data."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veriler şifrelenmiş hâlde çözülemedi."
           }
         },
         "uk" : {
@@ -7259,6 +7700,12 @@
             "value" : "Det gick inte att koda data."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veriler kodlanamadı."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7364,6 +7811,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det gick inte att kryptera data."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Veriler şifrelenemedi."
           }
         },
         "uk" : {
@@ -7473,6 +7926,12 @@
             "value" : "Den krypterade datan har upphört att gälla."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreli verilerin süresi doldu."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7578,6 +8037,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Integriteten hos den krypterade datan har äventyrats."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreli verilerin bütünlüğü bozuldu."
           }
         },
         "uk" : {
@@ -7687,6 +8152,12 @@
             "value" : "Formatet på den krypterade datan är skadat eller ofullständigt."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreli verilerin formatı bozuk veya eksik."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -7792,6 +8263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ingångsdata är ogiltiga."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Girdi verileri geçersiz."
           }
         },
         "uk" : {
@@ -7901,6 +8378,12 @@
             "value" : "Huvudnyckeln är tom eller skadad."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ana anahtar boş veya bozulmuş."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8006,6 +8489,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ogiltigt antal härledda nycklar."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geçersiz sayıda türetilmiş anahtar."
           }
         },
         "uk" : {
@@ -8115,6 +8604,12 @@
             "value" : "Fel vid generering av nonce för AES."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES için nonce oluşturulurken hata oluştu."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8220,6 +8715,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Det gick inte att generera kryptografiskt salt."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kriptografik salt oluşturulamadı."
           }
         },
         "uk" : {
@@ -8329,6 +8830,12 @@
             "value" : "Fel"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hata"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8434,6 +8941,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ett oväntat fel inträffade."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beklenmeyen bir hata oluştu."
           }
         },
         "uk" : {
@@ -8543,6 +9056,12 @@
             "value" : "Låt appen vara öppen tills processen är klar."
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşlem tamamlanana kadar uygulamayı açık tutun."
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8648,6 +9167,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Bearbetar…"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İşleniyor…"
           }
         },
         "uk" : {
@@ -8757,6 +9282,12 @@
             "value" : "Integritetspolicy"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gizlilik Politikası"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -8862,6 +9393,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Om projektet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proje hakkında"
           }
         },
         "uk" : {
@@ -8971,6 +9508,12 @@
             "value" : "Användarvillkor"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kullanım Şartları"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9076,6 +9619,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Om appen"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama hakkında"
           }
         },
         "uk" : {
@@ -9185,6 +9734,12 @@
             "value" : "Återställ köp"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satın almaları geri yükle"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9290,6 +9845,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Lämna en recension i App Store"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Store'da yorum bırak"
           }
         },
         "uk" : {
@@ -9399,6 +9960,12 @@
             "value" : "Prenumeration"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonelik"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9504,6 +10071,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Åtkomst"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erişim"
           }
         },
         "uk" : {
@@ -9613,6 +10186,12 @@
             "value" : "Appversion"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama sürümü"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9718,6 +10297,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Mörkt läge"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Karanlık mod"
           }
         },
         "uk" : {
@@ -9827,6 +10412,12 @@
             "value" : "Haptik"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dokunsal geri bildirim"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9932,6 +10523,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Ja"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Evet"
           }
         },
         "uk" : {
@@ -10041,6 +10638,12 @@
             "value" : "Nej"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hayır"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10146,6 +10749,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Vill du byta appens språk?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uygulama dilini değiştirmek istiyor musunuz?"
           }
         },
         "uk" : {
@@ -10255,6 +10864,12 @@
             "value" : "Byt språk"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dili değiştir"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10360,6 +10975,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Språk"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dil"
           }
         },
         "uk" : {
@@ -10469,6 +11090,12 @@
             "value" : "Ljud"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sesler"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10574,6 +11201,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Allmänt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Genel"
           }
         },
         "uk" : {
@@ -10683,6 +11316,12 @@
             "value" : "Inställningar"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ayarlar"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10790,6 +11429,12 @@
             "value" : "%lld tim"
           }
         },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld sa"
+          }
+        },
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
@@ -10895,6 +11540,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%lld min"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld dk"
           }
         },
         "uk" : {
