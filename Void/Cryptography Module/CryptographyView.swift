@@ -10,6 +10,7 @@ import SwiftUI
 struct CryptographyView: View {
     @StateObject private var vm = CryptographyViewModel()
     
+    
     @State private var showAES256View = false
     @State private var showEmojiView = false
     
