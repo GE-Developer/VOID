@@ -10,6 +10,7 @@ import Foundation
 final class CryptographyViewModel: ObservableObject {
     let title = L10n("Cryptography.title")
     
+    
     let symmetricEncryptionTitle = "Симметричные алгоритмы"
     let symmetricEncryptionSubtitle = "Одинаковый ключ на обеих сторонах процесса шифрования."
     
