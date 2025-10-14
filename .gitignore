@@ -1,0 +1,51 @@
+# Xcode
+*.xcuserstate
+*.xcuserdata/
+*.xcscmblueprint
+*.xcdebugger/
+*.xccheckout
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcshareddata/WorkspaceSettings.xcsettings
+*.xcodeproj/xcshareddata/IDEWorkspaceChecks.plist
+*.xcodeproj/xcshareddata/xcschemes/
+*.xcodeproj/xcuserdata/
+*.xcscheme
+*.xcschememanagement.plist
+**/UserInterfaceState.xcuserstate
+
+# Workspace user data
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+*.xcworkspace/IDEWorkspaceChecks.plist
+*.xcworkspace/xcshareddata/xcschemes/
+*.xcworkspace/xcdebugger/
+
+# Breakpoints and bookmarks
+Breakpoints_v2.xcbkptlist
+bookmarks.plist
+*.bookmarks.plist
+IDEFindNavigatorScopes.plist
+UserInterfaceState.xcuserstate
+
+# Build
+build/
+DerivedData/
+
+# Swift Package Manager
+.build/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Misc
+*.swp
+*.DS_Store
