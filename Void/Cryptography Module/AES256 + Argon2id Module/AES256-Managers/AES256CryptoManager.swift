@@ -137,7 +137,7 @@ final class AES256CryptoManager {
         // Return Base64 for transmission
         return finalData.base64EncodedString()
     }
-
+    
     // MARK: - Decrypt
     func decrypt(
         ciphertext: String,
@@ -150,7 +150,7 @@ final class AES256CryptoManager {
         guard let raw = Data(base64Encoded: ciphertext) else {
             throw CryptoError.invalidFormat
         }
-
+        
         let metaSaltLength = 32
         let checksumLength = 64
         
@@ -172,7 +172,7 @@ final class AES256CryptoManager {
             password: String(password.reversed()),
             voidIndex: nil
         )
-
+        
         try Task.checkCancellation()
         
         let metaMasterKey = try await keyDerivationService.deriveMasterKey(
@@ -183,14 +183,14 @@ final class AES256CryptoManager {
             parallelism: 4,
             length: 128
         )
-
+        
         try Task.checkCancellation()
         
         let metaKeys = try await keyDerivationService.deriveSubkeys(
             masterKey: metaMasterKey,
             count: 1
         )
-
+        
         // MARK: - Check integrity
         try Task.checkCancellation()
         
@@ -200,7 +200,7 @@ final class AES256CryptoManager {
         let calculated = Data(SHA512.hash(data: checksumData))
         
         guard checksum == calculated else { throw CryptoError.integrityCheckFailed }
-
+        
         // MARK: - Decrypt meta layer → get container
         try Task.checkCancellation()
         
@@ -209,7 +209,7 @@ final class AES256CryptoManager {
             keys: metaKeys
         )
         
-        // MARK: - Decrypt main text
+        // MARK: - Parse container
         try Task.checkCancellation()
         
         var offset = 0
@@ -221,70 +221,64 @@ final class AES256CryptoManager {
         guard let version = CryptoVersion(rawValue: versionByte) else {
             throw CryptoError.invalidFormat
         }
-
+        
         switch version {
         case .v1:
-            guard container.count >= offset + 2 else { throw CryptoError.invalidFormat }
-            let saltLen = Int(
-                container.withUnsafeBytes {
-                    $0.load(fromByteOffset: offset, as: UInt16.self).bigEndian
-                }
-            )
-            offset += 2
+            func readUInt16BE(_ data: Data, _ offset: inout Int) throws -> UInt16 {
+                guard offset + 2 <= data.count else { throw CryptoError.invalidFormat }
+                var v: UInt16 = 0
+                withUnsafeMutableBytes(of: &v) { $0.copyBytes(from: data[offset..<offset+2]) }
+                offset += 2
+                return UInt16(bigEndian: v)
+            }
             
+            func readUInt32BE(_ data: Data, _ offset: inout Int) throws -> UInt32 {
+                guard offset + 4 <= data.count else { throw CryptoError.invalidFormat }
+                var v: UInt32 = 0
+                withUnsafeMutableBytes(of: &v) { $0.copyBytes(from: data[offset..<offset+4]) }
+                offset += 4
+                return UInt32(bigEndian: v)
+            }
+            
+            func readUInt64BE(_ data: Data, _ offset: inout Int) throws -> UInt64 {
+                guard offset + 8 <= data.count else { throw CryptoError.invalidFormat }
+                var v: UInt64 = 0
+                withUnsafeMutableBytes(of: &v) { $0.copyBytes(from: data[offset..<offset+8]) }
+                offset += 8
+                return UInt64(bigEndian: v)
+            }
+            
+            let saltLen = Int(try readUInt16BE(container, &offset))
             guard container.count >= offset + saltLen else {
                 throw CryptoError.invalidFormat
             }
             let salt = container.subdata(in: offset..<offset + saltLen)
             offset += saltLen
-
-            let iterations = container.withUnsafeBytes {
-                $0.load(fromByteOffset: offset, as: UInt16.self).bigEndian
-            }
-            offset += 2
             
-            let memory = container.withUnsafeBytes {
-                $0.load(fromByteOffset: offset, as: UInt32.self).bigEndian
-            }
-            offset += 4
+            let iterations = try readUInt16BE(container, &offset)
+            let memory = try readUInt32BE(container, &offset)
+            let parallelism = container[offset]; offset += 1
+            let keyLength = container[offset]; offset += 1
+            let layers = container[offset]; offset += 1
+            let expiration = try readUInt64BE(container, &offset)
             
-            let parallelism = container[offset]
-            offset += 1
-            
-            let keyLength = container[offset]
-            offset += 1
-            
-            let layers = container[offset]
-            offset += 1
-            
-            let expiration = container.withUnsafeBytes {
-                $0.load(fromByteOffset: offset, as: UInt64.self).bigEndian
-            }
-            offset += 8
-
             if expiration != 0 {
                 let now = UInt64(Date().timeIntervalSince1970)
                 guard now <= expiration else { throw CryptoError.expired }
             }
-
-            let cipherLen = container.withUnsafeBytes {
-                $0.load(fromByteOffset: offset, as: UInt32.self).bigEndian
-            }
-            offset += 4
             
-            guard container.count >= offset + Int(cipherLen) else {
-                throw CryptoError.invalidFormat
-            }
+            let cipherLen = try readUInt32BE(container, &offset)
+            guard container.count >= offset + Int(cipherLen) else { throw CryptoError.invalidFormat }
             let cipher = container.subdata(in: offset..<offset + Int(cipherLen))
-
-            // Recover main key
+            
+            // MARK: - Recover main key
             try Task.checkCancellation()
             
             let combinedPassword = await pepperService.combinedSecret(
                 password: password,
                 voidIndex: voidIndex
             )
-
+            
             try Task.checkCancellation()
             
             let masterKey = try await keyDerivationService.deriveMasterKey(
@@ -295,25 +289,25 @@ final class AES256CryptoManager {
                 parallelism: parallelism,
                 length: keyLength
             )
-
+            
             try Task.checkCancellation()
             
             let keys = try await keyDerivationService.deriveSubkeys(
                 masterKey: masterKey,
                 count: Int(layers)
             )
-
+            
             try Task.checkCancellation()
             
             let decrypted = try await aesService.decrypt(
                 ciphertext: cipher,
                 keys: keys
             )
-
+            
             guard let result = String(data: decrypted, encoding: .utf8) else {
                 throw CryptoError.invalidFormat
             }
-
+            
             return result
         }
     }

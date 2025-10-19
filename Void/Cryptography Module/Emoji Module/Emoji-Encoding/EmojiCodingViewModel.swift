@@ -16,7 +16,7 @@ final class EmojiCodingViewModel: ObservableObject {
     @Published var showErrorAlert = false
     
     @Published private(set) var messages: [Message] = []
-
+    
     private(set) var errorMessage = ""
     
     private var currentTask: Task<Void, Never>?
