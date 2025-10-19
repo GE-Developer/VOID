@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 final class SettingsViewModel: ObservableObject {
     @Published var isThemeLight: Bool {
@@ -86,6 +87,9 @@ final class SettingsViewModel: ObservableObject {
     let appVersion: String
     let languageSubtitle = "Language"
     
+#warning("Add App ID")
+    private let appID = ""
+    
     private let themeManager = ThemeManager.shared
     private let languageManager = LanguageManager.shared
     private let hapticsManager = HapticsManager.shared
@@ -99,5 +103,14 @@ final class SettingsViewModel: ObservableObject {
         isHapticsOff = hapticsManager.isHapticsOff
         isSoundOff = soundManager.isSoundOff
         appVersion = "\(version) (\(build))"
+    }
+    
+    func rateApp() {
+        guard let url = URL(
+            string: "https://apps.apple.com/app/\(appID)?action=write-review"
+        ) else { return }
+        
+        hapticsManager.impact()
+        UIApplication.shared.open(url)
     }
 }

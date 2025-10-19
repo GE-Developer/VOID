@@ -24,7 +24,7 @@ struct SettingsView: View {
                 NavigationLazyView(LanguageView())
             }
             .navigationDestination(isPresented: $subscriptionViewPresented) {
-                NavigationLazyView(EmptyView())
+                NavigationLazyView(PayWallView())
             }
             .navigationDestination(isPresented: $projectViewPresented) {
                 NavigationLazyView(EmptyView())
@@ -141,7 +141,7 @@ extension SettingsView {
         CustomButtonRow(
             icon: .system.reviewLike,
             title: vm.reviewTitle,
-            action: { }
+            action: { vm.rateApp() }
         )
     }
     

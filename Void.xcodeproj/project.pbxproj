@@ -20,6 +20,8 @@
 		1F1452592E608E9200F8A553 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1452582E608E9200F8A553 /* SettingsView.swift */; };
 		1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14525B2E6092D200F8A553 /* LanguageView.swift */; };
 		1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */; };
+		1F2403B92EA51F6E00FB4005 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2403B82EA51F6E00FB4005 /* StoreManager.swift */; };
+		1F2403BB2EA5279E00FB4005 /* PayWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2403BA2EA5279E00FB4005 /* PayWallView.swift */; };
 		1F2CADA42E91075E009007B5 /* AboutEncryptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CADA32E91075E009007B5 /* AboutEncryptionView.swift */; };
 		1F2CADA62E91088C009007B5 /* AboutAES256ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CADA52E91088C009007B5 /* AboutAES256ViewModel.swift */; };
 		1F2CADA92E9183AD009007B5 /* AboutEncryptionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2CADA82E9183AD009007B5 /* AboutEncryptionProtocol.swift */; };
@@ -100,6 +102,8 @@
 		1F1452582E608E9200F8A553 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1F14525B2E6092D200F8A553 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		1F2403B82EA51F6E00FB4005 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		1F2403BA2EA5279E00FB4005 /* PayWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallView.swift; sourceTree = "<group>"; };
 		1F2CADA32E91075E009007B5 /* AboutEncryptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutEncryptionView.swift; sourceTree = "<group>"; };
 		1F2CADA52E91088C009007B5 /* AboutAES256ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAES256ViewModel.swift; sourceTree = "<group>"; };
 		1F2CADA82E9183AD009007B5 /* AboutEncryptionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutEncryptionProtocol.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 				1F7D9EE02E634007007B4DDD /* SoundManager.swift */,
 				1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */,
 				1F6F65F22E92C08C0095E89E /* TabBarState.swift */,
+				1F2403B82EA51F6E00FB4005 /* StoreManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			children = (
 				1F64ADE12E76234200DB44CE /* Settings */,
 				1F64ADE22E76234C00DB44CE /* Language */,
+				1F2403BA2EA5279E00FB4005 /* PayWallView.swift */,
 			);
 			path = "Settings Module";
 			sourceTree = "<group>";
@@ -240,6 +246,13 @@
 				1F2D34272E7E1760005E6239 /* AES256CryptoManager.swift */,
 			);
 			path = "AES256-Managers";
+			sourceTree = "<group>";
+		};
+		1F2403BC2EA5845300FB4005 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1F2CADAA2E9183DC009007B5 /* Protocols */ = {
@@ -432,6 +445,7 @@
 			isa = PBXGroup;
 			children = (
 				1F8DDBDB2E3677DE005734CD /* Void */,
+				1F2403BC2EA5845300FB4005 /* Frameworks */,
 				1FB32A322E34FA17003E4B54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -566,6 +580,7 @@
 				1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */,
 				1F8DDBF12E367A58005734CD /* CustomNavigationTitle.swift in Sources */,
 				1F8DDCE32E39676C005734CD /* CryptographyView.swift in Sources */,
+				1F2403BB2EA5279E00FB4005 /* PayWallView.swift in Sources */,
 				1F8DDCE12E396473005734CD /* Gradient + Ext.swift in Sources */,
 				1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */,
 				1F8B4FA32E9C76C80075C9DA /* LetterType.swift in Sources */,
@@ -583,6 +598,7 @@
 				1F6F66032E958C030095E89E /* EmojiCodingViewModel.swift in Sources */,
 				1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */,
 				1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */,
+				1F2403B92EA51F6E00FB4005 /* StoreManager.swift in Sources */,
 				1F6F65FE2E958A3F0095E89E /* CodecService.swift in Sources */,
 				1F8DDBC52E366E11005734CD /* VoidApp.swift in Sources */,
 				1F2CADA42E91075E009007B5 /* AboutEncryptionView.swift in Sources */,
@@ -761,6 +777,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
@@ -782,6 +799,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.Void";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -797,6 +815,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
@@ -818,6 +837,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "GE-Developer.Void";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
