@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - VOID App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            line-height: 1.6;
+            color: #333;
+        }
+        h1, h2 {
+            color: #222;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h2 {
+            margin-top: 25px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy</h1>
+
+    <p>This privacy policy applies to the <strong>VOID app</strong> (hereby referred to as "Application") for mobile devices that was created by <strong>Mikhail Bukhrashvili</strong> (hereby referred to as "Service Provider") as a Freemium service. This service is intended for use "AS IS".</p>
+
+    <h2>Information Collection and Use</h2>
+    <p>The Application <strong>does not collect, store, or transmit any personal data</strong> from users.</p>
+    <ul>
+        <li>No registration or accounts are required</li>
+        <li>No connection to the internet is used</li>
+        <li>No data is stored in Keychain, CoreData, or any external service</li>
+    </ul>
+    <p>All encryption and data storage happen <strong>locally on the user's device</strong>. Users are responsible for sharing passwords and encrypted content through external channels.</p>
+
+    <h2>Third Party Access</h2>
+    <p>The Application <strong>does not share any user data with third parties</strong>. There is no marketing, tracking, or analytics.</p>
+
+    <h2>Opt-Out Rights</h2>
+    <p>Since no data is collected, uninstalling the Application is sufficient to stop any processing of information.</p>
+
+    <h2>Data Retention Policy</h2>
+    <p>No user data is stored by the Service Provider.</p>
+
+    <h2>Children</h2>
+    <p>The Service Provider does not knowingly collect data from children under 13. The Application is not intended for children under 13. Parents and guardians are encouraged to monitor children's use of the application.</p>
+
+    <h2>Security</h2>
+    <p>All data remains <strong>on the device only</strong> and is protected using AES-256 encryption with Argon2 key generation.</p>
+
+    <h2>Changes</h2>
+    <p>This Privacy Policy may be updated from time to time. Changes will be published on this page. Continued use of the Application after changes means acceptance of the updated policy.</p>
+
+    <h2>Your Consent</h2>
+    <p>By using the Application, you agree to the terms of this Privacy Policy.</p>
+
+    <h2>Contact Us</h2>
+    <p>If you have any questions regarding privacy while using the Application, please contact the Service Provider via email at <a href="mailto:mikhail.bukhrashvili@gmail.com">mikhail.bukhrashvili@gmail.com</a>.</p>
+
+    <footer>
+        <p><strong>Effective Date:</strong> 2025-10-22</p>
+    </footer>
+</body>
+</html>
