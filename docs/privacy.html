@@ -1,55 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - VOID App</title>
-    <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
-        h1, h2 { color: #222; }
-        h1 { text-align: center; margin-bottom: 30px; }
-        h2 { margin-top: 25px; }
-        ul { margin-left: 20px; }
-        a { color: #1a73e8; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: #777; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy</title>
+<style>
+    :root {
+        color-scheme: light;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #ffffff;
+        color: #111111;
+        line-height: 1.7;
+    }
+
+    main {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 72px 24px 96px;
+    }
+
+    header {
+        margin-bottom: 48px;
+    }
+
+    .app-name {
+        margin: 0 0 8px;
+        font-size: 0.95rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #444444;
+    }
+
+    h1 {
+        margin: 0 0 12px;
+        font-size: 2.2rem;
+        letter-spacing: -0.01em;
+    }
+
+    .effective-date {
+        margin: 0;
+        font-size: 0.95rem;
+        color: #555555;
+    }
+
+    section + section {
+        margin-top: 36px;
+    }
+
+    h2 {
+        margin: 0 0 12px;
+        font-size: 1.3rem;
+        letter-spacing: -0.005em;
+    }
+
+    p {
+        margin: 0 0 16px;
+        font-size: 1rem;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-decoration-color: rgba(17, 17, 17, 0.3);
+    }
+
+    a:hover {
+        text-decoration-color: rgba(17, 17, 17, 0.6);
+    }
+
+    footer {
+        margin-top: 48px;
+        font-size: 0.9rem;
+        color: #666666;
+    }
+
+    @media (max-width: 600px) {
+        main {
+            padding: 56px 20px 72px;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+</style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
+<main>
+    <header>
+        <p class="app-name" aria-label="VOID"><strong>[VOID]</strong></p>
+        <h1>Privacy Policy</h1>
+        <p class="effective-date">Effective Date: <time datetime="2025-10-20">October 20, 2025</time></p>
+    </header>
 
-    <p>This Privacy Policy applies to the <strong>VOID app</strong> (hereby referred to as "Application") for mobile devices created by <strong>Mikhail Bukhrashvili</strong> (hereby referred to as "Service Provider"). The Application is provided "AS IS".</p>
+    <section id="policy-intro">
+        <h2>Privacy Policy</h2>
+        <p>This privacy policy applies to the <strong>VOID</strong> app (hereafter, the "Application") for mobile devices. The Application is developed by <strong>Mikhail Bukhrashvili</strong> (the "Service Provider") and is offered as a <strong>freemium service with optional in-app purchases and subscriptions</strong>. <strong>VOID</strong> delivers local text encryption and decryption and is intended for use <strong>"AS IS"</strong>.</p>
+    </section>
 
-    <h2>1. Information Collection and Use</h2>
-    <p>The Application does <strong>not</strong> collect, store, or transmit any personal information or usage data. All operations, including encryption and decryption, are performed locally on the user’s device. No IP addresses, location data, or other identifiable information are collected.</p>
+    <section id="information-collection">
+        <h2>Information Collection and Use</h2>
+        <p>The Application runs completely offline and does not create accounts, require registration, or transmit data to external servers. It does <strong>not collect, log, or store personal information, analytics, device identifiers, or location data</strong>. All plaintext, ciphertext, encryption keys, and derived values remain on your device and are <strong>never backed up by the Application</strong>.</p>
+        <p>Payments for optional features are processed by the mobile platform’s billing system (such as the App Store or Google Play). The Service Provider does not receive or retain your payment credentials; platform providers may process limited transaction data under their own privacy policies.</p>
+    </section>
 
-    <h2>2. Third Party Access</h2>
-    <p>No data is transmitted or collected, so the Service Provider does not share any information with third parties.</p>
+    <section id="third-party-access">
+        <h2>Third Party Access</h2>
+        <p>The Application does not embed advertising, analytics SDKs, crash reporters, or other tracking tools. <strong>No information is shared with third parties</strong> except through app marketplace services that surface purchases or subscriptions at your request. <strong>The Service Provider discloses information only when legally required or to protect rights, safety, or investigate misuse.</strong></p>
+    </section>
 
-    <h2>3. Opt-Out Rights</h2>
-    <p>Since no data is collected, there is nothing to opt out from. You may uninstall the Application at any time using standard device procedures.</p>
+    <section id="opt-out-rights">
+        <h2>Opt-Out Rights</h2>
+        <p>You can stop all offline processing by <strong>uninstalling the Application</strong>. Removal can be performed using the standard uninstall process provided by your device or the applicable app marketplace.</p>
+    </section>
 
-    <h2>4. Data Retention Policy</h2>
-    <p>No user data is collected or stored, so there is no data retention.</p>
+    <section id="data-retention">
+        <h2>Data Retention Policy</h2>
+        <p>The Application does not retain user data on external servers and <strong>does not generate automatic backups</strong>. Aside from user-selected preferences (theme, sound, and vibration settings), no information is stored in the Application’s local storage. <strong>Only your theme, sound, and vibration choices persist locally</strong>. Any encrypted content you handle stays in memory only for the duration of your session unless you manually save it elsewhere.</p>
+    </section>
 
-    <h2>5. Children</h2>
-    <p>The Application does not collect personal information and is safe for individuals of all ages. Parents are encouraged to guide children in safe app usage.</p>
+    <section id="children">
+        <h2>Children</h2>
+        <p><strong>The Service Provider does not knowingly collect personal information from children under 13.</strong> Because <strong>VOID</strong> functions offline and does not request personal details, no data about children is gathered. Users under 16 should only use the Application with parental or guardian supervision. If you believe a child has provided information through external communications, please contact the Service Provider to request removal.</p>
+    </section>
 
-    <h2>6. Security</h2>
-    <p>All operations are performed locally on the device. No data is transmitted, eliminating risks associated with external breaches.</p>
+    <section id="security">
+        <h2>Security</h2>
+        <p>The Application relies on device-level protections and industry-standard cryptography (including AES-256 and Argon2 for key derivation). Since all operations occur locally and no backups are created, the primary security considerations relate to <strong>safeguarding your device, operating system, and any exports you choose to make</strong>.</p>
+    </section>
 
-    <h2>7. Changes</h2>
-    <p>This Privacy Policy may be updated periodically. Continued use of the Application indicates acceptance of any updates.</p>
+    <section id="changes">
+        <h2>Changes</h2>
+        <p>This Privacy Policy may be revised from time to time. Updates will be posted within the Application or distributed through release notes. Continued use of the Application after publication of changes constitutes acceptance of the revised policy.</p>
+    </section>
 
-    <h2>8. Your Consent</h2>
-    <p>By using the Application, you acknowledge and consent that no personal information is collected or transmitted.</p>
+    <section id="consent">
+        <h2>Your Consent</h2>
+        <p>By using the Application, you consent to the handling of information as described in this Privacy Policy. Because <strong>VOID</strong> operates offline and does not collect data, your consent primarily covers the optional sharing or exporting of encrypted content and any interactions you initiate with the Service Provider.</p>
+    </section>
 
-    <h2>9. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact the Service Provider at <a href="mailto:mikhail.bukhrashvili@gmail.com">mikhail.bukhrashvili@gmail.com</a>.</p>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have questions about privacy or this policy, please contact <strong><a href="mailto:mikhail.bukhrashvili@gmail.com">mikhail.bukhrashvili@gmail.com</a></strong>.</p>
+    </section>
 
-    <footer>
-        <p>© 2025 Mikhail Bukhrashvili. All rights reserved.</p>
-        <p>Effective Date: 2025-10-20</p>
-    </footer>
+    <footer>© 2025 <strong>Mikhail Bukhrashvili</strong>. All Rights Reserved.</footer>
+</main>
 </body>
-</
+</html>
