@@ -38,4 +38,4 @@ Download VOID directly from the [App Store](https://apps.apple.com/) to use the 
 To explore or contribute to the source code:  
 1. Clone this repository:  
 ```bash
-git clone https://github.com/GE-Developer/Void.git
+git clone https://github.com/GE-Developer/Void.git ~/Desktop/Void
