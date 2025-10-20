@@ -89,6 +89,8 @@ final class SettingsViewModel: ObservableObject {
     
 #warning("Add App ID")
     private let appID = ""
+    private let privacyPolicyURL = "https://ge-developer.github.io/VOID/privacy.html"
+    private let termsOfUse = "https://ge-developer.github.io/VOID/terms.html"
     
     private let themeManager = ThemeManager.shared
     private let languageManager = LanguageManager.shared
@@ -110,6 +112,18 @@ final class SettingsViewModel: ObservableObject {
             string: "https://apps.apple.com/app/\(appID)?action=write-review"
         ) else { return }
         
+        hapticsManager.impact()
+        UIApplication.shared.open(url)
+    }
+    
+    func showPrivacyPolicy() {
+        guard let url = URL(string: privacyPolicyURL) else { return }
+        hapticsManager.impact()
+        UIApplication.shared.open(url)
+    }
+    
+    func showTermsOfUse() {
+        guard let url = URL(string: termsOfUse) else { return }
         hapticsManager.impact()
         UIApplication.shared.open(url)
     }

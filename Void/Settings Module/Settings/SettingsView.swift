@@ -149,7 +149,7 @@ extension SettingsView {
         CustomButtonRow(
             icon: .system.termsOfUse,
             title: vm.termsOfUseTitle,
-            action: { }
+            action: { vm.showTermsOfUse() }
         )
     }
     
@@ -157,7 +157,7 @@ extension SettingsView {
         CustomButtonRow(
             icon: .system.privacyPolicy,
             title: vm.privacyPolicyTitle,
-            action: { }
+            action: { vm.showPrivacyPolicy() }
         )
     }
     
