@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions - VOID App</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+        h1, h2 { color: #222; }
+        h1 { text-align: center; margin-bottom: 30px; }
+        h2 { margin-top: 25px; }
+        ul { margin-left: 20px; }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer { margin-top: 40px; text-align: center; font-size: 0.9em; color: #777; }
+    </style>
+</head>
+<body>
+    <h1>Terms & Conditions</h1>
+
+    <p>These terms and conditions apply to the <strong>VOID app</strong> (hereby referred to as "Application") for mobile devices created by <strong>Mikhail Bukhrashvili</strong> (hereby referred to as "Service Provider") as a Freemium service.</p>
+
+    <p>By downloading or using the Application, you agree to these terms. Please read them carefully before using the Application. Unauthorized copying, modification, reverse engineering, or distribution of the Application or any part of it is prohibited. All intellectual property rights related to the Application remain the property of the Service Provider.</p>
+
+    <h2>1. Use of the Application</h2>
+    <p><strong>VOID</strong> is intended solely for local encryption and decryption of text messages. Users must <strong>use the Application only for lawful and peaceful purposes</strong>. Users are responsible for maintaining the security of their devices and the passwords used in the Application.</p>
+    <p><strong>Note:</strong> The encryption functionality is provided for <strong>educational and demonstration purposes only</strong>. The Service Provider does not guarantee that the encryption is suitable for any specific security purpose.</p>
+
+    <h2>2. Offline Operation</h2>
+    <p>The Application operates entirely offline. It <strong>does not require an internet connection</strong>, and no user data is transmitted or collected. Any sharing of encrypted data is the responsibility of the user and occurs through external channels outside of the Application.</p>
+
+    <h2>3. Updates and Compatibility</h2>
+    <p>The Service Provider may release updates to improve functionality or fix issues. You are encouraged to install updates to ensure compatibility with your device. The Service Provider does not guarantee ongoing support or that the Application will always be compatible with future operating system versions.</p>
+
+    <h2>4. Limitation of Liability</h2>
+    <p>The Service Provider is not responsible for:</p>
+    <ul>
+        <li>Loss of data due to user error or device malfunction</li>
+        <li>Inability to use the Application due to device limitations or failure</li>
+        <li>Any indirect, incidental, or consequential damages arising from use of the Application</li>
+        <li>Any illegal or malicious use of the Application by the user</li>
+    </ul>
+
+    <h2>5. Termination</h2>
+    <p>The Service Provider may discontinue the Application or revoke your rights to use it at any time. Upon termination, you must stop using the Application and may delete it from your device.</p>
+
+    <h2>6. Changes to Terms</h2>
+    <p>These Terms and Conditions may be updated periodically. Updates will be posted on this page. Continued use of the Application after updates indicates acceptance of the new terms.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have questions or suggestions about these Terms and Conditions, contact the Service Provider at <a href="mailto:mikhail.bukhrashvili@gmail.com">mikhail.bukhrashvili@gmail.com</a>.</p>
+
+    <footer>
+        <p><a href="index.html">Back to Home</a></p>
+        <p>Effective Date: 2025-10-22</p>
+    </footer>
+</body>
+</html>
