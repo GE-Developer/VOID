@@ -1244,6 +1244,204 @@
         }
       }
     },
+    "AboutEmoji.aboutDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji encoding is **a method of visually representing data** where text is converted into a sequence of emojis.  **This encoding is not cryptographic and does not provide data protection**."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодирование в эмоджи —  **это способ визуального представления данных**, при котором текст преобразуется в последовательность эмоджи.  **Такое кодирование не является криптографическим и не обеспечивает защиту данных**."
+          }
+        }
+      }
+    },
+    "AboutEmoji.aboutTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About coding"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О кодировании"
+          }
+        }
+      }
+    },
+    "AboutEmoji.howDoesItWorkDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The text is first converted to UTF-8, then encoded in Base64, after which each character is replaced with a corresponding emoji.  This algorithm **supports any characters and languages**."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текст сначала переводится в UTF-8, затем кодируется в Base64, после чего каждый символ заменяется соответствующим эмоджи.  Благодаря этому алгоритм **поддерживает любые символы и языки**."
+          }
+        }
+      }
+    },
+    "AboutEmoji.howDoesItWorkTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "How does it work?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как это работает?"
+          }
+        }
+      }
+    },
+    "AboutEmoji.tipsDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Do not use emoji encoding to protect sensitive information**.  For secure data transmission, it’s better to **combine it with encryption** — for example, encrypt the text first and then convert the result into emojis."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Не используйте кодирование в эмоджи для защиты важной информации**.  Для безопасной передачи данных лучше **сочетать его с шифрованием** — например, сначала зашифровать текст, а затем преобразовать результат в эмоджи."
+          }
+        }
+      }
+    },
+    "AboutEmoji.tipsTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipps"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consejos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conseils"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सुझाव"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggerimenti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ヒント"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "რჩევები"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "팁"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dicas"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Советы"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İpuçları"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поради"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mẹo"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示"
+          }
+        }
+      }
+    },
     "Alert.сopied" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -2053,7 +2251,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Descifrado"
+            "value" : "Descifrar"
           }
         },
         "fr" : {
@@ -2166,7 +2364,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cifrado"
+            "value" : "Cifrar"
           }
         },
         "fr" : {
@@ -6475,6 +6673,12 @@
             "state" : "translated",
             "value" : "Flags"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Флаги"
+          }
         }
       }
     },
@@ -7050,6 +7254,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Symbols"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Символы"
           }
         }
       }
@@ -9197,6 +9407,86 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "處理中…"
+          }
+        }
+      }
+    },
+    "Home.Encoding.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Changing the data format without concealing the information."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Смена формата данных без скрытия информации."
+          }
+        }
+      }
+    },
+    "Home.Encoding.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encoding"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодирование"
+          }
+        }
+      }
+    },
+    "Home.Symmetric.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The same key on both sides of the encryption process."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Одинаковый ключ на обеих сторонах процесса шифрования."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Одинаковый ключ на обеих сторонах процесса шифрования."
+          }
+        }
+      }
+    },
+    "Home.Symmetric.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symmetric Encryption"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Симметричное шифрование"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Симметричное шифрование"
           }
         }
       }

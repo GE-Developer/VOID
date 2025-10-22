@@ -10,11 +10,11 @@ import Foundation
 final class CryptographyViewModel: ObservableObject {
     let title = L10n("Cryptography.title")
     
-    let symmetricEncryptionTitle = "Симметричные алгоритмы"
-    let symmetricEncryptionSubtitle = "Одинаковый ключ на обеих сторонах процесса шифрования."
+    let symmetricEncryptionTitle = L10n("Home.Symmetric.title")
+    let symmetricEncryptionSubtitle = L10n("Home.Symmetric.description")
     
-    let encodingTitle = "Кодирование"
-    let encodingDescription = "Смена формата данных без скрытия информацию."
+    let encodingTitle = L10n("Home.Encoding.title")
+    let encodingDescription = L10n("Home.Encoding.description")
     
     let aes256Argon2idTitle = L10n("Cryptography.AES-256")
     let aes256Argon2idSubitle = "Argon2id + VOID"
