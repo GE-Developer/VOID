@@ -32,7 +32,7 @@ extension CustomTabBar {
         .frame(height: tabBarState.height)
         .background(background)
         .overlay(overlayStroke)
-        .padding(.horizontal, 80)
+        .padding(.horizontal, 32)
         .offset(y: tabBarState.isVisible ? 0 : 80)
         .opacity(tabBarState.isVisible ? 1 : 0)
         .animation(
@@ -42,9 +42,13 @@ extension CustomTabBar {
     }
     
     private var background: some View {
-        RoundedRectangle(cornerRadius: 12)
-            .foregroundStyle(.ultraThinMaterial)
-            .shadow(color: Color.void.navBarShadow, radius: 2)
+        ZStack {
+            RoundedRectangle(cornerRadius: 12)
+                .foregroundStyle(Color(.secondarySystemGroupedBackground).opacity(0.3))
+            RoundedRectangle(cornerRadius: 12)
+                .foregroundStyle(.ultraThinMaterial)
+        }
+        .shadow(color: Color.void.navBarShadow, radius: 2)
     }
     
     private var overlayStroke: some View {
@@ -66,7 +70,7 @@ extension CustomTabBar {
             }
         }
         .font(.title2)
-        .foregroundColor(
+        .foregroundStyle(
             tabBarState.selectedTab == tab
             ? Color.void.accentDark
             : Color.void.grayDark

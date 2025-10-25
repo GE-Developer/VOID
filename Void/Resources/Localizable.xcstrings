@@ -48,7 +48,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ინფორმაცია"
           }
         },
@@ -161,14 +161,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "**გამოიყენეთ რთული და უნიკალური პაროლი** (12-ზე მეტი სიმბოლო) — რაც უფრო რთულია პაროლი, მით მეტ დროს წაიღებს მისი გატეხვა.  **აირჩიეთ Argon2id-ის ძლიერი პარამეტრები** (იტერაციების რაოდენობა, ნაკადები) — ეს ზრდის უსაფრთხოებას, თუმცა შეიძლება შიფრაციის დრო 20 წუთამდე გაზარდოს.  **ყოველთვის შეინახეთ საწყისი შიფრტექსტი მთლიანად** — ერთი სიმბოლოს დაკარგვაც კი შეუძლებელს ხდის дешифრაციას.  დამატებითი დაცვისთვის რეგულარულად **განაახლეთ პაროლები**."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**복잡하고 고유한 비밀번호**(12자 이상)를 사용하세요 — 비밀번호가 복잡할수록 해독에 더 오랜 시간이 걸립니다.  **강력한 Argon2id 암호화 매개변수**(반복 횟수, 스레드 수)를 선택하세요 — 보안은 강화되지만 암호화 시간이 최대 20분까지 늘어날 수 있습니다.  **원본 암호문을 항상 완전히 저장하세요** — 한 글자라도 잃어버리면 복호화가 불가능합니다.  추가 보호를 위해 비밀번호를 정기적으로 **갱신**하세요."
+            "value" : "**복잡하고 고유한 비밀번호**(12자 이상)를 사용하세요 — 비밀번호가 복잡할수록 해독에 더 오랜 시간이 걸립니다。  **강력한 Argon2id 암호화 매개변수**(반복 횟수, 스레드 수)를 선택하세요 — 보안은 강화되지만 암호화 시간이 최대 20분까지 늘어날 수 있습니다。  **원본 암호문을 항상 완전히 저장하세요** — 한 글자라도 잃어버리면 복호화가 불가능합니다。  추가 보호를 위해 비밀번호를 정기적으로 **갱신**하세요。"
           }
         },
         "nl" : {
@@ -216,7 +216,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**使用复杂且唯一的密码**（超过 12 个字符）——密码越复杂，破解所需的时间越长。  **选择强大的 Argon2id 加密参数**（迭代次数、线程数）——这会提高安全性，但可能会将加密时间延长至 20 分钟。  **始终完整保存原始密文**——即使丢失一个字符也无法解密。  定期**更新密码**以获得额外的保护。"
+            "value" : "**使用复杂且唯一的密码**（超过 12 个字符）—密码越复杂，破解所需的时间越长。  **选择强大的 Argon2id 加密参数**（迭代次数、线程数）— 这会提高安全性，但可能会将加密时间延长至 20 分钟。  **始终完整保存原始密文**—即使丢失一个字符也无法解密。  定期**更新密码**以获得额外的保护。"
           }
         },
         "zh-Hant" : {
@@ -274,7 +274,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "რჩევები"
           }
         },
@@ -387,14 +387,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "**AES-256 (Advanced Encryption Standard)** არის სიმეტრიული შიფრაციის ალგორითმი, რომელიც იყენებს **256-ბიტიან გასაღებს**.  ის იცავს მონაცემებს, **ყოფს მათ 128-ბიტიან ბლოკებად და ასრულებს 14 რაუნდს მათემატიკური გარდაქმნებით**: ჩანაცვლებით, перестановками და ბაიტების შერევით.  შედეგად, საწყისი ინფორმაცია გადაიქცევა შიფრირებულ მონაცემებად, რომლის дешიფრაციაც შესაძლებელია **მხოლოდ იმავე გასაღებით**."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**AES-256(Advanced Encryption Standard)**은 **256비트 키**를 사용하는 대칭 키 암호화 알고리즘입니다.  데이터를 **128비트 블록으로 나누고 14번의 수학적 변환**(치환, 순열, 바이트 혼합)을 수행하여 데이터를 보호합니다.  그 결과, 원래 정보는 **같은 키로만 복호화할 수 있는** 암호화된 데이터 집합으로 변환됩니다."
+            "value" : "**AES-256(Advanced Encryption Standard)**은 **256비트 키**를 사용하는 대칭 키 암호화 알고리즘입니다。  데이터를 **128비트 블록으로 나누고 14번의 수학적 변환**(치환, 순열, 바이트 혼합)을 수행하여 데이터를 보호합니다。  그 결과, 원래 정보는 **같은 키로만 복호화할 수 있는** 암호화된 데이터 집합으로 변환됩니다。"
           }
         },
         "nl" : {
@@ -613,14 +613,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "1 — შეიყვანეთ პაროლი. 2 — აირჩიეთ VOID. 3 — აპლიკაცია ქმნის მარილს და აერთიანებს მას პაროლთან და VOID-თან. 4 — Argon2id გამოთვლის გასაღებს მითითებული პარამეტრებით. 5 — გასაღები გამოიყენება AES-256-ში ტექსტის დასაშიფრად. 6 — მარილი და სხვა პარამეტრები ინახება შიფრირებულ სტრუქტურაში.  **დეშიფრაციისთვის უნდა მიიღოთ ზუსტად იგივე გასაღები — შეიყვანეთ ისევე პაროლი და VOID და გქონდეთ საწყისი შიფრტექსტი სიმბოლო-სიმბოლომდე ზუსტად**."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "1 - 비밀번호를 입력합니다. 2 - VOID를 선택합니다. 3 - 앱이 솔트를 생성해 비밀번호와 VOID와 결합합니다. 4 - Argon2id가 지정한 매개변수로 키를 계산합니다. 5 - 해당 키를 사용해 AES-256으로 텍스트를 암호화합니다. 6 - 솔트와 다른 매개변수가 암호화된 구조에 저장됩니다.  **복호화를 위해서는 동일한 키를 정확히 재현해야 합니다 — 동일한 비밀번호와 VOID를 입력하고, 원본 암호문을 글자 하나까지 정확히 보관해야 합니다.**"
+            "value" : "1 - 비밀번호를 입력합니다。 2 - VOID를 선택합니다。 3 - 앱이 솔트를 생성해 비밀번호와 VOID와 결합합니다。 4 - Argon2id가 지정한 매개변수로 키를 계산합니다。 5 - 해당 키를 사용해 AES-256으로 텍스트를 암호화합니다。 6 - 솔트와 다른 매개변수가 암호화된 구조에 저장됩니다。  **복호화를 위해서는 동일한 키를 정확히 재현해야 합니다 — 동일한 비밀번호와 VOID를 입력하고, 원본 암호문을 글자 하나까지 정확히 보관해야 합니다。**"
           }
         },
         "nl" : {
@@ -668,7 +668,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "1 - 输入密码。 2 - 选择 VOID。 3 - 应用生成盐值，并将其与密码和 VOID 组合。 4 - Argon2id 使用指定的参数计算密钥。 5 - 使用该密钥在 AES-256 中加密文本。 6 - 盐值和其他参数会存储在加密结构中。  **要解密，必须完全复现同一密钥——输入相同的密码和 VOID，并确保原始密文准确无误。**"
+            "value" : "1 - 输入密码。 2 - 选择 VOID。 3 - 应用生成盐值，并将其与密码和 VOID 组合。 4 - Argon2id 使用指定的参数计算密钥。 5 - 使用该密钥在 AES-256 中加密文本。 6 - 盐值和其他参数会存储在加密结构中。  **要解密，必须完全复现同一密钥—输入相同的密码和 VOID，并确保原始密文准确无误。**"
           }
         },
         "zh-Hant" : {
@@ -726,7 +726,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "როგორ მუშაობს AES-256 + Argon2id + VOID"
           }
         },
@@ -839,14 +839,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "Argon2 არის თანამედროვე **KDF (Key Derivation Function) ალგორითმი პაროლის კრიპტოგრაფიულ გასაღებად გარდაქმნისთვის**, აღიარებული საერთაშორისო სტანდარტად (RFC 9106).  ის შეიქმნა 2015 წელს და Password Hashing Competition-ის გამარჯვებულად დასახელდა, როგორც **პაროლების დაცვის ყველაზე სანდო და ეფექტიანი მეთოდი**.  Argon2id აერთიანებს Argon2i-ს და Argon2d-ს თვისებებს, **უზრუნველყოფს მდგრადობას CPU-სა და მეხსიერებაზე მიმართული შეტევების წინააღმდეგ**.  ალგორითმი ასრულებს მრავალ გამოთვლით იტერაციას, მუშაობს მრავალნაკადიან რეჟიმში და თითოეული შიფრაციისთვის ამატებს უნიკალურ მარილს.  ეს გასაღების подбор-ს **ძალიან რესურსმომთხოვნსა და ხანგრძლივს ხდის**, თუნდაც ძლიერ სისტემებში."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Argon2는 **비밀번호를 암호 키로 변환하는 현대적인 KDF(Key Derivation Function) 알고리즘**으로, 국제 표준(RFC 9106)으로 인정받았습니다.  2015년에 개발되어 Password Hashing Competition에서 **가장 신뢰할 수 있고 효율적인 비밀번호 보호 방법**으로 선정되었습니다.  Argon2id는 Argon2i와 Argon2d의 특성을 결합하여 **CPU 및 메모리 공격에 대한 저항성**을 제공합니다.  이 알고리즘은 여러 번의 계산 반복을 수행하고, 멀티스레드 모드로 작동하며, 각 암호화마다 고유한 솔트를 추가합니다.  이에 따라 비밀번호를 무차별 대입으로 찾는 것이 **매우 많은 자원과 시간이 필요**하며, 강력한 시스템에서도 어렵습니다."
+            "value" : "Argon2는 **비밀번호를 암호 키로 변환하는 현대적인 KDF(Key Derivation Function) 알고리즘**으로, 국제 표준(RFC 9106)으로 인정받았습니다。  2015년에 개발되어 Password Hashing Competition에서 **가장 신뢰할 수 있고 효율적인 비밀번호 보호 방법**으로 선정되었습니다。  Argon2id는 Argon2i와 Argon2d의 특성을 결합하여 **CPU 및 메모리 공격에 대한 저항성**을 제공합니다。  이 알고리즘은 여러 번의 계산 반복을 수행하고, 멀티스레드 모드로 작동하며, 각 암호화마다 고유한 솔트를 추가합니다。  이에 따라 비밀번호를 무차별 대입으로 찾는 것이 **매우 많은 자원과 시간이 필요**하며, 강력한 시스템에서도 어렵습니다。"
           }
         },
         "nl" : {
@@ -1066,13 +1066,13 @@
         "ka" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "ყოველი [VOID] აპლიკაცია შეიცავს დამალულ პარამეტრს — **VOID Secret (შიდა პაროლი)**.  Особенности: • აირჩევა დიდი ვარიანტების ნაკრებიდან; • ერთნაირად გენერირდება ყველა მოწყობილობაზე; • მონაცემებში არ ინახება და ქსელით არ გადაეცემა; • დეშიფრაციას შესაძლებელს ხდის მხოლოდ აპლიკაციის ფარგლებში.  **თუნდაც პაროლი იყოს ცნობილი, სწორი VOID Secret-ის გარეშე მონაცემები შიფრულად დარჩება**."
+            "value" : "ყოველი [VOID] აპლიკაცია შეიცავს დამალულ პარამეტრს — **VOID Secret (შიდა პაროლი)**.  თავისებურებები: • აირჩევა დიდი ვარიანტების ნაკრებიდან; • ერთნაირად გენერირდება ყველა მოწყობილობაზე; • მონაცემებში არ ინახება და ქსელით არ გადაეცემა; • დეშიფრაციას შესაძლებელს ხდის მხოლოდ აპლიკაციის ფარგლებში.  **თუნდაც პაროლი იყოს ცნობილი, სწორი VOID Secret-ის გარეშე მონაცემები შიფრულად დარჩება**."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "각 [VOID] 앱에는 숨겨진 매개변수인 **VOID Secret(내부 비밀번호)**가 포함되어 있습니다.  특징: • 다양한 후보 중에서 선택됨; • 모든 기기에서 동일하게 생성됨; • 데이터에 저장되거나 네트워크로 전송되지 않음; • 앱 내부에서만 복호화가 가능하도록 함.  **비밀번호를 알고 있더라도 올바른 VOID Secret이 없으면 데이터는 계속 암호화된 상태로 남습니다.**"
+            "value" : "각 [VOID] 앱에는 숨겨진 매개변수인 **VOID Secret(내부 비밀번호)**가 포함되어 있습니다。  특징: • 다양한 후보 중에서 선택됨; • 모든 기기에서 동일하게 생성됨; • 데이터에 저장되거나 네트워크로 전송되지 않음; • 앱 내부에서만 복호화가 가능하도록 함。  **비밀번호를 알고 있더라도 올바른 VOID Secret이 없으면 데이터는 계속 암호화된 상태로 남습니다。**"
           }
         },
         "nl" : {
@@ -1120,7 +1120,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "每个 [VOID] 应用都包含一个隐藏参数——**VOID Secret（内部密码）**。  特点： • 从大量选项中挑选； • 在所有设备上以相同方式生成； • 不会存储在数据中或通过网络传输； • 只能在应用内进行解密。  **即使知道密码，没有正确的 VOID Secret 数据也会保持加密状态。**"
+            "value" : "每个 [VOID] 应用都包含一个隐藏参数—**VOID Secret（内部密码）**。  特点： • 从大量选项中挑选； • 在所有设备上以相同方式生成； • 不会存储在数据中或通过网络传输； • 只能在应用内进行解密。  **即使知道密码，没有正确的 VOID Secret 数据也会保持加密状态。**"
           }
         },
         "zh-Hant" : {
@@ -1178,8 +1178,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "VOID «პილპილი»"
+            "state" : "translated",
+            "value" : "VOID «Pepper»"
           }
         },
         "ko" : {
@@ -1247,10 +1247,70 @@
     "AboutEmoji.aboutDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji-Codierung ist **eine Methode zur visuellen Darstellung von Daten**, bei der Text in eine Reihe von Emojis umgewandelt wird.  **Diese Codierung ist nicht kryptografisch und bietet keinen Datenschutz**."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Emoji encoding is **a method of visually representing data** where text is converted into a sequence of emojis.  **This encoding is not cryptographic and does not provide data protection**."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La codificación con emojis es **un método de representación visual de datos**, donde el texto se convierte en una secuencia de emojis.  **Esta codificación no es criptográfica y no proporciona protección de datos**."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le codage par emoji est **une méthode de représentation visuelle des données**, où le texte est converti en une séquence d'emojis.  **Ce codage n'est pas cryptographique et ne protège pas les données**."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "इमोजी एन्कोडिंग **डेटा को दृश्य रूप में प्रस्तुत करने की एक विधि** है, जिसमें टेक्स्ट को इमोजी की एक श्रृंखला में परिवर्तित किया जाता है।  **यह एन्कोडिंग क्रिप्टोग्राफिक नहीं है और डेटा सुरक्षा प्रदान नहीं करती है**।"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La codifica con emoji è **un metodo per rappresentare visivamente i dati**, dove il testo viene convertito in una sequenza di emoji.  **Questa codifica non è crittografica e non fornisce protezione dei dati**."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "絵文字エンコーディングは、テキストを絵文字のシーケンスに変換する**データを視覚的に表現する方法**です。  **このエンコーディングは暗号化ではなく、データ保護を提供しません**。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ემოჯის კოდირება **მონაცემთა ვიზუალური წარმოდგენის მეთოდია**, სადაც ტექსტი გარდაიქმნება ემოჯების თანმიმდევრობად.  **ეს კოდირება არ არის კრიპტოგრაფიული და არ უზრუნველყოფს მონაცემთა დაცვას.**"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이모지 인코딩은 텍스트를 이모지 시퀀스로 변환하는 **데이터를 시각적으로 표현하는 방법**입니다。\n\n**이 인코딩은 암호화가 아니며 데이터 보호를 제공하지 않습니다**。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji-codering is **een methode om gegevens visueel weer te geven**, waarbij tekst wordt omgezet in een reeks emoji's.  **Deze codering is niet cryptografisch en biedt geen gegevensbescherming**."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A codificação por emoji é **um método de representação visual de dados**, onde o texto é convertido em uma sequência de emojis.  **Essa codificação não é criptográfica e não fornece proteção de dados**."
           }
         },
         "ru" : {
@@ -1258,16 +1318,112 @@
             "state" : "translated",
             "value" : "Кодирование в эмоджи —  **это способ визуального представления данных**, при котором текст преобразуется в последовательность эмоджи.  **Такое кодирование не является криптографическим и не обеспечивает защиту данных**."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji-kodning är **en metod för att visuellt representera data**, där text omvandlas till en sekvens av emojis.  **Denna kodning är inte kryptografisk och ger inget dataskydd**."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Emoji kodlaması, metnin bir dizi emojiye dönüştürüldüğü **verileri görsel olarak temsil etme yöntemi**dir.  **Bu kodlama kriptografik değildir ve veri koruması sağlamaz**."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодування емодзі — це **метод візуального подання даних**, коли текст перетворюється на послідовність емодзі.  **Це кодування не є криптографічним і не забезпечує захист даних**."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mã hóa bằng emoji là **một phương pháp biểu diễn dữ liệu trực quan**, nơi văn bản được chuyển đổi thành một chuỗi emoji.  **Mã hóa này không phải là mã hóa và không cung cấp bảo vệ dữ liệu**."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表情符号编码是一种**以可视化方式表示数据的方法**，文本会被转换为一系列表情符号。  **这种编码不是加密方法，也不能提供数据保护**。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "表情符號編碼是一種**以可視化方式表示數據的方法**，文本會被轉換為一系列表情符號。  **這種編碼不是加密方法，也不能提供數據保護**。"
+          }
         }
       }
     },
     "AboutEmoji.aboutTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über das Codieren"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "About coding"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca de la codificación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos du codage"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "कोडिंग के बारे में"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Informazioni sulla codifica"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コーディングについて"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "კოდირების შესახებ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "코딩에 대하여"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over coderen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre codificação"
           }
         },
         "ru" : {
@@ -1275,16 +1431,112 @@
             "state" : "translated",
             "value" : "О кодировании"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om kodning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kodlama hakkında"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Про кодування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Về lập trình"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于编码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於編碼"
+          }
         }
       }
     },
     "AboutEmoji.howDoesItWorkDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der Text wird zuerst in UTF-8 konvertiert, dann in Base64 codiert, danach wird jedes Zeichen durch ein entsprechendes Emoji ersetzt.  Dieser Algorithmus **unterstützt alle Zeichen und Sprachen**."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "The text is first converted to UTF-8, then encoded in Base64, after which each character is replaced with a corresponding emoji.  This algorithm **supports any characters and languages**."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El texto se convierte primero a UTF-8, luego se codifica en Base64, después de lo cual cada carácter se reemplaza por un emoji correspondiente.  Este algoritmo **admite cualquier carácter y lenguaje**."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Le texte est d'abord converti en UTF-8, puis codé en Base64, après quoi chaque caractère est remplacé par un emoji correspondant.  Cet algorithme **prend en charge tous les caractères et toutes les langues**."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "पाठ को पहले UTF-8 में परिवर्तित किया जाता है, फिर Base64 में एन्कोड किया जाता है, इसके बाद प्रत्येक अक्षर को एक संबंधित इमोजी से बदल दिया जाता है।  यह एल्गोरिदम **किसी भी अक्षर और भाषा का समर्थन करता है**।"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Il testo viene prima convertito in UTF-8, quindi codificato in Base64, dopo di che ogni carattere viene sostituito con un'emoji corrispondente.  Questo algoritmo **supporta tutti i caratteri e le lingue**."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "テキストは最初に UTF-8 に変換され、その後 Base64 にエンコードされ、各文字が対応する絵文字に置き換えられます。  このアルゴリズムは**すべての文字と言語をサポートします**。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ტექსტი ჯერ გარდაიქმნება UTF-8-ში, შემდეგ კოდირდება Base64-ში, რის შემდეგაც თითოეული სიმბოლო იცვლება შესაბამისი ემოჯით.  **ეს ალგორითმი მხარს უჭერს ნებისმიერ სიმბოლოსა და ენას.**"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "텍스트는 먼저 UTF-8로 변환된 후 Base64로 인코딩되며, 그 후 각 문자가 해당하는 이모지로 대체됩니다。  이 알고리즘은 **모든 문자와 언어를 지원합니다**。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De tekst wordt eerst geconverteerd naar UTF-8, vervolgens gecodeerd in Base64, waarna elk teken wordt vervangen door een overeenkomstige emoji.  Dit algoritme **ondersteunt alle tekens en talen**."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O texto é primeiro convertido para UTF-8, depois codificado em Base64, após o que cada caractere é substituído por um emoji correspondente.  Este algoritmo **suporta qualquer caractere e idioma**."
           }
         },
         "ru" : {
@@ -1292,16 +1544,112 @@
             "state" : "translated",
             "value" : "Текст сначала переводится в UTF-8, затем кодируется в Base64, после чего каждый символ заменяется соответствующим эмоджи.  Благодаря этому алгоритм **поддерживает любые символы и языки**."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Texten konverteras först till UTF-8, sedan kodas den i Base64, varefter varje tecken ersätts med en motsvarande emoji.  Denna algoritm **stöder alla tecken och språk**."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metin önce UTF-8'e dönüştürülür, ardından Base64 ile kodlanır ve her karakter karşılık gelen bir emoji ile değiştirilir.  Bu algoritma **herhangi bir karakteri ve dili destekler**."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Текст спочатку конвертується у UTF-8, потім кодується в Base64, після чого кожен символ замінюється відповідним емодзі.  Цей алгоритм **підтримує будь-які символи та мови**."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Văn bản trước tiên được chuyển đổi sang UTF-8, sau đó mã hóa thành Base64, sau đó mỗi ký tự được thay thế bằng emoji tương ứng.  Thuật toán này **hỗ trợ mọi ký tự và ngôn ngữ**."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文本首先被转换为 UTF-8，然后编码为 Base64，之后每个字符都会被替换为相应的表情符号。  该算法**支持任何字符和语言**。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "文本首先被轉換為 UTF-8，然後編碼為 Base64，之後每個字符都會被替換為相應的表情符號。  該算法**支持任何字符和語言**。"
+          }
         }
       }
     },
     "AboutEmoji.howDoesItWorkTitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie funktioniert es?"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "How does it work?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Cómo funciona?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment ça fonctionne ?"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "यह कैसे काम करता है?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come funziona?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "どのように動作しますか？"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "როგორ მუშაობს?"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "어떻게 작동하나요？"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoe werkt het?"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como funciona?"
           }
         },
         "ru" : {
@@ -1309,22 +1657,154 @@
             "state" : "translated",
             "value" : "Как это работает?"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hur fungerar det?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nasıl çalışır?"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Як це працює?"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nó hoạt động như thế nào?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "它是如何工作的？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "它是如何運作的？"
+          }
         }
       }
     },
     "AboutEmoji.tipsDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Verwenden Sie keine Emoji-Codierung zum Schutz sensibler Informationen**.  Für eine sichere Datenübertragung ist es besser, **es mit Verschlüsselung zu kombinieren** — z. B. den Text zuerst verschlüsseln und dann das Ergebnis in Emojis umwandeln."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Do not use emoji encoding to protect sensitive information**.  For secure data transmission, it’s better to **combine it with encryption** — for example, encrypt the text first and then convert the result into emojis."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**No uses la codificación con emojis para proteger información sensible**.  Para la transmisión segura de datos, es mejor **combinarla con cifrado** — por ejemplo, primero cifrar el texto y luego convertir el resultado en emojis."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**N'utilisez pas le codage par emoji pour protéger des informations sensibles**.  Pour une transmission sécurisée des données, il est préférable de **le combiner avec un chiffrement** — par exemple, chiffrer d'abord le texte, puis convertir le résultat en emojis."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**संवेदनशील जानकारी की सुरक्षा के लिए इमोजी एन्कोडिंग का उपयोग न करें**।  सुरक्षित डेटा ट्रांसमिशन के लिए, इसे **एन्क्रिप्शन के साथ संयोजित करना** बेहतर है — उदाहरण के लिए, पहले टेक्स्ट को एन्क्रिप्ट करें और फिर परिणाम को इमोजी में बदलें।"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Non utilizzare la codifica con emoji per proteggere informazioni sensibili**.  Per una trasmissione sicura dei dati, è meglio **combinarla con la crittografia** — ad esempio, cifrare prima il testo e poi convertire il risultato in emoji."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**機密情報を保護するために絵文字エンコーディングを使用しないでください**。  安全なデータ送信のためには、**暗号化と組み合わせる方が良い**です — 例えば、テキストをまず暗号化し、その後結果を絵文字に変換します。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "**არ გამოიყენოთ ემოჯის კოდირება მგრძნობიარე ინფორმაციის დასაცავად.  ** უსაფრთხო მონაცემთა გადაცემისთვის უმჯობესია **შიფრაციასთან კომბინაცია** — მაგალითად, ჯერ დააშიფრეთ ტექსტი და შემდეგ გადააქციეთ შედეგი ემოჯებად."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**민감한 정보를 보호하기 위해 이모지 인코딩을 사용하지 마세요**。  데이터를 안전하게 전송하려면, **암호화와 결합하는 것이 좋습니다** — 예를 들어, 먼저 텍스트를 암호화한 후 결과를 이모지로 변환합니다。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Gebruik geen emoji-codering om gevoelige informatie te beschermen**.  Voor veilige gegevensoverdracht is het beter om **het met encryptie te combineren** — bijvoorbeeld eerst de tekst versleutelen en vervolgens het resultaat naar emoji's converteren."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Não use codificação por emoji para proteger informações sensíveis**.  Para transmissão segura de dados, é melhor **combiná-la com criptografia** — por exemplo, criptografar o texto primeiro e depois converter o resultado em emojis."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "**Не используйте кодирование в эмоджи для защиты важной информации**.  Для безопасной передачи данных лучше **сочетать его с шифрованием** — например, сначала зашифровать текст, а затем преобразовать результат в эмоджи."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Använd inte emoji-kodning för att skydda känslig information**.  För säker datatransmission är det bättre att **kombinera den med kryptering** — till exempel kryptera texten först och sedan konvertera resultatet till emojis."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Hassas bilgileri korumak için emoji kodlaması kullanmayın**.  Güvenli veri iletimi için, **bunu şifreleme ile birleştirmek** daha iyidir — örneğin, önce metni şifreleyin ve ardından sonucu emojilere dönüştürün."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Не використовуйте кодування емодзі для захисту конфіденційної інформації**.  Для безпечної передачі даних краще **поєднувати його з шифруванням** — наприклад, спочатку зашифрувати текст, а потім перетворити результат на емодзі."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**Không sử dụng mã hóa bằng emoji để bảo vệ thông tin nhạy cảm**.  Để truyền dữ liệu an toàn, tốt hơn là **kết hợp nó với mã hóa** — ví dụ, trước tiên mã hóa văn bản, sau đó chuyển kết quả thành emoji."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**不要使用表情符号编码来保护敏感信息**。  为了安全地传输数据，最好**将其与加密结合使用** — 例如，先加密文本，然后将结果转换为表情符号。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**不要使用表情符號編碼來保護敏感信息**。  為了安全傳輸數據，最好**將其與加密結合使用**—例如，先加密文本，然後將結果轉換為表情符號。"
           }
         }
       }
@@ -1376,7 +1856,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "რჩევები"
           }
         },
@@ -1489,7 +1969,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "კოპირებულია"
           }
         },
@@ -1603,7 +2083,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "დეშიფრაცია"
+            "value" : "დეკოდირება"
           }
         },
         "ko" : {
@@ -1715,7 +2195,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "კოდირება"
           }
         },
@@ -1829,7 +2309,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "მომზადებულია დეშიფრაციისთვის…"
+            "value" : "მომზადებულია დეკოდირებისთვის…"
           }
         },
         "ko" : {
@@ -1941,7 +2421,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "მომზადებულია კოდირებისთვის…"
           }
         },
@@ -2167,14 +2647,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "**თუ ამ ეკრანს დატოვებთ, ყველა მონაცემი (პაროლი, VOID, Argon2id-ის პარამეტრები) განულდება.  აპლიკაცია არ ინახავს მონაცემებს ტელეფონის მეხსიერებაში.**"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**이 화면을 떠나면 모든 데이터(비밀번호, VOID, Argon2id 매개변수)가 초기화됩니다.  앱은 휴대전화 메모리에 데이터를 저장하지 않습니다.**"
+            "value" : "**이 화면을 떠나면 모든 데이터(비밀번호, VOID, Argon2id 매개변수)가 초기화됩니다。  앱은 휴대전화 메모리에 데이터를 저장하지 않습니다。**"
           }
         },
         "nl" : {
@@ -3304,7 +3784,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**반복 횟수**는 암호화의 **강도**에 영향을 줍니다. 횟수가 많을수록 풀기 어렵지만 **속도는 느려집니다**."
+            "value" : "**반복 횟수**는 암호화의 **강도**에 영향을 줍니다。 횟수가 많을수록 풀기 어렵지만 **속도는 느려집니다**。"
           }
         },
         "nl" : {
@@ -3530,7 +4010,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**키 길이**는 데이터를 무차별 대입으로 뚫기 어려운 정도를 결정합니다 — 키가 **길수록** 보호가 **강해집니다**. 값이 높을수록 보안은 증가하지만 처리 속도가 약간 느려질 수 있습니다."
+            "value" : "**키 길이**는 데이터를 무차별 대입으로 뚫기 어려운 정도를 결정합니다 — 키가 **길수록** 보호가 **강해집니다**。 값이 높을수록 보안은 증가하지만 처리 속도가 약간 느려질 수 있습니다。"
           }
         },
         "nl" : {
@@ -3578,7 +4058,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**密钥长度**决定了数据被暴力破解的难度——密钥越**长**，防护越**强**。 更高的数值可提升安全性，但可能会略微降低处理速度。"
+            "value" : "**密钥长度**决定了数据被暴力破解的难度 — 密钥越**长**，防护越**强**。 更高的数值可提升安全性，但可能会略微降低处理速度。"
           }
         },
         "zh-Hant" : {
@@ -3756,7 +4236,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "최대 **레이어 수는 선택한 키 길이에 따라 달라집니다**. 더 긴 키는 더 많은 레이어를 허용해 보호 수준을 높입니다."
+            "value" : "최대 **레이어 수는 선택한 키 길이에 따라 달라집니다**。 더 긴 키는 더 많은 레이어를 허용해 보호 수준을 높입니다。"
           }
         },
         "nl" : {
@@ -4434,7 +4914,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**메모리**는 암호화 중 데이터 보호를 위해 사용하는 RAM의 양입니다. 메모리를 더 많이 사용하면 공격자가 비밀번호를 깨기가 더 어려워집니다. 공격에는 더 많은 자원과 시간이 필요하기 때문입니다.  하지만 **메모리를 많이 사용하면 기기가 느려질 수 있습니다** — 보안과 성능 사이에서 균형을 선택하세요."
+            "value" : "**메모리**는 암호화 중 데이터 보호를 위해 사용하는 RAM의 양입니다。 메모리를 더 많이 사용하면 공격자가 비밀번호를 깨기가 더 어려워집니다. 공격에는 더 많은 자원과 시간이 필요하기 때문입니다。  하지만 **메모리를 많이 사용하면 기기가 느려질 수 있습니다** — 보안과 성능 사이에서 균형을 선택하세요。"
           }
         },
         "nl" : {
@@ -4482,7 +4962,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**内存**指的是加密时用于保护数据的 RAM 数量。 使用的内存越多，攻击者越难破解你的密码，因为攻击需要投入更多资源和时间。  但**占用更多内存可能会减慢设备速度**——请在安全性与性能之间取得平衡。"
+            "value" : "**内存**指的是加密时用于保护数据的 RAM 数量。 使用的内存越多，攻击者越难破解你的密码，因为攻击需要投入更多资源和时间。  但**占用更多内存可能会减慢设备速度**—请在安全性与性能之间取得平衡。"
           }
         },
         "zh-Hant" : {
@@ -5120,7 +5600,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**솔트**는 암호화 전에 비밀번호에 추가되는 임의의 데이터입니다. 같은 비밀번호를 사용하더라도 결과를 **유일하게** 만들어 재사용 공격과 비밀번호 크래킹으로부터 보호합니다. 솔트가 **길수록** 보호가 **강해지며**, 추측과 해독이 더 어려워집니다."
+            "value" : "**솔트**는 암호화 전에 비밀번호에 추가되는 임의의 데이터입니다。 같은 비밀번호를 사용하더라도 결과를 **유일하게** 만들어 재사용 공격과 비밀번호 크래킹으로부터 보호합니다。 솔트가 **길수록** 보호가 **강해지며**, 추측과 해독이 더 어려워집니다。"
           }
         },
         "nl" : {
@@ -5168,7 +5648,7 @@
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**盐值**是在加密前添加到密码中的随机数据。 它会使结果在相同密码下仍保持**唯一性**，从而抵御重复使用攻击和密码破解。 盐值越**长**，防护越**强**——更难猜测，更难破解。"
+            "value" : "**盐值**是在加密前添加到密码中的随机数据。 它会使结果在相同密码下仍保持**唯一性**，从而抵御重复使用攻击和密码破解。 盐值越**长**，防护越**强**—更难猜测，更难破解。"
           }
         },
         "zh-Hant" : {
@@ -5565,14 +6045,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "**VOID აძლიერებს კრიპტოგრაფიულ გასაღებს**, რადგან მას დამატებით დამალულ შიდა კომპონენტს უმატებს.  0 ნიშნავს, რომ შიფრაცია VOID-ის გარეშე სრულდება.  **VOID-ის ნომერი მხოლოდ ვარიანტის არჩევას განსაზღვრავს** და არა დაცვის დონეს."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**VOID는 숨겨진 내부 구성 요소를 추가하여 암호 키를 강화**합니다.  값이 0이면 VOID 없이 암호화를 수행함을 의미합니다.  **VOID 번호는 변형 선택에만 영향을 미치며**, 보호 수준은 바꾸지 않습니다."
+            "value" : "**VOID는 숨겨진 내부 구성 요소를 추가하여 암호 키를 강화**합니다。  값이 0이면 VOID 없이 암호화를 수행함을 의미합니다。  **VOID 번호는 변형 선택에만 영향을 미치며**, 보호 수준은 바꾸지 않습니다。"
           }
         },
         "nl" : {
@@ -6024,7 +6504,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "선택한 시간이 지나면 **데이터에 접근할 수 없습니다**."
+            "value" : "선택한 시간이 지나면 **데이터에 접근할 수 없습니다**。"
           }
         },
         "nl" : {
@@ -6469,7 +6949,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ემოჯი"
           }
         },
@@ -6538,16 +7018,112 @@
     "EmojiCoding.headerText" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Text in Emojis zu codieren ist eine **visuelle Darstellung von Daten**, ähnlich wie Base64.  **Es bietet keinen kryptografischen Schutz**.  Es kann mit Verschlüsselung kombiniert werden, um die Sicherheit zu erhöhen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Encoding text into emojis is a **visual representation of data**, similar to Base64.  **It does not provide cryptographic protection**.  It can be combined with encryption for stronger security."
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificar texto en emojis es una **representación visual de datos**, similar a Base64.  **No proporciona protección criptográfica**.  Se puede combinar con cifrado para mayor seguridad."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encoder du texte en emojis est une **représentation visuelle des données**, similaire à Base64.  **Cela ne fournit pas de protection cryptographique**.  Il peut être combiné avec le chiffrement pour une sécurité renforcée."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "टेक्स्ट को इमोजी में एन्कोड करना **डेटा का दृश्य प्रतिनिधित्व** है, Base64 के समान।  **यह क्रिप्टोग्राफिक सुरक्षा प्रदान नहीं करता**।  इसे मजबूत सुरक्षा के लिए एन्क्रिप्शन के साथ जोड़ा जा सकता है।"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificare il testo in emoji è una **rappresentazione visiva dei dati**, simile a Base64.  **Non fornisce protezione crittografica**.  Può essere combinato con la crittografia per una maggiore sicurezza."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "テキストを絵文字にエンコードすることは、Base64と同様に**データを視覚的に表現する方法**です。  **これは暗号化による保護を提供しません**。  より強力なセキュリティのために暗号化と組み合わせることができます。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ტექსტის ემოჯებად კოდირება **მონაცემთა ვიზუალური წარმოდგენაა**, Base64-ის მსგავსი.  **ის არ უზრუნველყოფს კრიპტოგრაფიულ დაცვას.**  შეიძლება გაერთიანდეს შიფრაციასთან უფრო ძლიერი უსაფრთხოებისთვის."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "텍스트를 이모지로 인코딩하는 것은 Base64와 유사한 **데이터의 시각적 표현**입니다。  **암호화 보호를 제공하지 않습니다**。  더 강력한 보안을 위해 암호화와 결합할 수 있습니다。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tekst coderen naar emoji is een **visuele representatie van gegevens**, vergelijkbaar met Base64.  **Het biedt geen cryptografische bescherming**.  Het kan worden gecombineerd met encryptie voor sterkere beveiliging."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificar texto em emojis é uma **representação visual de dados**, semelhante ao Base64.  **Não fornece proteção criptográfica**.  Pode ser combinado com criptografia para maior segurança."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Кодирование текста в эмоджи — **визуальное представление данных**, подобное Base64.  **Не обеспечивает криптографической защиты**.  Может использоваться совместно с шифрованием для повышения криптостойкости."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Att koda text till emojis är en **visuell representation av data**, liknande Base64.  **Det ger inget kryptografiskt skydd**.  Det kan kombineras med kryptering för starkare säkerhet."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Metni emojilere kodlamak, Base64'e benzer şekilde **verilerin görsel temsili**dir.  **Kriptografik koruma sağlamaz**.  Daha güçlü güvenlik için şifreleme ile birleştirilebilir."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодування тексту у емодзі — це **візуальне подання даних**, подібне до Base64.  **Це не забезпечує криптографічного захисту**.  Може бути поєднано з шифруванням для більшої безпеки."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mã hóa văn bản thành emoji là **một phương pháp biểu diễn dữ liệu trực quan**, tương tự như Base64.  **Nó không cung cấp bảo vệ mật mã**.  Có thể kết hợp với mã hóa để tăng cường bảo mật."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "将文本编码为表情符号是一种**数据的可视化表示方式**，类似于 Base64。  **它不提供加密保护**。  可以与加密结合使用以增强安全性。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "將文本編碼為表情符號是一種**數據的可視化表示方式**，類似於 Base64。  **它不提供加密保護**。  可以與加密結合使用以增強安全性。"
           }
         }
       }
@@ -6599,7 +7175,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ცხოველები"
           }
         },
@@ -6668,16 +7244,112 @@
     "EmojiMood.flags" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flaggen"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Flags"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Banderas"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Drapeaux"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "देश के झंडे"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bandiere"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "国旗"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დროშები"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "국기"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vlaggen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bandeiras"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Флаги"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flaggor"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ülke bayrakları"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прапори"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quốc kỳ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "国旗"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "國旗"
           }
         }
       }
@@ -6729,7 +7401,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "საკვები"
           }
         },
@@ -6842,7 +7514,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "სიყვარული"
           }
         },
@@ -6955,7 +7627,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ნეგატიური"
           }
         },
@@ -7068,7 +7740,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ადამიანები"
           }
         },
@@ -7181,7 +7853,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "პოზიტიური"
           }
         },
@@ -7250,16 +7922,112 @@
     "EmojiMood.symbols" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symbole"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Symbols"
           }
         },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Símbolos"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symboles"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रतीक"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simboli"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "記号"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "სიმბოლოები"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기호"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symbolen"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Símbolos"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Символы"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symboler"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semboller"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Символи"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ký hiệu"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "符号"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "符號"
           }
         }
       }
@@ -7311,14 +8079,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "აირჩიეთ **ემოჯის ტიპი**, რათა ტექტი უნიკალურ ემოჯი-სექვენციად დააკოდოთ.  ნებისმიერი ტიპის ემოჯიდან ტექსტის дешიფრაცია ხდება **ავტომატურად**."
+            "state" : "translated",
+            "value" : "აირჩიეთ **ემოჯის ტიპი**, რათა ტექტი უნიკალურ ემოჯი-სექვენციად დააკოდოთ.  ნებისმიერი ტიპის ემოჯიდან ტექსტის დეკოდირება ხდება **ავტომატურად**."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "텍스트를 고유한 이모지 시퀀스로 인코딩하기 위해 **이모지 유형을 선택**하세요.  어떤 이모지 유형이든 텍스트를 **자동으로** 디코딩합니다."
+            "value" : "텍스트를 고유한 이모지 시퀀스로 인코딩하기 위해 **이모지 유형을 선택**하세요。  어떤 이모지 유형이든 텍스트를 **자동으로** 디코딩합니다。"
           }
         },
         "nl" : {
@@ -7424,7 +8192,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ემოჯის კოდირება"
           }
         },
@@ -7544,7 +8312,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Argon2로 키를 생성하지 못했습니다."
+            "value" : "Argon2로 키를 생성하지 못했습니다。"
           }
         },
         "nl" : {
@@ -7651,13 +8419,13 @@
         "ka" : {
           "stringUnit" : {
             "state" : "needs_review",
-            "value" : "ტექსტის дешიფრაცია ვერ მოხერხდა."
+            "value" : "ტექსტის დეკოდირება ვერ მოხერხდა."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "데이터 디코딩에 실패했습니다."
+            "value" : "데이터 디코딩에 실패했습니다。"
           }
         },
         "nl" : {
@@ -7770,7 +8538,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "데이터 복호화에 실패했습니다."
+            "value" : "데이터 복호화에 실패했습니다。"
           }
         },
         "nl" : {
@@ -7876,14 +8644,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ტექსტის კოდირება ვერ მოხერხდა."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "데이터 인코딩에 실패했습니다."
+            "value" : "데이터 인코딩에 실패했습니다。"
           }
         },
         "nl" : {
@@ -7996,7 +8764,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "데이터 암호화에 실패했습니다."
+            "value" : "데이터 암호화에 실패했습니다。"
           }
         },
         "nl" : {
@@ -8109,7 +8877,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "암호화된 데이터의 유효 기간이 만료되었습니다."
+            "value" : "암호화된 데이터의 유효 기간이 만료되었습니다。"
           }
         },
         "nl" : {
@@ -8222,7 +8990,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "암호화된 데이터의 무결성이 손상되었습니다."
+            "value" : "암호화된 데이터의 무결성이 손상되었습니다。"
           }
         },
         "nl" : {
@@ -8335,7 +9103,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "암호화된 데이터 형식이 손상되었거나 불완전합니다."
+            "value" : "암호화된 데이터 형식이 손상되었거나 불완전합니다。"
           }
         },
         "nl" : {
@@ -8441,14 +9209,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "შეყვანილი მონაცემები არასწორია."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "입력 데이터가 잘못되었습니다."
+            "value" : "입력 데이터가 잘못되었습니다。"
           }
         },
         "nl" : {
@@ -8561,7 +9329,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "마스터 키가 비어 있거나 손상되었습니다."
+            "value" : "마스터 키가 비어 있거나 손상되었습니다。"
           }
         },
         "nl" : {
@@ -8674,7 +9442,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "파생 키 개수가 올바르지 않습니다."
+            "value" : "파생 키 개수가 올바르지 않습니다。"
           }
         },
         "nl" : {
@@ -8787,7 +9555,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "AES용 nonce 생성 중 오류가 발생했습니다."
+            "value" : "AES용 nonce 생성 중 오류가 발생했습니다。"
           }
         },
         "nl" : {
@@ -8893,14 +9661,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "კრიპტოგრაფიული მარილი ვერ წარმოიქმნა."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "암호화 솔트 생성에 실패했습니다."
+            "value" : "암호화 솔트 생성에 실패했습니다。"
           }
         },
         "nl" : {
@@ -9119,14 +9887,14 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "მოხდა დაუგეგმავი შეცდომა."
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "예기치 않은 오류가 발생했습니다."
+            "value" : "예기치 않은 오류가 발생했습니다。"
           }
         },
         "nl" : {
@@ -9239,7 +10007,7 @@
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "작업이 완료될 때까지 앱을 열어 두세요."
+            "value" : "작업이 완료될 때까지 앱을 열어 두세요。"
           }
         },
         "nl" : {
@@ -9345,7 +10113,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "დამუშავება…"
           }
         },
@@ -9414,10 +10182,70 @@
     "Home.Encoding.description" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ändern des Datenformats, ohne die Informationen zu verbergen."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Changing the data format without concealing the information."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cambiar el formato de los datos sin ocultar la información."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modifier le format des données sans dissimuler les informations."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "जानकारी को छिपाए बिना डेटा प्रारूप को बदलना।"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Modificare il formato dei dati senza nascondere le informazioni."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "情報を隠さずにデータ形式を変更します。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "მონაცემთა ფორმატის შეცვლა ინფორმაციის დამალვის გარეშე."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "정보를 숨기지 않고 데이터 형식을 변경합니다。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Het gegevensformaat wijzigen zonder de informatie te verbergen."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alterar o formato dos dados sem ocultar as informações."
           }
         },
         "ru" : {
@@ -9425,16 +10253,112 @@
             "state" : "translated",
             "value" : "Смена формата данных без скрытия информации."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ändra dataformatet utan att dölja informationen."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bilgiyi gizlemeden veri biçimini değiştirme."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Змінення формату даних без приховування інформації."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thay đổi định dạng dữ liệu mà không che giấu thông tin."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在不隐藏信息的情况下更改数据格式。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在不隱藏信息的情況下更改數據格式。"
+          }
         }
       }
     },
     "Home.Encoding.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kodierung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Encoding"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificación"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Encodage"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्कोडिंग"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codifica"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エンコーディング"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "კოდირება"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "인코딩"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codering"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codificação"
           }
         },
         "ru" : {
@@ -9442,12 +10366,54 @@
             "state" : "translated",
             "value" : "Кодирование"
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kodning"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kodlama"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кодування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mã hóa"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "编码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "編碼"
+          }
         }
       }
     },
     "Home.Symmetric.description" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Der gleiche Schlüssel auf beiden Seiten des Verschlüsselungsprozesses."
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9457,7 +10423,55 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Одинаковый ключ на обеих сторонах процесса шифрования."
+            "value" : "La misma clave en ambos lados del proceso de cifrado."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La même clé des deux côtés du processus de chiffrement."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "एन्क्रिप्शन प्रक्रिया के दोनों पक्षों में समान कुंजी का उपयोग किया जाता है।"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La stessa chiave su entrambi i lati del processo di crittografia."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "暗号化プロセスの両側で同じキーを使用します。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "ერთი და იგივე გასაღები გამოიყენება შიფრაციის პროცესის ორივე მხარეს."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "암호화 과정의 양쪽에서 동일한 키를 사용합니다。"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dezelfde sleutel aan beide kanten van het versleutelingsproces."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A mesma chave em ambos os lados do processo de criptografia."
           }
         },
         "ru" : {
@@ -9465,12 +10479,54 @@
             "state" : "translated",
             "value" : "Одинаковый ключ на обеих сторонах процесса шифрования."
           }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Samma nyckel på båda sidor av krypteringsprocessen."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Şifreleme işleminin her iki tarafında da aynı anahtar kullanılır."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Один і той самий ключ використовується з обох боків процесу шифрування."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cùng một khóa được sử dụng ở cả hai phía của quá trình mã hóa."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "加密过程的两端使用相同的密钥。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在加密過程的兩端使用相同的密鑰。"
+          }
         }
       }
     },
     "Home.Symmetric.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symmetrische Verschlüsselung"
+          }
+        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
@@ -9480,13 +10536,97 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Симметричное шифрование"
+            "value" : "Cifrado simétrico"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiffrement symétrique"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सममित एन्क्रिप्शन"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crittografia simmetrica"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "共通鍵暗号"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "სიმეტრიული შიფრაცია"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "대칭 암호화"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symmetrische versleuteling"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criptografia simétrica"
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Симметричное шифрование"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Symmetrisk kryptering"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Simetrik şifreleme"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Симетричне шифрування"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mã hóa đối xứng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "对称加密"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "對稱加密"
           }
         }
       }

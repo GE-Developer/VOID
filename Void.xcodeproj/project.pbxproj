@@ -33,6 +33,8 @@
 		1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */; };
 		1F2D34312E84AFC6005E6239 /* FullScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */; };
 		1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */; };
+		1F587D522EAC61DF0025194E /* AboutProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F587D512EAC61DF0025194E /* AboutProjectView.swift */; };
+		1F587D542EAC62200025194E /* AboutProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F587D532EAC62200025194E /* AboutProjectViewModel.swift */; };
 		1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */; };
 		1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDE2E75835500DB44CE /* View + Ext.swift */; };
 		1F6C56C32E97F1700060015F /* EmojiMood.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6C56C22E97F1700060015F /* EmojiMood.swift */; };
@@ -115,6 +117,8 @@
 		1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVersion.swift; sourceTree = "<group>"; };
 		1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenLoader.swift; sourceTree = "<group>"; };
 		1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAlertView.swift; sourceTree = "<group>"; };
+		1F587D512EAC61DF0025194E /* AboutProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProjectView.swift; sourceTree = "<group>"; };
+		1F587D532EAC62200025194E /* AboutProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProjectViewModel.swift; sourceTree = "<group>"; };
 		1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
 		1F64ADDE2E75835500DB44CE /* View + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View + Ext.swift"; sourceTree = "<group>"; };
 		1F6C56C22E97F1700060015F /* EmojiMood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiMood.swift; sourceTree = "<group>"; };
@@ -236,6 +240,8 @@
 				1F64ADE12E76234200DB44CE /* Settings */,
 				1F64ADE22E76234C00DB44CE /* Language */,
 				1F2403BA2EA5279E00FB4005 /* PayWallView.swift */,
+				1F587D512EAC61DF0025194E /* AboutProjectView.swift */,
+				1F587D532EAC62200025194E /* AboutProjectViewModel.swift */,
 			);
 			path = "Settings Module";
 			sourceTree = "<group>";
@@ -281,6 +287,13 @@
 				1F6F65FD2E958A3F0095E89E /* CodecService.swift */,
 			);
 			path = "Crypto Services";
+			sourceTree = "<group>";
+		};
+		1F587D502EAC5F8B0025194E /* Cryptography Page */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Cryptography Page";
 			sourceTree = "<group>";
 		};
 		1F64ADE12E76234200DB44CE /* Settings */ = {
@@ -339,6 +352,7 @@
 				1F2D341E2E7D7CC6005E6239 /* Models */,
 				1F2D34292E7EDD14005E6239 /* Crypto Services */,
 				1F8DDBEC2E367897005734CD /* Service Views */,
+				1F587D502EAC5F8B0025194E /* Cryptography Page */,
 				1F6F65F82E9327470095E89E /* Cryptography Module */,
 				1F14525A2E608EAF00F8A553 /* Settings Module */,
 				1F12FE492E4278040023DB69 /* Enums */,
@@ -575,6 +589,7 @@
 			files = (
 				1F8DDBF32E367EC4005734CD /* AESEncryptionService.swift in Sources */,
 				1F8DDCE72E3A2C55005734CD /* CustomSliderRow.swift in Sources */,
+				1F587D522EAC61DF0025194E /* AboutProjectView.swift in Sources */,
 				1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */,
 				1F8DDBC12E366E11005734CD /* AES256EncryptionView.swift in Sources */,
 				1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */,
@@ -592,6 +607,7 @@
 				1F6C56C52E9814590060015F /* CryptographyViewModel.swift in Sources */,
 				1F8DDBC42E366E11005734CD /* HomeView.swift in Sources */,
 				1F8DDCDB2E3963C4005734CD /* CustomForm.swift in Sources */,
+				1F587D542EAC62200025194E /* AboutProjectViewModel.swift in Sources */,
 				1F12FE4B2E4278210023DB69 /* CryptoAction.swift in Sources */,
 				1F8DDBE82E36785E005734CD /* Image + Ext.swift in Sources */,
 				1F2D34262E7DF41A005E6239 /* KeyDerivationService.swift in Sources */,

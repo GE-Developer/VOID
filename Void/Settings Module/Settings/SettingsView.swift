@@ -27,7 +27,7 @@ struct SettingsView: View {
                 NavigationLazyView(PayWallView())
             }
             .navigationDestination(isPresented: $projectViewPresented) {
-                NavigationLazyView(EmptyView())
+                NavigationLazyView(AboutProjectView())
             }
     }
 }

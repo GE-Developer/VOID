@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CustomButtonRow: View {
     private let icon: Image?
+    private let circleImage: Image?
     private let title: String
     private let subtitle: String?
     private let additionalTitle: String?
@@ -20,6 +21,7 @@ struct CustomButtonRow: View {
 
     init(
         icon: Image? = nil,
+        circleImage: Image? = nil,
         title: String,
         subtitle: String? = nil,
         additionalTitle: String? = nil,
@@ -29,6 +31,7 @@ struct CustomButtonRow: View {
         action: @escaping () -> Void
     ) {
         self.icon = icon
+        self.circleImage = circleImage
         self.title = title
         self.subtitle = subtitle
         self.additionalTitle = additionalTitle
@@ -72,6 +75,19 @@ extension CustomButtonRow {
                 icon
                     .foregroundStyle(Gradient.accent)
                     .frame(width: 50)
+            } else if let circleImage {
+                circleImage
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 40, height: 40)
+                    .clipShape(Circle())
+                    .overlay(
+                        Circle()
+                            .stroke(Color.void.background, lineWidth: 1)
+                    )
+                    .shadow(color: Color.void.viewShadow, radius: 1)
+                    .padding(.horizontal, 6)
+                    .padding(6)
             } else {
                 Spacer().frame(width: 20)
             }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CryptographyView: View {
-    @StateObject private var vm = CryptographyViewModel()
+    private let vm = CryptographyViewModel()
     
     
     @State private var showAES256View = false

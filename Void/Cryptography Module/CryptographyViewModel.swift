@@ -5,9 +5,7 @@
 //  Created by GE-Developer
 //
 
-import Foundation
-
-final class CryptographyViewModel: ObservableObject {
+struct CryptographyViewModel {
     let title = L10n("Cryptography.title")
     
     let symmetricEncryptionTitle = L10n("Home.Symmetric.title")

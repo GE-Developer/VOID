@@ -111,20 +111,16 @@ final class SettingsViewModel: ObservableObject {
         guard let url = URL(
             string: "https://apps.apple.com/app/\(appID)?action=write-review"
         ) else { return }
-        
-        hapticsManager.impact()
         UIApplication.shared.open(url)
     }
     
     func showPrivacyPolicy() {
         guard let url = URL(string: privacyPolicyURL) else { return }
-        hapticsManager.impact()
         UIApplication.shared.open(url)
     }
     
     func showTermsOfUse() {
         guard let url = URL(string: termsOfUse) else { return }
-        hapticsManager.impact()
         UIApplication.shared.open(url)
     }
 }

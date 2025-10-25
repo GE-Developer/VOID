@@ -11,6 +11,7 @@ extension Image {
     static let system = SystemImage()
     static let background = BackgroundImage()
     static let content = ContentImage()
+    static let other = OtherImage()
 }
 
 struct SystemImage {
@@ -52,4 +53,9 @@ struct BackgroundImage {
 struct ContentImage {
     let voidAES256Argon2id = Image("VOID+AES256+Argon2id")
     let emoji = Image("Emoji")
+}
+
+struct OtherImage {
+    let iosDeveloperMichael = Image("iOS Developer")
+    let gitHub = Image("GitHub")
 }

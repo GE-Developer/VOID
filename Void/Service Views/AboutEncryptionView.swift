@@ -24,7 +24,7 @@ struct AboutEncryptionView: View {
 // MARK: - Builder
 extension AboutEncryptionView {
     private var aboutAES256View: some View {
-        CustomScrollView(withTarget: true) {
+        CustomScrollView {
             CustomNavigationTitle(
                 title: vm.title,
                 subTitle: vm.subtitle,
