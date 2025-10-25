@@ -289,13 +289,6 @@
 			path = "Crypto Services";
 			sourceTree = "<group>";
 		};
-		1F587D502EAC5F8B0025194E /* Cryptography Page */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Cryptography Page";
-			sourceTree = "<group>";
-		};
 		1F64ADE12E76234200DB44CE /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,7 +345,6 @@
 				1F2D341E2E7D7CC6005E6239 /* Models */,
 				1F2D34292E7EDD14005E6239 /* Crypto Services */,
 				1F8DDBEC2E367897005734CD /* Service Views */,
-				1F587D502EAC5F8B0025194E /* Cryptography Page */,
 				1F6F65F82E9327470095E89E /* Cryptography Module */,
 				1F14525A2E608EAF00F8A553 /* Settings Module */,
 				1F12FE492E4278040023DB69 /* Enums */,

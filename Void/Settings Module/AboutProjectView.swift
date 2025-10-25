@@ -23,8 +23,8 @@ extension AboutProjectView {
             Spacer()
         } scrollView: { _ in
             VStack(spacing: 25) {
-                aboutProjectForm
                 sourceCodeForm
+                aboutProjectForm
                 developerMichaelForm
             }
         }
@@ -32,7 +32,7 @@ extension AboutProjectView {
     
     private var aboutProjectForm: some View {
         CustomForm(headerText: vm.aboutProjectTitle) {
-            Text(vm.aboutProjectDescription)
+            CustomTextRow(vm.aboutProjectDescription)
         }
     }
     
@@ -55,6 +55,8 @@ extension AboutProjectView {
                 subtitle: vm.developerMichaelButtonSubtitle,
                 action: { vm.developerMichaelButtonPressed() }
             )
+            Divider().padding(.horizontal)
+            CustomTextRow(vm.otherInfo)
         }
     }
 }

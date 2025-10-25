@@ -162,7 +162,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**გამოიყენეთ რთული და უნიკალური პაროლი** (12-ზე მეტი სიმბოლო) — რაც უფრო რთულია პაროლი, მით მეტ დროს წაიღებს მისი გატეხვა.  **აირჩიეთ Argon2id-ის ძლიერი პარამეტრები** (იტერაციების რაოდენობა, ნაკადები) — ეს ზრდის უსაფრთხოებას, თუმცა შეიძლება შიფრაციის დრო 20 წუთამდე გაზარდოს.  **ყოველთვის შეინახეთ საწყისი შიფრტექსტი მთლიანად** — ერთი სიმბოლოს დაკარგვაც კი შეუძლებელს ხდის дешифრაციას.  დამატებითი დაცვისთვის რეგულარულად **განაახლეთ პაროლები**."
+            "value" : "**გამოიყენეთ რთული და უნიკალური პაროლი** (12-ზე მეტი სიმბოლო) — რაც უფრო რთულია პაროლი, მით მეტ დროს წაიღებს მისი გატეხვა.  **აირჩიეთ Argon2id-ის ძლიერი პარამეტრები** (იტერაციების რაოდენობა, ნაკადები) — ეს ზრდის უსაფრთხოებას, თუმცა შეიძლება შიფრაციის დრო 20 წუთამდე გაზარდოს.  **ყოველთვის შეინახეთ თავდაპირველი შიფრტექსტი მთლიანად** — ერთი სიმბოლოს დაკარგვაც კი შეუძლებელს ხდის გაშიფვრას.  დამატებითი დაცვისთვის რეგულარულად **განაახლეთ პაროლები**."
           }
         },
         "ko" : {
@@ -388,7 +388,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**AES-256 (Advanced Encryption Standard)** არის სიმეტრიული შიფრაციის ალგორითმი, რომელიც იყენებს **256-ბიტიან გასაღებს**.  ის იცავს მონაცემებს, **ყოფს მათ 128-ბიტიან ბლოკებად და ასრულებს 14 რაუნდს მათემატიკური გარდაქმნებით**: ჩანაცვლებით, перестановками და ბაიტების შერევით.  შედეგად, საწყისი ინფორმაცია გადაიქცევა შიფრირებულ მონაცემებად, რომლის дешიფრაციაც შესაძლებელია **მხოლოდ იმავე გასაღებით**."
+            "value" : "**AES-256 (Advanced Encryption Standard)** არის სიმეტრიული შიფრაციის ალგორითმი, რომელიც იყენებს **256-ბიტიან გასაღებ კოდს**.  ის უზრუნველყოფს მონაცემთა დაცვას **128-ბიტიან ბლოკებად დაყოფისა და 14 რაუნდის მათემატიკური გარდაქმნების** გზით — ჩანაცვლების, გადალაგებისა და ბაიტების შერევის მეშვეობით.  შედეგად, თავდაპირველი ინფორმაცია გარდაიქმნება დაშიფრულ მონაცემთა ნაკადად, რომლის გაშიფვრა შესაძლებელია **მხოლოდ იმავე გასაღები კოდით**."
           }
         },
         "ko" : {
@@ -500,8 +500,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "შესახებ შიფრაციის"
+            "state" : "translated",
+            "value" : "შიფრაციის შესახებ"
           }
         },
         "ko" : {
@@ -614,7 +614,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "1 — შეიყვანეთ პაროლი. 2 — აირჩიეთ VOID. 3 — აპლიკაცია ქმნის მარილს და აერთიანებს მას პაროლთან და VOID-თან. 4 — Argon2id გამოთვლის გასაღებს მითითებული პარამეტრებით. 5 — გასაღები გამოიყენება AES-256-ში ტექსტის დასაშიფრად. 6 — მარილი და სხვა პარამეტრები ინახება შიფრირებულ სტრუქტურაში.  **დეშიფრაციისთვის უნდა მიიღოთ ზუსტად იგივე გასაღები — შეიყვანეთ ისევე პაროლი და VOID და გქონდეთ საწყისი შიფრტექსტი სიმბოლო-სიმბოლომდე ზუსტად**."
+            "value" : "1 — შეიყვანეთ პაროლი. 2 — აირჩიეთ VOID. 3 — აპლიკაცია ქმნის მარილს და აერთიანებს მას პაროლთან და VOID-თან. 4 — Argon2id გამოთვლის გასაღები კოდის მითითებული პარამეტრებით. 5 — გასაღები კოდი გამოიყენება AES-256-ში ტექსტის დასაშიფრად. 6 — მარილი და სხვა პარამეტრები ინახება შიფრირებულ სტრუქტურაში.  **დეშიფრაციისთვის უნდა მიიღოთ ზუსტად იგივე გასაღები კოდი — შეიყვანეთ ისევ პაროლი და VOID და გქონდეთ საწყისი შიფრტექსტი სიმბოლო-სიმბოლომდე ზუსტად**."
           }
         },
         "ko" : {
@@ -840,7 +840,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Argon2 არის თანამედროვე **KDF (Key Derivation Function) ალგორითმი პაროლის კრიპტოგრაფიულ გასაღებად გარდაქმნისთვის**, აღიარებული საერთაშორისო სტანდარტად (RFC 9106).  ის შეიქმნა 2015 წელს და Password Hashing Competition-ის გამარჯვებულად დასახელდა, როგორც **პაროლების დაცვის ყველაზე სანდო და ეფექტიანი მეთოდი**.  Argon2id აერთიანებს Argon2i-ს და Argon2d-ს თვისებებს, **უზრუნველყოფს მდგრადობას CPU-სა და მეხსიერებაზე მიმართული შეტევების წინააღმდეგ**.  ალგორითმი ასრულებს მრავალ გამოთვლით იტერაციას, მუშაობს მრავალნაკადიან რეჟიმში და თითოეული შიფრაციისთვის ამატებს უნიკალურ მარილს.  ეს გასაღების подбор-ს **ძალიან რესურსმომთხოვნსა და ხანგრძლივს ხდის**, თუნდაც ძლიერ სისტემებში."
+            "value" : "Argon2 არის თანამედროვე **KDF (Key Derivation Function) ალგორითმი პაროლის კრიპტოგრაფიულ გასაღების კოდად გარდაქმნისთვის**, აღიარებულია საერთაშორისო სტანდარტად (RFC 9106).  ის შეიქმნა 2015 წელს და Password Hashing Competition-ის გამარჯვებული გასაღები კოდი და  როგორც **პაროლების დაცვის ყველაზე სანდო და ეფექტიანი მეთოდი**.  Argon2id აერთიანებს Argon2i-ს და Argon2d-ს თვისებებს, **უზრუნველყოფს მდგრადობას CPU-სა და მეხსიერებაზე მიმართული შეტევების წინააღმდეგ**.  ალგორითმი ასრულებს მრავალ გამოთვლით იტერაციას, მუშაობს მრავალნაკადიან რეჟიმში და თითოეული შიფრაციისთვის ამატებს უნიკალურ მარილს.  ეს ნიშნავს, რომ გასაღები კოდის ბრუტ-ფორსინგი არის **უზარმაზარ რესურსმომთხოვნი და დროით ძალიან ხანგრძლივი პროცესი**, თუნდაც ძლიერი სისტემებისთვის."
           }
         },
         "ko" : {
@@ -1065,8 +1065,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "ყოველი [VOID] აპლიკაცია შეიცავს დამალულ პარამეტრს — **VOID Secret (შიდა პაროლი)**.  თავისებურებები: • აირჩევა დიდი ვარიანტების ნაკრებიდან; • ერთნაირად გენერირდება ყველა მოწყობილობაზე; • მონაცემებში არ ინახება და ქსელით არ გადაეცემა; • დეშიფრაციას შესაძლებელს ხდის მხოლოდ აპლიკაციის ფარგლებში.  **თუნდაც პაროლი იყოს ცნობილი, სწორი VOID Secret-ის გარეშე მონაცემები შიფრულად დარჩება**."
+            "state" : "translated",
+            "value" : "ყოველი [VOID] აპლიკაცია შეიცავს დამალულ პარამეტრს — **VOID Secret (შიდა პაროლი)**.  თავისებურებები: • აირჩევა დიდი ვარიანტების ნაკრებიდან; • ერთნაირად გენერირდება ყველა მოწყობილობაზე; • მონაცემებში არ ინახება და ქსელით არ გადაეცემა; • დეშიფრაციას შესაძლებელს ხდის მხოლოდ აპლიკაციის ფარგლებში.  **თუნდაც პაროლი იყოს ცნობილი, სწორი VOID Secret-ის გარეშე მონაცემები დაშიფრულად დარჩება**."
           }
         },
         "ko" : {
@@ -1291,8 +1291,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "ემოჯის კოდირება **მონაცემთა ვიზუალური წარმოდგენის მეთოდია**, სადაც ტექსტი გარდაიქმნება ემოჯების თანმიმდევრობად.  **ეს კოდირება არ არის კრიპტოგრაფიული და არ უზრუნველყოფს მონაცემთა დაცვას.**"
+            "state" : "translated",
+            "value" : "ემოჯის კოდირება **მონაცემთა ვიზუალური წარმოდგენის მეთოდია**, სადაც ტექსტი გარდაიქმნება ემოჯების თანმიმდევრობად.  **ეს კოდირება არ არის კრიპტოგრაფიული და არ უზრუნველყოფს მონაცემთა დაცვას**."
           }
         },
         "ko" : {
@@ -1404,7 +1404,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "კოდირების შესახებ"
           }
         },
@@ -1517,7 +1517,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ტექსტი ჯერ გარდაიქმნება UTF-8-ში, შემდეგ კოდირდება Base64-ში, რის შემდეგაც თითოეული სიმბოლო იცვლება შესაბამისი ემოჯით.  **ეს ალგორითმი მხარს უჭერს ნებისმიერ სიმბოლოსა და ენას.**"
           }
         },
@@ -1743,8 +1743,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**არ გამოიყენოთ ემოჯის კოდირება მგრძნობიარე ინფორმაციის დასაცავად.  ** უსაფრთხო მონაცემთა გადაცემისთვის უმჯობესია **შიფრაციასთან კომბინაცია** — მაგალითად, ჯერ დააშიფრეთ ტექსტი და შემდეგ გადააქციეთ შედეგი ემოჯებად."
+            "state" : "translated",
+            "value" : "**არ გამოიყენოთ ემოჯის კოდირება მგრძნობიარე ინფორმაციის დასაცავად.  **უსაფრთხო მონაცემთა გადაცემისთვის უმჯობესია **შიფრაციასთან კომბინაცია** — მაგალითად, ჯერ დაშიფრეთ ტექსტი და შემდეგ გადააქციეთ შედეგი ემოჯებად."
           }
         },
         "ko" : {
@@ -2082,7 +2082,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "დეკოდირება"
           }
         },
@@ -2308,7 +2308,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "მომზადებულია დეკოდირებისთვის…"
           }
         },
@@ -4004,7 +4004,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**საკვანძო სიგრძე** განსაზღვრავს რამდენად რთულია თქვენი მონაცემების ბრუტფორსი — რაც **მეთია სიგრძე**, მით **მტკიცეა დაცვა**. მაღალი მნიშვნელობები ზრდის უსაფრთხოებას, თუმცა შესაძლოა ცოტა შეანელოს პროცესირება."
+            "value" : "**გასაღები კოდის სიგრძე** განსაზღვრავს რამდენად რთულია თქვენი მონაცემების ბრუტფორსი — რაც **მეტია სიგრძე**, მით **მტკიცეა დაცვა**. მაღალი მნიშვნელობები ზრდის უსაფრთხოებას, თუმცა შესაძლოა ცოტა შეანელოს პროცესირება."
           }
         },
         "ko" : {
@@ -4117,7 +4117,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "საკვანძო სიგრძე"
+            "value" : "გასაღები კოდის სიგრძე"
           }
         },
         "ko" : {
@@ -4230,7 +4230,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "მაქსიმალური **შრეების რაოდენობა დამოკიდებულია საკვანძო სიგრძეზე**, რომელსაც ირჩევთ. გრძელი საკვანძო მეტი შრის დამატების საშუალებას იძლევა, რაც ზრდის დაცვას."
+            "value" : "მაქსიმალური **შრეების რაოდენობა დამოკიდებულია გასაღები კოდის სიგრძეზე**, რომელსაც ირჩევთ. გრძელი გასაღები კოდი მეტი შრის დამატების საშუალებას იძლევა, რაც ზრდის დაცვას."
           }
         },
         "ko" : {
@@ -6046,7 +6046,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**VOID აძლიერებს კრიპტოგრაფიულ გასაღებს**, რადგან მას დამატებით დამალულ შიდა კომპონენტს უმატებს.  0 ნიშნავს, რომ შიფრაცია VOID-ის გარეშე სრულდება.  **VOID-ის ნომერი მხოლოდ ვარიანტის არჩევას განსაზღვრავს** და არა დაცვის დონეს."
+            "value" : "**VOID აძლიერებს კრიპტოგრაფიულ გასაღებ კოდს**, რადგან მას დამატებით დამალულ შიდა კომპონენტს უმატებს.  0 ნიშნავს, რომ შიფრაცია VOID-ის გარეშე სრულდება.  **VOID-ის ნომერი მხოლოდ ვარიანტის არჩევას განსაზღვრავს** და არა დაცვის დონეს."
           }
         },
         "ko" : {
@@ -7062,8 +7062,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "ტექსტის ემოჯებად კოდირება **მონაცემთა ვიზუალური წარმოდგენაა**, Base64-ის მსგავსი.  **ის არ უზრუნველყოფს კრიპტოგრაფიულ დაცვას.**  შეიძლება გაერთიანდეს შიფრაციასთან უფრო ძლიერი უსაფრთხოებისთვის."
+            "state" : "translated",
+            "value" : "ტექსტის ემოჯებად კოდირება **მონაცემთა ვიზუალური წარმოდგენაა**, Base64-ის მსგავსი.   **ის არ უზრუნველყოფს კრიპტოგრაფიულ დაცვას**.  შეიძლება გაერთიანდეს შიფრაციასთან უფრო ძლიერი უსაფრთხოებისთვის."
           }
         },
         "ko" : {
@@ -8306,7 +8306,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Argon2–ით კვანძის გენერირება ვერ მოხერხდა."
+            "value" : "Argon2–ით გასაღები კოდის გენერირება ვერ მოხერხდა."
           }
         },
         "ko" : {
@@ -8418,7 +8418,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ტექსტის დეკოდირება ვერ მოხერხდა."
           }
         },
@@ -9323,7 +9323,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "მასტერ-კვანძი ცარიელია ან დაზიანებულია."
+            "value" : "მასტერ-გასაღები კოდი ცარიელია ან დაზიანებულია."
           }
         },
         "ko" : {
@@ -9436,7 +9436,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "მიღებულია კვანძების არასწორი რაოდენობა."
+            "value" : "მიღებულია გასაღები კოდების არასწორი რაოდენობა."
           }
         },
         "ko" : {
@@ -10226,7 +10226,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "მონაცემთა ფორმატის შეცვლა ინფორმაციის დამალვის გარეშე."
           }
         },
@@ -10452,8 +10452,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "ერთი და იგივე გასაღები გამოიყენება შიფრაციის პროცესის ორივე მხარეს."
+            "state" : "translated",
+            "value" : "ერთი და იგივე გასაღები კოდი გამოიყენება შიფრაციის პროცესის ორივე მხარეს."
           }
         },
         "ko" : {
@@ -10627,6 +10627,1023 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "對稱加密"
+          }
+        }
+      }
+    },
+    "Project.AboutProject.description" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** ist ein Raum für diejenigen, die Stille, Kontrolle und Unabhängigkeit wählen.  **Die App ist für sichere Offline-Verschlüsselung konzipiert** — ohne Internet, ohne Registrierung, ohne Spuren. Alles in VOID bleibt vollständig **auf deinem Gerät**. Sie speichert oder überträgt keine Daten, benötigt keine Konten und verbindet sich nie mit dem Netzwerk.  **Im Kern liegt das Prinzip völliger Autonomie**. VOID wurde zu Bildungszwecken entwickelt und zeigt moderne Ansätze zum Datenschutz und zur digitalen Ethik.  Nutze es verantwortungsvoll und streng im Rahmen des Gesetzes. VOID ist nicht nur ein Werkzeug — **es ist eine Philosophie der Privatsphäre**."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** is a space for those who choose silence, control, and independence.  **The app is designed for secure offline encryption** — with no internet, no registration, and no traces left behind. Everything that happens in VOID stays entirely **on your device**. It doesn’t store or transmit any data, doesn’t require accounts, and never connects to the network.  **At its core lies the principle of complete autonomy**. VOID is developed for educational purposes and showcases modern approaches to data protection and digital ethics.  Use it responsibly and strictly within the law. VOID is not just a tool — **it’s a philosophy of privacy**."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** es un espacio para quienes eligen el silencio, el control y la independencia.  **La aplicación está diseñada para un cifrado offline seguro** — sin internet, sin registro, sin dejar rastros. Todo lo que ocurre en VOID permanece completamente **en tu dispositivo**. No almacena ni transmite datos, no requiere cuentas y nunca se conecta a la red.  **En su núcleo está el principio de autonomía total**. VOID fue desarrollado con fines educativos y muestra enfoques modernos para la protección de datos y la ética digital.  Úsalo de manera responsable y estrictamente dentro de la ley. VOID no es solo una herramienta — **es una filosofía de privacidad**."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** est un espace pour ceux qui choisissent le silence, le contrôle et l'indépendance.  **L'application est conçue pour un chiffrement sécurisé hors ligne** — sans internet, sans inscription, sans traces laissées. Tout ce qui se passe dans VOID reste entièrement **sur votre appareil**. Elle ne stocke ni ne transmet de données, ne nécessite pas de compte et ne se connecte jamais au réseau.  **Son cœur repose sur le principe d'une autonomie totale**. VOID est développé à des fins éducatives et met en avant des approches modernes de la protection des données et de l'éthique numérique.  Utilisez-le de manière responsable et strictement dans le cadre de la loi. VOID n'est pas seulement un outil — **c'est une philosophie de la vie privée**."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** उन लोगों के लिए एक स्थान है जो मौन, नियंत्रण और स्वतंत्रता चुनते हैं।  **यह ऐप सुरक्षित ऑफलाइन एन्क्रिप्शन के लिए डिज़ाइन किया गया है** — कोई इंटरनेट नहीं, कोई पंजीकरण नहीं, कोई निशान नहीं छूटता। VOID में सब कुछ पूरी तरह से **आपके डिवाइस पर रहता है**। यह कोई डेटा स्टोर या ट्रांसमिट नहीं करता, किसी खाते की आवश्यकता नहीं होती और कभी भी नेटवर्क से कनेक्ट नहीं होता।  **इसका मूल सिद्धांत पूर्ण स्वायत्तता है**। VOID को शैक्षिक उद्देश्यों के लिए विकसित किया गया है और यह डेटा संरक्षण और डिजिटल नैतिकता के आधुनिक दृष्टिकोणों को प्रदर्शित करता है।  इसे जिम्मेदारी से और पूरी तरह से कानून के दायरे में उपयोग करें। VOID सिर्फ एक उपकरण नहीं है — **यह गोपनीयता का दर्शन है**।"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** è uno spazio per chi sceglie il silenzio, il controllo e l'indipendenza.  **L'app è progettata per una crittografia offline sicura** — senza internet, senza registrazione, senza lasciare tracce. Tutto ciò che accade in VOID rimane interamente **sul tuo dispositivo**. Non memorizza né trasmette dati, non richiede account e non si connette mai alla rete.  **Al suo cuore c'è il principio dell'autonomia totale**. VOID è stato sviluppato per scopi educativi e mostra approcci moderni alla protezione dei dati e all'etica digitale.  Usalo in modo responsabile e rigorosamente entro i limiti della legge. VOID non è solo uno strumento — **è una filosofia della privacy**."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID**は、沈黙、制御、独立を選ぶ人々のための空間です。  **このアプリは安全なオフライン暗号化のために設計されています** — インターネット不要、登録不要、痕跡を残しません。 VOID内ですべては完全に**あなたのデバイス上にとどまります**。 データを保存したり送信したりせず、アカウントも必要なく、ネットワークに接続することもありません。  **その核心には完全な自律の原則があります**。 VOIDは教育目的で開発され、データ保護とデジタル倫理の現代的なアプローチを示しています。  責任を持って、法律の範囲内で厳密に使用してください。 VOIDは単なるツールではなく、**プライバシーの哲学です**。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "**VOID** არის სივრცე მათთვის, ვინც ირჩევს სიჩუმეს, კონტროლსა და დამოუკიდებლობას.  **აპლიკაცია შექმნილია უსაფრთხო ოფლაინ დაშიფვრისთვის** — ინტერნეტის, რეგისტრაციისა და კვალის დატოვების გარეშე. VOID-ში ყველაფერი სრულად **რჩება თქვენს მოწყობილობაზე**. ის არ ინახავს ან გადასცემს მონაცემებს, არ საჭიროებს ანგარიშებს და არასდროს უკავშირდება ქსელს.  **მისი ბირთვი არის სრული ავტონომიის პრინციპი**. VOID შემუშავებულია საგანმანათლებლო მიზნებისთვის და აჩვენებს მონაცემთა დაცვისა და ციფრული ეთიკის თანამედროვე მიდგომებს.  გამოიყენეთ პასუხისმგებლობით და მკაცრად კანონის ფარგლებში. VOID არ არის უბრალოდ ინსტრუმენტი — **ეს არის კონფიდენციალურობის ფილოსოფია**."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID**는 침묵, 통제, 독립을 선택하는 이들을 위한 공간입니다.  **이 앱은 안전한 오프라인 암호화를 위해 설계되었습니다** — 인터넷, 등록, 흔적 없이. VOID 내 모든 것은 완전히 **당신의 기기에 남습니다**. 데이터를 저장하거나 전송하지 않으며, 계정도 필요 없고, 네트워크에 절대 연결되지 않습니다.  **핵심은 완전한 자율성의 원칙입니다**. VOID는 교육 목적으로 개발되었으며, 데이터 보호와 디지털 윤리의 현대적 접근 방식을 보여줍니다.  책임감 있게, 법의 범위 내에서 엄격히 사용하세요. VOID는 단순한 도구가 아닙니다 — **프라이버시의 철학입니다**."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** is een ruimte voor wie kiest voor stilte, controle en onafhankelijkheid.  **De app is ontworpen voor veilige offline versleuteling** — geen internet, geen registratie, geen sporen achtergelaten. Alles in VOID blijft volledig **op jouw apparaat**. Het slaat geen gegevens op of verzendt ze, vereist geen accounts en maakt nooit verbinding met het netwerk.  **De kern is het principe van volledige autonomie**. VOID is ontwikkeld voor educatieve doeleinden en toont moderne benaderingen van gegevensbescherming en digitale ethiek.  Gebruik het verantwoordelijk en strikt binnen de wet. VOID is niet zomaar een tool — **het is een filosofie van privacy**."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** é um espaço para quem escolhe o silêncio, o controle e a independência.  **O aplicativo foi projetado para criptografia offline segura** — sem internet, sem registro, sem rastros. Tudo o que acontece no VOID permanece inteiramente **no seu dispositivo**. Ele não armazena nem transmite dados, não requer contas e nunca se conecta à rede.  **No seu cerne está o princípio da autonomia total**. O VOID foi desenvolvido para fins educacionais e demonstra abordagens modernas para proteção de dados e ética digital.  Use-o com responsabilidade e estritamente dentro da lei. O VOID não é apenas uma ferramenta — **é uma filosofia de privacidade**."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** — это пространство для тех, кто выбирает тишину, контроль и независимость.  **Приложение создано для безопасного оффлайн-шифрования** — без интернета, без регистрации, без следов. Всё, что происходит в VOID, остаётся полностью **на вашем устройстве**. Оно не хранит и не передаёт данные, не требует аккаунтов и никогда не подключается к сети.  **В основе лежит принцип полной автономии**. VOID разработан в образовательных целях и демонстрирует современные подходы к защите данных и цифровой этике.  Используйте ответственно и строго в рамках закона. VOID — это не просто инструмент, **это философия приватности**."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** är ett utrymme för dem som väljer tystnad, kontroll och oberoende.  **Appen är designad för säker offline-kryptering** — ingen internetanslutning, ingen registrering, inga spår lämnas. Allt som händer i VOID stannar helt **på din enhet**. Den lagrar eller överför inte data, kräver inga konton och ansluter aldrig till nätverket.  **Kärnan är principen om fullständig autonomi**. VOID är utvecklat för utbildningsändamål och visar moderna tillvägagångssätt för dataskydd och digital etik.  Använd det ansvarsfullt och strikt inom lagens ramar. VOID är inte bara ett verktyg — **det är en filosofi om integritet**."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID**, sessizlik, kontrol ve bağımsızlık seçenler için bir alandır.  **Uygulama, güvenli çevrimdışı şifreleme için tasarlanmıştır** — internet yok, kayıt yok, iz bırakmaz. VOID'de olan her şey tamamen **cihazınızda kalır**. Veri depolamaz veya aktarmaz, hesap gerektirmez ve asla ağa bağlanmaz.  **Temelinde tam özerklik ilkesi yatar**. VOID, eğitim amaçlı geliştirilmiştir ve veri koruma ile dijital etik konusunda modern yaklaşımları sergiler.  Sorumlu bir şekilde ve kesinlikle yasal sınırlar içinde kullanın. VOID yalnızca bir araç değil — **bir gizlilik felsefesidir**."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** — це простір для тих, хто обирає тишу, контроль і незалежність.  **Додаток створено для безпечного офлайн-шифрування** — без інтернету, без реєстрації, без слідів. Усе, що відбувається в VOID, залишається повністю **на вашому пристрої**. Він не зберігає та не передає дані, не потребує облікових записів і ніколи не підключається до мережі.  **У його основі лежить принцип повної автономії**. VOID розроблено з освітньою метою та демонструє сучасні підходи до захисту даних і цифрової етики.  Використовуйте відповідально та строго в межах закону. VOID — це не просто інструмент, **це філософія приватності**."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** là không gian dành cho những ai chọn sự im lặng, kiểm soát và độc lập.  **Ứng dụng được thiết kế cho mã hóa ngoại tuyến an toàn** — không cần internet, không đăng ký, không để lại dấu vết. Mọi thứ trong VOID hoàn toàn **nằm trên thiết bị của bạn**. Nó không lưu trữ hoặc truyền dữ liệu, không yêu cầu tài khoản và không bao giờ kết nối với mạng.  **Cốt lõi là nguyên tắc tự chủ hoàn toàn**. VOID được phát triển cho mục đích giáo dục và thể hiện các cách tiếp cận hiện đại về bảo vệ dữ liệu và đạo đức số.  Hãy sử dụng một cách có trách nhiệm và tuân thủ nghiêm ngặt luật pháp. VOID không chỉ là một công cụ — **đó là triết lý về quyền riêng tư**."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** 是一个为选择沉默，控制和独立的人设计的空间。  **该应用程序专为安全离线加密设计** — 无需互联网，无需注册，无痕迹遗留。 VOID 中的一切完全**保留在您的设备上**。 它不存储或传输任何数据，不需要账户，也从不连接网络。  **其核心在于完全自主的原则**。 VOID 为教育目的开发，展示数据保护和数字伦理的现代方法。  请负责任地使用，并严格遵守法律。 VOID 不仅仅是一个工具 — **它是一种隐私哲学**。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "**VOID** 是一個為選擇沉默，控制和獨立的人設計的空間。  **該應用程式專為安全離線加密設計** —— 無需網絡，無需註冊，無痕跡遺留。 VOID 中的一切完全**保留在您的設備上**。 它不存儲或傳輸任何數據，不需要帳戶，也從不連接到網絡。  **其核心在於完全自主的原則**。 VOID 為教育目的開發，展示數據保護和數位倫理的現代方法。  請負責任地使用，並嚴格遵守法律。 VOID 不僅僅是一個工具 —— **它是一種隱私哲學**。"
+          }
+        }
+      }
+    },
+    "Project.AboutProject.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Über das VOID-Projekt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About VOID Project"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acerca del Proyecto VOID"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "À propos du projet VOID"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID परियोजना के बारे में"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sul progetto VOID"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOIDプロジェクトについて"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID პროექტის შესახებ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID 프로젝트에 대해"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Over het VOID Project"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sobre o Projeto VOID"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "О проекте VOID"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om VOID-projektet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID Projesi Hakkında"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Про проєкт VOID"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Về Dự án VOID"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "关于VOID项目"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於VOID項目"
+          }
+        }
+      }
+    },
+    "Project.Developers.MichaelButton.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS-Entwickler"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS Developer"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desarrollador iOS"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Développeur iOS"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS डेवलपर"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sviluppatore iOS"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOSデベロッパー"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS დეველოპერი"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS 개발자"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS Ontwikkelaar"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desenvolvedor iOS"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS Разработчик "
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS-utvecklare"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS Geliştirici"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розробник iOS"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nhà phát triển iOS"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS开发者"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "iOS開發者"
+          }
+        }
+      }
+    },
+    "Project.Developers.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entwickler"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Developers"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desarrolladores"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Développeurs"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "डेवलपर्स"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sviluppatori"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "デベロッパー"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დეველოპერები"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "개발자들"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ontwikkelaars"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Desenvolvedores"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разработчики"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utvecklare"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geliştiriciler"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розробники"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Các nhà phát triển"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "开发者"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "開發者"
+          }
+        }
+      }
+    },
+    "Project.other" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wenn Sie Vorschläge, Ideen oder Korrekturen haben, kontaktieren Sie uns bitte auf eine für Sie bequeme Weise."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "If you have any suggestions, ideas, or corrections, please contact us in any way convenient for you."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si tienes alguna sugerencia, idea o corrección, contáctanos de la manera que te resulte más conveniente."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Si vous avez des suggestions, des idées ou des corrections, veuillez nous contacter de la manière qui vous convient."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "यदि आपके पास कोई सुझाव, विचार या सुधार हैं, तो कृपया अपने लिए सुविधाजनक किसी भी तरीके से हमसे संपर्क करें।"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se hai suggerimenti, idee o correzioni, contattaci in qualsiasi modo ti sia comodo."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ご提案、アイデア、または訂正がある場合は、都合の良い方法でご連絡ください。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "needs_review",
+            "value" : "თუ გაქვთ რაიმე შემოთავაზება, იდეა ან შესწორება, გთხოვთ, დაგვიკავშირდეთ თქვენთვის მოსახერხებელი ნებისმიერი გზით."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "제안, 아이디어 또는 수정 사항이 있다면 편리한 방법으로 연락해 주세요."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Als je suggesties, ideeën of correcties hebt, neem dan contact met ons op op een manier die voor jou handig is."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Se você tiver sugestões, ideias ou correções, entre em contato conosco da maneira que for mais conveniente para você."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Если у вас есть предложения, идеи или исправления, свяжитесь с нами любым удобным для вас способом."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Om du har några förslag, idéer eller korrigeringar, kontakta oss på det sätt som passar dig bäst."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öneri, fikir veya düzeltmeleriniz varsa, lütfen size uygun herhangi bir şekilde bizimle iletişime geçin."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Якщо у вас є пропозиції, ідеї чи виправлення, зв’яжіться з нами будь-яким зручним для вас способом."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nếu bạn có bất kỳ đề xuất, ý tưởng hoặc chỉnh sửa nào, vui lòng liên hệ với chúng tôi theo bất kỳ cách nào tiện lợi cho bạn."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果您有任何建议，想法或更正，请以您方便的方式联系我们。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "如果您有任何建議，想法或更正，請以您方便的方式聯繫我們。"
+          }
+        }
+      }
+    },
+    "Project.SourceCode.Button.subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Auf GitHub öffnen"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open on GitHub"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir en GitHub"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ouvrir sur GitHub"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub पर खोलें"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apri su GitHub"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHubで開く"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "გახსენით GitHub-ზე"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub에서 열기"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Openen op GitHub"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abrir no GitHub"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть на GitHub"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öppna på GitHub"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GitHub'da Aç"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Відкрити на GitHub"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mở trên GitHub"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在GitHub上打开"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在GitHub上打開"
+          }
+        }
+      }
+    },
+    "Project.SourceCode.Button.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID-Projekt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID Project"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyecto VOID"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Projet VOID"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID परियोजना"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progetto VOID"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOIDプロジェクト"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID პროექტი"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID 프로젝트"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID Project"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Projeto VOID"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проект VOID"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID-projektet"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID Projesi"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проєкт VOID"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dự án VOID"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID项目"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "VOID項目"
+          }
+        }
+      }
+    },
+    "Project.SourceCode.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quellcode"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source Code"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Código fuente"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Code source"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्रोत कोड"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Codice sorgente"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ソースコード"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "საწყისი კოდი"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "소스 코드"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Broncode"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Código-fonte"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Исходный код"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Källkod"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaynak Kod"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вихідний код"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mã nguồn"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "源代码"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "源代碼"
+          }
+        }
+      }
+    },
+    "Project.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Projekt"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Project"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proyecto"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Projet"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "परियोजना"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Progetto"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プロジェクト"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "პროექტი"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "프로젝트"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Project"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Projeto"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проект"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Projekt"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proje"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проєкт"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dự án"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "项目"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "項目"
           }
         }
       }

@@ -20,7 +20,7 @@ struct CustomTabImageView<Tab: View>: View {
         title: String,
         subtitle: String,
         headerImage: Image,
-        tabHeight: CGFloat = 230,
+        tabHeight: CGFloat = 240,
         @ViewBuilder _ tab: @escaping () -> Tab
     ) {
         self.title = title

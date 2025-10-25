@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct AboutProjectViewModel {
-    let title = "Project"
+    let title = L10n("Project.title")
     
-    let aboutProjectTitle = "About VOID Project"
-    let aboutProjectDescription = ""
+    let aboutProjectTitle = L10n("Project.AboutProject.title")
+    let aboutProjectDescription = L10n("Project.AboutProject.description")
+    let otherInfo = L10n("Project.other")
     
-    let sourseCodeTitle = "Source Code"
-    let gitHubButtonTitle = "VOID Project"
-    let gitHubButtonSubtitle = "Open on GitHub"
+    let sourseCodeTitle = L10n("Project.SourceCode.title")
+    let gitHubButtonTitle = L10n("Project.SourceCode.Button.title")
+    let gitHubButtonSubtitle = L10n("Project.SourceCode.Button.subtitle")
     
-    let developersTitle = "Developers"
-    let developerMichaelButtonTitle = "iOS Developer"
+    let developersTitle = L10n("Project.Developers.title")
+    let developerMichaelButtonTitle = L10n("Project.Developers.MichaelButton.title")
     let developerMichaelButtonSubtitle = "MICHAEL"
     
     private let gitHubURL = "https://github.com/GE-Developer/VOID"
