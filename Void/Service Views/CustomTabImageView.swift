@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// MARK: - TabViewSection
 struct CustomTabImageView<Tab: View>: View {
     private let title: String
     private let subtitle: String

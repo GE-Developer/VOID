@@ -29,6 +29,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     
     private let withBackButton: Bool
     private let withTarget: Bool
+    private let tabBarIsVisible: Bool
     private let largeNavBarHeight = 70.0
     private let smallNavBarHeight = 50.0
     
@@ -41,6 +42,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     init(
         withBackButton: Bool = true,
         withTarget: Bool = false,
+        tabBarIsVisible: Bool = false,
         backgroundImage: Image? = nil,
         @ViewBuilder titleHStackView: @escaping (_ isLargeNavBar: Bool) -> Title,
         @ViewBuilder headerView: @escaping (_ minY: CGFloat) -> Header = { _ in EmptyView() },
@@ -48,6 +50,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     ) {
         self.withBackButton = withBackButton
         self.withTarget = withTarget
+        self.tabBarIsVisible = tabBarIsVisible
         self.backgroundImage = backgroundImage
         self.titleHStackView = titleHStackView
         self.headerView = headerView
@@ -57,7 +60,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     var body: some View {
         customScrollView
             .onAppear {
-                tabBarState.isVisible = !withBackButton
+                tabBarState.isVisible = tabBarIsVisible
             }
     }
 }
@@ -151,7 +154,7 @@ extension CustomScrollView {
                     scrollView(proxy)
                         .padding(.top, 10)
                     spacerForTabBar
-                        .padding(.bottom, 20)
+                    Spacer().frame(height: isFaceIDPhone ? 10 : 30)
                 }
             }
         }
@@ -165,7 +168,7 @@ extension CustomScrollView {
     
     @ViewBuilder
     private var spacerForTabBar: some View {
-        if !withBackButton {
+        if tabBarState.isVisible {
             Spacer()
                 .frame(height: tabBarState.height)
         }

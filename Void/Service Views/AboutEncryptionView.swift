@@ -50,7 +50,7 @@ extension AboutEncryptionView {
                     columnSpacing: animationLetterSpacing,
                     rowSpacing: animationLetterSpacing
                 )
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                .clipShape(RoundedRectangle(cornerRadius: 10))
             }
             .frame(height: 80)
     }

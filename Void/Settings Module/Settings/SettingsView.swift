@@ -35,7 +35,7 @@ struct SettingsView: View {
 // MARK: - Builder
 extension SettingsView {
     private var settingsView: some View {
-        CustomScrollView(withBackButton: false) {
+        CustomScrollView(withBackButton: false, tabBarIsVisible: true) {
             CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
             Spacer()
         } scrollView: { _ in

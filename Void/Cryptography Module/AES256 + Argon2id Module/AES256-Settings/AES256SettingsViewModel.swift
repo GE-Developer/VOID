@@ -54,11 +54,11 @@ final class AES256SettingsViewModel: ObservableObject {
     let keyLengthTitle = L10n("CryptoSettings.KeyLength.title")
     let keyLengthValues: [UInt8] = [32, 64, 96, 128, 160, 192, 224]
     let keyLengthInstructions = L10n("CryptoSettings.KeyLength.instructions")
-
+    
     let layersTitle = L10n("CryptoSettings.Layers.title")
     let layersSubtitle = L10n("CryptoSettings.Layers.subtitle")
     let layersInstructions = L10n("CryptoSettings.Layers.instructions")
-
+    
     let timerTitle = L10n("CryptoSettings.Timer.title")
     let timerSubtitle = L10n("CryptoSettings.Timer.subtitle")
     let timerInstuctions = L10n("CryptoSettings.Timer.instuctions")

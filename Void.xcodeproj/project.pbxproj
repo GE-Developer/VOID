@@ -240,8 +240,7 @@
 				1F64ADE12E76234200DB44CE /* Settings */,
 				1F64ADE22E76234C00DB44CE /* Language */,
 				1F2403BA2EA5279E00FB4005 /* PayWallView.swift */,
-				1F587D512EAC61DF0025194E /* AboutProjectView.swift */,
-				1F587D532EAC62200025194E /* AboutProjectViewModel.swift */,
+				1F3716B52EAE836D008BA63C /* AboutProject */,
 			);
 			path = "Settings Module";
 			sourceTree = "<group>";
@@ -252,13 +251,6 @@
 				1F2D34272E7E1760005E6239 /* AES256CryptoManager.swift */,
 			);
 			path = "AES256-Managers";
-			sourceTree = "<group>";
-		};
-		1F2403BC2EA5845300FB4005 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1F2CADAA2E9183DC009007B5 /* Protocols */ = {
@@ -287,6 +279,15 @@
 				1F6F65FD2E958A3F0095E89E /* CodecService.swift */,
 			);
 			path = "Crypto Services";
+			sourceTree = "<group>";
+		};
+		1F3716B52EAE836D008BA63C /* AboutProject */ = {
+			isa = PBXGroup;
+			children = (
+				1F587D512EAC61DF0025194E /* AboutProjectView.swift */,
+				1F587D532EAC62200025194E /* AboutProjectViewModel.swift */,
+			);
+			path = AboutProject;
 			sourceTree = "<group>";
 		};
 		1F64ADE12E76234200DB44CE /* Settings */ = {
@@ -451,7 +452,6 @@
 			isa = PBXGroup;
 			children = (
 				1F8DDBDB2E3677DE005734CD /* Void */,
-				1F2403BC2EA5845300FB4005 /* Frameworks */,
 				1FB32A322E34FA17003E4B54 /* Products */,
 			);
 			sourceTree = "<group>";

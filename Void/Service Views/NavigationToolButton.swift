@@ -21,6 +21,7 @@ struct NavigationToolButton: View {
     }
 }
 
+// MARK: - Builder
 extension NavigationToolButton {
     private var settingsButton: some View {
         Button(action: action) {

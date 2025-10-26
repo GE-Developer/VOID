@@ -7,6 +7,7 @@
 
 enum Language: String, CaseIterable, Identifiable {
     case english = "en"
+    case georgian = "ka"
     case spanish = "es"
     case chineseSimplified = "zh-Hans"
     case chineseTraditional = "zh-Hant"
@@ -25,7 +26,6 @@ enum Language: String, CaseIterable, Identifiable {
     case dutch = "nl"
     case swedish = "sv"
     case ukrainian = "uk"
-    case georgian = "ka"
 //    case persian = "fa" // RTL
     
     var id: String { rawValue }
@@ -33,6 +33,7 @@ enum Language: String, CaseIterable, Identifiable {
     var localizedName: String {
         switch self {
         case .english: return "English"
+        case .georgian: return "ქართული"
         case .spanish: return "Español"
         case .chineseSimplified: return "简体中文"
         case .chineseTraditional: return "繁體中文"
@@ -51,7 +52,6 @@ enum Language: String, CaseIterable, Identifiable {
         case .dutch: return "Nederlands"
         case .swedish: return "Svenska"
         case .ukrainian: return "Українська"
-        case .georgian: return "ქართული"
 //        case .persian: return "فارسی"
         }
     }
@@ -59,6 +59,7 @@ enum Language: String, CaseIterable, Identifiable {
     var englishName: String {
         switch self {
         case .english: return "English"
+        case .georgian: return "Georgian"
         case .spanish: return "Spanish"
         case .chineseSimplified: return "Chinese (Simplified)"
         case .chineseTraditional: return "Chinese (Traditional)"
@@ -77,7 +78,6 @@ enum Language: String, CaseIterable, Identifiable {
         case .dutch: return "Dutch"
         case .swedish: return "Swedish"
         case .ukrainian: return "Ukrainian"
-        case .georgian: return "Georgian"
 //        case .persian: return "Persian"
         }
     }

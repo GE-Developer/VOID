@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
- 
+
 extension Gradient {
     static let accent = LinearGradient(
         colors: [.void.accentLight, .void.accentDark],

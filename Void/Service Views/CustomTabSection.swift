@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomTabSection: View {    
+struct CustomTabSection: View {
     private let image: Image
     private let text: String?
     private let subtext: String?
@@ -45,9 +45,6 @@ extension CustomTabSection {
             let shineOffset = CGFloat(slide) * 240.0
             let shineOpacity = 0.18 + 0.22 * abs(slide)
             
-            let width = $0.size.width - 32
-            let height = width / 1.618
-            
             VStack {
                 ZStack {
                     image
@@ -55,7 +52,7 @@ extension CustomTabSection {
                         .scaledToFill()
                     titleText
                 }
-                .frame(width: width, height: height)
+                .frame(height: 180)
                 .overlay(blick(shineOpacity, shineOffset))
                 .clipShape(RoundedRectangle(cornerRadius: 12))
                 .overlay(stroke)
@@ -101,9 +98,9 @@ extension CustomTabSection {
                 Spacer()
             }
         }
-        .frame(height: 170)
+        .frame(height: 180)
     }
-        
+    
     private var subtextBackground: some View {
         RoundedRectangle(cornerRadius: 8)
             .foregroundStyle(.ultraThinMaterial)

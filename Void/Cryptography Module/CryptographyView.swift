@@ -28,7 +28,7 @@ struct CryptographyView: View {
 // MARK: - Builder
 extension CryptographyView {
     private var cryptographyView: some View {
-        CustomScrollView(withBackButton: false) {
+        CustomScrollView(withBackButton: false, tabBarIsVisible: true) {
             CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
             Spacer()
         } scrollView: { _ in

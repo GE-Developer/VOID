@@ -35,7 +35,7 @@ enum CryptoError: Error {
         case .saltGenerationFailed:
             return L10n("Error.saltGenerationFailed")
         case .invalidMasterKey:
-            return L10n("Master key is empty or corrupted.")
+            return L10n("Error.invalidMasterKey")
         case .invalidSubkeyCount:
             return L10n("Error.invalidSubkeyCount")
         case .argon2Failed:

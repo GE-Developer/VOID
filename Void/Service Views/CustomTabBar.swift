@@ -33,7 +33,19 @@ extension CustomTabBar {
         .background(background)
         .overlay(overlayStroke)
         .padding(.horizontal, 32)
-        .offset(y: tabBarState.isVisible ? 0 : 80)
+        .padding(.bottom, isFaceIDPhone ? -10 : 15)
+        .background {
+            LinearGradient(
+                colors: [
+                    Color.void.background,
+                    Color.void.background.opacity(0.7),
+                    Color.clear
+                ],
+                startPoint: .bottom, endPoint: .top
+            )
+            .ignoresSafeArea()
+        }
+        .offset(y: tabBarState.isVisible ? 0 : tabBarState.height)
         .opacity(tabBarState.isVisible ? 1 : 0)
         .animation(
             .spring(response: 0.35, dampingFraction: 0.85),
