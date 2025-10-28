@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// MARK: - View Extension
 extension View {
     var isFaceIDPhone: Bool {
         guard let window = UIApplication.shared.connectedScenes
@@ -25,5 +26,64 @@ extension View {
                     .onAppear { height.wrappedValue = geo.size.height }
             }
         )
+    }
+    
+    func premiumOption(_ showPayWall: Binding<Bool>, swipable: Bool = false) -> some View {
+        self.modifier(PremiumLockModifier(showPayWall, swipable: swipable))
+    }
+}
+
+// MARK: - View Modifiers
+struct PremiumLockModifier: ViewModifier {
+    @EnvironmentObject private var store: StoreManager
+    @Binding private var showPayWall: Bool
+    
+    private let swipable: Bool
+    
+    init(_ showPayWall: Binding<Bool>, swipable: Bool) {
+        self._showPayWall = showPayWall
+        self.swipable = swipable
+    }
+    
+    func body(content: Content) -> some View {
+        content
+            .opacity(store.isPremium ? 1 : 0.5)
+            .disabled(!store.isPremium)
+            .overlay {
+                if swipable {
+                    swipableOverlay
+                } else {
+                    notSwipableOverlay
+                }
+            }
+    }
+    
+    @ViewBuilder
+    private var swipableOverlay: some View {
+        if !store.isPremium {
+            Color.void.blackAndWhite.opacity(0.000001)
+                .gesture(
+                    DragGesture(minimumDistance: 20)
+                        .onEnded { value in
+                            if value.translation.width > 50
+                                && abs(value.translation.height) < 30 {
+                                showPayWall = true
+                            }
+                        }
+                )
+                .onTapGesture {
+                    showPayWall = true
+                }
+        }
+    }
+    
+    @ViewBuilder
+    private var notSwipableOverlay: some View {
+        if !store.isPremium {
+            Color.void.blackAndWhite.opacity(0.000001)
+                .onTapGesture {
+                    showPayWall = true
+                }
+        }
     }
 }

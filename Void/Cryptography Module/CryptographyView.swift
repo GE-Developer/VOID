@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct CryptographyView: View {
-    private let vm = CryptographyViewModel()
-    
+    @EnvironmentObject private var tabBarState: TabBarState
     
     @State private var showAES256View = false
     @State private var showEmojiView = false
+    
+    private let vm = CryptographyViewModel()
     
     var body: some View {
         cryptographyView
@@ -36,6 +37,7 @@ extension CryptographyView {
                 symmetrycEncryptionTabs
                 encodingTabs
             }
+            .padding(.bottom, tabBarState.height)
         }
     }
     

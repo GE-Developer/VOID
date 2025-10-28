@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject private var tabBarState = TabBarState()
+    @StateObject private var store = StoreManager()
     
     var body: some View {
         Group {
@@ -27,5 +28,6 @@ struct HomeView: View {
             CustomTabBar()
         }
         .environmentObject(tabBarState)
+        .environmentObject(store)
     }
 }

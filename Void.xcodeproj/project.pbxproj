@@ -87,6 +87,8 @@
 		1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F91202F2E8C935200B62644 /* NavigationToolButton.swift */; };
 		1FA26BED2E90A1F6002BD74C /* VoidNumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA26BEC2E90A1F6002BD74C /* VoidNumbersView.swift */; };
 		1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2FBEA2E58BB510072905D /* PepperService.swift */; };
+		1FB32C222EAFB7A00051A772 /* PremiumImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C212EAFB7A00051A772 /* PremiumImageView.swift */; };
+		1FB32C2E2EB05A1B0051A772 /* CustomNavigationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C2D2EB05A1B0051A772 /* CustomNavigationTextField.swift */; };
 		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -171,6 +173,8 @@
 		1FA26BEC2E90A1F6002BD74C /* VoidNumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidNumbersView.swift; sourceTree = "<group>"; };
 		1FA2FBEA2E58BB510072905D /* PepperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PepperService.swift; sourceTree = "<group>"; };
 		1FB32A312E34FA17003E4B54 /* Void.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Void.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB32C212EAFB7A00051A772 /* PremiumImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumImageView.swift; sourceTree = "<group>"; };
+		1FB32C2D2EB05A1B0051A772 /* CustomNavigationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTextField.swift; sourceTree = "<group>"; };
 		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -322,8 +326,8 @@
 			children = (
 				1F8DDCE22E39676C005734CD /* CryptographyView.swift */,
 				1F6C56C42E9814590060015F /* CryptographyViewModel.swift */,
-				1F6F66012E958B6A0095E89E /* Emoji Module */,
 				1F8DDBDC2E367816005734CD /* AES256 + Argon2id Module */,
+				1F6F66012E958B6A0095E89E /* Emoji Module */,
 			);
 			path = "Cryptography Module";
 			sourceTree = "<group>";
@@ -421,9 +425,11 @@
 				1F12FE502E42DEDD0023DB69 /* MessageView.swift */,
 				1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */,
 				1F8DDCE42E3A1C01005734CD /* CustomSecureField.swift */,
+				1FB32C2D2EB05A1B0051A772 /* CustomNavigationTextField.swift */,
 				1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */,
 				1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */,
 				1F2CADA32E91075E009007B5 /* AboutEncryptionView.swift */,
+				1FB32C212EAFB7A00051A772 /* PremiumImageView.swift */,
 			);
 			path = "Service Views";
 			sourceTree = "<group>";
@@ -601,6 +607,7 @@
 				1F8DDCDB2E3963C4005734CD /* CustomForm.swift in Sources */,
 				1F587D542EAC62200025194E /* AboutProjectViewModel.swift in Sources */,
 				1F12FE4B2E4278210023DB69 /* CryptoAction.swift in Sources */,
+				1FB32C2E2EB05A1B0051A772 /* CustomNavigationTextField.swift in Sources */,
 				1F8DDBE82E36785E005734CD /* Image + Ext.swift in Sources */,
 				1F2D34262E7DF41A005E6239 /* KeyDerivationService.swift in Sources */,
 				1F6F66032E958C030095E89E /* EmojiCodingViewModel.swift in Sources */,
@@ -635,6 +642,7 @@
 				1F6F65F52E92C1970095E89E /* CustomTabBar.swift in Sources */,
 				1F8DDCE92E3A7843005734CD /* FormHeaderContent.swift in Sources */,
 				1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */,
+				1FB32C222EAFB7A00051A772 /* PremiumImageView.swift in Sources */,
 				1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */,
 				1F6C56C32E97F1700060015F /* EmojiMood.swift in Sources */,
 				1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */,

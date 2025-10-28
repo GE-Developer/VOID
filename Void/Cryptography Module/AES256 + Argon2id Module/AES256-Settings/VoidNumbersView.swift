@@ -29,7 +29,9 @@ extension VoidNumbersView {
             HeaderTextView(text: vm.voidInstructions, offsetY: min($0, 0))
         } scrollView: { proxy in
             CustomForm(headerText: vm.voidSubtitle) {
-                voidList
+                LazyVStack(spacing: 0) {
+                    voidList
+                }
             }
             .padding(.top)
             .task { proxy.scrollTo(Int(vm.parameters.voidIndex), anchor: .center) }

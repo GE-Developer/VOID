@@ -11,6 +11,11 @@ struct AES256SettingsView: View {
     @StateObject private var vm: AES256SettingsViewModel
     @State private var showVoid = false
     @State private var showInfo = false
+    @State private var showPayWall = false
+    
+    @State var premiumAnimation = false
+    
+    @EnvironmentObject private var store: StoreManager
     
     init(vm: AES256EncryptionViewModel) {
         _vm = StateObject(wrappedValue: AES256SettingsViewModel(mainVM: vm))
@@ -25,7 +30,10 @@ struct AES256SettingsView: View {
                 NavigationLazyView(VoidNumbersView(vm: vm))
             }
             .navigationDestination(isPresented: $showInfo) {
-                AboutEncryptionView(vm: AboutAES256ViewModel())
+                NavigationLazyView(AboutEncryptionView(vm: AboutAES256ViewModel()))
+            }
+            .navigationDestination(isPresented: $showPayWall) {
+                NavigationLazyView(PayWallView())
             }
     }
 }
@@ -96,7 +104,7 @@ extension AES256SettingsView {
     
     private var saltForm: some View {
         CustomForm(headerText: vm.saltTitle) {
-            FormHeaderContent(vm.saltDescription)
+            formHeaderView(vm.saltDescription, isPremium: false)
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.salt,
@@ -111,13 +119,14 @@ extension AES256SettingsView {
     
     private var iterationsForm: some View {
         CustomForm(headerText: vm.iterationsTitle) {
-            FormHeaderContent("\(vm.parameters.iterations)")
+            formHeaderView(vm.parameters.iterations)
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.iterations,
                 availableValues: vm.iterationsValues,
                 labels: vm.iterationsLabels
             )
+            .premiumOption($showPayWall, swipable: true)
             Divider()
                 .padding(.horizontal)
             CustomTextRow(vm.iterationsInstructions)
@@ -126,13 +135,14 @@ extension AES256SettingsView {
     
     private var memoryForm: some View {
         CustomForm(headerText: vm.memoryTitle) {
-            FormHeaderContent(vm.memoryDescription)
+            formHeaderView(vm.memoryDescription)
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.memory,
                 availableValues: vm.memoryValues,
                 labels: vm.memoryLabels
             )
+            .premiumOption($showPayWall, swipable: true)
             Divider()
                 .padding(.horizontal)
             CustomTextRow(vm.memoryInstructions)
@@ -141,13 +151,14 @@ extension AES256SettingsView {
     
     private var parallelismForm: some View {
         CustomForm(headerText: vm.parallelismTitle) {
-            FormHeaderContent("\(vm.parameters.parallelism)")
+            formHeaderView(vm.parameters.parallelism)
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.parallelism,
                 availableValues: vm.parallelismValues,
                 labels: vm.parallelismLabels
             )
+            .premiumOption($showPayWall, swipable: true)
             Divider()
                 .padding(.horizontal)
             CustomTextRow(vm.parallelismInstructions)
@@ -156,13 +167,14 @@ extension AES256SettingsView {
     
     private var keyLengthForm: some View {
         CustomForm(headerText: vm.keyLengthTitle) {
-            FormHeaderContent(vm.keyLengthDescription)
+            formHeaderView(vm.keyLengthDescription)
         } content: {
             CustomSliderRow(
                 value: $vm.parameters.keyLength,
                 availableValues: vm.keyLengthValues,
                 labels: vm.keyLenghtLabels
             )
+            .premiumOption($showPayWall, swipable: true)
             Divider()
                 .padding(.horizontal)
             CustomTextRow(vm.keyLengthInstructions)
@@ -171,13 +183,14 @@ extension AES256SettingsView {
     
     private var layersForm: some View {
         CustomForm(headerText: vm.layersTitle) {
-            FormHeaderContent("\(vm.parameters.actualLayers)")
+            formHeaderView(vm.parameters.actualLayers)
         } content: {
             HStack(spacing: 8) {
                 CustomTextRow(vm.layersSubtitle)
                 Stepper("", value: $vm.parameters.layers, in: vm.layersRange)
                     .padding(.horizontal)
                     .padding(.vertical, 8)
+                    .premiumOption($showPayWall)
             }
             Divider()
                 .padding(.horizontal)
@@ -187,11 +200,17 @@ extension AES256SettingsView {
     
     private var timerForm: some View {
         CustomForm(headerText: vm.timerTitle) {
+            PremiumView(.textAndStar)
+                .onTapGesture {
+                    showPayWall = true
+                }
+        } content: {
             CustomToggleRow(
                 isOff: $vm.parameters.dateInactive,
                 icon: .system.timer,
                 title: vm.timerSubtitle
             )
+            .premiumOption($showPayWall)
             
             if !vm.parameters.dateInactive {
                 Divider()
@@ -207,6 +226,20 @@ extension AES256SettingsView {
             Divider()
                 .padding(.horizontal)
             CustomTextRow(vm.timerInstuctions)
+        }
+    }
+    
+    private func formHeaderView(_ description: Any, isPremium: Bool = true) -> some View {
+        HStack {
+            if isPremium {
+                PremiumView(.textAndStar)
+                    .onTapGesture {
+                        showPayWall = true
+                    }
+            }
+            if store.isPremium || !isPremium {
+                FormHeaderContent("\(description)")
+            }
         }
     }
 }

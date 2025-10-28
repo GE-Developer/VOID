@@ -80,11 +80,6 @@ final class SettingsViewModel: ObservableObject {
         L10n("Settings.AboutApp.Project.title")
     }
     
-    var appVersionTitle: String {
-        L10n("Settings.AppVersion.title")
-    }
-    
-    let appVersion: String
     let languageSubtitle = "Language"
     
 #warning("Add App ID")
@@ -98,13 +93,9 @@ final class SettingsViewModel: ObservableObject {
     private let soundManager = SoundManager.shared
     
     init() {
-        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "N/A"
-        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "N/A"
-        
         isThemeLight = themeManager.isThemeLight
         isHapticsOff = hapticsManager.isHapticsOff
         isSoundOff = soundManager.isSoundOff
-        appVersion = "\(version) (\(build))"
     }
     
     func rateApp() {

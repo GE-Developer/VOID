@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @EnvironmentObject private var store: StoreManager
+    @EnvironmentObject private var tabBarState: TabBarState
+    
     @StateObject private var vm = SettingsViewModel()
     
     @State private var languageViewPresented = false
@@ -51,7 +54,7 @@ extension SettingsView {
                 }
                 
                 CustomForm(headerText: vm.accessTitle) {
-                    EmptyView()
+                    PremiumView(.status)
                 } content: {
                     subscriptionButton
                     Divider().padding(.leading, 50)
@@ -68,8 +71,9 @@ extension SettingsView {
                     projectButton
                 }
                 
-                appVersionView
+                AppVersion()
             }
+            .padding(.bottom, tabBarState.height)
         }
     }
     
@@ -168,16 +172,5 @@ extension SettingsView {
             isLink: true,
             action: { projectViewPresented.toggle() }
         )
-    }
-    
-    private var appVersionView: some View {
-        VStack {
-            Text(vm.appVersionTitle)
-            Text(vm.appVersion)
-        }
-        .foregroundStyle(Color.void.mainText)
-        .font(.caption)
-        .fontDesign(.monospaced)
-        .padding(.horizontal, 6)
     }
 }

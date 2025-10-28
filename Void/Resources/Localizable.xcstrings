@@ -11648,6 +11648,17 @@
         }
       }
     },
+    "SearchField.cancel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
     "Settings.AboutApp.PrivacyPolicy.title" : {
       "extractionState" : "manual",
       "localizations" : {

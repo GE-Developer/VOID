@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct EmojiSettingsView: View {
+    @EnvironmentObject private var store: StoreManager
+    
     @ObservedObject var vm: EmojiCodingViewModel
     
     @State private var showInfo = false
+    @State private var showPayWall = false
     
     var body: some View {
         emojiSettingsView
             .navigationDestination(isPresented: $showInfo) {
-                AboutEncryptionView(vm: AboutEmojiViewModel(), 10)
+                NavigationLazyView(AboutEncryptionView(vm: AboutEmojiViewModel(), 10))
+            }
+            .navigationDestination(isPresented: $showPayWall) {
+                NavigationLazyView(PayWallView())
             }
     }
 }
@@ -50,21 +56,51 @@ extension EmojiSettingsView {
             GridRow {
                 moodButton(for: .positive)
                 moodButton(for: .negative)
+                    .premiumOption($showPayWall)
+                    .overlay(premiumOverlay)
             }
             GridRow {
                 moodButton(for: .people)
+                    .premiumOption($showPayWall)
+                    .overlay(premiumOverlay)
                 moodButton(for: .animals)
+                    .premiumOption($showPayWall)
+                    .overlay(premiumOverlay)
             }
             GridRow {
                 moodButton(for: .food)
+                    .premiumOption($showPayWall)
+                    .overlay(premiumOverlay)
                 moodButton(for: .loveStory)
+                    .premiumOption($showPayWall)
+                    .overlay(premiumOverlay)
             }
             GridRow {
                 moodButton(for: .flags)
+                    .premiumOption($showPayWall)
+                    .overlay(premiumOverlay)
                 moodButton(for: .symbols)
+                    .premiumOption($showPayWall)
+                    .overlay(premiumOverlay)
             }
         }
         .padding()
+    }
+    
+    private var premiumOverlay: some View {
+        VStack {
+            HStack {
+                Spacer()
+                PremiumView(.star)
+                    .padding(10)
+                    .background {
+                        Circle()
+                            .foregroundStyle(Color(.secondarySystemGroupedBackground))
+                    }
+                    .offset(x: 16, y: -16)
+            }
+            Spacer()
+        }
     }
     
     private func moodButton(for mood: EmojiMood) -> some View {

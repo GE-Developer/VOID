@@ -153,7 +153,6 @@ extension CustomScrollView {
                     geometryReader
                     scrollView(proxy)
                         .padding(.top, 10)
-                    spacerForTabBar
                     Spacer().frame(height: isFaceIDPhone ? 10 : 30)
                 }
             }
@@ -164,14 +163,6 @@ extension CustomScrollView {
         .scrollIndicators(withBackButton ? .automatic : .never)
         .scrollTargetBehavior(scrollBehavior)
         .contentMargins(.top, scrollMargins, for: .scrollIndicators)
-    }
-    
-    @ViewBuilder
-    private var spacerForTabBar: some View {
-        if tabBarState.isVisible {
-            Spacer()
-                .frame(height: tabBarState.height)
-        }
     }
 }
 
