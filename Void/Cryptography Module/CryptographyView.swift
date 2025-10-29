@@ -32,13 +32,18 @@ extension CryptographyView {
         CustomScrollView(withBackButton: false, tabBarIsVisible: true) {
             CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
             Spacer()
-        } scrollView: { _ in
+            logo
+                .frame(height: 18)
+                .opacity(0.5)
+                .offset(y: 2)
+        } scrollView: { proxy in
             VStack(spacing: 24) {
                 symmetrycEncryptionTabs
                 encodingTabs
             }
             .padding(.bottom, tabBarState.height)
         }
+
     }
     
     private var symmetrycEncryptionTabs: some View {

@@ -20,7 +20,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     }
     
     private var isLargeNavBar: Bool {
-        -offsetY < 8
+        -offsetY < (withSearchField ? headerHeight : 0) + 8
     }
     
     private var scrollMargins: Double {
@@ -30,6 +30,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
     private let withBackButton: Bool
     private let withTarget: Bool
     private let tabBarIsVisible: Bool
+    private let withSearchField: Bool
     private let largeNavBarHeight = 70.0
     private let smallNavBarHeight = 50.0
     
@@ -43,6 +44,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
         withBackButton: Bool = true,
         withTarget: Bool = false,
         tabBarIsVisible: Bool = false,
+        withSearchField: Bool = false,
         backgroundImage: Image? = nil,
         @ViewBuilder titleHStackView: @escaping (_ isLargeNavBar: Bool) -> Title,
         @ViewBuilder headerView: @escaping (_ minY: CGFloat) -> Header = { _ in EmptyView() },
@@ -51,6 +53,7 @@ struct CustomScrollView<Header: View, Scroll: View, Title: View>: View {
         self.withBackButton = withBackButton
         self.withTarget = withTarget
         self.tabBarIsVisible = tabBarIsVisible
+        self.withSearchField = withSearchField
         self.backgroundImage = backgroundImage
         self.titleHStackView = titleHStackView
         self.headerView = headerView

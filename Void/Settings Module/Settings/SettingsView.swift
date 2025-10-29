@@ -14,7 +14,7 @@ struct SettingsView: View {
     @StateObject private var vm = SettingsViewModel()
     
     @State private var languageViewPresented = false
-    @State private var subscriptionViewPresented = false
+    @State private var showPayWall = false
     @State private var projectViewPresented = false
     
     init() {
@@ -26,11 +26,11 @@ struct SettingsView: View {
             .navigationDestination(isPresented: $languageViewPresented) {
                 NavigationLazyView(LanguageView())
             }
-            .navigationDestination(isPresented: $subscriptionViewPresented) {
-                NavigationLazyView(PayWallView())
-            }
             .navigationDestination(isPresented: $projectViewPresented) {
                 NavigationLazyView(AboutProjectView())
+            }
+            .fullScreenCover(isPresented: $showPayWall) {
+                NavigationLazyView(PayWallView())
             }
     }
 }
@@ -41,6 +41,10 @@ extension SettingsView {
         CustomScrollView(withBackButton: false, tabBarIsVisible: true) {
             CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
             Spacer()
+            logo
+                .frame(height: 18)
+                .opacity(0.5)
+                .offset(y: 2)
         } scrollView: { _ in
             VStack(spacing: 25) {
                 CustomForm(headerText: vm.generalSettingsTitle) {
@@ -129,7 +133,7 @@ extension SettingsView {
             icon: .system.subscription,
             title: vm.subscriptionTitle,
             isLink: true,
-            action: { subscriptionViewPresented.toggle() }
+            action: { showPayWall.toggle() }
         )
     }
     

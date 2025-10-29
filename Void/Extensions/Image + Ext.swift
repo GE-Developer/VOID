@@ -65,4 +65,6 @@ struct ContentImage {
 struct OtherImage {
     let iosDeveloperMichael = Image("iOS Developer")
     let gitHub = Image("GitHub")
+    
+    let svgLogo = Image("SVG Logo")
 }

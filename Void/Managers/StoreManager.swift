@@ -14,9 +14,9 @@ final class StoreManager: ObservableObject {
         devTest
     }
     
-    @Published var devTest = false
+    @Published var devTest: Bool
     
-    init(devTest: Bool = false) {
-        self.devTest = devTest
+    init() {
+        devTest = UserDefaults.standard.bool(forKey: AppStorageKey.devTest.key)
     }
 }

@@ -31,4 +31,10 @@ extension Gradient {
         startPoint: .topLeading,
         endPoint: .bottomTrailing
     )
+    
+    static let payWallAccent = LinearGradient(
+        colors: [.void.payWallAccentLight, .void.payWallAccentDark],
+        startPoint: .topLeading,
+        endPoint: .bottomTrailing
+    )
 }

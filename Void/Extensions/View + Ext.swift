@@ -9,6 +9,12 @@ import SwiftUI
 
 // MARK: - View Extension
 extension View {
+    var logo: some View {
+        Image.other.svgLogo
+            .resizable()
+            .scaledToFit()
+    }
+    
     var isFaceIDPhone: Bool {
         guard let window = UIApplication.shared.connectedScenes
             .compactMap({ $0 as? UIWindowScene })
