@@ -22,11 +22,9 @@ enum Language: String, CaseIterable, Identifiable {
     case vietnamese = "vi"
     case turkish = "tr"
     case italian = "it"
-//    case urdu = "ur" // RTL
     case dutch = "nl"
     case swedish = "sv"
     case ukrainian = "uk"
-//    case persian = "fa" // RTL
     
     var id: String { rawValue }
     
@@ -48,11 +46,9 @@ enum Language: String, CaseIterable, Identifiable {
         case .vietnamese: return "Tiếng Việt"
         case .turkish: return "Türkçe"
         case .italian: return "Italiano"
-//        case .urdu: return "اردو"
         case .dutch: return "Nederlands"
         case .swedish: return "Svenska"
         case .ukrainian: return "Українська"
-//        case .persian: return "فارسی"
         }
     }
     
@@ -74,11 +70,9 @@ enum Language: String, CaseIterable, Identifiable {
         case .vietnamese: return "Vietnamese"
         case .turkish: return "Turkish"
         case .italian: return "Italian"
-//        case .urdu: return "Urdu"
         case .dutch: return "Dutch"
         case .swedish: return "Swedish"
         case .ukrainian: return "Ukrainian"
-//        case .persian: return "Persian"
         }
     }
 }

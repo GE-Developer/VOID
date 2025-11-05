@@ -30,7 +30,7 @@ struct SettingsView: View {
                 NavigationLazyView(AboutProjectView())
             }
             .fullScreenCover(isPresented: $showPayWall) {
-                NavigationLazyView(PayWallView())
+                NavigationLazyView(PayWallView(store))
             }
     }
 }

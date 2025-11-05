@@ -21,7 +21,7 @@ struct EmojiSettingsView: View {
                 NavigationLazyView(AboutEncryptionView(vm: AboutEmojiViewModel(), 10))
             }
             .navigationDestination(isPresented: $showPayWall) {
-                NavigationLazyView(PayWallView())
+                NavigationLazyView(PayWallView(store))
             }
     }
 }

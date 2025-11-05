@@ -10834,7 +10834,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Про проєкт VOID"
+            "value" : "Про проект VOID"
           }
         },
         "vi" : {
@@ -11399,7 +11399,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Проєкт VOID"
+            "value" : "Проект VOID"
           }
         },
         "vi" : {
@@ -11625,7 +11625,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Проєкт"
+            "value" : "Проект"
           }
         },
         "vi" : {
@@ -11655,6 +11655,18 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Cancel"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "გაუქმება"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скасувати"
           }
         }
       }
@@ -11707,7 +11719,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "კონფიდენციალურობის პოლიტიკა"
+            "value" : "კონფიდენციალურობა"
           }
         },
         "ko" : {
@@ -11862,7 +11874,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Про проєкт"
+            "value" : "Про проект"
           }
         },
         "vi" : {
@@ -12272,7 +12284,7 @@
         "ka" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "კომენტარის დატოვება App Store-ზე"
+            "value" : "შეაფასეთ App Store-ზე"
           }
         },
         "ko" : {
@@ -12653,7 +12665,7 @@
         "uk" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Версія застосунку"
+            "value" : "Версія додатку"
           }
         },
         "vi" : {
