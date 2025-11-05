@@ -82,8 +82,7 @@ final class SettingsViewModel: ObservableObject {
     
     let languageSubtitle = "Language"
     
-#warning("Add App ID")
-    private let appID = ""
+    private let appID = "6754666074"
     private let privacyPolicyURL = "https://ge-developer.github.io/VOID/privacy.html"
     private let termsOfUse = "https://ge-developer.github.io/VOID/terms.html"
     

@@ -93,7 +93,6 @@
 		1FB32C322EB0623B0051A772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C312EB0623B0051A772 /* Images.xcassets */; };
 		1FB32C342EB062C10051A772 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C332EB062C10051A772 /* Colors.xcassets */; };
 		1FB32C3E2EB264810051A772 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C3D2EB264810051A772 /* ExitButton.swift */; };
-		1FB32C4D2EB2D3F40051A772 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C4C2EB2D3F40051A772 /* AppVersion.swift */; };
 		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
 		1FFBB0BE2EB5094A0072600C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFBB0BD2EB5094A0072600C /* StoreKit.framework */; };
 		1FFBB0C62EB513100072600C /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBB0C52EB513100072600C /* Products.storekit */; };
@@ -199,7 +198,6 @@
 		1FB32C312EB0623B0051A772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FB32C332EB062C10051A772 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1FB32C3D2EB264810051A772 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
-		1FB32C4C2EB2D3F40051A772 /* AppVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
 		1FFBB0A02EB4163B0072600C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FFBB0BD2EB5094A0072600C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -272,8 +270,7 @@
 			children = (
 				1F64ADE12E76234200DB44CE /* Settings */,
 				1F64ADE22E76234C00DB44CE /* Language */,
-				1F2403BA2EA5279E00FB4005 /* PayWallView.swift */,
-				1F19ECB32EB6476C00A3D0AD /* PayWallViewModel.swift */,
+				1F8945722EBB86C700D5DEAA /* Pay Wall */,
 				1F3716B52EAE836D008BA63C /* AboutProject */,
 			);
 			path = "Settings Module";
@@ -372,6 +369,15 @@
 			path = "Emoji Module";
 			sourceTree = "<group>";
 		};
+		1F8945722EBB86C700D5DEAA /* Pay Wall */ = {
+			isa = PBXGroup;
+			children = (
+				1F2403BA2EA5279E00FB4005 /* PayWallView.swift */,
+				1F19ECB32EB6476C00A3D0AD /* PayWallViewModel.swift */,
+			);
+			path = "Pay Wall";
+			sourceTree = "<group>";
+		};
 		1F8DDBDB2E3677DE005734CD /* VOID */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,7 +412,6 @@
 			children = (
 				1F8DDBB72E366E11005734CD /* VOIDApp.swift */,
 				1F8DDBB62E366E11005734CD /* HomeView.swift */,
-				1FB32C4C2EB2D3F40051A772 /* AppVersion.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -606,6 +611,9 @@
 				ro,
 				sk,
 				th,
+				hy,
+				az,
+				is,
 			);
 			mainGroup = 1FB32A282E34FA16003E4B54;
 			minimizedProjectReferenceProxies = 1;
@@ -678,7 +686,6 @@
 				1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */,
 				1F2403B92EA51F6E00FB4005 /* StoreManager.swift in Sources */,
 				1F6F65FE2E958A3F0095E89E /* CodecService.swift in Sources */,
-				1FB32C4D2EB2D3F40051A772 /* AppVersion.swift in Sources */,
 				1F8DDBC52E366E11005734CD /* VOIDApp.swift in Sources */,
 				1F2CADA42E91075E009007B5 /* AboutEncryptionView.swift in Sources */,
 				1F1452552E608D2D00F8A553 /* LanguageManager.swift in Sources */,
