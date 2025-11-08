@@ -34,6 +34,7 @@
 		1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */; };
 		1F2D34312E84AFC6005E6239 /* FullScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */; };
 		1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */; };
+		1F4ECDEE2EBE50FF008931DE /* ProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4ECDED2EBE50FF008931DE /* ProductButton.swift */; };
 		1F587D522EAC61DF0025194E /* AboutProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F587D512EAC61DF0025194E /* AboutProjectView.swift */; };
 		1F587D542EAC62200025194E /* AboutProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F587D532EAC62200025194E /* AboutProjectViewModel.swift */; };
 		1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */; };
@@ -93,6 +94,7 @@
 		1FB32C322EB0623B0051A772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C312EB0623B0051A772 /* Images.xcassets */; };
 		1FB32C342EB062C10051A772 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C332EB062C10051A772 /* Colors.xcassets */; };
 		1FB32C3E2EB264810051A772 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C3D2EB264810051A772 /* ExitButton.swift */; };
+		1FEECF682EBD4EEC0058E823 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */; };
 		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
 		1FFBB0BE2EB5094A0072600C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFBB0BD2EB5094A0072600C /* StoreKit.framework */; };
 		1FFBB0C62EB513100072600C /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBB0C52EB513100072600C /* Products.storekit */; };
@@ -139,6 +141,7 @@
 		1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVersion.swift; sourceTree = "<group>"; };
 		1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenLoader.swift; sourceTree = "<group>"; };
 		1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAlertView.swift; sourceTree = "<group>"; };
+		1F4ECDED2EBE50FF008931DE /* ProductButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductButton.swift; sourceTree = "<group>"; };
 		1F587D512EAC61DF0025194E /* AboutProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProjectView.swift; sourceTree = "<group>"; };
 		1F587D532EAC62200025194E /* AboutProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProjectViewModel.swift; sourceTree = "<group>"; };
 		1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLazyView.swift; sourceTree = "<group>"; };
@@ -198,6 +201,7 @@
 		1FB32C312EB0623B0051A772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FB32C332EB062C10051A772 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1FB32C3D2EB264810051A772 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
+		1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
 		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
 		1FFBB0A02EB4163B0072600C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FFBB0BD2EB5094A0072600C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
@@ -373,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				1F2403BA2EA5279E00FB4005 /* PayWallView.swift */,
+				1F4ECDED2EBE50FF008931DE /* ProductButton.swift */,
 				1F19ECB32EB6476C00A3D0AD /* PayWallViewModel.swift */,
 			);
 			path = "Pay Wall";
@@ -471,6 +476,7 @@
 				1F2CADA32E91075E009007B5 /* AboutEncryptionView.swift */,
 				1FB32C212EAFB7A00051A772 /* PremiumImageView.swift */,
 				1FB32C3D2EB264810051A772 /* ExitButton.swift */,
+				1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */,
 			);
 			path = "Service Views";
 			sourceTree = "<group>";
@@ -720,6 +726,7 @@
 				1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */,
 				1F12FE482E4264260023DB69 /* CustomMessageTextField.swift in Sources */,
 				1F1452532E6080F800F8A553 /* Language.swift in Sources */,
+				1F4ECDEE2EBE50FF008931DE /* ProductButton.swift in Sources */,
 				1F8DDCDD2E39641A005734CD /* CustomButtonRow.swift in Sources */,
 				1F8DDCDF2E396454005734CD /* CustomToggleRow.swift in Sources */,
 				1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */,
@@ -732,6 +739,7 @@
 				1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */,
 				1F6F65FC2E9445EB0095E89E /* CustomTabSection.swift in Sources */,
 				1F12FE512E42DEDD0023DB69 /* MessageView.swift in Sources */,
+				1FEECF682EBD4EEC0058E823 /* CheckmarkView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

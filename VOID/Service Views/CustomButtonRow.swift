@@ -144,7 +144,7 @@ extension CustomButtonRow {
     private var checkmarkPlace: some View {
         Group {
             if withCheckmark {
-                Image.system.chechmark
+                Image.system.checkmark()
                     .foregroundStyle(Gradient.accent)
                     .font(.footnote)
                     .fontWeight(.heavy)

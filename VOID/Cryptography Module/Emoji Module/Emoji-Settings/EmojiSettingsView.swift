@@ -36,9 +36,7 @@ extension EmojiSettingsView {
                 isLargeNavBar: $0
             )
             Spacer()
-            NavigationToolButton(.system.info) {
-                showInfo = true
-            }
+            NavigationToolButton(.system.info) { showInfo = true }
         } scrollView: { _ in
             VStack {
                 CustomForm(headerText: vm.emojiFormTitle) {
@@ -142,9 +140,8 @@ extension EmojiSettingsView {
     private func buttonStroke(for mood: EmojiMood) -> some View {
         RoundedRectangle(cornerRadius: 12)
             .stroke(
-                vm.currentMood == mood
-                ? Color.void.accentDark
-                : Color.clear, lineWidth: 2
+                vm.currentMood == mood ? Color.void.accentDark : Color.clear,
+                lineWidth: 2
             )
     }
 }

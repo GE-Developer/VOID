@@ -18,7 +18,7 @@ struct MatrixAnimationView: View {
     private let letterSize: CGFloat
     private let columnSpacing: CGFloat
     private let rowSpacing: CGFloat
-    private let updateDelay: Int
+    private let updateDelay: UInt?
     private let speedRange: ClosedRange<Double>
     
     init(
@@ -27,7 +27,7 @@ struct MatrixAnimationView: View {
         letterSize: CGFloat = 12,
         columnSpacing: CGFloat = 1,
         rowSpacing: CGFloat = 0,
-        updateDelay: Int = 15,
+        updateDelay: UInt? = 15,
         speedRange: ClosedRange<Double> = 4...6
     ) {
         self.letters = letters.get
@@ -93,6 +93,7 @@ struct MatrixAnimationView: View {
     }
     
     private func startUpdating() {
+        guard let updateDelay else { return }
         let delay = UInt64(updateDelay * 10_000_000)
         
         updateTask = Task {

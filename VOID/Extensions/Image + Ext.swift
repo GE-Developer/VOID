@@ -27,7 +27,6 @@ struct SystemImage {
     let info = Image(systemName: "info.circle")
     let magnifyingglass = Image(systemName: "magnifyingglass")
     
-    let chechmark = Image(systemName: "checkmark.circle.fill")
     let darkMode = Image(systemName: "moon.fill")
     let language = Image(systemName: "globe")
     let vibration = Image(systemName: "iphone.radiowaves.left.and.right")
@@ -49,6 +48,10 @@ struct SystemImage {
     
     func lock(_ isOpen: Bool) -> Image {
         isOpen ? openLock : lock
+    }
+    
+    func checkmark(_ isFilled: Bool = true) -> Image {
+        isFilled ? Image(systemName: "checkmark.circle.fill") : Image(systemName: "circle")
     }
 }
 

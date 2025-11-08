@@ -13,26 +13,32 @@ struct ExitButton: View {
     private let haptic = HapticsManager.shared
     
     var body: some View {
+        exitButton
+    }
+}
+
+// MARK: - Builder
+extension ExitButton {
+    private var exitButton: some View {
         Button(action: dismissPressed) {
             Image.system.xmark
-                .font(.title2)
+                .font(.title3)
                 .fontDesign(.rounded)
-                .fontWeight(.semibold)
-                .foregroundStyle(.gray)
-                .padding(10)
-                .background {
-                    Circle()
-                        .foregroundStyle(.ultraThinMaterial)
-                        .overlay {
-                            Circle()
-                                .stroke(lineWidth: 1)
-                                .foregroundStyle(.gray)
-                        }
-                        .shadow(color: .white.opacity(0.6), radius: 1)
-                }
+                .foregroundStyle(Color.void.mainText)
+                .padding(9)
+                .background(background)
         }
     }
     
+    private var background: some View {
+        Circle()
+            .foregroundStyle(.ultraThinMaterial)
+            .shadow(color: .white.opacity(0.6), radius: 1)
+    }
+}
+
+// MARK: - Logic
+extension ExitButton {
     private func dismissPressed() {
         haptic.impact(style: .rigid)
         dismiss()

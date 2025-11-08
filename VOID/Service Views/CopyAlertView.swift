@@ -19,7 +19,7 @@ struct CopyAlertView: View {
 extension CopyAlertView {
     private var copyAlertView: some View {
         HStack {
-            Image.system.chechmark
+            Image.system.checkmark()
                 .foregroundStyle(isActive ? Gradient.green : Gradient.gray)
                 .animation(.easeIn(duration: 0.2).delay(0.2), value: isActive)
             Text(L10n("Alert.сopied"))

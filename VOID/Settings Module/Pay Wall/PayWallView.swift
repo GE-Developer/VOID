@@ -6,29 +6,116 @@
 //
 
 import SwiftUI
-import StoreKit
+//import StoreKit
 
 struct PayWallView: View {
     @EnvironmentObject private var store: StoreManager
     @StateObject private var vm: PayWallViewModel
-    
+
     init(_ store: StoreManager) {
         _vm = StateObject(wrappedValue: PayWallViewModel(store: store))
     }
     
     var body: some View {
-        GeometryReader { geo in
-            VStack(spacing: 0) {
-                topper(geo)
-                payView
-            }
+        payWall
+            .environmentObject(vm)
+    }
+}
+
+// MARK: - Builder
+extension PayWallView {
+    private var payWall: some View {
+
+        VStack(spacing: 0) {
+            topper
+            mainView
+                .padding(.top, 5)
+                .padding(.horizontal)
+                .padding(.bottom, isFaceIDPhone ? 20 : 5)
         }
-        .ignoresSafeArea(edges: .top)
+        .ignoresSafeArea()
         .background(background)
         .overlay(backButton)
-//        .animation(.easeIn, value: store.purchasedProductIDs.isEmpty)
     }
     
+    private var mainView: some View {
+       
+            VStack(spacing: 0) {
+                title
+                subtitle
+                VStack(spacing: 22) {
+                    lifetimeButton
+                    subscriptionButtons
+                }
+                .frame(height: 80+22+170+20)
+                
+                VStack(spacing: 10) {
+                    purchaseText
+                    continueButton
+                    
+                    HStack(spacing: 6) {
+                        bottomLink(text: vm.privacyPolicy) { vm.showPrivacyPolicy() }
+                        bottomLink(text: vm.termsOfUse) { vm.showTermsOfUse() }
+                    }
+                }
+            }
+            
+        
+    }
+    
+    private var title: some View {
+        Text(vm.title)
+            .font(.title)
+            .fontDesign(.rounded)
+            .fontWeight(.semibold)
+            .foregroundStyle(Color.void.mainText)
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .frame(height: 34)
+    }
+    
+    private var subtitle: some View {
+        Text(vm.subtitle)
+            .font(.subheadline)
+            .fontDesign(.rounded)
+            .multilineTextAlignment(.center)
+            .foregroundStyle(Color.void.secondaryText)
+            .lineLimit(2)
+            .minimumScaleFactor(0.7)
+            .frame(height: 38)
+    }
+    
+    private var purchaseText: some View {
+        Text(vm.subtitle)
+            .font(.subheadline)
+            .fontDesign(.rounded)
+            .foregroundStyle(Color.void.secondaryText)
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+            .frame(height: 18)
+    }
+    
+    private var continueButton: some View {
+        Button {
+            Task {
+                try await vm.purchase(vm.chosenProduct!)
+            }
+        } label: {
+            Text(vm.purchaseButtonTitle)
+                .font(.title3)
+                .fontWeight(.medium)
+                .fontDesign(.rounded)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .frame(height: 60)
+                .background(Gradient.payWallAccent)
+                .foregroundStyle(Color.white)
+                .clipShape(Capsule())
+                .shadow(color: Color.void.mainText, radius: 1)
+        }
+        .disabled(vm.purchaseButtonDisabled)
+    }
+
     private var background: some View {
         Color.void.background
             .ignoresSafeArea()
@@ -45,148 +132,53 @@ struct PayWallView: View {
         }
     }
     
-    private var payView: some View {
-        VStack(spacing: 12) {
-            VStack(spacing: 6) {
-                Text(vm.title)
-                    .font(.title)
-                    .fontWeight(.semibold)
-                    .foregroundStyle(Color.void.mainText)
-                    .lineLimit(1)
-                Text(vm.subtitle)
-                    .font(.subheadline)
-                    .foregroundStyle(Color.void.secondaryText)
-                    .lineLimit(2)
-                    .multilineTextAlignment(.center)
-                    .padding(.horizontal)
-            }
-            .frame(height: 80)
-            .fontDesign(.rounded)
-            .minimumScaleFactor(0.7)
-            .padding(.horizontal)
-            
-            
-            if let inAppPurchase = vm.inAppPurchases.first {
-                VStack {
-                    Text(inAppPurchase.displayName)
-                    Text(inAppPurchase.displayPrice)
-                    Text(inAppPurchase.description)
-                    
-                    if inAppPurchase.isFamilyShareable {
-                        RoundedRectangle(cornerRadius: 10)
-                            .frame(width: 40, height: 10)
-                            .foregroundStyle(.green)
-                    }
-                }
-                .font(.headline)
-                .frame(maxWidth: .infinity)
-                .frame(height: 90)
-                .background {
-                    RoundedRectangle(cornerRadius: 15)
-                        .foregroundStyle(
-                            vm.chosenProduct == inAppPurchase
-                            ? Color.blue
-                            : Color(.secondarySystemGroupedBackground)
-                        )
-                }
-                .onTapGesture {
-                    vm.chosenProduct = inAppPurchase
-                }
-                .padding(.horizontal)
-            }
-            
-            
-            
-            HStack(spacing: 12) {
-                ForEach(vm.subscriptions) { subscription in
-                    VStack {
-                        Text(vm.name(for: subscription))
-                            .font(.headline)
-                        Text(subscription.displayPrice)
-                            .font(.headline)
-                        Text(vm.description(for: subscription))
-                            .font(.caption2)
-                        
-                        
-                        if subscription.isFamilyShareable {
-                            Text(vm.premiumShareText)
-                                .foregroundStyle(.green)
-                        }
-                    }
-                    .padding(8)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background {
-                        RoundedRectangle(cornerRadius: 15)
-                            .foregroundStyle(
-                                vm.chosenProduct == subscription
-                                ? Color.blue
-                                : Color(.secondarySystemGroupedBackground)
-                            )
-                    }
-                    .onTapGesture {
-                        vm.chosenProduct = subscription
-                    }
-                    
-                }
-            }
-            .padding(.horizontal)
- 
-            Spacer()
-            
-            continueButton
-                .padding(.horizontal)
-            
-            HStack(spacing: 6) {
-                bottomButton(text: vm.privacyPolicy) { }
-                    .frame(maxWidth: .infinity)
-                bottomButton(text: vm.termsOfUse) { }
-                    .frame(maxWidth: .infinity)
-            }
-            .padding(.horizontal)
+    
+    
+    
+    
+    
+    
+    
+    
+    // MARK: - Lifetime
+    @ViewBuilder
+    private var lifetimeButton: some View {
+        if let inAppPurchase = vm.inAppPurchases.first {
+            ProductButton(product: inAppPurchase, buttonType: .horisontal)
         }
-        .padding(.top, 6)
     }
     
-    private var continueButton: some View {
-        Button {
-            Task {
-                try await vm.purchase(vm.chosenProduct!)
+    // MARK: - Subscriptions
+    private var subscriptionButtons: some View {
+        HStack(spacing: 12) {
+            ForEach(vm.subscriptions) {
+                ProductButton(product: $0, isDisabled: vm.isMonthlyButtonDisabled($0))
             }
-        } label: {
-            Text(vm.continueTitle)
-                .font(.title3)
-                .fontWeight(.medium)
-                .fontDesign(.rounded)
-                .padding()
-                .frame(maxWidth: .infinity, maxHeight: 60)
-                .background(Gradient.payWallAccent)
-                .foregroundStyle(Color.white)
-                .clipShape(Capsule())
-                .shadow(color: Color.void.mainText, radius: 1)
         }
-        .disabled(vm.purchaseButtonDisabled)
+    }
 
-    }
-    
-    private func topper(_ geo: GeometryProxy) -> some View {
+    private var topper: some View {
         ZStack(alignment: .bottom) {
             MatrixAnimationView(
-                store.purchasedProductIDs.isEmpty ? .binary : .englishCapitalizedAlphabet,
-                color: store.purchasedProductIDs.isEmpty ? Gradient.payWallAccent : Gradient.gold,
+                .binary,
+                color: Gradient.payWallAccent,
                 letterSize: 12,
                 columnSpacing: 0,
                 rowSpacing: 0,
-                updateDelay: 500,
-                speedRange: 5...7
+                updateDelay: nil,
+                speedRange: 8...9
             )
-            .frame(height: geo.size.height / 2.8)
             Rectangle()
                 .frame(height: 40)
                 .foregroundStyle(LinearGradient(colors: [.void.background, .void.background.opacity(0.7), Color.clear], startPoint: .bottom, endPoint: .top))
         }
     }
     
-    private func bottomButton(text: String, _ action: @escaping () -> Void) -> some View {
+//    private func monthlyButtonDisabled() {
+//        
+//    }
+    
+    private func bottomLink(text: String, _ action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Text(text)
                 .font(.caption)
@@ -194,7 +186,9 @@ struct PayWallView: View {
                 .fontDesign(.rounded)
                 .foregroundStyle(Color.void.secondaryText)
                 .lineLimit(2)
-                .minimumScaleFactor(0.7)
+                .minimumScaleFactor(1)
+                .frame(maxWidth: .infinity)
+                .frame(height: 31)
         }
     }
 }

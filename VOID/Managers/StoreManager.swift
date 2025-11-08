@@ -11,20 +11,18 @@ import StoreKit
 enum AppPurchase: CaseIterable {
     case lifetime
     case monthly
-    case halfyear
     case annual
     
     var id: String {
         switch self {
         case .lifetime: return "premium.lifetime"
         case .monthly: return "premium.monthly"
-        case .halfyear: return "premium.halfyear"
         case .annual: return "premium.annual"
         }
     }
     
     static var subscriptionIDs: [String] {
-        [self.monthly.id, self.halfyear.id, self.annual.id]
+        [self.monthly.id, self.annual.id]
     }
     
     
@@ -89,6 +87,8 @@ final class StoreManager: ObservableObject {
     func restorePurchases() async throws {
         try await AppStore.sync()
     }
+    
+
     
     
     
