@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>App ID</key>
+	<string>6754666074</string>
+	<key>Lifetime Product</key>
+	<string>premium.lifetime</string>
+	<key>Annual Product</key>
+	<string>premium.annual</string>
+	<key>Monthly Product</key>
+	<string>premium.monthly</string>
+	<key>Developer Link</key>
+	<string>https://ge-developer.tilda.ws</string>
+	<key>GitHub</key>
+	<string>https://github.com/GE-Developer/VOID</string>
+	<key>Terms of Use</key>
+	<string>https://ge-developer.github.io/VOID/terms.html</string>
+	<key>Privacy Policy</key>
+	<string>https://ge-developer.github.io/VOID/privacy.html</string>
+</dict>
+</plist>

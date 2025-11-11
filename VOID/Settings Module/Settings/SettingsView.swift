@@ -62,8 +62,6 @@ extension SettingsView {
                 } content: {
                     subscriptionButton
                     Divider().padding(.leading, 50)
-                    purchasesButton
-                    Divider().padding(.leading, 50)
                     reviewButton
                 }
                 
@@ -134,14 +132,6 @@ extension SettingsView {
             title: vm.subscriptionTitle,
             isLink: true,
             action: { showPayWall.toggle() }
-        )
-    }
-    
-    private var purchasesButton: some View {
-        CustomButtonRow(
-            icon: .system.restorePurchases,
-            title: vm.restorePurchasesTitle,
-            action: { }
         )
     }
     

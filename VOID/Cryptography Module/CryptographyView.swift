@@ -43,13 +43,11 @@ extension CryptographyView {
             }
             .padding(.bottom, tabBarState.height)
         }
-
     }
     
     private var symmetrycEncryptionTabs: some View {
         CustomTabImageView(
             title: vm.symmetricEncryptionTitle,
-            subtitle: vm.symmetricEncryptionSubtitle,
             headerImage: Image.system.key(true)
         ) {
             CustomTabSection(
@@ -64,7 +62,6 @@ extension CryptographyView {
     private var encodingTabs: some View {
         CustomTabImageView(
             title: vm.encodingTitle,
-            subtitle: vm.encodingDescription,
             headerImage: Image.system.code
         ) {
             CustomTabSection(

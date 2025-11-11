@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-//import StoreKit
 
 struct PayWallView: View {
     @EnvironmentObject private var store: StoreManager
@@ -19,6 +18,12 @@ struct PayWallView: View {
     var body: some View {
         payWall
             .environmentObject(vm)
+            .alert(
+                Text(vm.errorTitle),
+                isPresented: $vm.showError,
+                actions: { Button(vm.errorOK) {} },
+                message: { Text(vm.errorDescription) }
+            )
     }
 }
 
@@ -50,7 +55,7 @@ extension PayWallView {
                 .frame(height: 80+22+170+20)
                 
                 VStack(spacing: 10) {
-                    purchaseText
+                    restorePurchasesButton
                     continueButton
                     
                     HStack(spacing: 6) {
@@ -59,8 +64,6 @@ extension PayWallView {
                     }
                 }
             }
-            
-        
     }
     
     private var title: some View {
@@ -85,21 +88,26 @@ extension PayWallView {
             .frame(height: 38)
     }
     
-    private var purchaseText: some View {
-        Text(vm.subtitle)
-            .font(.subheadline)
+    private var restorePurchasesButton: some View {
+        Button(action: vm.restorePurchases) {
+            HStack {
+                Image.system.restorePurchases
+                    .font(.caption2)
+                Text(vm.restorePurchasesTitle)
+                    .font(.caption)
+            }
+//            .font(.subheadline)
             .fontDesign(.rounded)
             .foregroundStyle(Color.void.secondaryText)
             .lineLimit(1)
             .minimumScaleFactor(0.7)
-            .frame(height: 18)
+            .frame(height: 16)
+        }
     }
     
     private var continueButton: some View {
         Button {
-            Task {
-                try await vm.purchase(vm.chosenProduct!)
-            }
+            vm.purchase(vm.chosenProduct)
         } label: {
             Text(vm.purchaseButtonTitle)
                 .font(.title3)

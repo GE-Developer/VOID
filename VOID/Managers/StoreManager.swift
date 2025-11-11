@@ -8,104 +8,79 @@
 import Foundation
 import StoreKit
 
-enum AppPurchase: CaseIterable {
-    case lifetime
-    case monthly
-    case annual
-    
-    var id: String {
-        switch self {
-        case .lifetime: return "premium.lifetime"
-        case .monthly: return "premium.monthly"
-        case .annual: return "premium.annual"
-        }
-    }
-    
-    static var subscriptionIDs: [String] {
-        [self.monthly.id, self.annual.id]
-    }
-    
-    
-    static var inAppPurchaseIDs: [String] {
-        [self.lifetime.id]
-    }
-}
-
-
-
-
-
-
-
 @MainActor
 final class StoreManager: ObservableObject {
-    var isPremium: Bool {
-        devTest || isSubscribed || isPurchased
-    }
-    
     @Published var devTest: Bool
-    
-    var isSubscribed: Bool {
-        purchasedProductIDs.contains { AppPurchase.subscriptionIDs.contains($0) }
-    }
-    
-    var isPurchased: Bool {
-        purchasedProductIDs.contains { AppPurchase.inAppPurchaseIDs.contains($0) }
-    }
-
-    
     @Published private(set) var purchasedProductIDs: Set<String> = []
+    
+    var isPremium: Bool { devTest || !purchasedProductIDs.isEmpty }
     
     private var updates: Task<Void, Never>? = nil
     
-
-    
-    func updatePurchasedProducts() async {
-        for await result in Transaction.currentEntitlements {
-            guard case .verified(let transactions) = result else { continue }
-            
-            if transactions.revocationDate == nil {
-                purchasedProductIDs.insert(transactions.productID)
-            } else {
-                purchasedProductIDs.remove(transactions.productID)
-            }
-        }
-    }
-    
-    func observeTransactionUpdates() -> Task<Void, Never> {
-        Task(priority: .background) { [unowned self] in
-            for await verificationResult in Transaction.updates {
-                // Using verificationResult directly would be better
-                // but this way works for this tutorial
-                await updatePurchasedProducts()
-            }
-        }
-    }
-    
-    
-    
-    func restorePurchases() async throws {
-        try await AppStore.sync()
-    }
-    
-
-    
-    
-    
     init() {
         devTest = UserDefaults.standard.bool(forKey: AppStorageKey.devTest.key)
-        
-        Task {
-        
-            await updatePurchasedProducts()
-            
-        }
-        
-        updates = observeTransactionUpdates()
-//        chosenProduct = subscriptions.first
+        updates = newTransactionListenerTask()
+        Task { await updatePurchasedProducts() }
     }
     
     deinit {
         updates?.cancel()
+    }
+    
+    private func newTransactionListenerTask() -> Task<Void, Never> {
+        Task(priority: .background) {
+            for await verificationResult in Transaction.updates {
+                await handle(updatedTransaction: verificationResult)
+            }
+        }
+    }
+    
+    func restorePurchases() async throws {
+        try await AppStore.sync()
+        await updatePurchasedProducts()
+    }
+    
+    func purchase(_ product: Product) async throws {
+        do {
+            let result = try await product.purchase()
+            
+            switch result {
+            case let .success(.verified(transaction)):
+                await transaction.finish()
+                await updatePurchasedProducts()
+            case let .success(.unverified(_, reason)):
+                throw StoreError.from(reason)
+            case .userCancelled:
+                break
+            case .pending:
+                throw StoreError.pending
+            @unknown default:
+                throw StoreError.unknown
+            }
+        } catch {
+            throw StoreError.system
+        }
+    }
+    
+    private func updatePurchasedProducts() async {
+        for await result in Transaction.currentEntitlements {
+            await handle(updatedTransaction: result)
+        }
+    }
+    
+    private func handle(updatedTransaction verificationResult: VerificationResult<Transaction>) async {
+        guard case .verified(let transaction) = verificationResult else { return }
+        
+        if let _ = transaction.revocationDate {
+            purchasedProductIDs.remove(transaction.productID)
+            await transaction.finish()
+        } else if let expirationDate = transaction.expirationDate, expirationDate < Date() {
+            purchasedProductIDs.remove(transaction.productID)
+            await transaction.finish()
+        } else if transaction.isUpgraded {
+            return
+        } else {
+            purchasedProductIDs.insert(transaction.productID)
+        }
     }
 }

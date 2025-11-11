@@ -2,7 +2,7 @@
 //  PayWallViewModel.swift
 //  VOID
 //
-//  Created by Mikhail Bukhrashvili on 01.11.25.
+//  Created by GE-Developer
 //
 
 import StoreKit
@@ -12,43 +12,52 @@ import Foundation
 final class PayWallViewModel: ObservableObject {
     @Published private(set) var inAppPurchases: [Product] = []
     @Published private(set) var subscriptions: [Product] = []
-    
     @Published private(set) var chosenProduct: Product?
+    @Published private(set) var isLoading = false
+    
+    @Published private(set) var showLoadAgain = false
+    @Published var showError = false
+    
+    private(set) var errorDescription: String = ""
     
     var subtitle: String {
         if isPurchased(.lifetime) || store.devTest {
-            return "You own lifetime access"
+            return L10n("PayWall.Subtitle.lifetime")
         }
         
         if isPurchased(.annual) {
-            return "Your annual plan is active"
+            return L10n("PayWall.Subtitle.annual")
         }
         
         if isPurchased(.monthly) {
-            return "Monthly access enabled"
+            return L10n("PayWall.Subtitle.monthly")
         }
     
-        return "Choose your plan and explore everything VOID can do"
+        return L10n("PayWall.Subtitle.default")
     }
     
     var purchaseButtonTitle: String {
         if isChosen(.lifetime) {
-            return isPurchased(.lifetime) ? "Owned" : "Purchase"
+            return isPurchased(.lifetime)
+            ? L10n("PayWall.Button.owned")
+            : L10n("PayWall.Button.purchase")
         }
         
         if isChosen(.annual) {
-            guard !isPurchased(.annual) else { return "Manage" }
+            guard !isPurchased(.annual) else { return L10n("PayWall.Button.manage") }
             
-            return isPurchased(.monthly) ? "Upgrade" : "Subscribe"
+            return isPurchased(.monthly)
+            ? L10n("PayWall.Button.upgrade")
+            : L10n("PayWall.Button.subscribe")
         }
         
         if isChosen(.monthly) {
-            guard !isPurchased(.monthly) else { return "Manage" }
+            guard !isPurchased(.monthly) else { return L10n("PayWall.Button.manage") }
  
-            return "Subscribe"
+            return L10n("PayWall.Button.subscribe")
         }
         
-        return "Purchase"
+        return L10n("PayWall.Button.purchase")
     }
     
     var purchaseButtonDisabled: Bool {
@@ -73,40 +82,45 @@ final class PayWallViewModel: ObservableObject {
 
         var roundedPercent = Decimal()
         NSDecimalRound(&roundedPercent, &percent, 0, .plain)
-
-        return roundedPercent > 0 ? "\(roundedPercent)% SAVE" : nil
+        
+        let percentInt = NSDecimalNumber(decimal: roundedPercent).intValue
+        
+        let savingText = L10n("PayWall.annualSaving") + " " + "\(percentInt)%"
+        
+        return roundedPercent > 0 ? savingText : nil
     }
     
-    let title = "Premium Features"
+    var monthlyStatus: String? {
+        if store.purchasedProductIDs.contains(AppPurchase.annual.id) {
+            return "Not available"
+        } else if store.purchasedProductIDs.contains(AppPurchase.monthly.id) {
+            return "Purchased"
+        }
+        return nil
+    }
+    
+    var annualStatus: String? {
+        store.purchasedProductIDs.contains(AppPurchase.annual.id) ? "Purchased" : nil
+    }
+    
+    let title = L10n("PayWall.title")
     let termsOfUse = L10n("Settings.AboutApp.TermsOfUse.title")
     let privacyPolicy = L10n("Settings.AboutApp.PrivacyPolicy.title")
+    let restorePurchasesTitle = L10n("Settings.Access.RestorePurchases.title")
+    let familyShareText = L10n("PayWall.familyPlan")
     
-    let familyShareText = "Family Sharing"
-    let trialPeriodText = "3 Days Free"
+    let errorTitle = L10n("Error.title")
+    let errorOK = "OK"
     
     private let haptic = HapticsManager.shared
+    private let sound = SoundManager.shared
     private unowned let store: StoreManager
     
     init(store: StoreManager) {
         self.store = store
         
-        Task { try await loadProducts() }
+        Task { await loadProducts() }
     }
-    
- 
-    
-    
- 
-    
-    var warningText: String? {
-        guard store.isPurchased && store.isSubscribed else { return nil }
-        return "Выключите"
-    }
-
-    
-
-
-    private var productsLoaded = false
     
     func name(for product: Product) -> String {
         let appProduct = AppPurchase.allCases.first { $0.id == product.id }
@@ -114,41 +128,9 @@ final class PayWallViewModel: ObservableObject {
         guard let appProduct else { return product.displayName }
         
         switch appProduct {
-        case .lifetime: return "Lifetime"
-        case .monthly: return "Monthly"
-        case .annual: return "Annual"
-        }
-    }
-    
-    func loadProducts() async throws {
-        guard !productsLoaded else { return }
-        
-        let fetchedSubscriptions = try await Product.products(for: AppPurchase.subscriptionIDs)
-        inAppPurchases = try await Product.products(for: AppPurchase.inAppPurchaseIDs)
-        
-        subscriptions = AppPurchase.subscriptionIDs.compactMap { id in
-            fetchedSubscriptions.first(where: { $0.id == id })
-        }
-        
-        productsLoaded = true
-    }
-    
-    func purchase(_ product: Product) async throws {
-        let result = try await product.purchase()
-        
-        switch result {
-        case let .success(.verified(transaction)):
-            await transaction.finish()
-            await store.updatePurchasedProducts()
-            chosenProduct = nil
-        case .success(.unverified(_, _)):
-            break
-        case .userCancelled:
-            break
-        case .pending:
-            break
-        @unknown default:
-            break
+        case .lifetime: return L10n("PayWall.Lifetime.title")
+        case .monthly: return L10n("PayWall.Monthly.title")
+        case .annual: return L10n("PayWall.Annual.title")
         }
     }
     
@@ -158,18 +140,18 @@ final class PayWallViewModel: ObservableObject {
         guard let appProduct else { return product.displayName }
         
         switch appProduct {
-        case .lifetime: return "One-time purchase"
-        case .monthly: return "Every month"
-        case .annual: return "Every year"
+        case .lifetime: return L10n("PayWall.Lifetime.subtitle")
+        case .monthly: return L10n("PayWall.Monthly.subtitle")
+        case .annual: return L10n("PayWall.Annual.subtitle")
         }
     }
-    
-    func additionalPromo(for product: Product) async -> String? {
+
+    func freeTrialDescription(for product: Product) async -> String? {
         guard let sub = product.subscription else { return nil }
 
         let eligible = await sub.isEligibleForIntroOffer
         guard eligible, let offer = sub.introductoryOffer else { return nil }
-
+        
         let period = offer.period
         let days: Int
         switch period.unit {
@@ -180,7 +162,22 @@ final class PayWallViewModel: ObservableObject {
         @unknown default: days = period.value
         }
 
-        return "\(days) Days Free"
+        return L10n("PayWall.trialPeriod \(days)")
+    }
+
+    func purchase(_ product: Product?) {
+        guard let product else { return }
+        Task {
+            do {
+                try await store.purchase(product)
+            } catch {
+                let storeError = error as? StoreError
+                errorDescription = storeError?.description ?? StoreError.unknown.description
+                showError.toggle()
+                haptic.notification(type: .error)
+                sound.playSound(.errorAlert)
+            }
+        }
     }
     
     func tapped(on product: Product) {
@@ -189,26 +186,180 @@ final class PayWallViewModel: ObservableObject {
     }
     
     func showPrivacyPolicy() {
-//        guard let url = URL(string: privacyPolicyURL) else { return }
-//        UIApplication.shared.open(url)
+        guard let url = URL(string: Plist.get(.privacyPolicy)) else { return }
+        UIApplication.shared.open(url)
     }
     
     func showTermsOfUse() {
-//        guard let url = URL(string: termsOfUse) else { return }
-//        UIApplication.shared.open(url)
+        guard let url = URL(string: Plist.get(.termsOfUse)) else { return }
+        UIApplication.shared.open(url)
     }
     
     func isMonthlyButtonDisabled(_ subscription: Product) -> Bool {
         isPurchased(.annual) && subscription.id == AppPurchase.monthly.id
     }
     
+    func restorePurchases() {
+        Task {
+            do {
+                try await store.restorePurchases()
+            } catch {
+                errorDescription = StoreError.syncError.description
+                showError.toggle()
+                sound.playSound(.errorAlert)
+                haptic.notification(type: .error)
+            }
+        }
+    }
+    
+    func isChosen(_ appPurchase: AppPurchase) -> Bool {
+        guard let chosenProductID = chosenProduct?.id else { return false }
+        
+        return chosenProductID == appPurchase.id
+    }
+    
     private func isPurchased(_ appPurchase: AppPurchase) -> Bool {
         store.purchasedProductIDs.contains(appPurchase.id)
     }
     
-    private func isChosen(_ appPurchase: AppPurchase) -> Bool {
-        guard let chosenProductID = chosenProduct?.id else { return false }
+    private func loadProducts() async {
+        guard !isLoading else { return }
         
-        return chosenProductID == appPurchase.id
+        isLoading = true
+        
+        defer {
+            isLoading = false
+        }
+        
+        let subscriptionIDs = AppPurchase.subscriptionIDs
+        let inAppPurchaseIDs = AppPurchase.inAppPurchaseIDs
+        
+        do {
+            let fetchedSubscriptions = try await Product.products(for: subscriptionIDs)
+            inAppPurchases = try await Product.products(for: inAppPurchaseIDs)
+            
+            subscriptions = AppPurchase.subscriptionIDs.compactMap { id in
+                fetchedSubscriptions.first(where: { $0.id == id })
+            }
+            showLoadAgain = false
+        } catch {
+            errorDescription = StoreError.loadingError.description
+            showError.toggle()
+            haptic.notification(type: .error)
+            sound.playSound(.errorAlert)
+            showLoadAgain = true
+        }
+    }
+}
+
+
+
+
+
+
+enum AppPurchase: CaseIterable {
+    case lifetime
+    case monthly
+    case annual
+    
+    var id: String {
+        switch self {
+        case .lifetime: return Plist.get(.lifetimeProduct)
+        case .monthly: return Plist.get(.monthlyProduct)
+        case .annual: return Plist.get(.annualProduct)
+        }
+    }
+    
+    static var subscriptionIDs: [String] {
+        [self.monthly.id, self.annual.id]
+    }
+    
+    
+    static var inAppPurchaseIDs: [String] {
+        [self.lifetime.id]
+    }
+}
+
+enum StoreError: Error {
+    case revokedCertificate
+    case invalidCertificateChain
+    case invalidDeviceVerification
+    case invalidEncoding
+    case invalidSignature
+    case missingRequiredProperties
+    case userCancelled
+    case pending
+    case unknown
+    case system
+    case productNotChosen
+    case loadingError
+    case syncError
+    
+    var description: String {
+        switch self {
+        case .revokedCertificate:
+            return ""
+        case .invalidCertificateChain:
+            return ""
+        case .invalidDeviceVerification:
+            return ""
+        case .invalidEncoding:
+            return ""
+        case .invalidSignature:
+            return ""
+        case .missingRequiredProperties:
+            return ""
+        case .userCancelled:
+            return ""
+        case .pending:
+            return ""
+        case .unknown:
+            return ""
+        case .system:
+            return ""
+        case .productNotChosen:
+            return ""
+        case .loadingError:
+            return ""
+        case .syncError:
+            return "Sync failed"
+        }
+    }
+    
+    static func from(_ reason: VerificationResult<Transaction>.VerificationError) -> StoreError {
+        switch reason {
+        case .revokedCertificate: return .revokedCertificate
+        case .invalidCertificateChain: return .invalidCertificateChain
+        case .invalidDeviceVerification: return .invalidDeviceVerification
+        case .invalidEncoding: return .invalidEncoding
+        case .invalidSignature: return .invalidSignature
+        case .missingRequiredProperties: return .missingRequiredProperties
+        @unknown default: return .unknown
+        }
+    }
+}
+
+
+
+struct Plist {
+    enum Key: String {
+        case appID = "App ID"
+        case lifetimeProduct = "Lifetime Product"
+        case annualProduct = "Annual Product"
+        case monthlyProduct = "Monthly Product"
+        case developerLink = "Developer Link"
+        case gitHub = "GitHub"
+        case termsOfUse = "Terms of Use"
+        case privacyPolicy = "Privacy Policy"
+    }
+    
+    static private let plistName = "Property List"
+    
+    static func get(_ key: Key) -> String {
+        guard let url = Bundle.main.url(forResource: plistName, withExtension: "plist"),
+              let data = try? Data(contentsOf: url),
+              let dict = try? PropertyListSerialization.propertyList(from: data, options: [], format: nil) as? [String: Any],
+              let value = dict[key.rawValue] as? String else { return "" }
+        return value
     }
 }

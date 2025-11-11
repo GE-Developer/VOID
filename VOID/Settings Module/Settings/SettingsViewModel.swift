@@ -57,10 +57,6 @@ final class SettingsViewModel: ObservableObject {
         L10n("Settings.Access.Subscription.title")
     }
     
-    var restorePurchasesTitle: String {
-        L10n("Settings.Access.RestorePurchases.title")
-    }
-    
     var reviewTitle: String {
         L10n("Settings.Access.Review.title")
     }
@@ -82,10 +78,6 @@ final class SettingsViewModel: ObservableObject {
     
     let languageSubtitle = "Language"
     
-    private let appID = "6754666074"
-    private let privacyPolicyURL = "https://ge-developer.github.io/VOID/privacy.html"
-    private let termsOfUse = "https://ge-developer.github.io/VOID/terms.html"
-    
     private let themeManager = ThemeManager.shared
     private let languageManager = LanguageManager.shared
     private let hapticsManager = HapticsManager.shared
@@ -99,18 +91,18 @@ final class SettingsViewModel: ObservableObject {
     
     func rateApp() {
         guard let url = URL(
-            string: "https://apps.apple.com/app/\(appID)?action=write-review"
+            string: "https://apps.apple.com/app/\(Plist.get(.appID))?action=write-review"
         ) else { return }
         UIApplication.shared.open(url)
     }
     
     func showPrivacyPolicy() {
-        guard let url = URL(string: privacyPolicyURL) else { return }
+        guard let url = URL(string: Plist.get(.privacyPolicy)) else { return }
         UIApplication.shared.open(url)
     }
     
     func showTermsOfUse() {
-        guard let url = URL(string: termsOfUse) else { return }
+        guard let url = URL(string: Plist.get(.termsOfUse)) else { return }
         UIApplication.shared.open(url)
     }
 }

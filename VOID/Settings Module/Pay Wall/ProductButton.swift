@@ -16,6 +16,17 @@ struct ProductButton: View {
     
     let buttonType: ButtonType
     
+    private var status: String? {
+        switch product.id {
+        case AppPurchase.monthly.id:
+            return vm.monthlyStatus
+        case AppPurchase.annual.id:
+            return vm.annualStatus
+        default:
+            return nil
+        }
+    }
+    
     init(product: Product, isDisabled: Bool = false, buttonType: ButtonType = .vertical) {
         self.product = product
         self.isDisabled = isDisabled
@@ -49,8 +60,12 @@ extension ProductButton {
             header
             
             VStack {
+                if vm.isMonthlyButtonDisabled(product) {
+                    Image.system.xmark
+                } else {
+                    CheckmarkView(vm.chosenProduct == product)
+                }
                 
-                CheckmarkView(vm.chosenProduct == product)
                 VStack(spacing: 0) {
                     subscriptionName
                     subscriptionDescription
@@ -58,22 +73,20 @@ extension ProductButton {
                 .frame(height: height / 5)
                 subscriptionPrice
                 
+                Divider().padding(.horizontal, 10)
+                Spacer()
                 
-                if promoText != nil || product.isFamilyShareable  {
-                    Divider().padding(.horizontal, 10)
-                    Spacer()
-
-                    if let promoText {
-                        accentSecondaryText(promoText)
-                        secondaryText("Purchased")
-                    }
-
-                    if product.isFamilyShareable {
-                        accentSecondaryText(vm.familyShareText)
-                    }
+                if let promoText {
+                    accentSecondaryText(promoText)
                 }
                 
-    
+                if product.isFamilyShareable {
+                    accentSecondaryText(vm.familyShareText)
+                }
+                
+                if let status {
+                    secondaryText(status)
+                }
                 
                 Spacer()
             }
@@ -86,7 +99,7 @@ extension ProductButton {
         .frame(height: height)
         .onTapGesture { vm.tapped(on: product) }
         .task {
-            promoText = await vm.additionalPromo(for: product)
+            promoText = await vm.freeTrialDescription(for: product)
         }
         .disabled(isDisabled)
         .opacity(isDisabled ? 0.5 : 1)

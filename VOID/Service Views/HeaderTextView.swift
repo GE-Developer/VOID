@@ -26,7 +26,7 @@ extension HeaderTextView {
     private var headerTextView: some View {
         HStack() {
             Text(text.asMarkdown)
-                .font(.callout)
+                .font(.subheadline)
                 .fontWeight(.thin)
                 .fontDesign(.rounded)
                 .foregroundStyle(Color.void.secondaryText)

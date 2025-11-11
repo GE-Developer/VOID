@@ -19401,221 +19401,6 @@
         }
       }
     },
-    "Home.Encoding.description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "az" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Məlumatın formatını onu gizlətmədən dəyişmək."
-          }
-        },
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Canviar el format de les dades sense ocultar la informació."
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Změna formátu dat bez skrytí informací."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ændrer dataformatet uden at skjule informationen."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ändern des Datenformats, ohne die Informationen zu verbergen."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Αλλαγή του μορφότυπου των δεδομένων χωρίς απόκρυψη των πληροφοριών."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Changing the data format without concealing the information."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cambiar el formato de los datos sin ocultar la información."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Datan muodon muuttaminen ilman tiedon piilottamista."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Modifier le format des données sans dissimuler les informations."
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "जानकारी को छिपाए बिना डेटा प्रारूप को बदलना।"
-          }
-        },
-        "hr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Promjena formata podataka bez skrivanja informacija."
-          }
-        },
-        "hu" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Az adatok formátumának módosítása az információ elrejtése nélkül."
-          }
-        },
-        "hy" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Փոխել տվյալների ձևաչափը՝ առանց դրանք թաքցնելու."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mengubah format data tanpa menyembunyikan informasi."
-          }
-        },
-        "is" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Breyting á gagnaformi án þess að fela upplýsingarnar."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Modificare il formato dei dati senza nascondere le informazioni."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "情報を隠さずにデータ形式を変更します。"
-          }
-        },
-        "ka" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "მონაცემთა ფორმატის შეცვლა ინფორმაციის დამალვის გარეშე."
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "정보를 숨기지 않고 데이터 형식을 변경합니다。"
-          }
-        },
-        "ms" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Menukar format data tanpa menyembunyikan maklumat."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Endrer dataformatet uten å skjule informasjonen."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Het gegevensformaat wijzigen zonder de informatie te verbergen."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zmiana formatu danych bez ukrywania informacji."
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Alterar o formato dos dados sem ocultar as informações."
-          }
-        },
-        "ro" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Schimbarea formatului datelor fără a ascunde informația."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Смена формата данных без скрытия информации."
-          }
-        },
-        "sk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Zmena formátu dát bez skrytia informácií."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ändra dataformatet utan att dölja informationen."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "เปลี่ยนรูปแบบข้อมูลโดยไม่ซ่อนข้อมูล."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Bilgiyi gizlemeden veri biçimini değiştirme."
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Змінення формату даних без приховування інформації."
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Thay đổi định dạng dữ liệu mà không che giấu thông tin."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在不隐藏信息的情况下更改数据格式。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在不隱藏信息的情況下更改數據格式。"
-          }
-        }
-      }
-    },
     "Home.Encoding.title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -19831,221 +19616,6 @@
         }
       }
     },
-    "Home.Symmetric.description" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "az" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Şifrələmə prosesinin hər iki tərəfində eyni açardan istifadə olunur."
-          }
-        },
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La mateixa clau a banda i banda del procés de xifratge."
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Stejný klíč na obou stranách procesu šifrování."
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Den samme nøgle på begge sider af krypteringsprocessen."
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Der gleiche Schlüssel auf beiden Seiten des Verschlüsselungsprozesses."
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Το ίδιο κλειδί και στις δύο πλευρές της διαδικασίας κρυπτογράφησης."
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "The same key on both sides of the encryption process."
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La misma clave en ambos lados del proceso de cifrado."
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sama avain salausprosessin molemmilla puolilla."
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La même clé des deux côtés du processus de chiffrement."
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "एन्क्रिप्शन प्रक्रिया के दोनों पक्षों में समान कुंजी का उपयोग किया जाता है।"
-          }
-        },
-        "hr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Isti ključ na obje strane procesa šifriranja."
-          }
-        },
-        "hu" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ugyanaz a kulcs a titkosítási folyamat mindkét oldalán."
-          }
-        },
-        "hy" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Կոդավորման գործընթացի երկու կողմերում էլ օգտագործվում է նույն բանալին."
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kunci yang sama di kedua sisi proses enkripsi."
-          }
-        },
-        "is" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sami lykill er notaður báðum megin við dulkóðunarferlið."
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "La stessa chiave su entrambi i lati del processo di crittografia."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "暗号化プロセスの両側で同じキーを使用します。"
-          }
-        },
-        "ka" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ერთი და იგივე გასაღები კოდი გამოიყენება შიფრაციის პროცესის ორივე მხარეს."
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "암호화 과정의 양쪽에서 동일한 키를 사용합니다。"
-          }
-        },
-        "ms" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Kunci yang sama pada kedua-dua sisi proses penyulitan."
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Samme nøkkel på begge sider av krypteringsprosessen."
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dezelfde sleutel aan beide kanten van het versleutelingsproces."
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ten sam klucz po obu stronach procesu szyfrowania."
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "A mesma chave em ambos os lados do processo de criptografia."
-          }
-        },
-        "ro" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Aceeași cheie pe ambele părți ale procesului de criptare."
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Одинаковый ключ на обеих сторонах процесса шифрования."
-          }
-        },
-        "sk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ten istý kľúč na oboch stranách procesu šifrovania."
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Samma nyckel på båda sidor av krypteringsprocessen."
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ใช้คีย์เดียวกันทั้งสองด้านของกระบวนการเข้ารหัส."
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Şifreleme işleminin her iki tarafında da aynı anahtar kullanılır."
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Один і той самий ключ використовується з обох боків процесу шифрування."
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Cùng một khóa được sử dụng ở cả hai phía của quá trình mã hóa."
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "加密过程的两端使用相同的密钥。"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "在加密過程的兩端使用相同的密鑰。"
-          }
-        }
-      }
-    },
     "Home.Symmetric.title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -20257,6 +19827,227 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "對稱加密"
+          }
+        }
+      }
+    },
+    "PayWall.Annual.subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every year"
+          }
+        }
+      }
+    },
+    "PayWall.Annual.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Annual"
+          }
+        }
+      }
+    },
+    "PayWall.annualSaving" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SAVE"
+          }
+        }
+      }
+    },
+    "PayWall.Button.manage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manage"
+          }
+        }
+      }
+    },
+    "PayWall.Button.owned" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Owned"
+          }
+        }
+      }
+    },
+    "PayWall.Button.purchase" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase"
+          }
+        }
+      }
+    },
+    "PayWall.Button.subscribe" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscribe"
+          }
+        }
+      }
+    },
+    "PayWall.Button.upgrade" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Upgrade"
+          }
+        }
+      }
+    },
+    "PayWall.familyPlan" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Family Plan"
+          }
+        }
+      }
+    },
+    "PayWall.Lifetime.subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "One-time purchase"
+          }
+        }
+      }
+    },
+    "PayWall.Lifetime.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lifetime"
+          }
+        }
+      }
+    },
+    "PayWall.Monthly.subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Every month"
+          }
+        }
+      }
+    },
+    "PayWall.Monthly.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly"
+          }
+        }
+      }
+    },
+    "PayWall.Subtitle.annual" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your annual plan is active"
+          }
+        }
+      }
+    },
+    "PayWall.Subtitle.default" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose your plan and explore everything VOID can do"
+          }
+        }
+      }
+    },
+    "PayWall.Subtitle.lifetime" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You own lifetime access"
+          }
+        }
+      }
+    },
+    "PayWall.Subtitle.monthly" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Monthly access enabled"
+          }
+        }
+      }
+    },
+    "PayWall.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium Features"
+          }
+        }
+      }
+    },
+    "PayWall.trialPeriod %lld" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Day Free"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Days Free"
+                }
+              }
+            }
           }
         }
       }

@@ -9,7 +9,6 @@ import SwiftUI
 
 struct CustomTabImageView<Tab: View>: View {
     private let title: String
-    private let subtitle: String
     private let headerImage: Image
     private let tabHeight: CGFloat
     
@@ -17,13 +16,11 @@ struct CustomTabImageView<Tab: View>: View {
     
     init(
         title: String,
-        subtitle: String,
         headerImage: Image,
         tabHeight: CGFloat = 240,
         @ViewBuilder _ tab: @escaping () -> Tab
     ) {
         self.title = title
-        self.subtitle = subtitle
         self.headerImage = headerImage
         self.tabHeight = tabHeight
         self.tab = tab
@@ -41,7 +38,7 @@ extension CustomTabImageView {
             header
             Divider()
                 .padding(.horizontal)
-                .padding(.vertical, 6)
+                .padding(.bottom, 6)
             TabView {
                 tab()
             }
@@ -56,7 +53,7 @@ extension CustomTabImageView {
     }
     
     private var header: some View {
-        HStack(spacing: 10) {
+        HStack(spacing: 15) {
             headerImage
                 .font(.footnote)
                 .frame(width: 28, height: 28)
@@ -65,21 +62,15 @@ extension CustomTabImageView {
                     Circle().stroke(Gradient.accent, lineWidth: 1)
                 }
             
-            VStack(alignment: .leading, spacing: 2) {
-                Text(title)
-                    .font(.headline)
-                    .foregroundStyle(Color.void.mainText)
-                Text(subtitle)
-                    .font(.caption)
-                    .fontWeight(.light)
-                    .foregroundStyle(Color.void.secondaryText)
-            }
-            .fontDesign(.rounded)
-            .lineLimit(2)
-            .minimumScaleFactor(0.85)
-            .multilineTextAlignment(.leading)
+            Text(title)
+                .font(.headline)
+                .foregroundStyle(Color.void.mainText)
+                .fontDesign(.rounded)
+                .lineLimit(2)
+                .minimumScaleFactor(0.7)
+                .multilineTextAlignment(.leading)
         }
-        .frame(height: 75)
+        .frame(height: 55)
         .padding(.horizontal)
         .padding(.vertical, 6)
     }

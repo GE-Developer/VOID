@@ -22,16 +22,13 @@ struct AboutProjectViewModel {
     let developerMichaelButtonTitle = L10n("Project.Developers.MichaelButton.title")
     let developerMichaelButtonSubtitle = "MICHAEL"
     
-    private let gitHubURL = "https://github.com/GE-Developer/VOID"
-    private let developerMichaelURL = "https://ge-developer.tilda.ws"
-    
     func gitHubButtonPressed() {
-        guard let url = URL(string: gitHubURL) else { return }
+        guard let url = URL(string: Plist.get(.gitHub)) else { return }
         UIApplication.shared.open(url)
     }
     
     func developerMichaelButtonPressed() {
-        guard let url = URL(string: developerMichaelURL) else { return }
+        guard let url = URL(string: Plist.get(.developerLink)) else { return }
         UIApplication.shared.open(url)
     }
 }
