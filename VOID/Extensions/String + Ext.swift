@@ -12,7 +12,3 @@ extension String {
         (try? AttributedString(markdown: self)) ?? AttributedString(self)
     }
 }
-
-public func L10n(_ key: String.LocalizationValue) -> String {
-    String(localized: key, bundle: LanguageManager.shared.bundle)
-}

@@ -10,7 +10,7 @@ import SwiftUI
 struct PayWallView: View {
     @EnvironmentObject private var store: StoreManager
     @StateObject private var vm: PayWallViewModel
-
+    
     init(_ store: StoreManager) {
         _vm = StateObject(wrappedValue: PayWallViewModel(store: store))
     }
@@ -30,7 +30,6 @@ struct PayWallView: View {
 // MARK: - Builder
 extension PayWallView {
     private var payWall: some View {
-
         VStack(spacing: 0) {
             topper
             mainView
@@ -44,26 +43,31 @@ extension PayWallView {
     }
     
     private var mainView: some View {
-       
-            VStack(spacing: 0) {
-                title
-                subtitle
-                VStack(spacing: 22) {
-                    lifetimeButton
-                    subscriptionButtons
-                }
-                .frame(height: 80+22+170+20)
+        VStack(spacing: 0) {
+            title
+            subtitle.opacity(vm.isPurchased(.lifetime) ? 0 : 1)
+            
+            VStack(spacing: 22) {
+                lifetimeButton
+                subscriptionButtons
+            }
+            .frame(height: 80+22+170+20)
+            .frame(maxWidth: .infinity)
+            .opacity(vm.isLoading || vm.loadingError || vm.isPurchased(.lifetime) ? 0 : 1)
+            .overlay { placeHolderLoader }
+            
+            VStack(spacing: 10) {
+                restorePurchasesButton
+                    .opacity(vm.isPurchased(.lifetime) ? 0 : 1)
+                purchaseButton
+                    .opacity(vm.isPurchased(.lifetime) ? 0 : 1)
                 
-                VStack(spacing: 10) {
-                    restorePurchasesButton
-                    continueButton
-                    
-                    HStack(spacing: 6) {
-                        bottomLink(text: vm.privacyPolicy) { vm.showPrivacyPolicy() }
-                        bottomLink(text: vm.termsOfUse) { vm.showTermsOfUse() }
-                    }
+                HStack(spacing: 6) {
+                    bottomLink(text: vm.privacyPolicy) { vm.showPrivacyPolicy() }
+                    bottomLink(text: vm.termsOfUse) { vm.showTermsOfUse() }
                 }
             }
+        }
     }
     
     private var title: some View {
@@ -96,7 +100,6 @@ extension PayWallView {
                 Text(vm.restorePurchasesTitle)
                     .font(.caption)
             }
-//            .font(.subheadline)
             .fontDesign(.rounded)
             .foregroundStyle(Color.void.secondaryText)
             .lineLimit(1)
@@ -105,7 +108,7 @@ extension PayWallView {
         }
     }
     
-    private var continueButton: some View {
+    private var purchaseButton: some View {
         Button {
             vm.purchase(vm.chosenProduct)
         } label: {
@@ -122,8 +125,9 @@ extension PayWallView {
                 .shadow(color: Color.void.mainText, radius: 1)
         }
         .disabled(vm.purchaseButtonDisabled)
+        .opacity(vm.purchaseButtonDisabled ? 0.3 : 1)
     }
-
+    
     private var background: some View {
         Color.void.background
             .ignoresSafeArea()
@@ -140,31 +144,21 @@ extension PayWallView {
         }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    // MARK: - Lifetime
     @ViewBuilder
     private var lifetimeButton: some View {
         if let inAppPurchase = vm.inAppPurchases.first {
-            ProductButton(product: inAppPurchase, buttonType: .horisontal)
+            ProductButton(inAppPurchase, .horisontal)
         }
     }
     
-    // MARK: - Subscriptions
     private var subscriptionButtons: some View {
         HStack(spacing: 12) {
             ForEach(vm.subscriptions) {
-                ProductButton(product: $0, isDisabled: vm.isMonthlyButtonDisabled($0))
+                ProductButton($0, isDisabled: vm.isMonthlyButtonDisabled($0))
             }
         }
     }
-
+    
     private var topper: some View {
         ZStack(alignment: .bottom) {
             MatrixAnimationView(
@@ -182,9 +176,48 @@ extension PayWallView {
         }
     }
     
-//    private func monthlyButtonDisabled() {
-//        
-//    }
+    @ViewBuilder
+    private var placeHolderLoader: some View {
+        if vm.isLoading {
+            ProgressView()
+        } else if vm.loadingError {
+            VStack {
+                Image.system.warning
+                    .font(.title2)
+                Text(vm.errorTitle)
+                    .font(.title3)
+            }
+            .fontDesign(.rounded)
+            .foregroundStyle(Color.void.secondaryText)
+        } else if vm.isPurchased(.lifetime) {
+            VStack {
+                HStack(spacing: 20) {
+                    ExplosiveStarView(isSelected: vm.showExploseIfLifetimePurchased)
+                        .frame(width: 50, height: 50)
+                    Text(vm.lifetimeAccess)
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .fontDesign(.rounded)
+                        .foregroundStyle(Gradient.payWallAccent)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.7)
+                }
+                Divider()
+                    .frame(width: 200)
+                subtitle
+                if let warning = vm.subscriptionWarningIfLifetimePurchased {
+                    Text(warning)
+                        .font(.subheadline)
+                        .fontDesign(.rounded)
+                        .multilineTextAlignment(.center)
+                        .foregroundStyle(Gradient.payWallAccent)
+                        .lineLimit(2)
+                        .minimumScaleFactor(0.7)
+                }
+            }
+            .onAppear { vm.lifetimeAnimationAppeared() }
+        }
+    }
     
     private func bottomLink(text: String, _ action: @escaping () -> Void) -> some View {
         Button(action: action) {

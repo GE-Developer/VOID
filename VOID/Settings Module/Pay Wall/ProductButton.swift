@@ -11,10 +11,10 @@ import StoreKit
 struct ProductButton: View {
     @EnvironmentObject private var vm: PayWallViewModel
     @State private var promoText: String? = nil
-    let product: Product
-    let isDisabled: Bool
+    private let product: Product
+    private let isDisabled: Bool
     
-    let buttonType: ButtonType
+    private let buttonType: ButtonType
     
     private var status: String? {
         switch product.id {
@@ -27,7 +27,7 @@ struct ProductButton: View {
         }
     }
     
-    init(product: Product, isDisabled: Bool = false, buttonType: ButtonType = .vertical) {
+    init(_ product: Product, isDisabled: Bool = false, _ buttonType: ButtonType = .vertical) {
         self.product = product
         self.isDisabled = isDisabled
         self.buttonType = buttonType
@@ -50,7 +50,6 @@ struct ProductButton: View {
 
 // MARK: - Builder
 extension ProductButton {
-    
     @ViewBuilder
     private var verticalButton: some View {
         let height: CGFloat = 170
@@ -62,6 +61,7 @@ extension ProductButton {
             VStack {
                 if vm.isMonthlyButtonDisabled(product) {
                     Image.system.xmark
+                        .frame(height: 18)
                 } else {
                     CheckmarkView(vm.chosenProduct == product)
                 }
@@ -70,7 +70,6 @@ extension ProductButton {
                     subscriptionName
                     subscriptionDescription
                 }
-                .frame(height: height / 5)
                 subscriptionPrice
                 
                 Divider().padding(.horizontal, 10)
@@ -94,18 +93,14 @@ extension ProductButton {
             .padding(.horizontal, 5)
             .padding(.bottom, 5)
             .fontDesign(.rounded)
-
+            
         }
         .frame(height: height)
         .onTapGesture { vm.tapped(on: product) }
-        .task {
-            promoText = await vm.freeTrialDescription(for: product)
-        }
+        .task { promoText = await vm.freeTrialDescription(for: product) }
         .disabled(isDisabled)
         .opacity(isDisabled ? 0.5 : 1)
     }
-    
-    
     
     private var horisontalButton: some View {
         ZStack {
@@ -183,7 +178,6 @@ extension ProductButton {
         }
     }
     
-    
     private func buttonStroke(for product: Product) -> some View {
         RoundedRectangle(cornerRadius: 15)
             .stroke(
@@ -194,7 +188,6 @@ extension ProductButton {
             )
         
     }
-    
     
     private func accentSecondaryText(_ text: String) -> some View {
         Text(text)

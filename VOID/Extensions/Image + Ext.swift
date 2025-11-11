@@ -41,6 +41,7 @@ struct SystemImage {
     let developerTool = Image(systemName: "hammer.fill")
     let gear = Image(systemName: "gear")
     let code = Image(systemName: "chevron.left.slash.chevron.right")
+    let warning = Image(systemName: "exclamationmark.triangle")
     
     func key(_ isFilled: Bool = false) -> Image {
         isFilled ? Image(systemName: "key.fill") : Image(systemName: "key")

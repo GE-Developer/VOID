@@ -8,7 +8,6 @@
 import Foundation
 
 struct CodecService {
-    
     enum CodingMode {
         case utf8
         case ascii

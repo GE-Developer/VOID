@@ -5,8 +5,7 @@
 //  Created by GE-Developer
 //
 
-import Foundation
-import UIKit
+import SwiftUI
 
 final class SettingsViewModel: ObservableObject {
     @Published var isThemeLight: Bool {

@@ -19839,6 +19839,12 @@
             "state" : "translated",
             "value" : "Every year"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каждый год"
+          }
         }
       }
     },
@@ -19849,6 +19855,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Annual"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ежегодно"
           }
         }
       }
@@ -19861,6 +19873,12 @@
             "state" : "translated",
             "value" : "SAVE"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Экономия"
+          }
         }
       }
     },
@@ -19871,6 +19889,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Manage"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Управлять"
           }
         }
       }
@@ -19883,6 +19907,12 @@
             "state" : "translated",
             "value" : "Owned"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Приобретено"
+          }
         }
       }
     },
@@ -19893,6 +19923,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Purchase"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Купить"
           }
         }
       }
@@ -19905,6 +19941,12 @@
             "state" : "translated",
             "value" : "Subscribe"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подписаться"
+          }
         }
       }
     },
@@ -19915,6 +19957,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Upgrade"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Улучшить план"
           }
         }
       }
@@ -19927,6 +19975,12 @@
             "state" : "translated",
             "value" : "Family Plan"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Семейный план"
+          }
         }
       }
     },
@@ -19937,6 +19991,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "One-time purchase"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Единоразовая покупка"
           }
         }
       }
@@ -19949,6 +20009,12 @@
             "state" : "translated",
             "value" : "Lifetime"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожизненный доступ"
+          }
         }
       }
     },
@@ -19959,6 +20025,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Every month"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Каждый месяц"
           }
         }
       }
@@ -19971,6 +20043,63 @@
             "state" : "translated",
             "value" : "Monthly"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ежемесячно"
+          }
+        }
+      }
+    },
+    "PayWall.Status.notAvailable" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not available"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Недоступно"
+          }
+        }
+      }
+    },
+    "PayWall.Status.popular" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Popular"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Популярно"
+          }
+        }
+      }
+    },
+    "PayWall.Status.purchased" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchased"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Куплено"
+          }
         }
       }
     },
@@ -19982,6 +20111,12 @@
             "state" : "translated",
             "value" : "Your annual plan is active"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша годовая подписка активна"
+          }
         }
       }
     },
@@ -19991,7 +20126,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Choose your plan and explore everything VOID can do"
+            "value" : "Choose your plan and explore VOID"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выберите план и откройте возможности VOID"
           }
         }
       }
@@ -20004,6 +20145,12 @@
             "state" : "translated",
             "value" : "You own lifetime access"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "У вас пожизненный доступ"
+          }
         }
       }
     },
@@ -20015,6 +20162,12 @@
             "state" : "translated",
             "value" : "Monthly access enabled"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Месячный доступ активирован"
+          }
         }
       }
     },
@@ -20025,6 +20178,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Premium Features"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Премиум-функции"
           }
         }
       }
@@ -20048,6 +20207,53 @@
                 }
               }
             }
+          }
+        },
+        "ru" : {
+          "variations" : {
+            "plural" : {
+              "few" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld дня бесплатно"
+                }
+              },
+              "many" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld дней бесплатно"
+                }
+              },
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld день бесплатно"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld дней бесплатно"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "PayWall.warningToCancelSubscriptions" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Don’t forget to cancel your subscription!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не забудьте отменить подписку!"
           }
         }
       }
@@ -26283,6 +26489,227 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "設定"
+          }
+        }
+      }
+    },
+    "StoreError.invalidCertificateChain" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid certificate chain."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Недействительная цепочка сертификатов."
+          }
+        }
+      }
+    },
+    "StoreError.invalidDeviceVerification" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Device verification failed."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка проверки устройства."
+          }
+        }
+      }
+    },
+    "StoreError.invalidEncoding" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid data encoding."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка данных."
+          }
+        }
+      }
+    },
+    "StoreError.invalidSignature" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid transaction signature."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Недействительная подпись транзакции."
+          }
+        }
+      }
+    },
+    "StoreError.loadingError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to load products."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удалось загрузить продукты."
+          }
+        }
+      }
+    },
+    "StoreError.missingRequiredProperties" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Missing required transaction properties."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отсутствуют обязательные параметры транзакции."
+          }
+        }
+      }
+    },
+    "StoreError.pending" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Your purchase is pending approval."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ваша покупка ожидает одобрения."
+          }
+        }
+      }
+    },
+    "StoreError.productNotChosen" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No product selected."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продукт не выбран."
+          }
+        }
+      }
+    },
+    "StoreError.revokedCertificate" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The certificate has been revoked."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сертификат был отозван."
+          }
+        }
+      }
+    },
+    "StoreError.syncError" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchases were not synced."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Покупки не синхронизированы."
+          }
+        }
+      }
+    },
+    "StoreError.system" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System error. Please try again later."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Системная ошибка. Попробуйте позже."
+          }
+        }
+      }
+    },
+    "StoreError.unknown" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unknown error occurred."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Произошла неизвестная ошибка."
+          }
+        }
+      }
+    },
+    "StoreError.userCancelled" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Purchase was cancelled by user."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Покупка отменена пользователем."
           }
         }
       }

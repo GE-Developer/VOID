@@ -27,14 +27,6 @@ final class StoreManager: ObservableObject {
         updates?.cancel()
     }
     
-    private func newTransactionListenerTask() -> Task<Void, Never> {
-        Task(priority: .background) {
-            for await verificationResult in Transaction.updates {
-                await handle(updatedTransaction: verificationResult)
-            }
-        }
-    }
-    
     func restorePurchases() async throws {
         try await AppStore.sync()
         await updatePurchasedProducts()
@@ -59,6 +51,14 @@ final class StoreManager: ObservableObject {
             }
         } catch {
             throw StoreError.system
+        }
+    }
+    
+    private func newTransactionListenerTask() -> Task<Void, Never> {
+        Task(priority: .background) {
+            for await verificationResult in Transaction.updates {
+                await handle(updatedTransaction: verificationResult)
+            }
         }
     }
     
