@@ -19944,7 +19944,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ყოველ წელს"
           }
         },
@@ -20159,7 +20159,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "წლიური"
           }
         },
@@ -20374,7 +20374,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "შენახვა"
           }
         },
@@ -20589,7 +20589,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "მართვა"
           }
         },
@@ -20804,7 +20804,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "შეძენილი"
           }
         },
@@ -21019,7 +21019,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "შეძენა"
           }
         },
@@ -21234,7 +21234,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "გამოწერა"
           }
         },
@@ -21449,7 +21449,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "განახლება"
           }
         },
@@ -21664,8 +21664,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "საოჯახო გეგმა"
+            "state" : "translated",
+            "value" : "საოჯახო პაკეტი"
           }
         },
         "ko" : {
@@ -21879,7 +21879,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ერთჯერადი შესყიდვა"
           }
         },
@@ -22094,7 +22094,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "სრულად"
           }
         },
@@ -22143,7 +22143,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Пожизненный доступ"
+            "value" : "Навсегда"
           }
         },
         "sk" : {
@@ -22309,7 +22309,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ყოველ თვე"
           }
         },
@@ -22524,7 +22524,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "თვიური"
           }
         },
@@ -22739,7 +22739,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "მიუწვდომელია"
           }
         },
@@ -22954,7 +22954,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "პოპულარული"
           }
         },
@@ -23169,7 +23169,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "შეძენილია"
           }
         },
@@ -23384,7 +23384,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "თქვენი წლიური გეგმა აქტიურია"
           }
         },
@@ -23599,7 +23599,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "აირჩიეთ გეგმა და აღმოაჩინეთ VOID"
           }
         },
@@ -23814,7 +23814,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "თქვენ გაქვთ უსასრულო წვდომა"
           }
         },
@@ -23863,7 +23863,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "У вас пожизненный доступ"
+            "value" : "Все функции доступны навсегда"
           }
         },
         "sk" : {
@@ -24029,7 +24029,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "თვიური წვდომა ჩართულია"
           }
         },
@@ -24244,7 +24244,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "პრემიუმ ფუნქციები"
           }
         },
@@ -24684,14 +24684,14 @@
             "plural" : {
               "one" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
-                  "value" : "უფასოდ %lld დღე"
+                  "state" : "translated",
+                  "value" : "%lld დღე უფასოდ"
                 }
               },
               "other" : {
                 "stringUnit" : {
-                  "state" : "needs_review",
-                  "value" : "უფასოდ %lld დღე"
+                  "state" : "translated",
+                  "value" : "%lld დღე უფასოდ"
                 }
               }
             }
@@ -25118,7 +25118,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "არ დაგავიწყდეთ გამოწერის გაუქმება!"
           }
         },
@@ -31568,7 +31568,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "სერტიფიკატების ჯაჭვი არასწორია."
           }
         },
@@ -31783,7 +31783,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "მოწყობილობის ვერიფიკაცია ვერ მოხერხდა."
           }
         },
@@ -31998,7 +31998,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "მონაცემთა კოდირება არასწორია."
           }
         },
@@ -32213,7 +32213,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "ტრანზაქციის ხელმოწერა არასწორია."
           }
         },
@@ -32428,7 +32428,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "პროდუქტების ჩატვირთვა ვერ მოხერხდა."
           }
         },
@@ -32643,8 +32643,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "ტრანზაქციის საჭირო თვისებები აკლია."
+            "state" : "translated",
+            "value" : "ტრანზაქციისთვის საჭირო მონაცემები სრულად არაა მითითებული."
           }
         },
         "ko" : {
@@ -32858,7 +32858,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "თქვენი შეძენა ელოდება დამტკიცებას."
           }
         },
@@ -33073,7 +33073,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "პროდუქტი არ არის არჩეული."
           }
         },
@@ -33288,7 +33288,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "სერტიფიკატი გაუქმებულია."
           }
         },
@@ -33503,8 +33503,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "შეძენები არ სინქრონიზებულა."
+            "state" : "translated",
+            "value" : "შენაძენი არ აისახა აპლიკაციაში."
           }
         },
         "ko" : {
@@ -33718,7 +33718,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "სისტემური შეცდომა. სცადეთ მოგვიანებით."
           }
         },
@@ -33933,8 +33933,8 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "უცნობი შეცდომა მოხდა."
+            "state" : "translated",
+            "value" : "დაფიქსირდა გაურკვეველი შეცდომა."
           }
         },
         "ko" : {
@@ -34148,7 +34148,7 @@
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
+            "state" : "translated",
             "value" : "შეძენა გააუქმა მომხმარებელმა."
           }
         },

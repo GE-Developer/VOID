@@ -110,19 +110,16 @@ extension EmojiCodingView {
     }
     
     private func showCopyAlert() {
-//        withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
+        withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
             isCopied = true
-//        }
+        }
         hideCopyAlertWorkItem?.cancel()
         let workItem = DispatchWorkItem {
-//            withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
+            withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
                 isCopied = false
-//            }
+            }
         }
         hideCopyAlertWorkItem = workItem
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: workItem)
-        
-        
-        
     }
 }

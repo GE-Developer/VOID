@@ -21,7 +21,6 @@ extension CopyAlertView {
         HStack {
             Image.system.checkmark()
                 .foregroundStyle(isActive ? Gradient.green : Gradient.gray)
-                .animation(.easeIn(duration: 0.2).delay(0.2), value: isActive)
             Text(L10n("Alert.сopied"))
                 .foregroundStyle(Color.void.secondaryText)
         }
@@ -31,7 +30,9 @@ extension CopyAlertView {
         .padding(.horizontal)
         .padding(.vertical, 5)
         .onAppear {
-            withAnimation { isActive = true }
+            withAnimation(.easeIn(duration: 0.2).delay(0.2)) {
+                isActive = true
+            }
         }
         .onDisappear {
             isActive = false

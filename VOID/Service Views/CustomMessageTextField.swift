@@ -14,9 +14,7 @@ struct CustomMessageTextField: View {
     @FocusState private var focus: Bool
     
     private var buttonDisabled: Bool {
-        withAnimation {
-            text.isEmpty || isDisabled
-        }
+        text.isEmpty || isDisabled
     }
     
     private let height: CGFloat = 37
@@ -86,25 +84,27 @@ extension CustomMessageTextField {
         .opacity(text.isEmpty ? 0 : 1)
     }
     
+    
     private var sendButton: some View {
-        Button {
-            sendAction()
-            focus = false
-        } label: {
-            ZStack {
-                Circle()
-                    .foregroundStyle(
-                        buttonDisabled
-                        ? Gradient.gray
-                        : Gradient.accent
-                    )
-                Image.system.send
-                    .foregroundStyle(Color.void.secondaryText)
-            }
-            .opacity(buttonDisabled ? 0.6 : 1)
+        ZStack {
+            Circle()
+                .foregroundStyle(
+                    buttonDisabled
+                    ? Gradient.gray
+                    : Gradient.accent
+                )
+            Image.system.send
+                .foregroundStyle(Color.void.secondaryText)
         }
-        .disabled(buttonDisabled)
+        .opacity(buttonDisabled ? 0.6 : 1)
         .frame(width: height, height: height)
+        .animation(.easeIn.speed(2), value: buttonDisabled)
+        .onTapGesture {
+            if !buttonDisabled {
+                focus = false
+                sendAction()
+            }
+        }
     }
     
     private var background: some View {
