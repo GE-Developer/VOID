@@ -33,6 +33,7 @@
 		1F2D342B2E7F3D87005E6239 /* CryptoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342A2E7F3D87005E6239 /* CryptoError.swift */; };
 		1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */; };
 		1F2D34312E84AFC6005E6239 /* FullScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */; };
+		1F36E3922EC3F4ED0086FE2C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F36E3912EC3F4ED0086FE2C /* Launch Screen.storyboard */; };
 		1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */; };
 		1F4ECDEE2EBE50FF008931DE /* ProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4ECDED2EBE50FF008931DE /* ProductButton.swift */; };
 		1F587D522EAC61DF0025194E /* AboutProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F587D512EAC61DF0025194E /* AboutProjectView.swift */; };
@@ -145,6 +146,7 @@
 		1F2D342A2E7F3D87005E6239 /* CryptoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoError.swift; sourceTree = "<group>"; };
 		1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVersion.swift; sourceTree = "<group>"; };
 		1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenLoader.swift; sourceTree = "<group>"; };
+		1F36E3912EC3F4ED0086FE2C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAlertView.swift; sourceTree = "<group>"; };
 		1F4ECDED2EBE50FF008931DE /* ProductButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductButton.swift; sourceTree = "<group>"; };
 		1F587D512EAC61DF0025194E /* AboutProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProjectView.swift; sourceTree = "<group>"; };
@@ -456,6 +458,7 @@
 				1FB32C332EB062C10051A772 /* Colors.xcassets */,
 				1FB32C312EB0623B0051A772 /* Images.xcassets */,
 				1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */,
+				1F36E3912EC3F4ED0086FE2C /* Launch Screen.storyboard */,
 				1F9120202E8C4FD400B62644 /* Sounds */,
 			);
 			path = Resources;
@@ -670,6 +673,7 @@
 				1F91202C2E8C5D5400B62644 /* New_Decrypted_Message.mp3 in Resources */,
 				1FB32C342EB062C10051A772 /* Colors.xcassets in Resources */,
 				1F84D4322EC245E6001FAA62 /* Property List.plist in Resources */,
+				1F36E3922EC3F4ED0086FE2C /* Launch Screen.storyboard in Resources */,
 				1F91201E2E8C4FC000B62644 /* Error_Alert.mp3 in Resources */,
 				1FFBB0C62EB513100072600C /* Products.storekit in Resources */,
 				1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */,
@@ -902,6 +906,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -941,6 +946,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;

@@ -20,9 +20,184 @@
       "internalID" : "6754784346",
       "localizations" : [
         {
-          "description" : "Buy one time",
+          "description" : "Acquisto unico, accesso a vita",
+          "displayName" : "A vita",
+          "locale" : "it"
+        },
+        {
+          "description" : "Jednokratna kupnja, doživotni pristup",
+          "displayName" : "Doživotno",
+          "locale" : "hr"
+        },
+        {
+          "description" : "Jednorazowy zakup, dożywotni dostęp",
+          "displayName" : "Dożywotni",
+          "locale" : "pl"
+        },
+        {
+          "description" : "Pembelian satu kali, akses seumur hidup",
+          "displayName" : "Seumur hidup",
+          "locale" : "id"
+        },
+        {
+          "description" : "One-time purchase, lifetime access",
+          "displayName" : "Lifetime",
+          "locale" : "en_AU"
+        },
+        {
+          "description" : "Одноразова покупка, довічний доступ",
+          "displayName" : "Довічний",
+          "locale" : "uk"
+        },
+        {
+          "description" : "Eenmalige aankoop, levenslange toegang",
+          "displayName" : "Levenslang",
+          "locale" : "nl"
+        },
+        {
+          "description" : "Einmaliger Kauf, lebenslanger Zugriff",
+          "displayName" : "Lebenslang",
+          "locale" : "de"
+        },
+        {
+          "description" : "일회성 구매, 평생 액세스",
+          "displayName" : "평생",
+          "locale" : "ko"
+        },
+        {
+          "description" : "One-time purchase, lifetime access",
           "displayName" : "Lifetime",
           "locale" : "en_US"
+        },
+        {
+          "description" : "Kertamaksu, elinikäinen käyttöoikeus",
+          "displayName" : "Elinikäinen",
+          "locale" : "fi"
+        },
+        {
+          "description" : "Единовременная покупка, доступ навсегда",
+          "displayName" : "Навсегда",
+          "locale" : "ru"
+        },
+        {
+          "description" : "Achat unique, accès à vie",
+          "displayName" : "À vie",
+          "locale" : "fr"
+        },
+        {
+          "description" : "一回限りの購入、生涯アクセス",
+          "displayName" : "生涯",
+          "locale" : "ja"
+        },
+        {
+          "description" : "Compra única, acceso de por vida",
+          "displayName" : "De por vida",
+          "locale" : "es_MX"
+        },
+        {
+          "description" : "Εφάπαξ αγορά, ισόβια πρόσβαση",
+          "displayName" : "Διά βίου",
+          "locale" : "el"
+        },
+        {
+          "description" : "Engangskøb, livstidsadgang",
+          "displayName" : "Livstid",
+          "locale" : "da"
+        },
+        {
+          "description" : "Jednorázová platba, doživotní přístup",
+          "displayName" : "Doživotní",
+          "locale" : "cs"
+        },
+        {
+          "description" : "One-time purchase, lifetime access",
+          "displayName" : "Lifetime",
+          "locale" : "en_CA"
+        },
+        {
+          "description" : "Egyszeri vásárlás, élethosszig tartó hozzáférés",
+          "displayName" : "Élettartam",
+          "locale" : "hu"
+        },
+        {
+          "description" : "ซื้อครั้งเดียว, การเข้าถึงตลอดชีพ",
+          "displayName" : "ตลอดชีพ",
+          "locale" : "th"
+        },
+        {
+          "description" : "Pembelian sekali, akses seumur hidup",
+          "displayName" : "Seumur hidup",
+          "locale" : "ms"
+        },
+        {
+          "description" : "Compra única, acesso vitalício",
+          "displayName" : "Vitalício",
+          "locale" : "pt_PT"
+        },
+        {
+          "description" : "Achiziție unică, acces pe viață",
+          "displayName" : "Pe viață",
+          "locale" : "ro"
+        },
+        {
+          "description" : "Compra única, acceso de por vida",
+          "displayName" : "De por vida",
+          "locale" : "es_ES"
+        },
+        {
+          "description" : "一次性購買，終身訪問",
+          "displayName" : "終身",
+          "locale" : "zh_CN"
+        },
+        {
+          "description" : "Tek seferlik satın alma, ömür boyu erişim",
+          "displayName" : "Ömür boyu",
+          "locale" : "tr"
+        },
+        {
+          "description" : "רכישה חד-פעמית, גישה לכל החיים",
+          "displayName" : "לכל החיים",
+          "locale" : "he"
+        },
+        {
+          "description" : "Jednorazová platba, doživotný prístup",
+          "displayName" : "Doživotný",
+          "locale" : "sk"
+        },
+        {
+          "description" : "شراء لمرة واحدة، وصول مدى الحياة",
+          "displayName" : "العمر",
+          "locale" : "ar"
+        },
+        {
+          "description" : "Mua một lần, truy cập trọn đời",
+          "displayName" : "Trọn đời",
+          "locale" : "vi"
+        },
+        {
+          "description" : "Compra única, acesso vitalício",
+          "displayName" : "Vitalício",
+          "locale" : "pt_BR"
+        },
+        {
+          "description" : "Compra única, accés de per vida",
+          "displayName" : "De per vida",
+          "locale" : "ca"
+        },
+        {
+          "description" : "One-time purchase, lifetime access",
+          "displayName" : "Lifetime",
+          "locale" : "en_GB"
+        },
+        {
+          "description" : "Engångsköp, livstidsåtkomst",
+          "displayName" : "Livstid",
+          "locale" : "sv"
+        },
+        {
+          "description" : "एकमुश्त खरीदारी, आजीवन पहुंच",
+          "displayName" : "जीवन भर",
+          "locale" : "hi"
         }
       ],
       "productID" : "premium.lifetime",
@@ -38,7 +213,7 @@
     "_developerTeamID" : "6DCRFKN8GP",
     "_disableDialogs" : false,
     "_failTransactionsEnabled" : false,
-    "_lastSynchronizedDate" : 784160810.69550002,
+    "_lastSynchronizedDate" : 784655398.92684901,
     "_locale" : "en_US",
     "_storefront" : "USA",
     "_storeKitErrors" : [
@@ -126,31 +301,206 @@
           "codeOffers" : [
 
           ],
-          "displayPrice" : "4.99",
-          "familyShareable" : false,
-          "groupNumber" : 3,
-          "internalID" : "6754784069",
-          "introductoryOffer" : {
-            "internalID" : "648E941A",
-            "numberOfPeriods" : 1,
-            "paymentMode" : "free",
-            "subscriptionPeriod" : "P3D"
-          },
+          "displayPrice" : "44.99",
+          "familyShareable" : true,
+          "groupNumber" : 1,
+          "internalID" : "6754784360",
+          "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "1 месяц",
-              "displayName" : "Помесячно",
+              "description" : "1 éves hozzáférés",
+              "displayName" : "Éves",
+              "locale" : "hu"
+            },
+            {
+              "description" : "Accés d'1 any",
+              "displayName" : "Anual",
+              "locale" : "ca"
+            },
+            {
+              "description" : "1年アクセス",
+              "displayName" : "年額",
+              "locale" : "ja"
+            },
+            {
+              "description" : "Accès 1 an",
+              "displayName" : "Annuel",
+              "locale" : "fr"
+            },
+            {
+              "description" : "وصول لمدة سنة واحدة",
+              "displayName" : "سنوي",
+              "locale" : "ar"
+            },
+            {
+              "description" : "1년 액세스",
+              "displayName" : "연간",
+              "locale" : "ko"
+            },
+            {
+              "description" : "Přístup na 1 rok",
+              "displayName" : "Roční",
+              "locale" : "cs"
+            },
+            {
+              "description" : "Truy cập 1 năm",
+              "displayName" : "Hàng năm",
+              "locale" : "vi"
+            },
+            {
+              "description" : "Доступ на 1 год",
+              "displayName" : "Ежегодный",
               "locale" : "ru"
             },
             {
-              "description" : "1 month",
-              "displayName" : "Monthly",
+              "description" : "1 वर्ष की पहुंच",
+              "displayName" : "वार्षिक",
+              "locale" : "hi"
+            },
+            {
+              "description" : "Acces 1 an",
+              "displayName" : "Anual",
+              "locale" : "ro"
+            },
+            {
+              "description" : "Πρόσβαση 1 έτος",
+              "displayName" : "Ετήσιος",
+              "locale" : "el"
+            },
+            {
+              "description" : "1 年访问",
+              "displayName" : "年度",
+              "locale" : "zh_CN"
+            },
+            {
+              "description" : "Acceso de 1 año",
+              "displayName" : "Anual",
+              "locale" : "es_MX"
+            },
+            {
+              "description" : "1 jaar toegang",
+              "displayName" : "Jaarlijks",
+              "locale" : "nl"
+            },
+            {
+              "description" : "Доступ на 1 рік",
+              "displayName" : "Річний",
+              "locale" : "uk"
+            },
+            {
+              "description" : "Acesso de 1 ano",
+              "displayName" : "Anual",
+              "locale" : "pt_BR"
+            },
+            {
+              "description" : "Prístup na 1 rok",
+              "displayName" : "Ročný",
+              "locale" : "sk"
+            },
+            {
+              "description" : "Acceso de 1 año",
+              "displayName" : "Anual",
+              "locale" : "es_ES"
+            },
+            {
+              "description" : "Accès 1 an",
+              "displayName" : "Annuel",
+              "locale" : "fr"
+            },
+            {
+              "description" : "גישה לשנה אחת",
+              "displayName" : "שנתי",
+              "locale" : "he"
+            },
+            {
+              "description" : "1 års adgang",
+              "displayName" : "Årligt",
+              "locale" : "da"
+            },
+            {
+              "description" : "1 vuoden käyttöoikeus",
+              "displayName" : "Vuosittainen",
+              "locale" : "fi"
+            },
+            {
+              "description" : "Akses 1 tahun",
+              "displayName" : "Tahunan",
+              "locale" : "ms"
+            },
+            {
+              "description" : "1 年訪問",
+              "displayName" : "年度",
+              "locale" : "zh_CN"
+            },
+            {
+              "description" : "เข้าถึง 1 ปี",
+              "displayName" : "รายปี",
+              "locale" : "th"
+            },
+            {
+              "description" : "1 Year Access",
+              "displayName" : "Annual",
+              "locale" : "en_GB"
+            },
+            {
+              "description" : "1 Year Access",
+              "displayName" : "Annual",
+              "locale" : "en_AU"
+            },
+            {
+              "description" : "Pristup na 1 godinu",
+              "displayName" : "Godišnje",
+              "locale" : "hr"
+            },
+            {
+              "description" : "1 yıllık erişim",
+              "displayName" : "Yıllık",
+              "locale" : "tr"
+            },
+            {
+              "description" : "Akses 1 tahun",
+              "displayName" : "Tahunan",
+              "locale" : "id"
+            },
+            {
+              "description" : "1 Jahr Zugriff",
+              "displayName" : "Jährlich",
+              "locale" : "de"
+            },
+            {
+              "description" : "1 års åtkomst",
+              "displayName" : "Årsvis",
+              "locale" : "sv"
+            },
+            {
+              "description" : "Dostęp na 1 rok",
+              "displayName" : "Roczny",
+              "locale" : "pl"
+            },
+            {
+              "description" : "1 Year Access",
+              "displayName" : "Annual",
+              "locale" : "en_CA"
+            },
+            {
+              "description" : "Accesso 1 anno",
+              "displayName" : "Annuale",
+              "locale" : "it"
+            },
+            {
+              "description" : "1 Year Access",
+              "displayName" : "Annual",
               "locale" : "en_US"
+            },
+            {
+              "description" : "Acesso de 1 ano",
+              "displayName" : "Anual",
+              "locale" : "pt_PT"
             }
           ],
-          "productID" : "premium.monthly",
-          "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "1 Month",
+          "productID" : "premium.annual",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Annual",
           "subscriptionGroupID" : "21820500",
           "type" : "RecurringSubscription",
           "winbackOffers" : [
@@ -164,21 +514,211 @@
           "codeOffers" : [
 
           ],
-          "displayPrice" : "44.99",
-          "familyShareable" : true,
-          "groupNumber" : 1,
-          "internalID" : "6754784360",
-          "introductoryOffer" : null,
+          "displayPrice" : "4.99",
+          "familyShareable" : false,
+          "groupNumber" : 3,
+          "internalID" : "6754784069",
+          "introductoryOffer" : {
+            "internalID" : "BA872FD0",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "free",
+            "subscriptionPeriod" : "P3D"
+          },
           "localizations" : [
             {
-              "description" : "1 year",
-              "displayName" : "Annual",
+              "description" : "1ヶ月アクセス",
+              "displayName" : "月額",
+              "locale" : "ja"
+            },
+            {
+              "description" : "Acesso de 1 mês",
+              "displayName" : "Mensal",
+              "locale" : "pt_BR"
+            },
+            {
+              "description" : "1 Month Access",
+              "displayName" : "Monthly",
+              "locale" : "en_AU"
+            },
+            {
+              "description" : "Πρόσβαση 1 μήνα",
+              "displayName" : "Μηνιαίος",
+              "locale" : "el"
+            },
+            {
+              "description" : "1 måneds adgang",
+              "displayName" : "Månedligt",
+              "locale" : "da"
+            },
+            {
+              "description" : "เข้าถึง 1 เดือน",
+              "displayName" : "รายเดือน",
+              "locale" : "th"
+            },
+            {
+              "description" : "Accés d'1 mes",
+              "displayName" : "Mensual",
+              "locale" : "ca"
+            },
+            {
+              "description" : "1 Month Access",
+              "displayName" : "Monthly",
+              "locale" : "en_CA"
+            },
+            {
+              "description" : "1 Monat Zugriff",
+              "displayName" : "Monatlich",
+              "locale" : "de"
+            },
+            {
+              "description" : "גישה לחודש אחד",
+              "displayName" : "חודשי",
+              "locale" : "he"
+            },
+            {
+              "description" : "Acceso de 1 mes",
+              "displayName" : "Mensual",
+              "locale" : "es_ES"
+            },
+            {
+              "description" : "1 Month Access",
+              "displayName" : "Monthly",
+              "locale" : "en_GB"
+            },
+            {
+              "description" : "1 hónapos hozzáférés",
+              "displayName" : "Havi",
+              "locale" : "hu"
+            },
+            {
+              "description" : "Prístup na 1 mesiac",
+              "displayName" : "Mesačný",
+              "locale" : "sk"
+            },
+            {
+              "description" : "Accesso 1 mese",
+              "displayName" : "Mensile",
+              "locale" : "it"
+            },
+            {
+              "description" : "1 aylık erişim",
+              "displayName" : "Aylık",
+              "locale" : "tr"
+            },
+            {
+              "description" : "Acesso de 1 mês",
+              "displayName" : "Mensal",
+              "locale" : "pt_PT"
+            },
+            {
+              "description" : "1 Month Access",
+              "displayName" : "Monthly",
               "locale" : "en_US"
+            },
+            {
+              "description" : "Akses 1 bulan",
+              "displayName" : "Bulanan",
+              "locale" : "id"
+            },
+            {
+              "description" : "Přístup na 1 měsíc",
+              "displayName" : "Měsíční",
+              "locale" : "cs"
+            },
+            {
+              "description" : "1 månads åtkomst",
+              "displayName" : "Månadsvis",
+              "locale" : "sv"
+            },
+            {
+              "description" : "Truy cập 1 tháng",
+              "displayName" : "Hàng tháng",
+              "locale" : "vi"
+            },
+            {
+              "description" : "1 महीने की पहुंच",
+              "displayName" : "मासिक",
+              "locale" : "hi"
+            },
+            {
+              "description" : "1 maand toegang",
+              "displayName" : "Maandelijks",
+              "locale" : "nl"
+            },
+            {
+              "description" : "Accès 1 mois",
+              "displayName" : "Mensuel",
+              "locale" : "fr"
+            },
+            {
+              "description" : "Accès 1 mois",
+              "displayName" : "Mensuel",
+              "locale" : "fr"
+            },
+            {
+              "description" : "Akses 1 bulan",
+              "displayName" : "Bulanan",
+              "locale" : "ms"
+            },
+            {
+              "description" : "1 kuukauden käyttöoikeus",
+              "displayName" : "Kuukausittain",
+              "locale" : "fi"
+            },
+            {
+              "description" : "Доступ на 1 місяць",
+              "displayName" : "Щомісячний",
+              "locale" : "uk"
+            },
+            {
+              "description" : "Acceso de 1 mes",
+              "displayName" : "Mensual",
+              "locale" : "es_MX"
+            },
+            {
+              "description" : "وصول لمدة شهر واحد",
+              "displayName" : "شهري",
+              "locale" : "ar"
+            },
+            {
+              "description" : "Pristup na 1 mjesec",
+              "displayName" : "Mjesečno",
+              "locale" : "hr"
+            },
+            {
+              "description" : "1개월 액세스",
+              "displayName" : "월간",
+              "locale" : "ko"
+            },
+            {
+              "description" : "1 個月訪問",
+              "displayName" : "每月",
+              "locale" : "zh_CN"
+            },
+            {
+              "description" : "Доступ на 1 месяц",
+              "displayName" : "Ежемесячный",
+              "locale" : "ru"
+            },
+            {
+              "description" : "Dostęp na 1 miesiąc",
+              "displayName" : "Miesięczny",
+              "locale" : "pl"
+            },
+            {
+              "description" : "1 个月访问",
+              "displayName" : "每月",
+              "locale" : "zh_CN"
+            },
+            {
+              "description" : "Acces 1 lună",
+              "displayName" : "Lunar",
+              "locale" : "ro"
             }
           ],
-          "productID" : "premium.annual",
-          "recurringSubscriptionPeriod" : "P1Y",
-          "referenceName" : "1 Year",
+          "productID" : "premium.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Monthly",
           "subscriptionGroupID" : "21820500",
           "type" : "RecurringSubscription",
           "winbackOffers" : [
