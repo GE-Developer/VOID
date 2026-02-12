@@ -1,4 +1,4 @@
-# [ VOID ]
+# [ ᴠ ᴏ ɪ ᴅ ]
 
 **[ VOID ]** is an iOS app for offline text encryption and encoding, designed to ensure maximum privacy.
 Built with **SwiftUI** and **MVVM** architecture, it allows users to securely encrypt and decrypt messages without storing or transmitting any sensitive data.
