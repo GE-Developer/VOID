@@ -31,14 +31,14 @@ Built with **SwiftUI** and **MVVM** architecture, it allows users to securely en
 
 ## Legal
 
-By using VOID, you agree to our [Privacy Policy](https://ge-developer.github.io/VOID/privacy.html) & [Terms of Use]() which cover both the application's legal terms and its privacy practices.
+By using VOID, you agree to our [Privacy Policy](https://ge-developer.github.io/VOID/privacy.html) & [Terms of Use](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/) which cover both the application's legal terms and its privacy practices.
 
 ---
 
 ## Installation
 
 **For users:**  
-Download VOID directly from the [App Store](https://apps.apple.com/) to use the app.
+Download VOID directly from the [App Store](https://apps.apple.com/us/app/void-offline-encryption/id6754666074) to use the app.
 
 **For developers:**  
 To explore or contribute to the source code:  
