@@ -28,6 +28,9 @@ enum CryptoError: Error {
     case encodingFailed
     case decodingFailed
 
+    // QR Code
+    case qrGenerationFailed
+
     var errorTitle: String { L10n("Error.title") }
 
     var errorDescription: String {
@@ -60,6 +63,8 @@ enum CryptoError: Error {
             return L10n("Error.encodingFailed")
         case .decodingFailed:
             return L10n("Error.decodingFailed")
+        case .qrGenerationFailed:
+            return L10n("Error.qrGenerationFailed")
         }
     }
 }
