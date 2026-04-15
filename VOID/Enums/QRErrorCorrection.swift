@@ -7,13 +7,11 @@
 
 import QRCode
 
-enum QRErrorCorrection: String, CaseIterable, Identifiable {
+enum QRErrorCorrection: CaseIterable {
     case low
     case medium
     case quartile
     case high
-
-    var id: String { rawValue }
 
     var qrCodeLevel: QRCode.ErrorCorrection {
         switch self {

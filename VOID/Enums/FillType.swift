@@ -5,13 +5,11 @@
 //  Created by GE-Developer
 //
 
-enum FillType: String, CaseIterable, Identifiable {
+enum FillType: CaseIterable {
     case solid
     case linearGradient
     case radialGradient
 
-    var id: String { rawValue }
-    
     var name: String {
         switch self {
         case .solid:

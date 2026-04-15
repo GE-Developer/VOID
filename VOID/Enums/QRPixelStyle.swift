@@ -7,7 +7,7 @@
 
 import QRCode
 
-enum QRPixelStyle: String, CaseIterable, Identifiable {
+enum QRPixelStyle: CaseIterable {
     case square
     case circle
     case roundedRect
@@ -51,8 +51,6 @@ enum QRPixelStyle: String, CaseIterable, Identifiable {
     case dripVertical
     case dripHorizontal
     case crt
-
-    var id: String { rawValue }
 
     var generator: any QRCodePixelShapeGenerator {
         switch self {

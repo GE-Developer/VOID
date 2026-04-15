@@ -5,7 +5,7 @@
 //  Created by GE-Developer
 //
 
-enum QRDataType: String, CaseIterable, Identifiable {
+enum QRDataType: CaseIterable {
     case plainText
     case url
     case wifi
@@ -15,8 +15,6 @@ enum QRDataType: String, CaseIterable, Identifiable {
     case sms
     case location
 
-    var id: String { rawValue }
-    
     var name: String {
         switch self {
         case .plainText:
