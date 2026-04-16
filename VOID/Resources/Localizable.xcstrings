@@ -27847,6 +27847,72 @@
         }
       }
     },
+    "QRCode.Preset.add" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Customization"
+          }
+        }
+      }
+    },
+    "QRCode.Preset.delete" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete"
+          }
+        }
+      }
+    },
+    "QRCode.Preset.listHeader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved Customizations"
+          }
+        }
+      }
+    },
+    "QRCode.Preset.nameHeader" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customization Name"
+          }
+        }
+      }
+    },
+    "QRCode.Preset.namePlaceholder" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter a name"
+          }
+        }
+      }
+    },
+    "QRCode.Preset.save" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        }
+      }
+    },
     "SearchField.cancel" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -35373,6 +35439,7 @@
       }
     },
     "WEP" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -35383,6 +35450,7 @@
       }
     },
     "WPA/WPA2" : {
+      "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
