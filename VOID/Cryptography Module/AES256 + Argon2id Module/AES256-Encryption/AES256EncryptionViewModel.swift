@@ -19,7 +19,7 @@ final class AES256EncryptionViewModel: ObservableObject {
         layers: 1,
         selectedHours: 0,
         selectedMinutes: 30,
-        dateInactive: true
+        isTimerEnabled: false
     )
     
     @Published var text = ""

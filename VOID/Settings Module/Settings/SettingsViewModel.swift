@@ -8,16 +8,16 @@
 import SwiftUI
 
 final class SettingsViewModel: ObservableObject {
-    @Published var isThemeLight: Bool {
-        didSet { themeManager.isThemeLight = isThemeLight }
+    @Published var isDarkMode: Bool {
+        didSet { themeManager.isDarkMode = isDarkMode }
     }
-    
-    @Published var isHapticsOff: Bool {
-        didSet { hapticsManager.isHapticsOff = isHapticsOff }
+
+    @Published var isHapticsOn: Bool {
+        didSet { hapticsManager.isHapticsOn = isHapticsOn }
     }
-    
-    @Published var isSoundOff: Bool {
-        didSet { soundManager.isSoundOff = isSoundOff }
+
+    @Published var isSoundOn: Bool {
+        didSet { soundManager.isSoundOn = isSoundOn }
     }
     
     var title: String {
@@ -83,9 +83,9 @@ final class SettingsViewModel: ObservableObject {
     private let soundManager = SoundManager.shared
     
     init() {
-        isThemeLight = themeManager.isThemeLight
-        isHapticsOff = hapticsManager.isHapticsOff
-        isSoundOff = soundManager.isSoundOff
+        isDarkMode = themeManager.isDarkMode
+        isHapticsOn = hapticsManager.isHapticsOn
+        isSoundOn = soundManager.isSoundOn
     }
     
     func rateApp() {

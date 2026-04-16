@@ -18,13 +18,13 @@ struct AES256Parameters: Equatable {
     var layers: UInt8
     var selectedHours: Int
     var selectedMinutes: Int
-    var dateInactive: Bool
-    
+    var isTimerEnabled: Bool
+
     var duration: UInt64 {
         let timeInterval = TimeInterval((selectedHours * 60 + selectedMinutes) * 60)
         let expireTime = Date().timeIntervalSince1970 + timeInterval
-        
-        return UInt64(dateInactive ? 0 : expireTime)
+
+        return UInt64(isTimerEnabled ? expireTime : 0)
     }
     
     var actualLayers: UInt8 { min(layers, keyLength / 32) }

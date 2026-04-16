@@ -12,6 +12,7 @@ struct CryptographyView: View {
     
     @State private var showAES256View = false
     @State private var showEmojiView = false
+    @State private var showQRCodeView = false
     
     private let vm = CryptographyViewModel()
     
@@ -22,6 +23,9 @@ struct CryptographyView: View {
             }
             .navigationDestination(isPresented: $showEmojiView) {
                 NavigationLazyView(EmojiCodingView())
+            }
+            .navigationDestination(isPresented: $showQRCodeView) {
+                NavigationLazyView(QRCodeGeneratorView())
             }
     }
 }
@@ -68,6 +72,11 @@ extension CryptographyView {
                 image: Image.content.emoji,
                 text: vm.aes256EmojiTitle,
                 action: { showEmojiView = true }
+            )
+            CustomTabSection(
+                image: Image.content.voidAES256Argon2id,
+                text: "QR CODE" ,
+                action: { showQRCodeView = true }
             )
         }
     }

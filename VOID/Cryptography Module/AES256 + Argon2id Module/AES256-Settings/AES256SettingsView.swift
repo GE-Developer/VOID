@@ -206,13 +206,13 @@ extension AES256SettingsView {
                 }
         } content: {
             CustomToggleRow(
-                isOff: $vm.parameters.dateInactive,
+                isOn: $vm.parameters.isTimerEnabled,
                 icon: .system.timer,
                 title: vm.timerSubtitle
             )
             .premiumOption($showPayWall)
-            
-            if !vm.parameters.dateInactive {
+
+            if vm.parameters.isTimerEnabled {
                 Divider()
                     .padding(.leading, 50)
                 

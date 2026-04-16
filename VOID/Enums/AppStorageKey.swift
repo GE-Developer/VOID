@@ -14,10 +14,10 @@ enum AppStorageKey {
     
     var key: String {
         switch self {
-        case .theme: return "isThemeLight"
-        case .haptics: return "isHapticsOff"
+        case .theme: return "isDarkMode"
+        case .haptics: return "isHapticsOn"
         case .language: return "AppleLanguages"
-        case .sound: return "isSoundOff"
+        case .sound: return "isSoundOn"
         case .devTest: return "devTest"
         }
     }

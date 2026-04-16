@@ -81,7 +81,7 @@ extension SettingsView {
     
     private var themeToggle: some View {
         CustomToggleRow(
-            isOff: $vm.isThemeLight,
+            isOn: $vm.isDarkMode,
             icon: .system.darkMode,
             title: vm.darkModeTitle
         )
@@ -112,15 +112,15 @@ extension SettingsView {
     
     private var vibrationToggle: some View {
         CustomToggleRow(
-            isOff: $vm.isHapticsOff,
+            isOn: $vm.isHapticsOn,
             icon: .system.vibration,
             title: vm.hapticsTitle
         )
     }
-    
+
     private var soundToggle: some View {
         CustomToggleRow(
-            isOff: $vm.isSoundOff,
+            isOn: $vm.isSoundOn,
             icon: .system.sound,
             title: vm.soundTitle
         )

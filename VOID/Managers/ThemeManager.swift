@@ -9,20 +9,20 @@ import SwiftUICore
 
 @Observable
 final class ThemeManager {
-    var isThemeLight: Bool {
-        didSet { defaults.set(isThemeLight, forKey: key) }
+    var isDarkMode: Bool {
+        didSet { defaults.set(isDarkMode, forKey: key) }
     }
-    
+
     var theme: ColorScheme {
-        isThemeLight ? .light : .dark
+        isDarkMode ? .dark : .light
     }
-    
+
     static let shared = ThemeManager()
-    
+
     private let defaults = UserDefaults.standard
     private let key = AppStorageKey.theme.key
-    
+
     private init() {
-        isThemeLight = defaults.bool(forKey: key)
+        isDarkMode = defaults.object(forKey: key) as? Bool ?? true
     }
 }
