@@ -7,7 +7,7 @@
 
 import QRCode
 
-enum QRErrorCorrection: CaseIterable {
+enum QRErrorCorrection: String, CaseIterable, Codable {
     case low
     case medium
     case quartile

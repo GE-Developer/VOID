@@ -38,14 +38,6 @@ struct QRCodeConfiguration {
     var pupilColor: CGColor? = nil
     var eyeBackgroundColor: CGColor? = nil
 
-    // MARK: - Shadow
-    var shadowEnabled: Bool = false
-    var shadowIsInner: Bool = false
-    var shadowOffsetX: CGFloat = 2
-    var shadowOffsetY: CGFloat = -2
-    var shadowBlur: CGFloat = 4
-    var shadowColor: CGColor = CGColor(red: 0, green: 0, blue: 0, alpha: 0.5)
-
     // MARK: - Other
     var errorCorrection: QRErrorCorrection = .medium
     var logoImage: CGImage? = nil
