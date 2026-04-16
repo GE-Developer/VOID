@@ -7,7 +7,7 @@
 
 import QRCode
 
-enum QRPixelStyle: CaseIterable {
+enum QRPixelStyle: String, CaseIterable, Codable {
     case square
     case circle
     case roundedRect

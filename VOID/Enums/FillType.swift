@@ -5,7 +5,7 @@
 //  Created by GE-Developer
 //
 
-enum FillType: CaseIterable {
+enum FillType: String, CaseIterable, Codable {
     case solid
     case linearGradient
     case radialGradient
