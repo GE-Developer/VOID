@@ -8,18 +8,18 @@
 import SwiftUI
 
 struct CustomToggleRow: View {
-    @Binding var isOff: Bool
-    
-    private let icon: Image
+    @Binding var isOn: Bool
+
+    private let icon: Image?
     private let title: String
     private let haptics = HapticsManager.shared
-    
-    init(isOff: Binding<Bool>, icon: Image, title: String) {
-        _isOff = isOff
+
+    init(isOn: Binding<Bool>, icon: Image? = nil, title: String) {
+        _isOn = isOn
         self.icon = icon
         self.title = title
     }
-    
+
     var body: some View {
         customToggleRow
     }
@@ -27,12 +27,19 @@ struct CustomToggleRow: View {
 
 // MARK: - Builder
 extension CustomToggleRow {
+    @ViewBuilder
     private var customToggleRow: some View {
         HStack(spacing: 0) {
             Group {
-                icon
-                    .foregroundStyle(Gradient.accent)
-                    .frame(width: 50)
+                Group {
+                    if let icon {
+                        icon
+                            .foregroundStyle(Gradient.accent)
+                    } else {
+                        Color.clear
+                    }
+                }
+                .frame(width: 50)
                 Text(title)
                     .foregroundStyle(Color.void.mainText)
                     .font(.headline)
@@ -51,21 +58,21 @@ extension CustomToggleRow {
     
     private var toggle: some View {
         Button {
-            withAnimation { isOff.toggle() }
+            withAnimation { isOn.toggle() }
         } label: {
             RoundedRectangle(cornerRadius: 16)
-                .fill(isOff ? Gradient.gray : Gradient.accent)
+                .fill(isOn ? Gradient.accent : Gradient.gray)
                 .frame(width: 50, height: 30)
                 .overlay(
                     Circle()
                         .fill(Color.white)
                         .frame(width: 24, height: 24)
-                        .offset(x: isOff ? -10 : 10)
-                        .animation(.easeInOut(duration: 0.2), value: isOff)
+                        .offset(x: isOn ? 10 : -10)
+                        .animation(.easeInOut(duration: 0.2), value: isOn)
                 )
         }
         .padding(.trailing)
-        .onChange(of: isOff) {
+        .onChange(of: isOn) {
             haptics.selectionChanged()
         }
     }
