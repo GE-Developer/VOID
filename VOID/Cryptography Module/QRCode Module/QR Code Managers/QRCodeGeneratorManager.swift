@@ -70,21 +70,10 @@ struct QRCodeGeneratorManager {
             // Step 10: Eyes background
             doc.design.style.eyeBackground = configuration.eyeBackgroundColor
 
-            // Step 11: Shadows
-            if configuration.shadowEnabled {
-                doc.design.style.shadow = QRCode.Shadow(
-                    configuration.shadowIsInner ? .innerShadow : .dropShadow,
-                    dx: configuration.shadowOffsetX,
-                    dy: configuration.shadowOffsetY,
-                    blur: configuration.shadowBlur,
-                    color: configuration.shadowColor
-                )
-            }
-
-            // Step 12: Quiet zone
+            // Step 11: Quiet zone
             doc.design.additionalQuietZonePixels = UInt(configuration.quietZone) + configuration.additionalQuietZonePixels
 
-            // Step 13: Logo adding
+            // Step 12: Logo adding
             if let logo = configuration.logoImage {
                 let maxSize: CGFloat = 0.30
                 let aspect = CGFloat(logo.width) / CGFloat(logo.height)
@@ -113,7 +102,7 @@ struct QRCodeGeneratorManager {
                 )
             }
             
-            // Step 14: QR Code generation
+            // Step 13: QR Code generation
             return try doc.cgImage(dimension: dimension)
         }.value
     }
