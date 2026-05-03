@@ -414,6 +414,24 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
+		1F6A6A7C2FA78F7200CEE0A3 /* QR Code Generation */ = {
+			isa = PBXGroup;
+			children = (
+				1F9AEB1C2F9018EB00A10AEB /* QRCodeGeneratorView.swift */,
+				1F9AEB1D2F9018EB00A10AEB /* QRCodeGeneratorViewModel.swift */,
+			);
+			path = "QR Code Generation";
+			sourceTree = "<group>";
+		};
+		1F6A6A7E2FA78F9400CEE0A3 /* QR Code Cutomization */ = {
+			isa = PBXGroup;
+			children = (
+				1F9AEB192F9018EB00A10AEB /* QRCodeCustomizationView.swift */,
+				1F9AEB1A2F9018EB00A10AEB /* QRCodeCustomizationViewModel.swift */,
+			);
+			path = "QR Code Cutomization";
+			sourceTree = "<group>";
+		};
 		1F6C56C82E9884590060015F /* Emoji Encoding */ = {
 			isa = PBXGroup;
 			children = (
@@ -591,10 +609,8 @@
 			isa = PBXGroup;
 			children = (
 				1F5A9DD22F90235500AF4CF7 /* QR Code Managers */,
-				1F9AEB1C2F9018EB00A10AEB /* QRCodeGeneratorView.swift */,
-				1F9AEB1D2F9018EB00A10AEB /* QRCodeGeneratorViewModel.swift */,
-				1F9AEB192F9018EB00A10AEB /* QRCodeCustomizationView.swift */,
-				1F9AEB1A2F9018EB00A10AEB /* QRCodeCustomizationViewModel.swift */,
+				1F6A6A7C2FA78F7200CEE0A3 /* QR Code Generation */,
+				1F6A6A7E2FA78F9400CEE0A3 /* QR Code Cutomization */,
 			);
 			path = "QRCode Module";
 			sourceTree = "<group>";

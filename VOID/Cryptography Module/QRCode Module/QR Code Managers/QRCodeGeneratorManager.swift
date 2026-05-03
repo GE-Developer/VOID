@@ -13,7 +13,7 @@ struct QRCodeGeneratorManager {
     static func generateQRCode(
         from payload: String,
         configuration: QRCodeConfiguration,
-        dimension: Int = 800
+        dimension: Int = 400
     ) async throws -> CGImage {
         try await Task.detached {
 
@@ -23,58 +23,60 @@ struct QRCodeGeneratorManager {
             // Step 2: Correction level
             doc.errorCorrection = configuration.errorCorrection.qrCodeLevel
 
+            let style = configuration.style
+
             // Step 3: QR pixel form
-            doc.design.shape.onPixels = configuration.pixelStyle.generator
-            doc.design.shape.eye = configuration.eyeStyle.generator
-            doc.design.shape.pupil = configuration.pupilStyle.generator
+            doc.design.shape.onPixels = style.pixelStyle.generator
+            doc.design.shape.eye = style.eyeStyle.generator
+            doc.design.shape.pupil = style.pupilStyle.generator
 
             // Step 4: Off-pixels
-            if let offStyle = configuration.offPixelStyle {
+            if let offStyle = style.offPixelStyle {
                 doc.design.shape.offPixels = offStyle.generator
                 doc.design.style.offPixels = makeFill(
-                    type: configuration.offPixelsFillType,
-                    color: configuration.offPixelsColor,
-                    gradientColor: configuration.offPixelsGradientColor
+                    type: style.offPixelsFillType,
+                    color: style.offPixelsColor,
+                    gradientColor: style.offPixelsGradientColor
                 )
             }
 
             // Step 5: Negative mode
-            doc.design.shape.negatedOnPixelsOnly = configuration.negatedOnPixelsOnly
+            doc.design.shape.negatedOnPixelsOnly = style.negatedOnPixelsOnly
 
             // Step 6: Pixel fill color
             doc.design.style.onPixels = makeFill(
-                type: configuration.foregroundFillType,
-                color: configuration.foregroundColor,
-                gradientColor: configuration.foregroundGradientColor
+                type: style.foregroundFillType,
+                color: style.foregroundColor,
+                gradientColor: style.foregroundGradientColor
             )
 
             // Step 7: Fill background
             doc.design.style.background = makeFill(
-                type: configuration.backgroundFillType,
-                color: configuration.backgroundColor,
-                gradientColor: configuration.backgroundGradientColor
+                type: style.backgroundFillType,
+                color: style.backgroundColor,
+                gradientColor: style.backgroundGradientColor
             )
 
             // Step 8: Corner radius
-            doc.design.style.backgroundFractionalCornerRadius = configuration.backgroundCornerRadius
+            doc.design.style.backgroundFractionalCornerRadius = style.backgroundCornerRadius
 
             // Step 9: Color for eyes and pupils
-            if let eyeColor = configuration.eyeColor {
+            if let eyeColor = style.eyeColor {
                 doc.design.style.eye = QRCode.FillStyle.Solid(eyeColor)
             }
-            
-            if let pupilColor = configuration.pupilColor {
+
+            if let pupilColor = style.pupilColor {
                 doc.design.style.pupil = QRCode.FillStyle.Solid(pupilColor)
             }
-            
+
             // Step 10: Eyes background
-            doc.design.style.eyeBackground = configuration.eyeBackgroundColor
+            doc.design.style.eyeBackground = style.eyeBackgroundColor
 
             // Step 11: Quiet zone
             doc.design.additionalQuietZonePixels = UInt(configuration.quietZone) + configuration.additionalQuietZonePixels
 
             // Step 12: Logo adding
-            if let logo = configuration.logoImage {
+            if let logo = style.logoImage {
                 let maxSize: CGFloat = 0.30
                 let aspect = CGFloat(logo.width) / CGFloat(logo.height)
 
