@@ -50,7 +50,7 @@ struct CustomScrollView<Content: View, NavBarItems: View>: View {
             background.zIndex(0)
             scroll.zIndex(1)
             NavigationBarView(
-                isLarge: navState.isLarge,
+                navState: navState,
                 title: title,
                 subTitle: subTitle,
                 alignment: alignment,
@@ -142,7 +142,7 @@ private struct NavigationBarView<NavBarItems: View>: View {
         }
     }
 
-    private let isLarge: Bool
+    private let navState: NavBarState
     private let title: String
     private let subTitle: String?
     private let alignment: HorizontalAlignment
@@ -151,11 +151,11 @@ private struct NavigationBarView<NavBarItems: View>: View {
 
     private let largeNavBarHeight: CGFloat = 70.0
     private let smallNavBarHeight: CGFloat = 50.0
-    
+
     @ViewBuilder private let navBarItems: () -> NavBarItems
 
     init(
-        isLarge: Bool,
+        navState: NavBarState,
         title: String,
         subTitle: String?,
         alignment: HorizontalAlignment,
@@ -163,7 +163,7 @@ private struct NavigationBarView<NavBarItems: View>: View {
         onBack: @escaping () -> Void,
         @ViewBuilder navBarItems: @escaping () -> NavBarItems
     ) {
-        self.isLarge = isLarge
+        self.navState = navState
         self.title = title
         self.subTitle = subTitle
         self.alignment = alignment
@@ -180,8 +180,8 @@ private struct NavigationBarView<NavBarItems: View>: View {
             )
             .ignoresSafeArea()
             .foregroundStyle(.ultraThinMaterial)
-            .opacity(isLarge ? 0 : 1)
-            .shadow(color: Color.void.navBarShadow, radius: isLarge ? 0 : 5)
+            .opacity(navState.isLarge ? 0 : 1)
+            .shadow(color: Color.void.navBarShadow, radius: navState.isLarge ? 0 : 5)
             .compositingGroup()
 
             HStack {
@@ -193,7 +193,7 @@ private struct NavigationBarView<NavBarItems: View>: View {
             .padding(.trailing, 14)
             .padding(.leading, withBackButton ? 0 : 20)
         }
-        .frame(height: isLarge ? largeNavBarHeight : smallNavBarHeight)
+        .frame(height: navState.isLarge ? largeNavBarHeight : smallNavBarHeight)
     }
 
     @ViewBuilder
@@ -204,7 +204,7 @@ private struct NavigationBarView<NavBarItems: View>: View {
                     .fontWeight(.light)
                     .foregroundStyle(Color.void.blackAndWhite)
                     .padding(.leading, 8)
-                    .frame(width: 50, height: isLarge ? largeNavBarHeight : smallNavBarHeight)
+                    .frame(width: 50, height: navState.isLarge ? largeNavBarHeight : smallNavBarHeight)
             }
         }
     }
@@ -212,12 +212,12 @@ private struct NavigationBarView<NavBarItems: View>: View {
     private var titleView: some View {
         VStack(alignment: alignment) {
             Text(title)
-                .font(isLarge ? .title : .title3)
+                .font(navState.isLarge ? .title : .title3)
                 .fontWeight(.medium)
                 .foregroundStyle(Color.void.blackAndWhite)
                 .multilineTextAlignment(textAlignment)
 
-            if isLarge, let subTitle {
+            if navState.isLarge, let subTitle {
                 Text(subTitle)
                     .font(.subheadline)
                     .fontWeight(.light)
