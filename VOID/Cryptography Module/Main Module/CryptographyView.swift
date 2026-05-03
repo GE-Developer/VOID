@@ -33,14 +33,12 @@ struct CryptographyView: View {
 // MARK: - Builder
 extension CryptographyView {
     private var cryptographyView: some View {
-        CustomScrollView(withBackButton: false, tabBarIsVisible: true) {
-            CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
-            Spacer()
+        CustomScrollView(title: vm.title, withBackButton: false, tabBarIsVisible: true) {
             logo
                 .frame(height: 18)
                 .opacity(0.5)
                 .offset(y: 2)
-        } scrollView: { proxy in
+        } content: { _ in
             VStack(spacing: 24) {
                 symmetrycEncryptionTabs
                 encodingTabs

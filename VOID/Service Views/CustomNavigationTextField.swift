@@ -13,7 +13,6 @@ struct CustomNavigationTextField: View {
     @FocusState private var focus: Bool
     @State private var isButtonEnabled = false
     
-    private let minY: Double
     private let image: Image
     private let placeholder: String
     private let cancelButtonTitle: String
@@ -22,14 +21,12 @@ struct CustomNavigationTextField: View {
     
     init(text: Binding<String>,
          isButtonEnabled: Bool = false,
-         minY: Double,
          image: Image = .system.magnifyingglass,
          placeholder: String,
          cancelButtonTitle: String = L10n("SearchField.cancel"),
          deleteAction: @escaping () -> Void) {
         _text = text
         self.isButtonEnabled = isButtonEnabled
-        self.minY = minY
         self.image = image
         self.placeholder = placeholder
         self.cancelButtonTitle = cancelButtonTitle
@@ -50,7 +47,6 @@ extension CustomNavigationTextField {
                 textField
                 deleteButton
             }
-            .opacity(max(1.0 + (minY / 20), 0))
             .background { background }
             .onTapGesture { focus = true }
             
@@ -107,13 +103,12 @@ extension CustomNavigationTextField {
                 .minimumScaleFactor(0.5)
         }
         .transition(.move(edge: .trailing).combined(with: .opacity))
-        .opacity(1 + (minY / 20))
     }
     
     private var background: some View {
         RoundedRectangle(cornerRadius: 15)
             .fill(Color.void.textFieldBackground)
             .shadow(color: Color.void.viewShadow, radius: 2)
-            .frame(height: minY < 0 ? max(40 + Double(minY), 0) : 40)
+            .frame(height: 40)
     }
 }

@@ -112,7 +112,6 @@
 		1FB32C322EB0623B0051A772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C312EB0623B0051A772 /* Images.xcassets */; };
 		1FB32C342EB062C10051A772 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C332EB062C10051A772 /* Colors.xcassets */; };
 		1FB32C3E2EB264810051A772 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C3D2EB264810051A772 /* ExitButton.swift */; };
-		1FCAFE040004000000000001 /* QRCustomizationStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAFE040004000000000002 /* QRCustomizationStorageService.swift */; };
 		1FEECF682EBD4EEC0058E823 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */; };
 		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
 		1FF762922FA77EFC0007D02E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF762912FA77EFC0007D02E /* Validator.swift */; };
@@ -228,7 +227,6 @@
 		1FB32C312EB0623B0051A772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FB32C332EB062C10051A772 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1FB32C3D2EB264810051A772 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
-		1FCAFE040004000000000002 /* QRCustomizationStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCustomizationStorageService.swift; sourceTree = "<group>"; };
 		1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
 		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
 		1FF762912FA77EFC0007D02E /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -385,9 +383,17 @@
 			isa = PBXGroup;
 			children = (
 				1F5A9DD32F90238C00AF4CF7 /* QRCodeGeneratorManager.swift */,
-				1FCAFE040004000000000002 /* QRCustomizationStorageService.swift */,
 			);
 			path = "QR Code Managers";
+			sourceTree = "<group>";
+		};
+		1F5CAECA2FA78C800003001D /* Main Module */ = {
+			isa = PBXGroup;
+			children = (
+				1F8DDCE22E39676C005734CD /* CryptographyView.swift */,
+				1F6C56C42E9814590060015F /* CryptographyViewModel.swift */,
+			);
+			path = "Main Module";
 			sourceTree = "<group>";
 		};
 		1F64ADE12E76234200DB44CE /* Settings */ = {
@@ -420,8 +426,7 @@
 		1F6F65F82E9327470095E89E /* Cryptography Module */ = {
 			isa = PBXGroup;
 			children = (
-				1F8DDCE22E39676C005734CD /* CryptographyView.swift */,
-				1F6C56C42E9814590060015F /* CryptographyViewModel.swift */,
+				1F5CAECA2FA78C800003001D /* Main Module */,
 				1F8DDBDC2E367816005734CD /* AES256 + Argon2id Module */,
 				1F6F66012E958B6A0095E89E /* Emoji Module */,
 				1FA0161F2F87FA100069A6F9 /* QRCode Module */,
@@ -432,9 +437,9 @@
 		1F6F66012E958B6A0095E89E /* Emoji Module */ = {
 			isa = PBXGroup;
 			children = (
+				1FF6E1242E988517001F51BA /* Emoji Managers */,
 				1F6C56C82E9884590060015F /* Emoji Encoding */,
 				1FF6E1272E98855F001F51BA /* Emoji Settings */,
-				1FF6E1242E988517001F51BA /* Emoji Managers */,
 			);
 			path = "Emoji Module";
 			sourceTree = "<group>";
@@ -857,7 +862,6 @@
 				D1521B864E714FF8B3543D79 /* FillType.swift in Sources */,
 				6CECB0FB33FE316A1BD832EB /* QREyeStyle.swift in Sources */,
 				53572886C6C72C67B05C899B /* QRCodeConfiguration.swift in Sources */,
-				1FCAFE040004000000000001 /* QRCustomizationStorageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
