@@ -24,17 +24,10 @@ struct AboutEncryptionView: View {
 // MARK: - Builder
 extension AboutEncryptionView {
     private var aboutAES256View: some View {
-        CustomScrollView {
-            CustomNavigationTitle(
-                title: vm.title,
-                subTitle: vm.subtitle,
-                isLargeNavBar: $0
-            )
-            Spacer()
-        } headerView: {
+        CustomScrollView(title: vm.title, subTitle: vm.subtitle) {
+            EmptyView()
+        } content: { _ in
             headerAnimation
-                .offset(y: min($0, 0))
-        } scrollView: { _ in
             aboutContent
         }
     }
