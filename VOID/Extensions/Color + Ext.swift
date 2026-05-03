@@ -30,5 +30,5 @@ struct VoidColor {
     let payWallAccentDark = Color("PayWallAccentDark")
     let payWallAccentLight = Color("PayWallAccentLight")
     let errorRed = Color("ErrorRed")
-    let orange = Color("Orange")
+    let tangOrange = Color("TangOrange")
 }

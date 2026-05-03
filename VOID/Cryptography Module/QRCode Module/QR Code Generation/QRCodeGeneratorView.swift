@@ -409,7 +409,7 @@ extension QRCodeGeneratorView {
     private var progressColor: Color {
         switch vm.payloadFraction {
         case 0.95...: .void.errorRed
-        case 0.75...: .void.orange
+        case 0.75...: .void.tangOrange
         default:      Color.void.accentLight
         }
     }
