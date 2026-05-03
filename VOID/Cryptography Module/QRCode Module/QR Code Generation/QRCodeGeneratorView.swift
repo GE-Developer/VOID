@@ -116,6 +116,21 @@ struct QRCodeGeneratorView: View {
         )
     }
     
+    private var progressColor: Color {
+        switch vm.payloadFraction {
+        case 0.95...: .void.errorRed
+        case 0.75...: .void.tangOrange
+        default:      Color.void.accentLight
+        }
+    }
+    
+    private var defaultLocationRegion: MKCoordinateRegion {
+        MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: 0, longitude: 0),
+            span: MKCoordinateSpan(latitudeDelta: 90, longitudeDelta: 180)
+        )
+    }
+    
     var body: some View {
         CustomScrollView(title: vm.title) {
             EmptyView()
@@ -222,7 +237,7 @@ extension QRCodeGeneratorView {
             case .sms:
                 smsInput
             case .location:
-                EmptyView()
+                locationInput
             }
         }
     }
@@ -384,6 +399,27 @@ extension QRCodeGeneratorView {
         }
     }
 
+    private var locationInput: some View {
+        VStack(spacing: 8) {
+            MapReader { proxy in
+                Map(initialPosition: .region(defaultLocationRegion)) {
+                    if let coordinate = vm.selectedCoordinate {
+                        Marker("", coordinate: coordinate)
+                    }
+                }
+                .onTapGesture(coordinateSpace: .local) { point in
+                    if let coordinate = proxy.convert(point, from: .local) {
+                        vm.selectedCoordinate = coordinate
+                    }
+                }
+            }
+            .frame(height: 240)
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+
+            counterFor(vm.coordinateDescription)
+        }
+    }
+
     private var payloadProgressBar: some View {
         VStack(spacing: 4) {
             VStack {
@@ -403,14 +439,6 @@ extension QRCodeGeneratorView {
                 .font(.caption2)
                 .fontDesign(.rounded)
                 .foregroundStyle(Color.void.secondaryText)
-        }
-    }
-
-    private var progressColor: Color {
-        switch vm.payloadFraction {
-        case 0.95...: .void.errorRed
-        case 0.75...: .void.tangOrange
-        default:      Color.void.accentLight
         }
     }
     

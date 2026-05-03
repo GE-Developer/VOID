@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreGraphics
+import CoreLocation
 
 final class QRCodeGeneratorViewModel: ObservableObject {
     enum FieldType {
@@ -67,9 +68,23 @@ final class QRCodeGeneratorViewModel: ObservableObject {
     @Published var phoneNumber = ""
     @Published var smsNumber = ""
     @Published var smsMessage = ""
+    @Published var selectedCoordinate: CLLocationCoordinate2D?
 
     @Published private(set) var qrImage: CGImage?
     @Published private(set) var generationFailed = false
+
+    var latitudeString: String {
+        selectedCoordinate.map { String(format: "%.6f", $0.latitude) } ?? ""
+    }
+
+    var longitudeString: String {
+        selectedCoordinate.map { String(format: "%.6f", $0.longitude) } ?? ""
+    }
+
+    var coordinateDescription: String {
+        guard selectedCoordinate != nil else { return "" }
+        return "\(latitudeString), \(longitudeString)"
+    }
     
     var payloadDescription: String {
         "\(payloadProgress) / \(selectedErrorCorrection.byteLimit)"
@@ -101,8 +116,8 @@ final class QRCodeGeneratorViewModel: ObservableObject {
             phoneNumber: phoneNumber,
             smsNumber: smsNumber,
             smsMessage: smsMessage,
-            latitude: "",
-            longitude: ""
+            latitude: latitudeString,
+            longitude: longitudeString
         )
     }
 
@@ -227,7 +242,7 @@ final class QRCodeGeneratorViewModel: ObservableObject {
         case .sms:
             return !smsNumber.isEmpty && isPhoneValid(smsNumber)
         case .location:
-            return false
+            return selectedCoordinate != nil
         }
     }
 }
