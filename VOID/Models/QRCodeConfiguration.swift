@@ -8,6 +8,15 @@
 import CoreGraphics
 
 struct QRCodeConfiguration {
+    var style = QRVisualStyle()
+
+    // MARK: - Behavior
+    var errorCorrection: QRErrorCorrection = .medium
+    var quietZone: Int = 2
+    var additionalQuietZonePixels: UInt = 0
+}
+
+struct QRVisualStyle {
     // MARK: - Shapes
     var pixelStyle: QRPixelStyle = .square
     var eyeStyle: QREyeStyle = .square
@@ -38,9 +47,6 @@ struct QRCodeConfiguration {
     var pupilColor: CGColor? = nil
     var eyeBackgroundColor: CGColor? = nil
 
-    // MARK: - Other
-    var errorCorrection: QRErrorCorrection = .medium
+    // MARK: - Logo
     var logoImage: CGImage? = nil
-    var quietZone: Int = 2
-    var additionalQuietZonePixels: UInt = 0
 }

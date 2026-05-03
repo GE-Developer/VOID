@@ -35,5 +35,14 @@ enum QRErrorCorrection: String, CaseIterable, Codable {
         }
     }
     
+    var byteLimit: Int {
+        switch self {
+        case .low: 1200
+        case .medium: 900
+        case .quartile: 550
+        case .high: 350
+        }
+    }
+    
     static var title: String { L10n("QR.ErrorCorrection.title") }
 }

@@ -29,22 +29,14 @@ struct EmojiSettingsView: View {
 // MARK: - Builder
 extension EmojiSettingsView {
     private var emojiSettingsView: some View {
-        CustomScrollView {
-            CustomNavigationTitle(
-                title: vm.settingsTitle,
-                subTitle: vm.emojiCodecTitle,
-                isLargeNavBar: $0
-            )
-            Spacer()
+        CustomScrollView(title: vm.settingsTitle, subTitle: vm.emojiCodecTitle) {
             NavigationToolButton(.system.info) { showInfo = true }
-        } scrollView: { _ in
-            VStack {
-                CustomForm(headerText: vm.emojiFormTitle) {
-                    CustomTextRow(vm.emojiFormDescription)
-                    Divider()
-                        .padding(.horizontal)
-                    emojiSelectors
-                }
+        } content: { _ in
+            CustomForm(headerText: vm.emojiFormTitle) {
+                CustomTextRow(vm.emojiFormDescription)
+                Divider()
+                    .padding(.horizontal)
+                emojiSelectors
             }
         }
     }

@@ -41,21 +41,11 @@ struct AES256SettingsView: View {
 // MARK: - Builder
 extension AES256SettingsView {
     private var settingsView: some View {
-        CustomScrollView(withTarget: true) {
-            CustomNavigationTitle(
-                title: vm.title,
-                subTitle: vm.subTitle,
-                isLargeNavBar: $0
-            )
-            Spacer()
-            NavigationToolButton(.system.info) {
-                showInfo = true
-            }
-        } headerView: {
-            passwordForm
-                .offset(y: min($0, 0))
-        } scrollView: { _ in
+        CustomScrollView(title: vm.title, subTitle: vm.subTitle) {
+            NavigationToolButton(.system.info) { showInfo = true }
+        } content: { _ in
             VStack(spacing: 25) {
+                passwordForm
                 dividerMessage
                 saltForm
                 iterationsForm

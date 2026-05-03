@@ -22,6 +22,7 @@ struct SystemImage {
     let timer = Image(systemName: "timer")
     let send = Image(systemName: "arrow.up")
     let xmark = Image(systemName: "xmark")
+    let xmarkFill = Image(systemName: "xmark.circle.fill")
     let cryptoSettings = Image(systemName: "slider.horizontal.3")
     let number = Image(systemName: "number")
     let info = Image(systemName: "info.circle")
@@ -42,6 +43,13 @@ struct SystemImage {
     let gear = Image(systemName: "gear")
     let code = Image(systemName: "chevron.left.slash.chevron.right")
     let warning = Image(systemName: "exclamationmark.triangle")
+    let qrCode = Image(systemName: "qrcode")
+    let text = Image(systemName: "text.justify.leading")
+    let network = Image(systemName: "network")
+    let wifi = Image(systemName: "wifi")
+    let contact = Image(systemName: "person.crop.circle")
+    let phone = Image(systemName: "phone.fill")
+    let email = Image(systemName: "envelope")
     
     func key(_ isFilled: Bool = false) -> Image {
         isFilled ? Image(systemName: "key.fill") : Image(systemName: "key")

@@ -18,16 +18,11 @@ struct VoidNumbersView: View {
 // MARK: - Builder
 extension VoidNumbersView {
     private var voidNumbersView: some View {
-        CustomScrollView(withTarget: true) {
-            CustomNavigationTitle(
-                title: vm.voidTitle,
-                subTitle: vm.subTitle,
-                isLargeNavBar: $0
-            )
-            Spacer()
-        } headerView: {
-            HeaderTextView(text: vm.voidInstructions, offsetY: min($0, 0))
-        } scrollView: { proxy in
+        CustomScrollView(title: vm.voidTitle, subTitle: vm.subTitle) {
+            EmptyView()
+        } content: { proxy in
+            HeaderTextView(text: vm.voidInstructions)
+                .padding(.bottom)
             CustomForm(headerText: vm.voidSubtitle) {
                 LazyVStack(spacing: 0) {
                     voidList

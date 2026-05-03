@@ -10,8 +10,7 @@
 		0E376E3162ED88F2D1B6DE60 /* QRErrorCorrection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15AED30A114C34B4F885970 /* QRErrorCorrection.swift */; };
 		1F1161222E6B66C500A7894D /* String + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1161212E6B66C500A7894D /* String + Ext.swift */; };
 		1F1161242E73009900A7894D /* HeaderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1161232E73009900A7894D /* HeaderTextView.swift */; };
-		1F1161262E747C6200A7894D /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1161252E747C6200A7894D /* CustomScrollView.swift */; };
-		1F12FE482E4264260023DB69 /* CustomMessageTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */; };
+		1F12FE482E4264260023DB69 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12FE472E4264260023DB69 /* CustomTextField.swift */; };
 		1F12FE4B2E4278210023DB69 /* CryptoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12FE4A2E4278210023DB69 /* CryptoAction.swift */; };
 		1F12FE4F2E42789C0023DB69 /* CryptoActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12FE4E2E42789C0023DB69 /* CryptoActionButtons.swift */; };
 		1F12FE512E42DEDD0023DB69 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F12FE502E42DEDD0023DB69 /* MessageView.swift */; };
@@ -22,7 +21,7 @@
 		1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F14525B2E6092D200F8A553 /* LanguageView.swift */; };
 		1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */; };
 		1F19ECB42EB6476C00A3D0AD /* PayWallViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F19ECB32EB6476C00A3D0AD /* PayWallViewModel.swift */; };
-		1F1B68962F91A58000300422 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B68922F91A58000300422 /* PersistenceController.swift */; };
+		1F1B68962F91A58000300422 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B68922F91A58000300422 /* CoreDataManager.swift */; };
 		1F1B68972F91A58000300422 /* VOIDModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B68932F91A58000300422 /* VOIDModel.xcdatamodeld */; };
 		1F2403B92EA51F6E00FB4005 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2403B82EA51F6E00FB4005 /* StoreManager.swift */; };
 		1F2403BB2EA5279E00FB4005 /* PayWallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2403BA2EA5279E00FB4005 /* PayWallView.swift */; };
@@ -37,6 +36,8 @@
 		1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */; };
 		1F2D34312E84AFC6005E6239 /* FullScreenLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */; };
 		1F36E3922EC3F4ED0086FE2C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F36E3912EC3F4ED0086FE2C /* Launch Screen.storyboard */; };
+		1F37CFDD2F950B97002F208B /* MenuPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37CFDC2F950B97002F208B /* MenuPickerView.swift */; };
+		1F37CFE72F9ABA10002F208B /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37CFE62F9ABA10002F208B /* CustomScrollView.swift */; };
 		1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */; };
 		1F4ECDEE2EBE50FF008931DE /* ProductButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4ECDED2EBE50FF008931DE /* ProductButton.swift */; };
 		1F587D522EAC61DF0025194E /* AboutProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F587D512EAC61DF0025194E /* AboutProjectView.swift */; };
@@ -71,7 +72,6 @@
 		1F8DDBE82E36785E005734CD /* Image + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBE62E36785E005734CD /* Image + Ext.swift */; };
 		1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBE52E36785E005734CD /* Color + Ext.swift */; };
 		1F8DDBEF2E3678C0005734CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */; };
-		1F8DDBF12E367A58005734CD /* CustomNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF02E367A58005734CD /* CustomNavigationTitle.swift */; };
 		1F8DDBF32E367EC4005734CD /* AESEncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */; };
 		1F8DDBF62E36A15E005734CD /* Argon2Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8DDBF52E36A15E005734CD /* Argon2Swift */; };
 		1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */; };
@@ -112,11 +112,10 @@
 		1FB32C322EB0623B0051A772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C312EB0623B0051A772 /* Images.xcassets */; };
 		1FB32C342EB062C10051A772 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C332EB062C10051A772 /* Colors.xcassets */; };
 		1FB32C3E2EB264810051A772 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C3D2EB264810051A772 /* ExitButton.swift */; };
-		1FCAFE010001000000000001 /* QRCodeConfigurationDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAFE010001000000000002 /* QRCodeConfigurationDTO.swift */; };
 		1FCAFE040004000000000001 /* QRCustomizationStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAFE040004000000000002 /* QRCustomizationStorageService.swift */; };
-		1FCAFE050005000000000001 /* SwipeToDeleteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCAFE050005000000000002 /* SwipeToDeleteRow.swift */; };
 		1FEECF682EBD4EEC0058E823 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */; };
 		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
+		1FF762922FA77EFC0007D02E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF762912FA77EFC0007D02E /* Validator.swift */; };
 		1FFBB0C62EB513100072600C /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBB0C52EB513100072600C /* Products.storekit */; };
 		2D1DC4204A47BBC838C8BA2A /* QRDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E229693CD19EC5D4460523 /* QRDataType.swift */; };
 		53572886C6C72C67B05C899B /* QRCodeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481CB059181C5AF99752750 /* QRCodeConfiguration.swift */; };
@@ -129,8 +128,7 @@
 /* Begin PBXFileReference section */
 		1F1161212E6B66C500A7894D /* String + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Ext.swift"; sourceTree = "<group>"; };
 		1F1161232E73009900A7894D /* HeaderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTextView.swift; sourceTree = "<group>"; };
-		1F1161252E747C6200A7894D /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
-		1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageTextField.swift; sourceTree = "<group>"; };
+		1F12FE472E4264260023DB69 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		1F12FE4A2E4278210023DB69 /* CryptoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoAction.swift; sourceTree = "<group>"; };
 		1F12FE4E2E42789C0023DB69 /* CryptoActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoActionButtons.swift; sourceTree = "<group>"; };
 		1F12FE502E42DEDD0023DB69 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
@@ -141,7 +139,7 @@
 		1F14525B2E6092D200F8A553 /* LanguageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageView.swift; sourceTree = "<group>"; };
 		1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		1F19ECB32EB6476C00A3D0AD /* PayWallViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallViewModel.swift; sourceTree = "<group>"; };
-		1F1B68922F91A58000300422 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		1F1B68922F91A58000300422 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		1F1B68952F91A58000300422 /* VOIDModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VOIDModel.xcdatamodel; sourceTree = "<group>"; };
 		1F2403B82EA51F6E00FB4005 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
 		1F2403BA2EA5279E00FB4005 /* PayWallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayWallView.swift; sourceTree = "<group>"; };
@@ -156,6 +154,8 @@
 		1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoVersion.swift; sourceTree = "<group>"; };
 		1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenLoader.swift; sourceTree = "<group>"; };
 		1F36E3912EC3F4ED0086FE2C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1F37CFDC2F950B97002F208B /* MenuPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPickerView.swift; sourceTree = "<group>"; };
+		1F37CFE62F9ABA10002F208B /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
 		1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyAlertView.swift; sourceTree = "<group>"; };
 		1F4ECDED2EBE50FF008931DE /* ProductButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductButton.swift; sourceTree = "<group>"; };
 		1F587D512EAC61DF0025194E /* AboutProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutProjectView.swift; sourceTree = "<group>"; };
@@ -190,7 +190,6 @@
 		1F8DDBE52E36785E005734CD /* Color + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBE62E36785E005734CD /* Image + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1F8DDBF02E367A58005734CD /* CustomNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTitle.swift; sourceTree = "<group>"; };
 		1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESEncryptionService.swift; sourceTree = "<group>"; };
 		1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256EncryptionViewModel.swift; sourceTree = "<group>"; };
 		1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256SettingsView.swift; sourceTree = "<group>"; };
@@ -229,11 +228,10 @@
 		1FB32C312EB0623B0051A772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FB32C332EB062C10051A772 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1FB32C3D2EB264810051A772 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
-		1FCAFE010001000000000002 /* QRCodeConfigurationDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeConfigurationDTO.swift; sourceTree = "<group>"; };
 		1FCAFE040004000000000002 /* QRCustomizationStorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCustomizationStorageService.swift; sourceTree = "<group>"; };
-		1FCAFE050005000000000002 /* SwipeToDeleteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDeleteRow.swift; sourceTree = "<group>"; };
 		1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
 		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
+		1FF762912FA77EFC0007D02E /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		1FFBB0A02EB4163B0072600C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FFBB0BD2EB5094A0072600C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1FFBB0C52EB513100072600C /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
@@ -260,7 +258,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F12FE442E4221440023DB69 /* AES256-Settings */ = {
+		1F12FE442E4221440023DB69 /* AES256 Settings */ = {
 			isa = PBXGroup;
 			children = (
 				1F2CADA52E91088C009007B5 /* AboutAES256ViewModel.swift */,
@@ -268,16 +266,16 @@
 				1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */,
 				1FA26BEC2E90A1F6002BD74C /* VoidNumbersView.swift */,
 			);
-			path = "AES256-Settings";
+			path = "AES256 Settings";
 			sourceTree = "<group>";
 		};
-		1F12FE452E4221AC0023DB69 /* AES256-Encryption */ = {
+		1F12FE452E4221AC0023DB69 /* AES256 Encryption */ = {
 			isa = PBXGroup;
 			children = (
 				1F8DDBB22E366E11005734CD /* AES256EncryptionView.swift */,
 				1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */,
 			);
-			path = "AES256-Encryption";
+			path = "AES256 Encryption";
 			sourceTree = "<group>";
 		};
 		1F12FE462E4221E50023DB69 /* Managers */ = {
@@ -289,6 +287,7 @@
 				1F7D9EE02E634007007B4DDD /* SoundManager.swift */,
 				1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */,
 				1F6F65F22E92C08C0095E89E /* TabBarState.swift */,
+				1FF762912FA77EFC0007D02E /* Validator.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -309,9 +308,9 @@
 				C1E229693CD19EC5D4460523 /* QRDataType.swift */,
 				C15AED30A114C34B4F885970 /* QRErrorCorrection.swift */,
 				A60F37CC89A6859307C9AE96 /* QRPixelStyle.swift */,
+				A6CB98B6CB5C2FEA688162B2 /* QREyeStyle.swift */,
 				3201C881154C4E46BB8E1840 /* QRPupilStyle.swift */,
 				364F6C1D1B2C4FC8A63D27F8 /* FillType.swift */,
-				A6CB98B6CB5C2FEA688162B2 /* QREyeStyle.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -330,18 +329,18 @@
 		1F1B68942F91A58000300422 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
-				1F1B68922F91A58000300422 /* PersistenceController.swift */,
+				1F1B68922F91A58000300422 /* CoreDataManager.swift */,
 				1F1B68932F91A58000300422 /* VOIDModel.xcdatamodeld */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
 		};
-		1F2355FA2E8A04B10088290F /* AES256-Managers */ = {
+		1F2355FA2E8A04B10088290F /* AES256 Managers */ = {
 			isa = PBXGroup;
 			children = (
 				1F2D34272E7E1760005E6239 /* AES256CryptoManager.swift */,
 			);
-			path = "AES256-Managers";
+			path = "AES256 Managers";
 			sourceTree = "<group>";
 		};
 		1F2CADAA2E9183DC009007B5 /* Protocols */ = {
@@ -358,7 +357,6 @@
 				1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */,
 				1F2D34222E7D7D16005E6239 /* Message.swift */,
 				2481CB059181C5AF99752750 /* QRCodeConfiguration.swift */,
-				1FCAFE010001000000000002 /* QRCodeConfigurationDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -383,13 +381,13 @@
 			path = AboutProject;
 			sourceTree = "<group>";
 		};
-		1F5A9DD22F90235500AF4CF7 /* QR-Code-Managers */ = {
+		1F5A9DD22F90235500AF4CF7 /* QR Code Managers */ = {
 			isa = PBXGroup;
 			children = (
 				1F5A9DD32F90238C00AF4CF7 /* QRCodeGeneratorManager.swift */,
 				1FCAFE040004000000000002 /* QRCustomizationStorageService.swift */,
 			);
-			path = "QR-Code-Managers";
+			path = "QR Code Managers";
 			sourceTree = "<group>";
 		};
 		1F64ADE12E76234200DB44CE /* Settings */ = {
@@ -410,13 +408,13 @@
 			path = Language;
 			sourceTree = "<group>";
 		};
-		1F6C56C82E9884590060015F /* Emoji-Encoding */ = {
+		1F6C56C82E9884590060015F /* Emoji Encoding */ = {
 			isa = PBXGroup;
 			children = (
 				1F6F65FF2E958B380095E89E /* EmojiCodingView.swift */,
 				1F6F66022E958C030095E89E /* EmojiCodingViewModel.swift */,
 			);
-			path = "Emoji-Encoding";
+			path = "Emoji Encoding";
 			sourceTree = "<group>";
 		};
 		1F6F65F82E9327470095E89E /* Cryptography Module */ = {
@@ -434,9 +432,9 @@
 		1F6F66012E958B6A0095E89E /* Emoji Module */ = {
 			isa = PBXGroup;
 			children = (
-				1F6C56C82E9884590060015F /* Emoji-Encoding */,
-				1FF6E1272E98855F001F51BA /* Emoji-Settings */,
-				1FF6E1242E988517001F51BA /* Emoji-Managers */,
+				1F6C56C82E9884590060015F /* Emoji Encoding */,
+				1FF6E1272E98855F001F51BA /* Emoji Settings */,
+				1FF6E1242E988517001F51BA /* Emoji Managers */,
 			);
 			path = "Emoji Module";
 			sourceTree = "<group>";
@@ -475,9 +473,9 @@
 		1F8DDBDC2E367816005734CD /* AES256 + Argon2id Module */ = {
 			isa = PBXGroup;
 			children = (
-				1F2355FA2E8A04B10088290F /* AES256-Managers */,
-				1F12FE452E4221AC0023DB69 /* AES256-Encryption */,
-				1F12FE442E4221440023DB69 /* AES256-Settings */,
+				1F2355FA2E8A04B10088290F /* AES256 Managers */,
+				1F12FE452E4221AC0023DB69 /* AES256 Encryption */,
+				1F12FE442E4221440023DB69 /* AES256 Settings */,
 			);
 			path = "AES256 + Argon2id Module";
 			sourceTree = "<group>";
@@ -523,10 +521,10 @@
 		1F8DDBEC2E367897005734CD /* Service Views */ = {
 			isa = PBXGroup;
 			children = (
-				1F1161252E747C6200A7894D /* CustomScrollView.swift */,
+				1F37CFE62F9ABA10002F208B /* CustomScrollView.swift */,
+				1FB32C2D2EB05A1B0051A772 /* CustomNavigationTextField.swift */,
 				1F6F65F42E92C1970095E89E /* CustomTabBar.swift */,
 				1F64ADDC2E7572CF00DB44CE /* NavigationLazyView.swift */,
-				1F8DDBF02E367A58005734CD /* CustomNavigationTitle.swift */,
 				1F91202F2E8C935200B62644 /* NavigationToolButton.swift */,
 				1F6F65F92E943EF30095E89E /* CustomTabImageView.swift */,
 				1F6F65FB2E9445EB0095E89E /* CustomTabSection.swift */,
@@ -541,9 +539,8 @@
 				1F7D9EF82E653107007B4DDD /* MatrixAnimationView.swift */,
 				1F1161232E73009900A7894D /* HeaderTextView.swift */,
 				1F12FE502E42DEDD0023DB69 /* MessageView.swift */,
-				1F12FE472E4264260023DB69 /* CustomMessageTextField.swift */,
+				1F12FE472E4264260023DB69 /* CustomTextField.swift */,
 				1F8DDCE42E3A1C01005734CD /* CustomSecureField.swift */,
-				1FB32C2D2EB05A1B0051A772 /* CustomNavigationTextField.swift */,
 				1F2D34302E84AFC5005E6239 /* FullScreenLoader.swift */,
 				1F3DFFB42E901A0B00D77061 /* CopyAlertView.swift */,
 				1F2CADA32E91075E009007B5 /* AboutEncryptionView.swift */,
@@ -552,7 +549,7 @@
 				1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */,
 				1F9544B42EC3B0C200F0CB51 /* ExplosiveStarView.swift */,
 				1FA1B0012EF7A00100C0FFEE /* CustomCapsulePicker.swift */,
-				1FCAFE050005000000000002 /* SwipeToDeleteRow.swift */,
+				1F37CFDC2F950B97002F208B /* MenuPickerView.swift */,
 			);
 			path = "Service Views";
 			sourceTree = "<group>";
@@ -588,7 +585,7 @@
 		1FA0161F2F87FA100069A6F9 /* QRCode Module */ = {
 			isa = PBXGroup;
 			children = (
-				1F5A9DD22F90235500AF4CF7 /* QR-Code-Managers */,
+				1F5A9DD22F90235500AF4CF7 /* QR Code Managers */,
 				1F9AEB1C2F9018EB00A10AEB /* QRCodeGeneratorView.swift */,
 				1F9AEB1D2F9018EB00A10AEB /* QRCodeGeneratorViewModel.swift */,
 				1F9AEB192F9018EB00A10AEB /* QRCodeCustomizationView.swift */,
@@ -614,21 +611,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FF6E1242E988517001F51BA /* Emoji-Managers */ = {
+		1FF6E1242E988517001F51BA /* Emoji Managers */ = {
 			isa = PBXGroup;
 			children = (
 				1F6C56C62E98828A0060015F /* EmojiCodecManager.swift */,
 			);
-			path = "Emoji-Managers";
+			path = "Emoji Managers";
 			sourceTree = "<group>";
 		};
-		1FF6E1272E98855F001F51BA /* Emoji-Settings */ = {
+		1FF6E1272E98855F001F51BA /* Emoji Settings */ = {
 			isa = PBXGroup;
 			children = (
 				1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */,
 				1F8B4FA02E9C72CF0075C9DA /* AboutEmojiViewModel.swift */,
 			);
-			path = "Emoji-Settings";
+			path = "Emoji Settings";
 			sourceTree = "<group>";
 		};
 		1FFBB0BC2EB5094A0072600C /* Frameworks */ = {
@@ -770,9 +767,9 @@
 				1F9544B52EC3B0C200F0CB51 /* ExplosiveStarView.swift in Sources */,
 				1F5A9DD42F90238C00AF4CF7 /* QRCodeGeneratorManager.swift in Sources */,
 				1FA1B0022EF7A00100C0FFEE /* CustomCapsulePicker.swift in Sources */,
-				1F8DDBF12E367A58005734CD /* CustomNavigationTitle.swift in Sources */,
 				1F8DDCE32E39676C005734CD /* CryptographyView.swift in Sources */,
 				1F2403BB2EA5279E00FB4005 /* PayWallView.swift in Sources */,
+				1F37CFDD2F950B97002F208B /* MenuPickerView.swift in Sources */,
 				1F8DDCE12E396473005734CD /* Gradient + Ext.swift in Sources */,
 				1F8DDCEB2E3A78B7005734CD /* CustomTextRow.swift in Sources */,
 				1F8B4FA32E9C76C80075C9DA /* LetterType.swift in Sources */,
@@ -799,7 +796,6 @@
 				1F1452552E608D2D00F8A553 /* LanguageManager.swift in Sources */,
 				1F6F65FA2E943EF30095E89E /* CustomTabImageView.swift in Sources */,
 				1F8DDBFA2E38123F005734CD /* AES256SettingsView.swift in Sources */,
-				1F1161262E747C6200A7894D /* CustomScrollView.swift in Sources */,
 				1F2CADA62E91088C009007B5 /* AboutAES256ViewModel.swift in Sources */,
 				1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */,
 				1F9544B32EC39C9F00F0CB51 /* AppPurchase.swift in Sources */,
@@ -807,6 +803,7 @@
 				1F7D9EF92E653107007B4DDD /* MatrixAnimationView.swift in Sources */,
 				1F7D9EE52E6342DA007B4DDD /* SettingsViewModel.swift in Sources */,
 				1F1452592E608E9200F8A553 /* SettingsView.swift in Sources */,
+				1FF762922FA77EFC0007D02E /* Validator.swift in Sources */,
 				1F2D34232E7D7D16005E6239 /* Message.swift in Sources */,
 				1F2D34242E7D7D16005E6239 /* AES256Parameters.swift in Sources */,
 				1F7D9EE92E63447D007B4DDD /* LanguageViewModel.swift in Sources */,
@@ -828,15 +825,16 @@
 				1FB32C222EAFB7A00051A772 /* PremiumImageView.swift in Sources */,
 				1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */,
 				1F6C56C32E97F1700060015F /* EmojiMood.swift in Sources */,
+				1F37CFE72F9ABA10002F208B /* CustomScrollView.swift in Sources */,
 				1F2D342F2E820EAB005E6239 /* CryptoVersion.swift in Sources */,
-				1F12FE482E4264260023DB69 /* CustomMessageTextField.swift in Sources */,
+				1F12FE482E4264260023DB69 /* CustomTextField.swift in Sources */,
 				1F9544AE2EC39BCA00F0CB51 /* L10n.swift in Sources */,
 				1F1452532E6080F800F8A553 /* Language.swift in Sources */,
 				1F4ECDEE2EBE50FF008931DE /* ProductButton.swift in Sources */,
 				1F8DDCDD2E39641A005734CD /* CustomButtonRow.swift in Sources */,
 				1F8DDCDF2E396454005734CD /* CustomToggleRow.swift in Sources */,
 				1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */,
-				1F1B68962F91A58000300422 /* PersistenceController.swift in Sources */,
+				1F1B68962F91A58000300422 /* CoreDataManager.swift in Sources */,
 				1F1B68972F91A58000300422 /* VOIDModel.xcdatamodeld in Sources */,
 				1F6F65F32E92C08C0095E89E /* TabBarState.swift in Sources */,
 				1F1452572E608D8900F8A553 /* AppStorageKey.swift in Sources */,
@@ -859,9 +857,7 @@
 				D1521B864E714FF8B3543D79 /* FillType.swift in Sources */,
 				6CECB0FB33FE316A1BD832EB /* QREyeStyle.swift in Sources */,
 				53572886C6C72C67B05C899B /* QRCodeConfiguration.swift in Sources */,
-				1FCAFE010001000000000001 /* QRCodeConfigurationDTO.swift in Sources */,
 				1FCAFE040004000000000001 /* QRCustomizationStorageService.swift in Sources */,
-				1FCAFE050005000000000001 /* SwipeToDeleteRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1012,7 +1008,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1052,7 +1048,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -38,14 +38,12 @@ struct SettingsView: View {
 // MARK: - Builder
 extension SettingsView {
     private var settingsView: some View {
-        CustomScrollView(withBackButton: false, tabBarIsVisible: true) {
-            CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
-            Spacer()
+        CustomScrollView(title: vm.title, withBackButton: false, tabBarIsVisible: true) {
             logo
                 .frame(height: 18)
                 .opacity(0.5)
                 .offset(y: 2)
-        } scrollView: { _ in
+        } content: { _ in
             VStack(spacing: 25) {
                 CustomForm(headerText: vm.generalSettingsTitle) {
                     themeToggle

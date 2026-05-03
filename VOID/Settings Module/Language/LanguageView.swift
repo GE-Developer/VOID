@@ -24,10 +24,9 @@ struct LanguageView: View {
 // MARK: - Builder
 extension LanguageView {
     private var languageView: some View {
-        CustomScrollView() { isLargeNavBar in
-            CustomNavigationTitle(title: vm.title, isLargeNavBar: isLargeNavBar)
-            Spacer()
-        } scrollView: { _ in
+        CustomScrollView(title: vm.title) {
+            EmptyView()
+        } content: { _ in
             CustomForm {
                 let languages = Array(Language.allCases.enumerated())
                 

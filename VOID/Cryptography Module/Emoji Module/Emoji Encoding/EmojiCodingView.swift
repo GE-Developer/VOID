@@ -14,6 +14,8 @@ struct EmojiCodingView: View {
     @State private var isCopied = false
     @State private var hideCopyAlertWorkItem: DispatchWorkItem?
     
+    let backImage = Image.background.emojiBackground
+    
     var body: some View {
         aes256EncryptionView
             .navigationDestination(isPresented: $goToSettings) {
@@ -25,15 +27,9 @@ struct EmojiCodingView: View {
 // MARK: - Builder
 extension EmojiCodingView {
     private var aes256EncryptionView: some View {
-        CustomScrollView(backgroundImage: Image.background.emojiBackground) {
-            CustomNavigationTitle(title: vm.emojiCodecTitle, isLargeNavBar: $0)
-            Spacer()
-            NavigationToolButton(.system.cryptoSettings) {
-                goToSettings = true
-            }
-        } headerView: {
-            HeaderTextView(text: vm.headerText, offsetY: $0)
-        } scrollView: { proxy in
+        CustomScrollView(title: vm.emojiCodecTitle, backgroundImage: backImage) {
+            NavigationToolButton(.system.cryptoSettings) { goToSettings = true }
+        } content: { proxy in
             messageRows
                 .onChange(of: vm.messages) { scrollTo(proxy) }
         }
@@ -54,6 +50,7 @@ extension EmojiCodingView {
     
     private var messageRows: some View {
         VStack(spacing: 15) {
+            HeaderTextView(text: vm.headerText)
             ForEach(vm.messages) { message in
                 MessageView(message: message) {
                     copyText(message)
@@ -76,9 +73,12 @@ extension EmojiCodingView {
     
     private var bottomSafeArea: some View {
         VStack(spacing: 8) {
-            CustomMessageTextField($vm.text, .constant(false), vm.placeholder) {
-                vm.startCryptoProcess()
-            }
+            CustomTextField(
+                text: $vm.text,
+                placeholder: vm.placeholder,
+                isMultilined: true,
+                sendAction: vm.startCryptoProcess
+            )
             
             CryptoActionButtons($vm.currentMode, vm.decryptionTitle, vm.encryptionTitle)
         }

@@ -22,7 +22,7 @@ struct MessageView: View {
     private var transitionEdge: Edge {
         message.encryptionMode == .encrypt ? .trailing : .leading
     }
-    
+
     private let message: Message
     
     private let pressAction: () -> Void
@@ -45,10 +45,7 @@ extension MessageView {
                 Spacer()
             }
             
-            Text(message.resultText)
-                .font(.caption)
-                .fontDesign(.rounded)
-                .foregroundStyle(Color.void.mainText)
+            WrappingLabel(text: message.resultText)
                 .padding(8)
                 .background {
                     RoundedRectangle(cornerRadius: 12)
@@ -77,4 +74,39 @@ extension MessageView {
             )
         )
     }
+}
+
+// MARK: - WrappingLabel
+private struct WrappingLabel: UIViewRepresentable {
+    let text: String
+
+    func makeUIView(context: Context) -> UILabel {
+        let label = UILabel()
+        label.numberOfLines = 0
+        label.lineBreakMode = .byCharWrapping
+        label.adjustsFontForContentSizeCategory = true
+        label.font = Self.font
+        label.textColor = UIColor(Color.void.mainText)
+        label.backgroundColor = .clear
+        label.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        label.setContentCompressionResistancePriority(.required, for: .vertical)
+        return label
+    }
+
+    func updateUIView(_ uiView: UILabel, context: Context) {
+        uiView.text = text
+    }
+
+    func sizeThatFits(_ proposal: ProposedViewSize, uiView: UILabel, context: Context) -> CGSize? {
+        guard let width = proposal.width, width.isFinite else { return nil }
+        return uiView.sizeThatFits(CGSize(width: width, height: .greatestFiniteMagnitude))
+    }
+
+    private static let font: UIFont = {
+        let base = UIFont.preferredFont(forTextStyle: .caption1)
+        if let descriptor = base.fontDescriptor.withDesign(.rounded) {
+            return UIFont(descriptor: descriptor, size: 0)
+        }
+        return base
+    }()
 }

@@ -29,4 +29,5 @@ struct VoidColor {
     let greenLight = Color("Green Light")
     let payWallAccentDark = Color("PayWallAccentDark")
     let payWallAccentLight = Color("PayWallAccentLight")
+    let errorRed = Color("ErrorRed")
 }

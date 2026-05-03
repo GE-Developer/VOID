@@ -15,6 +15,8 @@ struct AES256EncryptionView: View {
     @State private var isCopied = false
     @State private var hideCopyAlertWorkItem: DispatchWorkItem?
     
+    let backImage = Image.background.aes256Argon2idVOID
+    
     var body: some View {
         aes256EncryptionView
             .navigationDestination(isPresented: $goToSettings) {
@@ -26,15 +28,9 @@ struct AES256EncryptionView: View {
 // MARK: - Builder
 extension AES256EncryptionView {
     private var aes256EncryptionView: some View {
-        CustomScrollView(backgroundImage: Image.background.aes256Argon2idVOID) {
-            CustomNavigationTitle(title: vm.title, isLargeNavBar: $0)
-            Spacer()
-            NavigationToolButton(.system.cryptoSettings) {
-                goToSettings = true
-            }
-        } headerView: {
-            HeaderTextView(text: vm.headetText, offsetY: $0)
-        } scrollView: { proxy in
+        CustomScrollView(title: vm.title, backgroundImage: backImage) {
+            NavigationToolButton(.system.cryptoSettings) { goToSettings = true }
+        } content: { proxy in
             messageRows
                 .onChange(of: vm.messages) { scrollTo(proxy) }
         }
@@ -56,6 +52,7 @@ extension AES256EncryptionView {
     
     private var messageRows: some View {
         VStack(spacing: 15) {
+            HeaderTextView(text: vm.headetText)
             ForEach(vm.messages) { message in
                 MessageView(message: message) {
                     copyText(message)
@@ -84,9 +81,13 @@ extension AES256EncryptionView {
     
     private var bottomSafeArea: some View {
         VStack(spacing: 8) {
-            CustomMessageTextField($vm.text, $isTextFieldDisabled, vm.placeholder) {
-                vm.startCryptoProcess()
-            }
+            CustomTextField(
+                text: $vm.text,
+                isDisabled: $isTextFieldDisabled,
+                placeholder: vm.placeholder,
+                isMultilined: true,
+                sendAction: vm.startCryptoProcess
+            )
             .onAppear(perform: checkPassword)
             .onTapGesture(perform: tappedOnTextFieldWithoutPassword)
             
