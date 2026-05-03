@@ -69,24 +69,26 @@ final class QRCodeGeneratorViewModel: ObservableObject {
     @Published var smsMessage = ""
 
     @Published private(set) var qrImage: CGImage?
+    @Published private(set) var generationFailed = false
 
     @MainActor
     func generate() async {
         guard !stringResult.isEmpty else {
             qrImage = nil
+            generationFailed = false
             return
         }
         var config = QRCodeConfiguration()
         config.errorCorrection = selectedErrorCorrection
+        generationFailed = false
         do {
             qrImage = try await QRCodeGeneratorManager.generateQRCode(
                 from: stringResult,
                 configuration: config
             )
-            print("generate")
         } catch {
-            print("QR generation failed: \(error)")
             qrImage = nil
+            generationFailed = true
         }
     }
     
@@ -142,6 +144,7 @@ final class QRCodeGeneratorViewModel: ObservableObject {
     let dataTypeTitle = QRDataType.title
     
     let errorTitle = L10n("Error.title")
+    let errorDescription = L10n("Error.qrGenerationFailed")
     let okTitle = "OK"
     
     let textPlaceholder = L10n("QRCode.Placeholder.text")

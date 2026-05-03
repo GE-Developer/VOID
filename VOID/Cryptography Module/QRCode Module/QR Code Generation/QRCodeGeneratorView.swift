@@ -117,7 +117,7 @@ struct QRCodeGeneratorView: View {
     }
     
     var body: some View {
-        CustomScrollView(title: vm.title, subTitle: "Привет") {
+        CustomScrollView(title: vm.title) {
             EmptyView()
         } content: { _ in
             qrCodeGeneratorView
@@ -167,6 +167,21 @@ extension QRCodeGeneratorView {
                     .scaledToFit()
                     .padding()
                     .drawingGroup()
+            } else if vm.generationFailed {
+                VStack(spacing: 8) {
+                    Image.system.warning
+                        .font(.largeTitle)
+                    Text(vm.errorTitle)
+                        .font(.callout)
+                        .fontDesign(.rounded)
+                    Text(vm.errorDescription)
+                        .font(.callout)
+                        .minimumScaleFactor(0.5)
+                        .fontDesign(.rounded)
+                }
+                .foregroundStyle(Color.void.errorRed)
+                .multilineTextAlignment(.center)
+                .padding()
             } else {
                 Image.system.qrCode
                     .font(.largeTitle)
