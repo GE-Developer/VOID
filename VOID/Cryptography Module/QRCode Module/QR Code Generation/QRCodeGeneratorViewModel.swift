@@ -70,42 +70,22 @@ final class QRCodeGeneratorViewModel: ObservableObject {
 
     @Published private(set) var qrImage: CGImage?
     @Published private(set) var generationFailed = false
-
-    @MainActor
-    func generate() async {
-        guard !stringResult.isEmpty else {
-            qrImage = nil
-            generationFailed = false
-            return
-        }
-        var config = QRCodeConfiguration()
-        config.errorCorrection = selectedErrorCorrection
-        generationFailed = false
-        do {
-            qrImage = try await QRCodeGeneratorManager.generateQRCode(
-                from: stringResult,
-                configuration: config
-            )
-        } catch {
-            qrImage = nil
-            generationFailed = true
-        }
-    }
     
     var payloadDescription: String {
-        print("payloadDescription")
-        return "\(payloadProgress) / \(selectedErrorCorrection.byteLimit)"
+        "\(payloadProgress) / \(selectedErrorCorrection.byteLimit)"
     }
-    
+
+    var payloadFraction: Double {
+        Double(payloadProgress) / Double(selectedErrorCorrection.byteLimit)
+    }
+
     var disabledErrorCorrectionLevels: Set<QRErrorCorrection> {
-        print("disabledErrorCorrectionLevels")
         let progress = payloadProgress
         return Set(QRErrorCorrection.allCases.filter { progress > $0.byteLimit })
     }
-    
+
     var stringResult: String {
-        print("stringResult")
-        return QRCodeGeneratorManager.formatPayload(
+        QRCodeGeneratorManager.formatPayload(
             type: selectedDataType,
             text: text,
             url: selectedURLScheme.rawValue + url,
@@ -125,9 +105,8 @@ final class QRCodeGeneratorViewModel: ObservableObject {
             longitude: ""
         )
     }
-    
+
     private var payloadProgress: Int {
-        print("payloadProgress")
         switch selectedDataType {
         case .plainText: return text.utf8.count
         case .email:     return emailBody.utf8.count
@@ -145,7 +124,8 @@ final class QRCodeGeneratorViewModel: ObservableObject {
     
     let errorTitle = L10n("Error.title")
     let errorDescription = L10n("Error.qrGenerationFailed")
-    let okTitle = "OK"
+    let inputDataTitle = L10n("QRCode.InputData.title")
+    let payloadTitle = L10n("QRCode.Payload.title")
     
     let textPlaceholder = L10n("QRCode.Placeholder.text")
     let urlPlaceholder = "example.com"
@@ -156,18 +136,38 @@ final class QRCodeGeneratorViewModel: ObservableObject {
     let emailPlaceholder = "user@gmail.com"
     let subjectPlaceholder = L10n("QRCode.Placeholder.subject")
     let messagePlaceholder = L10n("QRCode.Placeholder.message")
-    let smsInputHeader = L10n("QRCode.Input.sms")
+    
+    @MainActor
+    func generate() async {
+        guard canGenerate() else {
+            qrImage = nil
+            generationFailed = false
+            return
+        }
+        var config = QRCodeConfiguration()
+        config.errorCorrection = selectedErrorCorrection
+        generationFailed = false
+        do {
+            qrImage = try await QRCodeGeneratorManager.generateQRCode(
+                from: stringResult,
+                configuration: config
+            )
+        } catch {
+            qrImage = nil
+            generationFailed = true
+        }
+    }
 
     func isEmailValid(_ value: String) -> Bool {
-        Validator.isValid(value, type: .email)
+        value.isEmpty || Validator.isValid(value, type: .email)
     }
-    
+
     func isPhoneValid(_ value: String) -> Bool {
-        Validator.isValid(value, type: .phone)
+        value.isEmpty || Validator.isValid(value, type: .phone)
     }
-    
+
     func isUrlValid(_ value: String)   -> Bool {
-        Validator.isValid(value, type: .url)
+        value.isEmpty || Validator.isValid(value, type: .url)
     }
     
     func counter(_ value: String, for fieldType: FieldType) -> String {
@@ -202,42 +202,32 @@ final class QRCodeGeneratorViewModel: ObservableObject {
             return String(cleaned.prefix(fieldType.limit))
         }
     }
+
+    private func canGenerate() -> Bool {
+        switch selectedDataType {
+        case .plainText:
+            return !text.isEmpty
+        case .url:
+            return !url.isEmpty && isUrlValid(url)
+        case .wifi:
+            return wifiEncryption == .open
+                ? !wifiSSID.isEmpty
+                : !wifiSSID.isEmpty && !wifiPassword.isEmpty
+        case .contact:
+            let hasInput = !contactName.isEmpty
+                || !contactPhone.isEmpty
+                || !contactEmail.isEmpty
+            return hasInput
+                && isPhoneValid(contactPhone)
+                && isEmailValid(contactEmail)
+        case .email:
+            return !emailAddress.isEmpty && isEmailValid(emailAddress)
+        case .phone:
+            return !phoneNumber.isEmpty && isPhoneValid(phoneNumber)
+        case .sms:
+            return !smsNumber.isEmpty && isPhoneValid(smsNumber)
+        case .location:
+            return false
+        }
+    }
 }
-
-
-
-
-
-
-//    // MARK: UI constants
-//
-//    let title = L10n("QRCode.title")
-//    let errorTitle = L10n("Error.title")
-//    let okTitle = "OK"
-//
-//    let customizationButtonTitle = L10n("QRCode.Customization.button")
-//    let customizationButtonIcon = "paintbrush"
-//
-//    let addPresetButtonTitle = L10n("QRCode.Preset.add")
-//    let addPresetButtonIcon = "plus"
-//    let presetsSectionHeader = L10n("QRCode.Preset.listHeader")
-//    let deletePresetTitle = L10n("QRCode.Preset.delete")
-//
-//    let urlInputHeader = L10n("QRCode.Input.url")
-//    let wifiInputHeader = L10n("QRCode.Input.wifi")
-//    let contactInputHeader = L10n("QRCode.Input.contact")
-//    let emailInputHeader = L10n("QRCode.Input.email")
-//    let phoneInputHeader = L10n("QRCode.Input.phone")
-//    let smsInputHeader = L10n("QRCode.Input.sms")
-//    let locationInputHeader = L10n("QRCode.Input.location")
-//
-//    let textPlaceholder = L10n("QRCode.Placeholder.text")
-//    let urlPlaceholder = "example.com"
-//    let ssidPlaceholder = L10n("QRCode.Placeholder.ssid")
-//    let passwordPlaceholder = L10n("QRCode.Placeholder.password")
-//    let namePlaceholder = L10n("QRCode.Placeholder.name")
-
-//    let subjectPlaceholder = L10n("QRCode.Placeholder.subject")
-//    let messagePlaceholder = L10n("QRCode.Placeholder.message")
-//
-//    let wifiEncryptionTitle = L10n("QRCode.Placeholder.encryption")

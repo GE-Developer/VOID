@@ -132,25 +132,8 @@ extension QRCodeGeneratorView {
             qrPreview
             errorCorrectionPicker
             dataTypePicker
-            
-            switch vm.selectedDataType {
-            case .plainText:
-                plainTextInput
-            case .url:
-                urlInput
-            case .wifi:
-                wifiInput
-            case .contact:
-                contactInput
-            case .email:
-                emailMessageInput
-            case .phone:
-                phoneInput
-            case .sms:
-                smsInput
-            case .location:
-                EmptyView()
-            }
+            inputDataView
+            payloadProgressView
         }
     }
     
@@ -218,6 +201,53 @@ extension QRCodeGeneratorView {
             capsuleName: { $0.name }
         )
     }
+    
+    private var inputDataView: some View {
+        VStack {
+            header(text: vm.inputDataTitle)
+            
+            switch vm.selectedDataType {
+            case .plainText:
+                plainTextInput
+            case .url:
+                urlInput
+            case .wifi:
+                wifiInput
+            case .contact:
+                contactInput
+            case .email:
+                emailMessageInput
+            case .phone:
+                phoneInput
+            case .sms:
+                smsInput
+            case .location:
+                EmptyView()
+            }
+        }
+    }
+    
+    @ViewBuilder
+    private var payloadProgressView: some View {
+        switch vm.selectedDataType {
+        case .plainText:
+            payloadProgressBar
+        case .url:
+            EmptyView()
+        case .wifi:
+            EmptyView()
+        case .contact:
+            EmptyView()
+        case .email:
+            payloadProgressBar
+        case .phone:
+            EmptyView()
+        case .sms:
+            payloadProgressBar
+        case .location:
+            EmptyView()
+        }
+    }
 
     private var plainTextInput: some View {
         VStack(spacing: 8) {
@@ -226,8 +256,6 @@ extension QRCodeGeneratorView {
                 placeholder: vm.textPlaceholder,
                 isMultilined: true
             )
-
-            payloadProgressBar
         }
     }
     
@@ -323,8 +351,6 @@ extension QRCodeGeneratorView {
                 placeholder: vm.messagePlaceholder,
                 isMultilined: true
             )
-
-            payloadProgressBar
         }
     }
 
@@ -355,43 +381,46 @@ extension QRCodeGeneratorView {
                 placeholder: vm.messagePlaceholder,
                 isMultilined: true
             )
-
-            payloadProgressBar
         }
     }
-}
 
-// MARK: - Payload progress
-extension QRCodeGeneratorView {
     private var payloadProgressBar: some View {
-        VStack(alignment: .trailing) {
-//            ProgressView(value: vm.payloadProgress)
-//                .tint(
-//                    switch vm.payloadProgress {
-//                    case 0.95...: .void.errorRed
-//                    case 0.75...: .orange
-//                    default:      Color.void.accentLight
-//                    }
-//                )
-            
-            counterFor(vm.payloadDescription)
+        VStack(alignment: .trailing, spacing: 4) {
+            VStack {
+                header(text: vm.payloadTitle)
+                ProgressView(value: vm.payloadFraction)
+                    .tint(progressColor)
+            }
 
+            counterFor(vm.payloadDescription)
         }
     }
-    
+
     private func counterFor(_ text: String) -> some View {
         Text(text)
             .font(.caption2)
             .fontDesign(.rounded)
             .foregroundStyle(Color.void.secondaryText)
     }
+
+    private var progressColor: Color {
+        switch vm.payloadFraction {
+        case 0.95...: .void.errorRed
+        case 0.75...: .orange
+        default:      Color.void.accentLight
+        }
+    }
     
-//    /// Цвет прогресс-бара по мере заполнения. SwiftUI-тип — живёт во View.
-//    private var progressColor: Color {
-//        switch vm.payloadProgress {
-//        case 0.95...: .void.errorRed
-//        case 0.75...: .orange
-//        default:      Color.void.accentLight
-//        }
-//    }
+    private func header(text: String) -> some View {
+        Text(text)
+            .foregroundStyle(Color.void.mainText)
+            .font(.caption)
+            .fontDesign(.rounded)
+            .textCase(.uppercase)
+            .lineLimit(2)
+            .minimumScaleFactor(0.5)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .multilineTextAlignment(.leading)
+            .padding(.horizontal, 6)
+    }
 }

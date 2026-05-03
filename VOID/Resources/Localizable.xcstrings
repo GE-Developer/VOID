@@ -27837,6 +27837,28 @@
         }
       }
     },
+    "QRCode.InputData.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Input Data"
+          }
+        }
+      }
+    },
+    "QRCode.Payload.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capacity"
+          }
+        }
+      }
+    },
     "QRCode.Placeholder.message" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27903,17 +27925,6 @@
         }
       }
     },
-    "QRCode.Preset.delete" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Delete"
-          }
-        }
-      }
-    },
     "QRCode.Preset.namePlaceholder" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27932,6 +27943,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Save"
+          }
+        }
+      }
+    },
+    "QRCode.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR Code"
           }
         }
       }
