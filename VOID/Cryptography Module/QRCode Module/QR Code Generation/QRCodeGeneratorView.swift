@@ -385,7 +385,7 @@ extension QRCodeGeneratorView {
     }
 
     private var payloadProgressBar: some View {
-        VStack(alignment: .trailing, spacing: 4) {
+        VStack(spacing: 4) {
             VStack {
                 header(text: vm.payloadTitle)
                 ProgressView(value: vm.payloadFraction)
@@ -397,16 +397,19 @@ extension QRCodeGeneratorView {
     }
 
     private func counterFor(_ text: String) -> some View {
-        Text(text)
-            .font(.caption2)
-            .fontDesign(.rounded)
-            .foregroundStyle(Color.void.secondaryText)
+        HStack {
+            Spacer()
+            Text(text)
+                .font(.caption2)
+                .fontDesign(.rounded)
+                .foregroundStyle(Color.void.secondaryText)
+        }
     }
 
     private var progressColor: Color {
         switch vm.payloadFraction {
         case 0.95...: .void.errorRed
-        case 0.75...: .orange
+        case 0.75...: .void.orange
         default:      Color.void.accentLight
         }
     }
