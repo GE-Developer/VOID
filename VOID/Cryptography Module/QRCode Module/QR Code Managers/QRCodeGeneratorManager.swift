@@ -31,14 +31,14 @@ struct QRCodeGeneratorManager {
             doc.design.shape.pupil = style.pupilStyle.generator
 
             // Step 4: Off-pixels
-            if let offStyle = style.offPixelStyle {
-                doc.design.shape.offPixels = offStyle.generator
-                doc.design.style.offPixels = makeFill(
-                    type: style.offPixelsFillType,
-                    color: style.offPixelsColor,
-                    gradientColor: style.offPixelsGradientColor
-                )
-            }
+            let offStyle = style.offPixelStyle 
+            doc.design.shape.offPixels = offStyle.generator
+            doc.design.style.offPixels = makeFill(
+                type: style.offPixelsFillType,
+                color: style.offPixelsColor,
+                gradientColor: style.offPixelsGradientColor
+            )
+            
 
             // Step 5: Negative mode
             doc.design.shape.negatedOnPixelsOnly = style.negatedOnPixelsOnly

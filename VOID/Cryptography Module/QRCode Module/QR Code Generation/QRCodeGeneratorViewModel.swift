@@ -9,7 +9,8 @@ import Foundation
 import CoreGraphics
 import CoreLocation
 
-final class QRCodeGeneratorViewModel: ObservableObject {
+@Observable
+final class QRCodeGeneratorViewModel {
     enum FieldType {
         case url
         case ssid
@@ -31,7 +32,7 @@ final class QRCodeGeneratorViewModel: ObservableObject {
             }
         }
     }
-    
+
     enum URLScheme: String, CaseIterable {
         case https = "https://"
         case http  = "http://"
@@ -43,35 +44,45 @@ final class QRCodeGeneratorViewModel: ObservableObject {
         case wep  = "WEP"
         case open = "N/A"
     }
-    
-    @Published var selectedErrorCorrection: QRErrorCorrection = .high {
+
+    var selectedErrorCorrection: QRErrorCorrection = .high {
         didSet {
             text = trimToByteLimit(text)
             emailBody = trimToByteLimit(emailBody)
             smsMessage = trimToByteLimit(smsMessage)
+            configuration.errorCorrection = selectedErrorCorrection
         }
     }
-    @Published var selectedDataType: QRDataType = .plainText
 
-    @Published var text = ""
-    @Published var selectedURLScheme: URLScheme = .http
-    @Published var url = ""
-    @Published var wifiSSID = ""
-    @Published var wifiPassword = ""
-    @Published var wifiEncryption: WifiEncryption = .wpa
-    @Published var contactName = ""
-    @Published var contactPhone = ""
-    @Published var contactEmail = ""
-    @Published var emailAddress = ""
-    @Published var emailSubject = ""
-    @Published var emailBody = ""
-    @Published var phoneNumber = ""
-    @Published var smsNumber = ""
-    @Published var smsMessage = ""
-    @Published var selectedCoordinate: CLLocationCoordinate2D?
+    var selectedDataType: QRDataType = .plainText
 
-    @Published private(set) var qrImage: CGImage?
-    @Published private(set) var generationFailed = false
+    var configuration = QRCodeConfiguration() {
+        didSet {
+            regenerateTask?.cancel()
+            regenerateTask = Task { @MainActor in
+                try? await Task.sleep(for: .milliseconds(150))
+                guard !Task.isCancelled else { return }
+                await generate()
+            }
+        }
+    }
+
+    var text = ""
+    var selectedURLScheme: URLScheme = .http
+    var url = ""
+    var wifiSSID = ""
+    var wifiPassword = ""
+    var wifiEncryption: WifiEncryption = .wpa
+    var contactName = ""
+    var contactPhone = ""
+    var contactEmail = ""
+    var emailAddress = ""
+    var emailSubject = ""
+    var emailBody = ""
+    var phoneNumber = ""
+    var smsNumber = ""
+    var smsMessage = ""
+    var selectedCoordinate: CLLocationCoordinate2D?
 
     var latitudeString: String {
         selectedCoordinate.map { String(format: "%.6f", $0.latitude) } ?? ""
@@ -120,6 +131,9 @@ final class QRCodeGeneratorViewModel: ObservableObject {
             longitude: longitudeString
         )
     }
+    
+    private(set) var qrImage: CGImage?
+    private(set) var generationFailed = false
 
     private var payloadProgress: Int {
         switch selectedDataType {
@@ -151,7 +165,15 @@ final class QRCodeGeneratorViewModel: ObservableObject {
     let emailPlaceholder = "user@gmail.com"
     let subjectPlaceholder = L10n("QRCode.Placeholder.subject")
     let messagePlaceholder = L10n("QRCode.Placeholder.message")
+
+    let customizeButtonTitle = L10n("QRCode.Customization.openButton")
     
+    @ObservationIgnored private var regenerateTask: Task<Void, Never>?
+    
+    init() {
+        configuration.errorCorrection = selectedErrorCorrection
+    }
+
     @MainActor
     func generate() async {
         guard canGenerate() else {
@@ -159,13 +181,13 @@ final class QRCodeGeneratorViewModel: ObservableObject {
             generationFailed = false
             return
         }
-        var config = QRCodeConfiguration()
-        config.errorCorrection = selectedErrorCorrection
+
         generationFailed = false
+        
         do {
             qrImage = try await QRCodeGeneratorManager.generateQRCode(
                 from: stringResult,
-                configuration: config
+                configuration: configuration
             )
         } catch {
             qrImage = nil

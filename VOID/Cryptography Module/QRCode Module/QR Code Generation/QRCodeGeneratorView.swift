@@ -9,8 +9,10 @@ import SwiftUI
 import MapKit
 
 struct QRCodeGeneratorView: View {
-    @StateObject private var vm = QRCodeGeneratorViewModel()
-    
+    @State private var vm = QRCodeGeneratorViewModel()
+    @State private var showCustomization = false
+    @State private var showAbout = false
+
     private var plainTextBinding: Binding<String> {
         Binding(
             get: { vm.text },
@@ -115,7 +117,21 @@ struct QRCodeGeneratorView: View {
             set: { vm.smsMessage = vm.trimToByteLimit($0) }
         )
     }
-    
+
+    private var errorCorrectionBinding: Binding<QRErrorCorrection> {
+        Binding(
+            get: { vm.selectedErrorCorrection },
+            set: { vm.selectedErrorCorrection = $0 }
+        )
+    }
+
+    private var dataTypeBinding: Binding<QRDataType> {
+        Binding(
+            get: { vm.selectedDataType },
+            set: { vm.selectedDataType = $0 }
+        )
+    }
+
     private var progressColor: Color {
         switch vm.payloadFraction {
         case 0.95...: .void.errorRed
@@ -133,9 +149,20 @@ struct QRCodeGeneratorView: View {
     
     var body: some View {
         CustomScrollView(title: vm.title) {
-            EmptyView()
+            NavigationToolButton(.system.info) { showAbout = true }
         } content: { _ in
             qrCodeGeneratorView
+        }
+        .task(id: vm.stringResult) {
+            try? await Task.sleep(for: .milliseconds(300))
+            guard !Task.isCancelled else { return }
+            await vm.generate()
+        }
+        .navigationDestination(isPresented: $showCustomization) {
+            NavigationLazyView(QRCodeCustomizationView(mainVM: vm))
+        }
+        .navigationDestination(isPresented: $showAbout) {
+            NavigationLazyView(DetailedInformationView(vm: AboutQRCodeViewModel(), 10))
         }
     }
 }
@@ -144,7 +171,14 @@ struct QRCodeGeneratorView: View {
 extension QRCodeGeneratorView {
     private var qrCodeGeneratorView: some View {
         VStack(spacing: 24) {
-            qrPreview
+            HStack(spacing: 24) {
+                downloadButton
+                qrPreview
+                VStack(spacing: 24) {
+                    addLogoButton
+                    customizeButton
+                }
+            }
             errorCorrectionPicker
             dataTypePicker
             inputDataView
@@ -189,20 +223,44 @@ extension QRCodeGeneratorView {
         }
         .aspectRatio(1, contentMode: .fit)
         .frame(maxWidth: .infinity)
-        .padding(.horizontal, 50)
-        .task(id: vm.stringResult) {
-            try? await Task.sleep(for: .milliseconds(300))
-            guard !Task.isCancelled else { return }
-            await vm.generate()
+    }
+
+    private var downloadButton: some View {
+        Button(action: { }) {
+            Image.system.download
+                .foregroundStyle(Color.void.secondaryText)
+                .padding()
+                .background(Color(.secondarySystemGroupedBackground))
+                .clipShape(Circle())
+                .shadow(color: Color.void.accentLight, radius: 4)
         }
-        .onChange(of: vm.selectedErrorCorrection) {
-            Task { await vm.generate() }
+    }
+
+    private var customizeButton: some View {
+        Button(action: { showCustomization = true }) {
+            Image.system.paintbrush
+                .foregroundStyle(Color.void.secondaryText)
+                .padding()
+                .background(Color(.secondarySystemGroupedBackground))
+                .clipShape(Circle())
+                .shadow(color: Color.void.accentLight, radius: 4)
+        }
+    }
+    
+    private var addLogoButton: some View {
+        Button(action: { }) {
+            Image.system.addImage
+                .foregroundStyle(Color.void.secondaryText)
+                .padding()
+                .background(Color(.secondarySystemGroupedBackground))
+                .clipShape(Circle())
+                .shadow(color: Color.void.accentLight, radius: 4)
         }
     }
 
     private var errorCorrectionPicker: some View {
         CustomCapsulePicker(
-            selection: $vm.selectedErrorCorrection,
+            selection: errorCorrectionBinding,
             disabledItems: vm.disabledErrorCorrectionLevels,
             title: vm.errorCorrectionTitle,
             capsuleName: { $0.name }
@@ -211,15 +269,15 @@ extension QRCodeGeneratorView {
 
     private var dataTypePicker: some View {
         CustomCapsulePicker(
-            selection: $vm.selectedDataType,
+            selection: dataTypeBinding,
             title: vm.dataTypeTitle,
             capsuleName: { $0.name }
         )
     }
     
     private var inputDataView: some View {
-        VStack {
-            header(text: vm.inputDataTitle)
+        VStack(spacing: 12) {
+            FormHeaderView(vm.inputDataTitle)
             
             switch vm.selectedDataType {
             case .plainText:
@@ -423,7 +481,7 @@ extension QRCodeGeneratorView {
     private var payloadProgressBar: some View {
         VStack(spacing: 4) {
             VStack {
-                header(text: vm.payloadTitle)
+                FormHeaderView(vm.payloadTitle)
                 ProgressView(value: vm.payloadFraction)
                     .tint(progressColor)
             }
@@ -440,18 +498,5 @@ extension QRCodeGeneratorView {
                 .fontDesign(.rounded)
                 .foregroundStyle(Color.void.secondaryText)
         }
-    }
-    
-    private func header(text: String) -> some View {
-        Text(text)
-            .foregroundStyle(Color.void.mainText)
-            .font(.caption)
-            .fontDesign(.rounded)
-            .textCase(.uppercase)
-            .lineLimit(2)
-            .minimumScaleFactor(0.5)
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .multilineTextAlignment(.leading)
-            .padding(.horizontal, 6)
     }
 }
