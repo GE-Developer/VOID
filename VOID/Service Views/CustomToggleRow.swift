@@ -35,11 +35,13 @@ extension CustomToggleRow {
                     if let icon {
                         icon
                             .foregroundStyle(Gradient.accent)
+                            .frame(width: 50)
                     } else {
                         Color.clear
+                            .frame(width: 0)
+                            .padding(.leading, 16)
                     }
                 }
-                .frame(width: 50)
                 Text(title)
                     .foregroundStyle(Color.void.mainText)
                     .font(.headline)

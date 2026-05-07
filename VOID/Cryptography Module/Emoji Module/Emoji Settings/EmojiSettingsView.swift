@@ -18,7 +18,7 @@ struct EmojiSettingsView: View {
     var body: some View {
         emojiSettingsView
             .navigationDestination(isPresented: $showInfo) {
-                NavigationLazyView(AboutEncryptionView(vm: AboutEmojiViewModel(), 10))
+                NavigationLazyView(DetailedInformationView(vm: AboutEmojiViewModel(), 10))
             }
             .fullScreenCover(isPresented: $showPayWall) {
                 NavigationLazyView(PayWallView(store))

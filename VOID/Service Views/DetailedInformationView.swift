@@ -1,5 +1,5 @@
 //
-//  AboutEncryptionView.swift
+//  DetailedInformationView.swift
 //  VOID
 //
 //  Created by GE-Developer
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct AboutEncryptionView: View {
-    private let vm: AboutEncryptionProtocol
+struct DetailedInformationView: View {
+    private let vm: DetailedInformationProtocol
     private let animationLetterSpacing: CGFloat
     
-    init(vm: AboutEncryptionProtocol, _ animationLetterSpacing: CGFloat = 1) {
+    init(vm: DetailedInformationProtocol, _ animationLetterSpacing: CGFloat = 1) {
         self.vm = vm
         self.animationLetterSpacing = animationLetterSpacing
     }
@@ -22,7 +22,7 @@ struct AboutEncryptionView: View {
 }
 
 // MARK: - Builder
-extension AboutEncryptionView {
+extension DetailedInformationView {
     private var aboutAES256View: some View {
         CustomScrollView(title: vm.title, subTitle: vm.subtitle) {
             EmptyView()
@@ -56,9 +56,9 @@ extension AboutEncryptionView {
             
             
             if let title = vm.secondTitle, let description = vm.secondDescription {
-                blockTitle(title, Gradient.gold)
+                blockTitle(title, Gradient.red)
                     .padding(.top, 20)
-                blockDescription(description, Gradient.gold)
+                blockDescription(description, Gradient.red)
             }
             
             if let title = vm.thirdTitle, let description = vm.thirdDescription {
@@ -68,9 +68,9 @@ extension AboutEncryptionView {
             }
             
             if let title = vm.fourthTitle, let description = vm.fourthDescription {
-                blockTitle(title, Gradient.gold)
+                blockTitle(title, Gradient.red)
                     .padding(.top, 20)
-                blockDescription(description, Gradient.gold)
+                blockDescription(description, Gradient.red)
             }
             
             if let title = vm.fifthTitle, let description = vm.fifthDescription {

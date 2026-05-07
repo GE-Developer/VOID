@@ -30,7 +30,7 @@ struct AES256SettingsView: View {
                 NavigationLazyView(VoidNumbersView(vm: vm))
             }
             .navigationDestination(isPresented: $showInfo) {
-                NavigationLazyView(AboutEncryptionView(vm: AboutAES256ViewModel()))
+                NavigationLazyView(DetailedInformationView(vm: AboutAES256ViewModel()))
             }
             .fullScreenCover(isPresented: $showPayWall) {
                 NavigationLazyView(PayWallView(store))

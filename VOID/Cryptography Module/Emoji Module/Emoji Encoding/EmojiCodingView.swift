@@ -50,7 +50,7 @@ extension EmojiCodingView {
     
     private var messageRows: some View {
         VStack(spacing: 15) {
-            HeaderTextView(text: vm.headerText)
+            TopViewHeaderText(text: vm.headerText)
             ForEach(vm.messages) { message in
                 MessageView(message: message) {
                     copyText(message)

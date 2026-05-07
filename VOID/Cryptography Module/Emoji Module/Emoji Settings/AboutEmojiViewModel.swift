@@ -5,9 +5,7 @@
 //  Created by GE-Developer
 //
 
-import Foundation
-
-struct AboutEmojiViewModel: AboutEncryptionProtocol {
+struct AboutEmojiViewModel: DetailedInformationProtocol {
     let title = L10n("About.information")
     let subtitle = L10n("Emoji")
     

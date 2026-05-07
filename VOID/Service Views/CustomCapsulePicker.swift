@@ -38,27 +38,21 @@ struct CustomCapsulePicker<Item: CaseIterable & Hashable>: View
 // MARK: - Builder
 extension CustomCapsulePicker {
     private var capsulePicker: some View {
-        VStack {
+        VStack(spacing: 12) {
             if let title {
-                Text(title)
-                    .foregroundStyle(Color.void.mainText)
-                    .font(.caption)
-                    .fontDesign(.rounded)
-                    .textCase(.uppercase)
-                    .lineLimit(2)
-                    .minimumScaleFactor(0.5)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .multilineTextAlignment(.leading)
-                    .padding(.horizontal, 6)
+                FormHeaderView(title)
             }
             ScrollViewReader { proxy in
                 ScrollView(.horizontal, showsIndicators: false) {
-                    HStack(spacing: 8) {
+                    LazyHStack(spacing: 8) {
                         ForEach(Item.allCases, id: \.self) { item in
                             capsuleButton(item)
                                 .id(item)
                         }
                     }
+                }
+                .onAppear {
+                    proxy.scrollTo(selection, anchor: .center)
                 }
                 .onChange(of: selection) { _, newValue in
                     withAnimation {

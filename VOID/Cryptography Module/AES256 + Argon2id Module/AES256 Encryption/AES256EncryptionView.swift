@@ -52,7 +52,7 @@ extension AES256EncryptionView {
     
     private var messageRows: some View {
         VStack(spacing: 15) {
-            HeaderTextView(text: vm.headetText)
+            TopViewHeaderText(text: vm.headetText)
             ForEach(vm.messages) { message in
                 MessageView(message: message) {
                     copyText(message)

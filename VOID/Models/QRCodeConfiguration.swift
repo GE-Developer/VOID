@@ -19,11 +19,11 @@ struct QRCodeConfiguration {
 struct QRVisualStyle {
     // MARK: - Shapes
     var pixelStyle: QRPixelStyle = .square
-    var eyeStyle: QREyeStyle = .square
+    var eyeStyle: QREyeStyle = .original
     var pupilStyle: QRPupilStyle = .original
 
     // MARK: - Off-Pixels
-    var offPixelStyle: QRPixelStyle? = nil
+    var offPixelStyle: QRPixelStyle = .square
     var negatedOnPixelsOnly: Bool = false
 
     // MARK: - Foreground (Pixels)
@@ -33,13 +33,13 @@ struct QRVisualStyle {
 
     // MARK: - Off-Pixels Colors
     var offPixelsFillType: FillType = .solid
-    var offPixelsColor: CGColor = CGColor(red: 0.8, green: 0.8, blue: 0.8, alpha: 1)
-    var offPixelsGradientColor: CGColor = CGColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 1)
+    var offPixelsColor: CGColor = CGColor(red: 1, green: 1, blue: 1, alpha: 0)
+    var offPixelsGradientColor: CGColor = CGColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 0)
 
     // MARK: - Background
     var backgroundFillType: FillType = .solid
     var backgroundColor: CGColor = CGColor(red: 1, green: 1, blue: 1, alpha: 1)
-    var backgroundGradientColor: CGColor = CGColor(red: 0.9, green: 0.9, blue: 1, alpha: 1)
+    var backgroundGradientColor: CGColor = CGColor(red: 0.6, green: 0.6, blue: 0.6, alpha: 1)
     var backgroundCornerRadius: CGFloat = 0
 
     // MARK: - Eye & Pupil Colors

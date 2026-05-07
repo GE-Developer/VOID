@@ -1,5 +1,5 @@
 //
-//  HeaderTextView.swift
+//  TopViewHeaderText.swift
 //  VOID
 //
 //  Created by GE-Developer
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HeaderTextView: View {
+struct TopViewHeaderText: View {
     private let text: String
     
     init(text: String) {
@@ -20,7 +20,7 @@ struct HeaderTextView: View {
 }
 
 // MARK: - Builder
-extension HeaderTextView {
+extension TopViewHeaderText {
     private var headerTextView: some View {
         HStack() {
             Text(text.asMarkdown)

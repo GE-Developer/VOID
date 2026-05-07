@@ -50,6 +50,9 @@ struct SystemImage {
     let contact = Image(systemName: "person.crop.circle")
     let phone = Image(systemName: "phone.fill")
     let email = Image(systemName: "envelope")
+    let paintbrush = Image(systemName: "paintbrush.fill")
+    let addImage = Image(systemName: "photo.badge.plus")
+    let download = Image(systemName: "square.and.arrow.down")
     
     func key(_ isFilled: Bool = false) -> Image {
         isFilled ? Image(systemName: "key.fill") : Image(systemName: "key")

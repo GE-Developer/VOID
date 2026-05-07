@@ -21,7 +21,7 @@ extension VoidNumbersView {
         CustomScrollView(title: vm.voidTitle, subTitle: vm.subTitle) {
             EmptyView()
         } content: { proxy in
-            HeaderTextView(text: vm.voidInstructions)
+            TopViewHeaderText(text: vm.voidInstructions)
                 .padding(.bottom)
             CustomForm(headerText: vm.voidSubtitle) {
                 LazyVStack(spacing: 0) {
