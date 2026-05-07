@@ -66,25 +66,19 @@ final class AES256CryptoManager {
         var container = Data()
         container.append(CryptoVersion.v1.rawValue)
         
-        var saltLen = UInt16(salt.count).bigEndian
-        withUnsafeBytes(of: &saltLen) { container.append(contentsOf: $0) }
+        BinaryCodec.appendUInt16(UInt16(salt.count), to: &container)
         container.append(salt)
-        
-        var iters = parameters.iterations.bigEndian
-        withUnsafeBytes(of: &iters) { container.append(contentsOf: $0) }
-        
-        var mem = parameters.memory.bigEndian
-        withUnsafeBytes(of: &mem) { container.append(contentsOf: $0) }
-        
+
+        BinaryCodec.appendUInt16(parameters.iterations, to: &container)
+        BinaryCodec.appendUInt32(parameters.memory, to: &container)
+
         container.append(parameters.parallelism)
         container.append(parameters.keyLength)
         container.append(parameters.actualLayers)
-        
-        var exp = parameters.duration.bigEndian
-        withUnsafeBytes(of: &exp) { container.append(contentsOf: $0) }
-        
-        var cipherLen = UInt32(encryptedText.count).bigEndian
-        withUnsafeBytes(of: &cipherLen) { container.append(contentsOf: $0) }
+
+        BinaryCodec.appendUInt64(parameters.duration, to: &container)
+
+        BinaryCodec.appendUInt32(UInt32(encryptedText.count), to: &container)
         container.append(encryptedText)
         
         // MARK: - Meta key for container wrapping
@@ -224,50 +218,29 @@ final class AES256CryptoManager {
         
         switch version {
         case .v1:
-            func readUInt16BE(_ data: Data, _ offset: inout Int) throws -> UInt16 {
-                guard offset + 2 <= data.count else { throw CryptoError.invalidFormat }
-                var v: UInt16 = 0
-                withUnsafeMutableBytes(of: &v) { $0.copyBytes(from: data[offset..<offset+2]) }
-                offset += 2
-                return UInt16(bigEndian: v)
-            }
-            
-            func readUInt32BE(_ data: Data, _ offset: inout Int) throws -> UInt32 {
-                guard offset + 4 <= data.count else { throw CryptoError.invalidFormat }
-                var v: UInt32 = 0
-                withUnsafeMutableBytes(of: &v) { $0.copyBytes(from: data[offset..<offset+4]) }
-                offset += 4
-                return UInt32(bigEndian: v)
-            }
-            
-            func readUInt64BE(_ data: Data, _ offset: inout Int) throws -> UInt64 {
-                guard offset + 8 <= data.count else { throw CryptoError.invalidFormat }
-                var v: UInt64 = 0
-                withUnsafeMutableBytes(of: &v) { $0.copyBytes(from: data[offset..<offset+8]) }
-                offset += 8
-                return UInt64(bigEndian: v)
-            }
-            
-            let saltLen = Int(try readUInt16BE(container, &offset))
+            let saltLen = Int(try BinaryCodec.readUInt16(container, &offset))
             guard container.count >= offset + saltLen else {
                 throw CryptoError.invalidFormat
             }
             let salt = container.subdata(in: offset..<offset + saltLen)
             offset += saltLen
-            
-            let iterations = try readUInt16BE(container, &offset)
-            let memory = try readUInt32BE(container, &offset)
+
+            let iterations = try BinaryCodec.readUInt16(container, &offset)
+            let memory = try BinaryCodec.readUInt32(container, &offset)
+
+            guard container.count >= offset + 3 else { throw CryptoError.invalidFormat }
             let parallelism = container[offset]; offset += 1
             let keyLength = container[offset]; offset += 1
             let layers = container[offset]; offset += 1
-            let expiration = try readUInt64BE(container, &offset)
-            
+
+            let expiration = try BinaryCodec.readUInt64(container, &offset)
+
             if expiration != 0 {
                 let now = UInt64(Date().timeIntervalSince1970)
                 guard now <= expiration else { throw CryptoError.expired }
             }
-            
-            let cipherLen = try readUInt32BE(container, &offset)
+
+            let cipherLen = try BinaryCodec.readUInt32(container, &offset)
             guard container.count >= offset + Int(cipherLen) else { throw CryptoError.invalidFormat }
             let cipher = container.subdata(in: offset..<offset + Int(cipherLen))
             

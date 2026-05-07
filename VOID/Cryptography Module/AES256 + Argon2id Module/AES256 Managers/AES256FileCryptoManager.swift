@@ -7,6 +7,7 @@
 
 import Foundation
 import CryptoKit
+import os
 
 final class AES256FileCryptoManager {
     private let pepperService = PepperService()
@@ -107,7 +108,7 @@ final class AES256FileCryptoManager {
         var prefix = Data()
         prefix.append(CryptoVersion.v1.rawValue)
         prefix.append(metaSalt)
-        FileEncryptionCodec.appendUInt32(UInt32(encryptedHeader.count), to: &prefix)
+        BinaryCodec.appendUInt32(UInt32(encryptedHeader.count), to: &prefix)
         prefix.append(encryptedHeader)
 
         do {
@@ -173,7 +174,9 @@ final class AES256FileCryptoManager {
         let headerLenData = inHandle.readData(ofLength: 4)
         guard headerLenData.count == 4 else { throw CryptoError.invalidFormat }
         hasher.update(headerLenData)
-        let headerLen = Int(headerLenData.withUnsafeBytes { $0.load(as: UInt32.self).bigEndian })
+
+        var headerLenOffset = 0
+        let headerLen = Int(try BinaryCodec.readUInt32(headerLenData, &headerLenOffset))
 
         guard headerLen > 0, headerLen < 1_048_576 else { throw CryptoError.invalidFormat }
 
@@ -217,6 +220,13 @@ final class AES256FileCryptoManager {
         if header.expiration != 0 {
             let now = UInt64(Date().timeIntervalSince1970)
             guard now <= header.expiration else { throw CryptoError.expired }
+        }
+
+        let argon2Memory = Int64(header.memory) * 1024
+        let memoryMargin: Int64 = 100 * 1024 * 1024
+        let available = Int64(os_proc_available_memory())
+        if available > 0, available < argon2Memory + memoryMargin {
+            throw CryptoError.insufficientMemory
         }
 
         let combinedPassword = await pepperService.combinedSecret(

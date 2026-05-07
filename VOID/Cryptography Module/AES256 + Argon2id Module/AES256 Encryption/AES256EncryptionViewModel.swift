@@ -7,6 +7,7 @@
 
 import Foundation
 import UniformTypeIdentifiers
+import os
 
 final class AES256EncryptionViewModel: ObservableObject {
     @Published var encryptionParameters = AES256Parameters(
@@ -75,11 +76,6 @@ final class AES256EncryptionViewModel: ObservableObject {
         try? FileManager.default.removeItem(at: Self.workDirectory)
     }
 
-    private static func resetWorkDirectory() {
-        try? FileManager.default.removeItem(at: workDirectory)
-        try? FileManager.default.createDirectory(at: workDirectory, withIntermediateDirectories: true)
-    }
-
     func startCryptoProcess() {
         hapticsManager.impact(style: .medium)
         currentTask?.cancel()
@@ -101,11 +97,9 @@ final class AES256EncryptionViewModel: ObservableObject {
             hasSecurityScope = true
         }
 
-        let size = (try? FileManager.default.attributesOfItem(atPath: url.path)[.size] as? NSNumber)?.uint64Value
-
         selectedFileURL = url
         selectedFileName = url.lastPathComponent
-        selectedFileSize = size
+        selectedFileSize = Self.fileSize(at: url)
     }
 
     func clearSelectedFile() {
@@ -116,6 +110,71 @@ final class AES256EncryptionViewModel: ObservableObject {
         selectedFileURL = nil
         selectedFileName = nil
         selectedFileSize = nil
+    }
+    
+    private static func resetWorkDirectory() {
+        try? FileManager.default.removeItem(at: workDirectory)
+        try? FileManager.default.createDirectory(at: workDirectory, withIntermediateDirectories: true)
+    }
+
+    private static func fileSize(at url: URL) -> UInt64? {
+        let attrs = try? FileManager.default.attributesOfItem(atPath: url.path)
+        return (attrs?[.size] as? NSNumber)?.uint64Value
+    }
+
+    private static func availableDiskSpace() -> Int64? {
+        let url = FileManager.default.temporaryDirectory
+        let values = try? url.resourceValues(forKeys: [.volumeAvailableCapacityForImportantUsageKey])
+        return values?.volumeAvailableCapacityForImportantUsage
+    }
+
+    private static func availableMemory() -> Int64 {
+        Int64(os_proc_available_memory())
+    }
+
+    private static func estimateEncryptedSize(inputSize: UInt64, layers: UInt8) -> UInt64 {
+        let chunkSize: UInt64 = 256 * 1024
+        let numChunks = inputSize == 0 ? UInt64(1) : (inputSize + chunkSize - 1) / chunkSize
+        let chunkOverhead: UInt64 = 32
+        let chunkBytes = UInt64(layers) * (chunkOverhead * numChunks + inputSize)
+        let headerAndChecksum: UInt64 = 2_048 + 64
+        return chunkBytes + headerAndChecksum
+    }
+
+    private func preflightEncrypt(inputSize: UInt64) -> CryptoError? {
+        let estimated = Self.estimateEncryptedSize(
+            inputSize: inputSize,
+            layers: encryptionParameters.actualLayers
+        )
+        let diskMargin: Int64 = 10 * 1024 * 1024
+        if let disk = Self.availableDiskSpace(), disk < Int64(estimated) + diskMargin {
+            return .insufficientDiskSpace
+        }
+
+        let argon2Memory = Int64(encryptionParameters.memory) * 1024
+        let memoryMargin: Int64 = 100 * 1024 * 1024
+        let available = Self.availableMemory()
+        if available > 0, available < argon2Memory + memoryMargin {
+            return .insufficientMemory
+        }
+
+        return nil
+    }
+
+    private func preflightDecrypt(inputSize: UInt64) -> CryptoError? {
+        let diskMargin: Int64 = 10 * 1024 * 1024
+        if let disk = Self.availableDiskSpace(), disk < Int64(inputSize) + diskMargin {
+            return .insufficientDiskSpace
+        }
+
+        let metaArgon2Memory: Int64 = 128 * 1024 * 1024
+        let memoryMargin: Int64 = 100 * 1024 * 1024
+        let available = Self.availableMemory()
+        if available > 0, available < metaArgon2Memory + memoryMargin {
+            return .insufficientMemory
+        }
+
+        return nil
     }
 
     @MainActor
@@ -196,6 +255,16 @@ final class AES256EncryptionViewModel: ObservableObject {
             currentTask?.cancel()
         }
 
+        guard let inputSize = Self.fileSize(at: inputURL) else {
+            handleError(CryptoError.fileReadFailed)
+            return
+        }
+
+        if let preflightError = preflightEncrypt(inputSize: inputSize) {
+            handleError(preflightError)
+            return
+        }
+
         let fileManager = AES256FileCryptoManager()
 
         isEncrypting = true
@@ -215,11 +284,9 @@ final class AES256EncryptionViewModel: ObservableObject {
                 progress: { _ in }
             )
 
-            let size = (try? FileManager.default.attributesOfItem(atPath: outputURL.path)[.size] as? NSNumber)?.uint64Value ?? 0
-
             let fileMessage = FileMessage(
                 originalFileName: outputURL.lastPathComponent,
-                fileSize: size,
+                fileSize: Self.fileSize(at: outputURL) ?? 0,
                 fileURL: outputURL,
                 encryptionMode: .encrypt
             )
@@ -248,6 +315,16 @@ final class AES256EncryptionViewModel: ObservableObject {
             return
         }
 
+        guard let inputSize = Self.fileSize(at: inputURL) else {
+            handleError(CryptoError.fileReadFailed)
+            return
+        }
+
+        if let preflightError = preflightDecrypt(inputSize: inputSize) {
+            handleError(preflightError)
+            return
+        }
+
         let fileManager = AES256FileCryptoManager()
         let password = encryptionParameters.password
         let voidIndex = encryptionParameters.voidIndex
@@ -268,11 +345,9 @@ final class AES256EncryptionViewModel: ObservableObject {
                 progress: { _ in }
             )
 
-            let size = (try? FileManager.default.attributesOfItem(atPath: resultURL.path)[.size] as? NSNumber)?.uint64Value ?? 0
-
             let fileMessage = FileMessage(
                 originalFileName: resultURL.lastPathComponent,
-                fileSize: size,
+                fileSize: Self.fileSize(at: resultURL) ?? 0,
                 fileURL: resultURL,
                 encryptionMode: .decrypt
             )

@@ -19,7 +19,12 @@ final class AES256FileStreamService {
         progress: @Sendable (Double) -> Void
     ) async throws {
         if totalSize == 0 {
-            let encrypted = try encryptChunk(plaintext: Data(), keys: keys, chunkIndex: 0, isLast: true)
+            let encrypted = try encryptChunk(
+                plaintext: Data(),
+                keys: keys,
+                chunkIndex: 0,
+                isLast: true
+            )
             try writeOrThrow(output, encrypted)
             hasher.update(encrypted)
             progress(1)
@@ -32,25 +37,29 @@ final class AES256FileStreamService {
         while bytesProcessed < totalSize {
             try Task.checkCancellation()
 
-            let plaintext = input.readData(ofLength: chunkSize)
-            guard !plaintext.isEmpty else { throw CryptoError.fileReadFailed }
+            let isLast = try autoreleasepool { () -> Bool in
+                let plaintext = input.readData(ofLength: chunkSize)
+                guard !plaintext.isEmpty else { throw CryptoError.fileReadFailed }
 
-            let isLast = bytesProcessed + UInt64(plaintext.count) >= totalSize
+                let isLast = bytesProcessed + UInt64(plaintext.count) >= totalSize
 
-            let encrypted = try encryptChunk(
-                plaintext: plaintext,
-                keys: keys,
-                chunkIndex: chunkIndex,
-                isLast: isLast
-            )
+                let encrypted = try encryptChunk(
+                    plaintext: plaintext,
+                    keys: keys,
+                    chunkIndex: chunkIndex,
+                    isLast: isLast
+                )
 
-            try writeOrThrow(output, encrypted)
-            hasher.update(encrypted)
+                try writeOrThrow(output, encrypted)
+                hasher.update(encrypted)
 
-            bytesProcessed += UInt64(plaintext.count)
-            progress(Double(bytesProcessed) / Double(totalSize))
+                bytesProcessed += UInt64(plaintext.count)
+                progress(Double(bytesProcessed) / Double(totalSize))
 
-            chunkIndex += 1
+                chunkIndex += 1
+                return isLast
+            }
+
             if isLast { break }
         }
     }
@@ -71,7 +80,13 @@ final class AES256FileStreamService {
             let encrypted = input.readData(ofLength: onDisk)
             guard encrypted.count == onDisk else { throw CryptoError.invalidFormat }
             hasher.update(encrypted)
-            _ = try decryptChunk(data: encrypted, keys: keys, chunkIndex: 0, isLast: true, plaintextSize: 0)
+            _ = try decryptChunk(
+                data: encrypted,
+                keys: keys,
+                chunkIndex: 0,
+                isLast: true,
+                plaintextSize: 0
+            )
             progress(1)
             return
         }
@@ -82,30 +97,32 @@ final class AES256FileStreamService {
         while bytesProcessed < totalPlaintextSize {
             try Task.checkCancellation()
 
-            let remaining = totalPlaintextSize - bytesProcessed
-            let thisPlainSize = min(UInt64(chunkSize), remaining)
-            let isLast = thisPlainSize == remaining
+            try autoreleasepool {
+                let remaining = totalPlaintextSize - bytesProcessed
+                let thisPlainSize = min(UInt64(chunkSize), remaining)
+                let isLast = thisPlainSize == remaining
 
-            let onDisk = (12 + 4 + Int(thisPlainSize) + 16) * layerCount
-            let encrypted = input.readData(ofLength: onDisk)
-            guard encrypted.count == onDisk else { throw CryptoError.invalidFormat }
+                let onDisk = (12 + 4 + Int(thisPlainSize) + 16) * layerCount
+                let encrypted = input.readData(ofLength: onDisk)
+                guard encrypted.count == onDisk else { throw CryptoError.invalidFormat }
 
-            hasher.update(encrypted)
+                hasher.update(encrypted)
 
-            let plaintext = try decryptChunk(
-                data: encrypted,
-                keys: keys,
-                chunkIndex: chunkIndex,
-                isLast: isLast,
-                plaintextSize: Int(thisPlainSize)
-            )
+                let plaintext = try decryptChunk(
+                    data: encrypted,
+                    keys: keys,
+                    chunkIndex: chunkIndex,
+                    isLast: isLast,
+                    plaintextSize: Int(thisPlainSize)
+                )
 
-            try writeOrThrow(output, plaintext)
+                try writeOrThrow(output, plaintext)
 
-            bytesProcessed += thisPlainSize
-            progress(Double(bytesProcessed) / Double(totalPlaintextSize))
+                bytesProcessed += thisPlainSize
+                progress(Double(bytesProcessed) / Double(totalPlaintextSize))
 
-            chunkIndex += 1
+                chunkIndex += 1
+            }
         }
     }
 
@@ -132,10 +149,8 @@ final class AES256FileStreamService {
                 throw CryptoError.encryptionFailed
             }
 
-            var cipherLen = UInt32(sealed.ciphertext.count).bigEndian
-
             output.append(Data(nonce))
-            withUnsafeBytes(of: &cipherLen) { output.append(contentsOf: $0) }
+            BinaryCodec.appendUInt32(UInt32(sealed.ciphertext.count), to: &output)
             output.append(sealed.ciphertext)
             output.append(sealed.tag)
 
@@ -158,13 +173,21 @@ final class AES256FileStreamService {
         var layers: [(nonce: AES.GCM.Nonce, ciphertext: Data, tag: Data)] = []
 
         for _ in keys {
-            guard data.count >= offset + 12 + 4 else { throw CryptoError.invalidFormat }
-            let nonceData = data.subdata(in: offset..<offset + 12); offset += 12
-            let lenData = data.subdata(in: offset..<offset + 4); offset += 4
-            let cipherLen = Int(lenData.withUnsafeBytes { $0.load(as: UInt32.self).bigEndian })
-            guard data.count >= offset + cipherLen + 16 else { throw CryptoError.invalidFormat }
-            let cipher = data.subdata(in: offset..<offset + cipherLen); offset += cipherLen
-            let tag = data.subdata(in: offset..<offset + 16); offset += 16
+            guard data.count >= offset + 12 else { throw CryptoError.invalidFormat }
+            let nonceData = data.subdata(in: offset..<offset + 12)
+            offset += 12
+
+            let cipherLen = Int(try BinaryCodec.readUInt32(data, &offset))
+
+            guard data.count >= offset + cipherLen + 16 else {
+                throw CryptoError.invalidFormat
+            }
+            let cipher = data.subdata(in: offset..<offset + cipherLen)
+            offset += cipherLen
+
+            let tag = data.subdata(in: offset..<offset + 16)
+            offset += 16
+
             guard let nonce = try? AES.GCM.Nonce(data: nonceData) else {
                 throw CryptoError.nonceGenerationFailed
             }

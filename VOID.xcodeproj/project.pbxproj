@@ -71,6 +71,7 @@
 		1F8265EE2FACF55C00F1EE9E /* AES256FileCryptoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265ED2FACF55C00F1EE9E /* AES256FileCryptoManager.swift */; };
 		1F8265F12FACF58B00F1EE9E /* FileMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265EF2FACF58B00F1EE9E /* FileMessageView.swift */; };
 		1F8265F22FACF58B00F1EE9E /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265F02FACF58B00F1EE9E /* ShareSheet.swift */; };
+		1F8265F42FACFA5400F1EE9E /* BinaryCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265F32FACFA5400F1EE9E /* BinaryCodec.swift */; };
 		1F84D4322EC245E6001FAA62 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F84D4312EC245E6001FAA62 /* Property List.plist */; };
 		1F8B4FA12E9C72CF0075C9DA /* AboutEmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B4FA02E9C72CF0075C9DA /* AboutEmojiViewModel.swift */; };
 		1F8B4FA32E9C76C80075C9DA /* LetterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B4FA22E9C76C80075C9DA /* LetterType.swift */; };
@@ -197,6 +198,7 @@
 		1F8265ED2FACF55C00F1EE9E /* AES256FileCryptoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256FileCryptoManager.swift; sourceTree = "<group>"; };
 		1F8265EF2FACF58B00F1EE9E /* FileMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMessageView.swift; sourceTree = "<group>"; };
 		1F8265F02FACF58B00F1EE9E /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
+		1F8265F32FACFA5400F1EE9E /* BinaryCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCodec.swift; sourceTree = "<group>"; };
 		1F84D4312EC245E6001FAA62 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		1F8B4FA02E9C72CF0075C9DA /* AboutEmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutEmojiViewModel.swift; sourceTree = "<group>"; };
 		1F8B4FA22E9C76C80075C9DA /* LetterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterType.swift; sourceTree = "<group>"; };
@@ -381,6 +383,7 @@
 				1F8265E92FACF4E300F1EE9E /* AES256FileStreamService.swift */,
 				1F8265EA2FACF4E300F1EE9E /* StreamingSHA512.swift */,
 				1F6F65FD2E958A3F0095E89E /* CodecService.swift */,
+				1F8265F32FACFA5400F1EE9E /* BinaryCodec.swift */,
 			);
 			path = "Crypto Services";
 			sourceTree = "<group>";
@@ -865,6 +868,7 @@
 				1F2D34282E7E1760005E6239 /* AES256CryptoManager.swift in Sources */,
 				1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */,
 				1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */,
+				1F8265F42FACFA5400F1EE9E /* BinaryCodec.swift in Sources */,
 				1F19ECB42EB6476C00A3D0AD /* PayWallViewModel.swift in Sources */,
 				1F6F65F52E92C1970095E89E /* CustomTabBar.swift in Sources */,
 				1F9544B12EC39C3000F0CB51 /* StoreError.swift in Sources */,

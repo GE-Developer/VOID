@@ -52,7 +52,7 @@ extension FileMessageView {
             }
 
             HStack(spacing: 10) {
-                Image(systemName: "doc.fill")
+                Image.system.document
                     .font(.title2)
                     .foregroundStyle(Color.void.mainText)
 

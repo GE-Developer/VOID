@@ -102,7 +102,7 @@ extension AES256EncryptionView {
     @ViewBuilder private var selectedFileChip: some View {
         if let name = vm.selectedFileName {
             HStack(spacing: 8) {
-                Image(systemName: "doc.fill")
+                Image.system.document
                     .foregroundStyle(Gradient.accent)
 
                 Text(name)
