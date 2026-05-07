@@ -12,6 +12,7 @@ enum LetterType: CaseIterable {
     case binary
     case decimal
     case emoji
+    case qrCode
     
     var get: [Character] {
         switch self {
@@ -46,6 +47,9 @@ enum LetterType: CaseIterable {
                 "😹", "👶🏼", "😼", "😽", "🥺", "🤠", "😴", "🫥",
                 "💩", "🧓", "👨", "🧑", "👧", "🧒", "👦", "👩"
             ]
+        case .qrCode:
+//            return ["█", "▓", "▒", "░", "■", "□", "◼", "◻", "▪", "▫"]
+            return ["■", "□"]
         }
     }
 }

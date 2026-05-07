@@ -6,8 +6,8 @@
 //
 
 struct AboutQRCodeViewModel: DetailedInformationProtocol {
-    let title = "About"
-    let subtitle = "QR Code"
+    let title = L10n("About.information")
+    let subtitle = L10n("QRCode.title")
 
     let firstTitle = "What is this tool?"
     let firstDescription = "VOID's QR Code generator turns everyday content — plain text, links, Wi-Fi credentials, contact cards, emails, phone numbers, SMS messages and map locations — into scannable QR codes that any modern camera app can read instantly."
@@ -24,5 +24,5 @@ struct AboutQRCodeViewModel: DetailedInformationProtocol {
     let fifthTitle: String? = "Tips"
     let fifthDescription: String? = "Keep dark modules on a light background for the best scan rate, leave a clear margin around the code, and avoid shrinking it below ~2 cm when printed. If a code refuses to scan after heavy customization, raise the error correction level or simplify the styling."
 
-    let letterType: LetterType = .binary
+    let letterType: LetterType = .qrCode
 }
