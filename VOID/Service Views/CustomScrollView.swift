@@ -96,9 +96,16 @@ extension CustomScrollView {
             .onScrollGeometryChange(for: Bool.self) { geo in
                 geo.contentOffset.y < -110
             } action: { _, newValue in
-                withAnimation(.easeOut(duration: 0.2)) {
+                if navState.isInteracting {
+                    withAnimation(.easeOut(duration: 0.2)) {
+                        navState.isLarge = newValue
+                    }
+                } else {
                     navState.isLarge = newValue
                 }
+            }
+            .onScrollPhaseChange { _, newPhase in
+                navState.isInteracting = newPhase != .idle
             }
             .safeAreaPadding(.horizontal)
             .safeAreaPadding(.top, 86)
@@ -122,6 +129,7 @@ extension CustomScrollView {
 @Observable
 fileprivate final class NavBarState {
     var isLarge: Bool = true
+    var isInteracting: Bool = false
 }
 
 // MARK: - Navigation Bar

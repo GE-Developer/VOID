@@ -53,6 +53,7 @@ struct SystemImage {
     let paintbrush = Image(systemName: "paintbrush.fill")
     let addImage = Image(systemName: "photo.badge.plus")
     let download = Image(systemName: "square.and.arrow.down")
+    let plus = Image(systemName: "plus")
     
     func key(_ isFilled: Bool = false) -> Image {
         isFilled ? Image(systemName: "key.fill") : Image(systemName: "key")

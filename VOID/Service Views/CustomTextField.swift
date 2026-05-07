@@ -10,21 +10,27 @@ import SwiftUI
 struct CustomTextField: View {
     @Binding private var text: String
     @Binding private var isDisabled: Bool
-    
+
     @FocusState private var focus: Bool
-    
-    private var buttonDisabled: Bool {
-        text.isEmpty || isDisabled
+
+    private var inputButtonDisabled: Bool {
+        !text.isEmpty || isDisabled || hasAttachment
     }
-    
+
+    private var sendButtonDisabled: Bool {
+        (text.isEmpty && !hasAttachment) || isDisabled
+    }
+
     private let height: CGFloat = 40
     private let keyboard: UIKeyboardType
     private let placeholder: String
     private let icon: Image?
     private let isMultilined: Bool
     private let error: Bool
+    private let hasAttachment: Bool
+    private let inputAction: (() -> Void)?
     private let sendAction: (() -> Void)?
-    
+
     init(
         text: Binding<String>,
         isDisabled: Binding<Bool> = .constant(false),
@@ -33,6 +39,8 @@ struct CustomTextField: View {
         icon: Image? = nil,
         isMultilined: Bool = false,
         error: Bool = false,
+        hasAttachment: Bool = false,
+        inputAction: (() -> Void)? = nil,
         sendAction: (() -> Void)? = nil
     ) {
         self._text = text
@@ -42,6 +50,8 @@ struct CustomTextField: View {
         self.icon = icon
         self.isMultilined = isMultilined
         self.error = error
+        self.hasAttachment = hasAttachment
+        self.inputAction = inputAction
         self.sendAction = sendAction
     }
     
@@ -54,11 +64,13 @@ struct CustomTextField: View {
 extension CustomTextField {
     private var customMessageTextField: some View {
         HStack(alignment: .bottom) {
+            inputButton
             HStack(spacing: 0) {
                 fieldImage
                 textField
                 deleteButton
             }
+            .disabled(hasAttachment)
             .background { background }
 
             sendButton
@@ -120,22 +132,41 @@ extension CustomTextField {
             ZStack {
                 Circle()
                     .foregroundStyle(
-                        buttonDisabled
+                        sendButtonDisabled
                         ? Gradient.gray
                         : Gradient.accent
                     )
                 Image.system.send
                     .foregroundStyle(Color.void.secondaryText)
             }
-            .opacity(buttonDisabled ? 0.6 : 1)
+            .opacity(sendButtonDisabled ? 0.6 : 1)
             .frame(width: height, height: height)
-            .animation(.easeIn.speed(2), value: buttonDisabled)
+            .animation(.easeIn.speed(2), value: sendButtonDisabled)
             .onTapGesture {
-                if !buttonDisabled {
+                if !sendButtonDisabled {
                     focus = false
                     sendAction()
                 }
             }
+        }
+    }
+
+    @ViewBuilder
+    private var inputButton: some View {
+        if let inputAction {
+            Image.system.plus
+                .resizable()
+                .foregroundStyle(Gradient.accent)
+                .opacity(inputButtonDisabled ? 0.6 : 1)
+                .padding(8)
+                .frame(width: height, height: height)
+                .animation(.easeIn.speed(2), value: inputButtonDisabled)
+                .onTapGesture {
+                    if !inputButtonDisabled {
+                        focus = false
+                        inputAction()
+                    }
+                }
         }
     }
     
