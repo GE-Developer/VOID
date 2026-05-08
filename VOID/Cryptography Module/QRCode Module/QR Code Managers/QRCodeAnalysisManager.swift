@@ -16,14 +16,19 @@ enum QRScanQuality {
 
     var description: String {
         switch self {
-        case .good:       return L10n("QRCode.Quality.good")
-        case .suspicious: return L10n("QRCode.Quality.suspicious")
-        case .critical:   return L10n("QRCode.Quality.critical")
+        case .good:
+            return L10n("QRCode.Quality.good")
+        case .suspicious:
+            return L10n("QRCode.Quality.suspicious")
+        case .critical:
+            return L10n("QRCode.Quality.critical")
         }
     }
 }
 
 struct QRCodeAnalysisService {
+    private static let ciContext = CIContext(options: [.cacheIntermediates: false])
+
     static func analyze(_ image: CGImage) async -> QRScanQuality {
         let fullDecoded = await decode(image)
         guard fullDecoded else { return .critical }
@@ -65,7 +70,6 @@ struct QRCodeAnalysisService {
             .applyingFilter("CIGaussianBlur", parameters: [kCIInputRadiusKey: 1.2])
             .cropped(to: scaled.extent)
 
-        let context = CIContext()
-        return context.createCGImage(blurred, from: blurred.extent)
+        return ciContext.createCGImage(blurred, from: blurred.extent)
     }
 }

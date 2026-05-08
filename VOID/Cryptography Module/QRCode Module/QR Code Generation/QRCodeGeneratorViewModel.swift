@@ -269,6 +269,12 @@ final class QRCodeGeneratorViewModel {
         }
     }
 
+    func cleanupExportFile() {
+        guard let url = exportURL else { return }
+        try? FileManager.default.removeItem(at: url)
+        exportURL = nil
+    }
+
     func isEmailValid(_ value: String) -> Bool {
         value.isEmpty || Validator.isValid(value, type: .email)
     }

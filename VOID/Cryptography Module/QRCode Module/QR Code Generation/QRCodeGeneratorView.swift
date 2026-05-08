@@ -201,7 +201,7 @@ struct QRCodeGeneratorView: View {
         .onChange(of: vm.exportURL) { _, url in
             if url != nil { showShareSheet = true }
         }
-        .sheet(isPresented: $showShareSheet, onDismiss: { vm.exportURL = nil }) {
+        .sheet(isPresented: $showShareSheet, onDismiss: { vm.cleanupExportFile() }) {
             if let url = vm.exportURL {
                 ShareSheet(url: url)
             }

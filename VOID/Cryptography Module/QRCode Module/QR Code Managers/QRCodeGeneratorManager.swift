@@ -17,7 +17,9 @@ struct QRCodeGeneratorManager {
         dimension: Int = 480
     ) async throws -> CGImage {
         try await Task.detached {
+            try Task.checkCancellation()
             let doc = try buildDocument(from: payload, configuration: configuration)
+            try Task.checkCancellation()
             return try doc.cgImage(dimension: dimension)
         }.value
     }
