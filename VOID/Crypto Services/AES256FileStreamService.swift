@@ -74,9 +74,10 @@ final class AES256FileStreamService {
         progress: @Sendable (Double) -> Void
     ) async throws {
         let layerCount = keys.count
+        let overhead = (12 + 16) * layerCount
 
         if totalPlaintextSize == 0 {
-            let onDisk = (12 + 4 + 0 + 16) * layerCount
+            let onDisk = overhead
             let encrypted = input.readData(ofLength: onDisk)
             guard encrypted.count == onDisk else { throw CryptoError.invalidFormat }
             hasher.update(encrypted)
@@ -102,7 +103,7 @@ final class AES256FileStreamService {
                 let thisPlainSize = min(UInt64(chunkSize), remaining)
                 let isLast = thisPlainSize == remaining
 
-                let onDisk = (12 + 4 + Int(thisPlainSize) + 16) * layerCount
+                let onDisk = overhead + Int(thisPlainSize)
                 let encrypted = input.readData(ofLength: onDisk)
                 guard encrypted.count == onDisk else { throw CryptoError.invalidFormat }
 
@@ -135,7 +136,10 @@ final class AES256FileStreamService {
         let aad = makeAAD(chunkIndex: chunkIndex, isLast: isLast)
 
         var current = plaintext
-        var output = Data()
+        var nonces = Data()
+        nonces.reserveCapacity(12 * keys.count)
+        var tags = Data()
+        tags.reserveCapacity(16 * keys.count)
 
         for key in keys {
             let nonce = AES.GCM.Nonce()
@@ -149,14 +153,17 @@ final class AES256FileStreamService {
                 throw CryptoError.encryptionFailed
             }
 
-            output.append(Data(nonce))
-            BinaryCodec.appendUInt32(UInt32(sealed.ciphertext.count), to: &output)
-            output.append(sealed.ciphertext)
-            output.append(sealed.tag)
+            nonces.append(Data(nonce))
+            tags.append(sealed.tag)
 
             current = sealed.ciphertext
         }
 
+        var output = Data()
+        output.reserveCapacity(nonces.count + tags.count + current.count)
+        output.append(nonces)
+        output.append(tags)
+        output.append(current)
         return output
     }
 
@@ -168,41 +175,38 @@ final class AES256FileStreamService {
         plaintextSize: Int
     ) throws -> Data {
         let aad = makeAAD(chunkIndex: chunkIndex, isLast: isLast)
+        let layerCount = keys.count
 
+        let expected = (12 + 16) * layerCount + plaintextSize
+        guard data.count == expected else { throw CryptoError.invalidFormat }
+
+        var nonces: [AES.GCM.Nonce] = []
+        nonces.reserveCapacity(layerCount)
         var offset = 0
-        var layers: [(nonce: AES.GCM.Nonce, ciphertext: Data, tag: Data)] = []
-
-        for _ in keys {
-            guard data.count >= offset + 12 else { throw CryptoError.invalidFormat }
+        for _ in 0..<layerCount {
             let nonceData = data.subdata(in: offset..<offset + 12)
             offset += 12
-
-            let cipherLen = Int(try BinaryCodec.readUInt32(data, &offset))
-
-            guard data.count >= offset + cipherLen + 16 else {
-                throw CryptoError.invalidFormat
-            }
-            let cipher = data.subdata(in: offset..<offset + cipherLen)
-            offset += cipherLen
-
-            let tag = data.subdata(in: offset..<offset + 16)
-            offset += 16
-
             guard let nonce = try? AES.GCM.Nonce(data: nonceData) else {
                 throw CryptoError.nonceGenerationFailed
             }
-            layers.append((nonce, cipher, tag))
+            nonces.append(nonce)
         }
 
-        guard let last = layers.last else { throw CryptoError.invalidFormat }
-        var current = last.ciphertext
+        var tags: [Data] = []
+        tags.reserveCapacity(layerCount)
+        for _ in 0..<layerCount {
+            tags.append(data.subdata(in: offset..<offset + 16))
+            offset += 16
+        }
 
-        for (i, layer) in layers.enumerated().reversed() {
+        var current = data.subdata(in: offset..<offset + plaintextSize)
+
+        for i in (0..<layerCount).reversed() {
             guard
                 let sealed = try? AES.GCM.SealedBox(
-                    nonce: layer.nonce,
+                    nonce: nonces[i],
                     ciphertext: current,
-                    tag: layer.tag
+                    tag: tags[i]
                 ),
                 let decrypted = try? AES.GCM.open(sealed, using: keys[i], authenticating: aad)
             else {

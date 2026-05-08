@@ -99,38 +99,6 @@ extension AES256EncryptionView {
         }
     }
 
-    @ViewBuilder private var selectedFileChip: some View {
-        if let name = vm.selectedFileName {
-            HStack(spacing: 8) {
-                Image.system.document
-                    .foregroundStyle(Gradient.accent)
-
-                Text(name)
-                    .font(.callout)
-                    .fontDesign(.rounded)
-                    .foregroundStyle(Color.void.mainText)
-                    .lineLimit(1)
-                    .truncationMode(.middle)
-
-                Spacer()
-
-                Button {
-                    vm.clearSelectedFile()
-                } label: {
-                    Image.system.xmark
-                        .foregroundStyle(Color.void.secondaryText)
-                }
-            }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 8)
-            .background {
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.void.textFieldBackground)
-                    .shadow(color: Color.void.viewShadow, radius: 2)
-            }
-        }
-    }
-
     private var bottomSafeArea: some View {
         VStack(spacing: 8) {
             selectedFileChip
@@ -155,6 +123,37 @@ extension AES256EncryptionView {
                 .ignoresSafeArea()
                 .foregroundStyle(.ultraThinMaterial)
                 .shadow(color: .void.navBarShadow, radius: 2)
+        }
+    }
+    
+    @ViewBuilder
+    private var selectedFileChip: some View {
+        if let name = vm.selectedFileName {
+            HStack(spacing: 8) {
+                Image.system.document
+                    .foregroundStyle(Gradient.accent)
+
+                Text(name)
+                    .font(.callout)
+                    .fontDesign(.rounded)
+                    .foregroundStyle(Color.void.mainText)
+                    .lineLimit(1)
+                    .truncationMode(.middle)
+
+                Spacer()
+
+                Button(action: vm.clearSelectedFile) {
+                    Image.system.xmark
+                        .foregroundStyle(Color.void.secondaryText)
+                }
+            }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 8)
+            .background {
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.void.textFieldBackground)
+                    .shadow(color: Color.void.viewShadow, radius: 2)
+            }
         }
     }
 }
@@ -210,9 +209,3 @@ extension AES256EncryptionView {
     }
 }
 
-// MARK: - Share Item
-
-struct ShareItem: Identifiable {
-    let id = UUID()
-    let url: URL
-}

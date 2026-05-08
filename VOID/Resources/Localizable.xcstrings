@@ -216,6 +216,221 @@
         }
       }
     },
+    "About.tipsTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Məsləhətlər"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consells"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipps"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Συμβουλές"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Consejos"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vinkit"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conseils"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सुझाव"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Savjeti"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tippek"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Խորհուրդներ"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ráð"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suggerimenti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ヒント"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "რჩევები"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "팁"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tip"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wskazówki"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dicas"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sfaturi"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Советы"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tipy"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tips"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เคล็ดลับ"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İpuçları"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поради"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mẹo"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "提示"
+          }
+        }
+      }
+    },
     "AboutAES256.fifthDescription" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -427,221 +642,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "**使用複雜且唯一的密碼**（超過 12 個字元）——密碼越複雜，破解所需的時間越長。  **選擇強大的 Argon2id 加密引數**（迭代次數、執行緒數）——這會提高安全性，但可能會將加密時間延長至 20 分鐘。  **始終完整儲存原始密文**——即使丟失一個字元也無法解密。  定期**更新密碼**以獲得額外的保護。"
-          }
-        }
-      }
-    },
-    "AboutAES256.fifthTitle" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "az" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Məsləhətlər"
-          }
-        },
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Consells"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tipy"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tipps"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Συμβουλές"
-          }
-        },
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "es" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Consejos"
-          }
-        },
-        "fi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Vinkit"
-          }
-        },
-        "fr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Conseils"
-          }
-        },
-        "hi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "सुझाव"
-          }
-        },
-        "hr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Savjeti"
-          }
-        },
-        "hu" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tippek"
-          }
-        },
-        "hy" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Խորհուրդներ"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "is" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ráð"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suggerimenti"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ヒント"
-          }
-        },
-        "ka" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "რჩევები"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "팁"
-          }
-        },
-        "ms" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tip"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wskazówki"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dicas"
-          }
-        },
-        "ro" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sfaturi"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Советы"
-          }
-        },
-        "sk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tipy"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "เคล็ดลับ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İpuçları"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Поради"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mẹo"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提示"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提示"
           }
         }
       }
@@ -2528,7 +2528,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Кодирование в эмоджи —  **это способ визуального представления данных**, при котором текст преобразуется в последовательность эмоджи.  **Такое кодирование не является криптографическим и не обеспечивает защиту данных**."
+            "value" : "Кодирование в эмодзи —  **это способ визуального представления данных**, при котором текст преобразуется в последовательность эмодзи.  **Такое кодирование не является криптографическим и не обеспечивает защиту данных**."
           }
         },
         "sk" : {
@@ -2958,7 +2958,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Текст сначала переводится в UTF-8, затем кодируется в Base64, после чего каждый символ заменяется соответствующим эмоджи.  Благодаря этому алгоритм **поддерживает любые символы и языки**."
+            "value" : "Текст сначала переводится в UTF-8, затем кодируется в Base64, после чего каждый символ заменяется соответствующим эмодзи.  Благодаря этому алгоритм **поддерживает любые символы и языки**."
           }
         },
         "sk" : {
@@ -3388,7 +3388,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "**Не используйте кодирование в эмоджи для защиты важной информации**.  Для безопасной передачи данных лучше **сочетать его с шифрованием** — например, сначала зашифровать текст, а затем преобразовать результат в эмоджи."
+            "value" : "**Не используйте кодирование в эмодзи для защиты важной информации**.  Для безопасной передачи данных лучше **сочетать его с шифрованием** — например, сначала зашифровать текст, а затем преобразовать результат в эмодзи."
           }
         },
         "sk" : {
@@ -3441,217 +3441,79 @@
         }
       }
     },
-    "AboutEmoji.tipsTitle" : {
+    "AboutQRCode.fifthDescription" : {
       "extractionState" : "manual",
       "localizations" : {
-        "az" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Məsləhətlər"
-          }
-        },
-        "ca" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Consells"
-          }
-        },
-        "cs" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tipy"
-          }
-        },
-        "da" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "de" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tipps"
-          }
-        },
-        "el" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Συμβουλές"
-          }
-        },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tips"
+            "value" : "A few small things help a lot: keep **dark modules on a light background**, leave some empty space around the code, and try not to print it smaller than about 2 cm.  **If a heavily styled code stops scanning, bump the error correction level up a notch or tone the design down a little**."
           }
-        },
-        "es" : {
+        }
+      }
+    },
+    "AboutQRCode.firstDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Consejos"
+            "value" : "A QR Code is **a square pattern that visually encodes data** so any modern camera can read it in a moment.  **It is not a form of encryption and does not protect the information inside**, anyone who scans the code can see what it contains."
           }
-        },
-        "fi" : {
+        }
+      }
+    },
+    "AboutQRCode.firstTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Vinkit"
+            "value" : "What is a QR Code?"
           }
-        },
-        "fr" : {
+        }
+      }
+    },
+    "AboutQRCode.fourthDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Conseils"
+            "value" : "You can play with **pixel and eye shapes, foreground and background colors or gradients, corner radius and the quiet zone around the code**, and even drop your own logo in the middle.  **As long as the contrast stays clean and the quiet zone is intact, the code will keep scanning reliably**."
           }
-        },
-        "hi" : {
+        }
+      }
+    },
+    "AboutQRCode.secondDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "सुझाव"
+            "value" : "You can pack different kinds of content into a single code: **plain text, links, Wi-Fi credentials, contact cards, emails, phone numbers, SMS messages or map locations**.  Everything is generated right on your iPhone, so **your data never leaves the device**."
           }
-        },
-        "hr" : {
+        }
+      }
+    },
+    "AboutQRCode.secondTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Savjeti"
+            "value" : "What can it store?"
           }
-        },
-        "hu" : {
+        }
+      }
+    },
+    "AboutQRCode.thirdDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tippek"
-          }
-        },
-        "hy" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Խորհուրդներ"
-          }
-        },
-        "id" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "is" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Ráð"
-          }
-        },
-        "it" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Suggerimenti"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ヒント"
-          }
-        },
-        "ka" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "რჩევები"
-          }
-        },
-        "ko" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "팁"
-          }
-        },
-        "ms" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tip"
-          }
-        },
-        "nb" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "nl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "pl" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Wskazówki"
-          }
-        },
-        "pt" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Dicas"
-          }
-        },
-        "ro" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Sfaturi"
-          }
-        },
-        "ru" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Советы"
-          }
-        },
-        "sk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tipy"
-          }
-        },
-        "sv" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Tips"
-          }
-        },
-        "th" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "เคล็ดลับ"
-          }
-        },
-        "tr" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "İpuçları"
-          }
-        },
-        "uk" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Поради"
-          }
-        },
-        "vi" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Mẹo"
-          }
-        },
-        "zh-Hans" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提示"
-          }
-        },
-        "zh-Hant" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "提示"
+            "value" : "Every QR Code carries **a bit of built-in redundancy**, which is why it still works when the surface is scratched, dirty or partly covered by a logo.  There are four levels to choose from: Low, Medium, Quartile and High.  **The higher the level, the more damage the code can survive, but the less data it can hold**."
           }
         }
       }
@@ -13543,7 +13405,7 @@
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Кодирование текста в эмоджи — **визуальное представление данных**, подобное Base64.  **Не обеспечивает криптографической защиты**.  Может использоваться совместно с шифрованием для повышения криптостойкости."
+            "value" : "Кодирование текста в эмодзи — **визуальное представление данных**, подобное Base64.  **Не обеспечивает криптографической защиты**.  Может использоваться совместно с шифрованием для повышения криптостойкости."
           }
         },
         "sk" : {
@@ -17036,6 +16898,61 @@
         }
       }
     },
+    "Error.fileAccessDenied" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Access to the file was denied."
+          }
+        }
+      }
+    },
+    "Error.fileReadFailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to read the file."
+          }
+        }
+      }
+    },
+    "Error.fileWriteFailed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to write the file."
+          }
+        }
+      }
+    },
+    "Error.insufficientDiskSpace" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not enough disk space to complete the operation."
+          }
+        }
+      }
+    },
+    "Error.insufficientMemory" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not enough memory to complete the operation."
+          }
+        }
+      }
+    },
     "Error.integrityCheckFailed" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -18337,6 +18254,28 @@
         }
       }
     },
+    "QRCode.Logo.alertTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logo unavailable"
+          }
+        }
+      }
+    },
+    "QRCode.Logo.alertMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adding a logo requires the High error correction level. Switch to High to embed a logo."
+          }
+        }
+      }
+    },
     "Error.saltGenerationFailed" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -18978,6 +18917,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "發生意外錯誤。"
+          }
+        }
+      }
+    },
+    "Error.unsupportedFileExtension" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unsupported file extension."
           }
         }
       }
@@ -27353,6 +27303,17 @@
         }
       }
     },
+    "QR.EyeStyle.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eye Style"
+          }
+        }
+      }
+    },
     "QR.PixelStyle.title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27360,6 +27321,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Pixel Style"
+          }
+        }
+      }
+    },
+    "QR.PupilStyle.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pupil Style"
           }
         }
       }
@@ -27448,6 +27420,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Curved Pixels"
+          }
+        }
+      }
+    },
+    "QR.Style.default" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default"
           }
         }
       }
@@ -27837,6 +27820,116 @@
         }
       }
     },
+    "QRCode.Customization.background" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Background"
+          }
+        }
+      }
+    },
+    "QRCode.Customization.backgroundColor" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Background Color"
+          }
+        }
+      }
+    },
+    "QRCode.Customization.cornerRadius" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Corner Radius"
+          }
+        }
+      }
+    },
+    "QRCode.Customization.customColor" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Custom Color"
+          }
+        }
+      }
+    },
+    "QRCode.Customization.foreground" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Foreground"
+          }
+        }
+      }
+    },
+    "QRCode.Customization.gradientColor" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gradient Color"
+          }
+        }
+      }
+    },
+    "QRCode.Customization.negated" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Negated"
+          }
+        }
+      }
+    },
+    "QRCode.Customization.offPixels" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Empty Pixels"
+          }
+        }
+      }
+    },
+    "QRCode.Customization.primaryColor" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Primary Color"
+          }
+        }
+      }
+    },
+    "QRCode.Customization.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Customization"
+          }
+        }
+      }
+    },
     "QRCode.InputData.title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27844,6 +27937,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Input Data"
+          }
+        }
+      }
+    },
+    "QRCode.mainTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR Code Generator"
           }
         }
       }

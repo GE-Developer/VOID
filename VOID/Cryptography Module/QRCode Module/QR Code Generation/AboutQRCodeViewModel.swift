@@ -9,20 +9,20 @@ struct AboutQRCodeViewModel: DetailedInformationProtocol {
     let title = L10n("About.information")
     let subtitle = L10n("QRCode.title")
 
-    let firstTitle = "What is this tool?"
-    let firstDescription = "VOID's QR Code generator turns everyday content — plain text, links, Wi-Fi credentials, contact cards, emails, phone numbers, SMS messages and map locations — into scannable QR codes that any modern camera app can read instantly."
+    let firstTitle = L10n("AboutQRCode.firstTitle")
+    let firstDescription = L10n("AboutQRCode.firstDescription")
 
-    let secondTitle: String? = "How does it work?"
-    let secondDescription: String? = "Your input is formatted into the standard payload for the chosen data type (URL, vCard, MECARD-style Wi-Fi, mailto, geo, etc.) and rendered into a QR matrix on-device. Nothing is uploaded — generation happens entirely offline, so your data never leaves your iPhone."
+    let secondTitle: String? = L10n("AboutQRCode.secondTitle")
+    let secondDescription: String? = L10n("AboutQRCode.secondDescription")
 
-    let thirdTitle: String? = "Error correction"
-    let thirdDescription: String? = "QR codes carry built-in redundancy so they remain readable even when partially damaged, dirty or covered by a logo. You can choose between Low, Medium, Quartile and High levels — higher correction restores more of the code but reduces the maximum amount of data you can encode."
+    let thirdTitle: String? = L10n("QR.ErrorCorrection.title")
+    let thirdDescription: String? = L10n("AboutQRCode.thirdDescription")
 
-    let fourthTitle: String? = "Customization"
-    let fourthDescription: String? = "Adjust pixel and eye shapes, foreground and background colors or gradients, corner radius, quiet zone and even embed your own logo in the center. The code stays scannable as long as the contrast and quiet zone are preserved."
+    let fourthTitle: String? = L10n("QRCode.Customization.title")
+    let fourthDescription: String? = L10n("AboutQRCode.fourthDescription")
 
-    let fifthTitle: String? = "Tips"
-    let fifthDescription: String? = "Keep dark modules on a light background for the best scan rate, leave a clear margin around the code, and avoid shrinking it below ~2 cm when printed. If a code refuses to scan after heavy customization, raise the error correction level or simplify the styling."
+    let fifthTitle: String? = L10n("About.tipsTitle")
+    let fifthDescription: String? = L10n("AboutQRCode.fifthDescription")
 
     let letterType: LetterType = .qrCode
 }

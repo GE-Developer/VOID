@@ -86,10 +86,93 @@ final class AESEncryptionService {
             else {
                 throw CryptoError.decryptionFailed
             }
-            
+
             current = decrypted
         }
-        
+
+        return current
+    }
+
+    // MARK: - Cascade Encryption (v2)
+    func encryptCascade(plaintext: Data, keys: [SymmetricKey]) async throws -> Data {
+        guard !keys.isEmpty else { throw CryptoError.invalidSubkeyCount }
+
+        var current = plaintext
+        var nonces = Data()
+        nonces.reserveCapacity(12 * keys.count)
+        var tags = Data()
+        tags.reserveCapacity(16 * keys.count)
+
+        for key in keys {
+            let nonce = AES.GCM.Nonce()
+
+            guard let sealed = try? AES.GCM.seal(current, using: key, nonce: nonce) else {
+                throw CryptoError.encryptionFailed
+            }
+
+            nonces.append(Data(nonce))
+            tags.append(sealed.tag)
+
+            current = sealed.ciphertext
+        }
+
+        var output = Data()
+        output.reserveCapacity(nonces.count + tags.count + current.count)
+        output.append(nonces)
+        output.append(tags)
+        output.append(current)
+        return output
+    }
+
+    // MARK: - Cascade Decryption (v2)
+    func decryptCascade(
+        ciphertext: Data,
+        keys: [SymmetricKey],
+        plaintextSize: Int
+    ) async throws -> Data {
+        guard !keys.isEmpty else { throw CryptoError.invalidSubkeyCount }
+        guard plaintextSize >= 0 else { throw CryptoError.invalidFormat }
+
+        let layerCount = keys.count
+        let expected = (12 + 16) * layerCount + plaintextSize
+        guard ciphertext.count == expected else { throw CryptoError.invalidFormat }
+
+        var nonces: [AES.GCM.Nonce] = []
+        nonces.reserveCapacity(layerCount)
+        var offset = 0
+        for _ in 0..<layerCount {
+            let nonceData = ciphertext.subdata(in: offset..<offset + 12)
+            offset += 12
+            guard let nonce = try? AES.GCM.Nonce(data: nonceData) else {
+                throw CryptoError.nonceGenerationFailed
+            }
+            nonces.append(nonce)
+        }
+
+        var tags: [Data] = []
+        tags.reserveCapacity(layerCount)
+        for _ in 0..<layerCount {
+            tags.append(ciphertext.subdata(in: offset..<offset + 16))
+            offset += 16
+        }
+
+        var current = ciphertext.subdata(in: offset..<offset + plaintextSize)
+
+        for i in (0..<layerCount).reversed() {
+            guard
+                let sealed = try? AES.GCM.SealedBox(
+                    nonce: nonces[i],
+                    ciphertext: current,
+                    tag: tags[i]
+                ),
+                let decrypted = try? AES.GCM.open(sealed, using: keys[i])
+            else {
+                throw CryptoError.decryptionFailed
+            }
+            current = decrypted
+        }
+
+        guard current.count == plaintextSize else { throw CryptoError.decryptionFailed }
         return current
     }
 }

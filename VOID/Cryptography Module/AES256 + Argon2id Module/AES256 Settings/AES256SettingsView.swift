@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct AES256SettingsView: View {
+    @EnvironmentObject private var store: StoreManager
+    
     @StateObject private var vm: AES256SettingsViewModel
+    
     @State private var showVoid = false
     @State private var showInfo = false
     @State private var showPayWall = false
     
     @State var premiumAnimation = false
-    
-    @EnvironmentObject private var store: StoreManager
     
     init(vm: AES256EncryptionViewModel) {
         _vm = StateObject(wrappedValue: AES256SettingsViewModel(mainVM: vm))

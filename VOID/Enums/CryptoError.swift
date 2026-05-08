@@ -31,6 +31,14 @@ enum CryptoError: Error {
     // QR Code
     case qrGenerationFailed
 
+    // File I/O
+    case fileReadFailed
+    case fileWriteFailed
+    case fileAccessDenied       
+    case unsupportedFileExtension
+    case insufficientDiskSpace    
+    case insufficientMemory      
+
     var errorTitle: String { L10n("Error.title") }
 
     var errorDescription: String {
@@ -65,6 +73,18 @@ enum CryptoError: Error {
             return L10n("Error.decodingFailed")
         case .qrGenerationFailed:
             return L10n("Error.qrGenerationFailed")
+        case .fileReadFailed:
+            return L10n("Error.fileReadFailed")
+        case .fileWriteFailed:
+            return L10n("Error.fileWriteFailed")
+        case .fileAccessDenied:
+            return L10n("Error.fileAccessDenied")
+        case .unsupportedFileExtension:
+            return L10n("Error.unsupportedFileExtension")
+        case .insufficientDiskSpace:
+            return L10n("Error.insufficientDiskSpace")
+        case .insufficientMemory:
+            return L10n("Error.insufficientMemory")
         }
     }
 }

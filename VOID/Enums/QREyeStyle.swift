@@ -208,4 +208,6 @@ enum QREyeStyle: String, CaseIterable, Codable {
             L10n("QR.Style.arc")
         }
     }
+    
+    static var title: String { L10n("QR.EyeStyle.title") }
 }

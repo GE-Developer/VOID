@@ -243,4 +243,6 @@ enum QRPupilStyle: String, CaseIterable, Codable {
             L10n("QR.Style.fabricScissors")
         }
     }
+    
+    static var title: String { L10n("QR.PupilStyle.title") }
 }

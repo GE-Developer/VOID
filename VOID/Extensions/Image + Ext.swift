@@ -52,6 +52,7 @@ struct SystemImage {
     let email = Image(systemName: "envelope")
     let paintbrush = Image(systemName: "paintbrush.fill")
     let addImage = Image(systemName: "photo.badge.plus")
+    let removeImage = Image(systemName: "trash")
     let download = Image(systemName: "square.and.arrow.down")
     let plus = Image(systemName: "plus")
     let document = Image(systemName: "doc.fill")

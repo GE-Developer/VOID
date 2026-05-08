@@ -21,7 +21,7 @@ struct AboutAES256ViewModel: DetailedInformationProtocol {
     let fourthTitle: String? = L10n("AboutAES256.fourthTitle")
     let fourthDescription: String? = L10n("AboutAES256.fourthDescription")
     
-    let fifthTitle: String? = L10n("AboutAES256.fifthTitle")
+    let fifthTitle: String? = L10n("About.tipsTitle")
     let fifthDescription: String? = L10n("AboutAES256.fifthDescription")
     
     var letterType: LetterType = .eas256

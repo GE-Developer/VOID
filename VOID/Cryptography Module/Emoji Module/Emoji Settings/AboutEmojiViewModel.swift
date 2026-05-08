@@ -15,7 +15,7 @@ struct AboutEmojiViewModel: DetailedInformationProtocol {
     let secondTitle: String? = L10n("AboutEmoji.howDoesItWorkTitle")
     let secondDescription: String? = L10n("AboutEmoji.howDoesItWorkDescription")
     
-    let thirdTitle: String? = L10n("AboutEmoji.tipsTitle")
+    let thirdTitle: String? = L10n("About.tipsTitle")
     let thirdDescription: String? = L10n("AboutEmoji.tipsDescription")
     
     let fourthTitle: String? = nil

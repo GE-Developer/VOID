@@ -155,11 +155,10 @@ extension CustomTextField {
     private var inputButton: some View {
         if let inputAction {
             Image.system.plus
-                .resizable()
+                .font(.title)
                 .foregroundStyle(Gradient.accent)
                 .opacity(inputButtonDisabled ? 0.6 : 1)
-                .padding(8)
-                .frame(width: height, height: height)
+                .frame(height: height)
                 .animation(.easeIn.speed(2), value: inputButtonDisabled)
                 .onTapGesture {
                     if !inputButtonDisabled {

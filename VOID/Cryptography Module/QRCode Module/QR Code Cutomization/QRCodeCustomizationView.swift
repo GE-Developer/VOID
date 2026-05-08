@@ -163,7 +163,7 @@ struct QRCodeCustomizationView: View {
     }
 
     var body: some View {
-        CustomScrollView(title: vm.title) {
+        CustomScrollView(title: vm.title, subTitle: vm.subTitle) {
             EmptyView()
         } content: { _ in
             VStack(spacing: 24) {
@@ -275,7 +275,7 @@ extension QRCodeCustomizationView {
             CustomForm {
                 CustomToggleRow(
                     isOn: isEyeBackgroundColorCustomBinding,
-                    title: vm.customColorToggleTitle
+                    title: vm.eyeBackgroundTitle
                 )
 
                 if vm.isEyeBackgroundColorCustom {

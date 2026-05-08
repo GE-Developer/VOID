@@ -7,11 +7,14 @@
 
 import SwiftUI
 import MapKit
+import PhotosUI
 
 struct QRCodeGeneratorView: View {
     @State private var vm = QRCodeGeneratorViewModel()
     @State private var showCustomization = false
     @State private var showAbout = false
+    @State private var selectedLogoItem: PhotosPickerItem?
+    @State private var showLogoAlert = false
 
     private var plainTextBinding: Binding<String> {
         Binding(
@@ -158,11 +161,27 @@ struct QRCodeGeneratorView: View {
             guard !Task.isCancelled else { return }
             await vm.generate()
         }
+        .onChange(of: vm.hasLogo) { _, hasLogo in
+            if !hasLogo { selectedLogoItem = nil }
+        }
+        .onChange(of: selectedLogoItem) { _, newItem in
+            Task {
+                guard
+                    let newItem,
+                    let data = try? await newItem.loadTransferable(type: Data.self)
+                else { return }
+                vm.setLogo(from: data)
+            }
+        }
         .navigationDestination(isPresented: $showCustomization) {
             NavigationLazyView(QRCodeCustomizationView(mainVM: vm))
         }
         .navigationDestination(isPresented: $showAbout) {
             NavigationLazyView(DetailedInformationView(vm: AboutQRCodeViewModel(), 10))
+        }
+        .alert(vm.logoAlertTitle, isPresented: $showLogoAlert) {
+        } message: {
+            Text(vm.logoAlertMessage)
         }
     }
 }
@@ -172,11 +191,11 @@ extension QRCodeGeneratorView {
     private var qrCodeGeneratorView: some View {
         VStack(spacing: 24) {
             HStack(spacing: 24) {
-                downloadButton
+                actionButton(image: .system.download, action: {})
                 qrPreview
                 VStack(spacing: 24) {
                     addLogoButton
-                    customizeButton
+                    actionButton(image: .system.paintbrush) { showCustomization = true }
                 }
             }
             errorCorrectionPicker
@@ -223,39 +242,6 @@ extension QRCodeGeneratorView {
         }
         .aspectRatio(1, contentMode: .fit)
         .frame(maxWidth: .infinity)
-    }
-
-    private var downloadButton: some View {
-        Button(action: { }) {
-            Image.system.download
-                .foregroundStyle(Color.void.secondaryText)
-                .padding()
-                .background(Color(.secondarySystemGroupedBackground))
-                .clipShape(Circle())
-                .shadow(color: Color.void.accentLight, radius: 4)
-        }
-    }
-
-    private var customizeButton: some View {
-        Button(action: { showCustomization = true }) {
-            Image.system.paintbrush
-                .foregroundStyle(Color.void.secondaryText)
-                .padding()
-                .background(Color(.secondarySystemGroupedBackground))
-                .clipShape(Circle())
-                .shadow(color: Color.void.accentLight, radius: 4)
-        }
-    }
-    
-    private var addLogoButton: some View {
-        Button(action: { }) {
-            Image.system.addImage
-                .foregroundStyle(Color.void.secondaryText)
-                .padding()
-                .background(Color(.secondarySystemGroupedBackground))
-                .clipShape(Circle())
-                .shadow(color: Color.void.accentLight, radius: 4)
-        }
     }
 
     private var errorCorrectionPicker: some View {
@@ -488,6 +474,66 @@ extension QRCodeGeneratorView {
 
             counterFor(vm.payloadDescription)
         }
+    }
+    
+    @ViewBuilder
+    private var addLogoButton: some View {
+        if vm.hasLogo {
+            Button {
+                selectedLogoItem = nil
+                vm.clearLogo()
+            } label: {
+                logoButtonLabel(image: .system.removeImage, tint: Color.void.errorRed)
+            }
+            .disabled(!vm.isQRCodeReady)
+            .opacity(vm.isQRCodeReady ? 1 : 0.4)
+            .animation(.easeInOut, value: vm.isQRCodeReady)
+        } else if vm.canAddLogo {
+            PhotosPicker(selection: $selectedLogoItem, matching: .images) {
+                logoButtonLabel(image: .system.addImage, tint: Color.void.secondaryText)
+            }
+            .disabled(!vm.isQRCodeReady)
+            .opacity(vm.isQRCodeReady ? 1 : 0.4)
+            .animation(.easeInOut, value: vm.isQRCodeReady)
+        } else {
+            Button {
+                showLogoAlert = true
+            } label: {
+                logoButtonLabel(image: .system.addImage, tint: Color.void.secondaryText)
+            }
+            .disabled(!vm.isQRCodeReady)
+            .opacity(vm.isQRCodeReady ? 1 : 0.4)
+            .animation(.easeInOut, value: vm.isQRCodeReady)
+        }
+    }
+
+    private func logoButtonLabel(image: Image, tint: Color) -> some View {
+        image
+            .foregroundStyle(tint)
+            .padding()
+            .background(Color(.secondarySystemGroupedBackground))
+            .clipShape(Circle())
+            .shadow(
+                color: vm.isQRCodeReady ? Color.void.accentLight : Color.clear,
+                radius: 4
+            )
+    }
+
+    private func actionButton(image: Image, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            image
+                .foregroundStyle(Color.void.secondaryText)
+                .padding()
+                .background(Color(.secondarySystemGroupedBackground))
+                .clipShape(Circle())
+                .shadow(
+                    color: vm.isQRCodeReady ? Color.void.accentLight : Color.clear,
+                    radius: 4
+                )
+        }
+        .disabled(!vm.isQRCodeReady)
+        .opacity(vm.isQRCodeReady ? 1 : 0.4)
+        .animation(.easeInOut, value: vm.isQRCodeReady)
     }
 
     private func counterFor(_ text: String) -> some View {

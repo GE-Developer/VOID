@@ -8,6 +8,7 @@
 import Foundation
 import CoreGraphics
 import CoreLocation
+import ImageIO
 
 @Observable
 final class QRCodeGeneratorViewModel {
@@ -51,6 +52,9 @@ final class QRCodeGeneratorViewModel {
             emailBody = trimToByteLimit(emailBody)
             smsMessage = trimToByteLimit(smsMessage)
             configuration.errorCorrection = selectedErrorCorrection
+            if selectedErrorCorrection != .high {
+                clearLogo()
+            }
         }
     }
 
@@ -98,7 +102,19 @@ final class QRCodeGeneratorViewModel {
     }
     
     var payloadDescription: String {
-        "\(payloadProgress) / \(selectedErrorCorrection.byteLimit)"
+        "\(payloadProgress) / \(selectedErrorCorrection.byteLimit) B"
+    }
+
+    var isQRCodeReady: Bool {
+        qrImage != nil && !generationFailed
+    }
+
+    var hasLogo: Bool {
+        configuration.style.logoImage != nil
+    }
+
+    var canAddLogo: Bool {
+        selectedErrorCorrection == .high
     }
 
     var payloadFraction: Double {
@@ -153,6 +169,8 @@ final class QRCodeGeneratorViewModel {
     
     let errorTitle = L10n("Error.title")
     let errorDescription = L10n("Error.qrGenerationFailed")
+    let logoAlertTitle = L10n("QRCode.Logo.alertTitle")
+    let logoAlertMessage = L10n("QRCode.Logo.alertMessage")
     let inputDataTitle = L10n("QRCode.InputData.title")
     let payloadTitle = L10n("QRCode.Payload.title")
     
@@ -165,8 +183,6 @@ final class QRCodeGeneratorViewModel {
     let emailPlaceholder = "user@gmail.com"
     let subjectPlaceholder = L10n("QRCode.Placeholder.subject")
     let messagePlaceholder = L10n("QRCode.Placeholder.message")
-
-    let customizeButtonTitle = L10n("QRCode.Customization.openButton")
     
     @ObservationIgnored private var regenerateTask: Task<Void, Never>?
     
@@ -193,6 +209,28 @@ final class QRCodeGeneratorViewModel {
             qrImage = nil
             generationFailed = true
         }
+    }
+
+    func setLogo(from data: Data) {
+        guard let source = CGImageSourceCreateWithData(data as CFData, nil) else { return }
+
+        let options: [CFString: Any] = [
+            kCGImageSourceCreateThumbnailFromImageAlways: true,
+            kCGImageSourceCreateThumbnailWithTransform: true,
+            kCGImageSourceShouldCacheImmediately: true,
+            kCGImageSourceThumbnailMaxPixelSize: 512
+        ]
+
+        guard
+            let image = CGImageSourceCreateThumbnailAtIndex(source, 0, options as CFDictionary)
+        else { return }
+
+        configuration.style.logoImage = image
+    }
+
+    func clearLogo() {
+        guard configuration.style.logoImage != nil else { return }
+        configuration.style.logoImage = nil
     }
 
     func isEmailValid(_ value: String) -> Bool {

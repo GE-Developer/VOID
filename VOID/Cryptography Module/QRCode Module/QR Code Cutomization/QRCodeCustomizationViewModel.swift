@@ -130,25 +130,21 @@ final class QRCodeCustomizationViewModel {
         set { mainVM.configuration.style.negatedOnPixelsOnly = newValue }
     }
 
-    var qrImage: CGImage? { mainVM.qrImage }
+    var qrImage: CGImage? { mainVM.qrImage } 
 
-    let title                  = L10n("QRCode.Customization.title")
-    let pixelStyleHeader       = QRPixelStyle.title
-    let eyeStyleHeader         = L10n("QRCode.Customization.eyeStyle")
-    let pupilStyleHeader       = L10n("QRCode.Customization.pupilStyle")
-    let foregroundHeader       = L10n("QRCode.Customization.foreground")
-    let backgroundHeader       = L10n("QRCode.Customization.background")
-    let eyeColorHeader         = L10n("QRCode.Customization.eyeColor")
-    let pupilColorHeader       = L10n("QRCode.Customization.pupilColor")
-    let offPixelsHeader        = L10n("QRCode.Customization.offPixels")
-    let eyeBackgroundHeader    = L10n("QRCode.Customization.eyeBackground")
-    let cornerRadiusHeader     = L10n("QRCode.Customization.cornerRadius")
-    let addLogoTitle           = L10n("QRCode.Logo.add")
-    let currentLogoTitle       = L10n("QRCode.Logo.current")
-    let colorRowTitle          = L10n("QRCode.Customization.color")
-    let gradientColorRowTitle  = L10n("QRCode.Customization.gradientColor")
+    let title = L10n("QRCode.Customization.title")
+    let subTitle = L10n("QRCode.title")
+    let pixelStyleHeader = QRPixelStyle.title
+    let eyeStyleHeader = QREyeStyle.title
+    let pupilStyleHeader = QRPupilStyle.title
+    let colorRowTitle = L10n("QRCode.Customization.primaryColor")
+    let gradientColorRowTitle = L10n("QRCode.Customization.gradientColor")
     let customColorToggleTitle = L10n("QRCode.Customization.customColor")
-    let negatedToggleTitle     = L10n("QRCode.Customization.negated")
+    let backgroundHeader = L10n("QRCode.Customization.background")
+    let offPixelsHeader = L10n("QRCode.Customization.offPixels")
+    let cornerRadiusHeader = L10n("QRCode.Customization.cornerRadius")
+    let negatedToggleTitle = L10n("QRCode.Customization.negated")
+    let eyeBackgroundTitle = L10n("QRCode.Customization.backgroundColor")
 
     @ObservationIgnored private let mainVM: QRCodeGeneratorViewModel
 

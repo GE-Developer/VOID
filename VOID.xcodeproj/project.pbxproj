@@ -72,6 +72,7 @@
 		1F8265F12FACF58B00F1EE9E /* FileMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265EF2FACF58B00F1EE9E /* FileMessageView.swift */; };
 		1F8265F22FACF58B00F1EE9E /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265F02FACF58B00F1EE9E /* ShareSheet.swift */; };
 		1F8265F42FACFA5400F1EE9E /* BinaryCodec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265F32FACFA5400F1EE9E /* BinaryCodec.swift */; };
+		1F8265F82FAD417700F1EE9E /* ShareItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265F72FAD417700F1EE9E /* ShareItem.swift */; };
 		1F84D4322EC245E6001FAA62 /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F84D4312EC245E6001FAA62 /* Property List.plist */; };
 		1F8B4FA12E9C72CF0075C9DA /* AboutEmojiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B4FA02E9C72CF0075C9DA /* AboutEmojiViewModel.swift */; };
 		1F8B4FA32E9C76C80075C9DA /* LetterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8B4FA22E9C76C80075C9DA /* LetterType.swift */; };
@@ -199,6 +200,7 @@
 		1F8265EF2FACF58B00F1EE9E /* FileMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMessageView.swift; sourceTree = "<group>"; };
 		1F8265F02FACF58B00F1EE9E /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
 		1F8265F32FACFA5400F1EE9E /* BinaryCodec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryCodec.swift; sourceTree = "<group>"; };
+		1F8265F72FAD417700F1EE9E /* ShareItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareItem.swift; sourceTree = "<group>"; };
 		1F84D4312EC245E6001FAA62 /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
 		1F8B4FA02E9C72CF0075C9DA /* AboutEmojiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutEmojiViewModel.swift; sourceTree = "<group>"; };
 		1F8B4FA22E9C76C80075C9DA /* LetterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterType.swift; sourceTree = "<group>"; };
@@ -368,6 +370,7 @@
 				1F2D34212E7D7D16005E6239 /* AES256Parameters.swift */,
 				1F2D34222E7D7D16005E6239 /* Message.swift */,
 				1F8265E32FACF16100F1EE9E /* FileMessage.swift */,
+				1F8265F72FAD417700F1EE9E /* ShareItem.swift */,
 				1F8265E72FACF1E500F1EE9E /* AES256FileHeader.swift */,
 				2481CB059181C5AF99752750 /* QRCodeConfiguration.swift */,
 			);
@@ -805,6 +808,7 @@
 				1F8DDCE72E3A2C55005734CD /* CustomSliderRow.swift in Sources */,
 				1F587D522EAC61DF0025194E /* AboutProjectView.swift in Sources */,
 				1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */,
+				1F8265F82FAD417700F1EE9E /* ShareItem.swift in Sources */,
 				1F8DDBC12E366E11005734CD /* AES256EncryptionView.swift in Sources */,
 				1F64ADDF2E75835500DB44CE /* View + Ext.swift in Sources */,
 				1FA0160E2F8719990069A6F9 /* AppVersion.swift in Sources */,
