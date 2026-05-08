@@ -13,7 +13,7 @@ struct QRCodeGeneratorManager {
     static func generateQRCode(
         from payload: String,
         configuration: QRCodeConfiguration,
-        dimension: Int = 800
+        dimension: Int = 480
     ) async throws -> CGImage {
         try await Task.detached {
 

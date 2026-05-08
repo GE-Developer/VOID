@@ -18254,6 +18254,39 @@
         }
       }
     },
+    "QRCode.Quality.good" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Looks scannable"
+          }
+        }
+      }
+    },
+    "QRCode.Quality.suspicious" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "May fail to scan"
+          }
+        }
+      }
+    },
+    "QRCode.Quality.critical" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Will not scan"
+          }
+        }
+      }
+    },
     "QRCode.Logo.alertTitle" : {
       "extractionState" : "manual",
       "localizations" : {

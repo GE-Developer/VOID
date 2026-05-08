@@ -60,16 +60,18 @@ final class QRCodeGeneratorViewModel {
 
     var selectedDataType: QRDataType = .plainText
 
-    var configuration = QRCodeConfiguration() {
+    @ObservationIgnored var configuration = QRCodeConfiguration() {
         didSet {
             regenerateTask?.cancel()
             regenerateTask = Task { @MainActor in
-                try? await Task.sleep(for: .milliseconds(150))
+                try? await Task.sleep(for: .milliseconds(600))
                 guard !Task.isCancelled else { return }
                 await generate()
             }
         }
     }
+
+    private(set) var hasLogo: Bool = false
 
     var text = ""
     var selectedURLScheme: URLScheme = .http
@@ -109,10 +111,6 @@ final class QRCodeGeneratorViewModel {
         qrImage != nil && !generationFailed
     }
 
-    var hasLogo: Bool {
-        configuration.style.logoImage != nil
-    }
-
     var canAddLogo: Bool {
         selectedErrorCorrection == .high
     }
@@ -150,6 +148,7 @@ final class QRCodeGeneratorViewModel {
     
     private(set) var qrImage: CGImage?
     private(set) var generationFailed = false
+    private(set) var qrQuality: QRScanQuality = .good
 
     private var payloadProgress: Int {
         switch selectedDataType {
@@ -185,6 +184,7 @@ final class QRCodeGeneratorViewModel {
     let messagePlaceholder = L10n("QRCode.Placeholder.message")
     
     @ObservationIgnored private var regenerateTask: Task<Void, Never>?
+    @ObservationIgnored private var analysisTask: Task<Void, Never>?
     
     init() {
         configuration.errorCorrection = selectedErrorCorrection
@@ -195,19 +195,34 @@ final class QRCodeGeneratorViewModel {
         guard canGenerate() else {
             qrImage = nil
             generationFailed = false
+            qrQuality = .good
+            analysisTask?.cancel()
             return
         }
 
         generationFailed = false
-        
+
         do {
             qrImage = try await QRCodeGeneratorManager.generateQRCode(
                 from: stringResult,
                 configuration: configuration
             )
+            scheduleQualityAnalysis()
         } catch {
             qrImage = nil
             generationFailed = true
+            qrQuality = .good
+            analysisTask?.cancel()
+        }
+    }
+
+    private func scheduleQualityAnalysis() {
+        analysisTask?.cancel()
+        guard let image = qrImage else { return }
+        analysisTask = Task { @MainActor in
+            let quality = await QRCodeAnalysisService.analyze(image)
+            guard !Task.isCancelled else { return }
+            qrQuality = quality
         }
     }
 
@@ -226,11 +241,13 @@ final class QRCodeGeneratorViewModel {
         else { return }
 
         configuration.style.logoImage = image
+        hasLogo = true
     }
 
     func clearLogo() {
         guard configuration.style.logoImage != nil else { return }
         configuration.style.logoImage = nil
+        hasLogo = false
     }
 
     func isEmailValid(_ value: String) -> Bool {

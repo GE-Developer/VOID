@@ -11,126 +11,107 @@ import Foundation
 @Observable
 final class QRCodeCustomizationViewModel {
 
-    enum ContrastSeverity { case warning, critical }
-
     var pixelStyle: QRPixelStyle {
-        get { mainVM.configuration.style.pixelStyle }
-        set { mainVM.configuration.style.pixelStyle = newValue }
+        didSet { mainVM.configuration.style.pixelStyle = pixelStyle }
     }
 
     var foregroundFillType: FillType {
-        get { mainVM.configuration.style.foregroundFillType }
-        set { mainVM.configuration.style.foregroundFillType = newValue }
+        didSet { mainVM.configuration.style.foregroundFillType = foregroundFillType }
     }
 
     var foregroundColor: CGColor {
-        get { mainVM.configuration.style.foregroundColor }
-        set { mainVM.configuration.style.foregroundColor = newValue }
+        didSet { mainVM.configuration.style.foregroundColor = foregroundColor }
     }
 
     var foregroundGradientColor: CGColor {
-        get { mainVM.configuration.style.foregroundGradientColor }
-        set { mainVM.configuration.style.foregroundGradientColor = newValue }
+        didSet { mainVM.configuration.style.foregroundGradientColor = foregroundGradientColor }
     }
 
     var eyeStyle: QREyeStyle {
-        get { mainVM.configuration.style.eyeStyle }
-        set { mainVM.configuration.style.eyeStyle = newValue }
+        didSet { mainVM.configuration.style.eyeStyle = eyeStyle }
     }
 
     var isEyeColorCustom: Bool {
-        get { mainVM.configuration.style.eyeColor != nil }
-        set {
-            mainVM.configuration.style.eyeColor = newValue
-                ? mainVM.configuration.style.foregroundColor
-                : nil
-        }
+        didSet { mainVM.configuration.style.eyeColor = isEyeColorCustom ? eyeColor : nil }
     }
 
     var eyeColor: CGColor {
-        get { mainVM.configuration.style.eyeColor ?? mainVM.configuration.style.foregroundColor }
-        set { mainVM.configuration.style.eyeColor = newValue }
+        didSet {
+            if isEyeColorCustom {
+                mainVM.configuration.style.eyeColor = eyeColor
+            }
+        }
     }
 
     var isEyeBackgroundColorCustom: Bool {
-        get { mainVM.configuration.style.eyeBackgroundColor != nil }
-        set {
-            mainVM.configuration.style.eyeBackgroundColor = newValue
-                ? mainVM.configuration.style.backgroundColor
-                : nil
-        }
+        didSet { mainVM.configuration.style.eyeBackgroundColor = isEyeBackgroundColorCustom ? eyeBackgroundColor : nil }
     }
 
     var eyeBackgroundColor: CGColor {
-        get { mainVM.configuration.style.eyeBackgroundColor ?? mainVM.configuration.style.backgroundColor }
-        set { mainVM.configuration.style.eyeBackgroundColor = newValue }
-    }
-
-    var pupilStyle: QRPupilStyle {
-        get { mainVM.configuration.style.pupilStyle }
-        set { mainVM.configuration.style.pupilStyle = newValue }
-    }
-
-    var isPupilColorCustom: Bool {
-        get { mainVM.configuration.style.pupilColor != nil }
-        set {
-            mainVM.configuration.style.pupilColor = newValue
-                ? mainVM.configuration.style.foregroundColor
-                : nil
+        didSet {
+            if isEyeBackgroundColorCustom {
+                mainVM.configuration.style.eyeBackgroundColor = eyeBackgroundColor
+            }
         }
     }
 
+    var pupilStyle: QRPupilStyle {
+        didSet { mainVM.configuration.style.pupilStyle = pupilStyle }
+    }
+
+    var isPupilColorCustom: Bool {
+        didSet { mainVM.configuration.style.pupilColor = isPupilColorCustom ? pupilColor : nil }
+    }
+
     var pupilColor: CGColor {
-        get { mainVM.configuration.style.pupilColor ?? mainVM.configuration.style.foregroundColor }
-        set { mainVM.configuration.style.pupilColor = newValue }
+        didSet {
+            if isPupilColorCustom {
+                mainVM.configuration.style.pupilColor = pupilColor
+            }
+        }
     }
 
     var backgroundFillType: FillType {
-        get { mainVM.configuration.style.backgroundFillType }
-        set { mainVM.configuration.style.backgroundFillType = newValue }
+        didSet { mainVM.configuration.style.backgroundFillType = backgroundFillType }
     }
 
     var backgroundColor: CGColor {
-        get { mainVM.configuration.style.backgroundColor }
-        set { mainVM.configuration.style.backgroundColor = newValue }
+        didSet { mainVM.configuration.style.backgroundColor = backgroundColor }
     }
 
     var backgroundGradientColor: CGColor {
-        get { mainVM.configuration.style.backgroundGradientColor }
-        set { mainVM.configuration.style.backgroundGradientColor = newValue }
+        didSet { mainVM.configuration.style.backgroundGradientColor = backgroundGradientColor }
     }
 
     var backgroundCornerRadius: CGFloat {
-        get { mainVM.configuration.style.backgroundCornerRadius }
-        set { mainVM.configuration.style.backgroundCornerRadius = newValue }
+        didSet { mainVM.configuration.style.backgroundCornerRadius = backgroundCornerRadius }
     }
 
     var offPixelStyle: QRPixelStyle {
-        get { mainVM.configuration.style.offPixelStyle }
-        set { mainVM.configuration.style.offPixelStyle = newValue }
+        didSet { mainVM.configuration.style.offPixelStyle = offPixelStyle }
     }
 
     var offPixelsFillType: FillType {
-        get { mainVM.configuration.style.offPixelsFillType }
-        set { mainVM.configuration.style.offPixelsFillType = newValue }
+        didSet { mainVM.configuration.style.offPixelsFillType = offPixelsFillType }
     }
 
     var offPixelsColor: CGColor {
-        get { mainVM.configuration.style.offPixelsColor }
-        set { mainVM.configuration.style.offPixelsColor = newValue }
+        didSet { mainVM.configuration.style.offPixelsColor = offPixelsColor }
     }
 
     var offPixelsGradientColor: CGColor {
-        get { mainVM.configuration.style.offPixelsGradientColor }
-        set { mainVM.configuration.style.offPixelsGradientColor = newValue }
+        didSet { mainVM.configuration.style.offPixelsGradientColor = offPixelsGradientColor }
     }
 
     var negatedOnPixelsOnly: Bool {
-        get { mainVM.configuration.style.negatedOnPixelsOnly }
-        set { mainVM.configuration.style.negatedOnPixelsOnly = newValue }
+        didSet { mainVM.configuration.style.negatedOnPixelsOnly = negatedOnPixelsOnly }
     }
 
-    var qrImage: CGImage? { mainVM.qrImage } 
+    var qrImage: CGImage? { mainVM.qrImage }
+
+    var quality: QRScanQuality { mainVM.qrQuality }
+
+    var qualityTitle: String { mainVM.qrQuality.description }
 
     let title = L10n("QRCode.Customization.title")
     let subTitle = L10n("QRCode.title")
@@ -150,5 +131,28 @@ final class QRCodeCustomizationViewModel {
 
     init(mainVM: QRCodeGeneratorViewModel) {
         self.mainVM = mainVM
+        let style = mainVM.configuration.style
+
+        self.pixelStyle = style.pixelStyle
+        self.foregroundFillType = style.foregroundFillType
+        self.foregroundColor = style.foregroundColor
+        self.foregroundGradientColor = style.foregroundGradientColor
+        self.eyeStyle = style.eyeStyle
+        self.isEyeColorCustom = style.eyeColor != nil
+        self.eyeColor = style.eyeColor ?? style.foregroundColor
+        self.isEyeBackgroundColorCustom = style.eyeBackgroundColor != nil
+        self.eyeBackgroundColor = style.eyeBackgroundColor ?? style.backgroundColor
+        self.pupilStyle = style.pupilStyle
+        self.isPupilColorCustom = style.pupilColor != nil
+        self.pupilColor = style.pupilColor ?? style.foregroundColor
+        self.backgroundFillType = style.backgroundFillType
+        self.backgroundColor = style.backgroundColor
+        self.backgroundGradientColor = style.backgroundGradientColor
+        self.backgroundCornerRadius = style.backgroundCornerRadius
+        self.offPixelStyle = style.offPixelStyle
+        self.offPixelsFillType = style.offPixelsFillType
+        self.offPixelsColor = style.offPixelsColor
+        self.offPixelsGradientColor = style.offPixelsGradientColor
+        self.negatedOnPixelsOnly = style.negatedOnPixelsOnly
     }
 }

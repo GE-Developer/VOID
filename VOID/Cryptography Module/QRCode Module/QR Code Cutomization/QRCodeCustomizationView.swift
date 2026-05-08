@@ -11,10 +11,6 @@ import PhotosUI
 struct QRCodeCustomizationView: View {
     @State private var vm: QRCodeCustomizationViewModel
 
-    init(mainVM: QRCodeGeneratorViewModel) {
-        _vm = State(initialValue: QRCodeCustomizationViewModel(mainVM: mainVM))
-    }
-
     private var pixelStyleBinding: Binding<QRPixelStyle> {
         Binding(
             get: { vm.pixelStyle },
@@ -161,57 +157,36 @@ struct QRCodeCustomizationView: View {
             set: { vm.negatedOnPixelsOnly = $0 }
         )
     }
+    
+    init(mainVM: QRCodeGeneratorViewModel) {
+        _vm = State(initialValue: QRCodeCustomizationViewModel(mainVM: mainVM))
+    }
 
     var body: some View {
         CustomScrollView(title: vm.title, subTitle: vm.subTitle) {
             EmptyView()
         } content: { _ in
             VStack(spacing: 24) {
-                qrPreview
-                // contrastWarning
+                QRCodeCustomizationPreview(vm: vm)
+                QRScanQualityBanner(vm: vm)
                 pixelStyleSection
+                Divider()
                 eyeStyleSection
+                Divider()
                 pupilStyleSection
+                Divider()
                 offPixelsSection
+                Divider()
                 backgroundSection
-                CustomForm(headerText: vm.cornerRadiusHeader) {
-                    Slider(value: backgroundCornerRadiusBinding, in: 0...1)
-                        .tint(Gradient.accent)
-                        .padding(.horizontal)
-                        .padding(.vertical, 12)
-                }
+                Divider()
+                cornerSlider
             }
         }
     }
 }
 
-// MARK: - Sections
+// MARK: - Builder
 extension QRCodeCustomizationView {
-    private var qrPreview: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 12)
-                .fill(Color(.secondarySystemGroupedBackground))
-                .shadow(color: Color.void.accentLight, radius: 4)
-
-            if let cgImage = vm.qrImage {
-                Image(decorative: cgImage, scale: 1)
-                    .resizable()
-                    .interpolation(.none)
-                    .scaledToFit()
-                    .padding()
-                    .drawingGroup()
-            } else {
-                Image.system.qrCode
-                    .font(.largeTitle)
-                    .foregroundStyle(Color.void.secondaryText)
-                    .opacity(0.3)
-            }
-        }
-        .aspectRatio(1, contentMode: .fit)
-        .frame(maxWidth: .infinity)
-        .padding(.horizontal, 50)
-    }
-    
     private var pixelStyleSection: some View {
         VStack(spacing: 16) {
             CustomCapsulePicker(
@@ -392,5 +367,90 @@ extension QRCodeCustomizationView {
                 }
             }
         }
+    }
+    
+    private var cornerSlider: some View {
+        VStack(spacing: 12) {
+            FormHeaderView(vm.cornerRadiusHeader)
+            Slider(value: backgroundCornerRadiusBinding, in: 0...1)
+                .tint(Gradient.accent)
+                .padding(.horizontal)
+        }
+    }
+}
+
+// MARK: - QR Scan Quality Banner
+private struct QRScanQualityBanner: View {
+    let vm: QRCodeCustomizationViewModel
+
+    var body: some View {
+        if vm.qrImage != nil {
+            HStack(spacing: 8) {
+                icon
+                Text(vm.qualityTitle)
+                    .font(.subheadline)
+                    .fontWeight(.medium)
+                    .fontDesign(.rounded)
+                    .foregroundStyle(tintColor)
+            }
+            .padding(.horizontal, 16)
+            .padding(.vertical, 10)
+            .frame(maxWidth: .infinity)
+            .background {
+                tintColor.opacity(0.15)
+                    .animation(.easeIn, value: vm.quality)
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 12))
+            .padding(.horizontal, 50)
+        }
+    }
+
+    private var tintColor: Color {
+        switch vm.quality {
+        case .good:       return Color.void.greenDark
+        case .suspicious: return Color.void.tangOrange
+        case .critical:   return Color.void.errorRed
+        }
+    }
+
+    @ViewBuilder
+    private var icon: some View {
+        switch vm.quality {
+        case .good:
+            Image.system.checkmark()
+                .foregroundStyle(tintColor)
+        case .suspicious, .critical:
+            Image.system.warning
+                .foregroundStyle(tintColor)
+        }
+    }
+}
+
+// MARK: - QR Code Customization Preview
+private struct QRCodeCustomizationPreview: View {
+    let vm: QRCodeCustomizationViewModel
+
+    var body: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 12)
+                .fill(Color(.secondarySystemGroupedBackground))
+                .shadow(color: Color.void.accentLight, radius: 4)
+
+            if let cgImage = vm.qrImage {
+                Image(decorative: cgImage, scale: 1)
+                    .resizable()
+                    .interpolation(.none)
+                    .scaledToFit()
+                    .padding()
+            } else {
+                Image.system.qrCode
+                    .font(.largeTitle)
+                    .foregroundStyle(Color.void.secondaryText)
+                    .opacity(0.3)
+            }
+        }
+        .aspectRatio(1, contentMode: .fit)
+        .frame(maxWidth: .infinity)
+        .padding(.horizontal, 50)
     }
 }

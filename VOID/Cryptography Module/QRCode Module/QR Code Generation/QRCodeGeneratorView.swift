@@ -16,6 +16,9 @@ struct QRCodeGeneratorView: View {
     @State private var selectedLogoItem: PhotosPickerItem?
     @State private var showLogoAlert = false
 
+    private let haptics = HapticsManager.shared
+    private let sounds = SoundManager.shared
+
     private var plainTextBinding: Binding<String> {
         Binding(
             get: { vm.text },
@@ -191,11 +194,16 @@ extension QRCodeGeneratorView {
     private var qrCodeGeneratorView: some View {
         VStack(spacing: 24) {
             HStack(spacing: 24) {
-                actionButton(image: .system.download, action: {})
+                actionButton(image: .system.download) {
+                    haptics.impact(style: .light)
+                }
                 qrPreview
                 VStack(spacing: 24) {
                     addLogoButton
-                    actionButton(image: .system.paintbrush) { showCustomization = true }
+                    actionButton(image: .system.paintbrush) {
+                        haptics.impact(style: .light)
+                        showCustomization = true
+                    }
                 }
             }
             errorCorrectionPicker
@@ -217,7 +225,6 @@ extension QRCodeGeneratorView {
                     .interpolation(.none)
                     .scaledToFit()
                     .padding()
-                    .drawingGroup()
             } else if vm.generationFailed {
                 VStack(spacing: 8) {
                     Image.system.warning
@@ -476,35 +483,37 @@ extension QRCodeGeneratorView {
         }
     }
     
-    @ViewBuilder
     private var addLogoButton: some View {
-        if vm.hasLogo {
-            Button {
-                selectedLogoItem = nil
-                vm.clearLogo()
-            } label: {
-                logoButtonLabel(image: .system.removeImage, tint: Color.void.errorRed)
+        Group {
+            if vm.hasLogo {
+                Button {
+                    haptics.impact(style: .light)
+                    selectedLogoItem = nil
+                    vm.clearLogo()
+                } label: {
+                    logoButtonLabel(image: .system.removeImage, tint: .void.errorRed)
+                }
+            } else if vm.canAddLogo {
+                PhotosPicker(selection: $selectedLogoItem, matching: .images) {
+                    logoButtonLabel(image: .system.addImage, tint: .void.secondaryText)
+                }
+                .simultaneousGesture(
+                    TapGesture()
+                        .onEnded { haptics.impact(style: .light) }
+                )
+            } else {
+                Button {
+                    haptics.notification(type: .error)
+                    sounds.playSound(.errorAlert)
+                    showLogoAlert = true
+                } label: {
+                    logoButtonLabel(image: .system.addImage, tint: .void.secondaryText)
+                }
             }
-            .disabled(!vm.isQRCodeReady)
-            .opacity(vm.isQRCodeReady ? 1 : 0.4)
-            .animation(.easeInOut, value: vm.isQRCodeReady)
-        } else if vm.canAddLogo {
-            PhotosPicker(selection: $selectedLogoItem, matching: .images) {
-                logoButtonLabel(image: .system.addImage, tint: Color.void.secondaryText)
-            }
-            .disabled(!vm.isQRCodeReady)
-            .opacity(vm.isQRCodeReady ? 1 : 0.4)
-            .animation(.easeInOut, value: vm.isQRCodeReady)
-        } else {
-            Button {
-                showLogoAlert = true
-            } label: {
-                logoButtonLabel(image: .system.addImage, tint: Color.void.secondaryText)
-            }
-            .disabled(!vm.isQRCodeReady)
-            .opacity(vm.isQRCodeReady ? 1 : 0.4)
-            .animation(.easeInOut, value: vm.isQRCodeReady)
         }
+        .disabled(!vm.isQRCodeReady)
+        .opacity(vm.isQRCodeReady ? 1 : 0.4)
+        .animation(.easeInOut, value: vm.isQRCodeReady)
     }
 
     private func logoButtonLabel(image: Image, tint: Color) -> some View {
@@ -517,19 +526,12 @@ extension QRCodeGeneratorView {
                 color: vm.isQRCodeReady ? Color.void.accentLight : Color.clear,
                 radius: 4
             )
+            .frame(width: 50, height: 50)
     }
 
     private func actionButton(image: Image, action: @escaping () -> Void) -> some View {
         Button(action: action) {
-            image
-                .foregroundStyle(Color.void.secondaryText)
-                .padding()
-                .background(Color(.secondarySystemGroupedBackground))
-                .clipShape(Circle())
-                .shadow(
-                    color: vm.isQRCodeReady ? Color.void.accentLight : Color.clear,
-                    radius: 4
-                )
+            logoButtonLabel(image: image, tint: .void.secondaryText)
         }
         .disabled(!vm.isQRCodeReady)
         .opacity(vm.isQRCodeReady ? 1 : 0.4)

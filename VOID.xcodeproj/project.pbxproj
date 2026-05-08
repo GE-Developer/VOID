@@ -84,6 +84,7 @@
 		1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBE52E36785E005734CD /* Color + Ext.swift */; };
 		1F8DDBEF2E3678C0005734CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */; };
 		1F8DDBF32E367EC4005734CD /* AESEncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */; };
+		1FCA0A1A2E000001000000A1 /* QRCodeAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA0A1A2E000001000000A2 /* QRCodeAnalysisService.swift */; };
 		1F8DDBF62E36A15E005734CD /* Argon2Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8DDBF52E36A15E005734CD /* Argon2Swift */; };
 		1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */; };
 		1F8DDBFA2E38123F005734CD /* AES256SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */; };
@@ -212,6 +213,7 @@
 		1F8DDBE62E36785E005734CD /* Image + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESEncryptionService.swift; sourceTree = "<group>"; };
+		1FCA0A1A2E000001000000A2 /* QRCodeAnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAnalysisService.swift; sourceTree = "<group>"; };
 		1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256EncryptionViewModel.swift; sourceTree = "<group>"; };
 		1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256SettingsView.swift; sourceTree = "<group>"; };
 		1F8DDCDA2E3963C3005734CD /* CustomForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomForm.swift; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				1F8265EA2FACF4E300F1EE9E /* StreamingSHA512.swift */,
 				1F6F65FD2E958A3F0095E89E /* CodecService.swift */,
 				1F8265F32FACFA5400F1EE9E /* BinaryCodec.swift */,
+				1FCA0A1A2E000001000000A2 /* QRCodeAnalysisService.swift */,
 			);
 			path = "Crypto Services";
 			sourceTree = "<group>";
@@ -805,6 +808,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8DDBF32E367EC4005734CD /* AESEncryptionService.swift in Sources */,
+				1FCA0A1A2E000001000000A1 /* QRCodeAnalysisService.swift in Sources */,
 				1F8DDCE72E3A2C55005734CD /* CustomSliderRow.swift in Sources */,
 				1F587D522EAC61DF0025194E /* AboutProjectView.swift in Sources */,
 				1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */,
