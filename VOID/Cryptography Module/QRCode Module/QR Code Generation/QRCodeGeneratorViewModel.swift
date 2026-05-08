@@ -318,10 +318,21 @@ final class QRCodeGeneratorViewModel {
         analysisTask?.cancel()
         guard let image = qrImage else { return }
         analysisTask = Task { @MainActor in
-            let quality = await QRCodeAnalysisService.analyze(image)
+            let target = await analysisImage(fallback: image)
             guard !Task.isCancelled else { return }
-            qrQuality = quality
+            qrQuality = await QRCodeAnalysisService.analyze(target)
         }
+    }
+    
+    private func analysisImage(fallback: CGImage) async -> CGImage {
+        guard hasLogo else { return fallback }
+        var cleanConfig = configuration
+        cleanConfig.style.logoImage = nil
+        let clean = try? await QRCodeGeneratorManager.generateQRCode(
+            from: stringResult,
+            configuration: cleanConfig
+        )
+        return clean ?? fallback
     }
 
     private func canGenerate() -> Bool {
