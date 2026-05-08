@@ -1,5 +1,5 @@
 //
-//  QRCodeAnalysisService.swift
+//  QRCodeAnalysisManager.swift
 //  VOID
 //
 //  Created by GE-Developer

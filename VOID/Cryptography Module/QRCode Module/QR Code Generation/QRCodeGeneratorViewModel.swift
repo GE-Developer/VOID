@@ -59,17 +59,11 @@ final class QRCodeGeneratorViewModel {
     }
 
     var selectedDataType: QRDataType = .plainText
-
-    @ObservationIgnored var configuration = QRCodeConfiguration() {
-        didSet {
-            regenerateTask?.cancel()
-            regenerateTask = Task { @MainActor in
-                try? await Task.sleep(for: .milliseconds(600))
-                guard !Task.isCancelled else { return }
-                await generate()
-            }
-        }
-    }
+    
+    var showFormatPicker = false
+    var isExporting = false
+    var exportURL: URL?
+    var showExportError = false
 
     private(set) var hasLogo: Bool = false
 
@@ -159,6 +153,21 @@ final class QRCodeGeneratorViewModel {
         }
     }
     
+    @ObservationIgnored private var regenerateTask: Task<Void, Never>?
+    @ObservationIgnored private var analysisTask: Task<Void, Never>?
+    @ObservationIgnored private var exportTask: Task<Void, Never>?
+    
+    @ObservationIgnored var configuration = QRCodeConfiguration() {
+        didSet {
+            regenerateTask?.cancel()
+            regenerateTask = Task { @MainActor in
+                try? await Task.sleep(for: .milliseconds(600))
+                guard !Task.isCancelled else { return }
+                await generate()
+            }
+        }
+    }
+    
     let urlSchemeOptions = URLScheme.allCases.map(\.rawValue)
     let wifiEncryptionOptions = WifiEncryption.allCases.map(\.rawValue)
     
@@ -168,6 +177,7 @@ final class QRCodeGeneratorViewModel {
     
     let errorTitle = L10n("Error.title")
     let errorDescription = L10n("Error.qrGenerationFailed")
+    let exportErrorMessage = L10n("Error.fileWriteFailed")
     let logoAlertTitle = L10n("QRCode.Logo.alertTitle")
     let logoAlertMessage = L10n("QRCode.Logo.alertMessage")
     let inputDataTitle = L10n("QRCode.InputData.title")
@@ -182,9 +192,6 @@ final class QRCodeGeneratorViewModel {
     let emailPlaceholder = "user@gmail.com"
     let subjectPlaceholder = L10n("QRCode.Placeholder.subject")
     let messagePlaceholder = L10n("QRCode.Placeholder.message")
-    
-    @ObservationIgnored private var regenerateTask: Task<Void, Never>?
-    @ObservationIgnored private var analysisTask: Task<Void, Never>?
     
     init() {
         configuration.errorCorrection = selectedErrorCorrection
@@ -216,16 +223,6 @@ final class QRCodeGeneratorViewModel {
         }
     }
 
-    private func scheduleQualityAnalysis() {
-        analysisTask?.cancel()
-        guard let image = qrImage else { return }
-        analysisTask = Task { @MainActor in
-            let quality = await QRCodeAnalysisService.analyze(image)
-            guard !Task.isCancelled else { return }
-            qrQuality = quality
-        }
-    }
-
     func setLogo(from data: Data) {
         guard let source = CGImageSourceCreateWithData(data as CFData, nil) else { return }
 
@@ -248,6 +245,28 @@ final class QRCodeGeneratorViewModel {
         guard configuration.style.logoImage != nil else { return }
         configuration.style.logoImage = nil
         hasLogo = false
+    }
+
+    @MainActor
+    func exportQRCode(as format: QRExportFormat) {
+        exportTask?.cancel()
+        isExporting = true
+        exportTask = Task {
+            defer { isExporting = false }
+            do {
+                let data = try await QRCodeGeneratorManager.exportData(
+                    from: stringResult,
+                    configuration: configuration,
+                    format: format
+                )
+                let url = FileManager.default.temporaryDirectory
+                    .appendingPathComponent("QR Code [VOID].\(format.fileExtension)")
+                try data.write(to: url)
+                exportURL = url
+            } catch {
+                showExportError = true
+            }
+        }
     }
 
     func isEmailValid(_ value: String) -> Bool {
@@ -292,6 +311,16 @@ final class QRCodeGeneratorViewModel {
             let allowed: Set<Character> = Set("abcdefghijklmnopqrstuvwxyz0123456789@._%+-")
             let cleaned = text.lowercased().filter { allowed.contains($0) }
             return String(cleaned.prefix(fieldType.limit))
+        }
+    }
+    
+    private func scheduleQualityAnalysis() {
+        analysisTask?.cancel()
+        guard let image = qrImage else { return }
+        analysisTask = Task { @MainActor in
+            let quality = await QRCodeAnalysisService.analyze(image)
+            guard !Task.isCancelled else { return }
+            qrQuality = quality
         }
     }
 

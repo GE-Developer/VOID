@@ -15,6 +15,7 @@ struct QRCodeGeneratorView: View {
     @State private var showAbout = false
     @State private var selectedLogoItem: PhotosPickerItem?
     @State private var showLogoAlert = false
+    @State private var showShareSheet = false
 
     private let haptics = HapticsManager.shared
     private let sounds = SoundManager.shared
@@ -186,6 +187,32 @@ struct QRCodeGeneratorView: View {
         } message: {
             Text(vm.logoAlertMessage)
         }
+        .alert(vm.errorTitle, isPresented: $vm.showExportError) {
+        } message: {
+            Text(vm.exportErrorMessage)
+        }
+        .confirmationDialog("", isPresented: $vm.showFormatPicker) {
+            ForEach(QRExportFormat.allCases, id: \.self) { format in
+                Button(format.title) {
+                    vm.exportQRCode(as: format)
+                }
+            }
+        }
+        .onChange(of: vm.exportURL) { _, url in
+            if url != nil { showShareSheet = true }
+        }
+        .sheet(isPresented: $showShareSheet, onDismiss: { vm.exportURL = nil }) {
+            if let url = vm.exportURL {
+                ShareSheet(url: url)
+            }
+        }
+        .overlay {
+            if vm.isExporting {
+                ProgressView()
+                    .padding(20)
+                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 12))
+            }
+        }
     }
 }
 
@@ -196,6 +223,7 @@ extension QRCodeGeneratorView {
             HStack(spacing: 24) {
                 actionButton(image: .system.download) {
                     haptics.impact(style: .light)
+                    vm.showFormatPicker = true
                 }
                 qrPreview
                 VStack(spacing: 24) {

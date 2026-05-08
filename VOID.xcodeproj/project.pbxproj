@@ -53,6 +53,7 @@
 		1F6F65FE2E958A3F0095E89E /* CodecService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65FD2E958A3F0095E89E /* CodecService.swift */; };
 		1F6F66002E958B380095E89E /* EmojiCodingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F65FF2E958B380095E89E /* EmojiCodingView.swift */; };
 		1F6F66032E958C030095E89E /* EmojiCodingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6F66022E958C030095E89E /* EmojiCodingViewModel.swift */; };
+		1F74CBF12FAE6A9F00A19F30 /* QRExportFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F74CBF02FAE6A9F00A19F30 /* QRExportFormat.swift */; };
 		1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7970872E7C4D6B007755F3 /* Sound.swift */; };
 		1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */; };
 		1F7D9EE12E634007007B4DDD /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE02E634007007B4DDD /* SoundManager.swift */; };
@@ -84,7 +85,6 @@
 		1F8DDBE92E36785E005734CD /* Color + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBE52E36785E005734CD /* Color + Ext.swift */; };
 		1F8DDBEF2E3678C0005734CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */; };
 		1F8DDBF32E367EC4005734CD /* AESEncryptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */; };
-		1FCA0A1A2E000001000000A1 /* QRCodeAnalysisService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA0A1A2E000001000000A2 /* QRCodeAnalysisService.swift */; };
 		1F8DDBF62E36A15E005734CD /* Argon2Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F8DDBF52E36A15E005734CD /* Argon2Swift */; };
 		1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */; };
 		1F8DDBFA2E38123F005734CD /* AES256SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */; };
@@ -124,6 +124,7 @@
 		1FB32C322EB0623B0051A772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C312EB0623B0051A772 /* Images.xcassets */; };
 		1FB32C342EB062C10051A772 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C332EB062C10051A772 /* Colors.xcassets */; };
 		1FB32C3E2EB264810051A772 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C3D2EB264810051A772 /* ExitButton.swift */; };
+		1FCA0A1A2E000001000000A1 /* QRCodeAnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA0A1A2E000001000000A2 /* QRCodeAnalysisManager.swift */; };
 		1FEECF682EBD4EEC0058E823 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */; };
 		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
 		1FF762922FA77EFC0007D02E /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF762912FA77EFC0007D02E /* Validator.swift */; };
@@ -182,6 +183,7 @@
 		1F6F65FD2E958A3F0095E89E /* CodecService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodecService.swift; sourceTree = "<group>"; };
 		1F6F65FF2E958B380095E89E /* EmojiCodingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCodingView.swift; sourceTree = "<group>"; };
 		1F6F66022E958C030095E89E /* EmojiCodingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCodingViewModel.swift; sourceTree = "<group>"; };
+		1F74CBF02FAE6A9F00A19F30 /* QRExportFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRExportFormat.swift; sourceTree = "<group>"; };
 		1F7970872E7C4D6B007755F3 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		1F7D9EE02E634007007B4DDD /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
@@ -213,7 +215,6 @@
 		1F8DDBE62E36785E005734CD /* Image + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F8DDBF22E367EC4005734CD /* AESEncryptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AESEncryptionService.swift; sourceTree = "<group>"; };
-		1FCA0A1A2E000001000000A2 /* QRCodeAnalysisService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAnalysisService.swift; sourceTree = "<group>"; };
 		1F8DDBF72E380240005734CD /* AES256EncryptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256EncryptionViewModel.swift; sourceTree = "<group>"; };
 		1F8DDBF92E38123F005734CD /* AES256SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256SettingsView.swift; sourceTree = "<group>"; };
 		1F8DDCDA2E3963C3005734CD /* CustomForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomForm.swift; sourceTree = "<group>"; };
@@ -251,6 +252,7 @@
 		1FB32C312EB0623B0051A772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FB32C332EB062C10051A772 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1FB32C3D2EB264810051A772 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
+		1FCA0A1A2E000001000000A2 /* QRCodeAnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAnalysisManager.swift; sourceTree = "<group>"; };
 		1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
 		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
 		1FF762912FA77EFC0007D02E /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
@@ -389,7 +391,6 @@
 				1F8265EA2FACF4E300F1EE9E /* StreamingSHA512.swift */,
 				1F6F65FD2E958A3F0095E89E /* CodecService.swift */,
 				1F8265F32FACFA5400F1EE9E /* BinaryCodec.swift */,
-				1FCA0A1A2E000001000000A2 /* QRCodeAnalysisService.swift */,
 			);
 			path = "Crypto Services";
 			sourceTree = "<group>";
@@ -407,6 +408,8 @@
 			isa = PBXGroup;
 			children = (
 				1F5A9DD32F90238C00AF4CF7 /* QRCodeGeneratorManager.swift */,
+				1FCA0A1A2E000001000000A2 /* QRCodeAnalysisManager.swift */,
+				1F74CBF02FAE6A9F00A19F30 /* QRExportFormat.swift */,
 			);
 			path = "QR Code Managers";
 			sourceTree = "<group>";
@@ -808,7 +811,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8DDBF32E367EC4005734CD /* AESEncryptionService.swift in Sources */,
-				1FCA0A1A2E000001000000A1 /* QRCodeAnalysisService.swift in Sources */,
+				1FCA0A1A2E000001000000A1 /* QRCodeAnalysisManager.swift in Sources */,
 				1F8DDCE72E3A2C55005734CD /* CustomSliderRow.swift in Sources */,
 				1F587D522EAC61DF0025194E /* AboutProjectView.swift in Sources */,
 				1F14525C2E6092D200F8A553 /* LanguageView.swift in Sources */,
@@ -852,6 +855,7 @@
 				1F8DDBFA2E38123F005734CD /* AES256SettingsView.swift in Sources */,
 				1F2CADA62E91088C009007B5 /* AboutAES256ViewModel.swift in Sources */,
 				1F8DDBF82E380240005734CD /* AES256EncryptionViewModel.swift in Sources */,
+				1F74CBF12FAE6A9F00A19F30 /* QRExportFormat.swift in Sources */,
 				1F9544B32EC39C9F00F0CB51 /* AppPurchase.swift in Sources */,
 				1F2D34312E84AFC6005E6239 /* FullScreenLoader.swift in Sources */,
 				1F7D9EF92E653107007B4DDD /* MatrixAnimationView.swift in Sources */,
