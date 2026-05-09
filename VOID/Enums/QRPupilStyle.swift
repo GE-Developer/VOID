@@ -8,10 +8,8 @@
 import QRCode
 
 enum QRPupilStyle: String, CaseIterable, Codable {
-    // MARK: - Default
     case original
-
-    // MARK: - Shared with QRPixelStyle
+    
     case square
     case circle
     case roundedRect
@@ -25,8 +23,6 @@ enum QRPupilStyle: String, CaseIterable, Codable {
     case flame
     case diagonalStripes
     case crt
-
-    // MARK: - Unique to PupilShape
     case roundedOuter
     case corneredPixels
     case teardrop

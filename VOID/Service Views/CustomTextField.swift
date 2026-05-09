@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct CustomTextField: View {
+    @EnvironmentObject private var store: StoreManager
+    
+    @State private var showPayWall = false
+    
     @Binding private var text: String
     @Binding private var isDisabled: Bool
 
     @FocusState private var focus: Bool
 
     private var inputButtonDisabled: Bool {
-        !text.isEmpty || isDisabled || hasAttachment
+        !text.isEmpty || isDisabled || hasAttachment || focus
     }
 
     private var sendButtonDisabled: Bool {
@@ -57,6 +61,9 @@ struct CustomTextField: View {
     
     var body: some View {
         customMessageTextField
+            .fullScreenCover(isPresented: $showPayWall) {
+                NavigationLazyView(PayWallView(store))
+            }
     }
 }
 
@@ -156,16 +163,22 @@ extension CustomTextField {
         if let inputAction {
             Image.system.plus
                 .font(.title)
-                .foregroundStyle(Gradient.accent)
+                .foregroundStyle(
+                    store.isPremium
+                    ? (inputButtonDisabled ? Gradient.gray : Gradient.accent)
+                    : Gradient.gold
+                )
                 .opacity(inputButtonDisabled ? 0.6 : 1)
                 .frame(height: height)
                 .animation(.easeIn.speed(2), value: inputButtonDisabled)
                 .onTapGesture {
                     if !inputButtonDisabled {
                         focus = false
+                        HapticsManager.shared.impact(style: .rigid)
                         inputAction()
                     }
                 }
+                .premiumOption($showPayWall)
         }
     }
     

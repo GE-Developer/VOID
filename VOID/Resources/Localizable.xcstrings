@@ -18254,61 +18254,6 @@
         }
       }
     },
-    "QRCode.Quality.good" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Looks scannable"
-          }
-        }
-      }
-    },
-    "QRCode.Quality.suspicious" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "May fail to scan"
-          }
-        }
-      }
-    },
-    "QRCode.Quality.critical" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Will not scan"
-          }
-        }
-      }
-    },
-    "QRCode.Logo.alertTitle" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Logo unavailable"
-          }
-        }
-      }
-    },
-    "QRCode.Logo.alertMessage" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Adding a logo requires the High error correction level. Switch to High to embed a logo."
-          }
-        }
-      }
-    },
     "Error.saltGenerationFailed" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27380,6 +27325,17 @@
         }
       }
     },
+    "QR.Style.arc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Arc"
+          }
+        }
+      }
+    },
     "QR.Style.arrow" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27391,6 +27347,39 @@
         }
       }
     },
+    "QR.Style.barsHorizontal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horizontal Bars"
+          }
+        }
+      }
+    },
+    "QR.Style.barsVertical" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vertical Bars"
+          }
+        }
+      }
+    },
+    "QR.Style.blade" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blade"
+          }
+        }
+      }
+    },
     "QR.Style.blob" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27398,6 +27387,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blob"
+          }
+        }
+      }
+    },
+    "QR.Style.blobby" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Blobby"
           }
         }
       }
@@ -27420,6 +27420,61 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Circuit"
+          }
+        }
+      }
+    },
+    "QR.Style.cloud" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cloud"
+          }
+        }
+      }
+    },
+    "QR.Style.cloudCircle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cloud Circle"
+          }
+        }
+      }
+    },
+    "QR.Style.corneredPixels" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cornered Pixels"
+          }
+        }
+      }
+    },
+    "QR.Style.cross" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cross"
+          }
+        }
+      }
+    },
+    "QR.Style.crossCurved" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Curved Cross"
           }
         }
       }
@@ -27512,6 +27567,28 @@
         }
       }
     },
+    "QR.Style.dotDragHorizontal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horizontal Dot Drag"
+          }
+        }
+      }
+    },
+    "QR.Style.dotDragVertical" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vertical Dot Drag"
+          }
+        }
+      }
+    },
     "QR.Style.dripHorizontal" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27534,6 +27611,61 @@
         }
       }
     },
+    "QR.Style.edges" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edges"
+          }
+        }
+      }
+    },
+    "QR.Style.explode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Explode"
+          }
+        }
+      }
+    },
+    "QR.Style.eye" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eye"
+          }
+        }
+      }
+    },
+    "QR.Style.fabricScissors" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fabric Scissors"
+          }
+        }
+      }
+    },
+    "QR.Style.fireball" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fireball"
+          }
+        }
+      }
+    },
     "QR.Style.flame" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27552,6 +27684,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Flower"
+          }
+        }
+      }
+    },
+    "QR.Style.forest" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forest"
           }
         }
       }
@@ -27600,6 +27743,17 @@
         }
       }
     },
+    "QR.Style.headlight" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Headlight"
+          }
+        }
+      }
+    },
     "QR.Style.heart" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27629,6 +27783,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Hexagon"
+          }
+        }
+      }
+    },
+    "QR.Style.hexagonLeaf" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hexagon Leaf"
+          }
+        }
+      }
+    },
+    "QR.Style.holePunch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hole Punch"
           }
         }
       }
@@ -27666,6 +27842,50 @@
         }
       }
     },
+    "QR.Style.orbits" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orbits"
+          }
+        }
+      }
+    },
+    "QR.Style.peacock" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Peacock"
+          }
+        }
+      }
+    },
+    "QR.Style.pinch" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pinch"
+          }
+        }
+      }
+    },
+    "QR.Style.pixels" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pixels"
+          }
+        }
+      }
+    },
     "QR.Style.pointy" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27699,6 +27919,17 @@
         }
       }
     },
+    "QR.Style.roundedOuter" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rounded Outer"
+          }
+        }
+      }
+    },
     "QR.Style.roundedPath" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27706,6 +27937,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Smooth Shape"
+          }
+        }
+      }
+    },
+    "QR.Style.roundedPointingIn" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rounded Pointing In"
+          }
+        }
+      }
+    },
+    "QR.Style.roundedPointingOut" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rounded Pointing Out"
           }
         }
       }
@@ -27732,6 +27985,17 @@
         }
       }
     },
+    "QR.Style.seal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Seal"
+          }
+        }
+      }
+    },
     "QR.Style.sharp" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27739,6 +28003,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sharp"
+          }
+        }
+      }
+    },
+    "QR.Style.shield" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shield"
           }
         }
       }
@@ -27776,6 +28051,39 @@
         }
       }
     },
+    "QR.Style.squareBarsHorizontal" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Horizontal Square Bars"
+          }
+        }
+      }
+    },
+    "QR.Style.squareBarsVertical" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vertical Square Bars"
+          }
+        }
+      }
+    },
+    "QR.Style.squarePeg" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Square Peg"
+          }
+        }
+      }
+    },
     "QR.Style.squircle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -27805,6 +28113,50 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Stitch"
+          }
+        }
+      }
+    },
+    "QR.Style.surroundingBars" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Surrounding Bars"
+          }
+        }
+      }
+    },
+    "QR.Style.teardrop" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teardrop"
+          }
+        }
+      }
+    },
+    "QR.Style.ufo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "UFO"
+          }
+        }
+      }
+    },
+    "QR.Style.ufoRounded" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rounded UFO"
           }
         }
       }
@@ -27974,6 +28326,28 @@
         }
       }
     },
+    "QRCode.Logo.alertMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adding a logo requires the High error correction level. Switch to High to embed a logo."
+          }
+        }
+      }
+    },
+    "QRCode.Logo.alertTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Logo unavailable"
+          }
+        }
+      }
+    },
     "QRCode.mainTitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -28080,6 +28454,39 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Save"
+          }
+        }
+      }
+    },
+    "QRCode.Quality.critical" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Will not scan"
+          }
+        }
+      }
+    },
+    "QRCode.Quality.good" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Looks scannable"
+          }
+        }
+      }
+    },
+    "QRCode.Quality.suspicious" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "May fail to scan"
           }
         }
       }

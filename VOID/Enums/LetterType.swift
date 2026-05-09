@@ -22,7 +22,6 @@ enum LetterType: CaseIterable {
                 "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
                 "U", "V", "W", "X", "Y", "Z"
             ]
-            
         case .georgian:
             return [
                 "ა", "ბ", "გ", "დ", "ე", "ვ", "ზ", "თ", "ი", "კ",
@@ -31,7 +30,7 @@ enum LetterType: CaseIterable {
                 "ხ", "ჯ", "ჰ"
             ]
         case .eas256:
-            return Array("!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~")
+            return Array("+0123456789=ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz")
         case .binary:
             return ["0", "1"]
         case .decimal:
@@ -48,7 +47,6 @@ enum LetterType: CaseIterable {
                 "💩", "🧓", "👨", "🧑", "👧", "🧒", "👦", "👩"
             ]
         case .qrCode:
-//            return ["█", "▓", "▒", "░", "■", "□", "◼", "◻", "▪", "▫"]
             return ["■", "□"]
         }
     }

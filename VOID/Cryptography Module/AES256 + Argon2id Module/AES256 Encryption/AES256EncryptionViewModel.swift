@@ -106,6 +106,7 @@ final class AES256EncryptionViewModel: ObservableObject {
         if hasSecurityScope, let url = selectedFileURL {
             url.stopAccessingSecurityScopedResource()
         }
+        hapticsManager.impact(style: .rigid)
         hasSecurityScope = false
         selectedFileURL = nil
         selectedFileName = nil

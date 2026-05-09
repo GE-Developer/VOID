@@ -59,7 +59,6 @@ extension AES256EncryptionView {
             VStack {
                 copyAlert
                 bottomSafeArea
-                    .autocorrectionDisabled(true)
             }
         }
         .overlay(loader)
@@ -102,7 +101,11 @@ extension AES256EncryptionView {
     private var bottomSafeArea: some View {
         VStack(spacing: 8) {
             selectedFileChip
-
+                .animation(
+                    .spring(response: 0.65, dampingFraction: 0.85),
+                    value: vm.selectedFileName
+                )
+            
             CustomTextField(
                 text: $vm.text,
                 isDisabled: .constant(isTextFieldDisabled),
@@ -112,8 +115,9 @@ extension AES256EncryptionView {
                 inputAction: { showFileImporter = true },
                 sendAction: vm.startCryptoProcess
             )
+            .autocorrectionDisabled(true)
             .onTapGesture(perform: tappedOnTextFieldWithoutPassword)
-
+            
             CryptoActionButtons($vm.currentMode, vm.decryptionTitle, vm.encryptionTitle)
         }
         .padding(.vertical, 8)
@@ -123,6 +127,10 @@ extension AES256EncryptionView {
                 .ignoresSafeArea()
                 .foregroundStyle(.ultraThinMaterial)
                 .shadow(color: .void.navBarShadow, radius: 2)
+                .animation(
+                    .spring(response: 0.35, dampingFraction: 0.85),
+                    value: vm.selectedFileName
+                )
         }
     }
     
@@ -154,6 +162,10 @@ extension AES256EncryptionView {
                     .fill(Color.void.textFieldBackground)
                     .shadow(color: Color.void.viewShadow, radius: 2)
             }
+            .transition(
+                .move(edge: .bottom)
+                .combined(with: .opacity)
+            )
         }
     }
 }
