@@ -143,7 +143,7 @@ struct QRCodeGeneratorView: View {
         switch vm.payloadFraction {
         case 0.95...: .void.errorRed
         case 0.75...: .void.tangOrange
-        default:      Color.void.accentLight
+        default:      Color.void.accent
         }
     }
     
@@ -245,7 +245,7 @@ extension QRCodeGeneratorView {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
                 .fill(Color(.secondarySystemGroupedBackground))
-                .shadow(color: Color.void.accentLight, radius: 4)
+                .shadow(color: Color.void.accent, radius: 4)
 
             if let cgImage = vm.qrImage {
                 Image(decorative: cgImage, scale: 1)
@@ -551,7 +551,7 @@ extension QRCodeGeneratorView {
             .background(Color(.secondarySystemGroupedBackground))
             .clipShape(Circle())
             .shadow(
-                color: vm.isQRCodeReady ? Color.void.accentLight : Color.clear,
+                color: vm.isQRCodeReady ? Color.void.accent : Color.clear,
                 radius: 4
             )
             .frame(width: 50, height: 50)

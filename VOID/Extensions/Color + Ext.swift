@@ -12,11 +12,13 @@ extension Color {
 }
  
 struct VoidColor {
+    var accent: Color {
+        AccentColorManager.shared.currentColor.color
+    }
+    
     let background = Color("Background")
     let blackAndWhite = Color("Black And White")
     let secondaryText = Color("Secondary Text")
-    let accentDark = Color("Accent Dark")
-    let accentLight = Color("Accent Light")
     let goldLight = Color("Gold Light")
     let goldDark = Color("Gold Dark")
     let grayLight = Color("Gray Light")
@@ -27,8 +29,6 @@ struct VoidColor {
     let mainText = Color("Main Text")
     let greenDark = Color("Green Dark")
     let greenLight = Color("Green Light")
-    let payWallAccentDark = Color("PayWallAccentDark")
-    let payWallAccentLight = Color("PayWallAccentLight")
     let errorRed = Color("ErrorRed")
     let tangOrange = Color("TangOrange")
 }

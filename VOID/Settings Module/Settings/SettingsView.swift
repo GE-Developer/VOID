@@ -16,6 +16,8 @@ struct SettingsView: View {
     @State private var languageViewPresented = false
     @State private var showPayWall = false
     @State private var projectViewPresented = false
+    @State private var showStyleView = false
+    @State private var showAppIconView = false
     
     init() {
         UIScrollView.appearance().delaysContentTouches = false
@@ -28,6 +30,12 @@ struct SettingsView: View {
             }
             .navigationDestination(isPresented: $projectViewPresented) {
                 NavigationLazyView(AboutProjectView())
+            }
+            .navigationDestination(isPresented: $showStyleView) {
+                NavigationLazyView(StyleView())
+            }
+            .navigationDestination(isPresented: $showAppIconView) {
+                NavigationLazyView(EmptyView())
             }
             .fullScreenCover(isPresented: $showPayWall) {
                 NavigationLazyView(PayWallView(store))
@@ -44,7 +52,7 @@ extension SettingsView {
                 .opacity(0.5)
                 .offset(y: 2)
         } content: { _ in
-            VStack(spacing: 25) {
+            VStack(spacing: 25) {                
                 CustomForm(headerText: vm.generalSettingsTitle) {
                     themeToggle
                     Divider().padding(.leading, 50)
@@ -61,6 +69,19 @@ extension SettingsView {
                     subscriptionButton
                     Divider().padding(.leading, 50)
                     reviewButton
+                }
+                
+#warning("TO-DO")
+                CustomForm(headerText: "Safety") {
+                    styleButton
+                    Divider().padding(.leading, 50)
+                    styleButton
+                }
+                
+                CustomForm(headerText: vm.customizationTitle) {
+                    styleButton
+                    Divider().padding(.leading, 50)
+                    appIconButton
                 }
                 
                 CustomForm(headerText: vm.aboutAppTitle) {
@@ -138,6 +159,24 @@ extension SettingsView {
             icon: .system.reviewLike,
             title: vm.reviewTitle,
             action: { vm.rateApp() }
+        )
+    }
+    
+    private var styleButton: some View {
+        CustomButtonRow(
+            icon: .system.paintpalette,
+            title: vm.styleTitle,
+            isLink: true,
+            action: { showStyleView.toggle() }
+        )
+    }
+    
+    private var appIconButton: some View {
+        CustomButtonRow(
+            icon: .system.appIcon,
+            title: vm.appIconTitle,
+            isLink: true,
+            action: { showAppIconView.toggle() }
         )
     }
     

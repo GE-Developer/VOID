@@ -34,8 +34,14 @@ extension View {
         )
     }
     
-    func premiumOption(_ showPayWall: Binding<Bool>, swipable: Bool = false) -> some View {
-        self.modifier(PremiumLockModifier(showPayWall, swipable: swipable))
+    func premiumOption(
+        _ showPayWall: Binding<Bool>,
+        swipable: Bool = false,
+        isIncluded: Bool = true
+    ) -> some View {
+        self.modifier(
+            PremiumLockModifier(showPayWall, swipable: swipable, isIncluded: isIncluded)
+        )
     }
 }
 
@@ -45,23 +51,30 @@ struct PremiumLockModifier: ViewModifier {
     @Binding private var showPayWall: Bool
     
     private let swipable: Bool
+    private let isIncluded: Bool
     
-    init(_ showPayWall: Binding<Bool>, swipable: Bool) {
+    init(_ showPayWall: Binding<Bool>, swipable: Bool, isIncluded: Bool) {
         self._showPayWall = showPayWall
         self.swipable = swipable
+        self.isIncluded = isIncluded
     }
     
+    @ViewBuilder
     func body(content: Content) -> some View {
-        content
-            .opacity(store.isPremium ? 1 : 0.5)
-            .disabled(!store.isPremium)
-            .overlay {
-                if swipable {
-                    swipableOverlay
-                } else {
-                    notSwipableOverlay
+        if isIncluded {
+            content
+                .opacity(store.isPremium ? 1 : 0.5)
+                .disabled(!store.isPremium)
+                .overlay {
+                    if swipable {
+                        swipableOverlay
+                    } else {
+                        notSwipableOverlay
+                    }
                 }
-            }
+        } else {
+            content
+        }
     }
     
     @ViewBuilder

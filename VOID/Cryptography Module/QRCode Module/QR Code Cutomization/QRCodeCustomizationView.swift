@@ -434,7 +434,7 @@ private struct QRCodeCustomizationPreview: View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
                 .fill(Color(.secondarySystemGroupedBackground))
-                .shadow(color: Color.void.accentLight, radius: 4)
+                .shadow(color: Color.void.accent, radius: 4)
 
             if let cgImage = vm.qrImage {
                 Image(decorative: cgImage, scale: 1)

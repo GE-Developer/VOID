@@ -119,7 +119,7 @@ extension PayWallView {
                 .padding()
                 .frame(maxWidth: .infinity)
                 .frame(height: 60)
-                .background(Gradient.payWallAccent)
+                .background(Gradient.accent)
                 .foregroundStyle(Color.white)
                 .clipShape(Capsule())
                 .shadow(color: Color.void.mainText, radius: 1)
@@ -163,7 +163,7 @@ extension PayWallView {
         ZStack(alignment: .bottom) {
             MatrixAnimationView(
                 .binary,
-                color: Gradient.payWallAccent,
+                color: Gradient.accent,
                 letterSize: 12,
                 columnSpacing: 0,
                 rowSpacing: 0,
@@ -198,7 +198,7 @@ extension PayWallView {
                         .font(.title)
                         .fontWeight(.semibold)
                         .fontDesign(.rounded)
-                        .foregroundStyle(Gradient.payWallAccent)
+                        .foregroundStyle(Gradient.accent)
                         .lineLimit(2)
                         .minimumScaleFactor(0.7)
                 }
@@ -210,7 +210,7 @@ extension PayWallView {
                         .font(.subheadline)
                         .fontDesign(.rounded)
                         .multilineTextAlignment(.center)
-                        .foregroundStyle(Gradient.payWallAccent)
+                        .foregroundStyle(Gradient.accent)
                         .lineLimit(2)
                         .minimumScaleFactor(0.7)
                 }

@@ -34,7 +34,7 @@ extension MenuPickerView {
             }
         }
         .pickerStyle(.menu)
-        .tint(Color.void.accentLight)
+        .tint(Color.void.accent)
         .frame(height: 40)
         .background(background)
     }

@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct VOIDApp: App {
+    private let theme = ThemeManager.shared.theme
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
-                .preferredColorScheme(ThemeManager.shared.theme)
+                .preferredColorScheme(theme)
         }
     }
 }

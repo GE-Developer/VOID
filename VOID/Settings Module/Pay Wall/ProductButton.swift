@@ -160,7 +160,7 @@ extension ProductButton {
         if product.id == AppPurchase.annual.id {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
-                    .fill(Gradient.payWallAccent)
+                    .fill(Gradient.accent)
                 if let annualSaving = vm.annualSaving {
                     Text(annualSaving)
                         .font(.caption)
@@ -182,7 +182,7 @@ extension ProductButton {
         RoundedRectangle(cornerRadius: 15)
             .stroke(
                 vm.chosenProduct == product
-                ? Gradient.payWallAccent
+                ? Gradient.accent
                 : LinearGradient(colors: [.black], startPoint: .bottom, endPoint: .top),
                 lineWidth: vm.chosenProduct == product ? 2 : 0.5
             )
@@ -193,7 +193,7 @@ extension ProductButton {
         Text(text)
             .font(.footnote)
             .fontWeight(.heavy)
-            .foregroundStyle(Gradient.payWallAccent)
+            .foregroundStyle(Gradient.accent)
             .lineLimit(2)
             .minimumScaleFactor(0.5)
     }

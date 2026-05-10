@@ -21,7 +21,7 @@ struct CheckmarkView: View {
             .frame(height: 18)
             .foregroundStyle(
                 isFilled
-                ? Gradient.payWallAccent
+                ? Gradient.accent
                 : LinearGradient(
                     colors: [Color.void.secondaryText],
                     startPoint: .leading,

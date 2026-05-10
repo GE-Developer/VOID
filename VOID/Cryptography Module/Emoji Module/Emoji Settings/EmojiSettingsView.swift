@@ -132,7 +132,7 @@ extension EmojiSettingsView {
     private func buttonStroke(for mood: EmojiMood) -> some View {
         RoundedRectangle(cornerRadius: 12)
             .stroke(
-                vm.currentMood == mood ? Color.void.accentDark : Color.clear,
+                vm.currentMood == mood ? Color.void.accent : Color.clear,
                 lineWidth: 2
             )
     }

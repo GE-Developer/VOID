@@ -64,7 +64,7 @@ extension CustomNavigationTextField {
             .fontWeight(.light)
             .padding(.leading, 10)
             .foregroundStyle(
-                focus ? Color.void.accentDark : Color.void.grayDark
+                focus ? Color.void.accent : Color.void.grayDark
             )
     }
     

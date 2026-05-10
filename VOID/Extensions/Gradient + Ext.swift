@@ -8,11 +8,9 @@
 import SwiftUI
 
 extension Gradient {
-    static let accent = LinearGradient(
-        colors: [.void.accentLight, .void.accentDark],
-        startPoint: .leading,
-        endPoint: .trailing
-    )
+    static var accent: LinearGradient {
+        AccentColorManager.shared.currentColor.gradient
+    }
     
     static let gray = LinearGradient(
         colors: [.void.grayLight, .void.grayDark],
@@ -31,13 +29,7 @@ extension Gradient {
         startPoint: .topLeading,
         endPoint: .bottomTrailing
     )
-    
-    static let payWallAccent = LinearGradient(
-        colors: [.void.payWallAccentLight, .void.payWallAccentDark],
-        startPoint: .topLeading,
-        endPoint: .bottomTrailing
-    )
-    
+
     static let red = LinearGradient(
         colors: [.void.errorRed, .void.errorRed],
         startPoint: .topLeading,

@@ -124,6 +124,9 @@
 		1FB32C322EB0623B0051A772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C312EB0623B0051A772 /* Images.xcassets */; };
 		1FB32C342EB062C10051A772 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C332EB062C10051A772 /* Colors.xcassets */; };
 		1FB32C3E2EB264810051A772 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C3D2EB264810051A772 /* ExitButton.swift */; };
+		1FB66C972FAF7B030036C293 /* AccentColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66C962FAF7B030036C293 /* AccentColorManager.swift */; };
+		1FB66C9A2FB00C860036C293 /* StyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66C992FB00C860036C293 /* StyleView.swift */; };
+		1FB66C9F2FB11E410036C293 /* StyleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66C9E2FB11E410036C293 /* StyleViewModel.swift */; };
 		1FCA0A1A2E000001000000A1 /* QRCodeAnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA0A1A2E000001000000A2 /* QRCodeAnalysisManager.swift */; };
 		1FEECF682EBD4EEC0058E823 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */; };
 		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
@@ -252,6 +255,9 @@
 		1FB32C312EB0623B0051A772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FB32C332EB062C10051A772 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1FB32C3D2EB264810051A772 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
+		1FB66C962FAF7B030036C293 /* AccentColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColorManager.swift; sourceTree = "<group>"; };
+		1FB66C992FB00C860036C293 /* StyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleView.swift; sourceTree = "<group>"; };
+		1FB66C9E2FB11E410036C293 /* StyleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewModel.swift; sourceTree = "<group>"; };
 		1FCA0A1A2E000001000000A2 /* QRCodeAnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAnalysisManager.swift; sourceTree = "<group>"; };
 		1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
 		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
@@ -310,6 +316,7 @@
 				1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */,
 				1F7D9EE02E634007007B4DDD /* SoundManager.swift */,
 				1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */,
+				1FB66C962FAF7B030036C293 /* AccentColorManager.swift */,
 				1F6F65F22E92C08C0095E89E /* TabBarState.swift */,
 				1FF762912FA77EFC0007D02E /* Validator.swift */,
 			);
@@ -346,6 +353,7 @@
 				1F64ADE12E76234200DB44CE /* Settings */,
 				1F64ADE22E76234C00DB44CE /* Language */,
 				1F8945722EBB86C700D5DEAA /* Pay Wall */,
+				1FB66C9B2FB00C990036C293 /* Style */,
 				1F3716B52EAE836D008BA63C /* AboutProject */,
 			);
 			path = "Settings Module";
@@ -544,9 +552,9 @@
 			isa = PBXGroup;
 			children = (
 				1F8DDBE52E36785E005734CD /* Color + Ext.swift */,
+				1F8DDCE02E396473005734CD /* Gradient + Ext.swift */,
 				1F1161212E6B66C500A7894D /* String + Ext.swift */,
 				1F8DDBE62E36785E005734CD /* Image + Ext.swift */,
-				1F8DDCE02E396473005734CD /* Gradient + Ext.swift */,
 				1F64ADDE2E75835500DB44CE /* View + Ext.swift */,
 			);
 			path = Extensions;
@@ -661,6 +669,15 @@
 				1FB32A312E34FA17003E4B54 /* VOID.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1FB66C9B2FB00C990036C293 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				1FB66C992FB00C860036C293 /* StyleView.swift */,
+				1FB66C9E2FB11E410036C293 /* StyleViewModel.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 		1FF6E1242E988517001F51BA /* Emoji Managers */ = {
@@ -881,6 +898,7 @@
 				1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */,
 				1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */,
 				1F8265F42FACFA5400F1EE9E /* BinaryCodec.swift in Sources */,
+				1FB66C9F2FB11E410036C293 /* StyleViewModel.swift in Sources */,
 				1F19ECB42EB6476C00A3D0AD /* PayWallViewModel.swift in Sources */,
 				1F6F65F52E92C1970095E89E /* CustomTabBar.swift in Sources */,
 				1F9544B12EC39C3000F0CB51 /* StoreError.swift in Sources */,
@@ -900,12 +918,14 @@
 				1F4ECDEE2EBE50FF008931DE /* ProductButton.swift in Sources */,
 				1F8DDCDD2E39641A005734CD /* CustomButtonRow.swift in Sources */,
 				1F8DDCDF2E396454005734CD /* CustomToggleRow.swift in Sources */,
+				1FB66C9A2FB00C860036C293 /* StyleView.swift in Sources */,
 				1F7D9EDF2E633F28007B4DDD /* ThemeManager.swift in Sources */,
 				1F6F65F32E92C08C0095E89E /* TabBarState.swift in Sources */,
 				1F1452572E608D8900F8A553 /* AppStorageKey.swift in Sources */,
 				1FB32C3E2EB264810051A772 /* ExitButton.swift in Sources */,
 				1F12FE4F2E42789C0023DB69 /* CryptoActionButtons.swift in Sources */,
 				1F8DDCE52E3A1C01005734CD /* CustomSecureField.swift in Sources */,
+				1FB66C972FAF7B030036C293 /* AccentColorManager.swift in Sources */,
 				1FA26BED2E90A1F6002BD74C /* VoidNumbersView.swift in Sources */,
 				1F7970882E7C4D6B007755F3 /* Sound.swift in Sources */,
 				1F6F65FC2E9445EB0095E89E /* CustomTabSection.swift in Sources */,

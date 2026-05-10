@@ -56,6 +56,8 @@ struct SystemImage {
     let download = Image(systemName: "square.and.arrow.down")
     let plus = Image(systemName: "plus")
     let document = Image(systemName: "doc.fill")
+    let paintpalette = Image(systemName: "paintpalette.fill")
+    let appIcon = Image(systemName: "app.fill")
     
     func key(_ isFilled: Bool = false) -> Image {
         isFilled ? Image(systemName: "key.fill") : Image(systemName: "key")

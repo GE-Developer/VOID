@@ -18,8 +18,7 @@ struct ExplosiveStarView: View {
     private let imageFill: Image = .system.star
     
     private let normalColor: Color = .void.background
-    private let selectColor: Color = .void.payWallAccentDark
-    private let effectColor: Color = .void.payWallAccentLight
+    private let effectColor: Color = .void.accent
     
     var body: some View {
         GeometryReader{ proxy in
@@ -43,7 +42,7 @@ struct ExplosiveStarView: View {
                     .font(.system(size: minSize))
                     .opacity(isSelected ? 1 : 0)
                     .scaleEffect(isSelected ? 1 : 0.0001)
-                    .foregroundStyle(Gradient.payWallAccent)
+                    .foregroundStyle(Gradient.accent)
                     .opacity(isSelected ? 1 : 0)
                     .animation(
                         isSelected
@@ -53,7 +52,7 @@ struct ExplosiveStarView: View {
                 
                 Circle()
                     .stroke(lineWidth: isSelected ? 0 : minSize / 2)
-                    .foregroundColor(isSelected ? selectColor : normalColor)
+                    .foregroundColor(isSelected ? effectColor : normalColor)
                     .scaleEffect(scaleCircle)
                     .opacity(isSelected ? 1 : 0)
                     .animation(

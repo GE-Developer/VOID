@@ -84,7 +84,7 @@ extension CustomTabBar {
         .font(.title2)
         .foregroundStyle(
             tabBarState.selectedTab == tab
-            ? Color.void.accentDark
+            ? Color.void.accent
             : Color.void.grayDark
         )
         .frame(maxWidth: .infinity, maxHeight: .infinity)

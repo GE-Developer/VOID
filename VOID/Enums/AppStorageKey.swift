@@ -10,6 +10,7 @@ enum AppStorageKey {
     case haptics
     case language
     case sound
+    case accentColor
     case devTest
     
     var key: String {
@@ -18,6 +19,7 @@ enum AppStorageKey {
         case .haptics: return "isHapticsOn"
         case .language: return "AppleLanguages"
         case .sound: return "isSoundOn"
+        case .accentColor: return "accentColor"
         case .devTest: return "devTest"
         }
     }

@@ -13,7 +13,7 @@ struct FileMessageView: View {
     private var backgroundColor: Color {
         switch message.encryptionMode {
         case .encrypt:
-            return isPressing ? .void.greenDark : .void.accentLight
+            return isPressing ? .void.greenDark : .void.accent
         case .decrypt:
             return isPressing ? .void.greenDark : .void.grayDark
         }
