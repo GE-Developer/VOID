@@ -132,6 +132,21 @@ final class AccentColorManager {
                 )
             }
         }
+        
+        var requiresPremium: Bool {
+            switch self {
+            case .midnightBlue:
+                false
+            case .solarFlare,
+                    .neonLime,
+                    .victoria,
+                    .caramelRoast,
+                    .arcticCyan,
+                    .cosmicPurple,
+                    .infernoRed:
+                true
+            }
+        }
     }
     
     var currentColor: ColorName {

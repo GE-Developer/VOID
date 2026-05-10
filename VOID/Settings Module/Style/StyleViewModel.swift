@@ -22,8 +22,4 @@ struct StyleViewModel {
     func isCurrent(_ colorCase: AccentColorManager.ColorName) -> Bool {
         styleManager.currentColor == colorCase
     }
-    
-    func isDefault(_ colorCase: AccentColorManager.ColorName) -> Bool {
-        colorCase == .midnightBlue
-    }
 }

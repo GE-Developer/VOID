@@ -42,7 +42,7 @@ extension StyleView {
             ForEach(vm.colorCases) { colorCase in
                 accentButton(for: colorCase)
                     .disabled(vm.isCurrent(colorCase))
-                    .premiumOption($showPayWall, isIncluded: !vm.isDefault(colorCase))
+                    .premiumOption($showPayWall, isIncluded: colorCase.requiresPremium)
                     .overlay(premiumOverlay(colorCase))
             }
         }
@@ -101,7 +101,7 @@ extension StyleView {
     
     @ViewBuilder
     private func premiumOverlay(_ colorCase: AccentColorManager.ColorName) -> some View {
-        if !vm.isDefault(colorCase) {
+        if colorCase.requiresPremium {
             VStack {
                 Spacer()
                 HStack {
