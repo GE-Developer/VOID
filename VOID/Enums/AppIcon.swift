@@ -5,7 +5,7 @@
 //  Created by GE-Developer
 //
 
-enum AppIcon: String, CaseIterable, Identifiable {
+enum AppIcon: CaseIterable, Identifiable {
     case blackVoid
     case ghostWhite
     case cyberGold
@@ -13,7 +13,22 @@ enum AppIcon: String, CaseIterable, Identifiable {
     case neonPinky
     case desertForge
     
-    var id: String { rawValue.capitalized }
+    var id: String {
+        switch self {
+        case .blackVoid:
+            return "BlackVoid"
+        case .ghostWhite:
+            return "GhostWhite"
+        case .cyberGold:
+            return "CyberGold"
+        case .titanium:
+            return "Titanium"
+        case .neonPinky:
+            return "NeonPinky"
+        case .desertForge:
+            return "DesertForge"
+        }
+    }
 
     var appIconid: String? {
         switch self {

@@ -121,7 +121,6 @@
 		1FA2FBEB2E58BB510072905D /* PepperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA2FBEA2E58BB510072905D /* PepperService.swift */; };
 		1FB32C222EAFB7A00051A772 /* PremiumImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C212EAFB7A00051A772 /* PremiumImageView.swift */; };
 		1FB32C2E2EB05A1B0051A772 /* CustomNavigationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C2D2EB05A1B0051A772 /* CustomNavigationTextField.swift */; };
-		1FB32C322EB0623B0051A772 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C312EB0623B0051A772 /* Images.xcassets */; };
 		1FB32C342EB062C10051A772 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB32C332EB062C10051A772 /* Colors.xcassets */; };
 		1FB32C3E2EB264810051A772 /* ExitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB32C3D2EB264810051A772 /* ExitButton.swift */; };
 		1FB66C972FAF7B030036C293 /* AccentColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66C962FAF7B030036C293 /* AccentColorManager.swift */; };
@@ -130,6 +129,8 @@
 		1FB66CA12FB12CCF0036C293 /* AppIconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66CA02FB12CCF0036C293 /* AppIconManager.swift */; };
 		1FB66CA52FB1346D0036C293 /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66CA42FB1346D0036C293 /* AppIconView.swift */; };
 		1FB66CA72FB15C370036C293 /* AccentColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66CA62FB15C370036C293 /* AccentColor.swift */; };
+		1FB66CA92FB15DBF0036C293 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66CA82FB15DBF0036C293 /* AppIcon.swift */; };
+		1FB66CAB2FB15F090036C293 /* AppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66CAA2FB15F090036C293 /* AppIconViewModel.swift */; };
 		1FCA0A1A2E000001000000A1 /* QRCodeAnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA0A1A2E000001000000A2 /* QRCodeAnalysisManager.swift */; };
 		1FEECF682EBD4EEC0058E823 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */; };
 		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
@@ -255,7 +256,6 @@
 		1FB32A312E34FA17003E4B54 /* VOID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB32C212EAFB7A00051A772 /* PremiumImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumImageView.swift; sourceTree = "<group>"; };
 		1FB32C2D2EB05A1B0051A772 /* CustomNavigationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationTextField.swift; sourceTree = "<group>"; };
-		1FB32C312EB0623B0051A772 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FB32C332EB062C10051A772 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1FB32C3D2EB264810051A772 /* ExitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitButton.swift; sourceTree = "<group>"; };
 		1FB66C962FAF7B030036C293 /* AccentColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColorManager.swift; sourceTree = "<group>"; };
@@ -264,6 +264,8 @@
 		1FB66CA02FB12CCF0036C293 /* AppIconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconManager.swift; sourceTree = "<group>"; };
 		1FB66CA42FB1346D0036C293 /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
 		1FB66CA62FB15C370036C293 /* AccentColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColor.swift; sourceTree = "<group>"; };
+		1FB66CA82FB15DBF0036C293 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
+		1FB66CAA2FB15F090036C293 /* AppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconViewModel.swift; sourceTree = "<group>"; };
 		1FCA0A1A2E000001000000A2 /* QRCodeAnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAnalysisManager.swift; sourceTree = "<group>"; };
 		1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
 		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				1F1452562E608D8900F8A553 /* AppStorageKey.swift */,
 				1F7970872E7C4D6B007755F3 /* Sound.swift */,
 				1FB66CA62FB15C370036C293 /* AccentColor.swift */,
+				1FB66CA82FB15DBF0036C293 /* AppIcon.swift */,
 				1F2D342E2E820EAB005E6239 /* CryptoVersion.swift */,
 				1F8265E52FACF1B900F1EE9E /* ChatItem.swift */,
 				1F6C56C22E97F1700060015F /* EmojiMood.swift */,
@@ -577,7 +580,6 @@
 				1F84D4312EC245E6001FAA62 /* Property List.plist */,
 				1F8DDBBC2E366E11005734CD /* Assets.xcassets */,
 				1FB32C332EB062C10051A772 /* Colors.xcassets */,
-				1FB32C312EB0623B0051A772 /* Images.xcassets */,
 				1F14526B2E60BC1B00F8A553 /* Localizable.xcstrings */,
 				1F36E3912EC3F4ED0086FE2C /* Launch Screen.storyboard */,
 				1F9120202E8C4FD400B62644 /* Sounds */,
@@ -693,6 +695,7 @@
 			isa = PBXGroup;
 			children = (
 				1FB66CA42FB1346D0036C293 /* AppIconView.swift */,
+				1FB66CAA2FB15F090036C293 /* AppIconViewModel.swift */,
 			);
 			path = AppIcon;
 			sourceTree = "<group>";
@@ -832,7 +835,6 @@
 				1F91201E2E8C4FC000B62644 /* Error_Alert.mp3 in Resources */,
 				1FFBB0C62EB513100072600C /* Products.storekit in Resources */,
 				1F14526C2E60BC1B00F8A553 /* Localizable.xcstrings in Resources */,
-				1FB32C322EB0623B0051A772 /* Images.xcassets in Resources */,
 				1F8DDBC92E366E11005734CD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -915,6 +917,7 @@
 				1F3DFFB52E901A0B00D77061 /* CopyAlertView.swift in Sources */,
 				1F9120302E8C935200B62644 /* NavigationToolButton.swift in Sources */,
 				1F8265F42FACFA5400F1EE9E /* BinaryCodec.swift in Sources */,
+				1FB66CAB2FB15F090036C293 /* AppIconViewModel.swift in Sources */,
 				1FB66C9F2FB11E410036C293 /* StyleViewModel.swift in Sources */,
 				1FB66CA12FB12CCF0036C293 /* AppIconManager.swift in Sources */,
 				1F19ECB42EB6476C00A3D0AD /* PayWallViewModel.swift in Sources */,
@@ -953,6 +956,7 @@
 				1F9AEB1F2F9018EB00A10AEB /* QRCodeCustomizationViewModel.swift in Sources */,
 				1F9AEB202F9018EB00A10AEB /* QRCodeCustomizationView.swift in Sources */,
 				1F9AEB222F9018EB00A10AEB /* QRCodeGeneratorView.swift in Sources */,
+				1FB66CA92FB15DBF0036C293 /* AppIcon.swift in Sources */,
 				1F12FE512E42DEDD0023DB69 /* MessageView.swift in Sources */,
 				1FEECF682EBD4EEC0058E823 /* CheckmarkView.swift in Sources */,
 				2D1DC4204A47BBC838C8BA2A /* QRDataType.swift in Sources */,
