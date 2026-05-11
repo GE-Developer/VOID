@@ -35,7 +35,7 @@ struct SettingsView: View {
                 NavigationLazyView(StyleView())
             }
             .navigationDestination(isPresented: $showAppIconView) {
-                NavigationLazyView(EmptyView())
+                NavigationLazyView(AppIconView())
             }
             .fullScreenCover(isPresented: $showPayWall) {
                 NavigationLazyView(PayWallView(store))

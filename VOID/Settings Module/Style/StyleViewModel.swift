@@ -6,7 +6,7 @@
 //
 
 struct StyleViewModel {
-    let colorCases = AccentColorManager.ColorName.allCases
+    let colorCases = AccentColor.allCases
     
     let title = L10n("Settings.Customization.Style.title")
     let headerText = L10n("Settings.Customization.Style.headerTitle")
@@ -14,12 +14,12 @@ struct StyleViewModel {
     private let styleManager = AccentColorManager.shared
     private let haptic = HapticsManager.shared
     
-    func changeAccent(to colorCase: AccentColorManager.ColorName) {
+    func changeAccent(to colorCase: AccentColor) {
         haptic.impact(style: .rigid)
         styleManager.currentColor = colorCase
     }
     
-    func isCurrent(_ colorCase: AccentColorManager.ColorName) -> Bool {
+    func isCurrent(_ colorCase: AccentColor) -> Bool {
         styleManager.currentColor == colorCase
     }
 }

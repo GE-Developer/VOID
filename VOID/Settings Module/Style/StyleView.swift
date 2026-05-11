@@ -48,7 +48,7 @@ extension StyleView {
         }
     }
     
-    private func accentButton(for colorCase: AccentColorManager.ColorName) -> some View {
+    private func accentButton(for colorCase: AccentColor) -> some View {
         Button(action: { vm.changeAccent(to: colorCase) }) {
             VStack(spacing: 12) {
                 Image.system.checkmark(vm.isCurrent(colorCase))
@@ -100,7 +100,7 @@ extension StyleView {
     }
     
     @ViewBuilder
-    private func premiumOverlay(_ colorCase: AccentColorManager.ColorName) -> some View {
+    private func premiumOverlay(_ colorCase: AccentColor) -> some View {
         if colorCase.requiresPremium {
             VStack {
                 Spacer()
