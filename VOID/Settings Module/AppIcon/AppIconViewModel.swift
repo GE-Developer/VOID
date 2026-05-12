@@ -8,16 +8,11 @@
 import Foundation
 
 final class AppIconViewModel: ObservableObject {
-    @Published var isLoading = false
-    @Published var showError = false
-    
     @Published private(set) var currentIcon = AppIconManager.currentIcon()
     
     let title = L10n("Settings.Customization.AppIcon.title")
     let defaultFormTitle = L10n("Settings.Customization.AppIcon.defaultIconTitle")
     let alternativeFormTitle = L10n("Settings.Customization.AppIcon.alternativeIconTitle")
-    let errorTitle = L10n("Error.title")
-    let errorMessage = L10n("Error.iconChangingFailure")
 
     let defaulIcon = AppIcon.blackVoid
     let alternativeIcons = AppIcon.premiumIcons
@@ -27,20 +22,18 @@ final class AppIconViewModel: ObservableObject {
     @MainActor
     func selectIcon(_ icon: AppIcon) {
         guard currentIcon != icon else { return }
+        let recentIcon = currentIcon
         
-        isLoading = true
-        defer { isLoading = false }
+        currentIcon = icon
+        haptic.impact(style: .rigid)
         
         Task {
             do {
                 try await AppIconManager.setIcon(icon)
-                currentIcon = icon
             } catch {
-                showError = true
+                currentIcon = recentIcon
             }
         }
-        
-        haptic.impact(style: .rigid)
     }
     
     func isCurrent(_ icon: AppIcon) -> Bool {

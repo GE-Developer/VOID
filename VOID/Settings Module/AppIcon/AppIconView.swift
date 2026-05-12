@@ -17,11 +17,6 @@ struct AppIconView: View {
             .fullScreenCover(isPresented: $showPayWall) {
                 NavigationLazyView(PayWallView(store))
             }
-            .alert(vm.errorTitle, isPresented: $vm.showError) {
-                Button("OK", role: .cancel) { }
-            } message: {
-                Text(vm.errorMessage)
-            }
     }
 }
 
@@ -35,7 +30,6 @@ extension AppIconView {
                 defaultForm
                 alternativeForm
             }
-            .disabled(vm.isLoading)
             .animation(.easeOut(duration: 0.1), value: vm.currentIcon)
         }
     }
@@ -49,6 +43,7 @@ extension AppIconView {
     private var alternativeForm: some View {
         CustomForm(headerText: vm.alternativeFormTitle) {
             PremiumView(.textAndStar)
+                .onTapGesture { showPayWall = true }
         } content: {
             ForEach(vm.alternativeIcons) { icon in
                 iconRow(icon)
