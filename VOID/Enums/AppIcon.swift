@@ -63,13 +63,8 @@ enum AppIcon: CaseIterable, Identifiable {
             return "Desert Forge"
         }
     }
-
-    var requiresPremium: Bool {
-        switch self {
-        case .blackVoid:
-            false
-        default:
-            true
-        }
+    
+    static var premiumIcons: [AppIcon] {
+        allCases.filter { $0 != .blackVoid }
     }
 }

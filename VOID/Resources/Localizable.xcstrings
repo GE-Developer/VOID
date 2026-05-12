@@ -16931,6 +16931,17 @@
         }
       }
     },
+    "Error.iconChangingFailure" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to change app icon."
+          }
+        }
+      }
+    },
     "Error.insufficientDiskSpace" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -30648,6 +30659,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "應用版本"
+          }
+        }
+      }
+    },
+    "Settings.Customization.AppIcon.alternativeIconTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alternative"
+          }
+        }
+      }
+    },
+    "Settings.Customization.AppIcon.defaultIconTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Default"
           }
         }
       }

@@ -30,6 +30,7 @@ struct HomeView: View {
             CustomTabBar()
         }
         .task { setAccentColorIfPremiumExpired() }
+        .task { await setIconIfPremiumExpired() }
         .environmentObject(tabBarState)
         .environmentObject(store)
     }
@@ -37,6 +38,17 @@ struct HomeView: View {
     private func setAccentColorIfPremiumExpired() {
         if !store.isPremium && accent.currentColor != .midnightBlue {
             accent.currentColor = .midnightBlue
+        }
+    }
+    
+    private func setIconIfPremiumExpired() async {
+        if !store.isPremium && AppIconManager.currentIcon() != .blackVoid {
+            do {
+                try await Task.sleep(for: .milliseconds(600))
+                try await AppIconManager.setIcon(.blackVoid)
+            } catch {
+                return
+            }
         }
     }
 }
