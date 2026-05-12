@@ -12,7 +12,7 @@ enum Validator {
         case email
         case phone
         case url
-
+        
         var regex: String {
             switch self {
             case .email: #"^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$"#
@@ -23,7 +23,7 @@ enum Validator {
     }
     
     static private let predicate = "SELF MATCHES %@"
-
+    
     static func isValid(_ value: String, type: Pattern) -> Bool {
         NSPredicate(format: predicate, type.regex).evaluate(with: value)
     }

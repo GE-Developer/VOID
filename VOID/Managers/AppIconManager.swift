@@ -21,7 +21,7 @@ final class AppIconManager {
         guard supportsAlternateIcons else { return }
         try await UIApplication.shared.setAlternateIconName(icon.appIconid)
     }
-
+    
     static func reset() async throws {
         try await setIcon(.blackVoid)
     }

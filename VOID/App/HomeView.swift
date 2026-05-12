@@ -11,6 +11,13 @@ struct HomeView: View {
     @StateObject private var tabBarState = TabBarState()
     @StateObject private var store = StoreManager()
     
+    @State private var languageManager = LanguageManager.shared
+    
+    private var layoutDirection: LayoutDirection {
+        let rtlLanguages: Set<String> = ["ar", "he"]
+        return rtlLanguages.contains(languageManager.currentLanguageID) ? .rightToLeft : .leftToRight
+    }
+    
     private let accent = AccentColorManager.shared
     private let screenshotProtector = ScreenshotManager.shared
     
@@ -21,7 +28,7 @@ struct HomeView: View {
             }
             .toolbar(.hidden, for: .tabBar)
             .tag(TabBarState.RootTab.cryptography)
-
+            
             NavigationStack {
                 SettingsView()
             }
@@ -34,6 +41,7 @@ struct HomeView: View {
         .task { setAccentColorIfPremiumExpired() }
         .task { await setIconIfPremiumExpired() }
         .task { setCaptureProtectionIfPremiumExpired() }
+        .environment(\.layoutDirection, layoutDirection)
         .preferredColorScheme(ThemeManager.shared.theme)
         .screenshotDisabled(screenshotProtector.isScreenshotProtectionOn)
         .environmentObject(tabBarState)

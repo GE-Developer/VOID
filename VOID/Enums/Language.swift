@@ -6,7 +6,9 @@
 //
 
 enum Language: String, CaseIterable, Identifiable {
+    case arabic = "ar"
     case english = "en"
+    case hebrew = "he"
     case armenian = "hy"
     case azerbaijani = "az"
     case catalan = "ca"
@@ -46,7 +48,9 @@ enum Language: String, CaseIterable, Identifiable {
     
     var localizedName: String {
         switch self {
+        case .arabic: return "العربية"
         case .english: return "English"
+        case .hebrew: return "עברית"
         case .armenian: return "Հայերեն"
         case .azerbaijani: return "Azərbaycan dili"
         case .catalan: return "Català"
@@ -86,7 +90,9 @@ enum Language: String, CaseIterable, Identifiable {
     
     var englishName: String {
         switch self {
+        case .arabic: return "Arabic"
         case .english: return "English"
+        case .hebrew: return "Hebrew"
         case .armenian: return "Armenian"
         case .azerbaijani: return "Azerbaijani"
         case .catalan: return "Catalan"

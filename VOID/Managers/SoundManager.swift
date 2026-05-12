@@ -11,22 +11,22 @@ final class SoundManager {
     var isSoundOn: Bool {
         didSet { defaults.set(isSoundOn, forKey: key) }
     }
-
+    
     static let shared = SoundManager()
-
+    
     private let defaults = UserDefaults.standard
     private let key = AppStorageKey.sound.key
     private var player: AVAudioPlayer?
-
+    
     private init() {
         isSoundOn = defaults.object(forKey: key) as? Bool ?? true
         configureAudioSession()
     }
-
+    
     func reset() {
         isSoundOn = true
     }
-
+    
     func playSound(_ soundName: Sound) {
         guard isSoundOn else { return }
         

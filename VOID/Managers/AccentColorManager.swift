@@ -24,7 +24,7 @@ final class AccentColorManager {
         let savedValue = defaults.string(forKey: key)
         currentColor = AccentColor(rawValue: savedValue ?? "") ?? .midnightBlue
     }
-
+    
     func reset() {
         currentColor = .midnightBlue
     }

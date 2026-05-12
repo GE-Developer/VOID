@@ -67,7 +67,7 @@ extension SettingsView {
                 .opacity(0.5)
                 .offset(y: 2)
         } content: { _ in
-            VStack(spacing: 25) {                
+            VStack(spacing: 25) {
                 CustomForm(headerText: vm.generalSettingsTitle) {
                     themeToggle
                     Divider().padding(.leading, 50)
@@ -97,13 +97,13 @@ extension SettingsView {
                 } content: {
                     screenshotProtectionToggle
                 }
-
+                
                 CustomForm(headerText: vm.customizationTitle) {
                     styleButton
                     Divider().padding(.leading, 50)
                     appIconButton
                 }
-
+                
                 CustomForm(headerText: vm.aboutAppTitle) {
                     termsOfUseButton
                     Divider().padding(.leading, 50)
@@ -156,7 +156,7 @@ extension SettingsView {
             title: vm.hapticsTitle
         )
     }
-
+    
     private var soundToggle: some View {
         CustomToggleRow(
             isOn: $vm.isSoundOn,
@@ -233,7 +233,7 @@ extension SettingsView {
             action: { projectViewPresented.toggle() }
         )
     }
-
+    
     private var clearDataButton: some View {
         CustomButtonRow(
             icon: .system.trash,
@@ -242,7 +242,7 @@ extension SettingsView {
             action: { showClearDataAlert.toggle() }
         )
     }
-
+    
     private var clearDataAlertActions: some View {
         Group {
             Button(vm.clearDataAlertActionTitle, role: .destructive) {
@@ -251,7 +251,7 @@ extension SettingsView {
             Button(vm.alertCancelTitle, role: .cancel) {}
         }
     }
-
+    
     private var resetSettingsButton: some View {
         CustomButtonRow(
             icon: .system.reset,
@@ -259,7 +259,7 @@ extension SettingsView {
             action: { showResetSettingsAlert.toggle() }
         )
     }
-
+    
     private var resetSettingsAlertActions: some View {
         Group {
             Button(vm.resetSettingsAlertActionTitle, role: .destructive) {

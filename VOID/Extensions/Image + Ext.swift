@@ -15,8 +15,8 @@ extension Image {
 }
 
 struct SystemImage {
-    let back = Image(systemName: "chevron.left")
-    let chevron = Image(systemName: "chevron.right")
+    let back = Image(systemName: "chevron.backward")
+    let chevron = Image(systemName: "chevron.forward")
     let lock = Image(systemName: "lock.fill")
     let openLock = Image(systemName: "lock.open.fill")
     let timer = Image(systemName: "timer")

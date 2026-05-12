@@ -805,6 +805,8 @@
 				hy,
 				az,
 				is,
+				ar,
+				he,
 			);
 			mainGroup = 1FB32A282E34FA16003E4B54;
 			minimizedProjectReferenceProxies = 1;

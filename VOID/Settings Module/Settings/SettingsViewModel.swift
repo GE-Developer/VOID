@@ -11,11 +11,11 @@ final class SettingsViewModel: ObservableObject {
     @Published var isDarkMode: Bool {
         didSet { themeManager.isDarkMode = isDarkMode }
     }
-
+    
     @Published var isHapticsOn: Bool {
         didSet { hapticsManager.isHapticsOn = isHapticsOn }
     }
-
+    
     @Published var isSoundOn: Bool {
         didSet { soundManager.isSoundOn = isSoundOn }
     }
@@ -23,7 +23,7 @@ final class SettingsViewModel: ObservableObject {
     @Published var isScreenshotProtectionOn: Bool {
         didSet { screenshotProtector.isScreenshotProtectionOn = isScreenshotProtectionOn }
     }
-
+    
     @Published private(set) var storageSize: String = ""
     
     var title: String {
@@ -100,47 +100,47 @@ final class SettingsViewModel: ObservableObject {
     var projectTitle: String {
         L10n("Settings.AboutApp.Project.title")
     }
-
+    
     var storageTitle: String {
         L10n("Settings.Storage.title")
     }
-
+    
     var clearDataTitle: String {
         L10n("Settings.Storage.ClearData.title")
     }
-
+    
     var clearDataAlertTitle: String {
         L10n("Settings.Storage.ClearData.alertTitle")
     }
-
+    
     var clearDataAlertMessage: String {
         L10n("Settings.Storage.ClearData.alertMessage")
     }
-
+    
     var clearDataAlertActionTitle: String {
         L10n("Settings.Storage.ClearData.alertActionTitle")
     }
-
+    
     var alertCancelTitle: String {
         L10n("Alert.cancel")
     }
-
+    
     var resetSettingsTitle: String {
         L10n("Settings.Storage.ResetSettings.title")
     }
-
+    
     var resetSettingsAlertTitle: String {
         L10n("Settings.Storage.ResetSettings.alertTitle")
     }
-
+    
     var resetSettingsAlertMessage: String {
         L10n("Settings.Storage.ResetSettings.alertMessage")
     }
-
+    
     var resetSettingsAlertActionTitle: String {
         L10n("Settings.Storage.ResetSettings.alertActionTitle")
     }
-
+    
     private var storageDirectories: [URL] {
         let fm = FileManager.default
         return [
@@ -149,7 +149,7 @@ final class SettingsViewModel: ObservableObject {
             fm.urls(for: .documentDirectory, in: .userDomainMask).first
         ].compactMap { $0 }
     }
-
+    
     let languageSubtitle = "Language"
     
     private let themeManager = ThemeManager.shared
@@ -190,32 +190,32 @@ final class SettingsViewModel: ObservableObject {
         guard let url = URL(string: Plist.get(.termsOfUse)) else { return }
         UIApplication.shared.open(url)
     }
-
+    
     func clearStorage() {
         let fm = FileManager.default
-
+        
         for dir in storageDirectories {
             guard let contents = try? fm.contentsOfDirectory(
                 at: dir,
                 includingPropertiesForKeys: nil
             ) else { continue }
-
+            
             for item in contents {
                 try? fm.removeItem(at: item)
             }
         }
-
+        
         hapticsManager.notification(type: .success)
         soundManager.playSound(.newDecryptedMessage)
         refreshStorageSize()
     }
-
+    
     @MainActor
     func resetUserDefaults(store: StoreManager) {
         if let bundleID = Bundle.main.bundleIdentifier {
             UserDefaults.standard.removePersistentDomain(forName: bundleID)
         }
-
+        
         themeManager.reset()
         hapticsManager.reset()
         soundManager.reset()
@@ -224,34 +224,33 @@ final class SettingsViewModel: ObservableObject {
         accentColorManager.reset()
         store.devTest = false
         UserDefaults.standard.set(false, forKey: AppStorageKey.devTest.key)
-
+        
         Task { try? await AppIconManager.reset() }
-
+        
         isDarkMode = themeManager.isDarkMode
         isHapticsOn = hapticsManager.isHapticsOn
         isSoundOn = soundManager.isSoundOn
         isScreenshotProtectionOn = screenshotProtector.isScreenshotProtectionOn
-
         hapticsManager.notification(type: .success)
         soundManager.playSound(.newDecryptedMessage)
     }
-
+    
     func refreshStorageSize() {
         let bytes = totalStorageBytes()
         storageSize = byteFormatter.string(fromByteCount: bytes)
     }
-
+    
     private func totalStorageBytes() -> Int64 {
         let fm = FileManager.default
         let keys: [URLResourceKey] = [.totalFileAllocatedSizeKey, .isRegularFileKey]
         var total: Int64 = 0
-
+        
         for dir in storageDirectories {
             guard let enumerator = fm.enumerator(
                 at: dir,
                 includingPropertiesForKeys: keys
             ) else { continue }
-
+            
             for case let fileURL as URL in enumerator {
                 guard
                     let values = try? fileURL.resourceValues(forKeys: Set(keys)),
@@ -261,7 +260,7 @@ final class SettingsViewModel: ObservableObject {
                 total += Int64(size)
             }
         }
-
+        
         return total
     }
 }

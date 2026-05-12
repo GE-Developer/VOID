@@ -17,9 +17,10 @@ final class LanguageManager {
     }
     
     var bundle: Bundle? {
-        guard let path = Bundle.main.path(forResource: currentLanguageID, ofType: "lproj") else {
-            return .main
-        }
+        guard let path = Bundle.main.path(
+            forResource: currentLanguageID,
+            ofType: "lproj"
+        ) else { return .main }
         return Bundle(path: path)
     }
     
@@ -31,14 +32,14 @@ final class LanguageManager {
     private init() {
         let baseAppLanguage = Bundle.main.developmentLocalization ?? Language.english.id
         let baseUserLanguage = Bundle.main.preferredLocalizations.first
-
+        
         currentLanguageID = baseUserLanguage ?? baseAppLanguage
     }
-
+    
     func reset() {
         let baseAppLanguage = Bundle.main.developmentLocalization ?? Language.english.id
         let baseUserLanguage = Bundle.main.preferredLocalizations.first
-
+        
         currentLanguageID = baseUserLanguage ?? baseAppLanguage
     }
 }
