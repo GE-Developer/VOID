@@ -9,7 +9,7 @@ import UniformTypeIdentifiers
 
 enum QRExportFormat: String, CaseIterable {
     case png, pdf, svg
-
+    
     var title: String {
         switch self {
         case .png: "PNG"
@@ -17,9 +17,9 @@ enum QRExportFormat: String, CaseIterable {
         case .svg: "SVG"
         }
     }
-
+    
     var fileExtension: String { rawValue }
-
+    
     var contentType: UTType {
         switch self {
         case .png: .png

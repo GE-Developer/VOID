@@ -13,7 +13,7 @@ struct CodecService {
         case ascii
         case base64
     }
-
+    
     // MARK: - Public Interface
     static func encode(_ text: String, mode: CodingMode) throws -> String {
         switch mode {
@@ -22,7 +22,7 @@ struct CodecService {
         case .base64: return try encodeBase64(text)
         }
     }
-
+    
     static func decode(_ text: String, mode: CodingMode) throws -> String {
         switch mode {
         case .utf8: return try decodeUTF8(text)
@@ -30,7 +30,7 @@ struct CodecService {
         case .base64: return try decodeBase64(text)
         }
     }
-
+    
     // MARK: - UTF8
     private static func encodeUTF8(_ text: String) throws -> String {
         guard let data = text.data(using: .utf8) else {
@@ -41,7 +41,7 @@ struct CodecService {
             .map { String(format: "%02X", $0) }
             .joined(separator: " ")
     }
-
+    
     private static func decodeUTF8(_ text: String) throws -> String {
         let bytes = text
             .split(separator: " ")
@@ -54,7 +54,7 @@ struct CodecService {
         
         return result
     }
-
+    
     // MARK: - ASCII
     private static func encodeASCII(_ text: String) throws -> String {
         guard let data = text.data(using: .ascii) else {
@@ -65,7 +65,7 @@ struct CodecService {
             .map { String(format: "%02X", $0) }
             .joined(separator: " ")
     }
-
+    
     private static func decodeASCII(_ text: String) throws -> String {
         let bytes = text
             .split(separator: " ")
@@ -78,7 +78,7 @@ struct CodecService {
         
         return result
     }
-
+    
     // MARK: - Base64
     private static func encodeBase64(_ text: String) throws -> String {
         guard let data = text.data(using: .utf8) else {
@@ -87,7 +87,7 @@ struct CodecService {
         
         return data.base64EncodedString()
     }
-
+    
     private static func decodeBase64(_ text: String) throws -> String {
         guard let data = Data(base64Encoded: text) else {
             throw CryptoError.invalidInputData

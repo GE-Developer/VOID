@@ -16,7 +16,7 @@ final class KeyDerivationService {
         
         try salt.withUnsafeMutableBytes {
             guard let baseAddress = $0.baseAddress,
-                    SecRandomCopyBytes(kSecRandomDefault, length, baseAddress) == errSecSuccess
+                  SecRandomCopyBytes(kSecRandomDefault, length, baseAddress) == errSecSuccess
             else {
                 throw CryptoError.saltGenerationFailed
             }
@@ -24,7 +24,7 @@ final class KeyDerivationService {
         
         return salt
     }
-
+    
     // MARK: - Master key derivation using Argon2id
     func deriveMasterKey(
         password: String,
@@ -56,11 +56,11 @@ final class KeyDerivationService {
     func deriveSubkeys(masterKey: Data, count: Int) async throws -> [SymmetricKey] {
         guard !masterKey.isEmpty else { throw CryptoError.invalidMasterKey }
         guard count > 0 else { throw CryptoError.invalidSubkeyCount }
-
+        
         let pseudorandomKey = SymmetricKey(data: masterKey)
-    
+        
         var subkeys: [SymmetricKey] = []
-
+        
         for i in 0..<count {
             let info = Data("layer\(i)".utf8)
             let subkey = HKDF<SHA256>.deriveKey(

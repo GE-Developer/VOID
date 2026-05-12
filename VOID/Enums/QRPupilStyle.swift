@@ -53,7 +53,7 @@ enum QRPupilStyle: String, CaseIterable, Codable {
     case ufoRounded
     case pinch
     case fabricScissors
-
+    
     var generator: any QRCodePupilShapeGenerator {
         switch self {
         case .original:
@@ -146,7 +146,7 @@ enum QRPupilStyle: String, CaseIterable, Codable {
             QRCode.PupilShape.FabricScissors()
         }
     }
-
+    
     var name: String {
         switch self {
         case .original:

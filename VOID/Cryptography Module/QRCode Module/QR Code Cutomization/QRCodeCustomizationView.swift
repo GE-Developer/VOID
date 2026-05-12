@@ -10,147 +10,147 @@ import PhotosUI
 
 struct QRCodeCustomizationView: View {
     @State private var vm: QRCodeCustomizationViewModel
-
+    
     private var pixelStyleBinding: Binding<QRPixelStyle> {
         Binding(
             get: { vm.pixelStyle },
             set: { vm.pixelStyle = $0 }
         )
     }
-
+    
     private var foregroundFillTypeBinding: Binding<FillType> {
         Binding(
             get: { vm.foregroundFillType },
             set: { newValue in withAnimation { vm.foregroundFillType = newValue } }
         )
     }
-
+    
     private var foregroundFirstColorBinding: Binding<CGColor> {
         Binding(
             get: { vm.foregroundColor },
             set: { vm.foregroundColor = $0 }
         )
     }
-
+    
     private var foregroundSecondColorBinding: Binding<CGColor> {
         Binding(
             get: { vm.foregroundGradientColor },
             set: { vm.foregroundGradientColor = $0 }
         )
     }
-
+    
     private var eyeStyleBinding: Binding<QREyeStyle> {
         Binding(
             get: { vm.eyeStyle },
             set: { vm.eyeStyle = $0 }
         )
     }
-
+    
     private var isEyeColorCustomBinding: Binding<Bool> {
         Binding(
             get: { vm.isEyeColorCustom },
             set: { vm.isEyeColorCustom = $0 }
         )
     }
-
+    
     private var eyeColorBinding: Binding<CGColor> {
         Binding(
             get: { vm.eyeColor },
             set: { vm.eyeColor = $0 }
         )
     }
-
+    
     private var isEyeBackgroundColorCustomBinding: Binding<Bool> {
         Binding(
             get: { vm.isEyeBackgroundColorCustom },
             set: { vm.isEyeBackgroundColorCustom = $0 }
         )
     }
-
+    
     private var eyeBackgroundColorBinding: Binding<CGColor> {
         Binding(
             get: { vm.eyeBackgroundColor },
             set: { vm.eyeBackgroundColor = $0 }
         )
     }
-
+    
     private var pupilStyleBinding: Binding<QRPupilStyle> {
         Binding(
             get: { vm.pupilStyle },
             set: { vm.pupilStyle = $0 }
         )
     }
-
+    
     private var isPupilColorCustomBinding: Binding<Bool> {
         Binding(
             get: { vm.isPupilColorCustom },
             set: { vm.isPupilColorCustom = $0 }
         )
     }
-
+    
     private var pupilColorBinding: Binding<CGColor> {
         Binding(
             get: { vm.pupilColor },
             set: { vm.pupilColor = $0 }
         )
     }
-
+    
     private var backgroundFillTypeBinding: Binding<FillType> {
         Binding(
             get: { vm.backgroundFillType },
             set: { newValue in withAnimation { vm.backgroundFillType = newValue } }
         )
     }
-
+    
     private var backgroundFirstColorBinding: Binding<CGColor> {
         Binding(
             get: { vm.backgroundColor },
             set: { vm.backgroundColor = $0 }
         )
     }
-
+    
     private var backgroundSecondColorBinding: Binding<CGColor> {
         Binding(
             get: { vm.backgroundGradientColor },
             set: { vm.backgroundGradientColor = $0 }
         )
     }
-
+    
     private var backgroundCornerRadiusBinding: Binding<CGFloat> {
         Binding(
             get: { vm.backgroundCornerRadius },
             set: { vm.backgroundCornerRadius = $0 }
         )
     }
-
+    
     private var offPixelStyleBinding: Binding<QRPixelStyle> {
         Binding(
             get: { vm.offPixelStyle },
             set: { vm.offPixelStyle = $0 }
         )
     }
-
+    
     private var offPixelsFillTypeBinding: Binding<FillType> {
         Binding(
             get: { vm.offPixelsFillType },
             set: { newValue in withAnimation { vm.offPixelsFillType = newValue } }
         )
     }
-
+    
     private var offPixelsFirstColorBinding: Binding<CGColor> {
         Binding(
             get: { vm.offPixelsColor },
             set: { vm.offPixelsColor = $0 }
         )
     }
-
+    
     private var offPixelsSecondColorBinding: Binding<CGColor> {
         Binding(
             get: { vm.offPixelsGradientColor },
             set: { vm.offPixelsGradientColor = $0 }
         )
     }
-
+    
     private var negatedOnPixelsOnlyBinding: Binding<Bool> {
         Binding(
             get: { vm.negatedOnPixelsOnly },
@@ -161,7 +161,7 @@ struct QRCodeCustomizationView: View {
     init(mainVM: QRCodeGeneratorViewModel) {
         _vm = State(initialValue: QRCodeCustomizationViewModel(mainVM: mainVM))
     }
-
+    
     var body: some View {
         CustomScrollView(title: vm.title, subTitle: vm.subTitle) {
             EmptyView()
@@ -206,7 +206,7 @@ extension QRCodeCustomizationView {
                 )
                 .padding(.horizontal)
                 .padding(.vertical, 12)
-
+                
                 if vm.foregroundFillType != .solid {
                     Divider()
                         .padding(.leading)
@@ -221,7 +221,7 @@ extension QRCodeCustomizationView {
             }
         }
     }
-
+    
     private var eyeStyleSection: some View {
         VStack(spacing: 16) {
             CustomCapsulePicker(
@@ -234,7 +234,7 @@ extension QRCodeCustomizationView {
                     isOn: isEyeColorCustomBinding,
                     title: vm.customColorToggleTitle
                 )
-
+                
                 if vm.isEyeColorCustom {
                     Divider()
                         .padding(.leading)
@@ -252,7 +252,7 @@ extension QRCodeCustomizationView {
                     isOn: isEyeBackgroundColorCustomBinding,
                     title: vm.eyeBackgroundTitle
                 )
-
+                
                 if vm.isEyeBackgroundColorCustom {
                     Divider()
                         .padding(.leading)
@@ -267,7 +267,7 @@ extension QRCodeCustomizationView {
             }
         }
     }
-
+    
     private var pupilStyleSection: some View {
         VStack(spacing: 16) {
             CustomCapsulePicker(
@@ -280,7 +280,7 @@ extension QRCodeCustomizationView {
                     isOn: isPupilColorCustomBinding,
                     title: vm.customColorToggleTitle
                 )
-
+                
                 if vm.isPupilColorCustom {
                     Divider()
                         .padding(.leading)
@@ -295,7 +295,7 @@ extension QRCodeCustomizationView {
             }
         }
     }
-
+    
     private var offPixelsSection: some View {
         VStack(spacing: 16) {
             CustomCapsulePicker(
@@ -315,7 +315,7 @@ extension QRCodeCustomizationView {
                 )
                 .padding(.horizontal)
                 .padding(.vertical, 12)
-
+                
                 if vm.offPixelsFillType != .solid {
                     Divider()
                         .padding(.leading)
@@ -327,7 +327,7 @@ extension QRCodeCustomizationView {
                     .padding(.horizontal)
                     .padding(.vertical, 12)
                 }
-
+                
                 Divider()
                     .padding(.leading)
                 CustomToggleRow(
@@ -337,7 +337,7 @@ extension QRCodeCustomizationView {
             }
         }
     }
-
+    
     private var backgroundSection: some View {
         VStack(spacing: 16) {
             CustomCapsulePicker(
@@ -353,7 +353,7 @@ extension QRCodeCustomizationView {
                 )
                 .padding(.horizontal)
                 .padding(.vertical, 12)
-
+                
                 if vm.backgroundFillType != .solid {
                     Divider()
                         .padding(.leading)
@@ -382,7 +382,7 @@ extension QRCodeCustomizationView {
 // MARK: - QR Scan Quality Banner
 private struct QRScanQualityBanner: View {
     let vm: QRCodeCustomizationViewModel
-
+    
     var body: some View {
         if vm.qrImage != nil {
             HStack(spacing: 8) {
@@ -404,7 +404,7 @@ private struct QRScanQualityBanner: View {
             .padding(.horizontal, 50)
         }
     }
-
+    
     private var tintColor: Color {
         switch vm.quality {
         case .good:       return Color.void.greenDark
@@ -412,7 +412,7 @@ private struct QRScanQualityBanner: View {
         case .critical:   return Color.void.errorRed
         }
     }
-
+    
     @ViewBuilder
     private var icon: some View {
         switch vm.quality {
@@ -429,13 +429,13 @@ private struct QRScanQualityBanner: View {
 // MARK: - QR Code Customization Preview
 private struct QRCodeCustomizationPreview: View {
     let vm: QRCodeCustomizationViewModel
-
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 12)
                 .fill(Color(.secondarySystemGroupedBackground))
                 .shadow(color: Color.void.accent, radius: 4)
-
+            
             if let cgImage = vm.qrImage {
                 Image(decorative: cgImage, scale: 1)
                     .resizable()

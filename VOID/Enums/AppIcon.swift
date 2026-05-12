@@ -29,7 +29,7 @@ enum AppIcon: CaseIterable, Identifiable {
             return "DesertForge"
         }
     }
-
+    
     var appIconid: String? {
         switch self {
         case .blackVoid:
@@ -46,7 +46,7 @@ enum AppIcon: CaseIterable, Identifiable {
             return "DesertForge"
         }
     }
-
+    
     var title: String {
         switch self {
         case .blackVoid:

@@ -14,7 +14,7 @@ enum QRDataType: CaseIterable {
     case phone
     case sms
     case location
-
+    
     var name: String {
         switch self {
         case .plainText:

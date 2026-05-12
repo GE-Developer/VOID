@@ -10,7 +10,7 @@ import SwiftUI
 extension Color {
     static let void = VoidColor()
 }
- 
+
 struct VoidColor {
     var accent: Color {
         AccentColorManager.shared.currentColor.color

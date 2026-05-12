@@ -10,7 +10,7 @@ import Foundation
 enum ChatItem: Identifiable, Equatable {
     case text(Message)
     case file(FileMessage)
-
+    
     var id: UUID {
         switch self {
         case .text(let message):
@@ -19,7 +19,7 @@ enum ChatItem: Identifiable, Equatable {
             return message.id
         }
     }
-
+    
     var encryptionMode: CryptoAction {
         switch self {
         case .text(let message):

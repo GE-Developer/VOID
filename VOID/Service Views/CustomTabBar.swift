@@ -10,9 +10,9 @@ import UIKit
 
 struct CustomTabBar: View {
     @EnvironmentObject private var tabBarState: TabBarState
-
+    
     private let haptics = HapticsManager.shared
-
+    
     private static let hideSystemTabBar: Void = {
         let appearance = UITabBarAppearance()
         appearance.configureWithTransparentBackground()
@@ -23,11 +23,11 @@ struct CustomTabBar: View {
         UITabBar.appearance().standardAppearance = appearance
         UITabBar.appearance().scrollEdgeAppearance = appearance
     }()
-
+    
     init() {
         _ = Self.hideSystemTabBar
     }
-
+    
     var body: some View {
         customTabBar
     }

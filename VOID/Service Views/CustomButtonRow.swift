@@ -16,9 +16,9 @@ struct CustomButtonRow: View {
     private let withCheckmark: Bool
     private let isCritical: Bool
     private let isLink: Bool
-
+    
     private let action: () -> Void
-
+    
     init(
         icon: Image? = nil,
         circleImage: Image? = nil,
@@ -40,7 +40,7 @@ struct CustomButtonRow: View {
         self.isLink = isLink
         self.action = action
     }
-
+    
     var body: some View {
         customButtonRow
     }

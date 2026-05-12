@@ -23,7 +23,7 @@ struct QRCodeGeneratorManager {
             return try doc.cgImage(dimension: dimension)
         }.value
     }
-
+    
     static func exportData(
         from payload: String,
         configuration: QRCodeConfiguration,
@@ -38,7 +38,7 @@ struct QRCodeGeneratorManager {
             }
         }.value
     }
-
+    
     // MARK: - Payload Setup
     static func formatPayload(
         type: QRDataType,
@@ -90,23 +90,23 @@ struct QRCodeGeneratorManager {
             return "geo:\(latitude),\(longitude)"
         }
     }
-
+    
     // MARK: - Document Builder
-
+    
     private static func buildDocument(
         from payload: String,
         configuration: QRCodeConfiguration
     ) throws -> QRCode.Document {
         let doc = try QRCode.Document(utf8String: payload)
-
+        
         doc.errorCorrection = configuration.errorCorrection.qrCodeLevel
-
+        
         let style = configuration.style
-
+        
         doc.design.shape.onPixels = style.pixelStyle.generator
         doc.design.shape.eye = style.eyeStyle.generator
         doc.design.shape.pupil = style.pupilStyle.generator
-
+        
         let offStyle = style.offPixelStyle
         doc.design.shape.offPixels = offStyle.generator
         doc.design.style.offPixels = makeFill(
@@ -114,42 +114,42 @@ struct QRCodeGeneratorManager {
             color: style.offPixelsColor,
             gradientColor: style.offPixelsGradientColor
         )
-
+        
         doc.design.shape.negatedOnPixelsOnly = style.negatedOnPixelsOnly
-
+        
         doc.design.style.onPixels = makeFill(
             type: style.foregroundFillType,
             color: style.foregroundColor,
             gradientColor: style.foregroundGradientColor
         )
-
+        
         doc.design.style.background = makeFill(
             type: style.backgroundFillType,
             color: style.backgroundColor,
             gradientColor: style.backgroundGradientColor
         )
-
+        
         doc.design.style.backgroundFractionalCornerRadius = style.backgroundCornerRadius
-
+        
         if let eyeColor = style.eyeColor {
             doc.design.style.eye = QRCode.FillStyle.Solid(eyeColor)
         }
-
+        
         if let pupilColor = style.pupilColor {
             doc.design.style.pupil = QRCode.FillStyle.Solid(pupilColor)
         }
-
+        
         doc.design.style.eyeBackground = style.eyeBackgroundColor
-
+        
         doc.design.additionalQuietZonePixels = UInt(configuration.quietZone) + configuration.additionalQuietZonePixels
-
+        
         if let logo = style.logoImage {
             let maxSize: CGFloat = 0.30
             let aspect = CGFloat(logo.width) / CGFloat(logo.height)
-
+            
             let w: CGFloat
             let h: CGFloat
-
+            
             if aspect > 1 {
                 w = maxSize
                 h = maxSize / aspect
@@ -157,10 +157,10 @@ struct QRCodeGeneratorManager {
                 h = maxSize
                 w = maxSize * aspect
             }
-
+            
             let x = (1 - w) / 2
             let y = (1 - h) / 2
-
+            
             doc.logoTemplate = QRCode.LogoTemplate(
                 image: logo,
                 path: CGPath(
@@ -170,10 +170,10 @@ struct QRCodeGeneratorManager {
                 inset: 4
             )
         }
-
+        
         return doc
     }
-
+    
     // MARK: - Fill Method
     private static func makeFill(
         type: FillType,
@@ -183,7 +183,7 @@ struct QRCodeGeneratorManager {
         switch type {
         case .solid:
             return QRCode.FillStyle.Solid(color)
-
+            
         case .linearGradient:
             do {
                 let gradient = try DSFGradient(
@@ -196,7 +196,7 @@ struct QRCodeGeneratorManager {
             } catch {
                 return QRCode.FillStyle.Solid(color)
             }
-
+            
         case .radialGradient:
             do {
                 let gradient = try DSFGradient(pins: [
@@ -209,7 +209,7 @@ struct QRCodeGeneratorManager {
             }
         }
     }
-
+    
     // MARK: - Format Wi-Fi Method
     private static func formatWiFi(
         ssid: String,
@@ -220,7 +220,7 @@ struct QRCodeGeneratorManager {
         let escapedPassword = escapeSpecialCharacters(password)
         return "WIFI:T:\(encryption);S:\(escapedSSID);P:\(escapedPassword);;"
     }
-
+    
     private static func escapeSpecialCharacters(_ string: String) -> String {
         string
             .replacingOccurrences(of: "\\", with: "\\\\")
@@ -229,26 +229,26 @@ struct QRCodeGeneratorManager {
             .replacingOccurrences(of: ":", with: "\\:")
             .replacingOccurrences(of: "\"", with: "\\\"")
     }
-
+    
     // MARK: - Format Contact Card Method
-
+    
     private static func formatVCard(
         name: String,
         phone: String,
         email: String
     ) -> String {
         var components = ["BEGIN:VCARD", "VERSION:3.0"]
-
+        
         if !name.isEmpty { components.append("FN:\(name)") }
         if !phone.isEmpty { components.append("TEL:\(phone)") }
         if !email.isEmpty { components.append("EMAIL:\(email)") }
-
+        
         components.append("END:VCARD")
         return components.joined(separator: "\n")
     }
-
+    
     // MARK: - Format Email Method
-
+    
     private static func formatEmail(
         address: String,
         subject: String,
@@ -256,20 +256,20 @@ struct QRCodeGeneratorManager {
     ) -> String {
         var result = "mailto:\(address)"
         var params: [String] = []
-
+        
         if !subject.isEmpty { params.append("subject=\(percentEncode(subject))") }
         if !body.isEmpty { params.append("body=\(percentEncode(body))") }
-
+        
         if !params.isEmpty { result += "?" + params.joined(separator: "&") }
         return result
     }
-
+    
     private static func percentEncode(_ string: String) -> String {
         string.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? string
     }
-
+    
     // MARK: - Format SMS Method
-
+    
     private static func formatSMS(number: String, message: String) -> String {
         message.isEmpty ? "smsto:\(number)" : "smsto:\(number):\(message)"
     }

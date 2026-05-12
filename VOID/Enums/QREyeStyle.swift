@@ -9,7 +9,7 @@ import QRCode
 
 enum QREyeStyle: String, CaseIterable, Codable {
     case original
-
+    
     case square
     case circle
     case roundedRect
@@ -46,7 +46,7 @@ enum QREyeStyle: String, CaseIterable, Codable {
     case holePunch
     case fabricScissors
     case arc
-
+    
     var generator: any QRCodeEyeShapeGenerator {
         switch self {
         case .original:
@@ -125,7 +125,7 @@ enum QREyeStyle: String, CaseIterable, Codable {
             QRCode.EyeShape.Arc()
         }
     }
-
+    
     var name: String {
         switch self {
         case .original:

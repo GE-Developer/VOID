@@ -10,19 +10,19 @@ import UniformTypeIdentifiers
 
 struct AES256EncryptionView: View {
     @StateObject private var vm = AES256EncryptionViewModel()
-
+    
     @State private var goToSettings = false
     @State private var isCopied = false
     @State private var hideCopyAlertWorkItem: DispatchWorkItem?
     @State private var showFileImporter = false
     @State private var shareItem: ShareItem?
-
+    
     private var isTextFieldDisabled: Bool {
         vm.encryptionParameters.password.isEmpty
     }
-
+    
     let backImage = Image.background.aes256Argon2idVOID
-
+    
     var body: some View {
         aes256EncryptionView
             .navigationDestination(isPresented: $goToSettings) {
@@ -63,7 +63,7 @@ extension AES256EncryptionView {
         }
         .overlay(loader)
     }
-
+    
     private var chatRows: some View {
         VStack(spacing: 15) {
             TopViewHeaderText(text: vm.headetText)
@@ -81,13 +81,13 @@ extension AES256EncryptionView {
         }
         .animation(.spring(response: 0.35, dampingFraction: 0.85), value: vm.items)
     }
-
+    
     @ViewBuilder private var loader: some View {
         if vm.isEncrypting {
             FullScreenLoader()
         }
     }
-
+    
     @ViewBuilder private var copyAlert: some View {
         if isCopied {
             CopyAlertView()
@@ -97,7 +97,7 @@ extension AES256EncryptionView {
                 )
         }
     }
-
+    
     private var bottomSafeArea: some View {
         VStack(spacing: 8) {
             selectedFileChip
@@ -140,16 +140,16 @@ extension AES256EncryptionView {
             HStack(spacing: 8) {
                 Image.system.document
                     .foregroundStyle(Gradient.accent)
-
+                
                 Text(name)
                     .font(.callout)
                     .fontDesign(.rounded)
                     .foregroundStyle(Color.void.mainText)
                     .lineLimit(1)
                     .truncationMode(.middle)
-
+                
                 Spacer()
-
+                
                 Button(action: vm.clearSelectedFile) {
                     Image.system.xmark
                         .foregroundStyle(Color.void.secondaryText)
@@ -176,18 +176,18 @@ extension AES256EncryptionView {
         guard vm.encryptionParameters.password.isEmpty else { return }
         goToSettings = true
     }
-
+    
     private func copyText(_ message: Message) {
         UIPasteboard.general.string = message.resultText
         showCopyAlert()
         HapticsManager.shared.notification(type: .success)
     }
-
+    
     private func shareFile(_ message: FileMessage) {
         shareItem = ShareItem(url: message.fileURL)
         HapticsManager.shared.notification(type: .success)
     }
-
+    
     private func handleFileImport(_ result: Result<[URL], Error>) {
         switch result {
         case .success(let urls):
@@ -197,15 +197,15 @@ extension AES256EncryptionView {
             break
         }
     }
-
+    
     private func scrollTo(_ proxy: ScrollViewProxy) {
         guard let lastId = vm.items.last?.id else { return }
-
+        
         withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
             proxy.scrollTo(lastId, anchor: .bottom)
         }
     }
-
+    
     private func showCopyAlert() {
         withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) {
             isCopied = true

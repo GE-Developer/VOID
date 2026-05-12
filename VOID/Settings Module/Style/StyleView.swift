@@ -12,7 +12,7 @@ struct StyleView: View {
     @State private var showPayWall = false
     
     private let vm = StyleViewModel()
-
+    
     private let columns = [
         GridItem(.flexible(), spacing: 12),
         GridItem(.flexible(), spacing: 12)

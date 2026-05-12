@@ -12,7 +12,7 @@ enum QRErrorCorrection: String, CaseIterable, Codable {
     case medium
     case quartile
     case high
-
+    
     var qrCodeLevel: QRCode.ErrorCorrection {
         switch self {
         case .low: .low

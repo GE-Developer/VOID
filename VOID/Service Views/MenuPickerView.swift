@@ -9,14 +9,14 @@ import SwiftUI
 
 struct MenuPickerView: View {
     @Binding private var selection: String
-
+    
     private let options: [String]
-
+    
     init(selection: Binding<String>, options: [String]) {
         self._selection = selection
         self.options = options
     }
-
+    
     var body: some View {
         menuPickerView
     }

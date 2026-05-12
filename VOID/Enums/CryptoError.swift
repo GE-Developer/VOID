@@ -11,7 +11,7 @@ enum CryptoError: Error {
     case invalidMasterKey
     case invalidSubkeyCount
     case argon2Failed
-
+    
     // AES encryption/decryption
     case nonceGenerationFailed
     case invalidFormat
@@ -19,7 +19,7 @@ enum CryptoError: Error {
     case encryptionFailed
     case decryptionFailed
     case integrityCheckFailed
-
+    
     // General / fallback
     case invalidInputData
     case unknown
@@ -27,10 +27,10 @@ enum CryptoError: Error {
     // Codec
     case encodingFailed
     case decodingFailed
-
+    
     // QR Code
     case qrGenerationFailed
-
+    
     // File I/O
     case fileReadFailed
     case fileWriteFailed
@@ -38,9 +38,9 @@ enum CryptoError: Error {
     case unsupportedFileExtension
     case insufficientDiskSpace    
     case insufficientMemory      
-
+    
     var errorTitle: String { L10n("Error.title") }
-
+    
     var errorDescription: String {
         switch self {
         case .saltGenerationFailed:

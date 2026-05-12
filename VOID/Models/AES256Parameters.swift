@@ -19,11 +19,11 @@ struct AES256Parameters: Equatable {
     var selectedHours: Int
     var selectedMinutes: Int
     var isTimerEnabled: Bool
-
+    
     var duration: UInt64 {
         let timeInterval = TimeInterval((selectedHours * 60 + selectedMinutes) * 60)
         let expireTime = Date().timeIntervalSince1970 + timeInterval
-
+        
         return UInt64(isTimerEnabled ? expireTime : 0)
     }
     

@@ -14,17 +14,17 @@ struct CustomTextField: View {
     
     @Binding private var text: String
     @Binding private var isDisabled: Bool
-
+    
     @FocusState private var focus: Bool
-
+    
     private var inputButtonDisabled: Bool {
         !text.isEmpty || isDisabled || hasAttachment || focus
     }
-
+    
     private var sendButtonDisabled: Bool {
         (text.isEmpty && !hasAttachment) || isDisabled
     }
-
+    
     private let height: CGFloat = 40
     private let keyboard: UIKeyboardType
     private let placeholder: String
@@ -34,7 +34,7 @@ struct CustomTextField: View {
     private let hasAttachment: Bool
     private let inputAction: (() -> Void)?
     private let sendAction: (() -> Void)?
-
+    
     init(
         text: Binding<String>,
         isDisabled: Binding<Bool> = .constant(false),
@@ -79,7 +79,7 @@ extension CustomTextField {
             }
             .disabled(hasAttachment)
             .background { background }
-
+            
             sendButton
         }
         .disabled(isDisabled)
@@ -89,7 +89,7 @@ extension CustomTextField {
             }
         }
     }
-
+    
     @ViewBuilder
     private var fieldImage: some View {
         if let icon {
@@ -157,7 +157,7 @@ extension CustomTextField {
             }
         }
     }
-
+    
     @ViewBuilder
     private var inputButton: some View {
         if let inputAction {

@@ -9,7 +9,7 @@ enum FillType: String, CaseIterable, Codable {
     case solid
     case linearGradient
     case radialGradient
-
+    
     var name: String {
         switch self {
         case .solid:

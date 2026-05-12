@@ -6,7 +6,7 @@
 //
 
 import Foundation
- 
+
 final class AES256SettingsViewModel: ObservableObject {
     @Published var parameters: AES256Parameters
     

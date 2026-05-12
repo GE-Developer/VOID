@@ -59,25 +59,25 @@ final class AES256CryptoManager {
             plaintext: Data(plaintext.utf8),
             keys: keys
         )
-
+        
         try Task.checkCancellation()
-
+        
         // MARK: - Construct container with metadata
         var container = Data()
         container.append(CryptoVersion.v2.rawValue)
         
         BinaryCodec.appendUInt16(UInt16(salt.count), to: &container)
         container.append(salt)
-
+        
         BinaryCodec.appendUInt16(parameters.iterations, to: &container)
         BinaryCodec.appendUInt32(parameters.memory, to: &container)
-
+        
         container.append(parameters.parallelism)
         container.append(parameters.keyLength)
         container.append(parameters.actualLayers)
-
+        
         BinaryCodec.appendUInt64(parameters.duration, to: &container)
-
+        
         BinaryCodec.appendUInt32(UInt32(encryptedText.count), to: &container)
         container.append(encryptedText)
         
@@ -222,36 +222,36 @@ final class AES256CryptoManager {
         }
         let salt = container.subdata(in: offset..<offset + saltLen)
         offset += saltLen
-
+        
         let iterations = try BinaryCodec.readUInt16(container, &offset)
         let memory = try BinaryCodec.readUInt32(container, &offset)
-
+        
         guard container.count >= offset + 3 else { throw CryptoError.invalidFormat }
         let parallelism = container[offset]; offset += 1
         let keyLength = container[offset]; offset += 1
         let layers = container[offset]; offset += 1
-
+        
         let expiration = try BinaryCodec.readUInt64(container, &offset)
-
+        
         if expiration != 0 {
             let now = UInt64(Date().timeIntervalSince1970)
             guard now <= expiration else { throw CryptoError.expired }
         }
-
+        
         let cipherLen = try BinaryCodec.readUInt32(container, &offset)
         guard container.count >= offset + Int(cipherLen) else { throw CryptoError.invalidFormat }
         let cipher = container.subdata(in: offset..<offset + Int(cipherLen))
-
+        
         // MARK: - Recover main key
         try Task.checkCancellation()
-
+        
         let combinedPassword = await pepperService.combinedSecret(
             password: password,
             voidIndex: voidIndex
         )
-
+        
         try Task.checkCancellation()
-
+        
         let masterKey = try await keyDerivationService.deriveMasterKey(
             password: combinedPassword,
             salt: salt,
@@ -260,16 +260,16 @@ final class AES256CryptoManager {
             parallelism: parallelism,
             length: keyLength
         )
-
+        
         try Task.checkCancellation()
-
+        
         let keys = try await keyDerivationService.deriveSubkeys(
             masterKey: masterKey,
             count: Int(layers)
         )
-
+        
         try Task.checkCancellation()
-
+        
         let decrypted: Data
         switch version {
         case .v1:
@@ -285,11 +285,11 @@ final class AES256CryptoManager {
                 plaintextSize: plaintextSize
             )
         }
-
+        
         guard let result = String(data: decrypted, encoding: .utf8) else {
             throw CryptoError.invalidFormat
         }
-
+        
         return result
     }
 }

@@ -202,7 +202,7 @@ extension AES256SettingsView {
                 title: vm.timerSubtitle
             )
             .premiumOption($showPayWall)
-
+            
             if vm.parameters.isTimerEnabled {
                 Divider()
                     .padding(.leading, 50)

@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct CustomCapsulePicker<Item: CaseIterable & Hashable>: View
-    where Item.AllCases: RandomAccessCollection
+where Item.AllCases: RandomAccessCollection
 {
     @Binding private var selection: Item
-
+    
     private let disabledItems: Set<Item>
     private let title: String?
     private let capsuleName: (Item) -> String
-
+    
     private let hapticsManager = HapticsManager.shared
-
+    
     init(
         selection: Binding<Item>,
         disabledItems: Set<Item> = [],
@@ -29,7 +29,7 @@ struct CustomCapsulePicker<Item: CaseIterable & Hashable>: View
         self.title = title
         self.capsuleName = capsuleName
     }
-
+    
     var body: some View {
         capsulePicker
     }
@@ -62,7 +62,7 @@ extension CustomCapsulePicker {
             }
         }
     }
-
+    
     private func capsuleButton(_ item: Item) -> some View {
         let isSelected = selection == item
         let isDisabled = disabledItems.contains(item)

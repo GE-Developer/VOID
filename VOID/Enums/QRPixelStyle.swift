@@ -51,7 +51,7 @@ enum QRPixelStyle: String, CaseIterable, Codable {
     case dripVertical
     case dripHorizontal
     case crt
-
+    
     var generator: any QRCodePixelShapeGenerator {
         switch self {
         case .square:

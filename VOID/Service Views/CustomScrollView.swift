@@ -9,22 +9,22 @@ import SwiftUI
 
 struct CustomScrollView<Content: View, NavBarItems: View>: View {
     @Environment(\.dismiss) private var dismiss
-
+    
     @EnvironmentObject private var tabBarState: TabBarState
-
+    
     @State private var navState = NavBarState()
-
+    
     private let title: String
     private let subTitle: String?
     private let alignment: HorizontalAlignment
     private let withBackButton: Bool
     private let tabBarIsVisible: Bool
-
+    
     private let backgroundImage: Image?
-
+    
     @ViewBuilder private let navBarItems: () -> NavBarItems
     @ViewBuilder private let content: (ScrollViewProxy) -> Content
-
+    
     init(
         title: String,
         subTitle: String? = nil,
@@ -44,7 +44,7 @@ struct CustomScrollView<Content: View, NavBarItems: View>: View {
         self.navBarItems = navBarItems
         self.content = content
     }
-
+    
     var body: some View {
         ZStack(alignment: .top) {
             background.zIndex(0)
@@ -82,7 +82,7 @@ extension CustomScrollView {
             }
             .ignoresSafeArea()
     }
-
+    
     private var scroll: some View {
         ScrollViewReader { proxy in
             ScrollView(showsIndicators: false) {
@@ -141,19 +141,19 @@ private struct NavigationBarView<NavBarItems: View>: View {
         default:        return .center
         }
     }
-
+    
     private let navState: NavBarState
     private let title: String
     private let subTitle: String?
     private let alignment: HorizontalAlignment
     private let withBackButton: Bool
     private let onBack: () -> Void
-
+    
     private let largeNavBarHeight: CGFloat = 70.0
     private let smallNavBarHeight: CGFloat = 50.0
-
+    
     @ViewBuilder private let navBarItems: () -> NavBarItems
-
+    
     init(
         navState: NavBarState,
         title: String,
@@ -171,7 +171,7 @@ private struct NavigationBarView<NavBarItems: View>: View {
         self.onBack = onBack
         self.navBarItems = navBarItems
     }
-
+    
     var body: some View {
         ZStack {
             UnevenRoundedRectangle(
@@ -183,7 +183,7 @@ private struct NavigationBarView<NavBarItems: View>: View {
             .opacity(navState.isLarge ? 0 : 1)
             .shadow(color: Color.void.navBarShadow, radius: navState.isLarge ? 0 : 5)
             .compositingGroup()
-
+            
             HStack {
                 backButton
                 titleView
@@ -195,7 +195,7 @@ private struct NavigationBarView<NavBarItems: View>: View {
         }
         .frame(height: navState.isLarge ? largeNavBarHeight : smallNavBarHeight)
     }
-
+    
     @ViewBuilder
     private var backButton: some View {
         if withBackButton {
@@ -208,7 +208,7 @@ private struct NavigationBarView<NavBarItems: View>: View {
             }
         }
     }
-
+    
     private var titleView: some View {
         VStack(alignment: alignment) {
             Text(title)
@@ -216,7 +216,7 @@ private struct NavigationBarView<NavBarItems: View>: View {
                 .fontWeight(.medium)
                 .foregroundStyle(Color.void.blackAndWhite)
                 .multilineTextAlignment(textAlignment)
-
+            
             if navState.isLarge, let subTitle {
                 Text(subTitle)
                     .font(.subheadline)

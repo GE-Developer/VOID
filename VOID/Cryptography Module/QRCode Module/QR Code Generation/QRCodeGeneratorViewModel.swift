@@ -20,7 +20,7 @@ final class QRCodeGeneratorViewModel {
         case phone
         case email
         case subject
-
+        
         var limit: Int {
             switch self {
             case .url: 500
@@ -33,19 +33,19 @@ final class QRCodeGeneratorViewModel {
             }
         }
     }
-
+    
     enum URLScheme: String, CaseIterable {
         case https = "https://"
         case http  = "http://"
         case ftp   = "ftp://"
     }
-
+    
     enum WifiEncryption: String, CaseIterable {
         case wpa  = "WPA/WPA2"
         case wep  = "WEP"
         case open = "N/A"
     }
-
+    
     var selectedErrorCorrection: QRErrorCorrection = .high {
         didSet {
             text = trimToByteLimit(text)
@@ -57,16 +57,16 @@ final class QRCodeGeneratorViewModel {
             }
         }
     }
-
+    
     var selectedDataType: QRDataType = .plainText
     
     var showFormatPicker = false
     var isExporting = false
     var exportURL: URL?
     var showExportError = false
-
+    
     private(set) var hasLogo: Bool = false
-
+    
     var text = ""
     var selectedURLScheme: URLScheme = .http
     var url = ""
@@ -83,15 +83,15 @@ final class QRCodeGeneratorViewModel {
     var smsNumber = ""
     var smsMessage = ""
     var selectedCoordinate: CLLocationCoordinate2D?
-
+    
     var latitudeString: String {
         selectedCoordinate.map { String(format: "%.6f", $0.latitude) } ?? ""
     }
-
+    
     var longitudeString: String {
         selectedCoordinate.map { String(format: "%.6f", $0.longitude) } ?? ""
     }
-
+    
     var coordinateDescription: String {
         guard selectedCoordinate != nil else { return "" }
         return "\(latitudeString), \(longitudeString)"
@@ -100,24 +100,24 @@ final class QRCodeGeneratorViewModel {
     var payloadDescription: String {
         "\(payloadProgress) / \(selectedErrorCorrection.byteLimit) B"
     }
-
+    
     var isQRCodeReady: Bool {
         qrImage != nil && !generationFailed
     }
-
+    
     var canAddLogo: Bool {
         selectedErrorCorrection == .high
     }
-
+    
     var payloadFraction: Double {
         Double(payloadProgress) / Double(selectedErrorCorrection.byteLimit)
     }
-
+    
     var disabledErrorCorrectionLevels: Set<QRErrorCorrection> {
         let progress = payloadProgress
         return Set(QRErrorCorrection.allCases.filter { progress > $0.byteLimit })
     }
-
+    
     var stringResult: String {
         QRCodeGeneratorManager.formatPayload(
             type: selectedDataType,
@@ -143,7 +143,7 @@ final class QRCodeGeneratorViewModel {
     private(set) var qrImage: CGImage?
     private(set) var generationFailed = false
     private(set) var qrQuality: QRScanQuality = .good
-
+    
     private var payloadProgress: Int {
         switch selectedDataType {
         case .plainText: return text.utf8.count
@@ -196,7 +196,7 @@ final class QRCodeGeneratorViewModel {
     init() {
         configuration.errorCorrection = selectedErrorCorrection
     }
-
+    
     @MainActor
     func generate() async {
         guard canGenerate() else {
@@ -206,9 +206,9 @@ final class QRCodeGeneratorViewModel {
             analysisTask?.cancel()
             return
         }
-
+        
         generationFailed = false
-
+        
         do {
             qrImage = try await QRCodeGeneratorManager.generateQRCode(
                 from: stringResult,
@@ -222,31 +222,31 @@ final class QRCodeGeneratorViewModel {
             analysisTask?.cancel()
         }
     }
-
+    
     func setLogo(from data: Data) {
         guard let source = CGImageSourceCreateWithData(data as CFData, nil) else { return }
-
+        
         let options: [CFString: Any] = [
             kCGImageSourceCreateThumbnailFromImageAlways: true,
             kCGImageSourceCreateThumbnailWithTransform: true,
             kCGImageSourceShouldCacheImmediately: true,
             kCGImageSourceThumbnailMaxPixelSize: 512
         ]
-
+        
         guard
             let image = CGImageSourceCreateThumbnailAtIndex(source, 0, options as CFDictionary)
         else { return }
-
+        
         configuration.style.logoImage = image
         hasLogo = true
     }
-
+    
     func clearLogo() {
         guard configuration.style.logoImage != nil else { return }
         configuration.style.logoImage = nil
         hasLogo = false
     }
-
+    
     @MainActor
     func exportQRCode(as format: QRExportFormat) {
         exportTask?.cancel()
@@ -268,21 +268,21 @@ final class QRCodeGeneratorViewModel {
             }
         }
     }
-
+    
     func cleanupExportFile() {
         guard let url = exportURL else { return }
         try? FileManager.default.removeItem(at: url)
         exportURL = nil
     }
-
+    
     func isEmailValid(_ value: String) -> Bool {
         value.isEmpty || Validator.isValid(value, type: .email)
     }
-
+    
     func isPhoneValid(_ value: String) -> Bool {
         value.isEmpty || Validator.isValid(value, type: .phone)
     }
-
+    
     func isUrlValid(_ value: String)   -> Bool {
         value.isEmpty || Validator.isValid(value, type: .url)
     }
@@ -293,14 +293,14 @@ final class QRCodeGeneratorViewModel {
     
     func trimToByteLimit(_ text: String) -> String {
         guard text.utf8.count > selectedErrorCorrection.byteLimit else { return text }
-
+        
         var result = text
         while result.utf8.count > selectedErrorCorrection.byteLimit && !result.isEmpty {
             result.removeLast()
         }
         return result
     }
-
+    
     func sanitize(text: String, fieldType: FieldType) -> String {
         switch fieldType {
         case .url:
@@ -340,7 +340,7 @@ final class QRCodeGeneratorViewModel {
         )
         return clean ?? fallback
     }
-
+    
     private func canGenerate() -> Bool {
         switch selectedDataType {
         case .plainText:
@@ -349,15 +349,15 @@ final class QRCodeGeneratorViewModel {
             return !url.isEmpty && isUrlValid(url)
         case .wifi:
             return wifiEncryption == .open
-                ? !wifiSSID.isEmpty
-                : !wifiSSID.isEmpty && !wifiPassword.isEmpty
+            ? !wifiSSID.isEmpty
+            : !wifiSSID.isEmpty && !wifiPassword.isEmpty
         case .contact:
             let hasInput = !contactName.isEmpty
-                || !contactPhone.isEmpty
-                || !contactEmail.isEmpty
+            || !contactPhone.isEmpty
+            || !contactEmail.isEmpty
             return hasInput
-                && isPhoneValid(contactPhone)
-                && isEmailValid(contactEmail)
+            && isPhoneValid(contactPhone)
+            && isEmailValid(contactEmail)
         case .email:
             return !emailAddress.isEmpty && isEmailValid(emailAddress)
         case .phone:

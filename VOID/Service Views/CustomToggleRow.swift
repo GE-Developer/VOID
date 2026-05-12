@@ -9,17 +9,17 @@ import SwiftUI
 
 struct CustomToggleRow: View {
     @Binding var isOn: Bool
-
+    
     private let icon: Image?
     private let title: String
     private let haptics = HapticsManager.shared
-
+    
     init(isOn: Binding<Bool>, icon: Image? = nil, title: String) {
         _isOn = isOn
         self.icon = icon
         self.title = title
     }
-
+    
     var body: some View {
         customToggleRow
     }

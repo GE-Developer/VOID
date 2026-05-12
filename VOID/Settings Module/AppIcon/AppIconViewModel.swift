@@ -13,12 +13,12 @@ final class AppIconViewModel: ObservableObject {
     let title = L10n("Settings.Customization.AppIcon.title")
     let defaultFormTitle = L10n("Settings.Customization.AppIcon.defaultIconTitle")
     let alternativeFormTitle = L10n("Settings.Customization.AppIcon.alternativeIconTitle")
-
+    
     let defaulIcon = AppIcon.blackVoid
     let alternativeIcons = AppIcon.premiumIcons
     
     private let haptic = HapticsManager.shared
-
+    
     @MainActor
     func selectIcon(_ icon: AppIcon) {
         guard currentIcon != icon else { return }

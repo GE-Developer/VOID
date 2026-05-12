@@ -22,7 +22,7 @@ struct MessageView: View {
     private var transitionEdge: Edge {
         message.encryptionMode == .encrypt ? .trailing : .leading
     }
-
+    
     private let message: Message
     
     private let pressAction: () -> Void
@@ -79,7 +79,7 @@ extension MessageView {
 // MARK: - WrappingLabel
 private struct WrappingLabel: UIViewRepresentable {
     let text: String
-
+    
     func makeUIView(context: Context) -> UILabel {
         let label = UILabel()
         label.numberOfLines = 0
@@ -92,16 +92,16 @@ private struct WrappingLabel: UIViewRepresentable {
         label.setContentCompressionResistancePriority(.required, for: .vertical)
         return label
     }
-
+    
     func updateUIView(_ uiView: UILabel, context: Context) {
         uiView.text = text
     }
-
+    
     func sizeThatFits(_ proposal: ProposedViewSize, uiView: UILabel, context: Context) -> CGSize? {
         guard let width = proposal.width, width.isFinite else { return nil }
         return uiView.sizeThatFits(CGSize(width: width, height: .greatestFiniteMagnitude))
     }
-
+    
     private static let font: UIFont = {
         let base = UIFont.preferredFont(forTextStyle: .caption1)
         if let descriptor = base.fontDescriptor.withDesign(.rounded) {

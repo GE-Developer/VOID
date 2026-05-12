@@ -16,129 +16,129 @@ struct QRCodeGeneratorView: View {
     @State private var selectedLogoItem: PhotosPickerItem?
     @State private var showLogoAlert = false
     @State private var showShareSheet = false
-
+    
     private let haptics = HapticsManager.shared
     private let sounds = SoundManager.shared
-
+    
     private var plainTextBinding: Binding<String> {
         Binding(
             get: { vm.text },
             set: { vm.text = vm.trimToByteLimit($0) }
         )
     }
-
+    
     private var urlSchemeBinding: Binding<String> {
         Binding(
             get: { vm.selectedURLScheme.rawValue },
             set: { vm.selectedURLScheme = .init(rawValue: $0) ?? .http }
         )
     }
-
+    
     private var urlBinding: Binding<String> {
         Binding(
             get: { vm.url },
             set: { vm.url = vm.sanitize(text: $0, fieldType: .url) }
         )
     }
-
+    
     private var wifiEncryptionBinding: Binding<String> {
         Binding(
             get: { vm.wifiEncryption.rawValue },
             set: { vm.wifiEncryption = .init(rawValue: $0) ?? .wpa }
         )
     }
-
+    
     private var wifiSSIDBinding: Binding<String> {
         Binding(
             get: { vm.wifiSSID },
             set: { vm.wifiSSID = vm.sanitize(text: $0, fieldType: .ssid) }
         )
     }
-
+    
     private var wifiPasswordBinding: Binding<String> {
         Binding(
             get: { vm.wifiPassword },
             set: { vm.wifiPassword = vm.sanitize(text: $0, fieldType: .ssidPassword) }
         )
     }
-
+    
     private var contactNameBinding: Binding<String> {
         Binding(
             get: { vm.contactName },
             set: { vm.contactName = vm.sanitize(text: $0, fieldType: .name) }
         )
     }
-
+    
     private var contactPhoneBinding: Binding<String> {
         Binding(
             get: { vm.contactPhone },
             set: { vm.contactPhone = vm.sanitize(text: $0, fieldType: .phone) }
         )
     }
-
+    
     private var contactEmailBinding: Binding<String> {
         Binding(
             get: { vm.contactEmail },
             set: { vm.contactEmail = vm.sanitize(text: $0, fieldType: .email) }
         )
     }
-
+    
     private var emailAddressBinding: Binding<String> {
         Binding(
             get: { vm.emailAddress },
             set: { vm.emailAddress = vm.sanitize(text: $0, fieldType: .email) }
         )
     }
-
+    
     private var emailSubjectBinding: Binding<String> {
         Binding(
             get: { vm.emailSubject },
             set: { vm.emailSubject = vm.sanitize(text: $0, fieldType: .subject) }
         )
     }
-
+    
     private var emailBodyBinding: Binding<String> {
         Binding(
             get: { vm.emailBody },
             set: { vm.emailBody = vm.trimToByteLimit($0) }
         )
     }
-
+    
     private var phoneNumberBinding: Binding<String> {
         Binding(
             get: { vm.phoneNumber },
             set: { vm.phoneNumber = vm.sanitize(text: $0, fieldType: .phone) }
         )
     }
-
+    
     private var smsNumberBinding: Binding<String> {
         Binding(
             get: { vm.smsNumber },
             set: { vm.smsNumber = vm.sanitize(text: $0, fieldType: .phone) }
         )
     }
-
+    
     private var smsMessageBinding: Binding<String> {
         Binding(
             get: { vm.smsMessage },
             set: { vm.smsMessage = vm.trimToByteLimit($0) }
         )
     }
-
+    
     private var errorCorrectionBinding: Binding<QRErrorCorrection> {
         Binding(
             get: { vm.selectedErrorCorrection },
             set: { vm.selectedErrorCorrection = $0 }
         )
     }
-
+    
     private var dataTypeBinding: Binding<QRDataType> {
         Binding(
             get: { vm.selectedDataType },
             set: { vm.selectedDataType = $0 }
         )
     }
-
+    
     private var progressColor: Color {
         switch vm.payloadFraction {
         case 0.95...: .void.errorRed
@@ -246,7 +246,7 @@ extension QRCodeGeneratorView {
             RoundedRectangle(cornerRadius: 12)
                 .fill(Color(.secondarySystemGroupedBackground))
                 .shadow(color: Color.void.accent, radius: 4)
-
+            
             if let cgImage = vm.qrImage {
                 Image(decorative: cgImage, scale: 1)
                     .resizable()
@@ -278,7 +278,7 @@ extension QRCodeGeneratorView {
         .aspectRatio(1, contentMode: .fit)
         .frame(maxWidth: .infinity)
     }
-
+    
     private var errorCorrectionPicker: some View {
         CustomCapsulePicker(
             selection: errorCorrectionBinding,
@@ -287,7 +287,7 @@ extension QRCodeGeneratorView {
             capsuleName: { $0.name }
         )
     }
-
+    
     private var dataTypePicker: some View {
         CustomCapsulePicker(
             selection: dataTypeBinding,
@@ -342,7 +342,7 @@ extension QRCodeGeneratorView {
             EmptyView()
         }
     }
-
+    
     private var plainTextInput: some View {
         VStack(spacing: 8) {
             CustomTextField(
@@ -360,7 +360,7 @@ extension QRCodeGeneratorView {
                     selection: urlSchemeBinding,
                     options: vm.urlSchemeOptions
                 )
-
+                
                 CustomTextField(
                     text: urlBinding,
                     keyboard: .URL,
@@ -368,7 +368,7 @@ extension QRCodeGeneratorView {
                     error: !vm.isUrlValid(vm.url)
                 )
             }
-
+            
             counterFor(vm.counter(vm.url, for: .url))
         }
     }
@@ -380,14 +380,14 @@ extension QRCodeGeneratorView {
                     selection: wifiEncryptionBinding,
                     options: vm.wifiEncryptionOptions
                 )
-
+                
                 CustomTextField(
                     text: wifiSSIDBinding,
                     placeholder: vm.wifiSSIDPlaceholder
                 )
             }
             counterFor(vm.counter(vm.wifiSSID, for: .ssid))
-
+            
             if vm.wifiEncryption != .open {
                 CustomTextField(
                     text: wifiPasswordBinding,
@@ -405,7 +405,7 @@ extension QRCodeGeneratorView {
                 placeholder: vm.namePlaceholder
             )
             counterFor(vm.counter(vm.contactName, for: .name))
-
+            
             CustomTextField(
                 text: contactPhoneBinding,
                 keyboard: .phonePad,
@@ -413,7 +413,7 @@ extension QRCodeGeneratorView {
                 error: !vm.isPhoneValid(vm.contactPhone)
             )
             counterFor(vm.counter(vm.contactPhone, for: .phone))
-
+            
             CustomTextField(
                 text: contactEmailBinding,
                 keyboard: .emailAddress,
@@ -423,7 +423,7 @@ extension QRCodeGeneratorView {
             counterFor(vm.counter(vm.contactEmail, for: .email))
         }
     }
-
+    
     private var emailMessageInput: some View {
         VStack(spacing: 8) {
             CustomTextField(
@@ -433,13 +433,13 @@ extension QRCodeGeneratorView {
                 error: !vm.isEmailValid(vm.emailAddress)
             )
             counterFor(vm.counter(vm.emailAddress, for: .email))
-
+            
             CustomTextField(
                 text: emailSubjectBinding,
                 placeholder: vm.subjectPlaceholder
             )
             counterFor(vm.counter(vm.emailSubject, for: .subject))
-
+            
             CustomTextField(
                 text: emailBodyBinding,
                 placeholder: vm.messagePlaceholder,
@@ -447,7 +447,7 @@ extension QRCodeGeneratorView {
             )
         }
     }
-
+    
     private var phoneInput: some View {
         VStack(spacing: 8) {
             CustomTextField(
@@ -459,7 +459,7 @@ extension QRCodeGeneratorView {
             counterFor(vm.counter(vm.phoneNumber, for: .phone))
         }
     }
-
+    
     private var smsInput: some View {
         VStack(spacing: 8) {
             CustomTextField(
@@ -469,7 +469,7 @@ extension QRCodeGeneratorView {
                 error: !vm.isPhoneValid(vm.smsNumber)
             )
             counterFor(vm.counter(vm.smsNumber, for: .phone))
-
+            
             CustomTextField(
                 text: smsMessageBinding,
                 placeholder: vm.messagePlaceholder,
@@ -477,7 +477,7 @@ extension QRCodeGeneratorView {
             )
         }
     }
-
+    
     private var locationInput: some View {
         VStack(spacing: 8) {
             MapReader { proxy in
@@ -494,11 +494,11 @@ extension QRCodeGeneratorView {
             }
             .frame(height: 240)
             .clipShape(RoundedRectangle(cornerRadius: 12))
-
+            
             counterFor(vm.coordinateDescription)
         }
     }
-
+    
     private var payloadProgressBar: some View {
         VStack(spacing: 4) {
             VStack {
@@ -506,7 +506,7 @@ extension QRCodeGeneratorView {
                 ProgressView(value: vm.payloadFraction)
                     .tint(progressColor)
             }
-
+            
             counterFor(vm.payloadDescription)
         }
     }
@@ -543,7 +543,7 @@ extension QRCodeGeneratorView {
         .opacity(vm.isQRCodeReady ? 1 : 0.4)
         .animation(.easeInOut, value: vm.isQRCodeReady)
     }
-
+    
     private func logoButtonLabel(image: Image, tint: Color) -> some View {
         image
             .foregroundStyle(tint)
@@ -556,7 +556,7 @@ extension QRCodeGeneratorView {
             )
             .frame(width: 50, height: 50)
     }
-
+    
     private func actionButton(image: Image, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             logoButtonLabel(image: image, tint: .void.secondaryText)
@@ -565,7 +565,7 @@ extension QRCodeGeneratorView {
         .opacity(vm.isQRCodeReady ? 1 : 0.4)
         .animation(.easeInOut, value: vm.isQRCodeReady)
     }
-
+    
     private func counterFor(_ text: String) -> some View {
         HStack {
             Spacer()

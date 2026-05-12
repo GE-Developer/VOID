@@ -10,31 +10,31 @@ import Foundation
 
 @Observable
 final class QRCodeCustomizationViewModel {
-
+    
     var pixelStyle: QRPixelStyle {
         didSet { mainVM.configuration.style.pixelStyle = pixelStyle }
     }
-
+    
     var foregroundFillType: FillType {
         didSet { mainVM.configuration.style.foregroundFillType = foregroundFillType }
     }
-
+    
     var foregroundColor: CGColor {
         didSet { mainVM.configuration.style.foregroundColor = foregroundColor }
     }
-
+    
     var foregroundGradientColor: CGColor {
         didSet { mainVM.configuration.style.foregroundGradientColor = foregroundGradientColor }
     }
-
+    
     var eyeStyle: QREyeStyle {
         didSet { mainVM.configuration.style.eyeStyle = eyeStyle }
     }
-
+    
     var isEyeColorCustom: Bool {
         didSet { mainVM.configuration.style.eyeColor = isEyeColorCustom ? eyeColor : nil }
     }
-
+    
     var eyeColor: CGColor {
         didSet {
             if isEyeColorCustom {
@@ -42,11 +42,11 @@ final class QRCodeCustomizationViewModel {
             }
         }
     }
-
+    
     var isEyeBackgroundColorCustom: Bool {
         didSet { mainVM.configuration.style.eyeBackgroundColor = isEyeBackgroundColorCustom ? eyeBackgroundColor : nil }
     }
-
+    
     var eyeBackgroundColor: CGColor {
         didSet {
             if isEyeBackgroundColorCustom {
@@ -54,15 +54,15 @@ final class QRCodeCustomizationViewModel {
             }
         }
     }
-
+    
     var pupilStyle: QRPupilStyle {
         didSet { mainVM.configuration.style.pupilStyle = pupilStyle }
     }
-
+    
     var isPupilColorCustom: Bool {
         didSet { mainVM.configuration.style.pupilColor = isPupilColorCustom ? pupilColor : nil }
     }
-
+    
     var pupilColor: CGColor {
         didSet {
             if isPupilColorCustom {
@@ -70,49 +70,49 @@ final class QRCodeCustomizationViewModel {
             }
         }
     }
-
+    
     var backgroundFillType: FillType {
         didSet { mainVM.configuration.style.backgroundFillType = backgroundFillType }
     }
-
+    
     var backgroundColor: CGColor {
         didSet { mainVM.configuration.style.backgroundColor = backgroundColor }
     }
-
+    
     var backgroundGradientColor: CGColor {
         didSet { mainVM.configuration.style.backgroundGradientColor = backgroundGradientColor }
     }
-
+    
     var backgroundCornerRadius: CGFloat {
         didSet { mainVM.configuration.style.backgroundCornerRadius = backgroundCornerRadius }
     }
-
+    
     var offPixelStyle: QRPixelStyle {
         didSet { mainVM.configuration.style.offPixelStyle = offPixelStyle }
     }
-
+    
     var offPixelsFillType: FillType {
         didSet { mainVM.configuration.style.offPixelsFillType = offPixelsFillType }
     }
-
+    
     var offPixelsColor: CGColor {
         didSet { mainVM.configuration.style.offPixelsColor = offPixelsColor }
     }
-
+    
     var offPixelsGradientColor: CGColor {
         didSet { mainVM.configuration.style.offPixelsGradientColor = offPixelsGradientColor }
     }
-
+    
     var negatedOnPixelsOnly: Bool {
         didSet { mainVM.configuration.style.negatedOnPixelsOnly = negatedOnPixelsOnly }
     }
-
+    
     var qrImage: CGImage? { mainVM.qrImage }
-
+    
     var quality: QRScanQuality { mainVM.qrQuality }
-
+    
     var qualityTitle: String { mainVM.qrQuality.description }
-
+    
     let title = L10n("QRCode.Customization.title")
     let subTitle = L10n("QRCode.title")
     let pixelStyleHeader = QRPixelStyle.title
@@ -126,13 +126,13 @@ final class QRCodeCustomizationViewModel {
     let cornerRadiusHeader = L10n("QRCode.Customization.cornerRadius")
     let negatedToggleTitle = L10n("QRCode.Customization.negated")
     let eyeBackgroundTitle = L10n("QRCode.Customization.backgroundColor")
-
+    
     @ObservationIgnored private let mainVM: QRCodeGeneratorViewModel
-
+    
     init(mainVM: QRCodeGeneratorViewModel) {
         self.mainVM = mainVM
         let style = mainVM.configuration.style
-
+        
         self.pixelStyle = style.pixelStyle
         self.foregroundFillType = style.foregroundFillType
         self.foregroundColor = style.foregroundColor

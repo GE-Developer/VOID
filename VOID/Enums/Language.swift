@@ -6,9 +6,8 @@
 //
 
 enum Language: String, CaseIterable, Identifiable {
-    case arabic = "ar"
     case english = "en"
-    case hebrew = "he"
+    case arabic = "ar"
     case armenian = "hy"
     case azerbaijani = "az"
     case catalan = "ca"
@@ -23,6 +22,7 @@ enum Language: String, CaseIterable, Identifiable {
     case georgian = "ka"
     case german = "de"
     case greek = "el"
+    case hebrew = "he"
     case hindi = "hi"
     case hungarian = "hu"
     case icelandic = "is"
@@ -48,9 +48,8 @@ enum Language: String, CaseIterable, Identifiable {
     
     var localizedName: String {
         switch self {
-        case .arabic: return "العربية"
         case .english: return "English"
-        case .hebrew: return "עברית"
+        case .arabic: return "العربية"
         case .armenian: return "Հայերեն"
         case .azerbaijani: return "Azərbaycan dili"
         case .catalan: return "Català"
@@ -65,6 +64,7 @@ enum Language: String, CaseIterable, Identifiable {
         case .georgian: return "ქართული"
         case .german: return "Deutsch"
         case .greek: return "Ελληνικά"
+        case .hebrew: return "עברית"
         case .hindi: return "हिन्दी"
         case .hungarian: return "Magyar"
         case .icelandic: return "Íslenska"
@@ -90,9 +90,8 @@ enum Language: String, CaseIterable, Identifiable {
     
     var englishName: String {
         switch self {
-        case .arabic: return "Arabic"
         case .english: return "English"
-        case .hebrew: return "Hebrew"
+        case .arabic: return "Arabic"
         case .armenian: return "Armenian"
         case .azerbaijani: return "Azerbaijani"
         case .catalan: return "Catalan"
@@ -107,6 +106,7 @@ enum Language: String, CaseIterable, Identifiable {
         case .georgian: return "Georgian"
         case .german: return "German"
         case .greek: return "Greek"
+        case .hebrew: return "Hebrew"
         case .hindi: return "Hindi"
         case .hungarian: return "Hungarian"
         case .icelandic: return "Icelandic"
