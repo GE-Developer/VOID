@@ -8,11 +8,10 @@
 import SwiftUI
 
 @main
-struct VOIDApp: App {    
+struct VOIDApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
-                .preferredColorScheme(ThemeManager.shared.theme)
         }
     }
 }

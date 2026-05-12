@@ -28728,6 +28728,9 @@
         }
       }
     },
+    "Secured" : {
+
+    },
     "Settings.AboutApp.PrivacyPolicy.title" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -32660,6 +32663,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "通用"
+          }
+        }
+      }
+    },
+    "Settings.Safety.ScreenshotProtection.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capture Protection"
+          }
+        }
+      }
+    },
+    "Settings.Safety.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Safety"
           }
         }
       }

@@ -131,6 +131,7 @@
 		1FB66CA72FB15C370036C293 /* AccentColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66CA62FB15C370036C293 /* AccentColor.swift */; };
 		1FB66CA92FB15DBF0036C293 /* AppIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66CA82FB15DBF0036C293 /* AppIcon.swift */; };
 		1FB66CAB2FB15F090036C293 /* AppIconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB66CAA2FB15F090036C293 /* AppIconViewModel.swift */; };
+		1FBA13C42FB373BB002345E8 /* ScreenshotManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBA13C32FB373BB002345E8 /* ScreenshotManager.swift */; };
 		1FCA0A1A2E000001000000A1 /* QRCodeAnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA0A1A2E000001000000A2 /* QRCodeAnalysisManager.swift */; };
 		1FEECF682EBD4EEC0058E823 /* CheckmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */; };
 		1FF6E1262E98854B001F51BA /* EmojiSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */; };
@@ -266,6 +267,7 @@
 		1FB66CA62FB15C370036C293 /* AccentColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccentColor.swift; sourceTree = "<group>"; };
 		1FB66CA82FB15DBF0036C293 /* AppIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIcon.swift; sourceTree = "<group>"; };
 		1FB66CAA2FB15F090036C293 /* AppIconViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconViewModel.swift; sourceTree = "<group>"; };
+		1FBA13C32FB373BB002345E8 /* ScreenshotManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenshotManager.swift; sourceTree = "<group>"; };
 		1FCA0A1A2E000001000000A2 /* QRCodeAnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeAnalysisManager.swift; sourceTree = "<group>"; };
 		1FEECF672EBD4EEC0058E823 /* CheckmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkView.swift; sourceTree = "<group>"; };
 		1FF6E1252E98854B001F51BA /* EmojiSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiSettingsView.swift; sourceTree = "<group>"; };
@@ -324,6 +326,7 @@
 				1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */,
 				1F7D9EE02E634007007B4DDD /* SoundManager.swift */,
 				1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */,
+				1FBA13C32FB373BB002345E8 /* ScreenshotManager.swift */,
 				1FB66C962FAF7B030036C293 /* AccentColorManager.swift */,
 				1FB66CA02FB12CCF0036C293 /* AppIconManager.swift */,
 				1F6F65F22E92C08C0095E89E /* TabBarState.swift */,
@@ -866,6 +869,7 @@
 				1F8B4FA32E9C76C80075C9DA /* LetterType.swift in Sources */,
 				1F2CADA92E9183AD009007B5 /* DetailedInformationProtocol.swift in Sources */,
 				1F64ADDD2E7572CF00DB44CE /* NavigationLazyView.swift in Sources */,
+				1FBA13C42FB373BB002345E8 /* ScreenshotManager.swift in Sources */,
 				1F7D9EE32E63402F007B4DDD /* HapticsManager.swift in Sources */,
 				1F8DDCF52E3C03D9005734CD /* AES256SettingsViewModel.swift in Sources */,
 				1F8DDCF32E3B96E3005734CD /* TimerPicker.swift in Sources */,

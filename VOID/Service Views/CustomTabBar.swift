@@ -6,12 +6,28 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct CustomTabBar: View {
     @EnvironmentObject private var tabBarState: TabBarState
-    
+
     private let haptics = HapticsManager.shared
-    
+
+    private static let hideSystemTabBar: Void = {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithTransparentBackground()
+        appearance.backgroundColor = .clear
+        appearance.shadowColor = .clear
+        appearance.shadowImage = UIImage()
+        appearance.backgroundImage = UIImage()
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+    }()
+
+    init() {
+        _ = Self.hideSystemTabBar
+    }
+
     var body: some View {
         customTabBar
     }

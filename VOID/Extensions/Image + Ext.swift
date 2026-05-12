@@ -58,6 +58,7 @@ struct SystemImage {
     let document = Image(systemName: "doc.fill")
     let paintpalette = Image(systemName: "paintpalette.fill")
     let appIcon = Image(systemName: "app.fill")
+    let eyeSlash = Image(systemName: "eye.slash.fill")
     
     func key(_ isFilled: Bool = false) -> Image {
         isFilled ? Image(systemName: "key.fill") : Image(systemName: "key")

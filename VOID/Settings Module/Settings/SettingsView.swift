@@ -72,12 +72,14 @@ extension SettingsView {
                 }
                 
 #warning("TO-DO")
-                CustomForm(headerText: "Safety") {
-                    styleButton
+                CustomForm(headerText: vm.safetyTitle) {
+                    PremiumView(.textAndStar)
+                } content: {
+                    screenshotProtectionToggle
                     Divider().padding(.leading, 50)
                     styleButton
                 }
-                
+
                 CustomForm(headerText: vm.customizationTitle) {
                     styleButton
                     Divider().padding(.leading, 50)
@@ -160,6 +162,15 @@ extension SettingsView {
             title: vm.reviewTitle,
             action: { vm.rateApp() }
         )
+    }
+    
+    private var screenshotProtectionToggle: some View {
+        CustomToggleRow(
+            isOn: $vm.isScreenshotProtectionOn,
+            icon: .system.eyeSlash,
+            title: vm.screenshotProtectionTitle
+        )
+        .premiumOption($showPayWall)
     }
     
     private var styleButton: some View {

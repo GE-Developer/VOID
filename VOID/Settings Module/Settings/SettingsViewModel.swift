@@ -20,6 +20,10 @@ final class SettingsViewModel: ObservableObject {
         didSet { soundManager.isSoundOn = isSoundOn }
     }
     
+    @Published var isScreenshotProtectionOn: Bool {
+        didSet { screenshotProtector.isScreenshotProtectionOn = isScreenshotProtectionOn }
+    }
+    
     var title: String {
         L10n("Settings.title")
     }
@@ -60,6 +64,14 @@ final class SettingsViewModel: ObservableObject {
         L10n("Settings.Access.Review.title")
     }
     
+    var safetyTitle: String {
+        L10n("Settings.Safety.title")
+    }
+    
+    var screenshotProtectionTitle: String {
+        L10n("Settings.Safety.ScreenshotProtection.title")
+    }
+    
     var customizationTitle: String {
         L10n("Settings.Customization.title")
     }
@@ -93,11 +105,13 @@ final class SettingsViewModel: ObservableObject {
     private let languageManager = LanguageManager.shared
     private let hapticsManager = HapticsManager.shared
     private let soundManager = SoundManager.shared
+    private let screenshotProtector = ScreenshotManager.shared
     
     init() {
         isDarkMode = themeManager.isDarkMode
         isHapticsOn = hapticsManager.isHapticsOn
         isSoundOn = soundManager.isSoundOn
+        isScreenshotProtectionOn = screenshotProtector.isScreenshotProtectionOn
     }
     
     func rateApp() {

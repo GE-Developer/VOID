@@ -12,6 +12,7 @@ enum AppStorageKey {
     case sound
     case accentColor
     case devTest
+    case screenshotProtection
     
     var key: String {
         switch self {
@@ -21,6 +22,7 @@ enum AppStorageKey {
         case .sound: return "isSoundOn"
         case .accentColor: return "accentColor"
         case .devTest: return "devTest"
+        case .screenshotProtection: return "screenshotProtection"
         }
     }
 }

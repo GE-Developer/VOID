@@ -43,6 +43,31 @@ extension View {
             PremiumLockModifier(showPayWall, swipable: swipable, isIncluded: isIncluded)
         )
     }
+    
+    func screenshotDisabled(_ isEnabled: Bool) -> some View {
+        ZStack {
+            if isEnabled {
+                VStack {
+                    logo
+                        .frame(height: 50)
+                    Text("Secured")
+                        .font(.headline)
+                        .fontDesign(.monospaced)
+                        .foregroundStyle(Color.void.mainText)
+                }
+            }
+            self.mask {
+                if isEnabled {
+                    ScreenShotPreventerMask()
+                        .ignoresSafeArea()
+                } else {
+                    Color.white
+                        .ignoresSafeArea()
+                }
+            }
+            .animation(nil, value: isEnabled)
+        }
+    }
 }
 
 // MARK: - View Modifiers
@@ -104,5 +129,37 @@ struct PremiumLockModifier: ViewModifier {
                     showPayWall = true
                 }
         }
+    }
+}
+
+// MARK: - ScreenShot Preventer Mask
+struct ScreenShotPreventerMask: UIViewRepresentable {
+    func makeUIView(context: Context) -> UIView {
+        let view = UITextField()
+        view.isSecureTextEntry = true
+        view.text = ""
+        view.isUserInteractionEnabled = false
+        
+        if let autoHideLayer = findAutoHideLayer(view: view) {
+            autoHideLayer.backgroundColor = UIColor.white.cgColor
+        } else {
+            view.layer.sublayers?.last?.backgroundColor = UIColor.white.cgColor
+        }
+        
+        return view
+    }
+    
+    func updateUIView(_ uiView: UIView, context: Context) { }
+    
+    func findAutoHideLayer(view: UIView) -> CALayer? {
+        if let layers = view.layer.sublayers {
+            if let layer = layers.first(where: { layer in
+                layer.delegate.debugDescription.contains("UITextLayoutCanvasView")
+            }) {
+                return layer
+            }
+        }
+        
+        return nil
     }
 }
