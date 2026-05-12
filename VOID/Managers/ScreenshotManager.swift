@@ -21,4 +21,8 @@ final class ScreenshotManager {
     private init() {
         isScreenshotProtectionOn = defaults.object(forKey: key) as? Bool ?? false
     }
+
+    func reset() {
+        isScreenshotProtectionOn = false
+    }
 }

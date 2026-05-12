@@ -23,6 +23,10 @@ final class SoundManager {
         configureAudioSession()
     }
 
+    func reset() {
+        isSoundOn = true
+    }
+
     func playSound(_ soundName: Sound) {
         guard isSoundOn else { return }
         

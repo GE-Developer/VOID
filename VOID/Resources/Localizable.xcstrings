@@ -3518,6 +3518,17 @@
         }
       }
     },
+    "Alert.cancel" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
     "Alert.сopied" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -32685,6 +32696,105 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Safety"
+          }
+        }
+      }
+    },
+    "Settings.Storage.ClearData.alertActionTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear"
+          }
+        }
+      }
+    },
+    "Settings.Storage.ClearData.alertMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This will remove temporary files, caches, and document files. App settings will be preserved."
+          }
+        }
+      }
+    },
+    "Settings.Storage.ClearData.alertTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear all Data?"
+          }
+        }
+      }
+    },
+    "Settings.Storage.ClearData.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear Data"
+          }
+        }
+      }
+    },
+    "Settings.Storage.ResetSettings.alertActionTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset"
+          }
+        }
+      }
+    },
+    "Settings.Storage.ResetSettings.alertMessage" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All preferences (theme, language, sound, haptics, etc.) will return to their defaults."
+          }
+        }
+      }
+    },
+    "Settings.Storage.ResetSettings.alertTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset user settings?"
+          }
+        }
+      }
+    },
+    "Settings.Storage.ResetSettings.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reset Settings"
+          }
+        }
+      }
+    },
+    "Settings.Storage.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Storage"
           }
         }
       }

@@ -18,6 +18,8 @@ struct SettingsView: View {
     @State private var projectViewPresented = false
     @State private var showStyleView = false
     @State private var showAppIconView = false
+    @State private var showClearDataAlert = false
+    @State private var showResetSettingsAlert = false
     
     init() {
         UIScrollView.appearance().delaysContentTouches = false
@@ -40,6 +42,19 @@ struct SettingsView: View {
             .fullScreenCover(isPresented: $showPayWall) {
                 NavigationLazyView(PayWallView(store))
             }
+            .alert(
+                Text(vm.clearDataAlertTitle),
+                isPresented: $showClearDataAlert,
+                actions: { clearDataAlertActions },
+                message: { Text(vm.clearDataAlertMessage) }
+            )
+            .alert(
+                Text(vm.resetSettingsAlertTitle),
+                isPresented: $showResetSettingsAlert,
+                actions: { resetSettingsAlertActions },
+                message: { Text(vm.resetSettingsAlertMessage) }
+            )
+            .onAppear { vm.refreshStorageSize() }
     }
 }
 
@@ -72,12 +87,16 @@ extension SettingsView {
                 }
                 
 #warning("TO-DO")
+                CustomForm(headerText: vm.storageTitle) {
+                    clearDataButton
+                    Divider().padding(.leading, 50)
+                    resetSettingsButton
+                }
+                
                 CustomForm(headerText: vm.safetyTitle) {
                     PremiumView(.textAndStar)
                 } content: {
                     screenshotProtectionToggle
-                    Divider().padding(.leading, 50)
-                    styleButton
                 }
 
                 CustomForm(headerText: vm.customizationTitle) {
@@ -85,7 +104,7 @@ extension SettingsView {
                     Divider().padding(.leading, 50)
                     appIconButton
                 }
-                
+
                 CustomForm(headerText: vm.aboutAppTitle) {
                     termsOfUseButton
                     Divider().padding(.leading, 50)
@@ -214,5 +233,40 @@ extension SettingsView {
             isLink: true,
             action: { projectViewPresented.toggle() }
         )
+    }
+
+    private var clearDataButton: some View {
+        CustomButtonRow(
+            icon: .system.trash,
+            title: vm.clearDataTitle,
+            subtitle: vm.storageSize,
+            action: { showClearDataAlert.toggle() }
+        )
+    }
+
+    private var clearDataAlertActions: some View {
+        Group {
+            Button(vm.clearDataAlertActionTitle, role: .destructive) {
+                vm.clearStorage()
+            }
+            Button(vm.alertCancelTitle, role: .cancel) {}
+        }
+    }
+
+    private var resetSettingsButton: some View {
+        CustomButtonRow(
+            icon: .system.reset,
+            title: vm.resetSettingsTitle,
+            action: { showResetSettingsAlert.toggle() }
+        )
+    }
+
+    private var resetSettingsAlertActions: some View {
+        Group {
+            Button(vm.resetSettingsAlertActionTitle, role: .destructive) {
+                vm.resetUserDefaults(store: store)
+            }
+            Button(vm.alertCancelTitle, role: .cancel) {}
+        }
     }
 }

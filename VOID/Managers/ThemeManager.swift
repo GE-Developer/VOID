@@ -25,4 +25,8 @@ final class ThemeManager {
     private init() {
         isDarkMode = defaults.object(forKey: key) as? Bool ?? true
     }
+
+    func reset() {
+        isDarkMode = true
+    }
 }

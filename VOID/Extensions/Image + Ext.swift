@@ -52,13 +52,14 @@ struct SystemImage {
     let email = Image(systemName: "envelope")
     let paintbrush = Image(systemName: "paintbrush.fill")
     let addImage = Image(systemName: "photo.badge.plus")
-    let removeImage = Image(systemName: "trash")
     let download = Image(systemName: "square.and.arrow.down")
     let plus = Image(systemName: "plus")
     let document = Image(systemName: "doc.fill")
     let paintpalette = Image(systemName: "paintpalette.fill")
     let appIcon = Image(systemName: "app.fill")
     let eyeSlash = Image(systemName: "eye.slash.fill")
+    let trash = Image(systemName: "trash")
+    let reset = Image(systemName: "arrow.counterclockwise")
     
     func key(_ isFilled: Bool = false) -> Image {
         isFilled ? Image(systemName: "key.fill") : Image(systemName: "key")

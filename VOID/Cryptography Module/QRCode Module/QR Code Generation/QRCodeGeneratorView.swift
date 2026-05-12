@@ -519,7 +519,7 @@ extension QRCodeGeneratorView {
                     selectedLogoItem = nil
                     vm.clearLogo()
                 } label: {
-                    logoButtonLabel(image: .system.removeImage, tint: .void.errorRed)
+                    logoButtonLabel(image: .system.trash, tint: .void.errorRed)
                 }
             } else if vm.canAddLogo {
                 PhotosPicker(selection: $selectedLogoItem, matching: .images) {

@@ -21,6 +21,10 @@ final class HapticsManager {
         isHapticsOn = defaults.object(forKey: key) as? Bool ?? true
     }
 
+    func reset() {
+        isHapticsOn = true
+    }
+
     func impact(style: UIImpactFeedbackGenerator.FeedbackStyle = .medium, vol: CGFloat = 1, delay: Double = 0) {
         guard isHapticsOn else { return }
 
