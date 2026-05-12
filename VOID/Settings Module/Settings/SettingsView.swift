@@ -86,7 +86,6 @@ extension SettingsView {
                     reviewButton
                 }
                 
-#warning("TO-DO")
                 CustomForm(headerText: vm.storageTitle) {
                     clearDataButton
                     Divider().padding(.leading, 50)
