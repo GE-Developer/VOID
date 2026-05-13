@@ -1118,7 +1118,7 @@
 				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = none;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
 				DEVELOPMENT_TEAM = 6DCRFKN8GP;
 				ENABLE_PREVIEWS = YES;
@@ -1136,7 +1136,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ge-developer.void";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1160,7 +1160,7 @@
 				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = none;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
 				DEVELOPMENT_TEAM = 6DCRFKN8GP;
 				ENABLE_PREVIEWS = YES;
@@ -1178,7 +1178,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ge-developer.void";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

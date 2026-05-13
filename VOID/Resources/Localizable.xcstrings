@@ -592,290 +592,290 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**استخدم كلمة مرور معقدة وفريدة** (أكثر من 12 حرفاً) — كلما كانت أكثر تعقيداً، استغرق كسرها وقتاً أطول.  **اختر معاملات تشفير Argon2id قوية** (عدد التكرارات والخيوط)  — هذا يزيد الأمان لكنه قد يمدد وقت التشفير حتى 20 دقيقة.  **احفظ دائماً النص المشفر الأصلي كاملاً** — فقدان حتى حرف واحد يجعل فك التشفير مستحيلاً.  **حدّث كلمات المرور** بانتظام لحماية إضافية."
+            "state" : "translated",
+            "value" : "**استخدم كلمة مرور معقدة وفريدة** (أكثر من 12 حرفاً) — كلما كانت أكثر تعقيداً، استغرق كسرها وقتاً أطول.  **اختر معاملات تشفير Argon2id قوية** (عدد التكرارات والخيوط)  — هذا يزيد الأمان لكنه قد يمدد وقت التشفير حتى 20 دقيقة.  **احفظ دائماً البيانات المشفرة الأصلية** — فقدان حتى بت واحد يجعل فك التشفير مستحيلاً.  **حدّث كلمات المرور** بانتظام لحماية إضافية."
           }
         },
         "az" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Mürəkkəb və unikal şifrə istifadə edin** (12 simvoldan çox) — şifrə nə qədər mürəkkəbdirsə, onu sındırmaq bir o qədər uzun çəkir.  **Argon2id üçün güclü şifrələmə parametrləri seçin** (iterasiya sayı, işçi sətri)  — bu, təhlükəsizliyi artırır, lakin şifrələmə müddətini 20 dəqiqəyədək uzada bilər.  **Həmişə orijinal şifrələnmiş mətni tam saxlayın** — cəmi bir simvolun itməsi belə deşifrəni mümkünsüz edir.  Əlavə qorunma üçün **şifrələri mütəmadi yeniləyin**."
+            "state" : "translated",
+            "value" : "**Mürəkkəb və unikal şifrə istifadə edin** (12 simvoldan çox) — şifrə nə qədər mürəkkəbdirsə, onu sındırmaq bir o qədər uzun çəkir.  **Argon2id üçün güclü şifrələmə parametrləri seçin** (iterasiya sayı, işçi sətri)  — bu, təhlükəsizliyi artırır, lakin şifrələmə müddətini 20 dəqiqəyədək uzada bilər.  **Həmişə orijinal şifrələnmiş məlumatları tam saxlayın** — cəmi bir bitin itirilməsi belə deşifrəni mümkünsüz edir.  Əlavə qorunma üçün **şifrələri mütəmadi yeniləyin**."
           }
         },
         "be" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Выкарыстоўвайце складаны і ўнікальны пароль** (больш за 12 сімвалаў) — чым складанейшы пароль, тым даўжэй яго ламаць.  **Выбірайце моцныя параметры шыфравання Argon2id** (колькасць ітэрацый, патокаў)  — гэта павышае бяспеку, але можа павялічыць час шыфравання да 20 хвілін.  **Заўжды захоўвайце зыходны зашыфраваны тэкст цалкам** — страта нават аднаго сімвала робіць дэшыфраванне немагчымым.  Рэгулярна **абнаўляйце паролі** для дадатковай абароны."
+            "state" : "translated",
+            "value" : "**Выкарыстоўвайце складаны і ўнікальны пароль** (больш за 12 сімвалаў) — чым складанейшы пароль, тым даўжэй яго ламаць.  **Выбірайце моцныя параметры шыфравання Argon2id** (колькасць ітэрацый, патокаў)  — гэта павышае бяспеку, але можа павялічыць час шыфравання да 20 хвілін.  **Заўжды захоўвайце зыходныя зашыфраваныя дадзеныя цалкам** — страта нават аднаго біта робіць дэшыфраванне немагчымым.  Рэгулярна **абнаўляйце паролі** для дадатковай абароны."
           }
         },
         "bn" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**একটি জটিল এবং অনন্য পাসওয়ার্ড ব্যবহার করুন** (১২ অক্ষরের বেশি) — পাসওয়ার্ড যত জটিল হবে, ক্র্যাক করতে তত বেশি সময় লাগবে।  **শক্তিশালী Argon2id এনক্রিপশন প্যারামিটার বেছে নিন** (পুনরাবৃত্তি, থ্রেডের সংখ্যা)  — এটি নিরাপত্তা বাড়ায় কিন্তু এনক্রিপশনের সময় ২০ মিনিট পর্যন্ত বাড়তে পারে।  **সর্বদা মূল সাইফারটেক্সট সম্পূর্ণরূপে সংরক্ষণ করুন** — একটি অক্ষর হারালেও ডিক্রিপশন অসম্ভব হয়ে যায়।  অতিরিক্ত সুরক্ষার জন্য নিয়মিত **পাসওয়ার্ড আপডেট করুন**।"
+            "state" : "translated",
+            "value" : "**একটি জটিল এবং অনন্য পাসওয়ার্ড ব্যবহার করুন** (১২ অক্ষরের বেশি) — পাসওয়ার্ড যত জটিল হবে, ক্র্যাক করতে তত বেশি সময় লাগবে।  **শক্তিশালী Argon2id এনক্রিপশন প্যারামিটার বেছে নিন** (পুনরাবৃত্তি, থ্রেডের সংখ্যা)  — এটি নিরাপত্তা বাড়ায় কিন্তু এনক্রিপশনের সময় ২০ মিনিট পর্যন্ত বাড়তে পারে।  **সর্বদা মূল এনক্রিপ্টেড ডেটা সম্পূর্ণরূপে সংরক্ষণ করুন** — একটি বিটও হারালে ডিক্রিপশন অসম্ভব হয়ে যায়।  অতিরিক্ত সুরক্ষার জন্য নিয়মিত **পাসওয়ার্ড আপডেট করুন**।"
           }
         },
         "ca" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Utilitza una contrasenya complexa i única** (més de 12 caràcters) — com més complexa sigui la contrasenya, més temps caldrà per trencar-la.  **Tria paràmetres de xifratge Argon2id robustos** (nombre d'iteracions, fils)  — això incrementa la seguretat però pot allargar el temps de xifrat fins a 20 minuts.  **Desa sempre el text xifrat original complet** — perdre ni que sigui un sol caràcter fa impossible el desxifrat.  Actualitza **periòdicament les contrasenyes** per obtenir protecció addicional."
+            "state" : "translated",
+            "value" : "**Utilitza una contrasenya complexa i única** (més de 12 caràcters) — com més complexa sigui la contrasenya, més temps caldrà per trencar-la.  **Tria paràmetres de xifratge Argon2id robustos** (nombre d'iteracions, fils)  — això incrementa la seguretat però pot allargar el temps de xifrat fins a 20 minuts.  **Desa sempre les dades xifrades originals completes** — perdre ni que sigui un bit fa impossible el desxifrat.  Actualitza **periòdicament les contrasenyes** per obtenir protecció addicional."
           }
         },
         "cs" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Používejte složité a jedinečné heslo** (více než 12 znaků) — čím je heslo složitější, tím déle trvá jeho prolomení.  **Zvolte silné parametry šifrování Argon2id** (počet iterací, vláken)  — to zvyšuje bezpečnost, ale může prodloužit dobu šifrování až na 20 minut.  **Vždy si uložte původní šifrovaný text celý** — ztráta byť jediného znaku znemožní dešifrování.  Pravidelně **aktualizujte hesla** pro dodatečnou ochranu."
+            "state" : "translated",
+            "value" : "**Používejte složité a jedinečné heslo** (více než 12 znaků) — čím je heslo složitější, tím déle trvá jeho prolomení.  **Zvolte silné parametry šifrování Argon2id** (počet iterací, vláken)  — to zvyšuje bezpečnost, ale může prodloužit dobu šifrování až na 20 minut.  **Vždy si uložte původní šifrovaná data celá** — ztráta byť jediného bitu znemožní dešifrování.  Pravidelně **aktualizujte hesla** pro dodatečnou ochranu."
           }
         },
         "da" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Brug en kompleks og unik adgangskode** (mere end 12 tegn) — jo mere kompleks adgangskoden er, desto længere tid tager det at knække den.  **Vælg stærke Argon2id-krypteringsparametre** (antal iterationer, tråde)  — det øger sikkerheden, men kan forlænge krypteringstiden op til 20 minutter.  **Gem altid den oprindelige chiffertekst i sin helhed** — går blot ét tegn tabt, er dekryptering umulig.  Opdater **adgangskoder regelmæssigt** for ekstra beskyttelse."
+            "state" : "translated",
+            "value" : "**Brug en kompleks og unik adgangskode** (mere end 12 tegn) — jo mere kompleks adgangskoden er, desto længere tid tager det at knække den.  **Vælg stærke Argon2id-krypteringsparametre** (antal iterationer, tråde)  — det øger sikkerheden, men kan forlænge krypteringstiden op til 20 minutter.  **Gem altid de originale krypterede data i sin helhed** — går blot én bit tabt, er dekryptering umulig.  Opdater **adgangskoder regelmæssigt** for ekstra beskyttelse."
           }
         },
         "de" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Verwende ein komplexes und einzigartiges Passwort** (mehr als 12 Zeichen) — je komplexer das Passwort, desto länger dauert es, es zu knacken.  **Wähle starke Argon2id-Verschlüsselungsparameter** (Anzahl der Iterationen, Threads) — das steigert die Sicherheit, kann die Verschlüsselungszeit jedoch auf bis zu 20 Minuten verlängern.  **Speichere immer den ursprünglichen Ciphertext vollständig** — geht auch nur ein Zeichen verloren, ist eine Entschlüsselung unmöglich.  Aktualisiere **Passwörter regelmäßig** für zusätzlichen Schutz."
+            "state" : "translated",
+            "value" : "**Verwende ein komplexes und einzigartiges Passwort** (mehr als 12 Zeichen) — je komplexer das Passwort, desto länger dauert es, es zu knacken.  **Wähle starke Argon2id-Verschlüsselungsparameter** (Anzahl der Iterationen, Threads) — das steigert die Sicherheit, kann die Verschlüsselungszeit jedoch auf bis zu 20 Minuten verlängern.  **Speichere immer die ursprünglichen verschlüsselten Daten vollständig** — geht auch nur ein Bit verloren, wird die Entschlüsselung unmöglich.  Aktualisiere **Passwörter regelmäßig** für zusätzlichen Schutz."
           }
         },
         "el" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Χρησιμοποιήστε έναν σύνθετο και μοναδικό κωδικό πρόσβασης** (πάνω από 12 χαρακτήρες) — όσο πιο σύνθετος είναι ο κωδικός, τόσο περισσότερο χρόνο χρειάζεται για να παραβιαστεί.  **Επιλέξτε ισχυρές παραμέτρους κρυπτογράφησης Argon2id** (αριθμός επαναλήψεων, νήματα)  — αυτό αυξάνει την ασφάλεια αλλά μπορεί να παρατείνει τον χρόνο κρυπτογράφησης έως και 20 λεπτά.  **Αποθηκεύετε πάντα ολόκληρο το αρχικό κρυπτοκείμενο** — η απώλεια ακόμη και ενός χαρακτήρα καθιστά την αποκρυπτογράφηση αδύνατη.  Ενημερώνετε τακτικά τους **κωδικούς πρόσβασης** για επιπλέον προστασία."
+            "state" : "translated",
+            "value" : "**Χρησιμοποιήστε έναν σύνθετο και μοναδικό κωδικό πρόσβασης** (πάνω από 12 χαρακτήρες) — όσο πιο σύνθετος είναι ο κωδικός, τόσο περισσότερο χρόνο χρειάζεται για να παραβιαστεί.  **Επιλέξτε ισχυρές παραμέτρους κρυπτογράφησης Argon2id** (αριθμός επαναλήψεων, νήματα)  — αυτό αυξάνει την ασφάλεια αλλά μπορεί να παρατείνει τον χρόνο κρυπτογράφησης έως και 20 λεπτά.  **Αποθηκεύετε πάντα τα αρχικά κρυπτογραφημένα δεδομένα ολόκληρα** — η απώλεια ακόμη και ενός bit καθιστά την αποκρυπτογράφηση αδύνατη.  Ενημερώνετε τακτικά τους **κωδικούς πρόσβασης** για επιπλέον προστασία."
           }
         },
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "reviewed",
             "value" : "**Use a complex and unique password** (more than 12 characters) — the more complex the password, the longer it takes to crack.  **Choose strong Argon2id encryption parameters** (number of iterations, threads)  — this increases security but may extend encryption time up to 20 minutes.  **Always save the original cipherdata** — losing even a single bit makes decryption impossible.  Regularly **update passwords** for additional protection."
           }
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Usa una contraseña compleja y única** (más de 12 caracteres) — cuanto más compleja sea la contraseña, más tiempo llevará descifrarla.  **Elige parámetros sólidos de Argon2id** (número de iteraciones, hilos) — esto aumenta la seguridad, pero puede alargar el cifrado hasta 20 minutos.  **Guarda siempre el texto cifrado original completo** — perder un solo carácter hace imposible el descifrado.  Actualiza periódicamente las contraseñas para una protección adicional."
+            "state" : "translated",
+            "value" : "**Usa una contraseña compleja y única** (más de 12 caracteres) — cuanto más compleja sea la contraseña, más tiempo llevará descifrarla.  **Elige parámetros sólidos de Argon2id** (número de iteraciones, hilos) — esto aumenta la seguridad, pero puede alargar el cifrado hasta 20 minutos.  **Guarda siempre los datos cifrados originales completos** — perder aunque sea un bit hace imposible el descifrado.  Actualiza periódicamente las contraseñas para una protección adicional."
           }
         },
         "fa" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**از یک رمز عبور پیچیده و منحصربه‌فرد استفاده کنید** (بیش از ۱۲ کاراکتر) — هرچه رمز عبور پیچیده‌تر باشد، شکستن آن زمان بیشتری می‌برد.  **پارامترهای قوی رمزگذاری Argon2id را انتخاب کنید** (تعداد تکرارها، رشته‌ها)  — این کار امنیت را افزایش می‌دهد، اما ممکن است زمان رمزگذاری را تا ۲۰ دقیقه افزایش دهد.  **متن رمزشده اصلی را همیشه به‌طور کامل ذخیره کنید** — از دست دادن حتی یک کاراکتر، رمزگشایی را غیرممکن می‌سازد.  برای حفاظت بیشتر، **رمزهای عبور** را به‌طور منظم **به‌روز کنید**."
+            "state" : "translated",
+            "value" : "**از یک رمز عبور پیچیده و منحصربه‌فرد استفاده کنید** (بیش از ۱۲ کاراکتر) — هرچه رمز عبور پیچیده‌تر باشد، شکستن آن زمان بیشتری می‌برد.  **پارامترهای قوی رمزگذاری Argon2id را انتخاب کنید** (تعداد تکرارها، رشته‌ها)  — این کار امنیت را افزایش می‌دهد، اما ممکن است زمان رمزگذاری را تا ۲۰ دقیقه افزایش دهد.  **داده‌های رمزشده اصلی را همیشه به‌طور کامل ذخیره کنید** — از دست دادن حتی یک بیت، رمزگشایی را غیرممکن می‌سازد.  برای حفاظت بیشتر، **رمزهای عبور** را به‌طور منظم **به‌روز کنید**."
           }
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Käytä monimutkaista ja yksilöllistä salasanaa** (yli 12 merkkiä) — mitä monimutkaisempi salasana on, sitä pidempään sen murtaminen kestää.  **Valitse vahvat Argon2id-salausparametrit** (iteraatioiden määrä, säikeet)  — se parantaa turvallisuutta, mutta voi pidentää salausajan jopa 20 minuuttiin.  **Tallenna aina alkuperäinen salattu teksti kokonaisuudessaan** — jo yhden merkin katoaminen tekee purkamisesta mahdotonta.  Päivitä **salasanat säännöllisesti** lisäsuojaksi."
+            "state" : "translated",
+            "value" : "**Käytä monimutkaista ja yksilöllistä salasanaa** (yli 12 merkkiä) — mitä monimutkaisempi salasana on, sitä pidempään sen murtaminen kestää.  **Valitse vahvat Argon2id-salausparametrit** (iteraatioiden määrä, säikeet)  — se parantaa turvallisuutta, mutta voi pidentää salausajan jopa 20 minuuttiin.  **Tallenna aina alkuperäiset salatut tiedot kokonaisuudessaan** — jo yhden bitin katoaminen tekee purkamisesta mahdotonta.  Päivitä **salasanat säännöllisesti** lisäsuojaksi."
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Utilisez un mot de passe complexe et unique** (plus de 12 caractères) — plus le mot de passe est complexe, plus il est long à casser.  **Choisissez des paramètres Argon2id robustes** (nombre d'itérations, nombre de threads) — cela renforce la sécurité mais peut allonger le temps de chiffrement jusqu'à 20 minutes.  **Sauvegardez toujours l'intégralité du texte chiffré d'origine** — perdre ne serait-ce qu'un seul caractère rend le déchiffrement impossible.  Mettez régulièrement les **mots de passe à jour** pour une protection supplémentaire."
+            "state" : "translated",
+            "value" : "**Utilisez un mot de passe complexe et unique** (plus de 12 caractères) — plus le mot de passe est complexe, plus il est long à casser.  **Choisissez des paramètres Argon2id robustes** (nombre d'itérations, nombre de threads) — cela renforce la sécurité mais peut allonger le temps de chiffrement jusqu'à 20 minutes.  **Sauvegardez toujours l'intégralité des données chiffrées d'origine** — perdre ne serait-ce qu'un bit rend le déchiffrement impossible.  Mettez régulièrement les **mots de passe à jour** pour une protection supplémentaire."
           }
         },
         "he" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**השתמש בסיסמה מורכבת וייחודית** (יותר מ-12 תווים) — ככל שהסיסמה מורכבת יותר, כך ייקח זמן רב יותר לפצח אותה.  **בחר פרמטרי הצפנה חזקים של Argon2id** (מספר איטרציות, תהליכונים)  — זה מגביר את האבטחה אך עלול להאריך את זמן ההצפנה עד 20 דקות.  **שמור תמיד את הטקסט המוצפן המקורי במלואו** — אובדן אפילו תו אחד הופך את הפענוח לבלתי אפשרי.  **עדכן סיסמאות** באופן קבוע להגנה נוספת."
+            "state" : "translated",
+            "value" : "**השתמש בסיסמה מורכבת וייחודית** (יותר מ-12 תווים) — ככל שהסיסמה מורכבת יותר, כך ייקח זמן רב יותר לפצח אותה.  **בחר פרמטרי הצפנה חזקים של Argon2id** (מספר איטרציות, תהליכונים)  — זה מגביר את האבטחה אך עלול להאריך את זמן ההצפנה עד 20 דקות.  **שמור תמיד את הנתונים המוצפנים המקוריים במלואם** — אובדן אפילו ביט אחד הופך את הפענוח לבלתי אפשרי.  **עדכן סיסמאות** באופן קבוע להגנה נוספת."
           }
         },
         "hi" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**जटिल और अद्वितीय पासवर्ड का उपयोग करें** (12 से अधिक अक्षर) — पासवर्ड जितना जटिल होगा, उसे तोड़ने में उतना ही अधिक समय लगेगा।  **मज़बूत Argon2id एन्क्रिप्शन पैरामीटर चुनें** (पुनरावृत्तियों की संख्या, थ्रेड्स) — यह सुरक्षा बढ़ाता है लेकिन एन्क्रिप्शन समय को 20 मिनट तक बढ़ा सकता है।  **मूल सिफरतंत्र को हमेशा पूरी तरह सुरक्षित रखें** — एक भी अक्षर खोने पर डिक्रिप्शन असंभव हो जाता है।  अतिरिक्त सुरक्षा के लिए पासवर्ड नियमित रूप से **अपडेट करें**।"
+            "state" : "translated",
+            "value" : "**जटिल और अद्वितीय पासवर्ड का उपयोग करें** (12 से अधिक अक्षर) — पासवर्ड जितना जटिल होगा, उसे तोड़ने में उतना ही अधिक समय लगेगा।  **मज़बूत Argon2id एन्क्रिप्शन पैरामीटर चुनें** (पुनरावृत्तियों की संख्या, थ्रेड्स) — यह सुरक्षा बढ़ाता है लेकिन एन्क्रिप्शन समय को 20 मिनट तक बढ़ा सकता है।  **मूल एन्क्रिप्टेड डेटा को हमेशा पूरी तरह सुरक्षित रखें** — एक भी बिट खोने पर डिक्रिप्शन असंभव हो जाता है।  अतिरिक्त सुरक्षा के लिए पासवर्ड नियमित रूप से **अपडेट करें**।"
           }
         },
         "hr" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Upotrijebite složenu i jedinstvenu lozinku** (više od 12 znakova) — što je lozinka složenija, to je potrebno više vremena da se probije.  **Odaberite snažne Argon2id parametre šifriranja** (broj iteracija, dretve)  — to povećava sigurnost, ali može produljiti vrijeme šifriranja do 20 minuta.  **Uvijek spremite izvorni šifrat u cijelosti** — gubitak i samo jednog znaka onemogućuje dešifriranje.  Redovito **ažurirajte lozinke** za dodatnu zaštitu."
+            "state" : "translated",
+            "value" : "**Upotrijebite složenu i jedinstvenu lozinku** (više od 12 znakova) — što je lozinka složenija, to je potrebno više vremena da se probije.  **Odaberite snažne Argon2id parametre šifriranja** (broj iteracija, dretve)  — to povećava sigurnost, ali može produljiti vrijeme šifriranja do 20 minuta.  **Uvijek spremite izvorne šifrirane podatke u cijelosti** — gubitak i samo jednog bita onemogućuje dešifriranje.  Redovito **ažurirajte lozinke** za dodatnu zaštitu."
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Használj összetett és egyedi jelszót** (több mint 12 karakter) — minél összetettebb a jelszó, annál tovább tart feltörni.  **Válassz erős Argon2id titkosítási paramétereket** (iterációk száma, szálak)  — ez növeli a biztonságot, de a titkosítás idejét akár 20 percre is meghosszabbíthatja.  **Mindig mentsd el a teljes eredeti titkosított szöveget** — már egyetlen karakter elvesztése is lehetetlenné teszi a visszafejtést.  Rendszeresen **frissítsd a jelszavakat** a további védelem érdekében."
+            "state" : "translated",
+            "value" : "**Használj összetett és egyedi jelszót** (több mint 12 karakter) — minél összetettebb a jelszó, annál tovább tart feltörni.  **Válassz erős Argon2id titkosítási paramétereket** (iterációk száma, szálak)  — ez növeli a biztonságot, de a titkosítás idejét akár 20 percre is meghosszabbíthatja.  **Mindig mentsd el a teljes eredeti titkosított adatokat** — már egyetlen bit elvesztése is lehetetlenné teszi a visszafejtést.  Rendszeresen **frissítsd a jelszavakat** a további védelem érdekében."
           }
         },
         "hy" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Օգտագործեք բարդ և եզակի գաղտնաբառ** (ավելի քան 12 նիշ) — որքան բարդ է գաղտնաբառը, այնքան երկար կտևի այն կոտրելը.  **Ընտրեք Argon2id-ի ամուր կոդավորման պարամետրեր** (իտերացիաների թիվ, թելերի քանակ)  — սա բարձրացնում է անվտանգության մակարդակը, բայց կարող է կոդավորման ժամանակը երկարացնել մինչև 20 րոպե.  **Միշտ պահպանեք բնօրինակ կոդավորված տեքստը ամբողջությամբ** — անգամ մեկ նիշի կորուստը կարող է անհնար դարձնել ապակոդավորումը.  Լրացուցիչ պաշտպանության համար **կանոնավոր կերպով թարմացրեք գաղտնաբառերը**."
+            "state" : "translated",
+            "value" : "**Օգտագործեք բարդ և եզակի գաղտնաբառ** (ավելի քան 12 նիշ) — որքան բարդ է գաղտնաբառը, այնքան երկար կտևի այն կոտրելը.  **Ընտրեք Argon2id-ի ամուր կոդավորման պարամետրեր** (իտերացիաների թիվ, թելերի քանակ)  — սա բարձրացնում է անվտանգության մակարդակը, բայց կարող է կոդավորման ժամանակը երկարացնել մինչև 20 րոպե.  **Միշտ պահպանեք բնօրինակ ծածկագրված տվյալները ամբողջությամբ** — անգամ մեկ բիթի կորուստը կարող է անհնար դարձնել ապակոդավորումը.  Լրացուցիչ պաշտպանության համար **կանոնավոր կերպով թարմացրեք գաղտնաբառերը**."
           }
         },
         "id" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Gunakan kata sandi yang kompleks dan unik** (lebih dari 12 karakter) — semakin kompleks kata sandinya, semakin lama waktu yang dibutuhkan untuk membobolnya.  **Pilih parameter enkripsi Argon2id yang kuat** (jumlah iterasi, thread)  — ini meningkatkan keamanan tetapi dapat memperpanjang waktu enkripsi hingga 20 menit.  **Selalu simpan ciphertext asli secara lengkap** — kehilangan satu karakter saja membuat proses dekripsi mustahil.  Secara berkala **perbarui kata sandi** untuk perlindungan tambahan."
+            "state" : "translated",
+            "value" : "**Gunakan kata sandi yang kompleks dan unik** (lebih dari 12 karakter) — semakin kompleks kata sandinya, semakin lama waktu yang dibutuhkan untuk membobolnya.  **Pilih parameter enkripsi Argon2id yang kuat** (jumlah iterasi, thread)  — ini meningkatkan keamanan tetapi dapat memperpanjang waktu enkripsi hingga 20 menit.  **Selalu simpan data terenkripsi asli secara lengkap** — kehilangan satu bit saja membuat proses dekripsi mustahil.  Secara berkala **perbarui kata sandi** untuk perlindungan tambahan."
           }
         },
         "is" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Notaðu flókið og einstakt lykilorð** (meira en 12 stafir) — því flóknara sem lykilorðið er, því lengri tíma tekur að brjóta það.  **Veldu sterkar Argon2id-dulkóðunarbreytur** (fjölda ítrana, þræði)  — þetta eykur öryggið en getur lengt dulkóðunartímann allt að 20 mínútum.  **Geymdu alltaf upphaflega dulritaða textann í heild** — missir á jafnvel einum staf gerir afkóðun ómögulega.  Uppfærðu **lykilorð reglulega** til viðbótarverndar."
+            "state" : "translated",
+            "value" : "**Notaðu flókið og einstakt lykilorð** (meira en 12 stafir) — því flóknara sem lykilorðið er, því lengri tíma tekur að brjóta það.  **Veldu sterkar Argon2id-dulkóðunarbreytur** (fjölda ítrana, þræði)  — þetta eykur öryggið en getur lengt dulkóðunartímann allt að 20 mínútum.  **Geymdu alltaf upphaflegu dulritaðu gögnin í heild** — missir á jafnvel einum bita gerir afkóðun ómögulega.  Uppfærðu **lykilorð reglulega** til viðbótarverndar."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Usa una password complessa e unica** (più di 12 caratteri) — più la password è complessa, più tempo richiede per essere violata.  **Scegli parametri Argon2id robusti** (numero di iterazioni, thread) — questo aumenta la sicurezza ma può prolungare la cifratura fino a 20 minuti.  **Salva sempre l'intero testo cifrato originale** — perdere anche un solo carattere rende impossibile la decifratura.  Aggiorna regolarmente le **password** per una protezione aggiuntiva."
+            "state" : "translated",
+            "value" : "**Usa una password complessa e unica** (più di 12 caratteri) — più la password è complessa, più tempo richiede per essere violata.  **Scegli parametri Argon2id robusti** (numero di iterazioni, thread) — questo aumenta la sicurezza ma può prolungare la cifratura fino a 20 minuti.  **Salva sempre i dati cifrati originali nella loro interezza** — la perdita anche di un solo bit rende impossibile la decifratura.  Aggiorna regolarmente le **password** per una protezione aggiuntiva."
           }
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**複雑でユニークなパスワード**（12文字以上）を使用してください — パスワードが複雑であるほど解読に時間がかかります。  **Argon2id の強力な暗号化パラメータ**（反復回数、スレッド数）を選択しましょう — セキュリティが向上しますが、暗号化時間が最長20分まで延びる場合があります。  **元の暗号文は必ず完全な形で保存**してください — 1文字でも失うと復号は不可能です。  追加の保護のためにパスワードを定期的に**更新**しましょう。"
+            "state" : "translated",
+            "value" : "**複雑でユニークなパスワード**（12文字以上）を使用してください — パスワードが複雑であるほど解読に時間がかかります。  **Argon2id の強力な暗号化パラメータ**（反復回数、スレッド数）を選択しましょう — セキュリティが向上しますが、暗号化時間が最長20分まで延びる場合があります。  **元の暗号化データは必ず完全な形で保存**してください — 1ビットでも失うと復号は不可能です。  追加の保護のためにパスワードを定期的に**更新**しましょう。"
           }
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**გამოიყენეთ რთული და უნიკალური პაროლი** (12-ზე მეტი სიმბოლო) — რაც უფრო რთულია პაროლი, მით მეტ დროს წაიღებს მისი გატეხვა.  **აირჩიეთ Argon2id-ის ძლიერი პარამეტრები** (იტერაციების რაოდენობა, ნაკადები) — ეს ზრდის უსაფრთხოებას, თუმცა შეიძლება შიფრაციის დრო 20 წუთამდე გაზარდოს.  **ყოველთვის შეინახეთ თავდაპირველი შიფრტექსტი მთლიანად** — ერთი სიმბოლოს დაკარგვაც კი შეუძლებელს ხდის გაშიფვრას.  დამატებითი დაცვისთვის რეგულარულად **განაახლეთ პაროლები**."
+            "state" : "translated",
+            "value" : "**გამოიყენეთ რთული და უნიკალური პაროლი** (12-ზე მეტი სიმბოლო) — რაც უფრო რთულია პაროლი, მით მეტ დროს წაიღებს მისი გატეხვა.  **აირჩიეთ Argon2id-ის ძლიერი პარამეტრები** (იტერაციების რაოდენობა, ნაკადები) — ეს ზრდის უსაფრთხოებას, თუმცა შეიძლება შიფრაციის დრო 20 წუთამდე გაზარდოს.  **ყოველთვის შეინახეთ თავდაპირველი დაშიფრული მონაცემები მთლიანად** — ერთი ბიტის დაკარგვაც კი შეუძლებელს ხდის გაშიფვრას.  დამატებითი დაცვისთვის რეგულარულად **განაახლეთ პაროლები**."
           }
         },
         "kk" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Күрделі және бірегей құпия сөз пайдаланыңыз** (12 таңбадан астам) — құпия сөз неғұрлым күрделі болса, оны бұзу соғұрлым ұзақ уақытты алады.  **Argon2id шифрлау параметрлерін мұқият таңдаңыз** (итерация санын, ағындарды)  — бұл қауіпсіздікті арттырады, бірақ шифрлау уақытын 20 минутқа дейін ұзартуы мүмкін.  **Бастапқы шифрмәтінді әрқашан толығымен сақтаңыз** — тіпті бір таңбаны жоғалтсаңыз, шифрды шешу мүмкін болмайды.  Қосымша қорғаныс үшін **құпия сөздерді** жүйелі түрде **жаңартыңыз**."
+            "state" : "translated",
+            "value" : "**Күрделі және бірегей құпия сөз пайдаланыңыз** (12 таңбадан астам) — құпия сөз неғұрлым күрделі болса, оны бұзу соғұрлым ұзақ уақытты алады.  **Argon2id шифрлау параметрлерін мұқият таңдаңыз** (итерация санын, ағындарды)  — бұл қауіпсіздікті арттырады, бірақ шифрлау уақытын 20 минутқа дейін ұзартуы мүмкін.  **Бастапқы шифрланған деректерді әрқашан толығымен сақтаңыз** — тіпті бір битті жоғалтсаңыз, шифрды шешу мүмкін болмайды.  Қосымша қорғаныс үшін **құпия сөздерді** жүйелі түрде **жаңартыңыз**."
           }
         },
         "ko" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**복잡하고 고유한 비밀번호**(12자 이상)를 사용하세요 — 비밀번호가 복잡할수록 해독에 더 오랜 시간이 걸립니다。  **강력한 Argon2id 암호화 매개변수**(반복 횟수, 스레드 수)를 선택하세요 — 보안은 강화되지만 암호화 시간이 최대 20분까지 늘어날 수 있습니다。  **원본 암호문을 항상 완전히 저장하세요** — 한 글자라도 잃어버리면 복호화가 불가능합니다。  추가 보호를 위해 비밀번호를 정기적으로 **갱신**하세요。"
+            "state" : "translated",
+            "value" : "**복잡하고 고유한 비밀번호**(12자 이상)를 사용하세요 — 비밀번호가 복잡할수록 해독에 더 오랜 시간이 걸립니다。  **강력한 Argon2id 암호화 매개변수**(반복 횟수, 스레드 수)를 선택하세요 — 보안은 강화되지만 암호화 시간이 최대 20분까지 늘어날 수 있습니다。  **원본 암호화 데이터를 항상 완전히 저장하세요** — 한 비트라도 잃어버리면 복호화가 불가능합니다。  추가 보호를 위해 비밀번호를 정기적으로 **갱신**하세요。"
           }
         },
         "ky" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Татаал жана уникалдуу сырсөз колдонуңуз** (12 белгиден көп) — сырсөз канчалык татаал болсо, аны бузуу ошончолук көп убакытты талап кылат.  **Argon2id шифрлөө параметрлерин туура тандаңыз** (итерациялар санын, агымдарды)  — бул коопсуздукту жогорулатат, бирок шифрлөө убактысын 20 мүнөткө чейин узартышы мүмкүн.  **Баштапкы шифрмәтінді дайыма толук сактаңыз** — бир гана белгини жоготсоңуз да, шифрди чечүү мүмкүн болбойт.  Кошумча коргоо үчүн **сырсөздөрдү** үзгүлтүксүз **жаңыртып туруңуз**."
+            "state" : "translated",
+            "value" : "**Татаал жана уникалдуу сырсөз колдонуңуз** (12 белгиден көп) — сырсөз канчалык татаал болсо, аны бузуу ошончолук көп убакытты талап кылат.  **Argon2id шифрлөө параметрлерин туура тандаңыз** (итерациялар санын, агымдарды)  — бул коопсуздукту жогорулатат, бирок шифрлөө убактысын 20 мүнөткө чейин узартышы мүмкүн.  **Баштапкы шифрленген маалыматтарды дайыма толук сактаңыз** — бир гана битти жоготсоңуз да, шифрди чечүү мүмкүн болбойт.  Кошумча коргоо үчүн **сырсөздөрдү** үзгүлтүксүз **жаңыртып туруңуз**."
           }
         },
         "mn" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Нарийн төвөгтэй, давтагдашгүй нууц үг ашиглаарай** (12-оос дээш тэмдэгт) — нууц үг хэдий чинээ төвөгтэй байна, тэр хэдий чинээ удаан хугацаа шаарддаг.  **Argon2id шифрлэлтийн параметрүүдийг сайтар сонгоорой** (давталтын тоо, урсгалууд)  — энэ нь аюулгүй байдлыг нэмэгдүүлдэг боловч шифрлэлтийн хугацааг 20 минут хүртэл уртасгаж болно.  **Анхны шифрлэсэн текстийг бүрэн хадгалаарай** — нэг тэмдэгт алдсан ч шифр тайлах боломжгүй болно.  Нэмэлт хамгаалалтын үүднээс **нууц үгийг** тогтмол **шинэчилж** байгаарай."
+            "state" : "translated",
+            "value" : "**Нарийн төвөгтэй, давтагдашгүй нууц үг ашиглаарай** (12-оос дээш тэмдэгт) — нууц үг хэдий чинээ төвөгтэй байна, тэр хэдий чинээ удаан хугацаа шаарддаг.  **Argon2id шифрлэлтийн параметрүүдийг сайтар сонгоорой** (давталтын тоо, урсгалууд)  — энэ нь аюулгүй байдлыг нэмэгдүүлдэг боловч шифрлэлтийн хугацааг 20 минут хүртэл уртасгаж болно.  **Анхны шифрлэгдсэн өгөгдлийг бүрэн хадгалаарай** — нэг бит алдсан ч шифр тайлах боломжгүй болно.  Нэмэлт хамгаалалтын үүднээс **нууц үгийг** тогтмол **шинэчилж** байгаарай."
           }
         },
         "ms" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Gunakan kata laluan yang kompleks dan unik** (lebih daripada 12 aksara) — lebih kompleks kata laluan, lebih lama masa yang diperlukan untuk memecahkannya.  **Pilih parameter penyulitan Argon2id yang kukuh** (bilangan iterasi, benang)  — ini meningkatkan keselamatan tetapi boleh memanjangkan masa penyulitan sehingga 20 minit.  **Sentiasa simpan teks sifer asal sepenuhnya** — kehilangan walau satu aksara menjadikan penyahsulitan mustahil.  Kemas kini **kata laluan secara berkala** untuk perlindungan tambahan."
+            "state" : "translated",
+            "value" : "**Gunakan kata laluan yang kompleks dan unik** (lebih daripada 12 aksara) — lebih kompleks kata laluan, lebih lama masa yang diperlukan untuk memecahkannya.  **Pilih parameter penyulitan Argon2id yang kukuh** (bilangan iterasi, benang)  — ini meningkatkan keselamatan tetapi boleh memanjangkan masa penyulitan sehingga 20 minit.  **Sentiasa simpan data asal yang disulitkan sepenuhnya** — kehilangan walau satu bit menjadikan penyahsulitan mustahil.  Kemas kini **kata laluan secara berkala** untuk perlindungan tambahan."
           }
         },
         "nb" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Bruk et komplekst og unikt passord** (mer enn 12 tegn) — jo mer komplekst passordet er, desto lengre tid tar det å knekke.  **Velg sterke Argon2id-parametere** (antall iterasjoner, tråder)  — dette øker sikkerheten, men kan forlenge krypteringstiden opptil 20 minutter.  **Lagre alltid den opprinnelige chifferteksten i sin helhet** — mister du bare ett tegn, blir dekryptering umulig.  Oppdater **passord regelmessig** for ekstra beskyttelse."
+            "state" : "translated",
+            "value" : "**Bruk et komplekst og unikt passord** (mer enn 12 tegn) — jo mer komplekst passordet er, desto lengre tid tar det å knekke.  **Velg sterke Argon2id-parametere** (antall iterasjoner, tråder)  — dette øker sikkerheten, men kan forlenge krypteringstiden opptil 20 minutter.  **Lagre alltid de opprinnelige krypterte dataene i sin helhet** — mister du bare én bit, blir dekryptering umulig.  Oppdater **passord regelmessig** for ekstra beskyttelse."
           }
         },
         "nl" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Gebruik een complex en uniek wachtwoord** (meer dan 12 tekens) — hoe complexer het wachtwoord, hoe langer het duurt om het te kraken.  **Kies sterke Argon2id-versleutelingsparameters** (aantal iteraties, threads) — dit verhoogt de beveiliging, maar kan de versleutelingstijd verlengen tot 20 minuten.  **Bewaar altijd de oorspronkelijke ciphertext volledig** — verlies van slechts één teken maakt ontsleuteling onmogelijk.  Werk **wachtwoorden regelmatig bij** voor extra bescherming."
+            "state" : "translated",
+            "value" : "**Gebruik een complex en uniek wachtwoord** (meer dan 12 tekens) — hoe complexer het wachtwoord, hoe langer het duurt om het te kraken.  **Kies sterke Argon2id-versleutelingsparameters** (aantal iteraties, threads) — dit verhoogt de beveiliging, maar kan de versleutelingstijd verlengen tot 20 minuten.  **Bewaar altijd de oorspronkelijke versleutelde gegevens volledig** — verlies van slechts één bit maakt het ontsleutelen onmogelijk.  Werk **wachtwoorden regelmatig bij** voor extra bescherming."
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Używaj złożonego i unikalnego hasła** (ponad 12 znaków) — im bardziej złożone hasło, tym dłużej potrwa jego złamanie.  **Wybierz mocne parametry szyfrowania Argon2id** (liczbę iteracji, wątki)  — to zwiększa bezpieczeństwo, ale może wydłużyć czas szyfrowania do 20 minut.  **Zawsze zapisuj pełny, oryginalny tekst zaszyfrowany** — utrata choćby jednego znaku uniemożliwia odszyfrowanie.  Regularnie **aktualizuj hasła** dla dodatkowej ochrony."
+            "state" : "translated",
+            "value" : "**Używaj złożonego i unikalnego hasła** (ponad 12 znaków) — im bardziej złożone hasło, tym dłużej potrwa jego złamanie.  **Wybierz mocne parametry szyfrowania Argon2id** (liczbę iteracji, wątki)  — to zwiększa bezpieczeństwo, ale może wydłużyć czas szyfrowania do 20 minut.  **Zawsze zapisuj pełne oryginalne zaszyfrowane dane** — utrata choćby jednego bitu uniemożliwia odszyfrowanie.  Regularnie **aktualizuj hasła** dla dodatkowej ochrony."
           }
         },
         "pt" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Use uma senha complexa e exclusiva** (mais de 12 caracteres) — quanto mais complexa a senha, mais tempo leva para ser quebrada.  **Escolha parâmetros fortes de Argon2id** (número de iterações, threads) — isso aumenta a segurança, mas pode estender o tempo de criptografia para até 20 minutos.  **Sempre salve o texto cifrado original por completo** — perder um único caractere torna a descriptografia impossível.  Atualize **regularmente as senhas** para obter proteção adicional."
+            "state" : "translated",
+            "value" : "**Use uma senha complexa e exclusiva** (mais de 12 caracteres) — quanto mais complexa a senha, mais tempo leva para ser quebrada.  **Escolha parâmetros fortes de Argon2id** (número de iterações, threads) — isso aumenta a segurança, mas pode estender o tempo de criptografia para até 20 minutos.  **Sempre salve os dados cifrados originais por completo** — perder um único bit torna a descriptografia impossível.  Atualize **regularmente as senhas** para obter proteção adicional."
           }
         },
         "ro" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Folosește o parolă complexă și unică** (mai mult de 12 caractere) — cu cât parola este mai complexă, cu atât este nevoie de mai mult timp pentru a fi spartă.  **Alege parametri puternici pentru Argon2id** (număr de iterații, fire)  — asta sporește securitatea, dar poate prelungi timpul de criptare până la 20 de minute.  **Salvează mereu integral textul criptat original** — pierderea chiar și a unui singur caracter face decriptarea imposibilă.  Actualizează **parolele în mod regulat** pentru protecție suplimentară."
+            "state" : "translated",
+            "value" : "**Folosește o parolă complexă și unică** (mai mult de 12 caractere) — cu cât parola este mai complexă, cu atât este nevoie de mai mult timp pentru a fi spartă.  **Alege parametri puternici pentru Argon2id** (număr de iterații, fire)  — asta sporește securitatea, dar poate prelungi timpul de criptare până la 20 de minute.  **Salvează mereu integral datele criptate originale** — pierderea chiar și a unui singur bit face decriptarea imposibilă.  Actualizează **parolele în mod regulat** pentru protecție suplimentară."
           }
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Используйте сложный и уникальный пароль** (более 12 символов) — чем сложнее пароль, тем дольше займёт его подбор.  **Выбирайте сильные параметры шифрования в Argon2id** (количество итераций, потоков) — это повышает безопасность, но может увеличить время шифрования до 20 минут.  **Всегда сохраняйте исходный шифротекст полностью** — любая потеря символа делает расшифровку невозможной.  Регулярно **обновляйте пароли** для дополнительной защиты."
+            "state" : "translated",
+            "value" : "**Используйте сложный и уникальный пароль** (более 12 символов) — чем сложнее пароль, тем дольше займёт его подбор.  **Выбирайте сильные параметры шифрования в Argon2id** (количество итераций, потоков) — это повышает безопасность, но может увеличить время шифрования до 20 минут.  **Всегда сохраняйте исходные зашифрованные данные полностью** — любая потеря даже одного бита делает расшифровку невозможной.  Регулярно **обновляйте пароли** для дополнительной защиты."
           }
         },
         "sk" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Používaj zložité a jedinečné heslo** (viac ako 12 znakov) — čím je heslo zložitejšie, tým dlhšie potrvá jeho prelomenie.  **Zvoľ silné parametre šifrovania Argon2id** (počet iterácií, vlákna)  — tým zvýšiš bezpečnosť, no čas šifrovania sa môže predĺžiť až na 20 minút.  **Vždy si ulož celý pôvodný šifrovaný text** — strata čo i len jedného znaku znemožní dešifrovanie.  Pravidelne **aktualizuj heslá** pre dodatočnú ochranu."
+            "state" : "translated",
+            "value" : "**Používaj zložité a jedinečné heslo** (viac ako 12 znakov) — čím je heslo zložitejšie, tým dlhšie potrvá jeho prelomenie.  **Zvoľ silné parametre šifrovania Argon2id** (počet iterácií, vlákna)  — tým zvýšiš bezpečnosť, no čas šifrovania sa môže predĺžiť až na 20 minút.  **Vždy si ulož celé pôvodné šifrované údaje** — strata čo i len jedného bitu znemožní dešifrovanie.  Pravidelne **aktualizuj heslá** pre dodatočnú ochranu."
           }
         },
         "sv" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Använd ett komplext och unikt lösenord** (mer än 12 tecken) — ju mer komplext lösenordet är, desto längre tid tar det att knäcka.  **Välj starka Argon2id-krypteringsparametrar** (antal iterationer, trådar) — detta ökar säkerheten men kan förlänga krypteringstiden upp till 20 minuter.  **Spara alltid det ursprungliga chiffertexten i sin helhet** — om ett enda tecken går förlorat blir dekryptering omöjligt.  Uppdatera **lösenord regelbundet** för extra skydd."
+            "state" : "translated",
+            "value" : "**Använd ett komplext och unikt lösenord** (mer än 12 tecken) — ju mer komplext lösenordet är, desto längre tid tar det att knäcka.  **Välj starka Argon2id-krypteringsparametrar** (antal iterationer, trådar) — detta ökar säkerheten men kan förlänga krypteringstiden upp till 20 minuter.  **Spara alltid den ursprungliga krypterade datan i sin helhet** — om ett enda bit går förlorat blir dekrypteringen omöjlig.  Uppdatera **lösenord regelbundet** för extra skydd."
           }
         },
         "sw" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Tumia nenosiri tata na la kipekee** (zaidi ya herufi 12) — nenosiri likiwa gumu zaidi, inachukua muda mrefu zaidi kulibomoa.  **Chagua vigezo vikali vya usimbaji fiche vya Argon2id** (idadi ya marudio, mtiririko)  — hii huongeza usalama lakini inaweza kurefusha muda wa usimbaji fiche hadi dakika 20.  **Hifadhi maandishi ya awali yaliyosimbwa kikamilifu** — kupoteza hata herufi moja kunafanya usimbuaji fiche kuwa haiwezekani.  Kwa ulinzi wa ziada, **sasisha manenosiri** mara kwa mara."
+            "state" : "translated",
+            "value" : "**Tumia nenosiri tata na la kipekee** (zaidi ya herufi 12) — nenosiri likiwa gumu zaidi, inachukua muda mrefu zaidi kulibomoa.  **Chagua vigezo vikali vya usimbaji fiche vya Argon2id** (idadi ya marudio, mtiririko)  — hii huongeza usalama lakini inaweza kurefusha muda wa usimbaji fiche hadi dakika 20.  **Hifadhi data yote iliyosimbwa ya asili kikamilifu** — kupoteza hata biti moja kunafanya usimbuaji fiche kuwa haiwezekani.  Kwa ulinzi wa ziada, **sasisha manenosiri** mara kwa mara."
           }
         },
         "tg" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Рамзи мураккаб ва беназир истифода баред** (зиёда аз 12 аломат) — рамз ҳар қадар мураккабтар бошад, шикастани он ҳамон қадар вақт мегирад.  **Параметрҳои қавии рамзгузории Argon2id-ро интихоб кунед** (шумораи такрорҳо, ришта)  — ин амнияти зиёд мекунад, аммо вақти рамзгузориро то 20 дақиқа тӯл дода метавонад.  **Матни рамзшудаи аслиро ҳамеша пурра нигоҳ доред** — гум шудани ҳатто як аломат рамзкушоиро ғайриимкон мегардонад.  Барои ҳимояи иловагӣ **рамзҳоро** мунтазам **навсозӣ кунед**."
+            "state" : "translated",
+            "value" : "**Рамзи мураккаб ва беназир истифода баред** (зиёда аз 12 аломат) — рамз ҳар қадар мураккабтар бошад, шикастани он ҳамон қадар вақт мегирад.  **Параметрҳои қавии рамзгузории Argon2id-ро интихоб кунед** (шумораи такрорҳо, ришта)  — ин амнияти зиёд мекунад, аммо вақти рамзгузориро то 20 дақиқа тӯл дода метавонад.  **Маълумоти рамзшудаи аслиро ҳамеша пурра нигоҳ доред** — гум шудани ҳатто як бит рамзкушоиро ғайриимкон мегардонад.  Барои ҳимояи иловагӣ **рамзҳоро** мунтазам **навсозӣ кунед**."
           }
         },
         "th" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**ใช้รหัสผ่านที่ซับซ้อนและไม่ซ้ำใคร** (มากกว่า 12 อักขระ) — ยิ่งรหัสผ่านซับซ้อนมากเท่าไร ก็ยิ่งใช้เวลาถอดมากขึ้น.  **เลือกพารามิเตอร์การเข้ารหัส Argon2id ที่แข็งแกร่ง** (จำนวนรอบ, จำนวนเธรด)  — สิ่งนี้ช่วยเพิ่มความปลอดภัย แต่สามารถทำให้เวลาการเข้ารหัสยาวถึง 20 นาที.  **บันทึก ciphertext ต้นฉบับไว้ให้ครบถ้วนเสมอ** — การสูญเสียเพียงหนึ่งอักขระทำให้ไม่สามารถถอดรหัสได้.  อัปเดตรหัสผ่าน**เป็นประจำ** เพื่อการป้องกันเพิ่มเติม."
+            "state" : "translated",
+            "value" : "**ใช้รหัสผ่านที่ซับซ้อนและไม่ซ้ำใคร** (มากกว่า 12 อักขระ) — ยิ่งรหัสผ่านซับซ้อนมากเท่าไร ก็ยิ่งใช้เวลาถอดมากขึ้น.  **เลือกพารามิเตอร์การเข้ารหัส Argon2id ที่แข็งแกร่ง** (จำนวนรอบ, จำนวนเธรด)  — สิ่งนี้ช่วยเพิ่มความปลอดภัย แต่สามารถทำให้เวลาการเข้ารหัสยาวถึง 20 นาที.  **บันทึกข้อมูลที่เข้ารหัสต้นฉบับไว้ให้ครบถ้วนเสมอ** — การสูญเสียแม้แต่บิตเดียวทำให้ไม่สามารถถอดรหัสได้.  อัปเดตรหัสผ่าน**เป็นประจำ** เพื่อการป้องกันเพิ่มเติม."
           }
         },
         "tk" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Çylşyrymly we üýtgeşik açar söz ulanyň** (12 nyşandan köp) — açar söz näçe çylşyrymly bolsa, ony döwmek şonça wagt talap edýär.  **Güýçli Argon2id şifrlemek parametrlerini saýlaň** (gaýtalama sany, ýüpler)  — bu howpsuzlygy ýokarlandyrýar, ýöne şifrlemek wagtyny 20 minuta çenli uzaldyp biler.  **Asyl şifrli teksti hemişe doly saklaň** — hatda bir nyşan ýitirilen hem şifri çözmegi mümkin däl edýär.  Goşmaça gorag üçin **açar sözleri** yzygiderli **täzeläň**."
+            "state" : "translated",
+            "value" : "**Çylşyrymly we üýtgeşik açar söz ulanyň** (12 nyşandan köp) — açar söz näçe çylşyrymly bolsa, ony döwmek şonça wagt talap edýär.  **Güýçli Argon2id şifrlemek parametrlerini saýlaň** (gaýtalama sany, ýüpler)  — bu howpsuzlygy ýokarlandyrýar, ýöne şifrlemek wagtyny 20 minuta çenli uzaldyp biler.  **Asyl şifrli maglumatlary hemişe doly saklaň** — hatda bir bit ýitirilen hem şifri çözmegi mümkin däl edýär.  Goşmaça gorag üçin **açar sözleri** yzygiderli **täzeläň**."
           }
         },
         "tr" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Karmaşık ve benzersiz bir parola kullanın** (12 karakterden uzun) — parola ne kadar karmaşıksa, kırılması o kadar uzun sürer.  **Güçlü Argon2id şifreleme parametreleri seçin** (iterasyon sayısı, iş parçacığı sayısı) — bu güvenliği artırır ancak şifreleme süresini 20 dakikaya kadar uzatabilir.  **Orijinal şifreli metni her zaman eksiksiz olarak saklayın** — tek bir karakterin kaybı bile çözülemeyeceği anlamına gelir.  Ek koruma için parolaları **düzenli olarak güncelleyin**."
+            "state" : "translated",
+            "value" : "**Karmaşık ve benzersiz bir parola kullanın** (12 karakterden uzun) — parola ne kadar karmaşıksa, kırılması o kadar uzun sürer.  **Güçlü Argon2id şifreleme parametreleri seçin** (iterasyon sayısı, iş parçacığı sayısı) — bu güvenliği artırır ancak şifreleme süresini 20 dakikaya kadar uzatabilir.  **Orijinal şifreli verileri her zaman eksiksiz olarak saklayın** — tek bir bitin kaybı bile şifre çözmeyi imkânsız kılar.  Ek koruma için parolaları **düzenli olarak güncelleyin**."
           }
         },
         "uk" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Використовуйте складний і унікальний пароль** (понад 12 символів) — що складніший пароль, то довше його підбирати.  **Обирайте надійні параметри шифрування Argon2id** (кількість ітерацій, потоки) — це підвищує безпеку, але може збільшити час шифрування до 20 хвилин.  **Завжди зберігайте вихідний шифротекст повністю** — втрата хоча б одного символу робить дешифрування неможливим.  Регулярно **оновлюйте паролі** для додаткового захисту."
+            "state" : "translated",
+            "value" : "**Використовуйте складний і унікальний пароль** (понад 12 символів) — що складніший пароль, то довше його підбирати.  **Обирайте надійні параметри шифрування Argon2id** (кількість ітерацій, потоки) — це підвищує безпеку, але може збільшити час шифрування до 20 хвилин.  **Завжди зберігайте вихідні зашифровані дані повністю** — втрата хоча б одного біта робить дешифрування неможливим.  Регулярно **оновлюйте паролі** для додаткового захисту."
           }
         },
         "ur" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**ایک پیچیدہ اور منفرد پاس ورڈ استعمال کریں** (12 سے زیادہ حروف) — پاس ورڈ جتنا پیچیدہ ہوگا، اسے توڑنے میں اتنا زیادہ وقت لگے گا۔  **مضبوط Argon2id انکرپشن پیرامیٹرز منتخب کریں** (تکرار کی تعداد، تھریڈز)  — یہ سیکیورٹی بڑھاتا ہے لیکن انکرپشن کا وقت 20 منٹ تک بڑھ سکتا ہے۔  **اصل سائفر ٹیکسٹ ہمیشہ مکمل محفوظ رکھیں** — ایک بھی حرف کھو جانے سے ڈیکرپشن ناممکن ہو جاتی ہے۔  اضافی تحفظ کے لیے **پاس ورڈز** باقاعدگی سے **اپ ڈیٹ کریں**۔"
+            "state" : "translated",
+            "value" : "**ایک پیچیدہ اور منفرد پاس ورڈ استعمال کریں** (12 سے زیادہ حروف) — پاس ورڈ جتنا پیچیدہ ہوگا، اسے توڑنے میں اتنا زیادہ وقت لگے گا۔  **مضبوط Argon2id انکرپشن پیرامیٹرز منتخب کریں** (تکرار کی تعداد، تھریڈز)  — یہ سیکیورٹی بڑھاتا ہے لیکن انکرپشن کا وقت 20 منٹ تک بڑھ سکتا ہے۔  **اصل انکرپٹڈ ڈیٹا ہمیشہ مکمل محفوظ رکھیں** — ایک بھی بٹ کھو جانے سے ڈیکرپشن ناممکن ہو جاتی ہے۔  اضافی تحفظ کے لیے **پاس ورڈز** باقاعدگی سے **اپ ڈیٹ کریں**۔"
           }
         },
         "uz" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Murakkab va noyob parol ishlating** (12 dan ortiq belgi) — parol qanchalik murakkab bo'lsa, uni buzish shuncha ko'p vaqt talab qiladi.  **Kuchli Argon2id shifrlash parametrlarini tanlang** (takrorlar soni, oqimlar)  — bu xavfsizlikni oshiradi, lekin shifrlash vaqtini 20 daqiqagacha uzaytirishi mumkin.  **Asl shifrlangan matnni doimo to'liq saqlang** — bitta belgini ham yo'qotish shifr ochishni imkonsiz qiladi.  Qo'shimcha himoya uchun **parollarni** muntazam **yangilab turing**."
+            "state" : "translated",
+            "value" : "**Murakkab va noyob parol ishlating** (12 dan ortiq belgi) — parol qanchalik murakkab bo'lsa, uni buzish shuncha ko'p vaqt talab qiladi.  **Kuchli Argon2id shifrlash parametrlarini tanlang** (takrorlar soni, oqimlar)  — bu xavfsizlikni oshiradi, lekin shifrlash vaqtini 20 daqiqagacha uzaytirishi mumkin.  **Asl shifrlangan ma'lumotlarni doimo to'liq saqlang** — bitta bitni ham yo'qotish shifr ochishni imkonsiz qiladi.  Qo'shimcha himoya uchun **parollarni** muntazam **yangilab turing**."
           }
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**Sử dụng mật khẩu phức tạp và duy nhất** (hơn 12 ký tự) — mật khẩu càng phức tạp, càng lâu mới bị bẻ khóa.  **Chọn các tham số mã hóa Argon2id mạnh** (số vòng lặp, số luồng) — điều này tăng cường bảo mật nhưng có thể kéo dài thời gian mã hóa lên đến 20 phút.  **Luôn lưu lại toàn bộ bản mã gốc** — mất chỉ một ký tự cũng khiến giải mã không thể thực hiện.  Thường xuyên **cập nhật mật khẩu** để tăng cường bảo vệ."
+            "state" : "translated",
+            "value" : "**Sử dụng mật khẩu phức tạp và duy nhất** (hơn 12 ký tự) — mật khẩu càng phức tạp, càng lâu mới bị bẻ khóa.  **Chọn các tham số mã hóa Argon2id mạnh** (số vòng lặp, số luồng) — điều này tăng cường bảo mật nhưng có thể kéo dài thời gian mã hóa lên đến 20 phút.  **Luôn lưu lại toàn bộ dữ liệu mã hóa gốc** — mất chỉ một bit cũng khiến giải mã không thể thực hiện được.  Thường xuyên **cập nhật mật khẩu** để tăng cường bảo vệ."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**使用复杂且唯一的密码**（超过 12 个字符）—密码越复杂，破解所需的时间越长。  **选择强大的 Argon2id 加密参数**（迭代次数、线程数）— 这会提高安全性，但可能会将加密时间延长至 20 分钟。  **始终完整保存原始密文**—即使丢失一个字符也无法解密。  定期**更新密码**以获得额外的保护。"
+            "state" : "translated",
+            "value" : "**使用复杂且唯一的密码**（超过 12 个字符）—密码越复杂，破解所需的时间越长。  **选择强大的 Argon2id 加密参数**（迭代次数、线程数）— 这会提高安全性，但可能会将加密时间延长至 20 分钟。  **始终完整保存原始加密数据**——即使丢失一个比特也无法解密。  定期**更新密码**以获得额外的保护。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "**使用複雜且唯一的密碼**（超過 12 個字元）——密碼越複雜，破解所需的時間越長。  **選擇強大的 Argon2id 加密引數**（迭代次數、執行緒數）——這會提高安全性，但可能會將加密時間延長至 20 分鐘。  **始終完整儲存原始密文**——即使丟失一個字元也無法解密。  定期**更新密碼**以獲得額外的保護。"
+            "state" : "translated",
+            "value" : "**使用複雜且唯一的密碼**（超過 12 個字元）——密碼越複雜，破解所需的時間越長。  **選擇強大的 Argon2id 加密引數**（迭代次數、執行緒數）——這會提高安全性，但可能會將加密時間延長至 20 分鐘。  **始終完整儲存原始加密資料**——即使丟失一個位元也無法解密。  定期**更新密碼**以獲得額外的保護。"
           }
         }
       }
@@ -1471,290 +1471,290 @@
       "localizations" : {
         "ar" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - تُدخل كلمة المرور. 2 - تختار VOID. 3 - يُنشئ التطبيق ملحاً ويدمجه مع كلمة المرور وVOID. 4 - تحسب Argon2id المفتاح باستخدام المعاملات المحددة. 5 - يُستخدم المفتاح في AES-256 لتشفير النص. 6 - يُخزَّن الملح والمعاملات الأخرى في البنية المشفرة.  **لفك التشفير، يجب إعادة إنشاء نفس المفتاح تماماً — أدخل نفس كلمة المرور وVOID واحتفظ بالنص المشفر الأصلي حرفاً بحرف**."
+            "state" : "translated",
+            "value" : "1 - تُدخل كلمة المرور. 2 - تختار VOID. 3 - يُنشئ التطبيق ملحاً ويدمجه مع كلمة المرور وVOID. 4 - تحسب Argon2id المفتاح باستخدام المعاملات المحددة. 5 - يُستخدم المفتاح في AES-256 لتشفير النص. 6 - يُخزَّن الملح والمعاملات الأخرى في البنية المشفرة.  **لفك التشفير، يجب إعادة إنشاء نفس المفتاح تماماً — أدخل نفس كلمة المرور وVOID واحتفظ بالنص المشفر الأصلي حرفاً بحرف** أو ببيانات الملف."
           }
         },
         "az" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Şifrə daxil edirsiniz. 2 - VOID seçirsiniz. 3 - Tətbiq salt yaradır və onu şifrə və VOID ilə birləşdirir. 4 - Argon2id verilən parametrlərlə açarı hesablayır. 5 - Açar AES-256-da mətnin şifrələnməsi üçün istifadə olunur. 6 - Salt və digər parametrlər şifrələnmiş struktura yazılır.  **Deşifrə üçün eyni açarı dəqiq şəkildə təkrarlamalısınız — eyni şifrəni və VOID-i daxil edin və orijinal şifrələnmiş mətni son simvoladək doğru saxlayın.**"
+            "state" : "translated",
+            "value" : "1 - Şifrə daxil edirsiniz. 2 - VOID seçirsiniz. 3 - Tətbiq salt yaradır və onu şifrə və VOID ilə birləşdirir. 4 - Argon2id verilən parametrlərlə açarı hesablayır. 5 - Açar AES-256-da mətnin şifrələnməsi üçün istifadə olunur. 6 - Salt və digər parametrlər şifrələnmiş struktura yazılır.  **Deşifrə üçün eyni açarı dəqiq şəkildə təkrarlamalısınız — eyni şifrəni və VOID-i daxil edin və orijinal şifrələnmiş mətni son simvoladək doğru saxlayın** ya da fayl məlumatlarını."
           }
         },
         "be" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Вы ўводзіце пароль. 2 - Вы выбіраеце VOID. 3 - Праграма стварае соль і аб'ядноўвае яе з паролем і VOID. 4 - Argon2id вылічвае ключ з выкарыстаннем зададзеных параметраў. 5 - Ключ выкарыстоўваецца ў AES-256 для шыфравання тэксту. 6 - Соль і іншыя параметры захоўваюцца ў зашыфраванай структуры.  **Для расшыфроўкі неабходна дакладна ўзнавіць той жа ключ — увесці той жа пароль і VOID і мець зыходны зашыфраваны тэкст дакладна да сімвала**."
+            "state" : "translated",
+            "value" : "1 - Вы ўводзіце пароль. 2 - Вы выбіраеце VOID. 3 - Праграма стварае соль і аб'ядноўвае яе з паролем і VOID. 4 - Argon2id вылічвае ключ з выкарыстаннем зададзеных параметраў. 5 - Ключ выкарыстоўваецца ў AES-256 для шыфравання тэксту. 6 - Соль і іншыя параметры захоўваюцца ў зашыфраванай структуры.  **Для расшыфроўкі неабходна дакладна ўзнавіць той жа ключ — увесці той жа пароль і VOID і мець зыходны зашыфраваны тэкст дакладна да сімвала** або файл дадзеных."
           }
         },
         "bn" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - আপনি পাসওয়ার্ড দিন। 2 - আপনি VOID নির্বাচন করুন। 3 - অ্যাপ্লিকেশন একটি সল্ট তৈরি করে এবং পাসওয়ার্ড ও VOID-এর সাথে মিশিয়ে দেয়। 4 - Argon2id নির্দিষ্ট প্যারামিটার ব্যবহার করে কী গণনা করে। 5 - কীটি AES-256-এ টেক্সট এনক্রিপ্ট করতে ব্যবহৃত হয়। 6 - সল্ট এবং অন্যান্য প্যারামিটার এনক্রিপ্টেড কাঠামোতে সংরক্ষিত হয়।  **ডিক্রিপ্ট করতে একই কী হুবহু পুনরুৎপাদন করতে হবে — একই পাসওয়ার্ড ও VOID দিতে হবে এবং মূল সাইফারটেক্সট অক্ষরে অক্ষরে সঠিক রাখতে হবে**।"
+            "state" : "translated",
+            "value" : "1 - আপনি পাসওয়ার্ড দিন। 2 - আপনি VOID নির্বাচন করুন। 3 - অ্যাপ্লিকেশন একটি সল্ট তৈরি করে এবং পাসওয়ার্ড ও VOID-এর সাথে মিশিয়ে দেয়। 4 - Argon2id নির্দিষ্ট প্যারামিটার ব্যবহার করে কী গণনা করে। 5 - কীটি AES-256-এ টেক্সট এনক্রিপ্ট করতে ব্যবহৃত হয়। 6 - সল্ট এবং অন্যান্য প্যারামিটার এনক্রিপ্টেড কাঠামোতে সংরক্ষিত হয়।  **ডিক্রিপ্ট করতে একই কী হুবহু পুনরুৎপাদন করতে হবে — একই পাসওয়ার্ড ও VOID দিতে হবে এবং মূল সাইফারটেক্সট অক্ষরে অক্ষরে সঠিক রাখতে হবে** অথবা ফাইল ডেটা।"
           }
         },
         "ca" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Introdueixes una contrasenya. 2 - Selecciones VOID. 3 - L'aplicació genera una sal i la combina amb la contrasenya i VOID. 4 - Argon2id calcula la clau amb els paràmetres especificats. 5 - La clau s'utilitza en AES-256 per xifrar el text. 6 - La sal i la resta de paràmetres s'emmagatzemen dins de l'estructura xifrada.  **Per desxifrar, has de reproduir exactament la mateixa clau — introdueix la mateixa contrasenya i VOID i conserva el text xifrat original exacte fins al darrer caràcter**."
+            "state" : "translated",
+            "value" : "1 - Introdueixes una contrasenya. 2 - Selecciones VOID. 3 - L'aplicació genera una sal i la combina amb la contrasenya i VOID. 4 - Argon2id calcula la clau amb els paràmetres especificats. 5 - La clau s'utilitza en AES-256 per xifrar el text. 6 - La sal i la resta de paràmetres s'emmagatzemen dins de l'estructura xifrada.  **Per desxifrar, has de reproduir exactament la mateixa clau — introdueix la mateixa contrasenya i VOID i conserva el text xifrat original exacte fins al darrer caràcter** o les dades del fitxer."
           }
         },
         "cs" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Zadáte heslo. 2 - Vyberete VOID. 3 - Aplikace vygeneruje sůl a zkombinuje ji s heslem a VOIDem. 4 - Argon2id vypočítá klíč podle zadaných parametrů. 5 - Klíč se použije v AES-256 k zašifrování textu. 6 - Sůl a ostatní parametry se uloží do šifrované struktury.  **Pro dešifrování musíte přesně znovu vytvořit stejný klíč — zadejte stejné heslo i VOID a zachovejte původní šifrovaný text přesně do znaku**."
+            "state" : "translated",
+            "value" : "1 - Zadáte heslo. 2 - Vyberete VOID. 3 - Aplikace vygeneruje sůl a zkombinuje ji s heslem a VOIDem. 4 - Argon2id vypočítá klíč podle zadaných parametrů. 5 - Klíč se použije v AES-256 k zašifrování textu. 6 - Sůl a ostatní parametry se uloží do šifrované struktury.  **Pro dešifrování musíte přesně znovu vytvořit stejný klíč — zadejte stejné heslo i VOID a zachovejte původní šifrovaný text přesně do znaku** nebo datový soubor."
           }
         },
         "da" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Du indtaster en adgangskode. 2 - Du vælger VOID. 3 - Appen genererer en salt og kombinerer den med adgangskoden og VOID. 4 - Argon2id beregner nøglen med de angivne parametre. 5 - Nøglen bruges i AES-256 til at kryptere teksten. 6 - Salt og øvrige parametre gemmes i den krypterede struktur.  **For at dekryptere skal du genskabe præcis den samme nøgle — indtast den samme adgangskode og VOID, og sørg for, at den oprindelige chiffertekst er nøjagtig ned til det enkelte tegn**."
+            "state" : "translated",
+            "value" : "1 - Du indtaster en adgangskode. 2 - Du vælger VOID. 3 - Appen genererer en salt og kombinerer den med adgangskoden og VOID. 4 - Argon2id beregner nøglen med de angivne parametre. 5 - Nøglen bruges i AES-256 til at kryptere teksten. 6 - Salt og øvrige parametre gemmes i den krypterede struktur.  **For at dekryptere skal du genskabe præcis den samme nøgle — indtast den samme adgangskode og VOID, og sørg for, at den oprindelige chiffertekst er nøjagtig ned til det enkelte tegn** eller fildataene."
           }
         },
         "de" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Du gibst ein Passwort ein. 2 - Du wählst VOID. 3 - Die App erzeugt ein Salt und kombiniert es mit dem Passwort und VOID. 4 - Argon2id berechnet den Schlüssel anhand der angegebenen Parameter. 5 - Der Schlüssel wird in AES-256 verwendet, um den Text zu verschlüsseln. 6 - Salt und andere Parameter werden in der verschlüsselten Struktur gespeichert.  **Zum Entschlüsseln musst du genau denselben Schlüssel reproduzieren — gib dasselbe Passwort und VOID ein und halte den ursprünglichen Ciphertext zeichengetreu bereit.**"
+            "state" : "translated",
+            "value" : "1 - Du gibst ein Passwort ein. 2 - Du wählst VOID. 3 - Die App erzeugt ein Salt und kombiniert es mit dem Passwort und VOID. 4 - Argon2id berechnet den Schlüssel anhand der angegebenen Parameter. 5 - Der Schlüssel wird in AES-256 verwendet, um den Text zu verschlüsseln. 6 - Salt und andere Parameter werden in der verschlüsselten Struktur gespeichert.  **Zum Entschlüsseln musst du genau denselben Schlüssel reproduzieren — gib dasselbe Passwort und VOID ein und halte den ursprünglichen Ciphertext zeichengetreu bereit** oder die Dateidaten."
           }
         },
         "el" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Εισάγετε έναν κωδικό πρόσβασης. 2 - Επιλέγετε το VOID. 3 - Η εφαρμογή δημιουργεί ένα salt και το συνδυάζει με τον κωδικό πρόσβασης και το VOID. 4 - Το Argon2id υπολογίζει το κλειδί με τις καθορισμένες παραμέτρους. 5 - Το κλειδί χρησιμοποιείται στο AES-256 για την κρυπτογράφηση του κειμένου. 6 - Το salt και οι υπόλοιπες παράμετροι αποθηκεύονται στην κρυπτογραφημένη δομή.  **Για να γίνει η αποκρυπτογράφηση, πρέπει να αναπαράγετε ακριβώς το ίδιο κλειδί — εισαγάγετε τον ίδιο κωδικό πρόσβασης και VOID και κρατήστε το αρχικό κρυπτοκείμενο ακριβές μέχρι και τον τελευταίο χαρακτήρα**."
+            "state" : "translated",
+            "value" : "1 - Εισάγετε έναν κωδικό πρόσβασης. 2 - Επιλέγετε το VOID. 3 - Η εφαρμογή δημιουργεί ένα salt και το συνδυάζει με τον κωδικό πρόσβασης και το VOID. 4 - Το Argon2id υπολογίζει το κλειδί με τις καθορισμένες παραμέτρους. 5 - Το κλειδί χρησιμοποιείται στο AES-256 για την κρυπτογράφηση του κειμένου. 6 - Το salt και οι υπόλοιπες παράμετροι αποθηκεύονται στην κρυπτογραφημένη δομή.  **Για να γίνει η αποκρυπτογράφηση, πρέπει να αναπαράγετε ακριβώς το ίδιο κλειδί — εισαγάγετε τον ίδιο κωδικό πρόσβασης και VOID και κρατήστε το αρχικό κρυπτοκείμενο ακριβές μέχρι και τον τελευταίο χαρακτήρα** ή τα δεδομένα αρχείου."
           }
         },
         "en" : {
           "stringUnit" : {
-            "state" : "translated",
+            "state" : "reviewed",
             "value" : "1 - You enter a password. 2 - You select VOID. 3 - The application generates a salt and combines it with the password and VOID. 4 - Argon2id computes the key using the specified parameters. 5 - The key is used in AES-256 to encrypt the text. 6 - The salt and other parameters are stored in the encrypted structure.  **To decrypt, you must exactly reproduce the same key — enter the same password and VOID and have the original ciphertext accurate to the character** or data file."
           }
         },
         "es" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Introduces una contraseña. 2 - Seleccionas VOID. 3 - La aplicación genera una sal y la combina con la contraseña y VOID. 4 - Argon2id calcula la clave usando los parámetros especificados. 5 - La clave se usa en AES-256 para cifrar el texto. 6 - La sal y el resto de parámetros se guardan en la estructura cifrada.  **Para descifrar, debes reproducir exactamente la misma clave: introducir la misma contraseña y VOID y disponer del texto cifrado original con precisión de un carácter**."
+            "state" : "translated",
+            "value" : "1 - Introduces una contraseña. 2 - Seleccionas VOID. 3 - La aplicación genera una sal y la combina con la contraseña y VOID. 4 - Argon2id calcula la clave usando los parámetros especificados. 5 - La clave se usa en AES-256 para cifrar el texto. 6 - La sal y el resto de parámetros se guardan en la estructura cifrada.  **Para descifrar, debes reproducir exactamente la misma clave: introducir la misma contraseña y VOID y disponer del texto cifrado original con precisión de un carácter** o de los datos del archivo."
           }
         },
         "fa" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "۱ - رمز عبور خود را وارد می‌کنید. ۲ - VOID را انتخاب می‌کنید. ۳ - برنامه یک salt تولید کرده و آن را با رمز عبور و VOID ترکیب می‌کند. ۴ - Argon2id با استفاده از پارامترهای مشخص‌شده، کلید را محاسبه می‌کند. ۵ - از کلید در AES-256 برای رمزگذاری متن استفاده می‌شود. ۶ - salt و سایر پارامترها در ساختار رمزشده ذخیره می‌شوند.  **برای رمزگشایی، باید دقیقاً همان کلید را بازتولید کنید — همان رمز عبور و VOID را وارد کنید و متن رمزشده اصلی را کاراکتر به کاراکتر دقیق داشته باشید**."
+            "state" : "translated",
+            "value" : "۱ - رمز عبور خود را وارد می‌کنید. ۲ - VOID را انتخاب می‌کنید. ۳ - برنامه یک salt تولید کرده و آن را با رمز عبور و VOID ترکیب می‌کند. ۴ - Argon2id با استفاده از پارامترهای مشخص‌شده، کلید را محاسبه می‌کند. ۵ - از کلید در AES-256 برای رمزگذاری متن استفاده می‌شود. ۶ - salt و سایر پارامترها در ساختار رمزشده ذخیره می‌شوند.  **برای رمزگشایی، باید دقیقاً همان کلید را بازتولید کنید — همان رمز عبور و VOID را وارد کنید و متن رمزشده اصلی را کاراکتر به کاراکتر دقیق داشته باشید** یا داده‌های فایل را."
           }
         },
         "fi" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Syötät salasanan. 2 - Valitset VOIDin. 3 - Sovellus generoi suolan ja yhdistää sen salasanaan ja VOIDiin. 4 - Argon2id laskee avaimen annetuilla parametreilla. 5 - Avain käytetään AES-256:ssa tekstin salaamiseen. 6 - Suola ja muut parametrit tallennetaan salattuun rakenteeseen.  **Purkamista varten sinun on toistettava täsmälleen sama avain — syötä sama salasana ja VOID ja säilytä alkuperäinen salattu teksti tarkkana merkilleen**."
+            "state" : "translated",
+            "value" : "1 - Syötät salasanan. 2 - Valitset VOIDin. 3 - Sovellus generoi suolan ja yhdistää sen salasanaan ja VOIDiin. 4 - Argon2id laskee avaimen annetuilla parametreilla. 5 - Avain käytetään AES-256:ssa tekstin salaamiseen. 6 - Suola ja muut parametrit tallennetaan salattuun rakenteeseen.  **Purkamista varten sinun on toistettava täsmälleen sama avain — syötä sama salasana ja VOID ja säilytä alkuperäinen salattu teksti tarkkana merkilleen** tai tiedoston tiedot."
           }
         },
         "fr" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Vous saisissez un mot de passe. 2 - Vous choisissez VOID. 3 - L'application génère un sel et le combine avec le mot de passe et VOID. 4 - Argon2id calcule la clé avec les paramètres indiqués. 5 - La clé est utilisée par AES-256 pour chiffrer le texte. 6 - Le sel et les autres paramètres sont enregistrés dans la structure chiffrée.  **Pour déchiffrer, vous devez reproduire exactement la même clé — saisir le même mot de passe et VOID, et disposer du texte chiffré original, à l'identique**."
+            "state" : "translated",
+            "value" : "1 - Vous saisissez un mot de passe. 2 - Vous choisissez VOID. 3 - L'application génère un sel et le combine avec le mot de passe et VOID. 4 - Argon2id calcule la clé avec les paramètres indiqués. 5 - La clé est utilisée par AES-256 pour chiffrer le texte. 6 - Le sel et les autres paramètres sont enregistrés dans la structure chiffrée.  **Pour déchiffrer, vous devez reproduire exactement la même clé — saisir le même mot de passe et VOID, et disposer du texte chiffré original, à l'identique** ou des données du fichier."
           }
         },
         "he" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - אתה מזין סיסמה. 2 - אתה בוחר VOID. 3 - האפליקציה מייצרת מלח ומשלבת אותו עם הסיסמה ו-VOID. 4 - Argon2id מחשב את המפתח לפי הפרמטרים שנקבעו. 5 - המפתח משמש ב-AES-256 להצפנת הטקסט. 6 - המלח ופרמטרים נוספים נשמרים במבנה המוצפן.  **לפענוח, עליך לשחזר את אותו המפתח בדיוק — להזין את אותה סיסמה ו-VOID ולהחזיק את הטקסט המוצפן המקורי מדויק עד לתו**."
+            "state" : "translated",
+            "value" : "1 - אתה מזין סיסמה. 2 - אתה בוחר VOID. 3 - האפליקציה מייצרת מלח ומשלבת אותו עם הסיסמה ו-VOID. 4 - Argon2id מחשב את המפתח לפי הפרמטרים שנקבעו. 5 - המפתח משמש ב-AES-256 להצפנת הטקסט. 6 - המלח ופרמטרים נוספים נשמרים במבנה המוצפן.  **לפענוח, עליך לשחזר את אותו המפתח בדיוק — להזין את אותה סיסמה ו-VOID ולהחזיק את הטקסט המוצפן המקורי מדויק עד לתו** או נתוני הקובץ."
           }
         },
         "hi" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - आप पासवर्ड दर्ज करते हैं। 2 - आप VOID चुनते हैं। 3 - एप्लिकेशन एक सॉल्ट उत्पन्न करता है और उसे पासवर्ड और VOID के साथ जोड़ता है। 4 - Argon2id निर्दिष्ट पैरामीटरों का उपयोग करके कुंजी की गणना करता है। 5 - AES-256 उसी कुंजी से पाठ को एन्क्रिप्ट करता है। 6 - सॉल्ट और अन्य पैरामीटर एन्क्रिप्टेड संरचना में सहेजे जाते हैं।  **डिक्रिप्ट करने के लिए आपको वही कुंजी दोबारा बनानी होगी — वही पासवर्ड और VOID दर्ज करें और मूल सिफरतंत्र को अक्षर-दर-अक्षर सही रखें।**"
+            "state" : "translated",
+            "value" : "1 - आप पासवर्ड दर्ज करते हैं। 2 - आप VOID चुनते हैं। 3 - एप्लिकेशन एक सॉल्ट उत्पन्न करता है और उसे पासवर्ड और VOID के साथ जोड़ता है। 4 - Argon2id निर्दिष्ट पैरामीटरों का उपयोग करके कुंजी की गणना करता है। 5 - AES-256 उसी कुंजी से पाठ को एन्क्रिप्ट करता है। 6 - सॉल्ट और अन्य पैरामीटर एन्क्रिप्टेड संरचना में सहेजे जाते हैं।  **डिक्रिप्ट करने के लिए आपको वही कुंजी दोबारा बनानी होगी — वही पासवर्ड और VOID दर्ज करें और मूल सिफरतंत्र को अक्षर-दर-अक्षर सही रखें** या फ़ाइल डेटा।"
           }
         },
         "hr" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Unesete lozinku. 2 - Odaberete VOID. 3 - Aplikacija generira sol i kombinira je s lozinkom i VOID-om. 4 - Argon2id izračunava ključ prema zadanim parametrima. 5 - Ključ se koristi u AES-256 za šifriranje teksta. 6 - Sol i ostali parametri pohranjuju se u šifriranoj strukturi.  **Za dešifriranje morate točno reproducirati isti ključ — unesite istu lozinku i VOID te zadržite izvorni šifrat precizan do znaka**."
+            "state" : "translated",
+            "value" : "1 - Unesete lozinku. 2 - Odaberete VOID. 3 - Aplikacija generira sol i kombinira je s lozinkom i VOID-om. 4 - Argon2id izračunava ključ prema zadanim parametrima. 5 - Ključ se koristi u AES-256 za šifriranje teksta. 6 - Sol i ostali parametri pohranjuju se u šifriranoj strukturi.  **Za dešifriranje morate točno reproducirati isti ključ — unesite istu lozinku i VOID te zadržite izvorni šifrat precizan do znaka** ili podatke datoteke."
           }
         },
         "hu" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Megadsz egy jelszót. 2 - Kiválasztod a VOID-ot. 3 - Az alkalmazás sót generál, és a jelszóval, valamint a VOID-dal kombinálja. 4 - Az Argon2id a megadott paraméterekkel kiszámítja a kulcsot. 5 - A kulcsot az AES-256 használja a szöveg titkosítására. 6 - A sót és a többi paramétert a titkosított struktúrában tároljuk.  **A visszafejtéshez pontosan ugyanazt a kulcsot kell újra előállítanod — add meg ugyanazt a jelszót és VOID-ot, és őrizd meg a teljes eredeti titkosított szöveget karakterpontossággal.**"
+            "state" : "translated",
+            "value" : "1 - Megadsz egy jelszót. 2 - Kiválasztod a VOID-ot. 3 - Az alkalmazás sót generál, és a jelszóval, valamint a VOID-dal kombinálja. 4 - Az Argon2id a megadott paraméterekkel kiszámítja a kulcsot. 5 - A kulcsot az AES-256 használja a szöveg titkosítására. 6 - A sót és a többi paramétert a titkosított struktúrában tároljuk.  **A visszafejtéshez pontosan ugyanazt a kulcsot kell újra előállítanod — add meg ugyanazt a jelszót és VOID-ot, és őrizd meg a teljes eredeti titkosított szöveget karakterpontossággal** vagy a fájl adatait."
           }
         },
         "hy" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Դուք մուտքագրում եք գաղտնաբառը. 2 - Դուք ընտրում եք VOID-ը. 3 - Հավելվածը ստեղծում է salt և միացնում այն գաղտնաբառին ու VOID-ին. 4 - Argon2id-ը նշված պարամետրերով հաշվարկում է բանալին. 5 - Բանալին օգտագործվում է AES-256-ում տեքստը կոդավորելու համար. 6 - Salt-ը և մյուս պարամետրերը պահպանվում են կոդավորված կառուցվածքում.  **Ապակոդավորման համար պետք է ճշգրիտ կրկնել նույն բանալին — մուտքագրեք նույն գաղտնաբառը և VOID-ը և պահեք բնօրինակ կոդավորված տեքստը մինչև վերջին նիշը.**"
+            "state" : "translated",
+            "value" : "1 - Դուք մուտքագրում եք գաղտնաբառը. 2 - Դուք ընտրում եք VOID-ը. 3 - Հավելվածը ստեղծում է salt և միացնում այն գաղտնաբառին ու VOID-ին. 4 - Argon2id-ը նշված պարամետրերով հաշվարկում է բանալին. 5 - Բանալին օգտագործվում է AES-256-ում տեքստը կոդավորելու համար. 6 - Salt-ը և մյուս պարամետրերը պահպանվում են կոդավորված կառուցվածքում.  **Ապակոդավորման համար պետք է ճշգրիտ կրկնել նույն բանալին — մուտքագրեք նույն գաղտնաբառը և VOID-ը և պահեք բնօրինակ կոդավորված տեքստը մինչև վերջին նիշը** կամ ֆայլի տվյալները."
           }
         },
         "id" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Anda memasukkan kata sandi. 2 - Anda memilih VOID. 3 - Aplikasi membuat salt dan menggabungkannya dengan kata sandi serta VOID. 4 - Argon2id menghitung kunci menggunakan parameter yang ditentukan. 5 - Kunci digunakan oleh AES-256 untuk mengenkripsi teks. 6 - Salt dan parameter lainnya disimpan di struktur terenkripsi.  **Untuk mendekripsi, Anda harus mereproduksi kunci yang sama persis — masukkan kata sandi dan VOID yang sama serta pastikan ciphertext asli tetap akurat hingga karakter terakhir.**"
+            "state" : "translated",
+            "value" : "1 - Anda memasukkan kata sandi. 2 - Anda memilih VOID. 3 - Aplikasi membuat salt dan menggabungkannya dengan kata sandi serta VOID. 4 - Argon2id menghitung kunci menggunakan parameter yang ditentukan. 5 - Kunci digunakan oleh AES-256 untuk mengenkripsi teks. 6 - Salt dan parameter lainnya disimpan di struktur terenkripsi.  **Untuk mendekripsi, Anda harus mereproduksi kunci yang sama persis — masukkan kata sandi dan VOID yang sama serta pastikan ciphertext asli tetap akurat hingga karakter terakhir** atau data file."
           }
         },
         "is" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Þú slærð inn lykilorð. 2 - Þú velur VOID. 3 - Forritið býr til salt og sameinar það við lykilorðið og VOID. 4 - Argon2id reiknar út lykilinn með skilgreindum breytum. 5 - Lykillinn er notaður í AES-256 til að dulrita textann. 6 - Salt og aðrar breytur eru vistaðar í dulritaðri uppbyggingu.  **Til að afkóða þarftu að endurgera nákvæmlega sama lykil — sláðu inn sama lykilorð og VOID og hafðu upprunalega dulritaða textann réttan niður í síðasta staf.**"
+            "state" : "translated",
+            "value" : "1 - Þú slærð inn lykilorð. 2 - Þú velur VOID. 3 - Forritið býr til salt og sameinar það við lykilorðið og VOID. 4 - Argon2id reiknar út lykilinn með skilgreindum breytum. 5 - Lykillinn er notaður í AES-256 til að dulrita textann. 6 - Salt og aðrar breytur eru vistaðar í dulritaðri uppbyggingu.  **Til að afkóða þarftu að endurgera nákvæmlega sama lykil — sláðu inn sama lykilorð og VOID og hafðu upprunalega dulritaða textann réttan niður í síðasta staf** eða gögn skrárinnar."
           }
         },
         "it" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Inserisci una password. 2 - Selezioni VOID. 3 - L'app genera un sale e lo combina con la password e Void. 4 - Argon2id calcola la chiave con i parametri specificati. 5 - La chiave viene utilizzata in AES-256 per cifrare il testo. 6 - Il sale e gli altri parametri vengono salvati nella struttura cifrata.  **Per decifrare devi riprodurre esattamente la stessa chiave — inserire la stessa password e VOID e avere il testo cifrato originale, preciso al carattere**."
+            "state" : "translated",
+            "value" : "1 - Inserisci una password. 2 - Selezioni VOID. 3 - L'app genera un sale e lo combina con la password e Void. 4 - Argon2id calcola la chiave con i parametri specificati. 5 - La chiave viene utilizzata in AES-256 per cifrare il testo. 6 - Il sale e gli altri parametri vengono salvati nella struttura cifrata.  **Per decifrare devi riprodurre esattamente la stessa chiave — inserire la stessa password e VOID e avere il testo cifrato originale, preciso al carattere** o i dati del file."
           }
         },
         "ja" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - パスワードを入力します。 2 - VOID を選択します。 3 - アプリがソルトを生成し、パスワードと VOID を組み合わせます。 4 - Argon2id が指定されたパラメータで鍵を計算します。 5 - その鍵を使用して AES-256 がテキストを暗号化します。 6 - ソルトとその他のパラメータが暗号化された構造に保存されます。  **復号するには同じ鍵を正確に再現する必要があります — 同じパスワードと VOID を入力し、元の暗号文を一文字も欠けずに揃えてください。**"
+            "state" : "translated",
+            "value" : "1 - パスワードを入力します。 2 - VOID を選択します。 3 - アプリがソルトを生成し、パスワードと VOID を組み合わせます。 4 - Argon2id が指定されたパラメータで鍵を計算します。 5 - その鍵を使用して AES-256 がテキストを暗号化します。 6 - ソルトとその他のパラメータが暗号化された構造に保存されます。  **復号するには同じ鍵を正確に再現する必要があります — 同じパスワードと VOID を入力し、元の暗号文を一文字も欠けずに揃えてください** またはファイルデータを。"
           }
         },
         "ka" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 — შეიყვანეთ პაროლი. 2 — აირჩიეთ VOID. 3 — აპლიკაცია ქმნის მარილს და აერთიანებს მას პაროლთან და VOID-თან. 4 — Argon2id გამოთვლის გასაღები კოდის მითითებული პარამეტრებით. 5 — გასაღები კოდი გამოიყენება AES-256-ში ტექსტის დასაშიფრად. 6 — მარილი და სხვა პარამეტრები ინახება შიფრირებულ სტრუქტურაში.  **დეშიფრაციისთვის უნდა მიიღოთ ზუსტად იგივე გასაღები კოდი — შეიყვანეთ ისევ პაროლი და VOID და გქონდეთ საწყისი შიფრტექსტი სიმბოლო-სიმბოლომდე ზუსტად**."
+            "state" : "translated",
+            "value" : "1 — შეიყვანეთ პაროლი. 2 — აირჩიეთ VOID. 3 — აპლიკაცია ქმნის მარილს და აერთიანებს მას პაროლთან და VOID-თან. 4 — Argon2id გამოთვლის გასაღები კოდის მითითებული პარამეტრებით. 5 — გასაღები კოდი გამოიყენება AES-256-ში ტექსტის დასაშიფრად. 6 — მარილი და სხვა პარამეტრები ინახება შიფრირებულ სტრუქტურაში.  **დეშიფრაციისთვის უნდა მიიღოთ ზუსტად იგივე გასაღები — შეიყვანეთ ისევ პაროლი და VOID და გქონდეთ საწყისი შიფრტექსტი სიმბოლო-სიმბოლომდე ზუსტად** ან ფაილის მონაცემები."
           }
         },
         "kk" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Сіз құпия сөзді енгізесіз. 2 - Сіз VOID таңдайсыз. 3 - Қолданба тұз жасайды және оны құпия сөзбен және VOID-мен біріктіреді. 4 - Argon2id көрсетілген параметрлерді пайдаланып кілтті есептейді. 5 - Кілт мәтінді шифрлау үшін AES-256-да пайдаланылады. 6 - Тұз және басқа параметрлер шифрланған құрылымда сақталады.  **Шифрды шешу үшін дәл сол кілтті қайта жасау керек — сол құпия сөзді және VOID-ді енгізіп, бастапқы шифрмәтінді таңба-таңба дәл болуын қамтамасыз ету керек**."
+            "state" : "translated",
+            "value" : "1 - Сіз құпия сөзді енгізесіз. 2 - Сіз VOID таңдайсыз. 3 - Қолданба тұз жасайды және оны құпия сөзбен және VOID-мен біріктіреді. 4 - Argon2id көрсетілген параметрлерді пайдаланып кілтті есептейді. 5 - Кілт мәтінді шифрлау үшін AES-256-да пайдаланылады. 6 - Тұз және басқа параметрлер шифрланған құрылымда сақталады.  **Шифрды шешу үшін дәл сол кілтті қайта жасау керек — сол құпия сөзді және VOID-ді енгізіп, бастапқы шифрмәтінді таңба-таңба дәл болуын қамтамасыз ету керек** немесе файл деректерін."
           }
         },
         "ko" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - 비밀번호를 입력합니다。 2 - VOID를 선택합니다。 3 - 앱이 솔트를 생성해 비밀번호와 VOID와 결합합니다。 4 - Argon2id가 지정한 매개변수로 키를 계산합니다。 5 - 해당 키를 사용해 AES-256으로 텍스트를 암호화합니다。 6 - 솔트와 다른 매개변수가 암호화된 구조에 저장됩니다。  **복호화를 위해서는 동일한 키를 정확히 재현해야 합니다 — 동일한 비밀번호와 VOID를 입력하고, 원본 암호문을 글자 하나까지 정확히 보관해야 합니다。**"
+            "state" : "translated",
+            "value" : "1 - 비밀번호를 입력합니다。 2 - VOID를 선택합니다。 3 - 앱이 솔트를 생성해 비밀번호와 VOID와 결합합니다。 4 - Argon2id가 지정한 매개변수로 키를 계산합니다。 5 - 해당 키를 사용해 AES-256으로 텍스트를 암호화합니다。 6 - 솔트와 다른 매개변수가 암호화된 구조에 저장됩니다。  **복호화를 위해서는 동일한 키를 정확히 재현해야 합니다 — 동일한 비밀번호와 VOID를 입력하고, 원본 암호문을 글자 하나까지 정확히 보관해야 합니다** 또는 파일 데이터。"
           }
         },
         "ky" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Сырсөзүңүздү киргизесиз. 2 - VOID тандайсыз. 3 - Колдонмо туз жаратат жана аны сырсөз жана VOID менен бириктирет. 4 - Argon2id көрсөтүлгөн параметрлерди колдонуп ачкычты эсептейт. 5 - Ачкыч текстти шифрлөө үчүн AES-256 де колдонулат. 6 - Туз жана башка параметрлер шифрленген структурада сакталат.  **Шифрди чечүү үчүн так ошол ачкычты кайра жаратуу керек — ошол эле сырсөздү жана VOID ди киргизип, баштапкы шифрмәтін белги-белгиге чейин так болушун камсыз кылуу керек**."
+            "state" : "translated",
+            "value" : "1 - Сырсөзүңүздү киргизесиз. 2 - VOID тандайсыз. 3 - Колдонмо туз жаратат жана аны сырсөз жана VOID менен бириктирет. 4 - Argon2id көрсөтүлгөн параметрлерди колдонуп ачкычты эсептейт. 5 - Ачкыч текстти шифрлөө үчүн AES-256 де колдонулат. 6 - Туз жана башка параметрлер шифрленген структурада сакталат.  **Шифрди чечүү үчүн так ошол ачкычты кайра жаратуу керек — ошол эле сырсөздү жана VOID ди киргизип, баштапкы шифрмәтін белги-белгиге чейин так болушун камсыз кылуу керек** же файл маалыматтарын."
           }
         },
         "mn" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Та нууц үгээ оруулна. 2 - Та VOID-г сонгоно. 3 - Програм давс үүсгэж, нууц үг болон VOID-тэй нэгтгэнэ. 4 - Argon2id заасан параметрүүдийг ашиглан түлхүүрийг тооцоолно. 5 - Түлхүүрийг текстийг шифрлэхэд AES-256-д ашиглана. 6 - Давс болон бусад параметрүүд шифрлэгдсэн бүтцэд хадгалагдана.  **Шифрийг тайлахын тулд яг ижил түлхүүрийг дахин үүсгэх шаардлагатай — ижил нууц үг болон VOID оруулж, анхны шифрлэсэн текст тэмдэгт бүр яг таарч байх ёстой**."
+            "state" : "translated",
+            "value" : "1 - Та нууц үгээ оруулна. 2 - Та VOID-г сонгоно. 3 - Програм давс үүсгэж, нууц үг болон VOID-тэй нэгтгэнэ. 4 - Argon2id заасан параметрүүдийг ашиглан түлхүүрийг тооцоолно. 5 - Түлхүүрийг текстийг шифрлэхэд AES-256-д ашиглана. 6 - Давс болон бусад параметрүүд шифрлэгдсэн бүтцэд хадгалагдана.  **Шифрийг тайлахын тулд яг ижил түлхүүрийг дахин үүсгэх шаардлагатай — ижил нууц үг болон VOID оруулж, анхны шифрлэсэн текст тэмдэгт бүр яг таарч байх ёстой** эсвэл файлын өгөгдлийг."
           }
         },
         "ms" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Anda memasukkan kata laluan. 2 - Anda memilih VOID. 3 - Aplikasi menjana garam dan menggabungkannya dengan kata laluan serta VOID. 4 - Argon2id mengira kunci menggunakan parameter yang ditentukan. 5 - Kunci digunakan dalam AES-256 untuk menyulitkan teks. 6 - Garam dan parameter lain disimpan dalam struktur tersulit.  **Untuk menyahsulit, anda mesti menghasilkan semula kunci yang sama tepat — masukkan kata laluan dan VOID yang sama serta pastikan teks sifer asal kekal tepat hingga ke aksara terakhir.**"
+            "state" : "translated",
+            "value" : "1 - Anda memasukkan kata laluan. 2 - Anda memilih VOID. 3 - Aplikasi menjana garam dan menggabungkannya dengan kata laluan serta VOID. 4 - Argon2id mengira kunci menggunakan parameter yang ditentukan. 5 - Kunci digunakan dalam AES-256 untuk menyulitkan teks. 6 - Garam dan parameter lain disimpan dalam struktur tersulit.  **Untuk menyahsulit, anda mesti menghasilkan semula kunci yang sama tepat — masukkan kata laluan dan VOID yang sama serta pastikan teks sifer asal kekal tepat hingga ke aksara terakhir** atau data fail."
           }
         },
         "nb" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Du skriver inn et passord. 2 - Du velger VOID. 3 - Appen genererer et salt og kombinerer det med passordet og VOID. 4 - Argon2id beregner nøkkelen med de angitte parameterne. 5 - Nøkkelen brukes av AES-256 til å kryptere teksten. 6 - Saltet og de andre parameterne lagres i den krypterte strukturen.  **For å dekryptere må du gjenskape akkurat den samme nøkkelen — skriv inn det samme passordet og VOID, og sørg for at den opprinnelige chifferteksten er nøyaktig ned til siste tegn.**"
+            "state" : "translated",
+            "value" : "1 - Du skriver inn et passord. 2 - Du velger VOID. 3 - Appen genererer et salt og kombinerer det med passordet og VOID. 4 - Argon2id beregner nøkkelen med de angitte parameterne. 5 - Nøkkelen brukes av AES-256 til å kryptere teksten. 6 - Saltet og de andre parameterne lagres i den krypterte strukturen.  **For å dekryptere må du gjenskape akkurat den samme nøkkelen — skriv inn det samme passordet og VOID, og sørg for at den opprinnelige chifferteksten er nøyaktig ned til siste tegn** eller fildataene."
           }
         },
         "nl" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Je voert een wachtwoord in. 2 - Je selecteert VOID. 3 - De app genereert een salt en combineert deze met het wachtwoord en VOID. 4 - Argon2id berekent de sleutel met de opgegeven parameters. 5 - De sleutel wordt in AES-256 gebruikt om de tekst te versleutelen. 6 - De salt en andere parameters worden opgeslagen in de versleutelde structuur.  **Om te ontsleutelen moet je exact dezelfde sleutel reproduceren — voer hetzelfde wachtwoord en VOID in en zorg dat de oorspronkelijke ciphertext teken voor teken klopt.**"
+            "state" : "translated",
+            "value" : "1 - Je voert een wachtwoord in. 2 - Je selecteert VOID. 3 - De app genereert een salt en combineert deze met het wachtwoord en VOID. 4 - Argon2id berekent de sleutel met de opgegeven parameters. 5 - De sleutel wordt in AES-256 gebruikt om de tekst te versleutelen. 6 - De salt en andere parameters worden opgeslagen in de versleutelde structuur.  **Om te ontsleutelen moet je exact dezelfde sleutel reproduceren — voer hetzelfde wachtwoord en VOID in en zorg dat de oorspronkelijke ciphertext teken voor teken klopt** of de bestandsgegevens."
           }
         },
         "pl" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Wprowadzasz hasło. 2 - Wybierasz VOID. 3 - Aplikacja generuje sól i łączy ją z hasłem oraz VOID-em. 4 - Argon2id oblicza klucz przy użyciu określonych parametrów. 5 - Klucz jest używany w AES-256 do zaszyfrowania tekstu. 6 - Sól i pozostałe parametry są przechowywane w zaszyfrowanej strukturze.  **Aby odszyfrować, musisz odtworzyć dokładnie ten sam klucz — wprowadź to samo hasło i VOID oraz zachowaj oryginalny tekst zaszyfrowany bezbłędnie co do znaku.**"
+            "state" : "translated",
+            "value" : "1 - Wprowadzasz hasło. 2 - Wybierasz VOID. 3 - Aplikacja generuje sól i łączy ją z hasłem oraz VOID-em. 4 - Argon2id oblicza klucz przy użyciu określonych parametrów. 5 - Klucz jest używany w AES-256 do zaszyfrowania tekstu. 6 - Sól i pozostałe parametry są przechowywane w zaszyfrowanej strukturze.  **Aby odszyfrować, musisz odtworzyć dokładnie ten sam klucz — wprowadź to samo hasło i VOID oraz zachowaj oryginalny tekst zaszyfrowany bezbłędnie co do znaku** lub dane pliku."
           }
         },
         "pt" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Você insere uma senha. 2 - Você seleciona o VOID. 3 - O aplicativo gera um sal e o combina com a senha e o VOID. 4 - O Argon2id calcula a chave usando os parâmetros especificados. 5 - A chave é usada no AES-256 para criptografar o texto. 6 - O sal e os demais parâmetros são armazenados na estrutura criptografada.  **Para descriptografar, você precisa reproduzir exatamente a mesma chave — inserir a mesma senha e VOID e ter o texto cifrado original correto caractere por caractere.**"
+            "state" : "translated",
+            "value" : "1 - Você insere uma senha. 2 - Você seleciona o VOID. 3 - O aplicativo gera um sal e o combina com a senha e o VOID. 4 - O Argon2id calcula a chave usando os parâmetros especificados. 5 - A chave é usada no AES-256 para criptografar o texto. 6 - O sal e os demais parâmetros são armazenados na estrutura criptografada.  **Para descriptografar, você precisa reproduzir exatamente a mesma chave — inserir a mesma senha e VOID e ter o texto cifrado original correto caractere por caractere** ou os dados do arquivo."
           }
         },
         "ro" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Introduci o parolă. 2 - Alegi VOID. 3 - Aplicația generează un salt și îl combină cu parola și VOID. 4 - Argon2id calculează cheia folosind parametrii specificați. 5 - Cheia este utilizată în AES-256 pentru a cripta textul. 6 - Saltul și ceilalți parametri sunt stocați în structura criptată.  **Pentru a decripta trebuie să reproduci exact aceeași cheie — introdu aceeași parolă și VOID și păstrează textul criptat original fidel până la ultimul caracter.**"
+            "state" : "translated",
+            "value" : "1 - Introduci o parolă. 2 - Alegi VOID. 3 - Aplicația generează un salt și îl combină cu parola și VOID. 4 - Argon2id calculează cheia folosind parametrii specificați. 5 - Cheia este utilizată în AES-256 pentru a cripta textul. 6 - Saltul și ceilalți parametri sunt stocați în structura criptată.  **Pentru a decripta trebuie să reproduci exact aceeași cheie — introdu aceeași parolă și VOID și păstrează textul criptat original fidel până la ultimul caracter** sau datele fișierului."
           }
         },
         "ru" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Вы вводите пароль. 2 - Выбираете VOID. 3 - Приложение генерирует соль и объединяет её с паролем и VOID. 4 - Argon2id вычисляет ключ с заданными параметрами. 5 - Ключ используется в AES‑256 для шифрования текста. 6 - Соль и остальные параметры сохраняются в зашифрованной структуре.  **Для расшифровки нужно точно воспроизвести тот же ключ — ввести тот же пароль и VOID и иметь оригинальный шифротекст с точностью до символа**."
+            "state" : "translated",
+            "value" : "1 - Вы вводите пароль. 2 - Выбираете VOID. 3 - Приложение генерирует соль и объединяет её с паролем и VOID. 4 - Argon2id вычисляет ключ с заданными параметрами. 5 - Ключ используется в AES‑256 для шифрования текста. 6 - Соль и остальные параметры сохраняются в зашифрованной структуре.  **Для расшифровки нужно точно воспроизвести тот же ключ — ввести тот же пароль и VOID и иметь оригинальный шифротекст с точностью до символа** или данные файла."
           }
         },
         "sk" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Zadáš heslo. 2 - Vyberieš VOID. 3 - Aplikácia vytvorí soľ a spojí ju s heslom a VOID-om. 4 - Argon2id vypočíta kľúč podľa zadaných parametrov. 5 - Kľúč sa použije v AES-256 na šifrovanie textu. 6 - Soľ a ostatné parametre sa uložia do šifrovanej štruktúry.  **Na dešifrovanie musíš presne zreprodukovať ten istý kľúč — zadaj to isté heslo a VOID a zachovaj pôvodný šifrovaný text presne do posledného znaku.**"
+            "state" : "translated",
+            "value" : "1 - Zadáš heslo. 2 - Vyberieš VOID. 3 - Aplikácia vytvorí soľ a spojí ju s heslom a VOID-om. 4 - Argon2id vypočíta kľúč podľa zadaných parametrov. 5 - Kľúč sa použije v AES-256 na šifrovanie textu. 6 - Soľ a ostatné parametre sa uložia do šifrovanej štruktúry.  **Na dešifrovanie musíš presne zreprodukovať ten istý kľúč — zadaj to isté heslo a VOID a zachovaj pôvodný šifrovaný text presne do posledného znaku** alebo údaje súboru."
           }
         },
         "sv" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Du anger ett lösenord. 2 - Du väljer VOID. 3 - Appen genererar ett salt och kombinerar det med lösenordet och VOID. 4 - Argon2id beräknar nyckeln med de angivna parametrarna. 5 - Nyckeln används i AES-256 för att kryptera texten. 6 - Saltet och andra parametrar lagras i den krypterade strukturen.  **För att dekryptera måste du exakt återskapa samma nyckel — ange samma lösenord och VOID och ha den ursprungliga chiffertexten exakt tecken för tecken.**"
+            "state" : "translated",
+            "value" : "1 - Du anger ett lösenord. 2 - Du väljer VOID. 3 - Appen genererar ett salt och kombinerar det med lösenordet och VOID. 4 - Argon2id beräknar nyckeln med de angivna parametrarna. 5 - Nyckeln används i AES-256 för att kryptera texten. 6 - Saltet och andra parametrar lagras i den krypterade strukturen.  **För att dekryptera måste du exakt återskapa samma nyckel — ange samma lösenord och VOID och ha den ursprungliga chiffertexten exakt tecken för tecken** eller fildata."
           }
         },
         "sw" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Unaweka nenosiri lako. 2 - Unachagua VOID. 3 - Programu inazalisha chumvi na kuichanganya na nenosiri na VOID. 4 - Argon2id inahesabu ufunguo kwa kutumia vigezo vilivyobainishwa. 5 - Ufunguo unatumika katika AES-256 kusimba maandishi. 6 - Chumvi na vigezo vingine vinahifadhiwa katika muundo uliosimbwa.  **Ili kusimbulia, lazima uzalishe ufunguo uleule — weka nenosiri ileile na VOID na kuwa na maandishi ya awali yaliyosimbwa sahihi hadi herufi**."
+            "state" : "translated",
+            "value" : "1 - Unaweka nenosiri lako. 2 - Unachagua VOID. 3 - Programu inazalisha chumvi na kuichanganya na nenosiri na VOID. 4 - Argon2id inahesabu ufunguo kwa kutumia vigezo vilivyobainishwa. 5 - Ufunguo unatumika katika AES-256 kusimba maandishi. 6 - Chumvi na vigezo vingine vinahifadhiwa katika muundo uliosimbwa.  **Ili kusimbulia, lazima uzalishe ufunguo uleule — weka nenosiri ileile na VOID na kuwa na maandishi ya awali yaliyosimbwa sahihi hadi herufi** au data ya faili."
           }
         },
         "tg" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Шумо рамз ворид мекунед. 2 - Шумо VOID-ро интихоб мекунед. 3 - Барнома намак тавлид мекунад ва онро бо рамз ва VOID мепайвандад. 4 - Argon2id бо истифода аз параметрҳои муайяншуда калидро ҳисоб мекунад. 5 - Калид барои рамзгузории матн дар AES-256 истифода мешавад. 6 - Намак ва дигар параметрҳо дар сохтори рамзшуда нигоҳ дошта мешаванд.  **Барои рамзкушоӣ бояд ҳамон калидро дубора тавлид кунед — ҳамон рамз ва VOID-ро ворид кунед ва матни рамзшудаи аслиро аломат ба аломат дақиқ дошта бошед**."
+            "state" : "translated",
+            "value" : "1 - Шумо рамз ворид мекунед. 2 - Шумо VOID-ро интихоб мекунед. 3 - Барнома намак тавлид мекунад ва онро бо рамз ва VOID мепайвандад. 4 - Argon2id бо истифода аз параметрҳои муайяншуда калидро ҳисоб мекунад. 5 - Калид барои рамзгузории матн дар AES-256 истифода мешавад. 6 - Намак ва дигар параметрҳо дар сохтори рамзшуда нигоҳ дошта мешаванд.  **Барои рамзкушоӣ бояд ҳамон калидро дубора тавлид кунед — ҳамон рамз ва VOID-ро ворид кунед ва матни рамзшудаи аслиро аломат ба аломат дақиқ дошта бошед** ё маълумоти файл."
           }
         },
         "th" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - คุณป้อนรหัสผ่าน. 2 - คุณเลือก VOID. 3 - แอปสร้าง salt และผสานกับรหัสผ่านและ VOID. 4 - Argon2id คำนวณคีย์โดยใช้พารามิเตอร์ที่กำหนด. 5 - คีย์ถูกใช้ใน AES-256 เพื่อเข้ารหัสข้อความ. 6 - salt และพารามิเตอร์อื่นๆ ถูกเก็บไว้ในโครงสร้างที่เข้ารหัส.  **เพื่อถอดรหัส คุณต้องสร้างคีย์เดียวกันอย่างแม่นยำ — ป้อนรหัสผ่านและ VOID เดียวกัน และต้องมี ciphertext ต้นฉบับที่ถูกต้องทุกตัวอักษร**."
+            "state" : "translated",
+            "value" : "1 - คุณป้อนรหัสผ่าน. 2 - คุณเลือก VOID. 3 - แอปสร้าง salt และผสานกับรหัสผ่านและ VOID. 4 - Argon2id คำนวณคีย์โดยใช้พารามิเตอร์ที่กำหนด. 5 - คีย์ถูกใช้ใน AES-256 เพื่อเข้ารหัสข้อความ. 6 - salt และพารามิเตอร์อื่นๆ ถูกเก็บไว้ในโครงสร้างที่เข้ารหัส.  **เพื่อถอดรหัส คุณต้องสร้างคีย์เดียวกันอย่างแม่นยำ — ป้อนรหัสผ่านและ VOID เดียวกัน และต้องมี ciphertext ต้นฉบับที่ถูกต้องทุกตัวอักษร** หรือข้อมูลไฟล์."
           }
         },
         "tk" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Açar sözüňizi girdegiňiz. 2 - VOID saýlaýarsyňyz. 3 - Programma duz döredýär we ony açar söz we VOID bilen birleşdirýär. 4 - Argon2id görkezilen parametrleri ulanyp açary hasaplaýar. 5 - Açar teksti şifrlemek üçin AES-256-da ulanylýar. 6 - Duz we beýleki parametrler şifrli gurluşda saklanýar.  **Şifri çözmek üçin doly şol bir açary täzeden döretmeli — şol bir açar sözi we VOID-i girdiziň we asyl şifrli teksti nyşan-nyşan takyk saklañ**."
+            "state" : "translated",
+            "value" : "1 - Açar sözüňizi girdegiňiz. 2 - VOID saýlaýarsyňyz. 3 - Programma duz döredýär we ony açar söz we VOID bilen birleşdirýär. 4 - Argon2id görkezilen parametrleri ulanyp açary hasaplaýar. 5 - Açar teksti şifrlemek üçin AES-256-da ulanylýar. 6 - Duz we beýleki parametrler şifrli gurluşda saklanýar.  **Şifri çözmek üçin doly şol bir açary täzeden döretmeli — şol bir açar sözi we VOID-i girdiziň we asyl şifrli teksti nyşan-nyşan takyk saklañ** ýa-da faýl maglumatlaryny."
           }
         },
         "tr" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Bir parola girersiniz. 2 - VOID seçersiniz. 3 - Uygulama bir salt üretir ve onu parolayla ve VOID ile birleştirir. 4 - Argon2id belirtilen parametrelerle anahtarı hesaplar. 5 - Anahtar, AES-256 içinde metni şifrelemek için kullanılır. 6 - Salt ve diğer parametreler şifreli yapıda saklanır.  **Çözmek için aynı anahtarı birebir yeniden üretmeniz gerekir — aynı parolayı ve VOID'i girin ve orijinal şifreli metni harfi harfine elinizde bulundurun.**"
+            "state" : "translated",
+            "value" : "1 - Bir parola girersiniz. 2 - VOID seçersiniz. 3 - Uygulama bir salt üretir ve onu parolayla ve VOID ile birleştirir. 4 - Argon2id belirtilen parametrelerle anahtarı hesaplar. 5 - Anahtar, AES-256 içinde metni şifrelemek için kullanılır. 6 - Salt ve diğer parametreler şifreli yapıda saklanır.  **Çözmek için aynı anahtarı birebir yeniden üretmeniz gerekir — aynı parolayı ve VOID'i girin ve orijinal şifreli metni harfi harfine elinizde bulundurun** ya da dosya verilerini."
           }
         },
         "uk" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 — Ви вводите пароль. 2 — Обираєте VOID. 3 — Додаток генерує сіль і об'єднує її з паролем та VOID. 4 — Argon2id обчислює ключ за заданими параметрами. 5 — Ключ використовується в AES-256 для шифрування тексту. 6 — Сіль та інші параметри зберігаються в зашифрованій структурі.  **Щоб розшифрувати, потрібно точно відтворити той самий ключ — ввести той самий пароль і VOID та мати початковий шифротекст без жодної помилки**."
+            "state" : "translated",
+            "value" : "1 — Ви вводите пароль. 2 — Обираєте VOID. 3 — Додаток генерує сіль і об'єднує її з паролем та VOID. 4 — Argon2id обчислює ключ за заданими параметрами. 5 — Ключ використовується в AES-256 для шифрування тексту. 6 — Сіль та інші параметри зберігаються в зашифрованій структурі.  **Щоб розшифрувати, потрібно точно відтворити той самий ключ — ввести той самий пароль і VOID та мати початковий шифротекст без жодної помилки** або дані файлу."
           }
         },
         "ur" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "۱ - آپ پاس ورڈ درج کرتے ہیں۔ ۲ - آپ VOID منتخب کرتے ہیں۔ ۳ - ایپلیکیشن ایک سالٹ بناتی ہے اور اسے پاس ورڈ اور VOID کے ساتھ ملاتی ہے۔ ۴ - Argon2id متعین پیرامیٹرز استعمال کرتے ہوئے کی کا حساب لگاتا ہے۔ ۵ - کی کو متن کو انکرپٹ کرنے کے لیے AES-256 میں استعمال کیا جاتا ہے۔ ۶ - سالٹ اور دیگر پیرامیٹرز انکرپٹڈ ڈھانچے میں محفوظ ہوتے ہیں۔  **ڈیکرپٹ کرنے کے لیے آپ کو عین وہی کی دوبارہ بنانی ہوگی — وہی پاس ورڈ اور VOID درج کریں اور اصل سائفر ٹیکسٹ حرف بہ حرف درست ہو**۔"
+            "state" : "translated",
+            "value" : "۱ - آپ پاس ورڈ درج کرتے ہیں۔ ۲ - آپ VOID منتخب کرتے ہیں۔ ۳ - ایپلیکیشن ایک سالٹ بناتی ہے اور اسے پاس ورڈ اور VOID کے ساتھ ملاتی ہے۔ ۴ - Argon2id متعین پیرامیٹرز استعمال کرتے ہوئے کی کا حساب لگاتا ہے۔ ۵ - کی کو متن کو انکرپٹ کرنے کے لیے AES-256 میں استعمال کیا جاتا ہے۔ ۶ - سالٹ اور دیگر پیرامیٹرز انکرپٹڈ ڈھانچے میں محفوظ ہوتے ہیں۔  **ڈیکرپٹ کرنے کے لیے آپ کو عین وہی کی دوبارہ بنانی ہوگی — وہی پاس ورڈ اور VOID درج کریں اور اصل سائفر ٹیکسٹ حرف بہ حرف درست ہو** یا فائل ڈیٹا۔"
           }
         },
         "uz" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Siz parol kiritasiz. 2 - Siz VOID ni tanlaySiz. 3 - Dastur tuz yaratadi va uni parol va VOID bilan birlashtiradi. 4 - Argon2id belgilangan parametrlar yordamida kalitni hisoblaydi. 5 - Kalit matnni shifrlash uchun AES-256 da ishlatiladi. 6 - Tuz va boshqa parametrlar shifrlangan tuzilmada saqlanadi.  **Shifr ochish uchun xuddi o'sha kalitni qayta yaratish kerak — xuddi o'sha parol va VOID ni kiriting va asl shifrlangan matn belgima-belgi to'g'ri bo'lsin**."
+            "state" : "translated",
+            "value" : "1 - Siz parol kiritasiz. 2 - Siz VOID ni tanlaySiz. 3 - Dastur tuz yaratadi va uni parol va VOID bilan birlashtiradi. 4 - Argon2id belgilangan parametrlar yordamida kalitni hisoblaydi. 5 - Kalit matnni shifrlash uchun AES-256 da ishlatiladi. 6 - Tuz va boshqa parametrlar shifrlangan tuzilmada saqlanadi.  **Shifr ochish uchun xuddi o'sha kalitni qayta yaratish kerak — xuddi o'sha parol va VOID ni kiriting va asl shifrlangan matn belgima-belgi to'g'ri bo'lsin** yoki fayl ma'lumotlari."
           }
         },
         "vi" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - Bạn nhập mật khẩu. 2 - Bạn chọn VOID. 3 - Ứng dụng tạo muối và kết hợp muối với mật khẩu cùng VOID. 4 - Argon2id tính toán khóa bằng các tham số đã chọn. 5 - Khóa được dùng trong AES-256 để mã hóa văn bản. 6 - Muối và các tham số khác được lưu trong cấu trúc đã mã hóa.  **Để giải mã, bạn phải tái tạo chính xác cùng khóa — nhập cùng mật khẩu và VOID, đồng thời giữ nguyên bản mã gốc từng ký tự.**"
+            "state" : "translated",
+            "value" : "1 - Bạn nhập mật khẩu. 2 - Bạn chọn VOID. 3 - Ứng dụng tạo muối và kết hợp muối với mật khẩu cùng VOID. 4 - Argon2id tính toán khóa bằng các tham số đã chọn. 5 - Khóa được dùng trong AES-256 để mã hóa văn bản. 6 - Muối và các tham số khác được lưu trong cấu trúc đã mã hóa.  **Để giải mã, bạn phải tái tạo chính xác cùng khóa — nhập cùng mật khẩu và VOID, đồng thời giữ nguyên bản mã gốc từng ký tự** hoặc dữ liệu tệp."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - 输入密码。 2 - 选择 VOID。 3 - 应用生成盐值，并将其与密码和 VOID 组合。 4 - Argon2id 使用指定的参数计算密钥。 5 - 使用该密钥在 AES-256 中加密文本。 6 - 盐值和其他参数会存储在加密结构中。  **要解密，必须完全复现同一密钥—输入相同的密码和 VOID，并确保原始密文准确无误。**"
+            "state" : "translated",
+            "value" : "1 - 输入密码。 2 - 选择 VOID。 3 - 应用生成盐值，并将其与密码和 VOID 组合。 4 - Argon2id 使用指定的参数计算密钥。 5 - 使用该密钥在 AES-256 中加密文本。 6 - 盐值和其他参数会存储在加密结构中。  **要解密，必须完全复现同一密钥——输入相同的密码和 VOID，并确保原始密文或文件数据准确无误**。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "1 - 輸入密碼。 2 - 選擇 VOID。 3 - 應用生成鹽值，並將其與密碼和 VOID 組合。 4 - Argon2id 使用指定的引數計算金鑰。 5 - 使用該金鑰在 AES-256 中加密文字。 6 - 鹽值和其他引數會儲存在加密結構中。  **要解密，必須完全復現同一金鑰——輸入相同的密碼和 VOID，並確保原始密文準確無誤。**"
+            "state" : "translated",
+            "value" : "1 - 輸入密碼。 2 - 選擇 VOID。 3 - 應用生成鹽值，並將其與密碼和 VOID 組合。 4 - Argon2id 使用指定的引數計算金鑰。 5 - 使用該金鑰在 AES-256 中加密文字。 6 - 鹽值和其他引數會儲存在加密結構中。  **要解密，必須完全復現同一金鑰——輸入相同的密碼和 VOID，並確保原始密文或檔案資料準確無誤**。"
           }
         }
       }
