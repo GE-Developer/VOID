@@ -55,6 +55,10 @@ enum Language: String, CaseIterable, Identifiable {
     case uzbek = "uz"
     case vietnamese = "vi"
     
+    static var rtlLanguages: Set<String> {
+        [Language.arabic.id, Language.hebrew.id, Language.persian.id, Language.urdu.id]
+    }
+    
     var id: String { rawValue }
     
     var localizedName: String {

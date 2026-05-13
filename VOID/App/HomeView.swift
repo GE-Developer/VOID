@@ -14,7 +14,7 @@ struct HomeView: View {
     @State private var languageManager = LanguageManager.shared
     
     private var layoutDirection: LayoutDirection {
-        let rtlLanguages: Set<String> = ["ar", "he"]
+        let rtlLanguages = Language.rtlLanguages
         return rtlLanguages.contains(languageManager.currentLanguageID) ? .rightToLeft : .leftToRight
     }
     

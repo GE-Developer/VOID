@@ -62,7 +62,6 @@
 		1F7D9EE92E63447D007B4DDD /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EE82E63447D007B4DDD /* LanguageViewModel.swift */; };
 		1F7D9EF92E653107007B4DDD /* MatrixAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D9EF82E653107007B4DDD /* MatrixAnimationView.swift */; };
 		1F8265DC2FA8D1C500F1EE9E /* FormHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265DB2FA8D1C500F1EE9E /* FormHeaderView.swift */; };
-		1F8265DE2FAA1D0700F1EE9E /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 1F8265DD2FAA1D0700F1EE9E /* CLAUDE.md */; };
 		1F8265E02FAC183100F1EE9E /* AboutQRCodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265DF2FAC183100F1EE9E /* AboutQRCodeViewModel.swift */; };
 		1F8265E42FACF16100F1EE9E /* FileMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265E32FACF16100F1EE9E /* FileMessage.swift */; };
 		1F8265E62FACF1B900F1EE9E /* ChatItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8265E52FACF1B900F1EE9E /* ChatItem.swift */; };
@@ -200,7 +199,6 @@
 		1F7D9EE82E63447D007B4DDD /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
 		1F7D9EF82E653107007B4DDD /* MatrixAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixAnimationView.swift; sourceTree = "<group>"; };
 		1F8265DB2FA8D1C500F1EE9E /* FormHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHeaderView.swift; sourceTree = "<group>"; };
-		1F8265DD2FAA1D0700F1EE9E /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
 		1F8265DF2FAC183100F1EE9E /* AboutQRCodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutQRCodeViewModel.swift; sourceTree = "<group>"; };
 		1F8265E32FACF16100F1EE9E /* FileMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMessage.swift; sourceTree = "<group>"; };
 		1F8265E52FACF1B900F1EE9E /* ChatItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatItem.swift; sourceTree = "<group>"; };
@@ -670,7 +668,6 @@
 		1FB32A282E34FA16003E4B54 = {
 			isa = PBXGroup;
 			children = (
-				1F8265DD2FAA1D0700F1EE9E /* CLAUDE.md */,
 				1F8DDBDB2E3677DE005734CD /* VOID */,
 				1FFBB0BC2EB5094A0072600C /* Frameworks */,
 				1FB32A322E34FA17003E4B54 /* Products */,
@@ -843,7 +840,6 @@
 				1F8DDBEF2E3678C0005734CD /* Preview Assets.xcassets in Resources */,
 				1F91201D2E8C4FC000B62644 /* Dev_Mode.mp3 in Resources */,
 				1F91202B2E8C5D5400B62644 /* New_Encrypted_Message.mp3 in Resources */,
-				1F8265DE2FAA1D0700F1EE9E /* CLAUDE.md in Resources */,
 				1F91202C2E8C5D5400B62644 /* New_Decrypted_Message.mp3 in Resources */,
 				1FB32C342EB062C10051A772 /* Colors.xcassets in Resources */,
 				1F84D4322EC245E6001FAA62 /* Property List.plist in Resources */,
