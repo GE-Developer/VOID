@@ -57,7 +57,7 @@ extension CryptographyView {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(alignment: .top, spacing: 14) {
                 topButton(
-                    image: Image.content.voidAES256Argon2id,
+                    image: Image.system.qrCode,
                     title: vm.qrCodeTitle,
                     action: { showQRCodeView = true })
             }
@@ -98,16 +98,16 @@ extension CryptographyView {
                     Circle()
                         .fill(Color(.secondarySystemGroupedBackground))
                     image
-                        .resizable()
-                        .scaledToFill()
-                        .clipShape(Circle())
-                        .padding(4)
+                        .foregroundStyle(Gradient.accent)
+                        .font(.largeTitle)
+                        .shadow(color: Color.void.background, radius: 2)
                 }
+                .padding(4)
                 .frame(width: 90, height: 90)
                 .premiumOption($showPayWall)
                 .overlay {
                     Circle()
-                        .stroke(store.isPremium ? Gradient.accent : Gradient.gold, lineWidth: 3)
+                        .stroke(store.isPremium ? Gradient.accent : Gradient.gold, lineWidth: 2)
                 }
                 .overlay {
                     VStack {

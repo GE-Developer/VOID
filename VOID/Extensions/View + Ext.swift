@@ -44,13 +44,15 @@ extension View {
         )
     }
     
+    @ViewBuilder
     func screenshotDisabled(_ isEnabled: Bool) -> some View {
+        let securedText = "Secured"
         ZStack {
             if isEnabled {
                 VStack {
                     logo
                         .frame(height: 50)
-                    Text("Secured")
+                    Text(securedText)
                         .font(.headline)
                         .fontDesign(.monospaced)
                         .foregroundStyle(Color.void.mainText)
