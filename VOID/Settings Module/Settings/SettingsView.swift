@@ -9,8 +9,8 @@ import SwiftUI
 
 struct SettingsView: View {
     @EnvironmentObject private var store: StoreManager
-    @EnvironmentObject private var tabBarState: TabBarState
-    
+    @Environment(TabBarState.self) private var tabBarState
+
     @StateObject private var vm = SettingsViewModel()
     
     @State private var languageViewPresented = false

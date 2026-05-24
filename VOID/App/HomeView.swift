@@ -8,30 +8,33 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var tabBarState = TabBarState()
+    @State private var tabBarState = TabBarState()
     @StateObject private var store = StoreManager()
-    
+
     @State private var languageManager = LanguageManager.shared
-    
+
     private var layoutDirection: LayoutDirection {
         let rtlLanguages = Language.rtlLanguages
         return rtlLanguages.contains(languageManager.currentLanguageID) ? .rightToLeft : .leftToRight
     }
-    
+
     private let accent = AccentColorManager.shared
     private let screenshotProtector = ScreenshotManager.shared
-    
+
     var body: some View {
+        @Bindable var tabBarState = tabBarState
         TabView(selection: $tabBarState.selectedTab) {
             NavigationStack {
                 CryptographyView()
             }
+            .environment(\.parentTab, .cryptography)
             .toolbar(.hidden, for: .tabBar)
             .tag(TabBarState.RootTab.cryptography)
-            
+
             NavigationStack {
                 SettingsView()
             }
+            .environment(\.parentTab, .settings)
             .toolbar(.hidden, for: .tabBar)
             .tag(TabBarState.RootTab.settings)
         }
@@ -44,7 +47,7 @@ struct HomeView: View {
         .environment(\.layoutDirection, layoutDirection)
         .preferredColorScheme(ThemeManager.shared.theme)
         .screenshotDisabled(screenshotProtector.isScreenshotProtectionOn)
-        .environmentObject(tabBarState)
+        .environment(tabBarState)
         .environmentObject(store)
     }
     

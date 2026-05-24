@@ -132,34 +132,30 @@ struct MatrixAnimationView: View {
 // MARK: - MaskView
 fileprivate struct MaskView: View {
     @State private var shouldAnimate = false
-    
+    @State private var maskHeight: CGFloat
+    @State private var duration: Double
+    @State private var delay: Double
+
     private let width: CGFloat
     private let height: CGFloat
-    private let speedRange: ClosedRange<Double>
-    
+
     private let gradientMask = LinearGradient(
         colors: [.clear, .black.opacity(0.5), .black.opacity(0.9), .black],
         startPoint: .top,
         endPoint: .bottom
     )
-    
+
     init(width: CGFloat, height: CGFloat, speedRange: ClosedRange<Double>) {
         self.width = width
         self.height = height
-        self.speedRange = speedRange
+        _maskHeight = State(initialValue: height / .random(in: 1.2...2.6))
+        _duration = State(initialValue: .random(in: speedRange))
+        _delay = State(initialValue: .random(in: 0...4))
     }
-    
+
     var body: some View {
-        mask()
-            .onAppear { startAnimation() }
-    }
-    
-    // MARK: - MaskView (Builder)
-    @ViewBuilder
-    private func mask() -> some View {
-        let maskHeight = height / CGFloat.random(in: 1.2...2.6)
-        let xOffset = shouldAnimate ? height : -maskHeight
-        
+        let yOffset = shouldAnimate ? height : -maskHeight
+
         VStack(spacing: 0) {
             Rectangle()
                 .fill(gradientMask)
@@ -167,14 +163,13 @@ fileprivate struct MaskView: View {
             Spacer()
         }
         .frame(width: width)
-        .offset(y: xOffset)
+        .offset(y: yOffset)
+        .onAppear { startAnimation() }
     }
-    
+
     // MARK: - MaskView (Logic)
     private func startAnimation() {
-        let delay: Double = .random(in: 0...4)
-        
-        withAnimation(.linear(duration: .random(in: speedRange))
+        withAnimation(.linear(duration: duration)
             .delay(delay)
             .repeatForever(autoreverses: false)) {
                 shouldAnimate = true

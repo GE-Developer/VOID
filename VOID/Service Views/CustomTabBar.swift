@@ -9,8 +9,8 @@ import SwiftUI
 import UIKit
 
 struct CustomTabBar: View {
-    @EnvironmentObject private var tabBarState: TabBarState
-    
+    @Environment(TabBarState.self) private var tabBarState
+
     private let haptics = HapticsManager.shared
     
     private static let hideSystemTabBar: Void = {

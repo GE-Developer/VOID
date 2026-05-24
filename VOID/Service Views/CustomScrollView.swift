@@ -9,9 +9,10 @@ import SwiftUI
 
 struct CustomScrollView<Content: View, NavBarItems: View>: View {
     @Environment(\.dismiss) private var dismiss
-    
-    @EnvironmentObject private var tabBarState: TabBarState
-    
+    @Environment(\.parentTab) private var parentTab
+
+    @Environment(TabBarState.self) private var tabBarState
+
     @State private var navState = NavBarState()
     
     private let title: String
@@ -62,8 +63,15 @@ struct CustomScrollView<Content: View, NavBarItems: View>: View {
         }
         .toolbar(.hidden, for: .navigationBar)
         .onAppear {
-            tabBarState.isVisible = tabBarIsVisible
+            if !tabBarIsVisible {
+                tabBarState.enterStack(for: parentTab)
+            }
             closeKeyboard()
+        }
+        .onDisappear {
+            if !tabBarIsVisible {
+                tabBarState.exitStack(for: parentTab)
+            }
         }
     }
 }

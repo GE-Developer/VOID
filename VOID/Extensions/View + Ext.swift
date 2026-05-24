@@ -161,7 +161,12 @@ struct ScreenShotPreventerMask: UIViewRepresentable {
                 return layer
             }
         }
-        
+
         return nil
     }
+}
+
+// MARK: - Environment Values
+extension EnvironmentValues {
+    @Entry var parentTab: TabBarState.RootTab = .cryptography
 }

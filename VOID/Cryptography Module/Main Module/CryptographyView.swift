@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CryptographyView: View {
-    @EnvironmentObject private var tabBarState: TabBarState
+    @Environment(TabBarState.self) private var tabBarState
     @EnvironmentObject private var store: StoreManager
     
     @State private var showPayWall = false

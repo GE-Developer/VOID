@@ -319,9 +319,9 @@
 		1F12FE462E4221E50023DB69 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */,
 				1F2403B82EA51F6E00FB4005 /* StoreManager.swift */,
 				1F1452542E608D2D00F8A553 /* LanguageManager.swift */,
-				1F7D9EDE2E633F28007B4DDD /* ThemeManager.swift */,
 				1F7D9EE02E634007007B4DDD /* SoundManager.swift */,
 				1F7D9EE22E63402F007B4DDD /* HapticsManager.swift */,
 				1FBA13C32FB373BB002345E8 /* ScreenshotManager.swift */,
@@ -1118,7 +1118,7 @@
 				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = none;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
 				DEVELOPMENT_TEAM = 6DCRFKN8GP;
 				ENABLE_PREVIEWS = YES;
@@ -1160,7 +1160,7 @@
 				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = none;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
 				DEVELOPMENT_TEAM = 6DCRFKN8GP;
 				ENABLE_PREVIEWS = YES;

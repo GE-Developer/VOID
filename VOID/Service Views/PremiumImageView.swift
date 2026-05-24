@@ -83,16 +83,16 @@ extension PremiumView {
                         .degrees(isAnimating ? 360 : 0),
                         axis: (x: 0, y: 1, z: 0)
                     )
+                    .animation(
+                        .easeInOut(duration: 0.6)
+                        .delay(1.5)
+                        .repeatForever(autoreverses: true),
+                        value: isAnimating
+                    )
                     .offset(y: -3)
             }
             .font(.callout)
             .fontDesign(.rounded)
-            .animation(
-                .easeInOut(duration: 0.6)
-                .delay(1.5)
-                .repeatForever(autoreverses: true),
-                value: isAnimating
-            )
             .onAppear {
                 isAnimating = true
             }

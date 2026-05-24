@@ -28,36 +28,35 @@ enum QRScanQuality {
 
 struct QRCodeAnalysisService {
     private static let ciContext = CIContext(options: [.cacheIntermediates: false])
-    
+
     static func analyze(_ image: CGImage) async -> QRScanQuality {
-        let fullDecoded = await decode(image)
-        guard fullDecoded else { return .critical }
-        
-        let degraded = degrade(image)
-        guard let degraded else { return .good }
-        
-        let degradedDecoded = await decode(degraded)
-        return degradedDecoded ? .good : .suspicious
+        await Task.detached(priority: .userInitiated) {
+            let fullDecoded = decode(image)
+            guard fullDecoded else { return QRScanQuality.critical }
+
+            guard let degraded = degrade(image) else { return QRScanQuality.good }
+
+            let degradedDecoded = decode(degraded)
+            return degradedDecoded ? QRScanQuality.good : QRScanQuality.suspicious
+        }.value
     }
-    
-    private static func decode(_ image: CGImage) async -> Bool {
-        await withCheckedContinuation { continuation in
-            let request = VNDetectBarcodesRequest { request, _ in
-                let observations = request.results as? [VNBarcodeObservation]
-                let decoded = observations?.contains { $0.symbology == .qr && ($0.payloadStringValue?.isEmpty == false) } ?? false
-                continuation.resume(returning: decoded)
-            }
-            request.symbologies = [.qr]
-            
-            let handler = VNImageRequestHandler(cgImage: image, options: [:])
-            do {
-                try handler.perform([request])
-            } catch {
-                continuation.resume(returning: false)
-            }
+
+    private static func decode(_ image: CGImage) -> Bool {
+        let request = VNDetectBarcodesRequest()
+        request.symbologies = [.qr]
+
+        let handler = VNImageRequestHandler(cgImage: image, options: [:])
+        do {
+            try handler.perform([request])
+        } catch {
+            return false
         }
+
+        return request.results?.contains {
+            $0.symbology == .qr && ($0.payloadStringValue?.isEmpty == false)
+        } ?? false
     }
-    
+
     private static func degrade(_ image: CGImage) -> CGImage? {
         let target: CGFloat = 120
         let ciImage = CIImage(cgImage: image)
