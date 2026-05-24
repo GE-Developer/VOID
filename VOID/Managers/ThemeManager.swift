@@ -5,7 +5,7 @@
 //  Created by GE-Developer
 //
 
-import SwiftUICore
+import SwiftUI
 
 @Observable
 final class ThemeManager {

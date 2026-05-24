@@ -216,7 +216,7 @@
 		1F8DDBB22E366E11005734CD /* AES256EncryptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256EncryptionView.swift; sourceTree = "<group>"; };
 		1F8DDBB62E366E11005734CD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1F8DDBB72E366E11005734CD /* VOIDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIDApp.swift; sourceTree = "<group>"; };
-		1F8DDBBC2E366E11005734CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/mymac/Desktop/Void/Void/Resources/Assets.xcassets; sourceTree = "<absolute>"; };
+		1F8DDBBC2E366E11005734CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Void/Void/Resources/Assets.xcassets; sourceTree = "<group>"; };
 		1F8DDBE52E36785E005734CD /* Color + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBE62E36785E005734CD /* Image + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image + Ext.swift"; sourceTree = "<group>"; };
 		1F8DDBEE2E3678C0005734CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -1118,7 +1118,7 @@
 				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = none;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
 				DEVELOPMENT_TEAM = 6DCRFKN8GP;
 				ENABLE_PREVIEWS = YES;
@@ -1160,7 +1160,7 @@
 				ASSETCATALOG_COMPILER_STANDALONE_ICON_BEHAVIOR = none;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Void/Preview Content\"";
 				DEVELOPMENT_TEAM = 6DCRFKN8GP;
 				ENABLE_PREVIEWS = YES;
