@@ -6,7 +6,6 @@
 //
 
 import StoreKit
-import Foundation
 import Combine
 
 @MainActor
@@ -19,6 +18,7 @@ final class PayWallViewModel: ObservableObject {
     @Published private(set) var showExploseIfLifetimePurchased = false
     
     @Published var showError = false
+    @Published var showFeatures = false
     
     private(set) var errorDescription: String = ""
     
@@ -120,6 +120,21 @@ final class PayWallViewModel: ObservableObject {
     let familyShareText = L10n("PayWall.familyPlan")
     let lifetimeAccess = L10n("PayWall.Lifetime.title")
     
+    let featuresButtonTitle = L10n("PayWall.Features.buttonTitle")
+    let featuresTitle = L10n("PayWall.Features.title")
+    
+    let features: [String] = [
+        L10n("PayWall.Features.qrCode"),
+        L10n("PayWall.Features.fileEncryption"),
+        L10n("PayWall.Features.encryptionSettings"),
+        L10n("PayWall.Features.emojiPalettes"),
+        L10n("PayWall.Features.accentColors"),
+        L10n("PayWall.Features.appIcons"),
+        L10n("PayWall.Features.privacyProtection"),
+    ]
+    
+    let subscriptionDisclaimer = L10n("PayWall.subscriptionDisclaimer")
+    
     let errorTitle = L10n("Error.title")
     let errorOK = "OK"
     
@@ -201,6 +216,11 @@ final class PayWallViewModel: ObservableObject {
     func tapped(on product: Product) {
         guard chosenProduct != product else { return }
         chosenProduct = product
+        haptic.selectionChanged()
+    }
+    
+    func toggleFeaturesSheet() {
+        showFeatures.toggle()
         haptic.selectionChanged()
     }
     

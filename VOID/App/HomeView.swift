@@ -10,17 +10,17 @@ import SwiftUI
 struct HomeView: View {
     @State private var tabBarState = TabBarState()
     @StateObject private var store = StoreManager()
-
+    
     @State private var languageManager = LanguageManager.shared
-
+    
     private var layoutDirection: LayoutDirection {
         let rtlLanguages = Language.rtlLanguages
         return rtlLanguages.contains(languageManager.currentLanguageID) ? .rightToLeft : .leftToRight
     }
-
+    
     private let accent = AccentColorManager.shared
     private let screenshotProtector = ScreenshotManager.shared
-
+    
     var body: some View {
         @Bindable var tabBarState = tabBarState
         TabView(selection: $tabBarState.selectedTab) {
@@ -30,7 +30,7 @@ struct HomeView: View {
             .environment(\.parentTab, .cryptography)
             .toolbar(.hidden, for: .tabBar)
             .tag(TabBarState.RootTab.cryptography)
-
+            
             NavigationStack {
                 SettingsView()
             }
@@ -48,6 +48,7 @@ struct HomeView: View {
         .preferredColorScheme(ThemeManager.shared.theme)
         .screenshotDisabled(screenshotProtector.isScreenshotProtectionOn)
         .environment(tabBarState)
+        .environment(languageManager)
         .environmentObject(store)
     }
     

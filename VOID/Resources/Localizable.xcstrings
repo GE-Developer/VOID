@@ -34930,6 +34930,2643 @@
         }
       }
     },
+    "PayWall.Features.accentColors" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جميع ألوان التمييز المميزة"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bütün premium vurğu rəngləri"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Усе прэміяльныя акцэнтныя колеры"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সমস্ত প্রিমিয়াম অ্যাকসেন্ট রঙ"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tots els colors d'accent premium"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všechny prémiové akcentové barvy"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle premium-accentfarver"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle Premium-Akzentfarben"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλα τα premium χρώματα έμφασης"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All premium accent colors"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos los colores de acento premium"
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمام رنگ‌های تأکیدی ویژه"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki premium-korostusvärit"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les couleurs d'accentuation premium"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כל צבעי ההדגשה הפרימיום"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सभी प्रीमियम एक्सेंट रंग"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sve premium boje naglaska"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Az összes prémium kiemelőszín"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Բոլոր պրեմիում շեշտադրման գույները"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua warna aksen premium"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allir áherslulitir í Premium"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutti i colori d'accento Premium"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべてのプレミアムアクセントカラー"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ყველა პრემიუმ აქცენტის ფერი"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Барлық премиум акцент түстері"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모든 프리미엄 강조 색상"
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бардык премиум акцент түстөрү"
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бүх дээд зэрэглэлийн онцлох өнгө"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua warna aksen premium"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle premium aksentfarger"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle premium accentkleuren"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wszystkie kolory akcentów premium"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todas as cores de destaque premium"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toate culorile de accent premium"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все премиальные акцентные цвета"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všetky prémiové akcentové farby"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla premium-accentfärger"
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rangi zote za lafudhi za premium"
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ҳамаи рангҳои аксенти премиум"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สีเน้นพรีเมียมทั้งหมด"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ähli premium aksent reňkleri"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm premium vurgu renkleri"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Усі преміум акцентні кольори"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمام پریمیم ایکسنٹ رنگ"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barcha premium urgʻu ranglari"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tất cả màu nhấn cao cấp"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有高级强调色"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有進階強調色"
+          }
+        }
+      }
+    },
+    "PayWall.Features.appIcons" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جميع أيقونات التطبيق البديلة"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bütün alternativ tətbiq ikonaları"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Усе альтэрнатыўныя іконкі праграмы"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সমস্ত বিকল্প অ্যাপ আইকন"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Totes les icones d'aplicació alternatives"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všechny alternativní ikony aplikace"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle alternative app-ikoner"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle alternativen App-Symbole"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Όλα τα εναλλακτικά εικονίδια εφαρμογής"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All alternate app icons"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos los iconos alternativos de la app"
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمام آیکون‌های جایگزین برنامه"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kaikki vaihtoehtoiset sovelluskuvakkeet"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toutes les icônes d'application alternatives"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "כל סמלי האפליקציה החלופיים"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "सभी वैकल्पिक ऐप आइकन"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sve alternativne ikone aplikacije"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Az összes alternatív alkalmazásikon"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Հավելվածի բոլոր այլընտրանքային պատկերակները"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua ikon aplikasi alternatif"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Öll önnur forritatákn"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tutte le icone alternative dell'app"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての代替アプリアイコン"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ყველა ალტერნატიული აპლიკაციის ხატულა"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Барлық балама қолданба белгішелері"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모든 대체 앱 아이콘"
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бардык альтернативдик колдонмо иконкалары"
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бүх өөр аппын дүрс тэмдэг"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Semua ikon aplikasi alternatif"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle alternative app-ikoner"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alle alternatieve app-iconen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wszystkie alternatywne ikony aplikacji"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Todos os ícones alternativos do aplicativo"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toate pictogramele alternative ale aplicației"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все альтернативные иконки приложения"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Všetky alternatívne ikony aplikácie"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Alla alternativa appikoner"
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aikoni zote mbadala za programu"
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ҳамаи нишонаҳои алтернативии барнома"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ไอคอนแอปทางเลือกทั้งหมด"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ähli alternatiw programma nyşanlary"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm alternatif uygulama simgeleri"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Усі альтернативні іконки застосунку"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تمام متبادل ایپ آئیکنز"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Barcha muqobil ilova belgilari"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tất cả biểu tượng ứng dụng thay thế"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有备用应用图标"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "所有替代應用程式圖示"
+          }
+        }
+      }
+    },
+    "PayWall.Features.buttonTitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ما الذي يتضمنه"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nələr daxildir"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Што ўваходзіць"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "কী কী অন্তর্ভুক্ত রয়েছে"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Què s'inclou"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Co je zahrnuto"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvad er inkluderet"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Was ist enthalten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Τι περιλαμβάνεται"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "What's included"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qué se incluye"
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "موارد شامل"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mitä sisältyy"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce qui est inclus"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מה כלול"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "क्या शामिल है"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Što je uključeno"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mit tartalmaz"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ինչ է ներառված"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa saja yang termasuk"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hvað er innifalið"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cosa è incluso"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "含まれる内容"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "რა შედის"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не кіреді"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "포함된 항목"
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эмнелер камтылган"
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Юу багтсан"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apa yang disertakan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hva som er inkludert"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wat is inbegrepen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Co jest w zestawie"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O que está incluído"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ce este inclus"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Что включено"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Čo je zahrnuté"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vad som ingår"
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kilichojumuishwa"
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Чӣ дохил аст"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สิ่งที่รวมอยู่ด้วย"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Içine girýänler"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Neler dahil"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Що входить"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "کیا شامل ہے"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nimalar kiritilgan"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Những gì được bao gồm"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "包含内容"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "包含內容"
+          }
+        }
+      }
+    },
+    "PayWall.Features.emojiPalettes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "الوصول إلى جميع لوحات الرموز التعبيرية"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bütün emoji palitralarına giriş"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступ да ўсіх палітр эмодзі"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "প্রতিটি ইমোজি প্যালেটে অ্যাক্সেস"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accés a totes les paletes d'emojis"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Přístup ke všem paletám emoji"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Adgang til alle emoji-paletter"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zugriff auf alle Emoji-Paletten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πρόσβαση σε κάθε παλέτα emoji"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Access to every emoji palette"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acceso a todas las paletas de emojis"
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "دسترسی به همه پالت‌های ایموجی"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pääsy jokaiseen emoji-palettiin"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accès à toutes les palettes d'emojis"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "גישה לכל פלטות האימוג'י"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "हर इमोजी पैलेट तक पहुँच"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pristup svakoj paleti emojija"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hozzáférés az összes emoji palettához"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Հասանելիություն բոլոր էմոջի գունապնակներին"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akses ke setiap palet emoji"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aðgangur að öllum tjáknapallettum"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Accesso a tutte le palette di emoji"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "すべての絵文字パレットにアクセス"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "წვდომა ყველა ემოჯის პალიტრაზე"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Барлық эмодзи палитраларына қол жеткізу"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "모든 이모지 팔레트 이용 가능"
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бардык эмодзи палитраларына кирүү мүмкүнчүлүгү"
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бүх эможи палитр руу нэвтрэх боломж"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Akses kepada setiap palet emoji"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilgang til alle emoji-paletter"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toegang tot elk emojipalet"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dostęp do każdej palety emoji"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acesso a todas as paletas de emojis"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Acces la fiecare paletă de emoji"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступ ко всем палитрам эмодзи"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prístup ku každej palete emoji"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tillgång till alla emoji-paletter"
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ufikiaji wa kila paleti ya emoji"
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дастрасӣ ба ҳар палитраи эмоҷӣ"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "เข้าถึงชุดอีโมจิได้ทุกชุด"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Her emoji palitrasyna giriş"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tüm emoji paletlerine erişim"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступ до всіх палітр емодзі"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ہر ایموجی پیلیٹ تک رسائی"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Har bir emoji palitrasidan foydalanish"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Truy cập mọi bảng emoji"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解锁所有表情符号调色板"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解鎖所有表情符號調色盤"
+          }
+        }
+      }
+    },
+    "PayWall.Features.encryptionSettings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إعدادات تشفير متقدمة باستخدام AES-256 وArgon2id"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Qabaqcıl AES-256 və Argon2id şifrələmə parametrləri"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пашыраныя налады шыфравання AES-256 і Argon2id"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "উন্নত AES-256 ও Argon2id এনক্রিপশন সেটিংস"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configuració avançada de xifratge AES-256 i Argon2id"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokročilá nastavení šifrování AES-256 a Argon2id"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avancerede AES-256- og Argon2id-krypteringsindstillinger"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Erweiterte AES-256- und Argon2id-Verschlüsselungseinstellungen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προηγμένες ρυθμίσεις κρυπτογράφησης AES-256 και Argon2id"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Advanced AES-256 and Argon2id encryption settings"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajustes avanzados de cifrado AES-256 y Argon2id"
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تنظیمات پیشرفته رمزنگاری AES-256 و Argon2id"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Edistyneet AES-256- ja Argon2id-salausasetukset"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paramètres avancés de chiffrement AES-256 et Argon2id"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הגדרות הצפנה מתקדמות של AES-256 ו-Argon2id"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "उन्नत AES-256 और Argon2id एन्क्रिप्शन सेटिंग्स"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Napredne postavke AES-256 i Argon2id enkripcije"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speciális AES-256 és Argon2id titkosítási beállítások"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 և Argon2id գաղտնագրման ընդլայնված կարգավորումներ"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pengaturan enkripsi AES-256 dan Argon2id tingkat lanjut"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ítarlegar AES-256 og Argon2id dulkóðunarstillingar"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Impostazioni avanzate di crittografia AES-256 e Argon2id"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 および Argon2id の高度な暗号化設定"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "გაფართოებული AES-256 და Argon2id დაშიფვრის პარამეტრები"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кеңейтілген AES-256 және Argon2id шифрлау параметрлері"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "고급 AES-256 및 Argon2id 암호화 설정"
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Өркүндөтүлгөн AES-256 жана Argon2id шифрлөө жөндөөлөрү"
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 ба Argon2id шифрлэлтийн дэвшилтэт тохиргоонууд"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tetapan penyulitan AES-256 dan Argon2id lanjutan"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avanserte AES-256- og Argon2id-krypteringsinnstillinger"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geavanceerde AES-256- en Argon2id-versleutelingsinstellingen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaawansowane ustawienia szyfrowania AES-256 i Argon2id"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Configurações avançadas de criptografia AES-256 e Argon2id"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setări avansate de criptare AES-256 și Argon2id"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Расширенные настройки шифрования AES-256 и Argon2id"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokročilé nastavenia šifrovania AES-256 a Argon2id"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avancerade krypteringsinställningar för AES-256 och Argon2id"
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mipangilio ya hali ya juu ya usimbaji fiche ya AES-256 na Argon2id"
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Танзимоти пешрафтаи рамзгузории AES-256 ва Argon2id"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การตั้งค่าการเข้ารหัส AES-256 และ Argon2id ขั้นสูง"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ösen AES-256 we Argon2id şifrleme sazlamalary"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gelişmiş AES-256 ve Argon2id şifreleme ayarları"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Розширені налаштування шифрування AES-256 та Argon2id"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "جدید AES-256 اور Argon2id انکرپشن سیٹنگز"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kengaytirilgan AES-256 va Argon2id shifrlash sozlamalari"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cài đặt mã hóa AES-256 và Argon2id nâng cao"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高级 AES-256 与 Argon2id 加密设置"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "進階 AES-256 與 Argon2id 加密設定"
+          }
+        }
+      }
+    },
+    "PayWall.Features.fileEncryption" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تشفير الملفات باستخدام AES-256 + Argon2id"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id ilə fayl şifrələməsi"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шыфраванне файлаў AES-256 + Argon2id"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id ফাইল এনক্রিপশন"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Xifratge de fitxers AES-256 + Argon2id"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Šifrování souborů AES-256 + Argon2id"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id filkryptering"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256- und Argon2id-Dateiverschlüsselung"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Κρυπτογράφηση αρχείων AES-256 + Argon2id"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id file encryption"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cifrado de archivos AES-256 + Argon2id"
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "رمزنگاری فایل با AES-256 + Argon2id"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256- + Argon2id-tiedostosalaus"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chiffrement de fichiers AES-256 + Argon2id"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הצפנת קבצים AES-256 + Argon2id"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id फ़ाइल एन्क्रिप्शन"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id enkripcija datoteka"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id fájltitkosítás"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ֆայլերի գաղտնագրում AES-256 + Argon2id"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enkripsi file AES-256 + Argon2id"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id skráadulkóðun"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Crittografia dei file AES-256 + Argon2id"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id によるファイル暗号化"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ფაილების დაშიფვრა AES-256 + Argon2id"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id файлдарды шифрлау"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id 파일 암호화"
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id файл шифрлөө"
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id файлын шифрлэлт"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penyulitan fail AES-256 + Argon2id"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id filkryptering"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id bestandsversleuteling"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Szyfrowanie plików AES-256 + Argon2id"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criptografia de arquivos AES-256 + Argon2id"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Criptare fișiere AES-256 + Argon2id"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шифрование файлов AES-256 + Argon2id"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Šifrovanie súborov AES-256 + Argon2id"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Filkryptering med AES-256 + Argon2id"
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Usimbaji fiche wa faili wa AES-256 + Argon2id"
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рамзгузории файл бо AES-256 + Argon2id"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การเข้ารหัสไฟล์ด้วย AES-256 + Argon2id"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id bilen faýl şifrlemesi"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id dosya şifrelemesi"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Шифрування файлів AES-256 + Argon2id"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id فائل انکرپشن"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id fayl shifrlash"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mã hóa tệp AES-256 + Argon2id"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id 文件加密"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "AES-256 + Argon2id 檔案加密"
+          }
+        }
+      }
+    },
+    "PayWall.Features.privacyProtection" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "حماية من لقطات الشاشة وتسجيل الشاشة ومعاينة مبدّل التطبيقات"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran şəkli, ekran yazısı və tətbiq dəyişdiricisi önbaxışından qorunma"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Абарона ад здымкаў экрана, запісу экрана і прагляду ў пераключальніку праграм"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "স্ক্রিনশট, স্ক্রিন রেকর্ডিং ও অ্যাপ সুইচার প্রিভিউ সুরক্ষা"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protecció contra captures de pantalla, gravació de pantalla i previsualització del commutador d'aplicacions"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ochrana před snímky obrazovky, záznamem obrazovky a náhledem v přepínači aplikací"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beskyttelse mod skærmbilleder, skærmoptagelse og forhåndsvisning i app-skifteren"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Schutz vor Screenshots, Bildschirmaufnahmen und Vorschau im App-Umschalter"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Προστασία από στιγμιότυπα οθόνης, εγγραφή οθόνης και προεπισκόπηση στην εναλλαγή εφαρμογών"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Screenshot, screen recording, and app switcher preview protection"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protección contra capturas de pantalla, grabación de pantalla y vista previa en el selector de apps"
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "محافظت در برابر اسکرین‌شات، ضبط صفحه و پیش‌نمایش در جابه‌جاکننده برنامه‌ها"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suojaus kuvakaappauksilta, näytön tallennukselta ja sovellusvalitsimen esikatselulta"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protection contre les captures d'écran, l'enregistrement d'écran et l'aperçu du sélecteur d'apps"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "הגנה מפני צילומי מסך, הקלטת מסך ותצוגה מקדימה במחליף האפליקציות"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "स्क्रीनशॉट, स्क्रीन रिकॉर्डिंग और ऐप स्विचर प्रीव्यू सुरक्षा"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zaštita snimaka zaslona, snimanja zaslona i pregleda u izborniku aplikacija"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Védelem képernyőképek, képernyőfelvétel és az alkalmazásváltó előnézete ellen"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Պաշտպանություն էկրանի նկարահանումից, էկրանի տեսագրումից և հավելվածների փոխարկիչի նախադիտումից"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perlindungan tangkapan layar, perekaman layar, dan pratinjau pengalih aplikasi"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vörn gegn skjámyndatöku, skjáupptöku og forskoðun í forritaskiptara"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protezione da screenshot, registrazione dello schermo e anteprima nel selettore app"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スクリーンショット、画面収録、Appスイッチャーのプレビューからの保護"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ეკრანის სურათების, ეკრანის ჩაწერისა და აპლიკაციების გადამრთველის გადახედვის დაცვა"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скриншоттан, экранды жазудан және қолданба ауыстырғыштағы алдын ала көріністен қорғау"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "스크린샷, 화면 녹화 및 앱 전환기 미리 보기 보호"
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скриншот, экранды жаздыруу жана колдонмо алмаштыргычтын алдын ала көрүнүшүнөн коргоо"
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дэлгэцийн зураг, дэлгэцийн бичлэг болон апп сэлгэгчийн урьдчилсан харагдацаас хамгаалах"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Perlindungan tangkapan skrin, rakaman skrin dan pratonton penukar aplikasi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Beskyttelse mot skjermbilder, skjermopptak og forhåndsvisning i appveksleren"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bescherming tegen schermafbeeldingen, schermopnames en voorvertoning in de appwisselaar"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ochrona przed zrzutami ekranu, nagrywaniem ekranu i podglądem w przełączniku aplikacji"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Proteção contra capturas de tela, gravação de tela e prévia no alternador de aplicativos"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Protecție împotriva capturilor de ecran, înregistrării ecranului și previzualizării în comutatorul de aplicații"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Защита от скриншотов, записи экрана и предпросмотра в переключателе приложений"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ochrana pred snímkami obrazovky, nahrávaním obrazovky a náhľadom v prepínači aplikácií"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skydd mot skärmdumpar, skärminspelning och förhandsvisning i appväxlaren"
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ulinzi dhidi ya picha za skrini, kurekodi skrini, na onyesho la kukagua katika kibadilisha programu"
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ҳифз аз скриншот, сабти экран ва пешнамоиш дар тағйирдиҳандаи барномаҳо"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ป้องกันการจับภาพหน้าจอ การบันทึกหน้าจอ และภาพตัวอย่างในตัวสลับแอป"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran suraty, ekran ýazgysy we programma çalşyjysynyň öňünden görkezilişinden goramak"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran görüntüsü, ekran kaydı ve uygulama değiştirici önizleme koruması"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Захист від знімків екрана, запису екрана та попереднього перегляду в перемикачі застосунків"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اسکرین شاٹ، اسکرین ریکارڈنگ اور ایپ سوئچر پری ویو سے تحفظ"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skrinshot, ekran yozuvi va ilova almashtirgich koʻrinishidan himoya"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bảo vệ khỏi ảnh chụp màn hình, ghi màn hình và bản xem trước trong trình chuyển ứng dụng"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "防截屏、防录屏及应用切换器预览保护"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "防螢幕截圖、防螢幕錄製及應用程式切換器預覽保護"
+          }
+        }
+      }
+    },
+    "PayWall.Features.qrCode" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "إنشاء رمز QR وتخصيصه وتصديره بالكامل"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR kodun tam yaradılması, fərdiləşdirilməsi və ixracı"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поўнае стварэнне, налада і экспарт QR-кодаў"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "সম্পূর্ণ QR কোড তৈরি, কাস্টমাইজেশন ও এক্সপোর্ট"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generació, personalització i exportació completes de codis QR"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Plné generování, přizpůsobení a export QR kódů"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fuld generering, tilpasning og eksport af QR-koder"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vollständige Erstellung, Anpassung und Export von QR-Codes"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Πλήρης δημιουργία, προσαρμογή και εξαγωγή κωδικών QR"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full QR code generation, customization, and export"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generación, personalización y exportación completas de códigos QR"
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ایجاد، سفارشی‌سازی و خروجی‌گیری کامل کد QR"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Täydellinen QR-koodien luonti, mukauttaminen ja vienti"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Génération, personnalisation et exportation complètes de QR codes"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "יצירה, התאמה אישית וייצוא מלאים של קודי QR"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "संपूर्ण QR कोड निर्माण, अनुकूलन और निर्यात"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Potpuno generiranje, prilagodba i izvoz QR kodova"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teljes körű QR-kód generálás, testreszabás és exportálás"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR կոդի ամբողջական ստեղծում, հարմարեցում և արտահանում"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pembuatan, penyesuaian, dan ekspor kode QR secara lengkap"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Heildargerð, sérsníðing og útflutningur QR kóða"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generazione, personalizzazione ed esportazione complete dei codici QR"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QRコードの生成、カスタマイズ、書き出しのフル機能"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR კოდის სრული გენერაცია, მორგება და ექსპორტი"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR кодын толық жасау, теңшеу және экспорттау"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR 코드 생성, 사용자 지정 및 내보내기 전체 지원"
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR коддорду толук түзүү, ыңгайлаштыруу жана экспорттоо"
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR кодыг бүрэн үүсгэх, тохируулах, экспортлох"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Penjanaan, penyesuaian dan eksport kod QR sepenuhnya"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Full QR-kodegenerering, tilpasning og eksport"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volledige QR-codegeneratie, aanpassing en export"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pełne generowanie, dostosowywanie i eksport kodów QR"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Geração, personalização e exportação completas de QR Code"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generare, personalizare și export complete pentru coduri QR"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полная генерация, настройка и экспорт QR-кодов"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Úplné generovanie, prispôsobenie a export QR kódov"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fullständig generering, anpassning och export av QR-koder"
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Utengenezaji kamili, ubinafsishaji, na usafirishaji wa msimbo wa QR"
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эҷод, фардикунонӣ ва содироти пурраи коди QR"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "สร้าง ปรับแต่ง และส่งออกโค้ด QR ได้อย่างเต็มรูปแบบ"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "QR koduny doly döretmek, sazlamak we eksport etmek"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tam QR kodu oluşturma, özelleştirme ve dışa aktarma"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повна генерація, налаштування та експорт QR-кодів"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "مکمل QR کوڈ جنریشن، تخصیص اور برآمد"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toʻliq QR kod yaratish, moslashtirish va eksport qilish"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tạo, tùy chỉnh và xuất mã QR đầy đủ"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完整的 QR 码生成、自定义与导出"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完整的 QR 碼產生、自訂與匯出"
+          }
+        }
+      }
+    },
+    "PayWall.Features.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "يشمل بريميوم"
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium daxildir"
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Прэміум уключае"
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "প্রিমিয়ামে যা অন্তর্ভুক্ত"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium inclou"
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium zahrnuje"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium inkluderer"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium umfasst"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το Premium περιλαμβάνει"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium includes"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium incluye"
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پریمیوم شامل"
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium sisältää"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium inclut"
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "פרימיום כולל"
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "प्रीमियम में शामिल"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium uključuje"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Prémium tartalma"
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Պրեմիումը ներառում է"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium mencakup"
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium inniheldur"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium include"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "プレミアムに含まれるもの"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "პრემიუმი მოიცავს"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Премиумға кіреді"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "프리미엄에 포함된 항목"
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Премиумга эмнелер камтылган"
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Дээд зэрэглэлд багтсан зүйлс"
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium merangkumi"
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium inkluderer"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium bevat"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium obejmuje"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Premium inclui"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium include"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Премиум включает"
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium zahŕňa"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium inkluderar"
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium inajumuisha"
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Премиум дар бар мегирад"
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "พรีเมียมประกอบด้วย"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium öz içine alýar"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium şunları içerir"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Преміум включає"
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "پریمیم میں شامل ہے"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium tarkibiga kiradi"
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Premium bao gồm"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高级版包含"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "進階版包含"
+          }
+        }
+      }
+    },
     "PayWall.Lifetime.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -36977,6 +39614,299 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "已購買"
+          }
+        }
+      }
+    },
+    "PayWall.subscriptionDisclaimer" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ar" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "تتجدد الاشتراكات تلقائيًا حتى يتم إلغاؤها من إعدادات حساب App Store قبل 24 ساعة على الأقل من نهاية الفترة الحالية. يتم تحصيل الدفع من معرف Apple الخاص بك عند تأكيد الشراء."
+          }
+        },
+        "az" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abunəliklər App Store hesab parametrlərində cari dövrün bitməsinə ən azı 24 saat qalmış ləğv edilməyincə avtomatik olaraq yenilənir. Ödəniş alış təsdiqləndikdə Apple ID-nizdən tutulur."
+          }
+        },
+        "be" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Падпіскі аўтаматычна аднаўляюцца, пакуль не будуць адмененыя ў наладах вашага ўліковага запісу App Store не пазней чым за 24 гадзіны да заканчэння бягучага перыяду. Аплата спісваецца з вашага Apple ID пры пацвярджэнні пакупкі."
+          }
+        },
+        "bn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "বর্তমান মেয়াদ শেষ হওয়ার অন্তত ২৪ ঘণ্টা আগে আপনার App Store অ্যাকাউন্ট সেটিংসে বাতিল না করা পর্যন্ত সাবস্ক্রিপশন স্বয়ংক্রিয়ভাবে নবায়ন হবে। ক্রয় নিশ্চিত করার সময় আপনার Apple ID থেকে অর্থ কেটে নেওয়া হবে।"
+          }
+        },
+        "ca" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les subscripcions es renoven automàticament fins que es cancel·len a la configuració del compte de l'App Store almenys 24 hores abans del final del període actual. El pagament es carrega al teu Apple ID en confirmar la compra."
+          }
+        },
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Předplatná se automaticky obnovují, dokud nejsou zrušena v nastavení účtu App Store nejméně 24 hodin před koncem aktuálního období. Platba je při potvrzení nákupu stržena z vašeho Apple ID."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnementer fornys automatisk, indtil de opsiges i indstillingerne for din App Store-konto mindst 24 timer før udløbet af den aktuelle periode. Betalingen trækkes på dit Apple ID ved bekræftelse af købet."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnements verlängern sich automatisch, sofern sie nicht mindestens 24 Stunden vor Ende der laufenden Periode in den Einstellungen deines App Store-Kontos gekündigt werden. Die Zahlung wird bei Bestätigung des Kaufs deiner Apple ID belastet."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Οι συνδρομές ανανεώνονται αυτόματα έως ότου ακυρωθούν στις ρυθμίσεις του λογαριασμού σας στο App Store τουλάχιστον 24 ώρες πριν από τη λήξη της τρέχουσας περιόδου. Η χρέωση πραγματοποιείται στο Apple ID σας κατά την επιβεβαίωση της αγοράς."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subscriptions auto-renew until canceled in your App Store account settings at least 24 hours before the end of the current period. Payment is charged to your Apple ID at confirmation of purchase."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Las suscripciones se renuevan automáticamente hasta que se cancelen en los ajustes de tu cuenta de App Store al menos 24 horas antes del final del periodo actual. El pago se cargará a tu Apple ID al confirmar la compra."
+          }
+        },
+        "fa" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "اشتراک‌ها تا زمانی که حداقل ۲۴ ساعت پیش از پایان دوره جاری در تنظیمات حساب App Store لغو نشوند، به‌طور خودکار تمدید می‌شوند. مبلغ هنگام تأیید خرید از Apple ID شما کسر می‌شود."
+          }
+        },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tilaukset uusiutuvat automaattisesti, kunnes ne perutaan App Store -tilisi asetuksissa vähintään 24 tuntia ennen nykyisen jakson päättymistä. Maksu veloitetaan Apple ID:ltäsi ostoa vahvistettaessa."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Les abonnements se renouvellent automatiquement jusqu'à leur annulation dans les paramètres de votre compte App Store au moins 24 heures avant la fin de la période en cours. Le paiement est débité de votre Apple ID lors de la confirmation de l'achat."
+          }
+        },
+        "he" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "מינויים מתחדשים אוטומטית עד לביטולם בהגדרות חשבון ה-App Store שלך לפחות 24 שעות לפני סוף התקופה הנוכחית. התשלום ייגבה מה-Apple ID שלך בעת אישור הרכישה."
+          }
+        },
+        "hi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "वर्तमान अवधि की समाप्ति से कम से कम 24 घंटे पहले आपके App Store खाते की सेटिंग्स में रद्द किए जाने तक सदस्यताएँ स्वचालित रूप से नवीनीकृत होती हैं। खरीद की पुष्टि पर भुगतान आपकी Apple ID से लिया जाता है।"
+          }
+        },
+        "hr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pretplate se automatski obnavljaju sve dok se ne otkažu u postavkama vašeg App Store računa najmanje 24 sata prije isteka tekućeg razdoblja. Plaćanje se naplaćuje s vašeg Apple ID-ja prilikom potvrde kupnje."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Az előfizetések automatikusan megújulnak mindaddig, amíg az aktuális időszak vége előtt legalább 24 órával le nem mondod őket az App Store-fiókod beállításaiban. A díjat az Apple ID-d terheli a vásárlás megerősítésekor."
+          }
+        },
+        "hy" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Բաժանորդագրությունները ինքնաբերաբար երկարաձգվում են, քանի դեռ չեք չեղարկել դրանք ձեր App Store-ի հաշվի կարգավորումներում ընթացիկ ժամանակաշրջանի ավարտից առնվազն 24 ժամ առաջ. Վճարումը գանձվում է ձեր Apple ID-ից գնման հաստատման պահին։"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langganan diperpanjang secara otomatis hingga dibatalkan di pengaturan akun App Store Anda setidaknya 24 jam sebelum akhir periode saat ini. Pembayaran dibebankan ke Apple ID Anda saat konfirmasi pembelian."
+          }
+        },
+        "is" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Áskriftir endurnýjast sjálfkrafa þar til þeim er sagt upp í stillingum App Store reikningsins þíns að minnsta kosti 24 klukkustundum fyrir lok yfirstandandi tímabils. Greiðsla er skuldfærð á Apple ID þitt við staðfestingu kaupa."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gli abbonamenti si rinnovano automaticamente finché non vengono annullati nelle impostazioni del tuo account App Store almeno 24 ore prima della fine del periodo in corso. Il pagamento viene addebitato sul tuo Apple ID al momento della conferma dell'acquisto."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サブスクリプションは、現在の期間が終了する少なくとも24時間前までにApp Storeアカウントの設定でキャンセルされない限り、自動的に更新されます。お支払いは購入確定時にApple IDに請求されます。"
+          }
+        },
+        "ka" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "გამოწერა ავტომატურად განახლდება, სანამ არ გააუქმებთ მას App Store-ის ანგარიშის პარამეტრებში მიმდინარე პერიოდის დასრულებამდე მინიმუმ 24 საათით ადრე. გადახდა ჩამოიჭრება თქვენი Apple ID-დან შესყიდვის დადასტურებისას."
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жазылымдар ағымдағы кезең аяқталуға кемінде 24 сағат қалғанда App Store тіркелгісінің параметрлерінде болдырылмайынша автоматты түрде жаңарады. Төлем сатып алуды растау кезінде Apple ID арқылы алынады."
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "구독은 현재 기간이 종료되기 최소 24시간 전에 App Store 계정 설정에서 취소하지 않는 한 자동으로 갱신됩니다. 구매 확인 시 Apple ID로 결제가 청구됩니다."
+          }
+        },
+        "ky" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жазылуулар учурдагы мөөнөт аяктаардан кеминде 24 саат мурун App Store каттоо эсебиңиздин жөндөөлөрүндө жокко чыгарылмайынча автоматтык түрдө жаңыртылат. Төлөм сатып алууну тастыктаганда Apple ID аркылуу алынат."
+          }
+        },
+        "mn" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Захиалга нь одоогийн хугацаа дуусахаас дор хаяж 24 цагийн өмнө App Store бүртгэлийн тохиргоонд цуцлаагүй тохиолдолд автоматаар сунгагдана. Төлбөр нь худалдан авалтыг баталгаажуулах үед таны Apple ID-аас суутгагдана."
+          }
+        },
+        "ms" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Langganan diperbaharui secara automatik sehingga dibatalkan dalam tetapan akaun App Store anda sekurang-kurangnya 24 jam sebelum tamat tempoh semasa. Bayaran akan dikenakan kepada Apple ID anda apabila pembelian disahkan."
+          }
+        },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnementer fornyes automatisk inntil de avbestilles i kontoinnstillingene for App Store minst 24 timer før gjeldende periode utløper. Betalingen belastes Apple ID-en din ved bekreftelse av kjøpet."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonnementen worden automatisch verlengd totdat ze worden geannuleerd in de accountinstellingen van je App Store, ten minste 24 uur voor het einde van de huidige periode. De betaling wordt bij bevestiging van de aankoop in rekening gebracht op je Apple ID."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Subskrypcje odnawiają się automatycznie do momentu ich anulowania w ustawieniach konta App Store co najmniej 24 godziny przed końcem bieżącego okresu. Płatność jest pobierana z Apple ID w momencie potwierdzenia zakupu."
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "As assinaturas são renovadas automaticamente até serem canceladas nas configurações da sua conta da App Store com pelo menos 24 horas de antecedência em relação ao fim do período atual. O pagamento é cobrado do seu Apple ID na confirmação da compra."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonamentele se reînnoiesc automat până la anularea lor în setările contului App Store cu cel puțin 24 de ore înainte de sfârșitul perioadei curente. Plata se debitează din Apple ID-ul tău la confirmarea achiziției."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Подписки продлеваются автоматически до их отмены в настройках учётной записи App Store не менее чем за 24 часа до окончания текущего периода. Оплата списывается с вашего Apple ID при подтверждении покупки."
+          }
+        },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Predplatné sa automaticky obnovuje, kým ho nezrušíte v nastaveniach účtu App Store najmenej 24 hodín pred koncom aktuálneho obdobia. Platba sa pri potvrdení nákupu strhne z vášho Apple ID."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prenumerationer förnyas automatiskt tills de avbryts i dina App Store-kontoinställningar minst 24 timmar före slutet av den aktuella perioden. Betalningen dras från ditt Apple ID vid bekräftelse av köpet."
+          }
+        },
+        "sw" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Michango hujihuisha kiotomatiki hadi itakapoghairiwa katika mipangilio ya akaunti yako ya App Store angalau saa 24 kabla ya mwisho wa kipindi cha sasa. Malipo hutozwa kwenye Apple ID yako wakati wa uthibitisho wa ununuzi."
+          }
+        },
+        "tg" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обуна то лаҳзае, ки дар танзимоти ҳисоби App Store-и шумо ҳадди ақал 24 соат пеш аз анҷоми давраи ҷорӣ бекор карда нашавад, ба таври худкор нав карда мешавад. Пардохт ҳангоми тасдиқи харид аз Apple ID-и шумо гирифта мешавад."
+          }
+        },
+        "th" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "การสมัครสมาชิกจะต่ออายุอัตโนมัติจนกว่าจะถูกยกเลิกในการตั้งค่าบัญชี App Store ของคุณอย่างน้อย 24 ชั่วโมงก่อนสิ้นสุดรอบปัจจุบัน การชำระเงินจะถูกเรียกเก็บจาก Apple ID ของคุณเมื่อยืนยันการซื้อ"
+          }
+        },
+        "tk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abunalyklar, häzirki möhletiň ahyryna iň azyndan 24 sagat galanda App Store hasap sazlamalaryňyzda ýatyrylýança awtomatiki täzelenýär. Töleg satyn alynmagy tassyklananda Apple ID-iňizden alynýar."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Abonelikler, mevcut dönemin bitiminden en az 24 saat önce App Store hesap ayarlarınızdan iptal edilmediği sürece otomatik olarak yenilenir. Ödeme, satın alma onayında Apple ID hesabınızdan tahsil edilir."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Підписки автоматично поновлюються, доки їх не буде скасовано в налаштуваннях вашого облікового запису App Store щонайменше за 24 години до завершення поточного періоду. Оплата стягується з вашого Apple ID під час підтвердження покупки."
+          }
+        },
+        "ur" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "سبسکرپشنز خودکار طور پر تجدید ہوتی ہیں جب تک کہ موجودہ مدت کے اختتام سے کم از کم 24 گھنٹے پہلے آپ کی App Store اکاؤنٹ سیٹنگز میں منسوخ نہ کر دی جائیں۔ خریداری کی تصدیق پر ادائیگی آپ کی Apple ID سے وصول کی جاتی ہے۔"
+          }
+        },
+        "uz" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obunalar joriy davr tugashidan kamida 24 soat oldin App Store hisob qaydnomangiz sozlamalarida bekor qilinmaguncha avtomatik ravishda yangilanadi. Toʻlov xaridni tasdiqlash paytida Apple ID hisobingizdan yechib olinadi."
+          }
+        },
+        "vi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Đăng ký sẽ tự động gia hạn cho đến khi bị hủy trong cài đặt tài khoản App Store của bạn ít nhất 24 giờ trước khi kết thúc kỳ hiện tại. Khoản thanh toán sẽ được tính vào Apple ID của bạn khi xác nhận mua hàng."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "订阅将自动续订,直至在当前周期结束前至少 24 小时于您的 App Store 账户设置中取消。购买确认时,费用将从您的 Apple ID 中扣除。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "訂閱將自動續訂,直至在目前週期結束前至少 24 小時於您的 App Store 帳戶設定中取消。購買確認時,費用將從您的 Apple ID 中扣除。"
           }
         }
       }

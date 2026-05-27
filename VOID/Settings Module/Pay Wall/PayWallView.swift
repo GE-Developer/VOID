@@ -9,7 +9,12 @@ import SwiftUI
 
 struct PayWallView: View {
     @EnvironmentObject private var store: StoreManager
+    @Environment(LanguageManager.self) private var languageManager
     @StateObject private var vm: PayWallViewModel
+    
+    private var layoutDirection: LayoutDirection {
+        Language.rtlLanguages.contains(languageManager.currentLanguageID) ? .rightToLeft : .leftToRight
+    }
     
     init(_ store: StoreManager) {
         _vm = StateObject(wrappedValue: PayWallViewModel(store: store))
@@ -18,12 +23,21 @@ struct PayWallView: View {
     var body: some View {
         payWall
             .environmentObject(vm)
+            .sheet(isPresented: $vm.showFeatures) {
+                featuresSheet
+                    .environment(\.layoutDirection, layoutDirection)
+                    .presentationDetents([.medium, .large])
+                    .presentationDragIndicator(.visible)
+                    .presentationBackground(Color.void.background)
+            }
             .alert(
                 Text(vm.errorTitle),
                 isPresented: $vm.showError,
                 actions: { Button(vm.errorOK) {} },
                 message: { Text(vm.errorDescription) }
             )
+            .environment(\.layoutDirection, layoutDirection)
+            .id(languageManager.currentLanguageID)
     }
 }
 
@@ -47,6 +61,9 @@ extension PayWallView {
             title
             subtitle.opacity(vm.isPurchased(.lifetime) ? 0 : 1)
             
+            featuresButton
+                .opacity(vm.isPurchased(.lifetime) ? 0 : 1)
+            
             VStack(spacing: 22) {
                 lifetimeButton
                 subscriptionButtons
@@ -67,6 +84,64 @@ extension PayWallView {
                     bottomLink(text: vm.termsOfUse) { vm.showTermsOfUse() }
                 }
             }
+        }
+    }
+    
+    private var featuresButton: some View {
+        Button(action: vm.toggleFeaturesSheet) {
+            HStack(spacing: 4) {
+                Text(vm.featuresButtonTitle)
+                Image.system.chevron
+            }
+            .font(.caption)
+            .fontWeight(.medium)
+            .fontDesign(.rounded)
+            .foregroundStyle(Gradient.accent)
+            .frame(height: 20)
+        }
+    }
+    
+    private var featuresSheet: some View {
+        ZStack(alignment: .topTrailing) {
+            Color.void.background.ignoresSafeArea()
+            
+            ScrollView {
+                VStack(alignment: .leading, spacing: 24) {
+                    Text(vm.featuresTitle)
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(Color.void.mainText)
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        ForEach(vm.features, id: \.self) { feature in
+                            HStack(alignment: .top, spacing: 10) {
+                                Text(verbatim: "•")
+                                    .fontWeight(.bold)
+                                    .foregroundStyle(Gradient.accent)
+                                Text(feature)
+                                    .foregroundStyle(Color.void.mainText)
+                                    .fixedSize(horizontal: false, vertical: true)
+                            }
+                            .font(.subheadline)
+                        }
+                    }
+                    
+                    Text(vm.subscriptionDisclaimer)
+                        .font(.caption2)
+                        .fontWeight(.light)
+                        .foregroundStyle(Color.void.secondaryText)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+                .fontDesign(.rounded)
+                .multilineTextAlignment(.leading)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal)
+                .padding(.bottom, 30)
+                .padding(.top, 60)
+            }
+            
+            ExitButton()
+                .padding()
         }
     }
     
